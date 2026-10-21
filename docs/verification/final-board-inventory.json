@@ -1,0 +1,801 @@
+{
+  "source": "read-only KiCad pcbnew.LoadBoard after Konnect save",
+  "track_count": 241,
+  "track_layers": {
+    "B.Cu": 241
+  },
+  "widths_mm": [
+    0.5,
+    1.0
+  ],
+  "via_count": 0,
+  "zone_count": 0,
+  "circuit_parts": 38,
+  "mounting_holes": [
+    {
+      "reference": "H2",
+      "x": 144.0,
+      "y": 56.0,
+      "diameter": 4
+    },
+    {
+      "reference": "H4",
+      "x": 56.0,
+      "y": 194.0,
+      "diameter": 4
+    },
+    {
+      "reference": "H1",
+      "x": 56.0,
+      "y": 56.0,
+      "diameter": 4
+    },
+    {
+      "reference": "H3",
+      "x": 144.0,
+      "y": 194.0,
+      "diameter": 4
+    }
+  ],
+  "electrical_pads": 111,
+  "native_top_pad_count": 111,
+  "native_bottom_pad_count": 111,
+  "track_lengths_mm": {
+    "+5V": 262.7812857115865,
+    "/BYPASS_D10": 50.521982864357504,
+    "GND": 523.4629806757545,
+    "/TONE_WIPER": 11.902002442269268,
+    "/DIVIDER": 20.071067811865476,
+    "Net-(C3-Pad2)": 15.0,
+    "/ENC_CLK_D4": 51.455609172875675,
+    "/MIC_AUDIO": 31.280571413994913,
+    "/PTT_BASE": 15.735078800711094,
+    "/RADIO_PTT": 34.816698726919135,
+    "/FILTER_1": 15.953136792098839,
+    "+8V": 196.88710077493434,
+    "/FILTER_2": 23.75743378083292,
+    "/LCD_SDA_D2": 31.765314549541863,
+    "/LCD_SCL_D3": 35.35741699796952,
+    "/ENC_DT_D5": 68.61040760287892,
+    "/ENC_SW_D6": 83.71290730807624,
+    "/PTT_SENSE_D7": 64.3828463018496,
+    "/PTT_DRIVE_D8": 103.76563441135872,
+    "/PWM_D9": 52.54649270329013,
+    "/PTT_LED_A1": 44.52756869029638,
+    "/BYPASS_LED_A2": 37.81217746455201,
+    "/LED_BYPASS_ANODE": 14.040223456713282,
+    "/UP_DOWN": 10.0,
+    "/PIN4_SPARE": 10.0,
+    "/MIC_PTT_SWITCH": 17.749250522263125,
+    "/PIN8_PASS": 10.0,
+    "/LED_PTT_ANODE": 13.92
+  },
+  "component_positions": [
+    {
+      "reference": "R15",
+      "x": 121.0,
+      "y": 94.0,
+      "rotation": -90.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "RV1",
+      "x": 110.0,
+      "y": 163.0,
+      "rotation": 0.0,
+      "footprint": "RV_3296W_CNC"
+    },
+    {
+      "reference": "C3",
+      "x": 118.0,
+      "y": 164.0,
+      "rotation": -90.0,
+      "footprint": "C_Film1u_P5_CNC"
+    },
+    {
+      "reference": "R12",
+      "x": 75.0,
+      "y": 134.0,
+      "rotation": -90.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "R5",
+      "x": 103.0,
+      "y": 169.0,
+      "rotation": 180.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "Q1",
+      "x": 116.0,
+      "y": 187.0,
+      "rotation": 0.0,
+      "footprint": "Q_TO92_Formed_CNC"
+    },
+    {
+      "reference": "C1",
+      "x": 130.0,
+      "y": 151.0,
+      "rotation": -90.0,
+      "footprint": "C_Disc_P2.5_CNC"
+    },
+    {
+      "reference": "C4",
+      "x": 74.0,
+      "y": 92.7,
+      "rotation": 0.0,
+      "footprint": "C_Disc_P2.5_CNC"
+    },
+    {
+      "reference": "TP5",
+      "x": 121.0,
+      "y": 155.0,
+      "rotation": 0.0,
+      "footprint": "TP_CNC"
+    },
+    {
+      "reference": "U1",
+      "x": 90.0,
+      "y": 105.0,
+      "rotation": 0.0,
+      "footprint": "ProMicro_CNC_BCu"
+    },
+    {
+      "reference": "R2",
+      "x": 120.0,
+      "y": 145.0,
+      "rotation": 180.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "TP6",
+      "x": 83.0,
+      "y": 180.0,
+      "rotation": 0.0,
+      "footprint": "TP_CNC"
+    },
+    {
+      "reference": "R7",
+      "x": 121.0,
+      "y": 84.0,
+      "rotation": 0.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "R13",
+      "x": 82.0,
+      "y": 134.0,
+      "rotation": -90.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "J5",
+      "x": 140.0,
+      "y": 102.0,
+      "rotation": 0.0,
+      "footprint": "Header_1x02_CNC"
+    },
+    {
+      "reference": "H2",
+      "x": 144.0,
+      "y": 56.0,
+      "rotation": 0.0,
+      "footprint": "MountingHole_4mm"
+    },
+    {
+      "reference": "TP3",
+      "x": 86.0,
+      "y": 83.0,
+      "rotation": 0.0,
+      "footprint": "TP_CNC"
+    },
+    {
+      "reference": "R11",
+      "x": 113.0,
+      "y": 181.0,
+      "rotation": -90.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "TP7",
+      "x": 86.0,
+      "y": 150.0,
+      "rotation": 0.0,
+      "footprint": "TP_CNC"
+    },
+    {
+      "reference": "TP1",
+      "x": 56.0,
+      "y": 115.0,
+      "rotation": 0.0,
+      "footprint": "TP_CNC"
+    },
+    {
+      "reference": "R14",
+      "x": 89.0,
+      "y": 134.0,
+      "rotation": -90.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "H4",
+      "x": 56.0,
+      "y": 194.0,
+      "rotation": 0.0,
+      "footprint": "MountingHole_4mm"
+    },
+    {
+      "reference": "R4",
+      "x": 99.92,
+      "y": 153.0,
+      "rotation": -90.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "H1",
+      "x": 56.0,
+      "y": 56.0,
+      "rotation": 0.0,
+      "footprint": "MountingHole_4mm"
+    },
+    {
+      "reference": "C5",
+      "x": 84.0,
+      "y": 92.7,
+      "rotation": 0.0,
+      "footprint": "C_Disc_P2.5_CNC"
+    },
+    {
+      "reference": "TP4",
+      "x": 138.0,
+      "y": 137.0,
+      "rotation": 0.0,
+      "footprint": "TP_CNC"
+    },
+    {
+      "reference": "R9",
+      "x": 88.0,
+      "y": 160.0,
+      "rotation": 0.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "R10",
+      "x": 117.08,
+      "y": 175.0,
+      "rotation": 180.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "H3",
+      "x": 144.0,
+      "y": 194.0,
+      "rotation": 0.0,
+      "footprint": "MountingHole_4mm"
+    },
+    {
+      "reference": "J1",
+      "x": 90.0,
+      "y": 180.0,
+      "rotation": 90.0,
+      "footprint": "Header_1x08_CNC"
+    },
+    {
+      "reference": "J4",
+      "x": 60.0,
+      "y": 121.0,
+      "rotation": 0.0,
+      "footprint": "Header_1x04_CNC"
+    },
+    {
+      "reference": "C2",
+      "x": 115.0,
+      "y": 151.0,
+      "rotation": -90.0,
+      "footprint": "C_Disc_P2.5_CNC"
+    },
+    {
+      "reference": "C6",
+      "x": 67.0,
+      "y": 79.0,
+      "rotation": 0.0,
+      "footprint": "C_Film4u7_P5_CNC"
+    },
+    {
+      "reference": "R6",
+      "x": 121.0,
+      "y": 78.0,
+      "rotation": 0.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "R1",
+      "x": 135.0,
+      "y": 145.0,
+      "rotation": 180.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "J6",
+      "x": 140.0,
+      "y": 78.0,
+      "rotation": 0.0,
+      "footprint": "Header_1x04_CNC"
+    },
+    {
+      "reference": "TP8",
+      "x": 131.0,
+      "y": 190.0,
+      "rotation": 0.0,
+      "footprint": "TP_CNC"
+    },
+    {
+      "reference": "J2",
+      "x": 90.0,
+      "y": 190.0,
+      "rotation": 90.0,
+      "footprint": "Header_1x08_CNC"
+    },
+    {
+      "reference": "J3",
+      "x": 60.0,
+      "y": 142.0,
+      "rotation": 0.0,
+      "footprint": "Header_1x05_CNC"
+    },
+    {
+      "reference": "R3",
+      "x": 105.0,
+      "y": 145.0,
+      "rotation": 180.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "R8",
+      "x": 96.0,
+      "y": 165.0,
+      "rotation": 90.0,
+      "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "TP2",
+      "x": 65.0,
+      "y": 91.0,
+      "rotation": 0.0,
+      "footprint": "TP_CNC"
+    }
+  ],
+  "body_envelopes": [
+    {
+      "reference": "R15",
+      "bounds": [
+        120.2,
+        94.74,
+        121.8,
+        98.34
+      ]
+    },
+    {
+      "reference": "RV1",
+      "bounds": [
+        102.695,
+        160.59,
+        112.225,
+        165.42
+      ]
+    },
+    {
+      "reference": "C3",
+      "bounds": [
+        115.5,
+        162.9,
+        120.5,
+        170.1
+      ]
+    },
+    {
+      "reference": "R12",
+      "bounds": [
+        74.2,
+        134.74,
+        75.8,
+        138.34
+      ]
+    },
+    {
+      "reference": "R5",
+      "bounds": [
+        98.66,
+        168.2,
+        102.26,
+        169.8
+      ]
+    },
+    {
+      "reference": "Q1",
+      "bounds": [
+        115.94,
+        184.52,
+        121.14,
+        188.75
+      ]
+    },
+    {
+      "reference": "C1",
+      "bounds": [
+        129.0,
+        150.75,
+        131.0,
+        153.75
+      ]
+    },
+    {
+      "reference": "C4",
+      "bounds": [
+        73.75,
+        91.7,
+        76.75,
+        93.7
+      ]
+    },
+    {
+      "reference": "TP5",
+      "bounds": [
+        119.5,
+        153.5,
+        122.5,
+        156.5
+      ]
+    },
+    {
+      "reference": "U1",
+      "bounds": [
+        68.24,
+        95.88,
+        105.24,
+        114.12
+      ]
+    },
+    {
+      "reference": "R2",
+      "bounds": [
+        115.66,
+        144.2,
+        119.26,
+        145.8
+      ]
+    },
+    {
+      "reference": "TP6",
+      "bounds": [
+        81.5,
+        178.5,
+        84.5,
+        181.5
+      ]
+    },
+    {
+      "reference": "R7",
+      "bounds": [
+        121.74,
+        83.2,
+        125.34,
+        84.8
+      ]
+    },
+    {
+      "reference": "R13",
+      "bounds": [
+        81.2,
+        134.74,
+        82.8,
+        138.34
+      ]
+    },
+    {
+      "reference": "J5",
+      "bounds": [
+        138.73,
+        100.73,
+        141.27,
+        105.81
+      ]
+    },
+    {
+      "reference": "TP3",
+      "bounds": [
+        84.5,
+        81.5,
+        87.5,
+        84.5
+      ]
+    },
+    {
+      "reference": "R11",
+      "bounds": [
+        112.2,
+        181.74,
+        113.8,
+        185.34
+      ]
+    },
+    {
+      "reference": "TP7",
+      "bounds": [
+        84.5,
+        148.5,
+        87.5,
+        151.5
+      ]
+    },
+    {
+      "reference": "TP1",
+      "bounds": [
+        54.5,
+        113.5,
+        57.5,
+        116.5
+      ]
+    },
+    {
+      "reference": "R14",
+      "bounds": [
+        88.2,
+        134.74,
+        89.8,
+        138.34
+      ]
+    },
+    {
+      "reference": "R4",
+      "bounds": [
+        99.12,
+        153.74,
+        100.72,
+        157.34
+      ]
+    },
+    {
+      "reference": "C5",
+      "bounds": [
+        83.75,
+        91.7,
+        86.75,
+        93.7
+      ]
+    },
+    {
+      "reference": "TP4",
+      "bounds": [
+        136.5,
+        135.5,
+        139.5,
+        138.5
+      ]
+    },
+    {
+      "reference": "R9",
+      "bounds": [
+        88.74,
+        159.2,
+        92.34,
+        160.8
+      ]
+    },
+    {
+      "reference": "R10",
+      "bounds": [
+        112.74,
+        174.2,
+        116.34,
+        175.8
+      ]
+    },
+    {
+      "reference": "J1",
+      "bounds": [
+        88.73,
+        178.73,
+        109.05,
+        181.27
+      ]
+    },
+    {
+      "reference": "J4",
+      "bounds": [
+        58.73,
+        119.73,
+        61.27,
+        129.89
+      ]
+    },
+    {
+      "reference": "C2",
+      "bounds": [
+        114.0,
+        150.75,
+        116.0,
+        153.75
+      ]
+    },
+    {
+      "reference": "C6",
+      "bounds": [
+        65.9,
+        73.5,
+        73.1,
+        84.5
+      ]
+    },
+    {
+      "reference": "R6",
+      "bounds": [
+        121.74,
+        77.2,
+        125.34,
+        78.8
+      ]
+    },
+    {
+      "reference": "R1",
+      "bounds": [
+        130.66,
+        144.2,
+        134.26,
+        145.8
+      ]
+    },
+    {
+      "reference": "J6",
+      "bounds": [
+        138.73,
+        76.73,
+        141.27,
+        86.89
+      ]
+    },
+    {
+      "reference": "TP8",
+      "bounds": [
+        129.5,
+        188.5,
+        132.5,
+        191.5
+      ]
+    },
+    {
+      "reference": "J2",
+      "bounds": [
+        88.73,
+        188.73,
+        109.05,
+        191.27
+      ]
+    },
+    {
+      "reference": "J3",
+      "bounds": [
+        58.73,
+        140.73,
+        61.27,
+        153.43
+      ]
+    },
+    {
+      "reference": "R3",
+      "bounds": [
+        100.66,
+        144.2,
+        104.26,
+        145.8
+      ]
+    },
+    {
+      "reference": "R8",
+      "bounds": [
+        95.2,
+        160.66,
+        96.8,
+        164.26
+      ]
+    },
+    {
+      "reference": "TP2",
+      "bounds": [
+        63.5,
+        89.5,
+        66.5,
+        92.5
+      ]
+    }
+  ],
+  "closest_body_gaps": [
+    {
+      "references": [
+        "R11",
+        "Q1"
+      ],
+      "gap_mm": 2.14
+    },
+    {
+      "references": [
+        "U1",
+        "C4"
+      ],
+      "gap_mm": 2.18
+    },
+    {
+      "references": [
+        "C5",
+        "U1"
+      ],
+      "gap_mm": 2.18
+    },
+    {
+      "references": [
+        "R5",
+        "RV1"
+      ],
+      "gap_mm": 2.8138
+    },
+    {
+      "references": [
+        "R8",
+        "R9"
+      ],
+      "gap_mm": 2.86
+    },
+    {
+      "references": [
+        "J1",
+        "R11"
+      ],
+      "gap_mm": 3.1849
+    },
+    {
+      "references": [
+        "C3",
+        "RV1"
+      ],
+      "gap_mm": 3.275
+    },
+    {
+      "references": [
+        "J4",
+        "TP1"
+      ],
+      "gap_mm": 3.4563
+    },
+    {
+      "references": [
+        "C2",
+        "TP5"
+      ],
+      "gap_mm": 3.5
+    },
+    {
+      "references": [
+        "TP2",
+        "U1"
+      ],
+      "gap_mm": 3.8016
+    },
+    {
+      "references": [
+        "R4",
+        "RV1"
+      ],
+      "gap_mm": 3.803
+    },
+    {
+      "references": [
+        "R8",
+        "R4"
+      ],
+      "gap_mm": 4.0503
+    }
+  ],
+  "body_gaps_below_2mm": [],
+  "body_assumptions": "Nominal selected bodies; 37x18.24 module/socket envelope including 3mm-wide socket strips. Actual socket and USB cable fit still require dry fit."
+}

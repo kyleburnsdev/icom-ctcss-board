@@ -1,0 +1,62 @@
+{
+  "revision": "2026-10-20 bypass-only cleanup",
+  "source_sha256": {
+    "icom-ctcss-board.kicad_pcb": "7bc1982c61baa56c9d5514210c02303dfe36df6923086a41e4dca744cfd3032f",
+    "icom-ctcss-board.kicad_sch": "e0d3fb66abeb9626bdfd4acf32ddd3755307e3890e18179d49e4bdd582a163c0",
+    "icom-ctcss-board.kicad_pro": "e1145de79179aa94216ae802e63e79f80d9a8e03e82948c4306afcd0066d83de"
+  },
+  "equipment": "Makera Carvera Air PCB kit and laser; 1.5 mm single-sided blank; copper bottom only",
+  "checks": {
+    "ERC_errors": 0,
+    "ERC_warnings": 0,
+    "DRC_errors": 0,
+    "unconnected_items": 0,
+    "DRC_warnings": 114,
+    "netlist_assertions": 61,
+    "functional_components": 38,
+    "BCu_track_segments": 241,
+    "routing_vias": 0,
+    "zones": 0,
+    "electrical_holes": 111,
+    "drill_diameters_mm": {
+      "0.9": 48,
+      "1.1": 63,
+      "4.0": 4
+    },
+    "mounting_holes": 4,
+    "copper_objects": 352,
+    "legend_objects": 6966,
+    "legend_policy": "exclude native footprint reference/value fields; retain board-level labels and artwork",
+    "registration": "four mounting holes retained; landscape transformation verified in landscape-y-flip/manifest.json",
+    "visual_review": "schematic, assembly, copper and clean Gerber legend inspected"
+  },
+  "files": {
+    "icom-ctcss-board-B_Cu.gbl": {
+      "sha256": "61d5483d6fdea6ecb793f0f2b3470c23d886fca0bf4536c6f0dd49bb7db27794",
+      "bytes": 21290
+    },
+    "icom-ctcss-board-F_Silkscreen.gto": {
+      "sha256": "995d29d36fee69ecda5f7244f9e802e4887fe323b79314bfc1a8cf86580e8f0a",
+      "bytes": 369375
+    },
+    "icom-ctcss-board-Edge_Cuts.gm1": {
+      "sha256": "29cfd441cc3f57bab9cc3b324dd1b447b285e110826f064fee033912a9222723",
+      "bytes": 717
+    },
+    "icom-ctcss-board-PTH.drl": {
+      "sha256": "c140d267435bc6f65345f954b6890490c8ec3ba62a64b2b5fe7ec78659c88e01",
+      "bytes": 2063
+    },
+    "icom-ctcss-board-NPTH.drl": {
+      "sha256": "9de3d0df319c7a43272cac94961dbfebd8cce5ae2f918edb4e61ce2d3a9f0b5a",
+      "bytes": 399
+    },
+    "icom-ctcss-board-top-legend.svg": {
+      "sha256": "fbf2588fb1776157f85be57d7a69f7f07d8ffd3a36e4e92366f24744cd30827c",
+      "bytes": 280073
+    }
+  },
+  "landscape_manifest_sha256": "95b664f2f6061c011d3cad331cc5aedcda3475d75fe469ad4f39e220cf132ede",
+  "manufacturing_preflight": "Generic fab-house preflight is not applicable to this user-defined CNC process; direct KiCad DRC, native inventory and Gerber/drill checks supply geometry evidence. Machine/tool/coupon and radio acceptance remain open.",
+  "verdict": "Geometry refresh complete; manufacturing acceptance INCOMPLETE pending documented machine/coupon and bench checks. No G-code supplied."
+}

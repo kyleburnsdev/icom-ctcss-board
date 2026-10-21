@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+
+  (lib (name "CTCSS") (type "KiCad") (uri "${KIPRJMOD}/libraries/CTCSS.kicad_sym") (options "") (descr "")))

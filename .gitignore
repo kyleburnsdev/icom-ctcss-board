@@ -1,0 +1,28 @@
+# Local editor history
+.history/
+
+# Agent working files
+.agent-scratch/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# KiCad automatic backups
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+
+# KiCad local preferences and cache
+*.kicad_prl
+fp-info-cache
+
+# KiCad lock and autosave files
+~*.lck
+_autosave-*
+*.kicad_pcb.lck
+*.kicad_sch.lck
+
+# FreeCAD automatic backups
+*.FCStd[0-9]
+*.FCBak

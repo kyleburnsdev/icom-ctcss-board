@@ -1,0 +1,85 @@
+{
+  "frame_mm": [
+    150,
+    100
+  ],
+  "origin": "lower-left in CNC XY",
+  "top_transform": "X=-GerberY-50; Y=GerberX-50",
+  "bottom_transform": "X=150-topX; Y=topY; ALREADY APPLIED",
+  "hole_centers_mm": [
+    [
+      6,
+      6
+    ],
+    [
+      144,
+      6
+    ],
+    [
+      6,
+      94
+    ],
+    [
+      144,
+      94
+    ]
+  ],
+  "hole_pitch_mm": [
+    138,
+    88
+  ],
+  "hole_diameter_mm": 4,
+  "asymmetric_check": {
+    "feature": "J1 pin 1",
+    "top_xy_mm": [
+      130,
+      40
+    ],
+    "bottom_xy_mm": [
+      20,
+      40
+    ]
+  },
+  "checks": {
+    "electrical_holes": 111,
+    "mounting_holes": 4,
+    "copper_objects": 352,
+    "legend_objects": 6966,
+    "all_copper_coordinates_verified": true,
+    "all_legend_coordinates_verified": true
+  },
+  "files": {
+    "board-outline.gm1": {
+      "sha256": "a0a86f29749d3c5a5e2a1f915cd9f91fd87e13574578653ea41d0c9c95361c74",
+      "bytes": 374
+    },
+    "bottom-copper-Y-FLIPPED-REGISTERED.svg": {
+      "sha256": "c3ae6be360ed503a7e083a84b18790a249c04a37755bf660939ce4069c3333ef",
+      "bytes": 39162
+    },
+    "bottom-copper-Y-FLIPPED.gbl": {
+      "sha256": "ba64f2823cfea94eade2f1550cb4c0abdfade6aa3f713c69ba0c3db758110012",
+      "bytes": 16020
+    },
+    "bottom-electrical-holes-Y-FLIPPED.drl": {
+      "sha256": "339a64cca9bd9ea604b64074020a3c598638820cfabd806b8ad37d9dd70e7549",
+      "bytes": 2421
+    },
+    "registration-holes.drl": {
+      "sha256": "c9c64449ff09fa8a74eac1f0602c28a3e8b98bf911b2c5d6fa776a7df25e8436",
+      "bytes": 156
+    },
+    "top-legend-REGISTERED.svg": {
+      "sha256": "574d7023fb96e444491a94bb8e9a2cc6f2e68d5fcef61570f1ecc83a628bce91",
+      "bytes": 275119
+    },
+    "top-legend.gto": {
+      "sha256": "55fb82cdfd7635bdf27dff4b6ea29203ecd6dfd3bbaec303b90d992cf464f6a8",
+      "bytes": 219861
+    },
+    "top-legend.svg": {
+      "sha256": "2738bf613b595d80c1cf8ab0600555b1b06295e8f8ec46fc36982340b369cdeb",
+      "bytes": 274518
+    }
+  }
+}
