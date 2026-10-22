@@ -45,14 +45,14 @@ Observed DigiKey stock at research: Q1 582, C3 20,626, C6 9,142, 100nF 216,889, 
 
 ## Additional selected purchases
 
-These items are outside the 38-instance schematic BOM. Stock observations are from approved supplier pages on the review date. Exact enclosure/panel geometry and final cable lengths remain integration work.
+These items are outside the 38-instance schematic BOM. Stock observations are from approved supplier pages on the review date. The [P0 enclosure package](../../manufacturing/enclosure/README.md) defines panel geometry, hardware and cable lengths.
 
 | Item | Quantity | Selected purchase / interface |
 | --- | ---: | --- |
 | Module sockets | 2 | [Würth 61301211821](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61301211821/16608531), 1×12, 2.54mm; stock6,879. [Manufacturer drawing](https://www.we-online.com/components/products/datasheet/61301211821.pdf): maximum body width2.7mm within 3mm allowance; 8.5mm body height. Dry-fit module, pins and USB plug before soldering. |
 | Module male strips, if absent | 2 | [Würth 61301211121](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61301211121/4846844), 1×12, stock7,198. Do not double-order if included with U1. |
 | LCD/backpack | 1 | [DFRobot DFR0063](https://www.digikey.com/en/products/detail/dfrobot/DFR0063/7597121), 16×2, 5V, stock126. [Manufacturer documentation/schematic](https://wiki.dfrobot.com/dfr0063/) specifies I2C, default address0x20 and PCA8574 backpack with 10k SDA/SCL pull-ups. Wire by GND/VCC/SDA/SCL labels to J4; verify actual connector order and backlight load before powering. |
-| Encoder with switch | 1 | [Bourns PEC11R-4215F-S0024](https://www.digikey.com/en/products/detail/bourns-inc/PEC11R-4215F-S0024/4499665), stock12,293; [manufacturer drawing](https://www.bourns.com/docs/product-datasheets/pec11r.pdf). Bare passive quadrature encoder, 24 detents, 6mm D shaft. Wire A/B to J3 CLK/DT, common C to GND; wire switch across SW/GND. J3 +5V is unused and must be insulated. Join the two ground returns in the encoder harness. Firmware must debounce and confirm direction. |
+| Encoder with switch | 1 | Use the user's already-owned [WWZMDiB EC11, Amazon B0C6Q67V97](https://www.amazon.com/dp/B0C6Q67V97), subject to the contact-identification checks below. No encoder purchase required for this build. [Bourns PEC11R-4215F-S0024](https://www.digikey.com/en/products/detail/bourns-inc/PEC11R-4215F-S0024/4499665) remains the documented purchase fallback (observed stock12,293); its exact pin order, detent count and mechanical drawing must not be attributed to the generic EC11. |
 | Bypass toggle | 1 | [E-Switch 100SP1T1B1M1REH](https://www.digikey.com/en/products/detail/e-switch/100SP1T1B1M1REH/378820), stock1,208, maintained SPDT gold low-level contacts. Use common and one throw across J5; insulate unused throw. Confirm continuity before connection. |
 | PTT LED, red | 1 | [Kingbright WP7113ID](https://www.digikey.com/en/products/detail/kingbright/WP7113ID/1747663), stock139,924. Anode to J6 pin1; cathode to pin2. Board already includes330ohm. |
 | Bypass LED, green | 1 | [Kingbright WP7113GD](https://www.digikey.com/en/products/detail/kingbright/WP7113GD/1747662), stock79,006. Anode to J6 pin3; cathode to pin4. Board already includes330ohm. |
@@ -63,11 +63,30 @@ These items are outside the 38-instance schematic BOM. Stock observations are fr
 | Female crimp contacts | 35 plus spares | [Harwin M20-1160042](https://www.digikey.com/en/products/detail/harwin-inc/M20-1160042/3728123), stock246,426, cut tape,22–30AWG. 31 board-side positions plus4 LCD positions; encoder +5V may be empty. [Manufacturer housing compatibility](https://www.harwin.com/products/M20-1060500). Use appropriate crimp tooling and perform pull/continuity tests. Housings are unkeyed: mark pin1 and strain-relieve. |
 | Insulating standoffs | 4 | [Keystone 1902A](https://www.digikey.com/en/products/detail/keystone-electronics/1902A/61864), nylon,4-40 female/female,6.35mm high and6.35mm hex, stock65,352. Fit within the 8mm reserved mounting envelope; verify screw/head/washer retention over the 4mm board holes and enclosure attachment. |
 
+## Already-owned EC11 encoder substitution
+
+The user identified the existing encoders as WWZMDiB EC11 from Amazon ASIN B0C6Q67V97. The seller describes a bare five-pin rotary encoder with push button and knob; it does not provide a trustworthy exact terminal map, detent/transition specification or dimensioned manufacturer drawing. The seller's reset-to-zero wording describes possible software behavior, not an internal counting/reset function.
+
+This is an off-board passive-contact encoder connected by a harness, so using it does not change the carrier PCB, BOM instances, drill files or CAM geometry. Accept it for this build after identifying the actual contacts with a meter, with power disconnected:
+
+| Identified encoder contact | Carrier connection |
+| --- | --- |
+| Quadrature output A | J3 pin1 CLK / D4 |
+| Quadrature output B | J3 pin2 DT / D5 |
+| Quadrature common C | J3 pin5 GND |
+| One push-switch terminal | J3 pin3 SW / D6 |
+| Other push-switch terminal | J3 pin5 GND, joined to C in the harness |
+| No encoder connection | J3 pin4 +5V: leave unpopulated/insulated |
+
+Do not equate the encoder's five physical pins with the five J3 positions or wire them straight across. Identify the isolated normally-open switch pair by continuity when pressed; identify common and the two alternating contact outputs while slowly rotating. Typical three-terminal/two-terminal grouping is only a clue, not accepted pin numbering. Board R12–R14 already supply 10k pull-ups, so the bare encoder needs no +5V connection or additional pull-ups. Mechanical mounting tabs are not signal pins.
+
+During bring-up, verify released SW is high and pressed SW is low, both rotation channels switch cleanly between high/low, clockwise increases the UI selection, and each detent gives the intended step count. Set firmware direction, transitions per detent and debounce for the actual encoder; the Bourns 24-detent specification does not establish the generic part's behavior. Confirm panel thread, shaft/knob fit and harness strain relief separately. The Amazon page currently shows no featured offer; ownership establishes availability for this build, while the Bourns fallback remains the researched purchasing option for future builds.
+
 ## Unresolved whole-product items
 
 **Radio/microphone adapters are already owned**, confirmed by the user on 2026-10-22; the purchase-source blocker is closed for this build. Before connection, verify that both ends mate the actual radio/microphone, carry the required eight conductors, preserve microphone shielding and match the accepted pin map by continuity testing. Ownership does not establish those electrical checks. For repeat builds requiring new adapters, an approved-source compatible replacement pair still needs qualification; generic GX16/aviation descriptions do not establish mating/thread/key compatibility. Previously researched Amazon CESS B01MTSNNUB, B00H5764LA and B0125YRWKE remain rejected/unverified candidates, not purchase recommendations.
 
-Cable lengths, shielded microphone cable, suitable hookup wire, retaining screws/washers, panel/knob and enclosure need final mechanical integration. The carrier-board changes do not resolve these by assumption. The selected standoff is not a complete fastener set. Fabrication tooling, copper stock and UV coatings remain the documented machine/process acceptance inputs.
+The [P0 enclosure package](../../manufacturing/enclosure/README.md) defines cable lengths and the mechanical fastener set. Enclosure fit and procurement decisions are maintained in the [enclosure register](../requirements/enclosure-decision-register.md). Fabrication tooling, copper stock and UV coatings remain the documented machine/process acceptance inputs.
 
 ## Verification of this revision
 

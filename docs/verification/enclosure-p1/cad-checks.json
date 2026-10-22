@@ -1,0 +1,125 @@
+{
+  "revision": "P1",
+  "units": "mm",
+  "case_envelope_mm": [
+    200,
+    195,
+    68
+  ],
+  "pcb_envelope_mm": [
+    150,
+    100,
+    1.5
+  ],
+  "pcb_hole_centres_xy_mm": [
+    [
+      31,
+      61
+    ],
+    [
+      169,
+      61
+    ],
+    [
+      169,
+      149
+    ],
+    [
+      31,
+      149
+    ]
+  ],
+  "pcb_local_to_case": "X=175-boardY; Y=55+boardX; Z=9.35+boardZ",
+  "native_feature_errors": [],
+  "unconstrained_sketches": [],
+  "production_parts": [
+    {
+      "name": "Base",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 225889.97169805822
+    },
+    {
+      "name": "Cover",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 125459.97005962572
+    },
+    {
+      "name": "Fascia",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 23627.623498011584
+    },
+    {
+      "name": "DisplayInsert",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12529.47210464126
+    },
+    {
+      "name": "LedKeeper",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1539.7991310476393
+    },
+    {
+      "name": "PcbWasher",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 38.704421492226224
+    },
+    {
+      "name": "WireKeeper",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 662.9495613475224
+    },
+    {
+      "name": "EncoderKnob",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7554.050951629165
+    },
+    {
+      "name": "KnobAccentRing",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 281.70724154774075
+    },
+    {
+      "name": "PcbWasherFrontRight",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 38.70442149222623
+    },
+    {
+      "name": "PcbWasherRearLeft",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 38.70442149222622
+    },
+    {
+      "name": "PcbWasherRearRight",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 38.704421492226224
+    },
+    {
+      "name": "WireKeeperRight",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 662.9495613475224
+    }
+  ],
+  "clamp_socket_head_overlap_mm3": 0.0,
+  "interferences": [],
+  "carrier_base_overlap_mm3": 0.0,
+  "carrier_allocation_clearances_mm": {
+    "LcdEnvelope": 24.8,
+    "EncoderEnvelope": 26.0,
+    "ToggleEnvelope": 26.0,
+    "MicrophoneRearEnvelope": 22.999999999999993,
+    "RadioRearEnvelope": 8.082233602167161
+  }
+}

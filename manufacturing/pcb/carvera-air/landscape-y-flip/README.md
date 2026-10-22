@@ -1,5 +1,7 @@
 # Carvera landscape setup — Y-axis flip
 
+**Step-by-step toolpath creation:** follow the [Makera Studio fabrication guide](../../../../docs/implementation/makera-studio-board-fabrication.md), beginning with [project imports/alignment](../../../../docs/implementation/makera-studio-board-fabrication.md#open-the-project-and-check-alignment), then [tools/settings](../../../../docs/implementation/makera-studio-board-fabrication.md#set-up-the-tools), [bottom toolpaths](../../../../docs/implementation/makera-studio-board-fabrication.md#define-the-bottom-toolpaths), [NC export](../../../../docs/implementation/makera-studio-board-fabrication.md#export-the-combined-nc-file) and [top legend](../../../../docs/implementation/makera-studio-board-fabrication.md#define-and-run-the-top-legend). The tables below describe the geometry and registration; the linked guide supplies the operation-by-operation instructions.
+
 **2026-10-22 sourcing revision:** C6 now has 15 mm pitch and 1.1 mm drills; TP3 moved. Use the regenerated copper, legend and drill exports together. The existing `ctcss-board-cam.mkc` is preserved user work from the earlier geometry: reimport the revised files, rebuild toolpaths and verify registration/drill counts before machining. It is not validated for this revision.
 
 Use this directory as one consistent CAM set for the requested setup: **150 mm along machine X, 100 mm along machine Y**. Coordinates below are CNC XY, measured from the board's lower-left corner. SVGs show the same frame with their usual screen Y-down display.

@@ -1,0 +1,226 @@
+{
+  "revision": "P1",
+  "meshes": [
+    {
+      "name": "Base",
+      "file": "manufacturing/enclosure/supporting/stl/p1-base.stl",
+      "bed_face": "floor down",
+      "dimensions_mm": [
+        200.0,
+        195.0,
+        65.0
+      ],
+      "z_min_mm": 0.0,
+      "facets": 42266,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "690c6eceeff8da26839dd8a49da591b788ac6f57f593c5f7bb3d0cbf5f417b62",
+      "mesher": "OCC"
+    },
+    {
+      "name": "Cover",
+      "file": "manufacturing/enclosure/supporting/stl/p1-cover.stl",
+      "bed_face": "exterior top down",
+      "dimensions_mm": [
+        200.0,
+        195.0,
+        65.0
+      ],
+      "z_min_mm": 0.0,
+      "facets": 4232,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "4ebcb3572b66f9351b208dc9f0d89b923b29a091b547379f1d3fc0a91c8d3941",
+      "mesher": "OCC"
+    },
+    {
+      "name": "Fascia",
+      "file": "manufacturing/enclosure/supporting/stl/p1-fascia.stl",
+      "bed_face": "front face down",
+      "dimensions_mm": [
+        194.0,
+        62.0,
+        13.0
+      ],
+      "z_min_mm": 0.0,
+      "facets": 9838,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "5906ea5557af9851f067884d267ef67851553758149f9fc287bfaf89bc79681a",
+      "mesher": "OCC"
+    },
+    {
+      "name": "DisplayInsert",
+      "file": "manufacturing/enclosure/supporting/stl/p1-displayinsert.stl",
+      "bed_face": "front face down",
+      "dimensions_mm": [
+        155.0,
+        56.80000305175781,
+        11.800000190734863
+      ],
+      "z_min_mm": 0.0,
+      "facets": 140844,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "662cc8471f5eb2177c2b6429ab9f84f069000b2c6d0cc5614d2d9c46c1425952",
+      "mesher": "Netgen"
+    },
+    {
+      "name": "LedKeeper",
+      "file": "manufacturing/enclosure/supporting/stl/p1-ledkeeper.stl",
+      "bed_face": "rear bridge face down",
+      "dimensions_mm": [
+        44.0,
+        12.0,
+        7.699999809265137
+      ],
+      "z_min_mm": 0.0,
+      "facets": 2572,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "1ebdd46fb949222d769085c9ee9d97ca68849a63aba1a7bf5cd9b3b579227686",
+      "mesher": "OCC"
+    },
+    {
+      "name": "PcbWasher",
+      "file": "manufacturing/enclosure/supporting/stl/p1-pcbwasher.stl",
+      "bed_face": "floor down",
+      "dimensions_mm": [
+        7.798255920410156,
+        7.799129486083984,
+        1.0
+      ],
+      "z_min_mm": 0.0,
+      "facets": 840,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "3c8a6617b89bfffe35520b400a2c4cad9aac408fe43503106798b2c1342cd89e",
+      "mesher": "OCC"
+    },
+    {
+      "name": "WireKeeper",
+      "file": "manufacturing/enclosure/supporting/stl/p1-wirekeeper.stl",
+      "bed_face": "floor down",
+      "dimensions_mm": [
+        30.0,
+        8.0,
+        3.0
+      ],
+      "z_min_mm": 0.0,
+      "facets": 1292,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "a5d3e599a88c6e50bb7ff2af097619b25075c106653fa12fa55d82fcd2779e0a",
+      "mesher": "OCC"
+    },
+    {
+      "name": "EncoderKnob",
+      "file": "manufacturing/enclosure/supporting/stl/p1-encoderknob.stl",
+      "bed_face": "front face down",
+      "dimensions_mm": [
+        30.89971351623535,
+        30.899423599243164,
+        15.5
+      ],
+      "z_min_mm": 0.0,
+      "facets": 7094,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "ab77613207c2ec298c62ea0ce5c42e96720aa3ac18513ebfc853ca2187012074",
+      "mesher": "OCC"
+    },
+    {
+      "name": "KnobAccentRing",
+      "file": "manufacturing/enclosure/supporting/stl/p1-knobaccentring.stl",
+      "bed_face": "front face down",
+      "dimensions_mm": [
+        31.194904327392578,
+        31.17719078063965,
+        1.6000003814697266
+      ],
+      "z_min_mm": 0.0,
+      "facets": 836,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "feb2fa33cca7e9d96f90818f97f015ee85442d780a4d9c1a59d22cf51b777a84",
+      "mesher": "OCC"
+    },
+    {
+      "name": "MountCoupon",
+      "file": "manufacturing/enclosure/supporting/stl/p1-mountcoupon.stl",
+      "bed_face": "floor down",
+      "dimensions_mm": [
+        30.0,
+        22.0,
+        9.350000381469727
+      ],
+      "z_min_mm": 0.0,
+      "facets": 1848,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "4ea5d4ab53ec17c7b46b5dc98dada1d29aa831c9d4f315da130c502046d798a9",
+      "mesher": "OCC"
+    },
+    {
+      "name": "ControlCoupon",
+      "file": "manufacturing/enclosure/supporting/stl/p1-controlcoupon.stl",
+      "bed_face": "floor down",
+      "dimensions_mm": [
+        72.0,
+        30.0,
+        4.0
+      ],
+      "z_min_mm": 0.0,
+      "facets": 2976,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "92274a3fbd203d3d2906ff2e67f215cc06e57fcf36d2cbb5264420fbe88d2852",
+      "mesher": "OCC"
+    },
+    {
+      "name": "GxCoupon",
+      "file": "manufacturing/enclosure/supporting/stl/p1-gxcoupon.stl",
+      "bed_face": "floor down",
+      "dimensions_mm": [
+        34.0,
+        34.0,
+        7.0
+      ],
+      "z_min_mm": 0.0,
+      "facets": 892,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "3f203cea26631aa81d04b2857a2d3abe8fce9e489d97cd801b7163247639e24d",
+      "mesher": "OCC"
+    },
+    {
+      "name": "ShaftCoupon",
+      "file": "manufacturing/enclosure/supporting/stl/p1-shaftcoupon.stl",
+      "bed_face": "floor down",
+      "dimensions_mm": [
+        44.0,
+        20.0,
+        6.0
+      ],
+      "z_min_mm": 0.0,
+      "facets": 1716,
+      "closed": true,
+      "nonmanifold": false,
+      "self_intersections": false,
+      "sha256": "4c0ed67d4479b0d79abdd2edfd035223b2a04bf3d43c4b67e365fa89a127bdf8",
+      "mesher": "OCC"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000"><ns0:rect width="1400" height="1000" fill="white" /><ns0:style>text{font-family:Arial,sans-serif;fill:#172b3a} .part{fill:#edf2f5;stroke:#172b3a;stroke-width:2}.hole{fill:white;stroke:#172b3a;stroke-width:1.5}.dim{fill:none;stroke:#477187;stroke-width:1}.note{font-size:18px}.small{font-size:15px}</ns0:style>
+<ns0:text x="55" y="42" class="note">ICOM IC-229H CTCSS — P0.1 ENCLOSURE</ns0:text>
+<ns0:text x="55" y="70" class="note">Dimensions in mm | body 180 × 150 × 65 | 3 mm walls / floor / lid</ns0:text>
+<ns0:rect x="100.0" y="120.0" width="477.0" height="397.5" class="part" />
+<ns0:rect x="139.75" y="199.5" width="397.5" height="265.0" class="dim" stroke-dasharray="7 5" />
+<ns0:circle cx="155.65" cy="448.59999999999997" r="5.3" class="hole" />
+<ns0:circle cx="155.65" cy="215.39999999999998" r="5.3" class="hole" />
+<ns0:circle cx="521.3499999999999" cy="448.59999999999997" r="5.3" class="hole" />
+<ns0:circle cx="521.3499999999999" cy="215.39999999999998" r="5.3" class="hole" />
+<ns0:circle cx="121.2" cy="496.3" r="4.505" class="hole" />
+<ns0:circle cx="121.2" cy="141.2" r="4.505" class="hole" />
+<ns0:circle cx="555.8" cy="496.3" r="4.505" class="hole" />
+<ns0:circle cx="555.8" cy="141.2" r="4.505" class="hole" />
+<ns0:rect x="190.1" y="312.125" width="190.79999999999998" height="66.25" class="hole" />
+<ns0:circle cx="457.75" cy="345.25" r="9.54" class="hole" />
+<ns0:circle cx="457.75" cy="239.25" r="8.612499999999999" class="hole" />
+<ns0:circle cx="391.5" cy="279.0" r="6.89" class="hole" />
+<ns0:circle cx="391.5" cy="226.0" r="6.89" class="hole" />
+<ns0:text x="206.0" y="345.25" class="small">LCD 72 × 25</ns0:text>
+<ns0:text x="418.0" y="392.95" class="small">ENC Ø7.2</ns0:text>
+<ns0:text x="431.25" y="183.6" class="small">SW Ø6.5</ns0:text>
+<ns0:text x="365.0" y="167.7" class="small">LED Ø5.2</ns0:text>
+<ns0:path class="dim" d="M219.25,108.0 L219.25,134.0" />
+<ns0:path class="dim" d="M365.0,108.0 L365.0,134.0" />
+<ns0:path class="dim" d="M100.0,90.0 L577.0,90.0" />
+<ns0:path class="dim" d="M100.0,82.0 L100.0,120.0" />
+<ns0:path class="dim" d="M577.0,82.0 L577.0,120.0" />
+<ns0:text x="312.0" y="82.0" class="note">180</ns0:text>
+<ns0:path class="dim" d="M65.0,517.5 L65.0,120.0" />
+<ns0:text x="30" y="320" class="note">150</ns0:text>
+<ns0:text x="100" y="550" class="note">TOP / OPERATOR PANEL — front at bottom; dashed line is the PCB</ns0:text>
+<ns0:text x="660" y="140" class="note">Panel centers (X, Y)</ns0:text>
+<ns0:text x="660" y="175" class="note">LCD: (70, 65)</ns0:text>
+<ns0:text x="660" y="205" class="note">Encoder: (135, 65)</ns0:text>
+<ns0:text x="660" y="235" class="note">Bypass toggle: (135, 105)</ns0:text>
+<ns0:text x="660" y="265" class="note">PTT LED: (110, 90)</ns0:text>
+<ns0:text x="660" y="295" class="note">Bypass LED: (110, 110)</ns0:text>
+<ns0:text x="660" y="325" class="note">PCB holes: X21 / 159; Y26 / 114</ns0:text>
+<ns0:text x="660" y="355" class="note">Lid screws: X8 / 172; Y8 / 142</ns0:text>
+<ns0:text x="660" y="415" class="note">PCB mounted at Z9.35; top surface Z10.85</ns0:text>
+<ns0:text x="660" y="445" class="note">Lid underside Z62; exterior Z65</ns0:text>
+<ns0:rect x="100" y="640" width="477.0" height="172.25" class="part" />
+<ns0:circle cx="457.75" cy="682.4" r="21.465" class="hole" />
+<ns0:text x="420.75" y="788" class="small">MIC</ns0:text>
+<ns0:circle cx="312.0" cy="682.4" r="21.465" class="hole" />
+<ns0:text x="275.0" y="788" class="small">RADIO</ns0:text>
+<ns0:text x="100" y="846" class="note">REAR — GX16 centers X45 / X100, Z49; Ø16.2 + roof</ns0:text>
+<ns0:path class="dim" d="M312,616 L577,616" />
+<ns0:text x="330" y="608" class="note">RADIO: X100 from case X0</ns0:text>
+<ns0:text x="660" y="640" class="note">Cross-section / service stack</ns0:text>
+<ns0:text x="660" y="675" class="note">PCB underside: 6.35 above 3 mm floor</ns0:text>
+<ns0:text x="660" y="704" class="note">Trimmed lead tip to floor: 4.35</ns0:text>
+<ns0:text x="660" y="733" class="note">Carrier component allocation: Z10.85–35.85</ns0:text>
+<ns0:text x="660" y="762" class="note">LCD / control allocation starts at Z37</ns0:text>
+<ns0:text x="660" y="791" class="note">GX16 rear envelope: Z37–61, Y118–148</ns0:text>
+<ns0:text x="660" y="820" class="note">Minimum modeled stack separation: 1.15</ns0:text>
+<ns0:text x="660" y="849" class="note">Programming: pre-assembly or with lid removed</ns0:text>
+<ns0:text x="660" y="878" class="note">Closed front wall; socketed module removable</ns0:text>
+<ns0:text x="660" y="907" class="note">Lid removed for RV1 and module extraction</ns0:text>
+<ns0:text x="55" y="965" class="small">Board transform: case X = 165 − board Y; case Y = 20 + board X. Existing PCB geometry is preserved.</ns0:text>
+</ns0:svg>

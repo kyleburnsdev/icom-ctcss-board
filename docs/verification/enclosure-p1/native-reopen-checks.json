@@ -1,0 +1,224 @@
+{
+  "revision": "P1",
+  "document": "icom_ctcss_enclosure",
+  "label": "icom-ctcss-enclosure",
+  "object_count": 373,
+  "native_errors": [],
+  "unconstrained_sketches": [],
+  "bodies": [
+    {
+      "name": "Base",
+      "tip": "RadioLegend",
+      "features": [
+        "Floor",
+        "Walls",
+        "FrontPanelOpening",
+        "PcbSupports",
+        "HarnessSupports",
+        "PcbSupportRootFillets",
+        "PcbScrewHoles",
+        "HarnessScrewHoles",
+        "SupportNutSeats",
+        "SupportNutEntries",
+        "UndersideFastenerBores",
+        "UndersideHeadSeats",
+        "RadioNutCradle",
+        "RadioCradleGusset",
+        "RadioNutSeat",
+        "RadioBore",
+        "RadioBoreRoof",
+        "RearCoverScrewHoles",
+        "RadioLegend"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "Cover",
+      "tip": "RearTabNutSeats",
+      "features": [
+        "CoverSkin",
+        "LocatingRails",
+        "FrontAttachmentColumns",
+        "FrontColumnBores",
+        "FrontColumnNutSeats",
+        "FrontColumnNutEntries",
+        "RearAttachmentTabs",
+        "RearTabScrewHoles",
+        "RearTabNutSeats"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "Fascia",
+      "tip": "EncoderBodyGuides",
+      "features": [
+        "FasciaPanel",
+        "BottomAttachmentEars",
+        "BottomEarBores",
+        "BottomEarNutSeats",
+        "BottomEarNutEntries",
+        "MicrophoneNutCradle",
+        "MicrophoneNutSeat",
+        "MicrophoneBore",
+        "EncoderBore",
+        "ToggleBore",
+        "ControlMountingLands",
+        "LedLensBores",
+        "LedFlangeSeats",
+        "LedKeeperKey",
+        "LedKeeperScrewBore",
+        "LedKeeperNutSeat",
+        "LedKeeperNutEntry",
+        "DisplayMountingBores",
+        "DisplayMountingNutSeats",
+        "DisplayNutLoading",
+        "DisplayRecess",
+        "LegendSpineRecess",
+        "LedLegendRecess",
+        "PlLegendRecess",
+        "BypLegendRecess",
+        "MicrophoneLegend",
+        "EncoderBodyGuides"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "DisplayInsert",
+      "tip": "BypLegend",
+      "features": [
+        "DisplaySurround",
+        "LegendSpine",
+        "LedLegendWing",
+        "PlLegendWing",
+        "BypLegendWing",
+        "LcdWindow",
+        "MountingRamps",
+        "SurroundAttachmentEars",
+        "SurroundMountingBores",
+        "LcdSupportPosts",
+        "LcdScrewBores",
+        "LcdNutSeats",
+        "LcdNutLoading",
+        "CtcssLegend",
+        "PttLegend",
+        "BypassLedLegend",
+        "PlLegend",
+        "BypLegend"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "LedKeeper",
+      "tip": "KeyedKeeperRecess",
+      "features": [
+        "LedKeeperBridge",
+        "LedRetainingStems",
+        "LeadPassages",
+        "KeeperMountingBore",
+        "KeyedKeeperRecess"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "PcbWasher",
+      "tip": "WasherRing",
+      "features": [
+        "WasherRing"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "WireKeeper",
+      "tip": "HarnessBridgeBores",
+      "features": [
+        "HarnessBridge",
+        "HarnessBridgeBores"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "EncoderKnob",
+      "tip": "ClampNutSeat",
+      "features": [
+        "KnobCore",
+        "GripRibs",
+        "AccentGroove",
+        "ShaftCollar",
+        "ClampEars",
+        "ShaftSocket",
+        "ClampSplit",
+        "ClampBoltBore",
+        "ClampNutSeat"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "KnobAccentRing",
+      "tip": "RingExpansionGap",
+      "features": [
+        "AccentBand",
+        "RingExpansionGap"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "MountCoupon",
+      "tip": "CouponNutEntry",
+      "features": [
+        "MountCouponFloor",
+        "CouponPost",
+        "CouponScrewBore",
+        "CouponNutSeat",
+        "CouponNutEntry"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "ControlCoupon",
+      "tip": "CouponLedFlange",
+      "features": [
+        "ControlCouponPlate",
+        "CouponEncoderBore",
+        "CouponToggleBore",
+        "CouponLedBore",
+        "CouponControlLands",
+        "CouponLedFlange"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "GxCoupon",
+      "tip": "CouponGxBore",
+      "features": [
+        "GxCouponPlate",
+        "CouponGxNutSeat",
+        "CouponGxBore"
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "ShaftCoupon",
+      "tip": "ShaftGauge35",
+      "features": [
+        "ShaftCouponPlate",
+        "ShaftGauge9",
+        "ShaftGauge22",
+        "ShaftGauge35"
+      ],
+      "valid": true,
+      "solids": 1
+    }
+  ]
+}

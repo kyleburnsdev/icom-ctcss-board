@@ -1,0 +1,105 @@
+{
+  "revision": "P1",
+  "files": [
+    {
+      "path": "mechanical/enclosure/icom-ctcss-enclosure.FCStd",
+      "sha256": "339aed059be01f2ef1c352e0a26ae74c71d7efe64dc98ae5afe1fb0a83ea96c1",
+      "bytes": 4325951
+    },
+    {
+      "path": "manufacturing/enclosure/p1-enclosure.3mf",
+      "sha256": "7fe4afbeea63f3801e2d07b572ab36ef8347a51206f111d63f926a1a326e7480",
+      "bytes": 6577453
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/step/p1-enclosure-assembly.step",
+      "sha256": "7e28b97fdb3e2242dbd4d32e30d4a62b00409925d32ea6b40003c362aee59431",
+      "bytes": 2861281
+    },
+    {
+      "path": "tools/build-enclosure.py",
+      "sha256": "5c5c3cd492626ddf214eb62fb2117e3aa04e23c627cf2cc09127eb49a37151fe",
+      "bytes": 27821
+    },
+    {
+      "path": "tools/prepare-enclosure-plates.py",
+      "sha256": "d61cd519f8daa7e5696a9d222e709a82655f6d081d8fd09dc85385fa3f9c00f7",
+      "bytes": 11904
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-base.stl",
+      "sha256": "690c6eceeff8da26839dd8a49da591b788ac6f57f593c5f7bb3d0cbf5f417b62",
+      "bytes": 2113384
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-cover.stl",
+      "sha256": "4ebcb3572b66f9351b208dc9f0d89b923b29a091b547379f1d3fc0a91c8d3941",
+      "bytes": 211684
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-fascia.stl",
+      "sha256": "5906ea5557af9851f067884d267ef67851553758149f9fc287bfaf89bc79681a",
+      "bytes": 491984
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-displayinsert.stl",
+      "sha256": "662cc8471f5eb2177c2b6429ab9f84f069000b2c6d0cc5614d2d9c46c1425952",
+      "bytes": 7042284
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-ledkeeper.stl",
+      "sha256": "1ebdd46fb949222d769085c9ee9d97ca68849a63aba1a7bf5cd9b3b579227686",
+      "bytes": 128684
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-pcbwasher.stl",
+      "sha256": "3c8a6617b89bfffe35520b400a2c4cad9aac408fe43503106798b2c1342cd89e",
+      "bytes": 42084
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-wirekeeper.stl",
+      "sha256": "a5d3e599a88c6e50bb7ff2af097619b25075c106653fa12fa55d82fcd2779e0a",
+      "bytes": 64684
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-encoderknob.stl",
+      "sha256": "ab77613207c2ec298c62ea0ce5c42e96720aa3ac18513ebfc853ca2187012074",
+      "bytes": 354784
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-knobaccentring.stl",
+      "sha256": "feb2fa33cca7e9d96f90818f97f015ee85442d780a4d9c1a59d22cf51b777a84",
+      "bytes": 41884
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-mountcoupon.stl",
+      "sha256": "4ea5d4ab53ec17c7b46b5dc98dada1d29aa831c9d4f315da130c502046d798a9",
+      "bytes": 92484
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-controlcoupon.stl",
+      "sha256": "92274a3fbd203d3d2906ff2e67f215cc06e57fcf36d2cbb5264420fbe88d2852",
+      "bytes": 148884
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-gxcoupon.stl",
+      "sha256": "3f203cea26631aa81d04b2857a2d3abe8fce9e489d97cd801b7163247639e24d",
+      "bytes": 44684
+    },
+    {
+      "path": "manufacturing/enclosure/supporting/stl/p1-shaftcoupon.stl",
+      "sha256": "4c0ed67d4479b0d79abdd2edfd035223b2a04bf3d43c4b67e365fa89a127bdf8",
+      "bytes": 85884
+    }
+  ],
+  "checks": {
+    "closed_meshes": 13,
+    "installed_step_solids": 13,
+    "prepared_plates": 3,
+    "placed_instances": 19,
+    "slicer_warnings": 0,
+    "printed_part_interferences": 0,
+    "unconstrained_sketches": 0,
+    "local_links_valid": true
+  }
+}

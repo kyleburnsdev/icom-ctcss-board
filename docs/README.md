@@ -38,7 +38,7 @@ There are **15 fixed resistors and 6 capacitors** in the table. The compact resi
 
 ## Additional parts needed to complete the project
 
-These are outside the 38-instance schematic BOM. Socket, UI and harness selections are listed in the [sourcing review](implementation/component-sourcing-review.md). Radio adapters are already owned; enclosure integration remains open.
+These are outside the 38-instance schematic BOM. Socket, UI and harness selections are listed in the [sourcing review](implementation/component-sourcing-review.md). Radio adapters are already owned; the [P1 enclosure package](../manufacturing/enclosure/README.md) supplies the case and mechanical assembly.
 
 | Item | Quantity | Notes |
 | --- | ---: | --- |
@@ -70,6 +70,7 @@ Firmware still needs to implement the selectable tone table, waveform/PWM genera
 | Task | Instructions / artifact |
 | --- | --- |
 | Understand requirements and scope | [Board specification](requirements/board-specification.md) |
+| Plan the enclosure and external interfaces | [Enclosure requirements](requirements/enclosure-specification.md) |
 | Iterate on firmware behavior | [Firmware requirements baseline](requirements/firmware-specification.md); PCB pin assignments and electrical behavior are fixed constraints |
 | Inspect the circuit | [Schematic PDF](reference/schematic-complete.pdf) and [circuit notes](implementation/schematic-complete.md) |
 | Open the editable design | [KiCad project](../electronics/icom-ctcss-board.kicad_pro) |

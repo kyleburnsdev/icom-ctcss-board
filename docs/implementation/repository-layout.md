@@ -4,6 +4,12 @@ Editable KiCad sources, library tables and required libraries live together in `
 
 The PCB manufacturing package lives in `manufacturing/pcb/carvera-air/`. Original portrait exports and their manifest are in `native-exports/`. The transformed landscape package, its manifest and the Makera Studio project remain together in `landscape-y-flip/`. Native exports must not be mixed with the transformed imports. The package README describes machining orientation and process constraints.
 
+## Enclosure manufacturing output
+
+`manufacturing/enclosure/` presents the primary multi-plate `p1-enclosure.3mf` beside its `README.md`. Supporting STEP interchange files live in `supporting/step/`; individual part/coupon STL meshes live in `supporting/stl/`. The 3MF project is self-contained. Editable FreeCAD source remains in `mechanical/enclosure/`, and verification records remain in `docs/verification/enclosure-p1/`.
+
+The enclosure export tools preserve this hierarchy on regeneration. Relocation of the supporting assets preserved their bytes; verification-record paths and documentation links were updated without changing the recorded geometry or slice results.
+
 ## Relocation verification — 2026-10-21
 
 The KiCad project, schematic, PCB, library tables, libraries, CAM archive, geometry exports and existing manifests were relocated without changing their bytes. Documentation and maintained tool paths were updated separately. No new ERC, DRC or manufacturing acceptance is implied by this relocation.

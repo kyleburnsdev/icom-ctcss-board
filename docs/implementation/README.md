@@ -8,13 +8,15 @@ The editable schematic and routed PCB prototype are complete. This is a design h
 - [J5/J6 wiring table](assembly-and-bring-up.md#j5j6-cable-wiring): each switch/LED has its own signal/ground pair; no external return splice
 - [CNC geometry package and instructions](../../manufacturing/pcb/carvera-air/README.md)
 - [Makera Studio toolpaths and board fabrication](makera-studio-board-fabrication.md): numbered NC stages, combined tool changes, hole pockets, optional bottom mask and top laser legend
+- [P1 enclosure](enclosure-p1.md): editable FreeCAD assembly, print meshes, fit coupons and mechanical assembly
+- [FreeCAD Robust MCP setup](freecad-mcp-setup.md): local enclosure CAD tooling, Codex configuration, and connection verification
 - [150 × 100 mm landscape CAM set and Y-flip registration instructions](../../manufacturing/pcb/carvera-air/landscape-y-flip/README.md)
 - [Top legend SVG for laser preparation](../../manufacturing/pcb/carvera-air/native-exports/icom-ctcss-board-top-legend.svg), with F.SilkS Gerber in the same package
 - [Independent review](design-review.md), [layout evidence](pcb-layout.md), and [acceptance checklist](acceptance-checklist.md)
 
 Verification: ERC zero errors/warnings; final DRC zero errors and zero unconnected items; 61 exported-netlist assertions pass. Native PCB inventory confirms 242 B.Cu segments, no routing vias or pours, 100 × 150 mm outline and four 4 mm mounting holes. The final DRC retains 115 documented non-electrical warnings, including original footprint text overlaps. The independent aggregate review also flags LCD pull-up and bulk-capacitance assumptions requiring physical checks.
 
-The PCB uses enlarged CNC lands derived from the approved Biacco42 Pro Micro geometry. KiCad's normalized virtual top THT lands are excluded from the physical manufacturing package. Socket fit, USB cable/enclosure fit, actual drills/copper, a milling coupon, radio cable mapping, supply/thermal limits, PTT current and tone deviation remain outstanding. Firmware is outside this deliverable.
+The PCB uses enlarged CNC lands derived from the approved Biacco42 Pro Micro geometry. KiCad's normalized virtual top THT lands are excluded from the physical manufacturing package. Socket fit, actual drills/copper, a milling coupon, radio cable mapping, supply/thermal limits, PTT current and tone deviation remain outstanding. Firmware is outside this deliverable. Enclosure decisions and prototype acceptance are maintained in the [enclosure register](../requirements/enclosure-decision-register.md).
 
 Intermediate routing candidates, historical checkpoints and disposable fixtures are isolated in ignored `.agent-scratch/`. They are not required project deliverables. Reusable engineering tools live in `tools/`.
 

@@ -1,5 +1,15 @@
 # Single-sided CNC review package
 
+**Start here for step-by-step CAM:** [Makera Studio toolpath creation and fabrication guide](../../../docs/implementation/makera-studio-board-fabrication.md). It covers tool setup, copper clearing/isolation, hole pockets, perimeter tabs, combined NC export and the top laser legend.
+
+Follow the guide in order:
+
+1. [Replace the earlier project imports and check alignment](../../../docs/implementation/makera-studio-board-fabrication.md#open-the-project-and-check-alignment).
+2. [Set up tools and operation settings](../../../docs/implementation/makera-studio-board-fabrication.md#set-up-the-tools), then [prove them on a small test](../../../docs/implementation/makera-studio-board-fabrication.md#run-a-small-first-test).
+3. [Create the bottom toolpaths](../../../docs/implementation/makera-studio-board-fabrication.md#define-the-bottom-toolpaths): T2 contour isolation, 46 small holes, 65 larger holes, four registration holes and optional perimeter. Full-area copper clearing is an optional pocket operation, separate from the default isolation workflow.
+4. [Export the combined bottom NC file](../../../docs/implementation/makera-studio-board-fabrication.md#export-the-combined-nc-file), then [mount and machine](../../../docs/implementation/makera-studio-board-fabrication.md#mount-and-machine-the-bottom).
+5. [Flip and coat the top](../../../docs/implementation/makera-studio-board-fabrication.md#flip-and-coat-the-top), then [create and run the legend toolpath](../../../docs/implementation/makera-studio-board-fabrication.md#define-and-run-the-top-legend).
+
 **2026-10-22 sourcing revision:** C6 now has 15 mm pitch and 1.1 mm drills; TP3 moved. Use the regenerated copper, legend and drill exports together. The existing `ctcss-board-cam.mkc` is preserved user work from the earlier geometry: reimport the revised files, rebuild toolpaths and verify registration/drill counts before machining. It is not validated for this revision.
 
 **Control cleanup complete:** J5 is a two-pin BYPASS/GND connector; J6 retains four LED contacts. The OFF/A0 switch circuit and R16 are removed. These regenerated files, the BOM and the [wiring table](../../../docs/implementation/assembly-and-bring-up.md#j5j6-cable-wiring) describe the same revision. The unit remains powered with the radio.

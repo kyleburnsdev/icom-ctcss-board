@@ -1,0 +1,318 @@
+{
+  "revision": "P0.1",
+  "units": "mm",
+  "freecad_version": [
+    "1",
+    "1",
+    "1",
+    "20260414 (Git shallow)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "(HEAD detached at 0108fd4b4)",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "parameters": {
+    "Length": 180,
+    "Width": 150,
+    "Height": 65,
+    "Wall": 3,
+    "Floor": 3,
+    "Lid": 3,
+    "Stand": 6.35,
+    "PCBThickness": 1.5,
+    "Lip": 2,
+    "Fit": 0.3,
+    "GXHeight": 49,
+    "GXLeft": 45,
+    "GXRight": 100,
+    "GXBore": 16.2,
+    "GXNutAF": 20.5,
+    "GXLand": 2,
+    "GXRear": 30,
+    "GXPlug": 45,
+    "LCDX": 70,
+    "LCDY": 65,
+    "LCDWindowX": 72,
+    "LCDWindowY": 25,
+    "LCDHoleX": 75,
+    "LCDHoleY": 31,
+    "EncoderX": 135,
+    "EncoderY": 65,
+    "EncoderBore": 7.2,
+    "ToggleX": 135,
+    "ToggleY": 105,
+    "ToggleBore": 6.5,
+    "LEDX": 110,
+    "PTTY": 90,
+    "BypassY": 110,
+    "LEDBore": 5.2,
+    "LEDFlange": 7,
+    "NutAF": 5.7,
+    "NutDepth": 2.6,
+    "ScrewBore": 3.4,
+    "BossR": 6,
+    "BossInset": 8,
+    "CradleZ": 53,
+    "CradleT": 3,
+    "KeeperZ": 55.7,
+    "KeeperT": 2,
+    "LEDGap": 0.3
+  },
+  "parts": [
+    {
+      "name": "Base",
+      "role": "enclosure",
+      "file": "manufacturing/enclosure/supporting/stl/p0-base.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 219466.47259554855,
+      "mesh_closed": true,
+      "mesh_facets": 18290,
+      "mesher": "OCC, linear 0.05 mm / angular 0.12 rad",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        180.0,
+        150.0,
+        62.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "33231db9760271791b77eecc8203b3fd743ba81c0df49e4db012185fde9c25be"
+    },
+    {
+      "name": "Lid",
+      "role": "enclosure",
+      "file": "manufacturing/enclosure/supporting/stl/p0-lid.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 78331.8515485971,
+      "mesh_closed": true,
+      "mesh_facets": 114596,
+      "mesher": "Netgen, moderate, max 2 mm / min 0.05 mm",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        180.0,
+        150.0,
+        9.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "b7d3f4fdc7c8e312cf1cbecfccb005a6de96b425a19692f4e31a7aedfbf32730"
+    },
+    {
+      "name": "LCDCradle",
+      "role": "enclosure",
+      "file": "manufacturing/enclosure/supporting/stl/p0-lcdcradle.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 6713.562251445307,
+      "mesh_closed": true,
+      "mesh_facets": 4752,
+      "mesher": "OCC, linear 0.05 mm / angular 0.12 rad",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        104.0,
+        42.0,
+        3.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "88680dfe179029cd077170228073c4188494b0f65ad6491ce2a3caa12f87dca7"
+    },
+    {
+      "name": "LEDKeeper1",
+      "role": "enclosure",
+      "file": "manufacturing/enclosure/supporting/stl/p0-ledkeeper1.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 432.7918127334374,
+      "mesh_closed": true,
+      "mesh_facets": 1704,
+      "mesher": "OCC, linear 0.05 mm / angular 0.12 rad",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        26.0,
+        8.0,
+        6.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "8d31f3e432ab70cc434e9d7d323300b18a65e2fca55b95ceadc1bf91ac3a9e77"
+    },
+    {
+      "name": "LEDKeeper2",
+      "role": "enclosure",
+      "file": "manufacturing/enclosure/supporting/stl/p0-ledkeeper2.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 432.7918127334374,
+      "mesh_closed": true,
+      "mesh_facets": 1704,
+      "mesher": "OCC, linear 0.05 mm / angular 0.12 rad",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        26.0,
+        8.0,
+        6.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "8d31f3e432ab70cc434e9d7d323300b18a65e2fca55b95ceadc1bf91ac3a9e77"
+    },
+    {
+      "name": "GXCoupon",
+      "role": "coupon",
+      "file": "manufacturing/enclosure/supporting/stl/p0-gxcoupon.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 2882.4693329763263,
+      "mesh_closed": true,
+      "mesh_facets": 646,
+      "mesher": "OCC, linear 0.05 mm / angular 0.12 rad",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        36.0,
+        32.0,
+        7.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "482b3bed79a75214ed4cc634a73e48f8fc35ef329870e43aafbda825f6b93773"
+    },
+    {
+      "name": "LCDCoupon",
+      "role": "coupon",
+      "file": "manufacturing/enclosure/supporting/stl/p0-lcdcoupon.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 10656.48063855767,
+      "mesh_closed": true,
+      "mesh_facets": 9506,
+      "mesher": "Netgen, moderate, max 2 mm / min 0.05 mm",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        106.0,
+        46.0,
+        9.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "1989c9ca1e33eb5ba1488bca41e939ea1ce697eed731e447f05efe0cec32016e"
+    },
+    {
+      "name": "ControlCoupon",
+      "role": "coupon",
+      "file": "manufacturing/enclosure/supporting/stl/p0-controlcoupon.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 11346.38452620255,
+      "mesh_closed": true,
+      "mesh_facets": 2544,
+      "mesher": "OCC, linear 0.05 mm / angular 0.12 rad",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        90.0,
+        45.0,
+        3.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "a2cbfb99da0c248319eca78377f5d2cb087bbfd5501e5704f9eb4e165ada6321"
+    },
+    {
+      "name": "JointBaseCoupon",
+      "role": "coupon",
+      "file": "manufacturing/enclosure/supporting/stl/p0-jointbasecoupon.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 3637.08280632648,
+      "mesh_closed": true,
+      "mesh_facets": 1240,
+      "mesher": "OCC, linear 0.05 mm / angular 0.12 rad",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        20.0,
+        20.0,
+        18.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "b8771788d98eef602288f2641cf22f2e65860b2230ad6bc14ce79401244a5cdf"
+    },
+    {
+      "name": "JointLidCoupon",
+      "role": "coupon",
+      "file": "manufacturing/enclosure/supporting/stl/p0-jointlidcoupon.stl",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 1160.904137745191,
+      "mesh_closed": true,
+      "mesh_facets": 894,
+      "mesher": "OCC, linear 0.05 mm / angular 0.12 rad",
+      "mesh_non_manifold": false,
+      "mesh_self_intersections": false,
+      "print_dimensions_mm": [
+        20.0,
+        20.0,
+        5.0
+      ],
+      "print_z_min_mm": 0.0,
+      "fits_236mm_xy_with_5mm_brim": true,
+      "sha256": "b4497d397cc037ffa978c3491420378e390cdcc6aabdc5dddcb2ae9d0f2df5dc"
+    }
+  ],
+  "checks": {
+    "base_lid_common_mm3": 0.0,
+    "base_cradle_common_mm3": 0.0,
+    "lid_cradle_common_mm3": 0.0,
+    "board_to_base_common_mm3": 0.0,
+    "carrier_to_lcd_clearance_mm": 1.1499999999999986,
+    "carrier_to_gx_clearance_mm": [
+      1.1499999999999986,
+      1.1499999999999986
+    ],
+    "printed_part_intersections_mm3": {
+      "Base/Lid": 0.0,
+      "Base/LCDCradle": 0.0,
+      "Base/LEDKeeper1": 0.0,
+      "Base/LEDKeeper2": 0.0,
+      "Lid/LCDCradle": 0.0,
+      "Lid/LEDKeeper1": 0.0,
+      "Lid/LEDKeeper2": 0.0,
+      "LCDCradle/LEDKeeper1": 0.0,
+      "LCDCradle/LEDKeeper2": 0.0,
+      "LEDKeeper1/LEDKeeper2": 0.0
+    },
+    "saved_document_reopened": true,
+    "front_wall_closed_at_former_usb_center": true,
+    "reopened_document_errors": [],
+    "rear_labels_external_frame": {
+      "text_direction": [
+        -1,
+        0,
+        0
+      ],
+      "text_up": [
+        0,
+        0,
+        1
+      ],
+      "face_normal": [
+        0,
+        1,
+        0
+      ],
+      "visually_checked": "rear-labels.png"
+    }
+  },
+  "native_source_sha256": "fd933a14017701bfdaa5ecc642fcfc62b615c764135bc510efdde102a31df99b"
+}

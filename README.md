@@ -2,7 +2,7 @@
 
 A Pro Micro based interface that adds selectable CTCSS tones to an Icom IC-229H microphone audio path, with PTT forwarding, an encoder, LCD, bypass control and status LEDs.
 
-The schematic and routed PCB prototype are complete. Firmware, enclosure design, physical manufacturing and radio acceptance remain outstanding. Manufacturing files are preparation material; machine settings and the physical process still require coupon validation.
+The schematic and routed PCB prototype are complete. The first enclosure iteration is implemented in FreeCAD with print-oriented parts and fit coupons. Firmware, physical manufacturing and radio acceptance remain outstanding. Manufacturing files are preparation material; machine settings and the physical process still require coupon validation.
 
 | Area | Entry point |
 | --- | --- |
