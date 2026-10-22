@@ -8,3 +8,5 @@ Run these commands from the repository root. They are maintained project tools; 
 - `python tools/export-landscape-registration.py`: regenerates the landscape manufacturing geometry and manifest under `manufacturing/pcb/carvera-air/landscape-y-flip/`. Requires `gerbonara` and the existing manufacturing exports. This writes deliverables; run only when intentionally refreshing that package.
 
 Generated reports describe the source revision used to generate them. Regeneration requires appropriate review before treating outputs as accepted manufacturing evidence.
+
+The board inventory uses the selected maximum capacitor body envelopes and a conservative module/socket allowance. Refresh it before the landscape exporter, which uses its track/pad count to cross-check exported copper. The exporter preserves existing user `.mkc` projects; it does not rebuild their imports or toolpaths. Reimport revised geometry and validate CAM separately.

@@ -1,8 +1,8 @@
 {
   "source": "read-only KiCad pcbnew.LoadBoard after Konnect save",
-  "track_count": 241,
+  "track_count": 242,
   "track_layers": {
-    "B.Cu": 241
+    "B.Cu": 242
   },
   "widths_mm": [
     0.5,
@@ -41,9 +41,9 @@
   "native_top_pad_count": 111,
   "native_bottom_pad_count": 111,
   "track_lengths_mm": {
-    "+5V": 262.7812857115865,
+    "+5V": 261.2778857115865,
     "/BYPASS_D10": 50.521982864357504,
-    "GND": 523.4629806757545,
+    "GND": 524.9058806757544,
     "/TONE_WIPER": 11.902002442269268,
     "/DIVIDER": 20.071067811865476,
     "Net-(C3-Pad2)": 15.0,
@@ -123,7 +123,7 @@
     {
       "reference": "C4",
       "x": 74.0,
-      "y": 92.7,
+      "y": 92.2,
       "rotation": 0.0,
       "footprint": "C_Disc_P2.5_CNC"
     },
@@ -184,9 +184,16 @@
       "footprint": "MountingHole_4mm"
     },
     {
+      "reference": "C6",
+      "x": 67.0,
+      "y": 79.0,
+      "rotation": 0.0,
+      "footprint": "C_Film4u7_P15_CNC"
+    },
+    {
       "reference": "TP3",
       "x": 86.0,
-      "y": 83.0,
+      "y": 86.5,
       "rotation": 0.0,
       "footprint": "TP_CNC"
     },
@@ -242,7 +249,7 @@
     {
       "reference": "C5",
       "x": 84.0,
-      "y": 92.7,
+      "y": 92.2,
       "rotation": 0.0,
       "footprint": "C_Disc_P2.5_CNC"
     },
@@ -294,13 +301,6 @@
       "y": 151.0,
       "rotation": -90.0,
       "footprint": "C_Disc_P2.5_CNC"
-    },
-    {
-      "reference": "C6",
-      "x": 67.0,
-      "y": 79.0,
-      "rotation": 0.0,
-      "footprint": "C_Film4u7_P5_CNC"
     },
     {
       "reference": "R6",
@@ -388,10 +388,10 @@
     {
       "reference": "C3",
       "bounds": [
-        115.5,
-        162.9,
-        120.5,
-        170.1
+        115.45,
+        162.75,
+        120.55,
+        170.25
       ]
     },
     {
@@ -424,19 +424,19 @@
     {
       "reference": "C1",
       "bounds": [
-        129.0,
-        150.75,
-        131.0,
-        153.75
+        128.7,
+        150.25,
+        131.3,
+        154.25
       ]
     },
     {
       "reference": "C4",
       "bounds": [
-        73.75,
-        91.7,
-        76.75,
-        93.7
+        73.25,
+        90.9,
+        77.25,
+        93.5
       ]
     },
     {
@@ -503,12 +503,21 @@
       ]
     },
     {
+      "reference": "C6",
+      "bounds": [
+        65.5,
+        75.5,
+        83.5,
+        82.5
+      ]
+    },
+    {
       "reference": "TP3",
       "bounds": [
         84.5,
-        81.5,
+        85.0,
         87.5,
-        84.5
+        88.0
       ]
     },
     {
@@ -559,10 +568,10 @@
     {
       "reference": "C5",
       "bounds": [
-        83.75,
-        91.7,
-        86.75,
-        93.7
+        83.25,
+        90.9,
+        87.25,
+        93.5
       ]
     },
     {
@@ -613,19 +622,10 @@
     {
       "reference": "C2",
       "bounds": [
-        114.0,
-        150.75,
-        116.0,
-        153.75
-      ]
-    },
-    {
-      "reference": "C6",
-      "bounds": [
-        65.9,
-        73.5,
-        73.1,
-        84.5
+        113.7,
+        150.25,
+        116.3,
+        154.25
       ]
     },
     {
@@ -723,14 +723,21 @@
         "U1",
         "C4"
       ],
-      "gap_mm": 2.18
+      "gap_mm": 2.38
     },
     {
       "references": [
         "C5",
         "U1"
       ],
-      "gap_mm": 2.18
+      "gap_mm": 2.38
+    },
+    {
+      "references": [
+        "TP3",
+        "C6"
+      ],
+      "gap_mm": 2.6926
     },
     {
       "references": [
@@ -748,6 +755,13 @@
     },
     {
       "references": [
+        "C5",
+        "TP3"
+      ],
+      "gap_mm": 2.9
+    },
+    {
+      "references": [
         "J1",
         "R11"
       ],
@@ -755,10 +769,17 @@
     },
     {
       "references": [
+        "C2",
+        "TP5"
+      ],
+      "gap_mm": 3.2
+    },
+    {
+      "references": [
         "C3",
         "RV1"
       ],
-      "gap_mm": 3.275
+      "gap_mm": 3.225
     },
     {
       "references": [
@@ -769,33 +790,12 @@
     },
     {
       "references": [
-        "C2",
-        "TP5"
-      ],
-      "gap_mm": 3.5
-    },
-    {
-      "references": [
         "TP2",
         "U1"
       ],
       "gap_mm": 3.8016
-    },
-    {
-      "references": [
-        "R4",
-        "RV1"
-      ],
-      "gap_mm": 3.803
-    },
-    {
-      "references": [
-        "R8",
-        "R4"
-      ],
-      "gap_mm": 4.0503
     }
   ],
   "body_gaps_below_2mm": [],
-  "body_assumptions": "Nominal selected bodies; 37x18.24 module/socket envelope including 3mm-wide socket strips. Actual socket and USB cable fit still require dry fit."
+  "body_assumptions": "Selected maximum capacitor bodies and nominal other bodies; 37x18.24 module/socket envelope including 3mm-wide socket strips. Actual socket and USB cable fit still require dry fit."
 }

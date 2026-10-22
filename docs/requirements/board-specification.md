@@ -8,6 +8,14 @@ This document defines the board requirements. Remaining design decisions and val
 
 **Control revision:** OFF has been removed altogether; there is no OFFSET feature. The interface stays powered with the radio, and bypass disables tone while retaining PTT forwarding. J5 is BYPASS/GND only, R16 is removed, and U1 A0 is intentionally unused. The PCB, BOM and manufacturing files reflect this cleanup. See the [firmware baseline](firmware-specification.md).
 
+## Component procurement requirement
+
+Every required purchased component must be readily purchasable in project quantities from **Amazon, Mouser, or DigiKey**. If none of those suppliers can supply a component, treat the design as **unmanufacturable** until a suitable replacement is incorporated and verified. A catalog entry, unavailable listing, factory lead time, broker listing, or stock at another distributor does not establish compliance.
+
+Record the exact manufacturer/part number (or exact module listing), approved supplier purchase link, date checked, order quantity/minimum, and availability evidence. Verify electrical ratings, lead order, lead spacing, body envelope, drill fit and assembly access against the actual purchasable variant before approving it. Generic values alone are insufficient. Include module sockets and required off-board UI and cable parts in procurement acceptance.
+
+Current sourcing findings and unresolved selections are recorded in the [component sourcing review](../implementation/component-sourcing-review.md). Earlier ERC/DRC results establish CAD properties only; they do not establish purchasability or validate subsequent substitutions.
+
 ## Mechanical and fabrication requirements
 
 - Fabrication target: **CNC isolation milling on 1.5 mm single-sided copper-clad stock**. This is the user's first board; prioritize generous isolation gaps, robust pads, accessible drilling, and forgiving assembly over compactness. Cutter geometry, available drill sizes, copper weight, and milling tolerances must be recorded before toolpath/fabrication acceptance.
@@ -111,7 +119,7 @@ Required signal order:
 | R4 | **1 kΩ**, divider lower resistor |
 | R5 | **100 kΩ**, tone isolation/mixing resistor |
 | RV1 | 10 kΩ Bourns 3296W-1-103LF; CW end to DIVIDER, CCW end to GND, wiper to C3 |
-| C3 / C_TONE | 1 µF nonpolar WIMA MKS2C041001F00KSSD, 63 V, 5 mm pitch |
+| C3 / C_TONE | 1 µF nonpolar KEMET R82DC4100AA60J, 63 V, 5 mm pitch |
 
 R1/R2 use 3.3 kΩ to limit attenuation at 151.4 Hz. Each isolated 3.3 kΩ / 100 nF section has a nominal corner near **482 Hz**. The two passive sections, divider, trimmer, and radio load interact; this figure is not the complete chain's cutoff.
 

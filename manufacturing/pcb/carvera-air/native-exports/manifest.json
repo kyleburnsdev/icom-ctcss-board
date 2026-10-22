@@ -1,9 +1,9 @@
 {
-  "revision": "2026-10-20 bypass-only cleanup",
+  "revision": "2026-10-22 approved-source component substitutions",
   "source_sha256": {
-    "icom-ctcss-board.kicad_pcb": "7bc1982c61baa56c9d5514210c02303dfe36df6923086a41e4dca744cfd3032f",
-    "icom-ctcss-board.kicad_sch": "e0d3fb66abeb9626bdfd4acf32ddd3755307e3890e18179d49e4bdd582a163c0",
-    "icom-ctcss-board.kicad_pro": "e1145de79179aa94216ae802e63e79f80d9a8e03e82948c4306afcd0066d83de"
+    "icom-ctcss-board.kicad_pcb": "5353a1ab79438466237beaa4acd8da4c75964fbfc7b1ee9f8587dbc0e43fc585",
+    "icom-ctcss-board.kicad_pro": "e1145de79179aa94216ae802e63e79f80d9a8e03e82948c4306afcd0066d83de",
+    "icom-ctcss-board.kicad_sch": "2b4d0f6b251cbe1a2bee54bc0166810619f8169cb23300a76d3e1122eb8bed77"
   },
   "equipment": "Makera Carvera Air PCB kit and laser; 1.5 mm single-sided blank; copper bottom only",
   "checks": {
@@ -11,52 +11,53 @@
     "ERC_warnings": 0,
     "DRC_errors": 0,
     "unconnected_items": 0,
-    "DRC_warnings": 114,
+    "DRC_warnings": 115,
     "netlist_assertions": 61,
     "functional_components": 38,
-    "BCu_track_segments": 241,
+    "BCu_track_segments": 242,
     "routing_vias": 0,
     "zones": 0,
     "electrical_holes": 111,
     "drill_diameters_mm": {
-      "0.9": 48,
-      "1.1": 63,
+      "0.9": 46,
+      "1.1": 65,
       "4.0": 4
     },
     "mounting_holes": 4,
-    "copper_objects": 352,
-    "legend_objects": 6966,
+    "copper_objects": 353,
+    "legend_objects": 6961,
     "legend_policy": "exclude native footprint reference/value fields; retain board-level labels and artwork",
     "registration": "four mounting holes retained; landscape transformation verified in landscape-y-flip/manifest.json",
     "visual_review": "schematic, assembly, copper and clean Gerber legend inspected"
   },
   "files": {
     "icom-ctcss-board-B_Cu.gbl": {
-      "sha256": "61d5483d6fdea6ecb793f0f2b3470c23d886fca0bf4536c6f0dd49bb7db27794",
-      "bytes": 21290
-    },
-    "icom-ctcss-board-F_Silkscreen.gto": {
-      "sha256": "995d29d36fee69ecda5f7244f9e802e4887fe323b79314bfc1a8cf86580e8f0a",
-      "bytes": 369375
+      "sha256": "398ce4c64b7c443a537ec38b1cc672f1b4d42a6052f5ac94573d2298b2ba3ff7",
+      "bytes": 21340
     },
     "icom-ctcss-board-Edge_Cuts.gm1": {
-      "sha256": "29cfd441cc3f57bab9cc3b324dd1b447b285e110826f064fee033912a9222723",
+      "sha256": "ad66ee52c36294090617df11e8daefc3b452e74fb8454e79aa6cd213a1a807a2",
       "bytes": 717
     },
-    "icom-ctcss-board-PTH.drl": {
-      "sha256": "c140d267435bc6f65345f954b6890490c8ec3ba62a64b2b5fe7ec78659c88e01",
-      "bytes": 2063
+    "icom-ctcss-board-F_Silkscreen.gto": {
+      "sha256": "de52b2e92980cadbcc766cc52955ca863fa584afc345707aa2c1fb51e0eb6932",
+      "bytes": 368533
     },
     "icom-ctcss-board-NPTH.drl": {
-      "sha256": "9de3d0df319c7a43272cac94961dbfebd8cce5ae2f918edb4e61ce2d3a9f0b5a",
+      "sha256": "d15bcce6989660f497c902d5249b9c79894a43aad4081d1d864d7fc7ddea142e",
       "bytes": 399
     },
+    "icom-ctcss-board-PTH.drl": {
+      "sha256": "76f81c783fc2c28658d3b961fd4d401e434a61e01f11b20f68fea568454f2a7c",
+      "bytes": 2063
+    },
     "icom-ctcss-board-top-legend.svg": {
-      "sha256": "fbf2588fb1776157f85be57d7a69f7f07d8ffd3a36e4e92366f24744cd30827c",
-      "bytes": 280073
+      "sha256": "e37b6563ae59e50fb682f3e3fa4ad1e8d88ad1c34b2288fca9b236eadb0fb430",
+      "bytes": 277981
     }
   },
-  "landscape_manifest_sha256": "95b664f2f6061c011d3cad331cc5aedcda3475d75fe469ad4f39e220cf132ede",
+  "landscape_manifest_sha256": "6ebfc3236c14300c4ef95b551a5662a50d55fb7c9be57049a20f5dce1e58b9b3",
   "manufacturing_preflight": "Generic fab-house preflight is not applicable to this user-defined CNC process; direct KiCad DRC, native inventory and Gerber/drill checks supply geometry evidence. Machine/tool/coupon and radio acceptance remain open.",
-  "verdict": "Geometry refresh complete; manufacturing acceptance INCOMPLETE pending documented machine/coupon and bench checks. No G-code supplied."
+  "verdict": "Carrier-board sourcing and geometry refresh complete. Adapters already owned. CAM rebuild, mechanical integration, physical/coupon/radio acceptance and firmware incomplete.",
+  "cam_project_status": "Existing ctcss-board-cam.mkc preserved; earlier geometry, must reimport and rebuild toolpaths."
 }

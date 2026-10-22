@@ -6,9 +6,9 @@ The saved project schematic contains **38 annotated components**, all assigned t
 
 Tone frequency is user-selectable in the future encoder/LCD firmware. The 151.4 Hz requirement is a supported-tone check, not a fixed-frequency hardware setting. The RC chain has a broad response; see the [frequency examples](tone-response.md#selectable-tone-frequencies). No component or firmware implementation locks this design to 151.4 Hz.
 
-J1/J2 are microphone/radio adapters, with direct pins1/2/3/4/8 pass-through and common ground6/7. Pin5 is intercepted: J1 drives D7 through1k R8, with10k R9 pull-up. D8 drives factory-formed onsemi2N3904RLRAG through4.7k R10, with100k R11 base pull-down; collector drives radio PTT and emitter goes toGND. Radio PTT is released on reset/high-impedance drive.
+J1/J2 are microphone/radio adapters, with direct pins1/2/3/4/8 pass-through and common ground6/7. Pin5 is intercepted: J1 drives D7 through1k R8, with10k R9 pull-up. D8 drives factory-formed onsemi2N3904TAR through4.7k R10, with100k R11 base pull-down; collector drives radio PTT and emitter goes toGND. Radio PTT is released on reset/high-impedance drive.
 
-D9 drives the specified3.3k/100nF two-stage filter,10k/1k divider and10k Bourns3296W-1-103LF level control. RV1 pin3(CW) is DIVIDER, pin1(CCW) GND and pin2 wiper drives1uF C3, then100k R5 to the direct microphone audio path. Clockwise increases tone; start fully CCW. C3 is nonpolar WIMA MKS2C041001F00KSSD. C4/C5 provide100nF RAW/VCC decoupling; C6 is nonpolar4.7uF/63V WIMA MKS2C044701O00KSSD bulk capacitance.
+D9 drives the specified3.3k/100nF two-stage filter,10k/1k divider and10k Bourns3296W-1-103LF level control. RV1 pin3(CW) is DIVIDER, pin1(CCW) GND and pin2 wiper drives1uF C3, then100k R5 to the direct microphone audio path. Clockwise increases tone; start fully CCW. C3 is nonpolar KEMET R82DC4100AA60J. C4/C5 provide100nF RAW/VCC decoupling; C6 is nonpolar4.7uF/63V TDK B32522C0475J000 bulk capacitance.
 
 UI headers follow the specification's cable order. R12–R15 provide10k encoder/toggle input pull-ups;330Ω R6/R7 source current to off-board LEDs. SDA=D2 and SCL=D3. LCD backpack pull-ups must be present and checked; none are duplicated on this board. Eight labeled THT test points expose ground, supplies, PWM, filtered tone, injection, PTT sense and radio PTT.
 

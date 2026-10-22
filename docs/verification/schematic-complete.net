@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "electronics/icom-ctcss-board.kicad_sch")
-		(date "2026-10-20T15:58:39")
+		(source "C:\\src\\personal-repos\\icom-ctcss-board\\electronics\\icom-ctcss-board.kicad_sch")
+		(date "2026-10-22T05:43:17")
 		(tool "Eeschema 10.0.0")
 		(sheet
 			(number "1")
@@ -58,13 +58,27 @@
 			(ref "C1")
 			(value "100nF")
 			(footprint "CTCSS_THT:C_Disc_P2.5_CNC")
+			(datasheet "https://www.vishay.com/docs/45171/kseries.pdf")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Assembly") "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "K104K15X7RF5TL2")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC1084CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:C_Disc_P2.5_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/45171/kseries.pdf")
 				(field
 					(name "Description") "Unpolarized capacitor")
 			)
@@ -72,6 +86,34 @@
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Assembly")
+				(value "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "K104K15X7RF5TL2")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC1084CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -112,13 +154,27 @@
 			(ref "C2")
 			(value "100nF")
 			(footprint "CTCSS_THT:C_Disc_P2.5_CNC")
+			(datasheet "https://www.vishay.com/docs/45171/kseries.pdf")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Assembly") "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "K104K15X7RF5TL2")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC1084CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:C_Disc_P2.5_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/45171/kseries.pdf")
 				(field
 					(name "Description") "Unpolarized capacitor")
 			)
@@ -126,6 +182,34 @@
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Assembly")
+				(value "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "K104K15X7RF5TL2")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC1084CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -166,19 +250,27 @@
 			(ref "C3")
 			(value "1uF 63V FILM")
 			(footprint "CTCSS_THT:C_Film1u_P5_CNC")
+			(datasheet "https://search.kemet.com/component-documentation/download/specsheet/R82DC4100AA60J")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Assembly") "Nonpolar; 5mm pitch; body 7.2x5x10mm")
+					(name "Assembly") "Nonpolar 1uF 63V 5%; 5mm pitch; maximum body 7.5x5.1x10.1mm")
 				(field
-					(name "MPN") "MKS2C041001F00KSSD")
+					(name "MPN") "R82DC4100AA60J")
 				(field
-					(name "Manufacturer") "WIMA")
+					(name "Manufacturer") "KEMET")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/kemet/R82DC4100AA60J/2571295")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "399-5860-ND")
 				(field
 					(name "Footprint") "CTCSS_THT:C_Film1u_P5_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://search.kemet.com/component-documentation/download/specsheet/R82DC4100AA60J")
 				(field
 					(name "Description") "Unpolarized capacitor")
 			)
@@ -189,15 +281,31 @@
 			)
 			(property
 				(name "Assembly")
-				(value "Nonpolar; 5mm pitch; body 7.2x5x10mm")
+				(value "Nonpolar 1uF 63V 5%; 5mm pitch; maximum body 7.5x5.1x10.1mm")
 			)
 			(property
 				(name "MPN")
-				(value "MKS2C041001F00KSSD")
+				(value "R82DC4100AA60J")
 			)
 			(property
 				(name "Manufacturer")
-				(value "WIMA")
+				(value "KEMET")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/kemet/R82DC4100AA60J/2571295")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "399-5860-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -238,13 +346,27 @@
 			(ref "C4")
 			(value "100nF")
 			(footprint "CTCSS_THT:C_Disc_P2.5_CNC")
+			(datasheet "https://www.vishay.com/docs/45171/kseries.pdf")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Assembly") "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "K104K15X7RF5TL2")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC1084CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:C_Disc_P2.5_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/45171/kseries.pdf")
 				(field
 					(name "Description") "Unpolarized capacitor")
 			)
@@ -252,6 +374,34 @@
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Assembly")
+				(value "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "K104K15X7RF5TL2")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC1084CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -292,13 +442,27 @@
 			(ref "C5")
 			(value "100nF")
 			(footprint "CTCSS_THT:C_Disc_P2.5_CNC")
+			(datasheet "https://www.vishay.com/docs/45171/kseries.pdf")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Assembly") "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "K104K15X7RF5TL2")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC1084CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:C_Disc_P2.5_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/45171/kseries.pdf")
 				(field
 					(name "Description") "Unpolarized capacitor")
 			)
@@ -306,6 +470,34 @@
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Assembly")
+				(value "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "K104K15X7RF5TL2")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC1084CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -345,20 +537,28 @@
 		(comp
 			(ref "C6")
 			(value "4.7uF 63V FILM")
-			(footprint "CTCSS_THT:C_Film4u7_P5_CNC")
+			(footprint "CTCSS_THT:C_Film4u7_P15_CNC")
+			(datasheet "https://product.tdk.com/en/search/capacitor/film/rfi_general/info?part_no=B32522C0475J000")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Assembly") "Nonpolar; 5mm pitch; body 7.2x11x18mm")
+					(name "Assembly") "Nonpolar 4.7uF 63V 5%; 15mm pitch; maximum body 18x7x12.5mm")
 				(field
-					(name "MPN") "MKS2C044701O00KSSD")
+					(name "MPN") "B32522C0475J000")
 				(field
-					(name "Manufacturer") "WIMA")
+					(name "Manufacturer") "TDK")
 				(field
-					(name "Footprint") "CTCSS_THT:C_Film4u7_P5_CNC")
+					(name "Availability checked") "2026-10-22")
 				(field
-					(name "Datasheet")
-				)
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/tdk-electronics-inc/B32522C0475J000/592709")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "495-1131-ND")
+				(field
+					(name "Footprint") "CTCSS_THT:C_Film4u7_P15_CNC")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/search/capacitor/film/rfi_general/info?part_no=B32522C0475J000")
 				(field
 					(name "Description") "Unpolarized capacitor")
 			)
@@ -369,15 +569,31 @@
 			)
 			(property
 				(name "Assembly")
-				(value "Nonpolar; 5mm pitch; body 7.2x11x18mm")
+				(value "Nonpolar 4.7uF 63V 5%; 15mm pitch; maximum body 18x7x12.5mm")
 			)
 			(property
 				(name "MPN")
-				(value "MKS2C044701O00KSSD")
+				(value "B32522C0475J000")
 			)
 			(property
 				(name "Manufacturer")
-				(value "WIMA")
+				(value "TDK")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/tdk-electronics-inc/B32522C0475J000/592709")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "495-1131-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -418,13 +634,27 @@
 			(ref "J1")
 			(value "J_MIC_IN")
 			(footprint "CTCSS_THT:Header_1x08_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300811121.pdf")
 			(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
+					(name "Assembly") "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300811121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5321-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:Header_1x08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300811121.pdf")
 				(field
 					(name "Description") "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
@@ -432,6 +662,34 @@
 				(lib "Connector_Generic")
 				(part "Conn_01x08")
 				(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Assembly")
+				(value "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300811121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5321-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -490,13 +748,27 @@
 			(ref "J2")
 			(value "J_RADIO_OUT")
 			(footprint "CTCSS_THT:Header_1x08_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300811121.pdf")
 			(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
+					(name "Assembly") "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300811121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5321-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:Header_1x08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300811121.pdf")
 				(field
 					(name "Description") "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
@@ -504,6 +776,34 @@
 				(lib "Connector_Generic")
 				(part "Conn_01x08")
 				(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Assembly")
+				(value "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300811121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5321-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -562,13 +862,27 @@
 			(ref "J3")
 			(value "J_UI_ENCODER")
 			(footprint "CTCSS_THT:Header_1x05_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300511121.pdf")
 			(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
+					(name "Assembly") "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300511121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300511121/4846831")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5319-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:Header_1x05_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300511121.pdf")
 				(field
 					(name "Description") "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
@@ -576,6 +890,34 @@
 				(lib "Connector_Generic")
 				(part "Conn_01x05")
 				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Assembly")
+				(value "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300511121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300511121/4846831")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5319-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -625,13 +967,27 @@
 			(ref "J4")
 			(value "J_UI_LCD")
 			(footprint "CTCSS_THT:Header_1x04_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300411121.pdf")
 			(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
+					(name "Assembly") "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300411121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300411121/4846827")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5317-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:Header_1x04_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300411121.pdf")
 				(field
 					(name "Description") "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
@@ -639,6 +995,34 @@
 				(lib "Connector_Generic")
 				(part "Conn_01x04")
 				(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Assembly")
+				(value "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300411121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300411121/4846827")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5317-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -685,13 +1069,27 @@
 			(ref "J5")
 			(value "J_BYPASS")
 			(footprint "CTCSS_THT:Header_1x02_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300211121.pdf")
 			(description "Two-pin bypass toggle connector: pin 1 BYPASS_D10, pin 2 GND")
 			(fields
 				(field
+					(name "Assembly") "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300211121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300211121/4846823")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5315-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:Header_1x02_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300211121.pdf")
 				(field
 					(name "Description") "Two-pin bypass toggle connector: pin 1 BYPASS_D10, pin 2 GND")
 			)
@@ -699,6 +1097,34 @@
 				(lib "Connector_Generic")
 				(part "Conn_01x02")
 				(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Assembly")
+				(value "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300211121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300211121/4846823")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5315-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -739,13 +1165,27 @@
 			(ref "J6")
 			(value "J_UI_LEDS")
 			(footprint "CTCSS_THT:Header_1x04_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300411121.pdf")
 			(description "Generic single-row 1x04 connector; individual signal/ground pairs")
 			(fields
 				(field
+					(name "Assembly") "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300411121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300411121/4846827")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5317-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:Header_1x04_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300411121.pdf")
 				(field
 					(name "Description") "Generic single-row 1x04 connector; individual signal/ground pairs")
 			)
@@ -753,6 +1193,34 @@
 				(lib "Connector_Generic")
 				(part "Conn_01x04")
 				(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Assembly")
+				(value "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300411121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300411121/4846827")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5317-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -797,21 +1265,29 @@
 		)
 		(comp
 			(ref "Q1")
-			(value "2N3904RLRAG")
+			(value "2N3904TAR")
 			(footprint "CTCSS_THT:Q_TO92_Formed_CNC")
-			(datasheet "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF")
+			(datasheet "https://www.onsemi.com/pdf/datasheet/2n3904-d.pdf")
 			(description "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92")
 			(fields
 				(field
-					(name "Assembly") "Factory-formed 2.54mm pitch ONLY; flat face per drawing")
+					(name "Assembly") "Factory-formed CASE135AR; 2.54mm nominal pitch; 1 E, 2 B, 3 C; flat face per drawing")
 				(field
-					(name "MPN") "2N3904RLRAG")
+					(name "MPN") "2N3904TAR")
 				(field
 					(name "Manufacturer") "onsemi")
 				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/onsemi/2N3904TAR/4213831")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "2N3904TARCT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:Q_TO92_Formed_CNC")
 				(field
-					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF")
+					(name "Datasheet") "https://www.onsemi.com/pdf/datasheet/2n3904-d.pdf")
 				(field
 					(name "Description") "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92")
 			)
@@ -822,15 +1298,31 @@
 			)
 			(property
 				(name "Assembly")
-				(value "Factory-formed 2.54mm pitch ONLY; flat face per drawing")
+				(value "Factory-formed CASE135AR; 2.54mm nominal pitch; 1 E, 2 B, 3 C; flat face per drawing")
 			)
 			(property
 				(name "MPN")
-				(value "2N3904RLRAG")
+				(value "2N3904TAR")
 			)
 			(property
 				(name "Manufacturer")
 				(value "onsemi")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/onsemi/2N3904TAR/4213831")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "2N3904TARCT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -874,13 +1366,27 @@
 			(ref "R1")
 			(value "3.3k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C3301FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3301FCT00/7351364")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3934CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -888,6 +1394,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C3301FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3301FCT00/7351364")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3934CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -928,13 +1462,27 @@
 			(ref "R2")
 			(value "3.3k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C3301FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3301FCT00/7351364")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3934CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -942,6 +1490,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C3301FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3301FCT00/7351364")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3934CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -982,13 +1558,27 @@
 			(ref "R3")
 			(value "10k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1002FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3918CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -996,6 +1586,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1002FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3918CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1036,13 +1654,27 @@
 			(ref "R4")
 			(value "1k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1001FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1001FCT00/5063732")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3915CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1050,6 +1682,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1001FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1001FCT00/5063732")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3915CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1090,13 +1750,27 @@
 			(ref "R5")
 			(value "100k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1003FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1003FCT00/7351351")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3921CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1104,6 +1778,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1003FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1003FCT00/7351351")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3921CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1144,13 +1846,27 @@
 			(ref "R6")
 			(value "330")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C3300FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3300FCT00/7351363")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3933CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1158,6 +1874,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C3300FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3300FCT00/7351363")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3933CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1198,13 +1942,27 @@
 			(ref "R7")
 			(value "330")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C3300FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3300FCT00/7351363")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3933CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1212,6 +1970,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C3300FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3300FCT00/7351363")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3933CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1252,13 +2038,27 @@
 			(ref "R8")
 			(value "1k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1001FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1001FCT00/5063732")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3915CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1266,6 +2066,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1001FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1001FCT00/5063732")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3915CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1306,13 +2134,27 @@
 			(ref "R9")
 			(value "10k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1002FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3918CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1320,6 +2162,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1002FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3918CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1360,13 +2230,27 @@
 			(ref "R10")
 			(value "4.7k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C4701FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C4701FCT00/5063896")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3940CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1374,6 +2258,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C4701FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C4701FCT00/5063896")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3940CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1414,13 +2326,27 @@
 			(ref "R11")
 			(value "100k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1003FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1003FCT00/7351351")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3921CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1428,6 +2354,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1003FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1003FCT00/7351351")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3921CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1468,13 +2422,27 @@
 			(ref "R12")
 			(value "10k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1002FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3918CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1482,6 +2450,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1002FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3918CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1522,13 +2518,27 @@
 			(ref "R13")
 			(value "10k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1002FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3918CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1536,6 +2546,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1002FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3918CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1576,13 +2614,27 @@
 			(ref "R14")
 			(value "10k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1002FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3918CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1590,6 +2642,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1002FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3918CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1630,13 +2710,27 @@
 			(ref "R15")
 			(value "10k")
 			(footprint "CTCSS_THT:R_P5.08_CNC")
+			(datasheet "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 			(description "Resistor")
 			(fields
 				(field
+					(name "Assembly") "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "MRS16000C1002FCT00")
+				(field
+					(name "Manufacturer") "Vishay")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "BC3918CT-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:R_P5.08_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.vishay.com/docs/28724/mrs16m25.pdf")
 				(field
 					(name "Description") "Resistor")
 			)
@@ -1644,6 +2738,34 @@
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Assembly")
+				(value "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "MRS16000C1002FCT00")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Vishay")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "BC3918CT-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1694,6 +2816,14 @@
 				(field
 					(name "Manufacturer") "Bourns")
 				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/bourns-inc/3296W-1-103LF/1088045")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "3296W-103LF-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:RV_3296W_CNC")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/product-datasheets/3296.pdf")
@@ -1716,6 +2846,22 @@
 			(property
 				(name "Manufacturer")
 				(value "Bourns")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/bourns-inc/3296W-1-103LF/1088045")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "3296W-103LF-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1759,13 +2905,27 @@
 			(ref "TP1")
 			(value "GND")
 			(footprint "CTCSS_THT:TP_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 			(description "test point")
 			(fields
 				(field
+					(name "Assembly") "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300111121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5314-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:TP_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 				(field
 					(name "Description") "test point")
 			)
@@ -1773,6 +2933,34 @@
 				(lib "Connector")
 				(part "TestPoint")
 				(description "test point")
+			)
+			(property
+				(name "Assembly")
+				(value "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300111121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5314-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1810,13 +2998,27 @@
 			(ref "TP2")
 			(value "+8V")
 			(footprint "CTCSS_THT:TP_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 			(description "test point")
 			(fields
 				(field
+					(name "Assembly") "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300111121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5314-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:TP_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 				(field
 					(name "Description") "test point")
 			)
@@ -1824,6 +3026,34 @@
 				(lib "Connector")
 				(part "TestPoint")
 				(description "test point")
+			)
+			(property
+				(name "Assembly")
+				(value "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300111121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5314-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1861,13 +3091,27 @@
 			(ref "TP3")
 			(value "+5V")
 			(footprint "CTCSS_THT:TP_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 			(description "test point")
 			(fields
 				(field
+					(name "Assembly") "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300111121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5314-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:TP_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 				(field
 					(name "Description") "test point")
 			)
@@ -1875,6 +3119,34 @@
 				(lib "Connector")
 				(part "TestPoint")
 				(description "test point")
+			)
+			(property
+				(name "Assembly")
+				(value "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300111121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5314-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1912,13 +3184,27 @@
 			(ref "TP4")
 			(value "PWM")
 			(footprint "CTCSS_THT:TP_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 			(description "test point")
 			(fields
 				(field
+					(name "Assembly") "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300111121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5314-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:TP_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 				(field
 					(name "Description") "test point")
 			)
@@ -1926,6 +3212,34 @@
 				(lib "Connector")
 				(part "TestPoint")
 				(description "test point")
+			)
+			(property
+				(name "Assembly")
+				(value "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300111121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5314-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -1963,13 +3277,27 @@
 			(ref "TP5")
 			(value "FILTER_2")
 			(footprint "CTCSS_THT:TP_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 			(description "test point")
 			(fields
 				(field
+					(name "Assembly") "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300111121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5314-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:TP_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 				(field
 					(name "Description") "test point")
 			)
@@ -1977,6 +3305,34 @@
 				(lib "Connector")
 				(part "TestPoint")
 				(description "test point")
+			)
+			(property
+				(name "Assembly")
+				(value "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300111121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5314-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -2014,13 +3370,27 @@
 			(ref "TP6")
 			(value "TONE_INJECTION")
 			(footprint "CTCSS_THT:TP_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 			(description "test point")
 			(fields
 				(field
+					(name "Assembly") "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300111121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5314-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:TP_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 				(field
 					(name "Description") "test point")
 			)
@@ -2028,6 +3398,34 @@
 				(lib "Connector")
 				(part "TestPoint")
 				(description "test point")
+			)
+			(property
+				(name "Assembly")
+				(value "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300111121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5314-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -2065,13 +3463,27 @@
 			(ref "TP7")
 			(value "PTT_SENSE")
 			(footprint "CTCSS_THT:TP_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 			(description "test point")
 			(fields
 				(field
+					(name "Assembly") "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300111121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5314-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:TP_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 				(field
 					(name "Description") "test point")
 			)
@@ -2079,6 +3491,34 @@
 				(lib "Connector")
 				(part "TestPoint")
 				(description "test point")
+			)
+			(property
+				(name "Assembly")
+				(value "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300111121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5314-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -2116,13 +3556,27 @@
 			(ref "TP8")
 			(value "RADIO_PTT")
 			(footprint "CTCSS_THT:TP_CNC")
+			(datasheet "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 			(description "test point")
 			(fields
 				(field
+					(name "Assembly") "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "MPN") "61300111121")
+				(field
+					(name "Manufacturer") "Wurth Elektronik")
+				(field
+					(name "Purchase URL") "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+				(field
+					(name "Supplier") "DigiKey")
+				(field
+					(name "Supplier SKU") "732-5314-ND")
+				(field
 					(name "Footprint") "CTCSS_THT:TP_CNC")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/61300111121.pdf")
 				(field
 					(name "Description") "test point")
 			)
@@ -2130,6 +3584,34 @@
 				(lib "Connector")
 				(part "TestPoint")
 				(description "test point")
+			)
+			(property
+				(name "Assembly")
+				(value "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "MPN")
+				(value "61300111121")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821")
+			)
+			(property
+				(name "Supplier")
+				(value "DigiKey")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "732-5314-ND")
 			)
 			(property
 				(name "Sheetname")
@@ -2176,6 +3658,14 @@
 				(field
 					(name "Manufacturer") "Teyleten Robot")
 				(field
+					(name "Availability checked") "2026-10-22")
+				(field
+					(name "Purchase URL") "https://www.amazon.com/dp/B0B6HYLC44")
+				(field
+					(name "Supplier") "Amazon")
+				(field
+					(name "Supplier SKU") "B0B6HYLC44")
+				(field
 					(name "Footprint") "CTCSS_THT:ProMicro_CNC_BCu")
 				(field
 					(name "Datasheet") "https://www.amazon.com/dp/B0B6HYLC44")
@@ -2199,6 +3689,22 @@
 			(property
 				(name "Manufacturer")
 				(value "Teyleten Robot")
+			)
+			(property
+				(name "Availability checked")
+				(value "2026-10-22")
+			)
+			(property
+				(name "Purchase URL")
+				(value "https://www.amazon.com/dp/B0B6HYLC44")
+			)
+			(property
+				(name "Supplier")
+				(value "Amazon")
+			)
+			(property
+				(name "Supplier SKU")
+				(value "B0B6HYLC44")
 			)
 			(property
 				(name "Sheetname")

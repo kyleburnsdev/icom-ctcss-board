@@ -18,8 +18,8 @@
       <circle cx="13.0" cy="71.08" r="1.0" fill="black" />
       <rect x="48.0" y="79.0" width="2.0" height="2.0" fill="black" />
       <circle cx="46.5" cy="80.0" r="1.0" fill="black" />
-      <rect x="106.3" y="23.0" width="2.0" height="2.0" fill="black" />
-      <circle cx="107.3" cy="26.5" r="1.0" fill="black" />
+      <rect x="106.8" y="23.0" width="2.0" height="2.0" fill="black" />
+      <circle cx="107.8" cy="26.5" r="1.0" fill="black" />
       <rect x="43.5" y="69.5" width="3.0" height="3.0" fill="black" />
       <rect x="86.38" y="25.03" width="2.0" height="2.0" fill="black" />
       <circle cx="87.38" cy="28.57" r="1.0" fill="black" />
@@ -54,7 +54,9 @@
       <circle cx="60.92" cy="32.0" r="1.0" fill="black" />
       <rect x="97.0" y="89.0" width="2.0" height="2.0" fill="black" />
       <circle cx="95.46" cy="90.0" r="1.0" fill="black" />
-      <rect x="115.5" y="34.5" width="3.0" height="3.0" fill="black" />
+      <rect x="120.0" y="16.0" width="2.0" height="2.0" fill="black" />
+      <circle cx="121.0" cy="32.0" r="1.0" fill="black" />
+      <rect x="112.0" y="34.5" width="3.0" height="3.0" fill="black" />
       <rect x="18.0" y="62.0" width="2.0" height="2.0" fill="black" />
       <circle cx="13.92" cy="63.0" r="1.0" fill="black" />
       <rect x="48.5" y="34.5" width="3.0" height="3.0" fill="black" />
@@ -63,8 +65,8 @@
       <circle cx="60.92" cy="39.0" r="1.0" fill="black" />
       <rect x="46.0" y="48.92" width="2.0" height="2.0" fill="black" />
       <circle cx="41.92" cy="49.92" r="1.0" fill="black" />
-      <rect x="106.3" y="33.0" width="2.0" height="2.0" fill="black" />
-      <circle cx="107.3" cy="36.5" r="1.0" fill="black" />
+      <rect x="106.8" y="33.0" width="2.0" height="2.0" fill="black" />
+      <circle cx="107.8" cy="36.5" r="1.0" fill="black" />
       <rect x="61.5" y="86.5" width="3.0" height="3.0" fill="black" />
       <rect x="39.0" y="37.0" width="2.0" height="2.0" fill="black" />
       <circle cx="40.0" cy="43.08" r="1.0" fill="black" />
@@ -84,8 +86,6 @@
       <circle cx="71.38" cy="10.0" r="1.0" fill="black" />
       <rect x="48.0" y="64.0" width="2.0" height="2.0" fill="black" />
       <circle cx="46.5" cy="65.0" r="1.0" fill="black" />
-      <rect x="120.0" y="16.0" width="2.0" height="2.0" fill="black" />
-      <circle cx="121.0" cy="22.0" r="1.0" fill="black" />
       <rect x="121.0" y="70.0" width="2.0" height="2.0" fill="black" />
       <circle cx="122.0" cy="76.08" r="1.0" fill="black" />
       <rect x="54.0" y="84.0" width="2.0" height="2.0" fill="black" />
@@ -123,7 +123,6 @@
       <path d="M 42.0017 38.0 L 48.2233 31.7784" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 68.0017 40.5056 L 68.0017 39.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 107.0 34.0 L 109.002 34.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
-      <path d="M 117.0 36.0 L 114.498 36.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 123.029 21.0305 L 123.029 36.5461" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 106.0 79.0 L 103.998 79.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 66.0 39.0 L 66.0 32.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
@@ -134,6 +133,7 @@
       <path d="M 50.38 31.7784 L 59.609 41.0074" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 119.554 40.0211 L 107.631 40.0211" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 107.0 34.0 L 105.884 34.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
+      <path d="M 114.498 36.0 L 113.5 36.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 107.631 40.0211 L 104.965 37.3549" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 102.62 33.65 L 104.648 33.65" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 107.0 34.0 L 107.3 34.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
@@ -163,6 +163,7 @@
       <path d="M 102.62 69.3 L 100.92 71.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" />
       <path d="M 107.0 26.5 L 104.93 28.57" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 121.0 22.0 L 121.0 25.0571" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
+      <path d="M 121.0 32.0 L 119.557 32.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 79.0 6.4371 L 79.4371 6.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 99.5717 28.57 L 81.0017 10.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />
       <path d="M 92.92 84.0 L 90.38 86.54" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0" />

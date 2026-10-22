@@ -9,4 +9,4 @@ The root MIT license covers original project contributions. Required third-party
 
 ## External reference material
 
-Manufacturer PDFs, extracted pages and seller-image copies are not included in the public snapshot. [Accepted physical maps](implementation/physical-pin-maps.md) link to the onsemi, Bourns and WIMA sources with document/page references. [Seller-source notes](reference/teyleten-source-notes.md) link to original image assets and preserve the accepted header transcription. Those external works retain their owners' rights.
+Manufacturer PDFs, extracted pages and seller-image copies are not included in the public snapshot. [Accepted physical maps](implementation/physical-pin-maps.md) link to the onsemi, Bourns, KEMET, TDK and Vishay sources with document/page references. [Seller-source notes](reference/teyleten-source-notes.md) link to original image assets and preserve the accepted header transcription. Those external works retain their owners' rights.

@@ -1,6 +1,6 @@
 # Q1 physical pin map
 
-**Historical narrow-footprint acceptance, superseded by [physical-pin-maps.md](physical-pin-maps.md).** The final CNC design uses factory-formed onsemi **2N3904RLRAG**, 2.54mm pitch, larger pads/drills. Do not order this document's straight-lead 2N3904G for the final board.
+**Historical narrow-footprint acceptance, superseded by [physical-pin-maps.md](physical-pin-maps.md).** The final CNC design uses factory-formed onsemi **2N3904TAR**, 2.54mm pitch, larger pads/drills. Do not order this document's straight-lead 2N3904G for the final board.
 
 Selected part: **onsemi 2N3904G**, straight-lead bulk TO-92, CASE 29, STYLE 1. Do not substitute another vendor or bent-lead suffix without review.
 

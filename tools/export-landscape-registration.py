@@ -94,7 +94,9 @@ for src,dst,bottom,count in [('icom-ctcss-board-NPTH.drl','registration-holes.dr
 # Check the full asymmetric copper inventory against the coordinate equations.
 native=GerberFile.open(ROOT/'icom-ctcss-board-B_Cu.gbl')
 bottom=GerberFile.open(OUT/'bottom-copper-Y-FLIPPED.gbl')
-assert len(native.objects)==len(bottom.objects)==352
+inventory=json.loads(Path('docs/verification/final-board-inventory.json').read_text())
+expected_copper_objects=inventory['track_count']+inventory['electrical_pads']
+assert len(native.objects)==len(bottom.objects)==expected_copper_objects
 for a,b in zip(native.objects,bottom.objects):
     for x,y,xx,yy in ([(a.x,a.y,b.x,b.y)] if hasattr(a,'x') else [(a.x1,a.y1,b.x1,b.y1),(a.x2,a.y2,b.x2,b.y2)]):
         u,v=point(x,y,True)
@@ -117,7 +119,8 @@ manifest={'frame_mm':[150,100],'origin':'lower-left in CNC XY',
  'hole_centers_mm':[[6,6],[144,6],[6,94],[144,94]],
  'hole_pitch_mm':[138,88],'hole_diameter_mm':4,
  'asymmetric_check':{'feature':'J1 pin 1','top_xy_mm':[130,40],'bottom_xy_mm':[20,40]},
- 'checks':{'electrical_holes':111,'mounting_holes':4,'copper_objects':352,'legend_objects':len(landscape_legend.objects),'all_copper_coordinates_verified':True,'all_legend_coordinates_verified':True},
- 'files':{p.name:{'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size} for p in sorted(OUT.iterdir()) if p.is_file() and p.name not in ('manifest.json','README.md')}}
+ 'checks':{'electrical_holes':111,'mounting_holes':4,'copper_objects':expected_copper_objects,'legend_objects':len(landscape_legend.objects),'all_copper_coordinates_verified':True,'all_legend_coordinates_verified':True},
+ 'cam_project_status':'Existing .mkc projects are user work and are not regenerated or validated by this geometry exporter; reimport revised copper, drill and legend files.',
+ 'files':{p.name:{'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size} for p in sorted(OUT.iterdir()) if p.is_file() and p.suffix in ('.gbl','.gto','.gm1','.drl','.svg')}}
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 print(json.dumps({k:v for k,v in manifest.items() if k!='files'},indent=2))

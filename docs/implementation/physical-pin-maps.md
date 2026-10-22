@@ -26,13 +26,14 @@ Primary source [Bourns 3296 datasheet](https://www.bourns.com/docs/product-datas
 
 The datasheet terminal-end drawing shows 3,2,1 downward; translating to component top view and rotating gives 3 left, 2 middle, 1 right, with screw near lead 1. Symbol numbering and footprint local pad coordinates queried back. Three physical leads, three symbol pins, three electrical pads; zero duplicates/mechanical pads. Pads 2.0 mm, drills 0.9 mm, B.Cu/B.Mask; 0.55 mm annular ring and 0.54 mm minimum adjacent pad gap. Disposable source RV1 and CNC RV2 board render plus schematic inspected; IPC-2581 instance readback confirms pads. Accepted. Connect 3 to DIVIDER, 1 to GND, 2 to coupling capacitor so clockwise increases tone; start fully CCW.
 
-## Q1 onsemi 2N3904RLRAG (factory formed leads)
+## Q1 onsemi 2N3904TAR (factory formed leads)
 
-This replaces straight-lead 2N3904G solely to provide generous CNC pad spacing. Primary source [onsemi 2N3903/D](https://www.onsemi.com/download/data-sheet/pdf/2n3903-d.pdf), August 2021 Rev.9, page 3 exact 2N3904RLRAG tape/reel ordering; page 1 bent-lead perspective; PDF pages 7–8 CASE29-11 issueAM drawing/style1. Use the linked manufacturer source; downloaded copies and page renders are no longer maintained.
+Selected onsemi 2N3904TAR replaces the obsolete RLRAG suffix. Primary source [onsemi 2N3904/D](https://www.onsemi.com/pdf/datasheet/2n3904-d.pdf), Rev. 3, October 2024: ordering information and CASE 135AR formed-lead drawing (PDF page 8). The drawing identifies emitter 1, base 2, collector 3. Its 2.40–2.80mm pitch includes the existing 2.54mm centers; maximum 0.56×0.52mm lead section has a 0.764mm diagonal, below the 0.9mm drill. Maximum body is 5.2×4.19mm.
+
 
 | Physical lead | Function | Symbol pin/name/type | Pad | Local X/Y mm | View/direction | Evidence |
 |---|---|---|---|---|---|---|
-| 1 | Emitter | 1 / E / passive | 1 | 0 / 0 | Component top view, flat face +Y, leftmost | p1 bent-lead perspective, p7 bent-lead geometry, p8 style1 |
+| 1 | Emitter | 1 / E / passive | 1 | 0 / 0 | Component top view, flat face +Y, leftmost | CASE 135AR formed-lead drawing, PDF p8 |
 | 2 | Base | 2 / B / input | 2 | 2.54 / 0 | Same top view, middle | same |
 | 3 | Collector | 3 / C / passive | 3 | 5.08 / 0 | Same top view, rightmost | same |
 
@@ -42,4 +43,8 @@ The electrical 5 mA sink design target is provisional; measure actual radio PTT 
 
 ## C3 and C6 unpolarized film capacitors
 
-Primary source [WIMA main catalogue 2026](https://www.wima.de/wp-content/uploads/media/WIMA_Main_Catalogue_2026.pdf), edition 03.26, pages 34–35. C3 `MKS2C041001F00KSSD`, 1uF/63V, 10%, bulk, 6−2mm leads: body7.2×5×10mm, pitch5mm, wire0.5mm. C6 `MKS2C044701O00KSSD`, 4.7uF/63V: body7.2×11×18mm, pitch5mm. The 4.7uF film bulk selection replaces the tentative 10uF part; no specification fixes bulk capacitance. Both are symmetric two-lead unpolarized parts: symbol `Device:C` pin1/passive maps pad1 at0/0, pin2/passive maps pad2 at5/0; either physical lead can be1. Two leads/pins/pads, zero duplicate/mechanical features. Final CNC footprints use2mm pads/.9mm drills; source stock outlines and5mm centers retained. No polarity reversal ambiguity exists. Loaded response and regulator transient performance still require bench checks.
+C3 is [KEMET R82DC4100AA60J](https://search.kemet.com/component-documentation/download/specsheet/R82DC4100AA60J), 1uF/63V/5%, 5mm pitch; maximum body 7.5×5.1×10.1mm and 0.5±0.05mm wire. Symbol Device:C pin 1 maps to square pad 1 at (0,0), pin 2 to pad 2 at (5,0); 2mm lands/0.9mm drills.
+
+C6 is [TDK B32522C0475J000](https://product.tdk.com/en/search/capacitor/film/rfi_general/info?part_no=B32522C0475J000), 4.7uF/63V/5%, 15mm pitch; maximum body 18×7×12.5mm, 0.8mm wire. Pin 1 maps to square pad 1 at (0,0), pin 2 to pad 2 at (15,0); 2mm lands/1.1mm drills in C_Film4u7_P15_CNC. Placed pad 1 is +5V at (67,79), pad 2 is GND at (82,79).
+
+Both parts have two passive leads/pins/pads, no polarity or duplicate/mechanical contacts. Either physical lead can be pin 1. Manufacturer drawings were inspected, library readback checked, and a disposable four-part board (C1/C3/C6/Q1) rendered and its IPC-2581 export checked: all nine pins/holes matched selected pitch, drill and land geometry. The final source IPC-2581 connectivity independently matches all 111 schematic pins. C6/TP3 and nearby decouplers were repositioned for the reviewed body envelopes. Minimum whole-board calculated body gap is 2.14mm. Actual drill fit, loaded tone response and regulator transients require the physical acceptance checks.

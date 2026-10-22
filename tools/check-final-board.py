@@ -42,9 +42,9 @@ for f in footprints:
     if ref.startswith('R') and not ref.startswith('RV'):
         rect=(.74,-.8,4.34,.8)
     elif ref in ('C1','C2','C4','C5'):
-        rect=(-.25,-1,2.75,1)
-    elif ref=='C3':rect=(-1.1,-2.5,6.1,2.5)
-    elif ref=='C6':rect=(-1.1,-5.5,6.1,5.5)
+        rect=(-.75,-1.3,3.25,1.3)  # Vishay K104K15X7RF5TL2 maximum body
+    elif ref=='C3':rect=(-1.25,-2.55,6.25,2.55)  # KEMET R82DC4100AA60J maxima
+    elif ref=='C6':rect=(-1.5,-3.5,16.5,3.5)  # TDK B32522C0475J000, 15mm pitch
     elif ref=='Q1':rect=(-.06,-2.48,5.14,1.75)
     elif ref=='RV1':rect=(-7.305,-2.41,2.225,2.42)
     elif ref=='U1':rect=(-21.76,-9.12,15.24,9.12)
@@ -65,6 +65,6 @@ for i,a in enumerate(body):
         dx=max(0,p[0]-q[2],q[0]-p[2]);dy=max(0,p[1]-q[3],q[1]-p[3])
         gaps.append({'references':[a['reference'],b['reference']],'gap_mm':round(math.hypot(dx,dy),4)})
 gaps.sort(key=lambda a:a['gap_mm'])
-result={'source':'read-only KiCad pcbnew.LoadBoard after Konnect save','track_count':len(tracks),'track_layers':dict(layer_counts),'widths_mm':sorted({mm(t.GetWidth()) for t in tracks}),'via_count':vias,'zone_count':0,'circuit_parts':38,'mounting_holes':holes,'electrical_pads':len(pads),'native_top_pad_count':sum(p.IsOnLayer(pcbnew.F_Cu) for p in pads),'native_bottom_pad_count':sum(p.IsOnLayer(pcbnew.B_Cu) for p in pads),'track_lengths_mm':dict(lengths),'component_positions':positions,'body_envelopes':body,'closest_body_gaps':gaps[:12],'body_gaps_below_2mm':[a for a in gaps if a['gap_mm']<1.999],'body_assumptions':'Nominal selected bodies; 37x18.24 module/socket envelope including 3mm-wide socket strips. Actual socket and USB cable fit still require dry fit.'}
+result={'source':'read-only KiCad pcbnew.LoadBoard after Konnect save','track_count':len(tracks),'track_layers':dict(layer_counts),'widths_mm':sorted({mm(t.GetWidth()) for t in tracks}),'via_count':vias,'zone_count':0,'circuit_parts':38,'mounting_holes':holes,'electrical_pads':len(pads),'native_top_pad_count':sum(p.IsOnLayer(pcbnew.F_Cu) for p in pads),'native_bottom_pad_count':sum(p.IsOnLayer(pcbnew.B_Cu) for p in pads),'track_lengths_mm':dict(lengths),'component_positions':positions,'body_envelopes':body,'closest_body_gaps':gaps[:12],'body_gaps_below_2mm':[a for a in gaps if a['gap_mm']<1.999],'body_assumptions':'Selected maximum capacitor bodies and nominal other bodies; 37x18.24 module/socket envelope including 3mm-wide socket strips. Actual socket and USB cable fit still require dry fit.'}
 Path('docs/verification/final-board-inventory.json').write_text(json.dumps(result,indent=2))
 print(json.dumps({k:v for k,v in result.items() if k not in ('component_positions','body_envelopes','track_lengths_mm')},indent=2))

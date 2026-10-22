@@ -3986,16 +3986,6 @@
 		)
 		(uuid "bd9a7321-561f-4a4b-809b-2adb205ac022")
 	)
-	(text "PTT SENSE / DRIVER: default PTT released during reset.\nQ1 onsemi 2N3904RLRAG, factory-formed 2.54mm leads; E=1, B=2, C=3.\nInitial sink target <=5mA; verify actual radio voltage/current and saturation."
-		(at 165.1 20.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "73956616-f71d-4f50-8cc6-998246fd8839")
-	)
 	(text "TONE LEVEL\n3296W-1-103LF\nClockwise increases.\nStart fully CCW."
 		(at 174 120.65 0)
 		(effects
@@ -4005,16 +3995,6 @@
 			(justify left bottom)
 		)
 		(uuid "d12507f1-4369-4bcf-9b07-fc4590ecd452")
-	)
-	(text "SUPPLY: +8V directly to U1 RAW; U1 VCC supplies +5V.\nC4 RAW decoupling; C5 +5V decoupling; C6 4.7uF film bulk.\nC3 1uF film coupling. Both WIMA parts are nonpolar, 63V, 5mm lead pitch."
-		(at 25.4 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1c31707a-903c-409a-8f01-ac6da3071f1f")
 	)
 	(text "MODULE: user-approved nominal Biacco42 pad map, 2.54mm pitch / 15.24mm rows.\nCNC derivative retains all 24 centers; enlarged B.Cu pads. Mount in female sockets.\nReserve USB-C / clone / cable access; verify physical fit before soldering.\nDo not connect radio power and USB simultaneously until module power paths are verified."
 		(at 165.1 153.67 0)
@@ -4976,6 +4956,16 @@
 		)
 		(uuid "1c8b9dc6-1569-47e2-ad4c-d4892e8d4197")
 	)
+  (text "PTT SENSE / DRIVER: default PTT released during reset.\nQ1 onsemi 2N3904TAR, factory-formed 2.54mm leads; E=1, B=2, C=3.\nInitial sink target <=5mA; verify actual radio voltage/current and saturation."
+    (at 165.1 20.32 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "6ac3f764-55c2-4b77-aa6f-316632d7a067")
+  )
+  (text "SUPPLY: +8V directly to U1 RAW; U1 VCC supplies +5V.\nC4 RAW decoupling; C5 +5V decoupling; C6 4.7uF TDK film, 15mm pitch.\nC3 1uF KEMET film, 5mm pitch. Both film capacitors nonpolar, 63V."
+    (at 25.4 140.97 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "6a61a956-b0c6-4001-b057-9d6f20429482")
+  )
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
 		(at 63.5 50.8 0)
@@ -5009,7 +4999,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300811121.pdf"
 			(at 63.5 50.8 0)
 			(hide yes)
 			(effects
@@ -5035,7 +5025,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit"
+			(at 63.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 63.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300811121"
+			(at 63.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 63.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839"
+			(at 63.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 63.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5321-ND"
+			(at 63.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
 		(at 127 50.8 0)
@@ -5069,7 +5122,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300811121.pdf"
 			(at 127 50.8 0)
 			(hide yes)
 			(effects
@@ -5095,7 +5148,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit"
+			(at 127 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 127 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300811121"
+			(at 127 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 127 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839"
+			(at 127 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 127 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5321-ND"
+			(at 127 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
 		(at 63.5 190.5 0)
@@ -5129,7 +5245,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300511121.pdf"
 			(at 63.5 190.5 0)
 			(hide yes)
 			(effects
@@ -5155,7 +5271,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit"
+			(at 63.5 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 63.5 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300511121"
+			(at 63.5 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 63.5 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300511121/4846831"
+			(at 63.5 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 63.5 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5319-ND"
+			(at 63.5 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 127 190.5 0)
@@ -5189,7 +5368,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300411121.pdf"
 			(at 127 190.5 0)
 			(hide yes)
 			(effects
@@ -5215,7 +5394,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit"
+			(at 127 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 127 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300411121"
+			(at 127 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 127 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300411121/4846827"
+			(at 127 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 127 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5317-ND"
+			(at 127 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 190.5 187.96 0)
@@ -5249,7 +5491,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300211121.pdf"
 			(at 190.5 187.96 0)
 			(hide yes)
 			(effects
@@ -5275,7 +5517,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit"
+			(at 190.5 187.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 190.5 187.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300211121"
+			(at 190.5 187.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 190.5 187.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300211121/4846823"
+			(at 190.5 187.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 190.5 187.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5315-ND"
+			(at 190.5 187.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 254 190.5 0)
@@ -5309,7 +5614,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300411121.pdf"
 			(at 254 190.5 0)
 			(hide yes)
 			(effects
@@ -5335,7 +5640,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "2.54mm single row; 6mm mating post; 3mm solder tail; mark pin 1; verify drilled coupon fit"
+			(at 254 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 254 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300411121"
+			(at 254 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 254 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300411121/4846827"
+			(at 254 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 254 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5317-ND"
+			(at 254 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 63.5 104.14 90)
@@ -5369,7 +5737,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 63.5 104.14 0)
 			(hide yes)
 			(effects
@@ -5395,7 +5763,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 63.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 63.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C3301FCT00"
+			(at 63.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 63.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3301FCT00/7351364"
+			(at 63.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 63.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3934CT-ND"
+			(at 63.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 101.6 104.14 90)
@@ -5429,7 +5860,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 101.6 104.14 0)
 			(hide yes)
 			(effects
@@ -5455,7 +5886,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 101.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 101.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C3301FCT00"
+			(at 101.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 101.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3301FCT00/7351364"
+			(at 101.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 101.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3934CT-ND"
+			(at 101.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 139.7 104.14 90)
@@ -5489,7 +5983,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 139.7 104.14 0)
 			(hide yes)
 			(effects
@@ -5515,7 +6009,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1002FCT00"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3918CT-ND"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 266.7 104.14 90)
@@ -5549,7 +6106,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 266.7 104.14 0)
 			(hide yes)
 			(effects
@@ -5575,7 +6132,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 266.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 266.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1003FCT00"
+			(at 266.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 266.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1003FCT00/7351351"
+			(at 266.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 266.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3921CT-ND"
+			(at 266.7 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 218.44 90)
@@ -5609,7 +6229,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 241.3 218.44 0)
 			(hide yes)
 			(effects
@@ -5635,7 +6255,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 241.3 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 241.3 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C3300FCT00"
+			(at 241.3 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 241.3 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3300FCT00/7351363"
+			(at 241.3 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 241.3 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3933CT-ND"
+			(at 241.3 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 279.4 218.44 90)
@@ -5669,7 +6352,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 279.4 218.44 0)
 			(hide yes)
 			(effects
@@ -5695,7 +6378,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 279.4 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 279.4 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C3300FCT00"
+			(at 279.4 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 279.4 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C3300FCT00/7351363"
+			(at 279.4 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 279.4 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3933CT-ND"
+			(at 279.4 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 190.5 50.8 90)
@@ -5729,7 +6475,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 190.5 50.8 0)
 			(hide yes)
 			(effects
@@ -5755,7 +6501,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1001FCT00"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1001FCT00/5063732"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3915CT-ND"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 254 50.8 90)
@@ -5789,7 +6598,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 254 50.8 0)
 			(hide yes)
 			(effects
@@ -5815,7 +6624,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 254 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 254 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C4701FCT00"
+			(at 254 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 254 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C4701FCT00/5063896"
+			(at 254 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 254 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3940CT-ND"
+			(at 254 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 158.75 120.65 0)
@@ -5849,7 +6721,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 158.75 120.65 0)
 			(hide yes)
 			(effects
@@ -5875,7 +6747,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 158.75 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 158.75 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1001FCT00"
+			(at 158.75 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 158.75 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1001FCT00/5063732"
+			(at 158.75 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 158.75 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3915CT-ND"
+			(at 158.75 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 203.2 35.56 0)
@@ -5909,7 +6844,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 203.2 35.56 0)
 			(hide yes)
 			(effects
@@ -5935,7 +6870,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 203.2 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 203.2 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1002FCT00"
+			(at 203.2 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 203.2 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734"
+			(at 203.2 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 203.2 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3918CT-ND"
+			(at 203.2 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 279.4 67.31 0)
@@ -5969,7 +6967,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 279.4 67.31 0)
 			(hide yes)
 			(effects
@@ -5995,7 +6993,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 279.4 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 279.4 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1003FCT00"
+			(at 279.4 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 279.4 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1003FCT00/7351351"
+			(at 279.4 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 279.4 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3921CT-ND"
+			(at 279.4 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 38.1 218.44 0)
@@ -6029,7 +7090,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 38.1 218.44 0)
 			(hide yes)
 			(effects
@@ -6055,7 +7116,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 38.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 38.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1002FCT00"
+			(at 38.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 38.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734"
+			(at 38.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 38.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3918CT-ND"
+			(at 38.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 63.5 218.44 0)
@@ -6089,7 +7213,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 63.5 218.44 0)
 			(hide yes)
 			(effects
@@ -6115,7 +7239,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 63.5 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 63.5 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1002FCT00"
+			(at 63.5 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 63.5 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734"
+			(at 63.5 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 63.5 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3918CT-ND"
+			(at 63.5 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 88.9 218.44 0)
@@ -6149,7 +7336,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 88.9 218.44 0)
 			(hide yes)
 			(effects
@@ -6175,7 +7362,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 88.9 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 88.9 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1002FCT00"
+			(at 88.9 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 88.9 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734"
+			(at 88.9 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 88.9 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3918CT-ND"
+			(at 88.9 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 165.1 218.44 0)
@@ -6209,7 +7459,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28724/mrs16m25.pdf"
 			(at 165.1 218.44 0)
 			(hide yes)
 			(effects
@@ -6235,7 +7485,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "1% metal film; 3.6x1.6mm max; form axial leads with tool to 5.08mm pitch"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MRS16000C1002FCT00"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS16000C1002FCT00/5063734"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC3918CT-ND"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 82.55 120.65 0)
@@ -6271,7 +7584,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/45171/kseries.pdf"
 			(at 82.55 120.65 0)
 			(hide yes)
 			(effects
@@ -6297,7 +7610,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm"
+			(at 82.55 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 82.55 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "K104K15X7RF5TL2"
+			(at 82.55 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 82.55 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538"
+			(at 82.55 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 82.55 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC1084CT-ND"
+			(at 82.55 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 120.65 120.65 0)
@@ -6333,7 +7709,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/45171/kseries.pdf"
 			(at 120.65 120.65 0)
 			(hide yes)
 			(effects
@@ -6359,7 +7735,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "K104K15X7RF5TL2"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC1084CT-ND"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 38.1 158.75 0)
@@ -6395,7 +7834,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/45171/kseries.pdf"
 			(at 38.1 158.75 0)
 			(hide yes)
 			(effects
@@ -6421,7 +7860,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm"
+			(at 38.1 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 38.1 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "K104K15X7RF5TL2"
+			(at 38.1 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 38.1 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538"
+			(at 38.1 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 38.1 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC1084CT-ND"
+			(at 38.1 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 76.2 158.75 0)
@@ -6457,7 +7959,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/45171/kseries.pdf"
 			(at 76.2 158.75 0)
 			(hide yes)
 			(effects
@@ -6483,7 +7985,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "100nF 50V X7R 10%; nonpolar; 2.5mm pitch; body max 4x2.6x5.6mm"
+			(at 76.2 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 76.2 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "K104K15X7RF5TL2"
+			(at 76.2 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 76.2 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538"
+			(at 76.2 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 76.2 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "BC1084CT-ND"
+			(at 76.2 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 228.6 104.14 90)
@@ -6519,7 +8084,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/R82DC4100AA60J"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(effects
@@ -6537,7 +8102,7 @@
 				)
 			)
 		)
-		(property "Assembly" "Nonpolar; 5mm pitch; body 7.2x5x10mm"
+		(property "Assembly" "Nonpolar 1uF 63V 5%; 5mm pitch; maximum body 7.5x5.1x10.1mm"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(effects
@@ -6546,7 +8111,7 @@
 				)
 			)
 		)
-		(property "MPN" "MKS2C041001F00KSSD"
+		(property "MPN" "R82DC4100AA60J"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(effects
@@ -6555,7 +8120,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "WIMA"
+		(property "Manufacturer" "KEMET"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(effects
@@ -6572,7 +8137,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "Availability checked" "2026-10-22"
+			(at 228.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/kemet/R82DC4100AA60J/2571295"
+			(at 228.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 228.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "399-5860-ND"
+			(at 228.6 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 114.3 158.75 0)
@@ -6599,7 +8200,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CTCSS_THT:C_Film4u7_P5_CNC"
+		(property "Footprint" "CTCSS_THT:C_Film4u7_P15_CNC"
 			(at 114.3 158.75 0)
 			(hide yes)
 			(effects
@@ -6608,7 +8209,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/film/rfi_general/info?part_no=B32522C0475J000"
 			(at 114.3 158.75 0)
 			(hide yes)
 			(effects
@@ -6626,7 +8227,7 @@
 				)
 			)
 		)
-		(property "Assembly" "Nonpolar; 5mm pitch; body 7.2x11x18mm"
+		(property "Assembly" "Nonpolar 4.7uF 63V 5%; 15mm pitch; maximum body 18x7x12.5mm"
 			(at 114.3 158.75 0)
 			(hide yes)
 			(effects
@@ -6635,7 +8236,7 @@
 				)
 			)
 		)
-		(property "MPN" "MKS2C044701O00KSSD"
+		(property "MPN" "B32522C0475J000"
 			(at 114.3 158.75 0)
 			(hide yes)
 			(effects
@@ -6644,7 +8245,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "WIMA"
+		(property "Manufacturer" "TDK"
 			(at 114.3 158.75 0)
 			(hide yes)
 			(effects
@@ -6661,7 +8262,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "Availability checked" "2026-10-22"
+			(at 114.3 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/tdk-electronics-inc/B32522C0475J000/592709"
+			(at 114.3 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 114.3 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "495-1131-ND"
+			(at 114.3 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 304.8 45.72 0)
@@ -6695,7 +8332,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300111121.pdf"
 			(at 304.8 45.72 0)
 			(hide yes)
 			(effects
@@ -6721,7 +8358,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible"
+			(at 304.8 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 304.8 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300111121"
+			(at 304.8 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 304.8 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821"
+			(at 304.8 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 304.8 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5314-ND"
+			(at 304.8 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 304.8 58.42 0)
@@ -6755,7 +8455,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300111121.pdf"
 			(at 304.8 58.42 0)
 			(hide yes)
 			(effects
@@ -6781,7 +8481,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible"
+			(at 304.8 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 304.8 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300111121"
+			(at 304.8 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 304.8 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821"
+			(at 304.8 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 304.8 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5314-ND"
+			(at 304.8 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 304.8 71.12 0)
@@ -6815,7 +8578,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300111121.pdf"
 			(at 304.8 71.12 0)
 			(hide yes)
 			(effects
@@ -6841,7 +8604,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible"
+			(at 304.8 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 304.8 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300111121"
+			(at 304.8 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 304.8 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821"
+			(at 304.8 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 304.8 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5314-ND"
+			(at 304.8 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 304.8 83.82 0)
@@ -6875,7 +8701,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300111121.pdf"
 			(at 304.8 83.82 0)
 			(hide yes)
 			(effects
@@ -6901,7 +8727,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible"
+			(at 304.8 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 304.8 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300111121"
+			(at 304.8 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 304.8 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821"
+			(at 304.8 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 304.8 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5314-ND"
+			(at 304.8 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 304.8 96.52 0)
@@ -6935,7 +8824,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300111121.pdf"
 			(at 304.8 96.52 0)
 			(hide yes)
 			(effects
@@ -6961,7 +8850,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible"
+			(at 304.8 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 304.8 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300111121"
+			(at 304.8 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 304.8 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821"
+			(at 304.8 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 304.8 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5314-ND"
+			(at 304.8 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 304.8 109.22 0)
@@ -6995,7 +8947,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300111121.pdf"
 			(at 304.8 109.22 0)
 			(hide yes)
 			(effects
@@ -7021,7 +8973,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible"
+			(at 304.8 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 304.8 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300111121"
+			(at 304.8 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 304.8 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821"
+			(at 304.8 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 304.8 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5314-ND"
+			(at 304.8 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 304.8 121.92 0)
@@ -7055,7 +9070,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300111121.pdf"
 			(at 304.8 121.92 0)
 			(hide yes)
 			(effects
@@ -7081,7 +9096,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible"
+			(at 304.8 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 304.8 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300111121"
+			(at 304.8 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 304.8 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821"
+			(at 304.8 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 304.8 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5314-ND"
+			(at 304.8 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 304.8 134.62 0)
@@ -7115,7 +9193,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300111121.pdf"
 			(at 304.8 134.62 0)
 			(hide yes)
 			(effects
@@ -7141,7 +9219,70 @@
 				)
 			)
 		)
-	)
+	
+		(property "Assembly" "Single 0.64mm square test post; 2.54mm body; 1.1mm drilled hole; top accessible"
+			(at 304.8 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability checked" "2026-10-22"
+			(at 304.8 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "61300111121"
+			(at 304.8 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 304.8 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300111121/4846821"
+			(at 304.8 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 304.8 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "732-5314-ND"
+			(at 304.8 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 38.1 165.1 0)
@@ -7342,7 +9483,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N3904RLRAG"
+		(property "Value" "2N3904TAR"
 			(at 284.48 50.8 0)
 			(effects
 				(font
@@ -7360,7 +9501,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/2n3904-d.pdf"
 			(at 279.4 50.8 0)
 			(hide yes)
 			(effects
@@ -7378,7 +9519,7 @@
 				)
 			)
 		)
-		(property "Assembly" "Factory-formed 2.54mm pitch ONLY; flat face per drawing"
+		(property "Assembly" "Factory-formed CASE135AR; 2.54mm nominal pitch; 1 E, 2 B, 3 C; flat face per drawing"
 			(at 279.4 50.8 0)
 			(hide yes)
 			(effects
@@ -7387,7 +9528,7 @@
 				)
 			)
 		)
-		(property "MPN" "2N3904RLRAG"
+		(property "MPN" "2N3904TAR"
 			(at 279.4 50.8 0)
 			(hide yes)
 			(effects
@@ -7413,7 +9554,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "Availability checked" "2026-10-22"
+			(at 279.4 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/onsemi/2N3904TAR/4213831"
+			(at 279.4 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 279.4 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "2N3904TARCT-ND"
+			(at 279.4 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "CTCSS:Teyleten_ProMicro_5V")
 		(at 350.52 203.2 0)
@@ -7500,7 +9677,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "Availability checked" "2026-10-22"
+			(at 350.52 203.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.amazon.com/dp/B0B6HYLC44"
+			(at 350.52 203.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "Amazon"
+			(at 350.52 203.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "B0B6HYLC44"
+			(at 350.52 203.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 190.5 104.14 0)
@@ -7587,7 +9800,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "Availability checked" "2026-10-22"
+			(at 190.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase URL" "https://www.digikey.com/en/products/detail/bourns-inc/3296W-1-103LF/1088045"
+			(at 190.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 190.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier SKU" "3296W-103LF-ND"
+			(at 190.5 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 355.6 60.96 0)

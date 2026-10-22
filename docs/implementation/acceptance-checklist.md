@@ -34,6 +34,8 @@ Design evidence is linked in the [implementation index](README.md) and [independ
 
 ## PCB and fabrication
 
+- [ ] Every required purchased component is readily purchasable in project quantities from Amazon, Mouser, or DigiKey, with exact selection, purchase link, dated availability evidence and compatible package. Carrier-board BOM coverage is complete; the user confirms radio/microphone adapters are already owned. Remaining cable/fastener/enclosure integration is documented separately. See the [component sourcing review](component-sourcing-review.md).
+
 
 
 - [x] One 100 mm × 150 mm rectangular outline, independently measured.
@@ -103,5 +105,5 @@ Firmware is outside this deliverable. Hardware acceptance must identify any chec
 
 
 
-The final CAD checks report ERC 0/0, DRC 0 errors/0 unconnected with 114 retained warnings, 61 netlist assertions passed, and no routing vias or pours. See the review for warning dispositions. Ground is routed as buses/branches; physical audio-noise performance remains unverified. Firmware is not supplied.
+The final CAD checks report ERC 0/0, DRC 0 errors/0 unconnected with 115 retained warnings, 61 netlist assertions passed, and no routing vias or pours. See the review for warning dispositions. Ground is routed as buses/branches; physical audio-noise performance remains unverified. Firmware is not supplied.
 

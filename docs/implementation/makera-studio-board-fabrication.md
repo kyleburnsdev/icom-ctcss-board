@@ -1,5 +1,7 @@
 # Makera Studio toolpaths and board fabrication
 
+**2026-10-22 sourcing revision:** C6 now has 15 mm pitch and 1.1 mm drills; TP3 moved. Use the regenerated copper, legend and drill exports together. The existing `ctcss-board-cam.mkc` is preserved user work from the earlier geometry: reimport the revised files, rebuild toolpaths and verify registration/drill counts before machining. It is not validated for this revision.
+
 Make the board in two machine stages: complete the bottom copper and holes, then flip the board and laser-cure the top legend. Keep all operations for an unchanged stock setup in one NC file, including tool changes. End the file before cleaning underneath the board, reseating it, coating it or turning it over.
 
 Use 1.5 mm single-sided copper-clad stock, 150 mm along machine X and 100 mm along machine Y. Components mount on the bare substrate side; copper faces down on the finished board. Use the current two-pin J5 / four-pin J6 files.
@@ -45,7 +47,7 @@ Use these layers:
 | Source file | Purpose |
 | --- | --- |
 | `bottom-copper-Y-FLIPPED.gbl` | Copper lands and traces to preserve. |
-| `bottom-electrical-holes-Y-FLIPPED.drl` | 48 holes at 0.9 mm and 63 holes at 1.1 mm. |
+| `bottom-electrical-holes-Y-FLIPPED.drl` | 46 holes at 0.9 mm and 65 holes at 1.1 mm. |
 | `registration-holes.drl` | Four 4 mm mounting/registration holes. |
 | `board-outline.gm1` | Finished 150 × 100 mm rectangle. |
 | `top-legend.svg` | Top legend artwork for laser exposure. |
@@ -103,8 +105,8 @@ Create these paths in execution order. Export them together as `10-ctcss-bottom-
 | --- | --- | --- |
 | 1 | `10-copper-clear` | T3 |
 | 2 | `11-copper-isolate` | T2 |
-| 3 | `12-electrical-0p9-48holes` | T3 |
-| 4 | `13-electrical-1p1-63holes` | T3 |
+| 3 | `12-electrical-0p9-46holes` | T3 |
+| 4 | `13-electrical-1p1-65holes` | T3 |
 | 5 | `14-registration-4mm-4holes` | T3 |
 | 6 | `15-perimeter` | T3; omit for a finished-size blank |
 

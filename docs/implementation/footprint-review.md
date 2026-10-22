@@ -7,7 +7,7 @@ All 38 schematic components now use 12 project-local `CTCSS_THT` footprint types
 | R_P5.08_CNC / R1–R15 | 5.08 | 2.0 | 0.9 | 0.55 | 3.08 |
 | C_Disc_P2.5_CNC / C1,C2,C4,C5 | 2.50 | 2.0 | 0.9 | 0.55 | 0.50 |
 | C_Film1u_P5_CNC / C3 | 5.00 | 2.0 | 0.9 | 0.55 | 3.00 |
-| C_Film4u7_P5_CNC / C6 | 5.00 | 2.0 | 0.9 | 0.55 | 3.00 |
+| C_Film4u7_P15_CNC / C6 | 15.00 | 2.0 | 1.1 | 0.45 | 13.00 |
 | Q_TO92_Formed_CNC / Q1 | 2.54 | 2.0 | 0.9 | 0.55 | 0.54 |
 | RV_3296W_CNC / RV1 | 2.54 | 2.0 | 0.9 | 0.55 | 0.54 |
 | Header_1x02/04/05/08_CNC / J1–J6 | 2.54 | 2.0 | 1.1 | 0.45 | 0.54 |
@@ -21,9 +21,9 @@ Supported source silk/fab/courtyard geometry is retained; the initial generated 
 ## Bodies and handling allowances
 
 - Resistor bodies are the specified horizontal DIN0204 envelope, 3.6×1.6mm. Buy actual parts fitting that body/lead pitch; larger 1/4W bodies need a different footprint, not forced leads.
-- C1/C2/C4/C5 use the specified 3×2mm disc envelope at2.5mm pitch. Buy 100nF parts rated at least25V that fit; the drill accepts leads up to the selected gauge with clearance. A larger purchased disc must be reviewed.
-- C3 WIMA MKS2C041001F00KSSD:7.2×5mm body,10mm height,5mm pitch,0.5mm wire. C6 WIMA MKS2C044701O00KSSD:7.2×11mm body,18mm height,5mm pitch. Both unpolarized.
-- Q1 is **factory-formed** onsemi2N3904RLRAG, not straight-lead bulk2N3904G.2.54mm pitch is within the manufacturer's bent-lead2.4–2.8mm range; max body about5.2×4.19mm. No beginner hand-forming against the body is required.
+- C1/C2/C4/C5 use Vishay K104K15X7RF5TL2, 100nF/50V X7R, 2.5mm pitch; maximum body 4×2.6mm, height 5.6mm. The retained C_Disc footprint name now describes this selected radial MLCC. Body/courtyard artwork was enlarged without changing pads.
+- C3 KEMET R82DC4100AA60J: maximum 7.5×5.1×10.1mm, 5mm pitch, 0.5±0.05mm wire. C6 TDK B32522C0475J000: maximum 18×7×12.5mm, 15mm pitch, 0.8mm wire and 1.1mm drills. Both are nonpolar 63V/5% film parts. See primary sources in the sourcing review.
+- Q1 is **factory-formed** onsemi2N3904TAR, not straight-lead bulk2N3904G.2.54mm pitch is within the manufacturer's bent-lead2.4–2.8mm range; max body about5.2×4.19mm. No beginner hand-forming against the body is required.
 - RV1 Bourns3296W-1-103LF:9.53×4.83mm, top screw access near lead1; reserve screwdriver room.
 - Headers are standard2.54mm single rows. The1.1mm drill nominally clears a0.64mm square pin's0.905mm diagonal. Module sockets require actual selected socket pin fit; keep two socket bodies and all populated parts at least2mm apart.
 - U1 retains Biacco42 centers but reserve at least the user's approximate37×18mm clone outline, plus socket bodies and USB-C cable clearance. Source footprint outline is smaller and is not the final populated envelope.

@@ -1,5 +1,7 @@
 # Single-sided CNC review package
 
+**2026-10-22 sourcing revision:** C6 now has 15 mm pitch and 1.1 mm drills; TP3 moved. Use the regenerated copper, legend and drill exports together. The existing `ctcss-board-cam.mkc` is preserved user work from the earlier geometry: reimport the revised files, rebuild toolpaths and verify registration/drill counts before machining. It is not validated for this revision.
+
 **Control cleanup complete:** J5 is a two-pin BYPASS/GND connector; J6 retains four LED contacts. The OFF/A0 switch circuit and R16 are removed. These regenerated files, the BOM and the [wiring table](../../../docs/implementation/assembly-and-bring-up.md#j5j6-cable-wiring) describe the same revision. The unit remains powered with the radio.
 
 **For the user's 150 mm X × 100 mm Y landscape setup and left/right Y-axis flip, use the [landscape CAM set](landscape-y-flip/README.md).** It includes registered top/bottom SVGs with all four mounting holes. Its bottom copper and electrical drills are already mirrored for that flip; do not mirror them again. The files listed below remain the original portrait exports and must not be mixed into that transformed set.
@@ -10,7 +12,7 @@ This is a geometry package for CAM review and a test coupon, **not approved mach
 | --- | --- |
 | `native-exports/icom-ctcss-board-B_Cu.gbl` | The only physical copper layer |
 | `native-exports/icom-ctcss-board-Edge_Cuts.gm1` | 100 × 150 mm board perimeter |
-| `native-exports/icom-ctcss-board-PTH.drl` | 111 electrical holes: 48 at 0.9 mm, 63 at 1.1 mm |
+| `native-exports/icom-ctcss-board-PTH.drl` | 111 electrical holes: 46 at 0.9 mm, 65 at 1.1 mm |
 | `native-exports/icom-ctcss-board-NPTH.drl` | Four 4 mm mounting holes |
 | `native-exports/icom-ctcss-board-F_Silkscreen.gto` | Positive top legend artwork, plotted from F.SilkS |
 | `native-exports/icom-ctcss-board-top-legend.svg` | Same legend converted from that Gerber; transparent 100 × 150 mm page for laser preparation |
@@ -37,7 +39,7 @@ The default Gerber job metadata is excluded: it carries generic two-layer/1.6 mm
 
 Gerbers and drills use common absolute metric board coordinates. The mirrored [bottom preview](../../../docs/reference/copper-bottom.svg) is a viewing aid. Establish the correct bottom-side machining transform in CAM using an asymmetric pin-1 feature and the mounting holes; avoid mirroring twice. Keep drill/copper/outline registration together. Verify dimensions at 1:1 scale.
 
-Design geometry: 0.5 mm minimum copper clearance; 0.5 mm signal and 1 mm power/ground tracks; 2 mm ordinary lands and 3 mm test-point lands. No routing vias, wire jumpers or pours. The selected Q1 is the factory-formed 2N3904RLRAG; straight-lead substitutes do not match its footprint.
+Design geometry: 0.5 mm minimum copper clearance; 0.5 mm signal and 1 mm power/ground tracks; 2 mm ordinary lands and 3 mm test-point lands. No routing vias, wire jumpers or pours. The selected Q1 is the factory-formed 2N3904TAR; straight-lead substitutes do not match its footprint.
 
 Available cutters are 30°/0.2 mm-tip and 60°/0.1 mm-tip V-bits. Confirm actual 0.9/1.1/4 mm drilling capability, copper thickness, runout, flatness and hold-down. Establish depth, feeds, isolation passes and outline cutting on scrap; inspect copper removal, pads, hole fit and continuity. No cutting depth or feed is approved by this package. If a matching drill is unavailable, review interpolation and minimum feature capability before cutting.
 

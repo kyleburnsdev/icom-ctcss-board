@@ -1,5 +1,7 @@
 # Carvera landscape setup — Y-axis flip
 
+**2026-10-22 sourcing revision:** C6 now has 15 mm pitch and 1.1 mm drills; TP3 moved. Use the regenerated copper, legend and drill exports together. The existing `ctcss-board-cam.mkc` is preserved user work from the earlier geometry: reimport the revised files, rebuild toolpaths and verify registration/drill counts before machining. It is not validated for this revision.
+
 Use this directory as one consistent CAM set for the requested setup: **150 mm along machine X, 100 mm along machine Y**. Coordinates below are CNC XY, measured from the board's lower-left corner. SVGs show the same frame with their usual screen Y-down display.
 
 | File | Operation / purpose |
