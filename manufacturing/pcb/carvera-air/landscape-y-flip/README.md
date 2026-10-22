@@ -34,6 +34,8 @@ Drill and prove the registration-hole/fixture setup before relying on it for the
 
 ## Manufacturing order
 
+For detailed Studio setup, toolpath definitions and numbered NC exports, follow the [Makera Studio fabrication guide](../../../../docs/implementation/makera-studio-board-fabrication.md). Its main workflow combines isolation, electrical holes and registration holes in one NC file when the initial fixture secures the blank without registration pins. Use separate registration machining only when pin insertion, deburring or reseating is required before isolation; the sequence below describes that fixture-dependent alternative. Coating and flipping remain boundaries between NC files.
+
 1. **Start with uncoated stock, copper side up.** Support the bare top substrate on the flat fixture/spoilboard. Establish the 150 × 100 mm frame, orientation mark and bottom-side XY setup. Prove the registration-hole/fixture arrangement on a coupon.
 2. **Drill the four registration holes.** Use `registration-holes.drl`; their coordinate set is identical on both sides. Remove drilling burrs/chips, reseat the board flat if disturbed, and establish the surface-height reference/leveling for isolation. Registration drilling must not leave debris or burrs affecting support or probing.
 3. **Mill bottom copper isolation.** Use `bottom-copper-Y-FLIPPED.gbl` without another mirror. Complete the isolation passes while the supporting top surface is still bare and flat.
