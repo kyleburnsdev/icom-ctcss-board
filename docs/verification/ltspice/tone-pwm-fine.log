@@ -1,0 +1,38 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-pwm-fine.cir
+Start Time: Sun Oct 25 09:57:08 2026
+Options:numdgt=16 plotwinsize=0 reltol=1e-5
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+reltol = 1e-05
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 10.414 seconds.
+Total iterations: 9659493
+
+Files loaded:
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-pwm-fine.cir
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\nominal.inc
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-network.inc
+
+Fourier components of V(audio)
+N-Period=5
+DC component:-5.64305e-07
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.514e+02	 1.006e-03	 1.000e+00	  123.92°	    0.00°
+    2   	 3.028e+02	 1.681e-07	 1.671e-04	 -125.47°	 -249.39°
+    3   	 4.542e+02	 4.189e-08	 4.164e-05	 -171.68°	 -295.60°
+    4   	 6.056e+02	 2.272e-08	 2.259e-05	  -74.59°	 -198.51°
+    5   	 7.570e+02	 8.280e-08	 8.230e-05	   -7.12°	 -131.05°
+    6   	 9.084e+02	 5.906e-08	 5.871e-05	 -153.95°	 -277.88°
+    7   	 1.060e+03	 1.706e-08	 1.696e-05	  -85.91°	 -209.83°
+    8   	 1.211e+03	 3.344e-08	 3.324e-05	  -32.89°	 -156.81°
+    9   	 1.363e+03	 3.775e-08	 3.752e-05	  -95.88°	 -219.80°
+   10   	 1.514e+03	 1.229e-08	 1.222e-05	  -64.04°	 -187.97°
+Partial Harmonic Distortion: 0.020813%
+Total Harmonic Distortion:   0.408214%
+

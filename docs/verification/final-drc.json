@@ -1686,6 +1686,49 @@
       "description": "Silkscreen clearance",
       "rule": "silk_overlap",
       "pos": {
+        "x": 95.0,
+        "y": 165.0
+      },
+      "items": [
+        {
+          "description": "Reference field of R8",
+          "pos": {
+            "x": 95.0,
+            "y": 165.0
+          },
+          "uuid": "70c53a94-5f78-4d12-8eec-735f88361a5a",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R8",
+            "uuid": "f251634a-f242-4328-a350-38c46ab41868"
+          }
+        },
+        {
+          "description": "Segment of R8 on F.Silkscreen",
+          "pos": {
+            "x": 95.08,
+            "y": 164.38
+          },
+          "uuid": "bba488a6-29c6-470f-a507-d04b8eafec96",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R8",
+            "uuid": "f251634a-f242-4328-a350-38c46ab41868"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
         "x": 88.62,
         "y": 191.38
       },
@@ -1815,92 +1858,6 @@
       "description": "Silkscreen clearance",
       "rule": "silk_overlap",
       "pos": {
-        "x": 88.0,
-        "y": 159.0
-      },
-      "items": [
-        {
-          "description": "Reference field of R9",
-          "pos": {
-            "x": 88.0,
-            "y": 159.0
-          },
-          "uuid": "61d48ec9-eae4-41e5-b10c-1c146d9439b4",
-          "ownership_status": "resolved",
-          "item_kind": "property",
-          "layer": "F.SilkS",
-          "owner": {
-            "kind": "footprint",
-            "reference": "R9",
-            "uuid": "b0fd6a81-d96d-4b8d-8236-435a9a95ed71"
-          }
-        },
-        {
-          "description": "Segment of R9 on F.Silkscreen",
-          "pos": {
-            "x": 88.62,
-            "y": 159.08
-          },
-          "uuid": "ba2dbb47-b0e7-4fd4-9dc5-bc3e59d834fd",
-          "ownership_status": "resolved",
-          "item_kind": "fp_line",
-          "layer": "F.SilkS",
-          "owner": {
-            "kind": "footprint",
-            "reference": "R9",
-            "uuid": "b0fd6a81-d96d-4b8d-8236-435a9a95ed71"
-          }
-        }
-      ]
-    },
-    {
-      "severity": "warning",
-      "description": "Silkscreen clearance",
-      "rule": "silk_overlap",
-      "pos": {
-        "x": 102.38,
-        "y": 169.92
-      },
-      "items": [
-        {
-          "description": "Segment of R5 on F.Silkscreen",
-          "pos": {
-            "x": 102.38,
-            "y": 169.92
-          },
-          "uuid": "805878fc-bdc2-4be5-87db-1877e1eae17b",
-          "ownership_status": "resolved",
-          "item_kind": "fp_line",
-          "layer": "F.SilkS",
-          "owner": {
-            "kind": "footprint",
-            "reference": "R5",
-            "uuid": "2c7246bc-fbf5-4b38-895d-2834234bc5a7"
-          }
-        },
-        {
-          "description": "Reference field of R5",
-          "pos": {
-            "x": 103.0,
-            "y": 170.0
-          },
-          "uuid": "d448a304-f979-4d0f-ac9f-bc6f025e9131",
-          "ownership_status": "resolved",
-          "item_kind": "property",
-          "layer": "F.SilkS",
-          "owner": {
-            "kind": "footprint",
-            "reference": "R5",
-            "uuid": "2c7246bc-fbf5-4b38-895d-2834234bc5a7"
-          }
-        }
-      ]
-    },
-    {
-      "severity": "warning",
-      "description": "Silkscreen clearance",
-      "rule": "silk_overlap",
-      "pos": {
         "x": 100.84,
         "y": 153.62
       },
@@ -1944,40 +1901,40 @@
       "description": "Silkscreen clearance",
       "rule": "silk_overlap",
       "pos": {
-        "x": 95.0,
-        "y": 165.0
+        "x": 88.0,
+        "y": 159.0
       },
       "items": [
         {
-          "description": "Reference field of R8",
+          "description": "Reference field of R9",
           "pos": {
-            "x": 95.0,
-            "y": 165.0
+            "x": 88.0,
+            "y": 159.0
           },
-          "uuid": "70c53a94-5f78-4d12-8eec-735f88361a5a",
+          "uuid": "61d48ec9-eae4-41e5-b10c-1c146d9439b4",
           "ownership_status": "resolved",
           "item_kind": "property",
           "layer": "F.SilkS",
           "owner": {
             "kind": "footprint",
-            "reference": "R8",
-            "uuid": "f251634a-f242-4328-a350-38c46ab41868"
+            "reference": "R9",
+            "uuid": "b0fd6a81-d96d-4b8d-8236-435a9a95ed71"
           }
         },
         {
-          "description": "Segment of R8 on F.Silkscreen",
+          "description": "Segment of R9 on F.Silkscreen",
           "pos": {
-            "x": 95.08,
-            "y": 164.38
+            "x": 88.62,
+            "y": 159.08
           },
-          "uuid": "bba488a6-29c6-470f-a507-d04b8eafec96",
+          "uuid": "ba2dbb47-b0e7-4fd4-9dc5-bc3e59d834fd",
           "ownership_status": "resolved",
           "item_kind": "fp_line",
           "layer": "F.SilkS",
           "owner": {
             "kind": "footprint",
-            "reference": "R8",
-            "uuid": "f251634a-f242-4328-a350-38c46ab41868"
+            "reference": "R9",
+            "uuid": "b0fd6a81-d96d-4b8d-8236-435a9a95ed71"
           }
         }
       ]
@@ -2030,40 +1987,126 @@
       "description": "Silkscreen clearance",
       "rule": "silk_overlap",
       "pos": {
-        "x": 131.0,
-        "y": 189.0
+        "x": 114.0,
+        "y": 181.0
       },
       "items": [
         {
-          "description": "Reference field of TP8",
+          "description": "Reference field of R11",
           "pos": {
-            "x": 131.0,
-            "y": 189.0
+            "x": 114.0,
+            "y": 181.0
           },
-          "uuid": "57e88efb-93cc-45c5-8b81-2df5f9ac40f8",
+          "uuid": "9e79471b-91f3-45b5-9beb-b946ac10e19a",
           "ownership_status": "resolved",
           "item_kind": "property",
           "layer": "F.SilkS",
           "owner": {
             "kind": "footprint",
-            "reference": "TP8",
-            "uuid": "e648242d-2e60-4d57-a0e8-3cdce8136830"
+            "reference": "R11",
+            "uuid": "88ea60f7-ad8b-42f0-a851-04e30a985a5f"
           }
         },
         {
-          "description": "Circle of TP8 on F.Silkscreen",
+          "description": "Segment of R11 on F.Silkscreen",
           "pos": {
-            "x": 131.0,
-            "y": 190.0
+            "x": 113.92,
+            "y": 181.62
           },
-          "uuid": "58b9ee62-abcc-4515-8403-80fc4bad6ca5",
+          "uuid": "cf83c70c-bd4c-4841-a8d8-f5185ea2faaf",
           "ownership_status": "resolved",
-          "item_kind": "fp_circle",
+          "item_kind": "fp_line",
           "layer": "F.SilkS",
           "owner": {
             "kind": "footprint",
-            "reference": "TP8",
-            "uuid": "e648242d-2e60-4d57-a0e8-3cdce8136830"
+            "reference": "R11",
+            "uuid": "88ea60f7-ad8b-42f0-a851-04e30a985a5f"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 116.46,
+        "y": 175.92
+      },
+      "items": [
+        {
+          "description": "Segment of R10 on F.Silkscreen",
+          "pos": {
+            "x": 116.46,
+            "y": 175.92
+          },
+          "uuid": "2bd1a99d-c76f-44b7-b69e-31444e24e020",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R10",
+            "uuid": "b9d2f147-c366-4631-8649-9316a2ba0a64"
+          }
+        },
+        {
+          "description": "Reference field of R10",
+          "pos": {
+            "x": 117.08,
+            "y": 176.0
+          },
+          "uuid": "652b4e16-2818-4e2a-afe5-2c6156977d57",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R10",
+            "uuid": "b9d2f147-c366-4631-8649-9316a2ba0a64"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 102.38,
+        "y": 169.92
+      },
+      "items": [
+        {
+          "description": "Segment of R5 on F.Silkscreen",
+          "pos": {
+            "x": 102.38,
+            "y": 169.92
+          },
+          "uuid": "805878fc-bdc2-4be5-87db-1877e1eae17b",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R5",
+            "uuid": "2c7246bc-fbf5-4b38-895d-2834234bc5a7"
+          }
+        },
+        {
+          "description": "Reference field of R5",
+          "pos": {
+            "x": 103.0,
+            "y": 170.0
+          },
+          "uuid": "d448a304-f979-4d0f-ac9f-bc6f025e9131",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R5",
+            "uuid": "2c7246bc-fbf5-4b38-895d-2834234bc5a7"
           }
         }
       ]
@@ -2372,83 +2415,40 @@
       "description": "Silkscreen clearance",
       "rule": "silk_overlap",
       "pos": {
-        "x": 116.46,
-        "y": 175.92
+        "x": 131.0,
+        "y": 189.0
       },
       "items": [
         {
-          "description": "Segment of R10 on F.Silkscreen",
+          "description": "Reference field of TP8",
           "pos": {
-            "x": 116.46,
-            "y": 175.92
+            "x": 131.0,
+            "y": 189.0
           },
-          "uuid": "2bd1a99d-c76f-44b7-b69e-31444e24e020",
-          "ownership_status": "resolved",
-          "item_kind": "fp_line",
-          "layer": "F.SilkS",
-          "owner": {
-            "kind": "footprint",
-            "reference": "R10",
-            "uuid": "b9d2f147-c366-4631-8649-9316a2ba0a64"
-          }
-        },
-        {
-          "description": "Reference field of R10",
-          "pos": {
-            "x": 117.08,
-            "y": 176.0
-          },
-          "uuid": "652b4e16-2818-4e2a-afe5-2c6156977d57",
+          "uuid": "57e88efb-93cc-45c5-8b81-2df5f9ac40f8",
           "ownership_status": "resolved",
           "item_kind": "property",
           "layer": "F.SilkS",
           "owner": {
             "kind": "footprint",
-            "reference": "R10",
-            "uuid": "b9d2f147-c366-4631-8649-9316a2ba0a64"
-          }
-        }
-      ]
-    },
-    {
-      "severity": "warning",
-      "description": "Silkscreen clearance",
-      "rule": "silk_overlap",
-      "pos": {
-        "x": 114.0,
-        "y": 181.0
-      },
-      "items": [
-        {
-          "description": "Reference field of R11",
-          "pos": {
-            "x": 114.0,
-            "y": 181.0
-          },
-          "uuid": "9e79471b-91f3-45b5-9beb-b946ac10e19a",
-          "ownership_status": "resolved",
-          "item_kind": "property",
-          "layer": "F.SilkS",
-          "owner": {
-            "kind": "footprint",
-            "reference": "R11",
-            "uuid": "88ea60f7-ad8b-42f0-a851-04e30a985a5f"
+            "reference": "TP8",
+            "uuid": "e648242d-2e60-4d57-a0e8-3cdce8136830"
           }
         },
         {
-          "description": "Segment of R11 on F.Silkscreen",
+          "description": "Circle of TP8 on F.Silkscreen",
           "pos": {
-            "x": 113.92,
-            "y": 181.62
+            "x": 131.0,
+            "y": 190.0
           },
-          "uuid": "cf83c70c-bd4c-4841-a8d8-f5185ea2faaf",
+          "uuid": "58b9ee62-abcc-4515-8403-80fc4bad6ca5",
           "ownership_status": "resolved",
-          "item_kind": "fp_line",
+          "item_kind": "fp_circle",
           "layer": "F.SilkS",
           "owner": {
             "kind": "footprint",
-            "reference": "R11",
-            "uuid": "88ea60f7-ad8b-42f0-a851-04e30a985a5f"
+            "reference": "TP8",
+            "uuid": "e648242d-2e60-4d57-a0e8-3cdce8136830"
           }
         }
       ]

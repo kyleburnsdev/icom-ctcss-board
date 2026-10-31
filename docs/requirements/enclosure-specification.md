@@ -33,7 +33,7 @@ Apply this principle within the existing requirements for strength, electrical i
 | Power | Radio nominal 8 V through the existing microphone/radio wiring; no separate power inlet or power switch is required |
 | Fabrication | Default FDM/FFF. Every individual printed part must fit the established **256 × 256 × 256 mm** build volume in its intended print orientation, including space for brim/supports and excluded bed areas |
 
-The [PCB implementation record](../implementation/pcb-layout.md) gives the KiCad outline as X=50–150, Y=50–200 mm. Its hole centers are (56,56), (144,56), (144,194), (56,194) mm. In a board-local frame with the same axes and origin at (50,50), these become (6,6), (94,6), (94,144), (6,144) mm. A CAD rotation must transform the board and holes together; the landscape CAM frame is not the assembly coordinate frame.
+The [PCB implementation record](../implementation/pcb-layout.md) gives the KiCad outline as X=50–150, Y=50–200 mm. Its four enclosure-mount centers are (56,56), (144,56), (144,194), (56,194) mm. In a board-local frame with the same axes and origin at (50,50), these become (6,6), (94,6), (94,144), (6,144) mm. A CAD rotation must transform the board and holes together; the panel CAM frame is not the assembly coordinate frame. The separate H5–H8 jig holes are not enclosure mounts; preserve the existing support interface.
 
 ## Functional and mechanical requirements
 

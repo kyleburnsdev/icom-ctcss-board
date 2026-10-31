@@ -1,5 +1,7 @@
 # Preliminary tone-chain estimate
 
+**LTspice follow-up (2026-10-25):** the [current simulation review](ltspice-validation.md) confirms this calculation, adds tolerance/PWM runs, identifies a tone-disable transient and derives the radio PTT load from its service manual. The calculation below remains an illustrative load model.
+
 Run `python tools/tone-response.py` from the repository root.
 This standard-library nodal AC calculation evaluates the implemented R1–R5/C1/C2 network with the selected 10 kΩ trimmer across DIVIDER/GND, its wiper feeding a 1 µF coupling capacitor. Part/pin-map evidence is recorded separately. The calculation uses an ideal PWM source and an **illustrative** resistive equivalent radio/microphone load; the actual impedance, bias, and required injection amplitude are unknown.
 

@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-31",
+  "revision": "Makera spring-tool bottom pad opening between copper isolation and independent repeatable holes",
+  "source_sha256": {
+    "electronics/fp-lib-table": "f36a0acb0a80b6a9cc9c1360ac63f818c4d449309fa32ccf04f1249ba42effdc",
+    "electronics/icom-ctcss-board.kicad_pcb": "a494d36c1ef0f2cbb7d9030a1380cf396513a0ba1cd261929025821e7b6c35c4",
+    "electronics/icom-ctcss-board.kicad_pro": "e1145de79179aa94216ae802e63e79f80d9a8e03e82948c4306afcd0066d83de",
+    "electronics/icom-ctcss-board.kicad_sch": "2b4d0f6b251cbe1a2bee54bc0166810619f8169cb23300a76d3e1122eb8bed77",
+    "electronics/libraries/Biacco42_ProMicro.pretty/ProMicro.kicad_mod": "a752ba8bb1b3bb57d5e735e1a81327ded0ed0c43c4d308238a9983a7d156ac2d",
+    "electronics/libraries/CTCSS.kicad_sym": "c87a3588b364a8134685b85cb575e420af972517f260f8b914246e9b9fdb255d",
+    "electronics/libraries/CTCSS_THT.pretty/C_Disc_P2.5_CNC.kicad_mod": "5e6e1aa320109c206fd18f9e56cf9a63672bb59cda4fdd723bf1b5e8ccb0d002",
+    "electronics/libraries/CTCSS_THT.pretty/C_Film1u_P5_CNC.kicad_mod": "3a8eee5124097a4b2859b1d4dd74dfb77989b10ebd91342fd70ebf3b7b6f4219",
+    "electronics/libraries/CTCSS_THT.pretty/C_Film4u7_P15_CNC.kicad_mod": "e48b77c184136a38679d920c284d6cd6e42e93237614f800fd030c6571ff71df",
+    "electronics/libraries/CTCSS_THT.pretty/C_Film4u7_P5_CNC.kicad_mod": "a5b22e4e890039c97d05f2d9e51ce69cb2f55f551842a121d90eef9d19feebd9",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x02_CNC.kicad_mod": "2bf8ae0e85e254033dc41bcc00357b37648328212ba89caa2f266f7fea1de343",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x03_CNC.kicad_mod": "6ac76a442c1551d965516a4fc6aaaf04773180fbb6610379d8de8dd841937e16",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x04_CNC.kicad_mod": "6e40981833fe0c2b8e3f65a917431651c81b0382215a11047e731d5e328e1ec5",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x05_CNC.kicad_mod": "018122e907d0479f97ec70ab560de034436fe6e44de4c1aec6bbe44f9b95bee3",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x08_CNC.kicad_mod": "487c57f881d1ca6253fb21fa6e0fb41f824699743f42a477bb90a738fdb0c908",
+    "electronics/libraries/CTCSS_THT.pretty/JigRegistration_4.03mm.kicad_mod": "8c3952c9ed7aa4eb848a54abf5b3af8d7a51efcc0ce9dfc4fe197c79101de1de",
+    "electronics/libraries/CTCSS_THT.pretty/JigRegistration_4.12mm.kicad_mod": "837270aa2f9776ea15434f7cf192752e2575c01c3a1a8b3731181f41e4f79145",
+    "electronics/libraries/CTCSS_THT.pretty/ProMicro_CNC_BCu.kicad_mod": "3ef396102e0b9a924283386f275410a35659d20e98eb840d85d34f60ede819a2",
+    "electronics/libraries/CTCSS_THT.pretty/Q_TO92_Formed_CNC.kicad_mod": "75f5b824965c44e6fec40b7b7c4df3e551fe9253dc752dbc04de749afd9068af",
+    "electronics/libraries/CTCSS_THT.pretty/R_P5.08_CNC.kicad_mod": "2b258d150375757e47e6de97b04007d2f98be71cd932798c51d58258dab3a508",
+    "electronics/libraries/CTCSS_THT.pretty/RV_3296W_CNC.kicad_mod": "a5c348d80915651dd5830d6be9d2f33796790b7c783282160a6462c14bbb58b1",
+    "electronics/libraries/CTCSS_THT.pretty/TP_CNC.kicad_mod": "52314bae143b5dee7c0a70c79e34111058652abaa5cb419637b526d2d0fa6b86",
+    "electronics/sym-lib-table": "4e7867c62d225527defe3a2a5acfd59c0a91c0f2f2490f926dea597341ce0418"
+  },
+  "konnect": "0.13.0",
+  "kicad": "10.0.0",
+  "checks": {
+    "DRC_errors": 0,
+    "unconnected": 0,
+    "DRC_warnings": 115,
+    "ERC_errors": 0,
+    "ERC_warnings": 0,
+    "netlist_assertions": 61,
+    "saved_CAM_reopen": "PASS",
+    "posted_planar_copper_overlap_mm2": 0.0,
+    "jig_rule_areas": 4,
+    "native_thickness_mm": 1.5
+  },
+  "evidence_sha256": {
+    "final-drc.json": "5f9b62272f756fe01018b69f9c1967b6c27d3f4b977fa1373848d757fba573df",
+    "erc-complete.json": "df90ac176efef82551ef85a4ffe44fbd3653b91364bb0e1fb4fdce813fee31a8",
+    "final-board-inventory.json": "a22b58ae8f4fbc4f7edeabe265787de20d169fde2f610527c39512271651fd05",
+    "pcb-cam-geometry.json": "e24a42c35b42ed1ea22f5b318a863993ca1e520fedcf5f9125decc4a3e25f544",
+    "pcb-cam-jobs.json": "0d578d39499b764550196bb0f5d681b3419ca656f037df3b01f418733573f97c",
+    "pcb-cam-reopen.json": "9904132e22086b61d90464b22ad07f128cd3fc006d739c42ff965d2c055ecd28",
+    "pcb-posted-motion.json": "449bb1d54cc0d7c81d674d2f4d296fe6fbf4cd41f3a92cad5f8deff259658775",
+    "pcb-keepout-fill.json": "8cc3ebe35f15b8748404f185c58ea04a7a47d021fc6c97ff18d7196f5e31021c",
+    "pcb-native-update.json": "ea1005a742df7ffb78ebd79b868c5b9062b072103e2b35c170cc2d02150b1e75",
+    "schematic-complete.net": "075202c155e4e9541162ffabd86f0d7a251d0a57cb2c20cf4da81f3e4c8cdf9d",
+    "pcb-cam-job-split.json": "2c10629ca5a4a0cb3358f68dd736c5d5305e9ea83d1ae284440fbc991f42b0b7",
+    "pcb-mask-job.json": "f970783af219fcbfb69d3de65394f56df095bc79b0b2e6db0ba1fed35b3e7906"
+  },
+  "cam_source_sha256": "0621d8c07ecd066d368c8fcbfeb8708d85406adaa129f59f7e2d4d0489b47f77",
+  "cam_inputs_sha256": "34e4fcdf3faf0bd20068c355ab15872d2555104cc07b63a1c2412189f198ba2e",
+  "build_tools_sha256": {
+    "tools/prepare-pcb-cam.py": "3f6abc56e3226df9440ceded87a70c5ab7f111092e0ffda631638681ccec599c",
+    "tools/build-pcb-cam.py": "a2597c7a4066d684eb5883ee747b2078119bd9d5b79517e64767646fb50ddaaa",
+    "tools/verify-pcb-cam.py": "13e37b4776eb6aabfa133d586748463b76b9d6a11b6461cbc0982c03d9a040b9",
+    "tools/check-final-board.py": "c125ee0c5b09d853c3f6ff208175548c855a0be99c300be82551592e6abf9ab8",
+    "tools/check-netlist.py": "cd0a686c97651a13cda2198fbeb0fdddafeb1d5ae5d8fbf58eb1ea3a13eef264",
+    "tools/post/makera_legacy_post.py": "a5a10005b6e40caf6563937c328f2e99da168805fc7f819948e72bf8c2c8b115"
+  },
+  "review_NC_sha256": {
+    "00-registration-preparation.nc": "d07d29a47d4b33325263361b0fadf5f67d2d3013120438ca1dd00c2bf59ede24",
+    "10-bottom-copper.nc": "1c19fc0999555ff93b48e86cbc508a8a44a0387bbf12079033187aa37c988253",
+    "20-bottom-mask-removal.nc": "6fbc9b80532a0108245ba255670c7e3e9729530438337406cedccbd33f4b10c5",
+    "30-bottom-holes.nc": "86c27ffc696392aa001542a2ac887975507407c5c06de086c98ddf0d76943eba",
+    "40-top-legend-laser.nc": "3120b9c0f71a03ac99340a6db7a012c7a2ae0ceab3d19364e92c9124f57e4f87"
+  },
+  "migration_status": "COMPLETE: native PCB interface and FreeCAD CAM verified",
+  "native_api_fallback": [
+    "Footprint-owned keepout rule areas in board and project libraries",
+    "Set native board thickness to1.5mm"
+  ],
+  "mask_tool_profile_sha256": "6fca74d1a97d0a2bab82c889a79912df22450e3b78d54df3a14839787d92e6d5",
+  "manufacturing_verdict": "CAD/CAM checks pass including bottom pad opening; physical setup/process qualification pending",
+  "open_items": [
+    "Physical hole fit, flip repeatability, tool/holder/bed-fixture clearance, protected breakthrough and surface mapping.",
+    "Spring-tool preload with retained original copper datum, mask removal and intact copper after cleaning; no physical mask qualification performed.",
+    "Milling/drill qualification, first-board dark legend retention on fully UV-cured white mask after IPA cleaning, and assembly/radio acceptance."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-31",
+  "scope": "Comparison with preceding combined review NC before replacement; native recomputation/post rounding only. No physical qualification.",
+  "files": {
+    "10-bottom-copper.nc": {
+      "cutting_moves": 20422,
+      "max_sampled_position_difference_mm": 1.0000000003174137e-05,
+      "max_feed_difference_mm_min": 2.0000000006348273e-05
+    },
+    "30-bottom-holes.nc": {
+      "cutting_moves": 23008,
+      "max_sampled_position_difference_mm": 1.1849723228025295e-05,
+      "max_feed_difference_mm_min": 2.0000000006348273e-05
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # P1 enclosure print build
 
+The [PCB jig workflow](../../docs/implementation/pcb-jig-and-freecad-cam.md) adds separate registration holes while preserving the board outline and all four enclosure mounts. This print project retains its recorded P1 revision; it is not PCB machining evidence.
+
 The primary output is **[p1-enclosure.3mf](p1-enclosure.3mf)**: one project containing all three prepared plates, shared settings and sliced toolpaths.
 
 ![P1 enclosure](../../docs/verification/enclosure-p1/assembled.png)

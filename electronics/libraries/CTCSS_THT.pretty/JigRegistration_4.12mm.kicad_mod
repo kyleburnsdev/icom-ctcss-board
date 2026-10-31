@@ -1,0 +1,150 @@
+(footprint "JigRegistration_4.12mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Carvera Air jig secondary registration hole; NPTH 4.12 mm finished target for measured 4.000 mm pin. Not an enclosure mount. Reserve radius 3.06 mm on both faces.")
+	(property "Reference" "REF**"
+		(at 0 -4.06 0)
+		(layer "F.SilkS")
+		(uuid "18202af2-37ab-4184-b628-d233e0b96a8b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "JigRegistration_4.12mm"
+		(at 0 4.06 0)
+		(layer "F.Fab")
+		(uuid "4526f2b9-a8a9-4fba-b5a6-ac6c1c41364e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "02089045-95ee-46f3-a9ae-6fd23c8caf1a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a9912e6-5a23-4b60-8e01-2d657510dc9b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 3.06 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "2303474b-7bc8-46f7-a69b-a656bad576d8")
+	)
+	(fp_rect
+		(start -3.06 -3.06)
+		(end 3.06 3.06)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d71a69ed-cca4-4a3e-864a-a24db2820825")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.06 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.Fab")
+		(uuid "bca046eb-5aa0-41b5-a489-7fb0a9970f3e")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.06 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f5596673-1c19-491b-af58-548e74c91716")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 4.12 4.12)
+		(drill 4.12)
+		(layers "*.Cu" "*.Mask")
+		(uuid "5555a519-3dd0-4a21-a227-41830a17b9c0")
+	)
+	(zone
+		(layers "F.Cu" "B.Cu")
+		(uuid "f9b7cf00-7ac9-428a-aa30-f0ad25e236a1")
+		(name "Jig registration clearance")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 3.063692 0) (xy 3.04894 0.300294) (xy 3.004824 0.597697) (xy 2.931771 0.889343) (xy 2.830483 1.172424)
+				(xy 2.701935 1.444215) (xy 2.547367 1.702096) (xy 2.368266 1.943586) (xy 2.166358 2.166358) (xy 1.943586 2.368266)
+				(xy 1.702096 2.547367) (xy 1.444215 2.701935) (xy 1.172424 2.830483) (xy 0.889343 2.931771) (xy 0.597697 3.004824)
+				(xy 0.300294 3.04894) (xy 0 3.063692) (xy -0.300294 3.04894) (xy -0.597697 3.004824) (xy -0.889343 2.931771)
+				(xy -1.172424 2.830483) (xy -1.444215 2.701935) (xy -1.702096 2.547367) (xy -1.943586 2.368266)
+				(xy -2.166358 2.166358) (xy -2.368266 1.943586) (xy -2.547367 1.702096) (xy -2.701935 1.444215)
+				(xy -2.830483 1.172424) (xy -2.931771 0.889343) (xy -3.004824 0.597697) (xy -3.04894 0.300294) (xy -3.063692 0)
+				(xy -3.04894 -0.300294) (xy -3.004824 -0.597697) (xy -2.931771 -0.889343) (xy -2.830483 -1.172424)
+				(xy -2.701935 -1.444215) (xy -2.547367 -1.702096) (xy -2.368266 -1.943586) (xy -2.166358 -2.166358)
+				(xy -1.943586 -2.368266) (xy -1.702096 -2.547367) (xy -1.444215 -2.701935) (xy -1.172424 -2.830483)
+				(xy -0.889343 -2.931771) (xy -0.597697 -3.004824) (xy -0.300294 -3.04894) (xy 0 -3.063692) (xy 0.300294 -3.04894)
+				(xy 0.597697 -3.004824) (xy 0.889343 -2.931771) (xy 1.172424 -2.830483) (xy 1.444215 -2.701935)
+				(xy 1.702096 -2.547367) (xy 1.943586 -2.368266) (xy 2.166358 -2.166358) (xy 2.368266 -1.943586)
+				(xy 2.547367 -1.702096) (xy 2.701935 -1.444215) (xy 2.830483 -1.172424) (xy 2.931771 -0.889343)
+				(xy 3.004824 -0.597697) (xy 3.04894 -0.300294)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

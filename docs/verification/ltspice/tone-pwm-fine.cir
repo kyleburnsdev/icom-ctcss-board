@@ -1,0 +1,13 @@
+* Illustrative continuous analog sine duty, 10kHz carrier; no MCU quantization
+.include nominal.inc
+.param RL=1k W=1
+.param FT=151.4
+Bdrive pwm 0 V=if(mod(time,100u)/100u < .5+.45*sin(2*pi*FT*time),5,0)
+.include tone-network.inc
+Rload audio 0 {RL}
+.options numdgt=16
+.tran 0 1.2 1 .25u
+.options plotwinsize=0 reltol=1e-5
+.four {FT} 10 5 V(audio)
+.save V(audio) V(pwm)
+.end

@@ -1,0 +1,3510 @@
+{
+  "violations": [
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 121.0,
+        "y": 94.0
+      },
+      "items": [
+        {
+          "description": "Footprint R15",
+          "pos": {
+            "x": 121.0,
+            "y": 94.0
+          },
+          "uuid": "00586221-8bf0-4120-bdf2-2175f52b43b6",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'RV_3296W_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 110.0,
+        "y": 163.0
+      },
+      "items": [
+        {
+          "description": "Footprint RV1",
+          "pos": {
+            "x": 110.0,
+            "y": 163.0
+          },
+          "uuid": "12c67048-f7b9-4ec7-a2be-542f64f5693e",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'C_Film1u_P5_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 118.0,
+        "y": 164.0
+      },
+      "items": [
+        {
+          "description": "Footprint C3",
+          "pos": {
+            "x": 118.0,
+            "y": 164.0
+          },
+          "uuid": "245ddabf-ef29-4128-9383-4c74c454e0fa",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 75.0,
+        "y": 134.0
+      },
+      "items": [
+        {
+          "description": "Footprint R12",
+          "pos": {
+            "x": 75.0,
+            "y": 134.0
+          },
+          "uuid": "2603f36b-3b37-45eb-bb22-009c09f7736d",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 103.0,
+        "y": 169.0
+      },
+      "items": [
+        {
+          "description": "Footprint R5",
+          "pos": {
+            "x": 103.0,
+            "y": 169.0
+          },
+          "uuid": "2c7246bc-fbf5-4b38-895d-2834234bc5a7",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'Q_TO92_Formed_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 116.0,
+        "y": 187.0
+      },
+      "items": [
+        {
+          "description": "Footprint Q1",
+          "pos": {
+            "x": 116.0,
+            "y": 187.0
+          },
+          "uuid": "2cde34a7-c48d-4966-97ff-e1da4fded579",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'C_Disc_P2.5_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 130.0,
+        "y": 151.0
+      },
+      "items": [
+        {
+          "description": "Footprint C1",
+          "pos": {
+            "x": 130.0,
+            "y": 151.0
+          },
+          "uuid": "30ca9174-63d8-4906-802c-cce6723723bb",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'C_Disc_P2.5_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 74.0,
+        "y": 92.2
+      },
+      "items": [
+        {
+          "description": "Footprint C4",
+          "pos": {
+            "x": 74.0,
+            "y": 92.2
+          },
+          "uuid": "324f242a-96c4-4919-86b8-ab52748cd2c2",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'TP_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 121.0,
+        "y": 155.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP5",
+          "pos": {
+            "x": 121.0,
+            "y": 155.0
+          },
+          "uuid": "3c9f3f35-7330-43c4-8006-1daee890bab1",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'ProMicro_CNC_BCu' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 90.0,
+        "y": 105.0
+      },
+      "items": [
+        {
+          "description": "Footprint U1",
+          "pos": {
+            "x": 90.0,
+            "y": 105.0
+          },
+          "uuid": "43aec35a-7477-43f6-8116-a53c96249028",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 120.0,
+        "y": 145.0
+      },
+      "items": [
+        {
+          "description": "Footprint R2",
+          "pos": {
+            "x": 120.0,
+            "y": 145.0
+          },
+          "uuid": "441591d3-b2bc-4d38-9260-bcf5e46980d9",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'TP_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 83.0,
+        "y": 180.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP6",
+          "pos": {
+            "x": 83.0,
+            "y": 180.0
+          },
+          "uuid": "44824b58-fbd9-4c64-a0c1-b0d836576a4f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 121.0,
+        "y": 84.0
+      },
+      "items": [
+        {
+          "description": "Footprint R7",
+          "pos": {
+            "x": 121.0,
+            "y": 84.0
+          },
+          "uuid": "47f654a4-6418-4cf4-ba99-cd39f240d213",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 82.0,
+        "y": 134.0
+      },
+      "items": [
+        {
+          "description": "Footprint R13",
+          "pos": {
+            "x": 82.0,
+            "y": 134.0
+          },
+          "uuid": "514d687e-d9d2-4134-a98b-e2b9567d3a45",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'Header_1x02_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 140.0,
+        "y": 102.0
+      },
+      "items": [
+        {
+          "description": "Footprint J5",
+          "pos": {
+            "x": 140.0,
+            "y": 102.0
+          },
+          "uuid": "59431ff8-f3bf-4791-a6a8-8886913ff968",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'C_Film4u7_P15_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 67.0,
+        "y": 79.0
+      },
+      "items": [
+        {
+          "description": "Footprint C6",
+          "pos": {
+            "x": 67.0,
+            "y": 79.0
+          },
+          "uuid": "709ecf4a-5c0e-4b67-96a7-5ca9d5f5fcaa",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'TP_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 86.0,
+        "y": 86.5
+      },
+      "items": [
+        {
+          "description": "Footprint TP3",
+          "pos": {
+            "x": 86.0,
+            "y": 86.5
+          },
+          "uuid": "8551b4ce-7413-4cf6-b97a-08147be0b7db",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 113.0,
+        "y": 181.0
+      },
+      "items": [
+        {
+          "description": "Footprint R11",
+          "pos": {
+            "x": 113.0,
+            "y": 181.0
+          },
+          "uuid": "88ea60f7-ad8b-42f0-a851-04e30a985a5f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'TP_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 86.0,
+        "y": 150.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP7",
+          "pos": {
+            "x": 86.0,
+            "y": 150.0
+          },
+          "uuid": "8978e0ee-f7ff-4239-9819-643f3d446d2f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'TP_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 56.0,
+        "y": 115.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP1",
+          "pos": {
+            "x": 56.0,
+            "y": 115.0
+          },
+          "uuid": "8e8354f9-a912-4421-a94b-c914f5bb564f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 89.0,
+        "y": 134.0
+      },
+      "items": [
+        {
+          "description": "Footprint R14",
+          "pos": {
+            "x": 89.0,
+            "y": 134.0
+          },
+          "uuid": "91eb55d0-0b64-400f-b471-54f6bb247833",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 99.92,
+        "y": 153.0
+      },
+      "items": [
+        {
+          "description": "Footprint R4",
+          "pos": {
+            "x": 99.92,
+            "y": 153.0
+          },
+          "uuid": "9df19809-85d6-43c5-91a8-4d548249fe04",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'C_Disc_P2.5_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 84.0,
+        "y": 92.2
+      },
+      "items": [
+        {
+          "description": "Footprint C5",
+          "pos": {
+            "x": 84.0,
+            "y": 92.2
+          },
+          "uuid": "a84eb491-c056-4c00-96d7-5a57e373c0ab",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'TP_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 138.0,
+        "y": 137.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP4",
+          "pos": {
+            "x": 138.0,
+            "y": 137.0
+          },
+          "uuid": "ab194970-01f8-4451-aa77-5d0df69ffe5b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 88.0,
+        "y": 160.0
+      },
+      "items": [
+        {
+          "description": "Footprint R9",
+          "pos": {
+            "x": 88.0,
+            "y": 160.0
+          },
+          "uuid": "b0fd6a81-d96d-4b8d-8236-435a9a95ed71",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 117.08,
+        "y": 175.0
+      },
+      "items": [
+        {
+          "description": "Footprint R10",
+          "pos": {
+            "x": 117.08,
+            "y": 175.0
+          },
+          "uuid": "b9d2f147-c366-4631-8649-9316a2ba0a64",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'Header_1x08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 90.0,
+        "y": 180.0
+      },
+      "items": [
+        {
+          "description": "Footprint J1",
+          "pos": {
+            "x": 90.0,
+            "y": 180.0
+          },
+          "uuid": "be1c4b5f-b8bc-4544-8e8e-5ba4a6f51271",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'Header_1x04_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 60.0,
+        "y": 121.0
+      },
+      "items": [
+        {
+          "description": "Footprint J4",
+          "pos": {
+            "x": 60.0,
+            "y": 121.0
+          },
+          "uuid": "c1b03514-e750-4117-bca8-9a9752b4c487",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'C_Disc_P2.5_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 115.0,
+        "y": 151.0
+      },
+      "items": [
+        {
+          "description": "Footprint C2",
+          "pos": {
+            "x": 115.0,
+            "y": 151.0
+          },
+          "uuid": "c6cf32fe-768f-4ea7-9ce7-0acf112e909b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 121.0,
+        "y": 78.0
+      },
+      "items": [
+        {
+          "description": "Footprint R6",
+          "pos": {
+            "x": 121.0,
+            "y": 78.0
+          },
+          "uuid": "da30dac7-d01c-4b75-b692-19f398b58b29",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 135.0,
+        "y": 145.0
+      },
+      "items": [
+        {
+          "description": "Footprint R1",
+          "pos": {
+            "x": 135.0,
+            "y": 145.0
+          },
+          "uuid": "e0c014c7-ee35-4f7c-aaf4-fa4864921e9b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'Header_1x04_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 140.0,
+        "y": 78.0
+      },
+      "items": [
+        {
+          "description": "Footprint J6",
+          "pos": {
+            "x": 140.0,
+            "y": 78.0
+          },
+          "uuid": "e3665602-4b44-4dc1-9cc6-76a3d40a570b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'TP_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 131.0,
+        "y": 190.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP8",
+          "pos": {
+            "x": 131.0,
+            "y": 190.0
+          },
+          "uuid": "e648242d-2e60-4d57-a0e8-3cdce8136830",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'Header_1x08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 90.0,
+        "y": 190.0
+      },
+      "items": [
+        {
+          "description": "Footprint J2",
+          "pos": {
+            "x": 90.0,
+            "y": 190.0
+          },
+          "uuid": "eac80421-10db-4251-aee8-0621b7606019",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'Header_1x05_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 60.0,
+        "y": 142.0
+      },
+      "items": [
+        {
+          "description": "Footprint J3",
+          "pos": {
+            "x": 60.0,
+            "y": 142.0
+          },
+          "uuid": "ebce11de-ba3f-4ad4-bff8-e3b2a468f3d2",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 105.0,
+        "y": 145.0
+      },
+      "items": [
+        {
+          "description": "Footprint R3",
+          "pos": {
+            "x": 105.0,
+            "y": 145.0
+          },
+          "uuid": "f05f8a4a-d223-4a82-bcf6-c8aaeace963f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'R_P5.08_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 96.0,
+        "y": 165.0
+      },
+      "items": [
+        {
+          "description": "Footprint R8",
+          "pos": {
+            "x": 96.0,
+            "y": 165.0
+          },
+          "uuid": "f251634a-f242-4328-a350-38c46ab41868",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Footprint 'TP_CNC' does not match copy in library 'CTCSS_THT'",
+      "rule": "lib_footprint_mismatch",
+      "pos": {
+        "x": 65.0,
+        "y": 91.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP2",
+          "pos": {
+            "x": 65.0,
+            "y": 91.0
+          },
+          "uuid": "fc982755-5595-437f-af8b-482eeb29c487",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 138.62,
+        "y": 100.62
+      },
+      "items": [
+        {
+          "description": "Segment of J5 on F.Silkscreen",
+          "pos": {
+            "x": 138.62,
+            "y": 100.62
+          },
+          "uuid": "45e40b13-8f03-4ac7-a50f-d013e6990de4",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J5",
+            "uuid": "59431ff8-f3bf-4791-a6a8-8886913ff968"
+          }
+        },
+        {
+          "description": "Reference field of J5",
+          "pos": {
+            "x": 140.0,
+            "y": 101.0
+          },
+          "uuid": "fcf572fb-f92c-45d7-9d23-82f7f8f281ae",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J5",
+            "uuid": "59431ff8-f3bf-4791-a6a8-8886913ff968"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 138.62,
+        "y": 76.62
+      },
+      "items": [
+        {
+          "description": "Segment of J6 on F.Silkscreen",
+          "pos": {
+            "x": 138.62,
+            "y": 76.62
+          },
+          "uuid": "50d6b0fc-5be6-45fb-82d1-a21536a5db2e",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J6",
+            "uuid": "e3665602-4b44-4dc1-9cc6-76a3d40a570b"
+          }
+        },
+        {
+          "description": "Reference field of J6",
+          "pos": {
+            "x": 140.0,
+            "y": 77.0
+          },
+          "uuid": "a808b2db-b4e0-4174-b234-e37dea1311cb",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J6",
+            "uuid": "e3665602-4b44-4dc1-9cc6-76a3d40a570b"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 56.0,
+        "y": 115.0
+      },
+      "items": [
+        {
+          "description": "Circle of TP1 on F.Silkscreen",
+          "pos": {
+            "x": 56.0,
+            "y": 115.0
+          },
+          "uuid": "52b6b9d9-e954-469f-aa59-cf30a4cce9bc",
+          "ownership_status": "resolved",
+          "item_kind": "fp_circle",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP1",
+            "uuid": "8e8354f9-a912-4421-a94b-c914f5bb564f"
+          }
+        },
+        {
+          "description": "Reference field of TP1",
+          "pos": {
+            "x": 56.0,
+            "y": 114.0
+          },
+          "uuid": "b2d2e6d0-f6dc-42b0-bc6c-bad21e0fe63e",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP1",
+            "uuid": "8e8354f9-a912-4421-a94b-c914f5bb564f"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 65.0,
+        "y": 90.0
+      },
+      "items": [
+        {
+          "description": "Reference field of TP2",
+          "pos": {
+            "x": 65.0,
+            "y": 90.0
+          },
+          "uuid": "05140726-e713-4777-9f38-78c083ef2ea0",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP2",
+            "uuid": "fc982755-5595-437f-af8b-482eeb29c487"
+          }
+        },
+        {
+          "description": "Circle of TP2 on F.Silkscreen",
+          "pos": {
+            "x": 65.0,
+            "y": 91.0
+          },
+          "uuid": "d315184b-c2fc-47c6-a840-94182f74801e",
+          "ownership_status": "resolved",
+          "item_kind": "fp_circle",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP2",
+            "uuid": "fc982755-5595-437f-af8b-482eeb29c487"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 73.13,
+        "y": 90.78
+      },
+      "items": [
+        {
+          "description": "Rectangle of C4 on F.Silkscreen",
+          "pos": {
+            "x": 73.13,
+            "y": 90.78
+          },
+          "uuid": "bd5c3249-66e8-40f4-9003-b9fbb742eefa",
+          "ownership_status": "resolved",
+          "item_kind": "fp_rect",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C4",
+            "uuid": "324f242a-96c4-4919-86b8-ab52748cd2c2"
+          }
+        },
+        {
+          "description": "Reference field of C4",
+          "pos": {
+            "x": 74.0,
+            "y": 91.2
+          },
+          "uuid": "ee59cc36-e59f-4953-a65f-cf56df6e2df8",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C4",
+            "uuid": "324f242a-96c4-4919-86b8-ab52748cd2c2"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 83.13,
+        "y": 90.78
+      },
+      "items": [
+        {
+          "description": "Rectangle of C5 on F.Silkscreen",
+          "pos": {
+            "x": 83.13,
+            "y": 90.78
+          },
+          "uuid": "37f32bdf-1680-4253-a0fc-9f6e8bdc5f4f",
+          "ownership_status": "resolved",
+          "item_kind": "fp_rect",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C5",
+            "uuid": "a84eb491-c056-4c00-96d7-5a57e373c0ab"
+          }
+        },
+        {
+          "description": "Reference field of C5",
+          "pos": {
+            "x": 84.0,
+            "y": 91.2
+          },
+          "uuid": "7603a369-b964-474a-bca1-482f7d7d6c86",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C5",
+            "uuid": "a84eb491-c056-4c00-96d7-5a57e373c0ab"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 86.0,
+        "y": 86.5
+      },
+      "items": [
+        {
+          "description": "Circle of TP3 on F.Silkscreen",
+          "pos": {
+            "x": 86.0,
+            "y": 86.5
+          },
+          "uuid": "61e3c677-75a8-4007-b92e-b7655a6f2a2d",
+          "ownership_status": "resolved",
+          "item_kind": "fp_circle",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP3",
+            "uuid": "8551b4ce-7413-4cf6-b97a-08147be0b7db"
+          }
+        },
+        {
+          "description": "Reference field of TP3",
+          "pos": {
+            "x": 86.0,
+            "y": 85.5
+          },
+          "uuid": "c4db14ce-9a90-4771-8b57-0337cc4295a8",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP3",
+            "uuid": "8551b4ce-7413-4cf6-b97a-08147be0b7db"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 121.0,
+        "y": 77.0
+      },
+      "items": [
+        {
+          "description": "Reference field of R6",
+          "pos": {
+            "x": 121.0,
+            "y": 77.0
+          },
+          "uuid": "59cdb9c7-5fd5-4408-9fc0-6e152278ef1a",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R6",
+            "uuid": "da30dac7-d01c-4b75-b692-19f398b58b29"
+          }
+        },
+        {
+          "description": "Segment of R6 on F.Silkscreen",
+          "pos": {
+            "x": 121.62,
+            "y": 77.08
+          },
+          "uuid": "6a5d9451-7c61-4d02-b5fc-4ff70c6da43b",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R6",
+            "uuid": "da30dac7-d01c-4b75-b692-19f398b58b29"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 121.92,
+        "y": 94.62
+      },
+      "items": [
+        {
+          "description": "Segment of R15 on F.Silkscreen",
+          "pos": {
+            "x": 121.92,
+            "y": 94.62
+          },
+          "uuid": "062ddef1-84f2-4744-9deb-b0586cff7752",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R15",
+            "uuid": "00586221-8bf0-4120-bdf2-2175f52b43b6"
+          }
+        },
+        {
+          "description": "Reference field of R15",
+          "pos": {
+            "x": 122.0,
+            "y": 94.0
+          },
+          "uuid": "362024e0-c6f9-4c35-851d-935e7c90e17a",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R15",
+            "uuid": "00586221-8bf0-4120-bdf2-2175f52b43b6"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 121.62,
+        "y": 83.08
+      },
+      "items": [
+        {
+          "description": "Segment of R7 on F.Silkscreen",
+          "pos": {
+            "x": 121.62,
+            "y": 83.08
+          },
+          "uuid": "b4604b39-6cd5-4868-82fa-01a12fe45c98",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R7",
+            "uuid": "47f654a4-6418-4cf4-ba99-cd39f240d213"
+          }
+        },
+        {
+          "description": "Reference field of R7",
+          "pos": {
+            "x": 121.0,
+            "y": 83.0
+          },
+          "uuid": "c487fd45-b2f4-482f-b2da-239d2b6363c6",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R7",
+            "uuid": "47f654a4-6418-4cf4-ba99-cd39f240d213"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 58.62,
+        "y": 119.62
+      },
+      "items": [
+        {
+          "description": "Segment of J4 on F.Silkscreen",
+          "pos": {
+            "x": 58.62,
+            "y": 119.62
+          },
+          "uuid": "9c82f710-c243-492a-9fb8-5537c5d2f296",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J4",
+            "uuid": "c1b03514-e750-4117-bca8-9a9752b4c487"
+          }
+        },
+        {
+          "description": "Reference field of J4",
+          "pos": {
+            "x": 60.0,
+            "y": 120.0
+          },
+          "uuid": "d74c2563-b2b2-4936-aab2-7a2ce47cb84f",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J4",
+            "uuid": "c1b03514-e750-4117-bca8-9a9752b4c487"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 89.92,
+        "y": 134.62
+      },
+      "items": [
+        {
+          "description": "Segment of R14 on F.Silkscreen",
+          "pos": {
+            "x": 89.92,
+            "y": 134.62
+          },
+          "uuid": "56d4a061-9029-4921-b496-70f8f3043cb5",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R14",
+            "uuid": "91eb55d0-0b64-400f-b471-54f6bb247833"
+          }
+        },
+        {
+          "description": "Reference field of R14",
+          "pos": {
+            "x": 90.0,
+            "y": 134.0
+          },
+          "uuid": "67743178-dcfa-4b03-a5fc-29f8e87db5f4",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R14",
+            "uuid": "91eb55d0-0b64-400f-b471-54f6bb247833"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 86.0,
+        "y": 150.0
+      },
+      "items": [
+        {
+          "description": "Circle of TP7 on F.Silkscreen",
+          "pos": {
+            "x": 86.0,
+            "y": 150.0
+          },
+          "uuid": "8ea0110f-d9c1-4445-be70-b90d0ca89748",
+          "ownership_status": "resolved",
+          "item_kind": "fp_circle",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP7",
+            "uuid": "8978e0ee-f7ff-4239-9819-643f3d446d2f"
+          }
+        },
+        {
+          "description": "Reference field of TP7",
+          "pos": {
+            "x": 86.0,
+            "y": 149.0
+          },
+          "uuid": "e4802ab6-eeed-4336-b8b4-d2c9a1ac8d09",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP7",
+            "uuid": "8978e0ee-f7ff-4239-9819-643f3d446d2f"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 105.0,
+        "y": 146.0
+      },
+      "items": [
+        {
+          "description": "Reference field of R3",
+          "pos": {
+            "x": 105.0,
+            "y": 146.0
+          },
+          "uuid": "ddbe827f-21d5-46a8-89a4-3674b3d94e1e",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R3",
+            "uuid": "f05f8a4a-d223-4a82-bcf6-c8aaeace963f"
+          }
+        },
+        {
+          "description": "Segment of R3 on F.Silkscreen",
+          "pos": {
+            "x": 104.38,
+            "y": 145.92
+          },
+          "uuid": "ef710e2e-c231-491b-9aac-8c8e8c7fa51c",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R3",
+            "uuid": "f05f8a4a-d223-4a82-bcf6-c8aaeace963f"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 76.0,
+        "y": 134.0
+      },
+      "items": [
+        {
+          "description": "Reference field of R12",
+          "pos": {
+            "x": 76.0,
+            "y": 134.0
+          },
+          "uuid": "50f5a00d-17ee-49e3-afb5-d1389e6e684a",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R12",
+            "uuid": "2603f36b-3b37-45eb-bb22-009c09f7736d"
+          }
+        },
+        {
+          "description": "Segment of R12 on F.Silkscreen",
+          "pos": {
+            "x": 75.92,
+            "y": 134.62
+          },
+          "uuid": "89dd916b-1dab-407f-879d-b067ded4f3cc",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R12",
+            "uuid": "2603f36b-3b37-45eb-bb22-009c09f7736d"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 83.0,
+        "y": 134.0
+      },
+      "items": [
+        {
+          "description": "Reference field of R13",
+          "pos": {
+            "x": 83.0,
+            "y": 134.0
+          },
+          "uuid": "0226b869-6040-4736-843a-a72fbead0329",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R13",
+            "uuid": "514d687e-d9d2-4134-a98b-e2b9567d3a45"
+          }
+        },
+        {
+          "description": "Segment of R13 on F.Silkscreen",
+          "pos": {
+            "x": 82.92,
+            "y": 134.62
+          },
+          "uuid": "e41effec-e8d0-458f-97b9-54b0ccf3b94e",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R13",
+            "uuid": "514d687e-d9d2-4134-a98b-e2b9567d3a45"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 58.62,
+        "y": 140.62
+      },
+      "items": [
+        {
+          "description": "Segment of J3 on F.Silkscreen",
+          "pos": {
+            "x": 58.62,
+            "y": 140.62
+          },
+          "uuid": "1359ab0e-84a4-4e3a-a115-cb028b04c79d",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J3",
+            "uuid": "ebce11de-ba3f-4ad4-bff8-e3b2a468f3d2"
+          }
+        },
+        {
+          "description": "Reference field of J3",
+          "pos": {
+            "x": 60.0,
+            "y": 141.0
+          },
+          "uuid": "f472b5f3-81c3-4815-8f4b-a9ab20d09f69",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J3",
+            "uuid": "ebce11de-ba3f-4ad4-bff8-e3b2a468f3d2"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 88.62,
+        "y": 191.38
+      },
+      "items": [
+        {
+          "description": "Segment of J2 on F.Silkscreen",
+          "pos": {
+            "x": 88.62,
+            "y": 191.38
+          },
+          "uuid": "f795a732-74d9-4afd-a7b0-afb70eb61f63",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J2",
+            "uuid": "eac80421-10db-4251-aee8-0621b7606019"
+          }
+        },
+        {
+          "description": "Reference field of J2",
+          "pos": {
+            "x": 89.0,
+            "y": 190.0
+          },
+          "uuid": "fcc0d2a1-d1fe-4145-8449-8e6ddaa6c39f",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J2",
+            "uuid": "eac80421-10db-4251-aee8-0621b7606019"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 83.0,
+        "y": 179.0
+      },
+      "items": [
+        {
+          "description": "Reference field of TP6",
+          "pos": {
+            "x": 83.0,
+            "y": 179.0
+          },
+          "uuid": "77906b7b-69e5-4bf2-844d-3b30429dfb83",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP6",
+            "uuid": "44824b58-fbd9-4c64-a0c1-b0d836576a4f"
+          }
+        },
+        {
+          "description": "Circle of TP6 on F.Silkscreen",
+          "pos": {
+            "x": 83.0,
+            "y": 180.0
+          },
+          "uuid": "84f70052-ea2d-4bdb-9d0b-283dc39319a6",
+          "ownership_status": "resolved",
+          "item_kind": "fp_circle",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP6",
+            "uuid": "44824b58-fbd9-4c64-a0c1-b0d836576a4f"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 88.62,
+        "y": 181.38
+      },
+      "items": [
+        {
+          "description": "Segment of J1 on F.Silkscreen",
+          "pos": {
+            "x": 88.62,
+            "y": 181.38
+          },
+          "uuid": "74ea96c7-10df-46d8-83b9-47a9efb40140",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J1",
+            "uuid": "be1c4b5f-b8bc-4544-8e8e-5ba4a6f51271"
+          }
+        },
+        {
+          "description": "Reference field of J1",
+          "pos": {
+            "x": 89.0,
+            "y": 180.0
+          },
+          "uuid": "ba57d21b-8ef1-45bb-8ac3-e2e07483df74",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "J1",
+            "uuid": "be1c4b5f-b8bc-4544-8e8e-5ba4a6f51271"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 88.0,
+        "y": 159.0
+      },
+      "items": [
+        {
+          "description": "Reference field of R9",
+          "pos": {
+            "x": 88.0,
+            "y": 159.0
+          },
+          "uuid": "61d48ec9-eae4-41e5-b10c-1c146d9439b4",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R9",
+            "uuid": "b0fd6a81-d96d-4b8d-8236-435a9a95ed71"
+          }
+        },
+        {
+          "description": "Segment of R9 on F.Silkscreen",
+          "pos": {
+            "x": 88.62,
+            "y": 159.08
+          },
+          "uuid": "ba2dbb47-b0e7-4fd4-9dc5-bc3e59d834fd",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R9",
+            "uuid": "b0fd6a81-d96d-4b8d-8236-435a9a95ed71"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 102.38,
+        "y": 169.92
+      },
+      "items": [
+        {
+          "description": "Segment of R5 on F.Silkscreen",
+          "pos": {
+            "x": 102.38,
+            "y": 169.92
+          },
+          "uuid": "805878fc-bdc2-4be5-87db-1877e1eae17b",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R5",
+            "uuid": "2c7246bc-fbf5-4b38-895d-2834234bc5a7"
+          }
+        },
+        {
+          "description": "Reference field of R5",
+          "pos": {
+            "x": 103.0,
+            "y": 170.0
+          },
+          "uuid": "d448a304-f979-4d0f-ac9f-bc6f025e9131",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R5",
+            "uuid": "2c7246bc-fbf5-4b38-895d-2834234bc5a7"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 100.84,
+        "y": 153.62
+      },
+      "items": [
+        {
+          "description": "Segment of R4 on F.Silkscreen",
+          "pos": {
+            "x": 100.84,
+            "y": 153.62
+          },
+          "uuid": "b58f6187-bf61-4e49-a36d-8d787c59f231",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R4",
+            "uuid": "9df19809-85d6-43c5-91a8-4d548249fe04"
+          }
+        },
+        {
+          "description": "Reference field of R4",
+          "pos": {
+            "x": 100.92,
+            "y": 153.0
+          },
+          "uuid": "d949b61d-ed61-4954-a67c-c55e11211a38",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R4",
+            "uuid": "9df19809-85d6-43c5-91a8-4d548249fe04"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 95.0,
+        "y": 165.0
+      },
+      "items": [
+        {
+          "description": "Reference field of R8",
+          "pos": {
+            "x": 95.0,
+            "y": 165.0
+          },
+          "uuid": "70c53a94-5f78-4d12-8eec-735f88361a5a",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R8",
+            "uuid": "f251634a-f242-4328-a350-38c46ab41868"
+          }
+        },
+        {
+          "description": "Segment of R8 on F.Silkscreen",
+          "pos": {
+            "x": 95.08,
+            "y": 164.38
+          },
+          "uuid": "bba488a6-29c6-470f-a507-d04b8eafec96",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R8",
+            "uuid": "f251634a-f242-4328-a350-38c46ab41868"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 116.0,
+        "y": 186.0
+      },
+      "items": [
+        {
+          "description": "Reference field of Q1",
+          "pos": {
+            "x": 116.0,
+            "y": 186.0
+          },
+          "uuid": "55bb84ee-a430-4f4f-9e7a-fe125b3bbc8e",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "Q1",
+            "uuid": "2cde34a7-c48d-4966-97ff-e1da4fded579"
+          }
+        },
+        {
+          "description": "Arc of Q1 on F.Silkscreen",
+          "pos": {
+            "x": 118.54,
+            "y": 187.0
+          },
+          "uuid": "9f4b3745-6623-4a73-b00a-67aba5209127",
+          "ownership_status": "resolved",
+          "item_kind": "fp_arc",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "Q1",
+            "uuid": "2cde34a7-c48d-4966-97ff-e1da4fded579"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 131.0,
+        "y": 189.0
+      },
+      "items": [
+        {
+          "description": "Reference field of TP8",
+          "pos": {
+            "x": 131.0,
+            "y": 189.0
+          },
+          "uuid": "57e88efb-93cc-45c5-8b81-2df5f9ac40f8",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP8",
+            "uuid": "e648242d-2e60-4d57-a0e8-3cdce8136830"
+          }
+        },
+        {
+          "description": "Circle of TP8 on F.Silkscreen",
+          "pos": {
+            "x": 131.0,
+            "y": 190.0
+          },
+          "uuid": "58b9ee62-abcc-4515-8403-80fc4bad6ca5",
+          "ownership_status": "resolved",
+          "item_kind": "fp_circle",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP8",
+            "uuid": "e648242d-2e60-4d57-a0e8-3cdce8136830"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 119.38,
+        "y": 145.92
+      },
+      "items": [
+        {
+          "description": "Segment of R2 on F.Silkscreen",
+          "pos": {
+            "x": 119.38,
+            "y": 145.92
+          },
+          "uuid": "1505be3e-5c1a-442b-be93-560dfc488bae",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R2",
+            "uuid": "441591d3-b2bc-4d38-9260-bcf5e46980d9"
+          }
+        },
+        {
+          "description": "Reference field of R2",
+          "pos": {
+            "x": 120.0,
+            "y": 146.0
+          },
+          "uuid": "bc1c64a5-cacc-4443-b59c-f8f04c98442b",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R2",
+            "uuid": "441591d3-b2bc-4d38-9260-bcf5e46980d9"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 110.7,
+        "y": 152.2
+      },
+      "items": [
+        {
+          "description": "PCB text 'C2 100n' on F.Silkscreen",
+          "pos": {
+            "x": 110.7,
+            "y": 152.2
+          },
+          "uuid": "6bef96a9-504d-4f69-9005-81a777414421",
+          "ownership_status": "resolved",
+          "item_kind": "gr_text",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "board"
+          }
+        },
+        {
+          "description": "Rectangle of C2 on F.Silkscreen",
+          "pos": {
+            "x": 113.58,
+            "y": 150.13
+          },
+          "uuid": "a1aced40-efc9-47f0-afa2-d9b95e35f577",
+          "ownership_status": "resolved",
+          "item_kind": "fp_rect",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C2",
+            "uuid": "c6cf32fe-768f-4ea7-9ce7-0acf112e909b"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 116.0,
+        "y": 151.0
+      },
+      "items": [
+        {
+          "description": "Reference field of C2",
+          "pos": {
+            "x": 116.0,
+            "y": 151.0
+          },
+          "uuid": "0ae06d18-aba4-4778-b4aa-8882041d53e6",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C2",
+            "uuid": "c6cf32fe-768f-4ea7-9ce7-0acf112e909b"
+          }
+        },
+        {
+          "description": "Rectangle of C2 on F.Silkscreen",
+          "pos": {
+            "x": 113.58,
+            "y": 150.13
+          },
+          "uuid": "a1aced40-efc9-47f0-afa2-d9b95e35f577",
+          "ownership_status": "resolved",
+          "item_kind": "fp_rect",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C2",
+            "uuid": "c6cf32fe-768f-4ea7-9ce7-0acf112e909b"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 134.38,
+        "y": 145.92
+      },
+      "items": [
+        {
+          "description": "Segment of R1 on F.Silkscreen",
+          "pos": {
+            "x": 134.38,
+            "y": 145.92
+          },
+          "uuid": "86c7e67c-ceed-4801-ab75-9982fc5d5484",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R1",
+            "uuid": "e0c014c7-ee35-4f7c-aaf4-fa4864921e9b"
+          }
+        },
+        {
+          "description": "Reference field of R1",
+          "pos": {
+            "x": 135.0,
+            "y": 146.0
+          },
+          "uuid": "fbfb3642-5c00-4e17-8dd7-4a0704a0f1cf",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R1",
+            "uuid": "e0c014c7-ee35-4f7c-aaf4-fa4864921e9b"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 131.0,
+        "y": 151.0
+      },
+      "items": [
+        {
+          "description": "Reference field of C1",
+          "pos": {
+            "x": 131.0,
+            "y": 151.0
+          },
+          "uuid": "6e5c132c-17e4-4dee-b8ed-7144fb589e03",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C1",
+            "uuid": "30ca9174-63d8-4906-802c-cce6723723bb"
+          }
+        },
+        {
+          "description": "Rectangle of C1 on F.Silkscreen",
+          "pos": {
+            "x": 128.58,
+            "y": 150.13
+          },
+          "uuid": "fc88a518-744e-44a9-b1b5-9a324603ab63",
+          "ownership_status": "resolved",
+          "item_kind": "fp_rect",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "C1",
+            "uuid": "30ca9174-63d8-4906-802c-cce6723723bb"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 121.0,
+        "y": 155.0
+      },
+      "items": [
+        {
+          "description": "Circle of TP5 on F.Silkscreen",
+          "pos": {
+            "x": 121.0,
+            "y": 155.0
+          },
+          "uuid": "4837a203-7a50-4a4d-a789-36951ad4975b",
+          "ownership_status": "resolved",
+          "item_kind": "fp_circle",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP5",
+            "uuid": "3c9f3f35-7330-43c4-8006-1daee890bab1"
+          }
+        },
+        {
+          "description": "Reference field of TP5",
+          "pos": {
+            "x": 121.0,
+            "y": 154.0
+          },
+          "uuid": "d85cd242-0698-4878-a3ec-21e131cdf269",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP5",
+            "uuid": "3c9f3f35-7330-43c4-8006-1daee890bab1"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 138.0,
+        "y": 137.0
+      },
+      "items": [
+        {
+          "description": "Circle of TP4 on F.Silkscreen",
+          "pos": {
+            "x": 138.0,
+            "y": 137.0
+          },
+          "uuid": "236fb6d2-4359-4a42-9a57-ee946b4a252f",
+          "ownership_status": "resolved",
+          "item_kind": "fp_circle",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP4",
+            "uuid": "ab194970-01f8-4451-aa77-5d0df69ffe5b"
+          }
+        },
+        {
+          "description": "Reference field of TP4",
+          "pos": {
+            "x": 138.0,
+            "y": 136.0
+          },
+          "uuid": "c2a14baa-5bf3-48db-8bf7-02ba63d42e74",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "TP4",
+            "uuid": "ab194970-01f8-4451-aa77-5d0df69ffe5b"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 116.46,
+        "y": 175.92
+      },
+      "items": [
+        {
+          "description": "Segment of R10 on F.Silkscreen",
+          "pos": {
+            "x": 116.46,
+            "y": 175.92
+          },
+          "uuid": "2bd1a99d-c76f-44b7-b69e-31444e24e020",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R10",
+            "uuid": "b9d2f147-c366-4631-8649-9316a2ba0a64"
+          }
+        },
+        {
+          "description": "Reference field of R10",
+          "pos": {
+            "x": 117.08,
+            "y": 176.0
+          },
+          "uuid": "652b4e16-2818-4e2a-afe5-2c6156977d57",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R10",
+            "uuid": "b9d2f147-c366-4631-8649-9316a2ba0a64"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rule": "silk_overlap",
+      "pos": {
+        "x": 114.0,
+        "y": 181.0
+      },
+      "items": [
+        {
+          "description": "Reference field of R11",
+          "pos": {
+            "x": 114.0,
+            "y": 181.0
+          },
+          "uuid": "9e79471b-91f3-45b5-9beb-b946ac10e19a",
+          "ownership_status": "resolved",
+          "item_kind": "property",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R11",
+            "uuid": "88ea60f7-ad8b-42f0-a851-04e30a985a5f"
+          }
+        },
+        {
+          "description": "Segment of R11 on F.Silkscreen",
+          "pos": {
+            "x": 113.92,
+            "y": 181.62
+          },
+          "uuid": "cf83c70c-bd4c-4841-a8d8-f5185ea2faaf",
+          "ownership_status": "resolved",
+          "item_kind": "fp_line",
+          "layer": "F.SilkS",
+          "owner": {
+            "kind": "footprint",
+            "reference": "R11",
+            "uuid": "88ea60f7-ad8b-42f0-a851-04e30a985a5f"
+          }
+        }
+      ]
+    }
+  ],
+  "unconnected_items": [],
+  "schematic_parity": [
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 130.0,
+        "y": 151.0
+      },
+      "items": [
+        {
+          "description": "Footprint C1",
+          "pos": {
+            "x": 130.0,
+            "y": 151.0
+          },
+          "uuid": "30ca9174-63d8-4906-802c-cce6723723bb",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 115.0,
+        "y": 151.0
+      },
+      "items": [
+        {
+          "description": "Footprint C2",
+          "pos": {
+            "x": 115.0,
+            "y": 151.0
+          },
+          "uuid": "c6cf32fe-768f-4ea7-9ce7-0acf112e909b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 118.0,
+        "y": 164.0
+      },
+      "items": [
+        {
+          "description": "Footprint C3",
+          "pos": {
+            "x": 118.0,
+            "y": 164.0
+          },
+          "uuid": "245ddabf-ef29-4128-9383-4c74c454e0fa",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 74.0,
+        "y": 92.2
+      },
+      "items": [
+        {
+          "description": "Footprint C4",
+          "pos": {
+            "x": 74.0,
+            "y": 92.2
+          },
+          "uuid": "324f242a-96c4-4919-86b8-ab52748cd2c2",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 84.0,
+        "y": 92.2
+      },
+      "items": [
+        {
+          "description": "Footprint C5",
+          "pos": {
+            "x": 84.0,
+            "y": 92.2
+          },
+          "uuid": "a84eb491-c056-4c00-96d7-5a57e373c0ab",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 67.0,
+        "y": 79.0
+      },
+      "items": [
+        {
+          "description": "Footprint C6",
+          "pos": {
+            "x": 67.0,
+            "y": 79.0
+          },
+          "uuid": "709ecf4a-5c0e-4b67-96a7-5ca9d5f5fcaa",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 90.0,
+        "y": 180.0
+      },
+      "items": [
+        {
+          "description": "Footprint J1",
+          "pos": {
+            "x": 90.0,
+            "y": 180.0
+          },
+          "uuid": "be1c4b5f-b8bc-4544-8e8e-5ba4a6f51271",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 90.0,
+        "y": 190.0
+      },
+      "items": [
+        {
+          "description": "Footprint J2",
+          "pos": {
+            "x": 90.0,
+            "y": 190.0
+          },
+          "uuid": "eac80421-10db-4251-aee8-0621b7606019",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 60.0,
+        "y": 142.0
+      },
+      "items": [
+        {
+          "description": "Footprint J3",
+          "pos": {
+            "x": 60.0,
+            "y": 142.0
+          },
+          "uuid": "ebce11de-ba3f-4ad4-bff8-e3b2a468f3d2",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 60.0,
+        "y": 121.0
+      },
+      "items": [
+        {
+          "description": "Footprint J4",
+          "pos": {
+            "x": 60.0,
+            "y": 121.0
+          },
+          "uuid": "c1b03514-e750-4117-bca8-9a9752b4c487",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 140.0,
+        "y": 102.0
+      },
+      "items": [
+        {
+          "description": "Footprint J5",
+          "pos": {
+            "x": 140.0,
+            "y": 102.0
+          },
+          "uuid": "59431ff8-f3bf-4791-a6a8-8886913ff968",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 140.0,
+        "y": 78.0
+      },
+      "items": [
+        {
+          "description": "Footprint J6",
+          "pos": {
+            "x": 140.0,
+            "y": 78.0
+          },
+          "uuid": "e3665602-4b44-4dc1-9cc6-76a3d40a570b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 116.0,
+        "y": 187.0
+      },
+      "items": [
+        {
+          "description": "Footprint Q1",
+          "pos": {
+            "x": 116.0,
+            "y": 187.0
+          },
+          "uuid": "2cde34a7-c48d-4966-97ff-e1da4fded579",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 135.0,
+        "y": 145.0
+      },
+      "items": [
+        {
+          "description": "Footprint R1",
+          "pos": {
+            "x": 135.0,
+            "y": 145.0
+          },
+          "uuid": "e0c014c7-ee35-4f7c-aaf4-fa4864921e9b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 120.0,
+        "y": 145.0
+      },
+      "items": [
+        {
+          "description": "Footprint R2",
+          "pos": {
+            "x": 120.0,
+            "y": 145.0
+          },
+          "uuid": "441591d3-b2bc-4d38-9260-bcf5e46980d9",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 105.0,
+        "y": 145.0
+      },
+      "items": [
+        {
+          "description": "Footprint R3",
+          "pos": {
+            "x": 105.0,
+            "y": 145.0
+          },
+          "uuid": "f05f8a4a-d223-4a82-bcf6-c8aaeace963f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 99.92,
+        "y": 153.0
+      },
+      "items": [
+        {
+          "description": "Footprint R4",
+          "pos": {
+            "x": 99.92,
+            "y": 153.0
+          },
+          "uuid": "9df19809-85d6-43c5-91a8-4d548249fe04",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 103.0,
+        "y": 169.0
+      },
+      "items": [
+        {
+          "description": "Footprint R5",
+          "pos": {
+            "x": 103.0,
+            "y": 169.0
+          },
+          "uuid": "2c7246bc-fbf5-4b38-895d-2834234bc5a7",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 121.0,
+        "y": 78.0
+      },
+      "items": [
+        {
+          "description": "Footprint R6",
+          "pos": {
+            "x": 121.0,
+            "y": 78.0
+          },
+          "uuid": "da30dac7-d01c-4b75-b692-19f398b58b29",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 121.0,
+        "y": 84.0
+      },
+      "items": [
+        {
+          "description": "Footprint R7",
+          "pos": {
+            "x": 121.0,
+            "y": 84.0
+          },
+          "uuid": "47f654a4-6418-4cf4-ba99-cd39f240d213",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 96.0,
+        "y": 165.0
+      },
+      "items": [
+        {
+          "description": "Footprint R8",
+          "pos": {
+            "x": 96.0,
+            "y": 165.0
+          },
+          "uuid": "f251634a-f242-4328-a350-38c46ab41868",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 88.0,
+        "y": 160.0
+      },
+      "items": [
+        {
+          "description": "Footprint R9",
+          "pos": {
+            "x": 88.0,
+            "y": 160.0
+          },
+          "uuid": "b0fd6a81-d96d-4b8d-8236-435a9a95ed71",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 117.08,
+        "y": 175.0
+      },
+      "items": [
+        {
+          "description": "Footprint R10",
+          "pos": {
+            "x": 117.08,
+            "y": 175.0
+          },
+          "uuid": "b9d2f147-c366-4631-8649-9316a2ba0a64",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 113.0,
+        "y": 181.0
+      },
+      "items": [
+        {
+          "description": "Footprint R11",
+          "pos": {
+            "x": 113.0,
+            "y": 181.0
+          },
+          "uuid": "88ea60f7-ad8b-42f0-a851-04e30a985a5f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 75.0,
+        "y": 134.0
+      },
+      "items": [
+        {
+          "description": "Footprint R12",
+          "pos": {
+            "x": 75.0,
+            "y": 134.0
+          },
+          "uuid": "2603f36b-3b37-45eb-bb22-009c09f7736d",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 82.0,
+        "y": 134.0
+      },
+      "items": [
+        {
+          "description": "Footprint R13",
+          "pos": {
+            "x": 82.0,
+            "y": 134.0
+          },
+          "uuid": "514d687e-d9d2-4134-a98b-e2b9567d3a45",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 89.0,
+        "y": 134.0
+      },
+      "items": [
+        {
+          "description": "Footprint R14",
+          "pos": {
+            "x": 89.0,
+            "y": 134.0
+          },
+          "uuid": "91eb55d0-0b64-400f-b471-54f6bb247833",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 121.0,
+        "y": 94.0
+      },
+      "items": [
+        {
+          "description": "Footprint R15",
+          "pos": {
+            "x": 121.0,
+            "y": 94.0
+          },
+          "uuid": "00586221-8bf0-4120-bdf2-2175f52b43b6",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 110.0,
+        "y": 163.0
+      },
+      "items": [
+        {
+          "description": "Footprint RV1",
+          "pos": {
+            "x": 110.0,
+            "y": 163.0
+          },
+          "uuid": "12c67048-f7b9-4ec7-a2be-542f64f5693e",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 56.0,
+        "y": 115.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP1",
+          "pos": {
+            "x": 56.0,
+            "y": 115.0
+          },
+          "uuid": "8e8354f9-a912-4421-a94b-c914f5bb564f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 65.0,
+        "y": 91.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP2",
+          "pos": {
+            "x": 65.0,
+            "y": 91.0
+          },
+          "uuid": "fc982755-5595-437f-af8b-482eeb29c487",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 86.0,
+        "y": 86.5
+      },
+      "items": [
+        {
+          "description": "Footprint TP3",
+          "pos": {
+            "x": 86.0,
+            "y": 86.5
+          },
+          "uuid": "8551b4ce-7413-4cf6-b97a-08147be0b7db",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 138.0,
+        "y": 137.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP4",
+          "pos": {
+            "x": 138.0,
+            "y": 137.0
+          },
+          "uuid": "ab194970-01f8-4451-aa77-5d0df69ffe5b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 121.0,
+        "y": 155.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP5",
+          "pos": {
+            "x": 121.0,
+            "y": 155.0
+          },
+          "uuid": "3c9f3f35-7330-43c4-8006-1daee890bab1",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 83.0,
+        "y": 180.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP6",
+          "pos": {
+            "x": 83.0,
+            "y": 180.0
+          },
+          "uuid": "44824b58-fbd9-4c64-a0c1-b0d836576a4f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 86.0,
+        "y": 150.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP7",
+          "pos": {
+            "x": 86.0,
+            "y": 150.0
+          },
+          "uuid": "8978e0ee-f7ff-4239-9819-643f3d446d2f",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 131.0,
+        "y": 190.0
+      },
+      "items": [
+        {
+          "description": "Footprint TP8",
+          "pos": {
+            "x": 131.0,
+            "y": 190.0
+          },
+          "uuid": "e648242d-2e60-4d57-a0e8-3cdce8136830",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Missing symbol field 'Assembly' in footprint",
+      "rule": "footprint_symbol_field_mismatch",
+      "pos": {
+        "x": 90.0,
+        "y": 105.0
+      },
+      "items": [
+        {
+          "description": "Footprint U1",
+          "pos": {
+            "x": 90.0,
+            "y": 105.0
+          },
+          "uuid": "43aec35a-7477-43f6-8116-a53c96249028",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Extra footprint",
+      "rule": "extra_footprint",
+      "pos": {
+        "x": 144.0,
+        "y": 56.0
+      },
+      "items": [
+        {
+          "description": "Footprint H2",
+          "pos": {
+            "x": 144.0,
+            "y": 56.0
+          },
+          "uuid": "6d8d4064-5438-404d-93fd-6676f8a2c1b9",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Extra footprint",
+      "rule": "extra_footprint",
+      "pos": {
+        "x": 56.0,
+        "y": 194.0
+      },
+      "items": [
+        {
+          "description": "Footprint H4",
+          "pos": {
+            "x": 56.0,
+            "y": 194.0
+          },
+          "uuid": "9852dea7-de68-4d49-a4eb-1854bc5c4030",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Extra footprint",
+      "rule": "extra_footprint",
+      "pos": {
+        "x": 56.0,
+        "y": 56.0
+      },
+      "items": [
+        {
+          "description": "Footprint H1",
+          "pos": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "uuid": "9ff0f456-7125-44c9-a4bd-fd63e022f732",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    },
+    {
+      "severity": "warning",
+      "description": "Extra footprint",
+      "rule": "extra_footprint",
+      "pos": {
+        "x": 144.0,
+        "y": 194.0
+      },
+      "items": [
+        {
+          "description": "Footprint H3",
+          "pos": {
+            "x": 144.0,
+            "y": 194.0
+          },
+          "uuid": "bb8b17ff-aab9-4eee-a0b5-e887e0d8110b",
+          "ownership_status": "resolved",
+          "item_kind": "footprint",
+          "layer": "F.Cu",
+          "owner": {
+            "kind": "board"
+          }
+        }
+      ]
+    }
+  ]
+}

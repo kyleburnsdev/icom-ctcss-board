@@ -1,0 +1,29 @@
+{
+  "source_hashes": {
+    "icom-ctcss-board-B_Cu.gbl": "0a5305100f2daf0acb3120e75d66941d48b3d87882ff9cd2e6e6af57a820d2f6",
+    "icom-ctcss-board-Edge_Cuts.gm1": "be7ecb674caa79681a94007633224478f84819b3693ae32b2cd6948db053ce7a",
+    "icom-ctcss-board-F_Silkscreen.gto": "d87d6b4b82e6979d375c92a53c4ba3c2ee5b0864e92cc8f0d5af85c543363738",
+    "icom-ctcss-board-NPTH.drl": "a86d78bc74a5f5858bea9d400ef09c372b133bbd1069a2bcd25b586a31674a85",
+    "icom-ctcss-board-PTH.drl": "cd468dd7ced9d4131dac9e8776968c55d9c85e1a61d2ed6e9e472d92fa5c7e1c"
+  },
+  "electrical_holes": 111,
+  "enclosure_mounts": 4,
+  "jig_holes": 4,
+  "isolation_loops": 37,
+  "legend_hatch_segments": 24049,
+  "copper_regions": 36,
+  "swept_cutter_copper_intersection_mm2": 0.0,
+  "settings": {
+    "isolation_offset_mm": 0.15,
+    "vbit_tip_mm": 0.2,
+    "vbit_angle_deg": 30,
+    "isolation_depth_mm": 0.1,
+    "ideal_cut_width_mm": 0.2535898384862246,
+    "curve_approximation_mm": 0.002,
+    "legend_hatch_pitch_mm": 0.05
+  },
+  "mask_pad_count": 111,
+  "mask_centerlines": 1507,
+  "mask_envelope_radius_mm": 0.20358983848622453,
+  "qualification": "Planar ideal cutter only; no physical runout, spring preload, height-map, fixture or holder acceptance."
+}

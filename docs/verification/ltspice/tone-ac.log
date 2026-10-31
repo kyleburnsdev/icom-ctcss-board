@@ -1,0 +1,92 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-ac.cir
+Start Time: Sun Oct 25 09:52:39 2026
+Options:numdgt=16
+
+.step rl=600 w=0
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=1000 w=0
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=2200 w=0
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=10000 w=0
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=100000 w=0
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=600 w=0.25
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=1000 w=0.25
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=2200 w=0.25
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=10000 w=0.25
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=100000 w=0.25
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=600 w=0.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=1000 w=0.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=2200 w=0.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=10000 w=0.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=100000 w=0.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=600 w=0.75
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=1000 w=0.75
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=2200 w=0.75
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=10000 w=0.75
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=100000 w=0.75
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=600 w=1
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=1000 w=1
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=2200 w=1
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=10000 w=1
+Direct Newton iteration succeeded in finding operating point.
+
+.step rl=100000 w=1
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.275 seconds.
+Total iterations: 3
+
+Files loaded:
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-ac.cir
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\nominal.inc
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-network.inc
+

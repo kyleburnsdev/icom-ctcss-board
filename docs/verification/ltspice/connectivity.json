@@ -1,0 +1,70 @@
+{
+  "assertions": 61,
+  "bom_value_matches": 38,
+  "tone_mapping": {
+    "R1": {
+      "value": "3.3k",
+      "pins": {
+        "1": "/PWM_D9",
+        "2": "/FILTER_1"
+      }
+    },
+    "R2": {
+      "value": "3.3k",
+      "pins": {
+        "1": "/FILTER_1",
+        "2": "/FILTER_2"
+      }
+    },
+    "R3": {
+      "value": "10k",
+      "pins": {
+        "1": "/FILTER_2",
+        "2": "/DIVIDER"
+      }
+    },
+    "R4": {
+      "value": "1k",
+      "pins": {
+        "1": "/DIVIDER",
+        "2": "GND"
+      }
+    },
+    "R5": {
+      "value": "100k",
+      "pins": {
+        "1": "Net-(C3-Pad2)",
+        "2": "/MIC_AUDIO"
+      }
+    },
+    "C1": {
+      "value": "100nF",
+      "pins": {
+        "1": "/FILTER_1",
+        "2": "GND"
+      }
+    },
+    "C2": {
+      "value": "100nF",
+      "pins": {
+        "1": "/FILTER_2",
+        "2": "GND"
+      }
+    },
+    "C3": {
+      "value": "1u",
+      "pins": {
+        "1": "/TONE_WIPER",
+        "2": "Net-(C3-Pad2)"
+      }
+    },
+    "RV1": {
+      "value": "10k 3296W",
+      "pins": {
+        "1": "GND",
+        "2": "/TONE_WIPER",
+        "3": "/DIVIDER"
+      }
+    }
+  }
+}

@@ -6,9 +6,9 @@
 
 This project adds a firmware-generated, user-selectable CTCSS/PL tone to the microphone audio path of an Icom IC-229H. Microphone audio passes through the board, while the Pro Micro reads microphone PTT and drives the radio's PTT through an NPN transistor. An off-board encoder, LCD, one bypass switch and two LEDs provide the user interface. **151.4 Hz is one required supported tone, not a fixed operating frequency.**
 
-The carrier board is 100 × 150 mm, with top-mounted through-hole components and a socketed 5 V / 16 MHz USB-C Pro Micro. It uses bottom copper only, with no routing vias, wire jumpers or copper pours. Manufacturing targets the Makera Carvera Air with PCB kit and laser accessory on 1.5 mm single-sided copper-clad stock. The top legend uses the separate two-color UV solder-mask/laser process.
+The carrier board is 100 × 150 mm, with top-mounted through-hole components and a socketed 5 V / 16 MHz USB-C Pro Micro. It uses bottom copper only, with no routing vias, wire jumpers or copper pours. Manufacturing targets the Makera Carvera Air with PCB kit and laser accessory on 1.5 mm single-sided copper-clad stock. The top legend is laser-marked dark onto fully UV-cured white solder mask and qualified on the first full board after IPA cleaning.
 
-The schematic and routed PCB prototype are complete. **Firmware and physical manufacturing/radio acceptance remain outstanding.** Recorded hardware checks report zero ERC errors/warnings, zero DRC errors or unrouted connections, and 61 passing connectivity assertions. The [design review](implementation/design-review.md) documents the remaining warnings and bench checks.
+The schematic and routed PCB prototype are complete. **Firmware and physical manufacturing/radio acceptance remain outstanding.** The jig/CAM migration, including enforced keepouts and 1.5 mm native thickness, is verified. Recorded hardware checks report zero ERC errors/warnings, zero DRC errors or unrouted connections, and 61 passing connectivity assertions. The [design review](implementation/design-review.md) documents the remaining warnings and bench checks.
 
 ## Components for one board
 
@@ -53,13 +53,13 @@ These are outside the 38-instance schematic BOM. Socket, UI and harness selectio
 | Insulating standoff/fastener set | 4 | For 4 mm mounting holes; check washer clearance and enclosure fit |
 | Enclosure / panel | 1, as required | Allow for the module USB cable, 12.5 mm-high C6, UI controls, headers and wiring |
 | 1.5 mm single-sided copper-clad blank | 1 | Finished board is 150 × 100 mm; allow stock/fixture margins if the chosen CAM setup needs them |
-| Sacrificial coupon material | At least 1 piece | Prove milling, drill fit, registration and UV-mask/laser processing before the circuit board |
+| Sacrificial coupon material | At least 1 piece | Prove milling, drill fit and registration; qualify legend marking on the first full circuit board |
 
 The module mounts in the two socket strips; do not solder it permanently to the carrier board. All selected carrier-board capacitors are nonpolarized.
 
 ## Equipment, consumables and unfinished work
 
-For fabrication, use the Carvera Air/PCB kit, the available 30°/0.2 mm-tip or 60°/0.1 mm-tip V-bit, suitable **0.9 mm, 1.1 mm and 4 mm** drilling capability, and the registration/hold-down setup. Exact copper thickness, isolation depth, feeds and tool capability still need a coupon check. For the top legend, have two contrasting UV solder-mask colors, a flood-curing UV source, the laser accessory and cleaning materials compatible with the selected coating.
+For fabrication, use the Carvera Air/PCB kit, the available 30°/0.2 mm-tip or 60°/0.1 mm-tip V-bit, suitable **0.9 mm, 1.1 mm and 4 mm** drilling capability, and the registration/hold-down setup. Exact copper thickness, isolation depth, feeds and tool capability still need a coupon check. For the top legend, have white UV solder mask, a flood-curing UV source, the laser accessory and IPA for cleaning. Fully UV-cure the white coating before laser marking; evaluate retention and coating integrity after cleaning the first full board.
 
 Assembly and bring-up require soldering tools and consumables, a multimeter, a current-limited bench supply and a suitable USB cable. Tone/noise and radio-deviation acceptance require appropriate measurement equipment and test firmware. Verify the actual radio cable pinout, microphone-port current capacity, module regulator heating, PTT voltage/current and tone injection level before normal radio operation.
 
@@ -77,12 +77,11 @@ Firmware still needs to implement the selectable tone table, waveform/PWM genera
 | Match parts to references and packages | [Detailed BOM CSV](reference/bom.csv), [footprint review](implementation/footprint-review.md), [physical pin maps](implementation/physical-pin-maps.md) |
 | Find parts on the board | [Top assembly drawing](reference/assembly-top.svg) |
 | Prepare Carvera manufacturing jobs | [Manufacturing overview](../manufacturing/pcb/carvera-air/README.md) |
-| Define Studio paths and numbered NC stages | [Makera Studio toolpaths and fabrication guide](implementation/makera-studio-board-fabrication.md) |
-| Set up landscape orientation and the flip | [150 mm X × 100 mm Y CAM set](../manufacturing/pcb/carvera-air/landscape-y-flip/README.md); bottom files are already mirrored for a Y-axis flip |
-| Follow the manufacturing sequence | [Manufacturing order](../manufacturing/pcb/carvera-air/landscape-y-flip/README.md#manufacturing-order): bottom isolation/drilling and bare-board checks first, top coatings/UV/laser afterward |
+| Implement jig registration and FreeCAD CAM | [Migration plan and Robust MCP Server job contract](implementation/pcb-jig-and-freecad-cam.md) |
 | Assemble and connect the UI | [Assembly and bring-up](implementation/assembly-and-bring-up.md), including the [J5/J6 wiring table](implementation/assembly-and-bring-up.md#j5j6-cable-wiring) |
 | Review remaining acceptance work | [Acceptance checklist](implementation/acceptance-checklist.md) and [independent design review](implementation/design-review.md) |
 | Understand tone-frequency response | [Tone-chain model and limitations](implementation/tone-response.md) |
+| Review electrical simulation before the prototype | [LTspice validation and service-manual PTT analysis](implementation/ltspice-validation.md) |
 | Browse implementation notes and verification | [Implementation index](implementation/README.md) |
 
 Use the **current two-pin J5 / four-pin J6 files** together. Older three-pin header layouts and intermediate routing/checkpoint artifacts are isolated in ignored `.agent-scratch/` and are not the current manufacturing set. The supplied manufacturing files are geometry for CAM review, not approved CNC/laser G-code.

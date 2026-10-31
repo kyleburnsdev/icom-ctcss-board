@@ -1,0 +1,82 @@
+{
+  "Job00_RegistrationPreparation": {
+    "file": "manufacturing\\pcb\\carvera-air\\review-nc\\00-registration-preparation.nc",
+    "operations": [
+      {
+        "name": "PrepareFourJigHoles",
+        "commands": 523
+      }
+    ]
+  },
+  "Job10_BottomCopper": {
+    "file": "manufacturing\\pcb\\carvera-air\\review-nc\\10-bottom-copper.nc",
+    "operations": [
+      {
+        "name": "IsolateMergedBottomCopper",
+        "commands": 20573
+      }
+    ]
+  },
+  "Job20_BottomMaskRemoval": {
+    "file": "manufacturing\\pcb\\carvera-air\\review-nc\\20-bottom-mask-removal.nc",
+    "operations": [
+      {
+        "name": "OpenBottomPads_Y000",
+        "commands": 1209
+      },
+      {
+        "name": "OpenBottomPads_Y010",
+        "commands": 537
+      },
+      {
+        "name": "OpenBottomPads_Y020",
+        "commands": 1131
+      },
+      {
+        "name": "OpenBottomPads_Y030",
+        "commands": 2928
+      },
+      {
+        "name": "OpenBottomPads_Y040",
+        "commands": 3750
+      },
+      {
+        "name": "OpenBottomPads_Y050",
+        "commands": 2538
+      },
+      {
+        "name": "OpenBottomPads_Y060",
+        "commands": 1572
+      },
+      {
+        "name": "OpenBottomPads_Y070",
+        "commands": 1446
+      },
+      {
+        "name": "OpenBottomPads_Y080",
+        "commands": 1083
+      },
+      {
+        "name": "OpenBottomPads_Y090",
+        "commands": 219
+      }
+    ]
+  },
+  "Job30_BottomHoles": {
+    "file": "manufacturing\\pcb\\carvera-air\\review-nc\\30-bottom-holes.nc",
+    "operations": [
+      {
+        "name": "BoreElectrical_0p9",
+        "commands": 15599
+      },
+      {
+        "name": "BoreElectrical_1p1",
+        "commands": 7740
+      },
+      {
+        "name": "PocketFourEnclosureMounts",
+        "commands": 535
+      }
+    ]
+  }
+}

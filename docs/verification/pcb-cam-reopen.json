@@ -1,0 +1,531 @@
+{
+  "saved_fcstd_sha256": "0621d8c07ecd066d368c8fcbfeb8708d85406adaa129f59f7e2d4d0489b47f77",
+  "reopen": "PASS",
+  "native_operations": [
+    {
+      "job": "Job00_RegistrationPreparation",
+      "operation": "PrepareFourJigHoles",
+      "commands": 523,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job10_BottomCopper",
+      "operation": "IsolateMergedBottomCopper",
+      "commands": 20573,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y000",
+      "commands": 1209,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y010",
+      "commands": 537,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y020",
+      "commands": 1131,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y030",
+      "commands": 2928,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y040",
+      "commands": 3750,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y050",
+      "commands": 2538,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y060",
+      "commands": 1572,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y070",
+      "commands": 1446,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y080",
+      "commands": 1083,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job20_BottomMaskRemoval",
+      "operation": "OpenBottomPads_Y090",
+      "commands": 219,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job30_BottomHoles",
+      "operation": "BoreElectrical_0p9",
+      "commands": 15599,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job30_BottomHoles",
+      "operation": "BoreElectrical_1p1",
+      "commands": 7740,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job30_BottomHoles",
+      "operation": "PocketFourEnclosureMounts",
+      "commands": 535,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y002",
+      "commands": 93,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y004",
+      "commands": 579,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y006",
+      "commands": 837,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y008",
+      "commands": 1797,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y010",
+      "commands": 1869,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y012",
+      "commands": 1053,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y014",
+      "commands": 1827,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y016",
+      "commands": 2595,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y018",
+      "commands": 1575,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y020",
+      "commands": 591,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y022",
+      "commands": 1851,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y024",
+      "commands": 2457,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y026",
+      "commands": 2187,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y028",
+      "commands": 1959,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y030",
+      "commands": 2757,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y032",
+      "commands": 4041,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y034",
+      "commands": 3501,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y036",
+      "commands": 3555,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y038",
+      "commands": 4041,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y040",
+      "commands": 4413,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y042",
+      "commands": 4257,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y044",
+      "commands": 4419,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y046",
+      "commands": 4479,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y048",
+      "commands": 4041,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y050",
+      "commands": 5505,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y052",
+      "commands": 5883,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y054",
+      "commands": 5019,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y056",
+      "commands": 4203,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y058",
+      "commands": 3123,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y060",
+      "commands": 2259,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y062",
+      "commands": 2169,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y064",
+      "commands": 4575,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y066",
+      "commands": 6933,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y068",
+      "commands": 6681,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y070",
+      "commands": 3459,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y072",
+      "commands": 3669,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y074",
+      "commands": 2433,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y076",
+      "commands": 669,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y078",
+      "commands": 1491,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y080",
+      "commands": 2697,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y082",
+      "commands": 2925,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y084",
+      "commands": 4545,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y086",
+      "commands": 4713,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y088",
+      "commands": 4995,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y090",
+      "commands": 2277,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y092",
+      "commands": 1197,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y094",
+      "commands": 1413,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y096",
+      "commands": 795,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "ExposeLegend_Y098",
+      "commands": 39,
+      "state": [
+        "Up-to-date"
+      ]
+    }
+  ],
+  "helix_pitch_mm": [
+    0.01,
+    0.03
+  ],
+  "j1_pin1_bottom_jig_mm": [
+    20.1,
+    40.1
+  ],
+  "j1_pin1_top_jig_mm": [
+    130.1,
+    40.1
+  ],
+  "scope": "Native saved project reopens with paths; no fixture/holder simulation or physical qualification."
+}

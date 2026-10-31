@@ -1,0 +1,21 @@
+* All 512 independent tolerance endpoint combinations at maximum trimmer
+.param W=1
+.func sg(n) {2*mod(floor(K/(2**n)),2)-1}
+.param R1val={3.3k*(1+0.01*sg(0))}
+.param R2val={3.3k*(1+0.01*sg(1))}
+.param R3val={10k*(1+0.01*sg(2))}
+.param R4val={1k*(1+0.01*sg(3))}
+.param R5val={100k*(1+0.01*sg(4))}
+.param C1val={100n*(1+0.1*sg(5))}
+.param C2val={100n*(1+0.1*sg(6))}
+.param C3val={1u*(1+0.05*sg(7))}
+.param POT={10k*(1+0.1*sg(8))}
+Vdrive pwm 0 AC 1
+.include tone-network.inc
+Rload audio 0 {RL}
+.options numdgt=16
+.step param K 0 511 1
+.step param RL list 600 1k 2.2k 10k 100k
+.ac list 67 151.4 254.1 10000
+.save V(audio)
+.end

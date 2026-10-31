@@ -64,6 +64,8 @@ TX/RX, MOSI/MISO/SCK, A0, A3 and RST are intentionally unused by the carrier cir
 
 The [tone-response model](../implementation/tone-response.md) shows a broad but non-flat response. It is illustrative, not radio acceptance evidence. Test the agreed tone table for level, distortion, PWM residue, microphone loading and radio deviation.
 
+**Implementation evidence (2026-10-25):** [LTspice keying analysis](../implementation/ltspice-validation.md#tone-enabledisable-transient-firmware-action) shows that stopping D9 LOW shifts the filter's DC level and produces a coupling-capacitor transient. The engineering recommendation is to retain a 50% idle PWM duty and ramp modulation about that center. This informs the pending waveform implementation; it does not change the agreed command-response budget or establish bench acceptance of idle carrier and switching clicks.
+
 ## Confirmed functional intent
 
 | ID | Requirement |

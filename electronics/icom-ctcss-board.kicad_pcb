@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(general
-		(thickness 1.6)
+		(thickness 1.5)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -221,6 +221,305 @@
 			(remove_unused_layers no)
 			(net "/BYPASS_D10")
 			(uuid "aafaeaf7-9082-4762-ae78-1b793f6cd85b")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "CTCSS_THT:JigRegistration_4.03mm"
+		(layer "F.Cu")
+		(uuid "1006053c-0832-4c67-92cd-2aab5fbe975c")
+		(at 70 180)
+		(descr "Carvera Air jig primary registration hole; NPTH 4.03 mm finished target for measured 4.000 mm pin. Not an enclosure mount. Reserve radius 3.015 mm on both faces.")
+		(property "Reference" "H6"
+			(at 0 -4.015 0)
+			(layer "F.SilkS")
+			(uuid "ad825c9b-2260-4eb3-9b5f-5a1f885ebdf3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "JigRegistration_4.03mm"
+			(at 0 4.015 0)
+			(layer "F.Fab")
+			(uuid "b3c83a95-87ae-4aae-92ec-240cfcca1205")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7af52763-74ac-4627-b778-b18adcc13036")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "972d8b93-c530-4cb0-a8b7-60f3d13fa704")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 3.015 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "adb2ddff-8415-45e9-bbb6-33714169c7a2")
+		)
+		(fp_rect
+			(start -3.015 -3.015)
+			(end 3.015 3.015)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "fa25a877-1cc5-4b80-afd7-11f9bc2a3555")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.015 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "962eea10-b6c7-4140-bbd7-2e6dce908edc")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.015 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "1aa1c7ff-c955-42c0-b935-de9dd996ccd0")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 4.03 4.03)
+			(drill 4.03)
+			(layers "*.Cu" "*.Mask")
+			(uuid "12200956-ffc4-4fd3-b115-0a620ecd2280")
+		)
+		(zone
+			(layers "F.Cu" "B.Cu")
+			(uuid "cc9a4340-4df5-492e-bda7-40862a6b48c1")
+			(name "Jig registration clearance")
+			(hatch edge 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints not_allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+				(island_removal_mode 0)
+			)
+			(polygon
+				(pts
+					(xy 73.018638 180) (xy 73.004103 180.295878) (xy 72.960636 180.588907) (xy 72.888657 180.876264)
+					(xy 72.788858 181.155183) (xy 72.662201 181.422976) (xy 72.509906 181.677065) (xy 72.333439 181.915004)
+					(xy 72.134499 182.134499) (xy 71.915004 182.333439) (xy 71.677065 182.509906) (xy 71.422976 182.662201)
+					(xy 71.155183 182.788858) (xy 70.876264 182.888657) (xy 70.588907 182.960636) (xy 70.295878 183.004103)
+					(xy 70 183.018638) (xy 69.704122 183.004103) (xy 69.411093 182.960636) (xy 69.123736 182.888657)
+					(xy 68.844817 182.788858) (xy 68.577024 182.662201) (xy 68.322935 182.509906) (xy 68.084996 182.333439)
+					(xy 67.865501 182.134499) (xy 67.666561 181.915004) (xy 67.490094 181.677065) (xy 67.337799 181.422976)
+					(xy 67.211142 181.155183) (xy 67.111343 180.876264) (xy 67.039364 180.588907) (xy 66.995897 180.295878)
+					(xy 66.981362 180) (xy 66.995897 179.704122) (xy 67.039364 179.411093) (xy 67.111343 179.123736)
+					(xy 67.211142 178.844817) (xy 67.337799 178.577024) (xy 67.490094 178.322935) (xy 67.666561 178.084996)
+					(xy 67.865501 177.865501) (xy 68.084996 177.666561) (xy 68.322935 177.490094) (xy 68.577024 177.337799)
+					(xy 68.844817 177.211142) (xy 69.123736 177.111343) (xy 69.411093 177.039364) (xy 69.704122 176.995897)
+					(xy 70 176.981362) (xy 70.295878 176.995897) (xy 70.588907 177.039364) (xy 70.876264 177.111343)
+					(xy 71.155183 177.211142) (xy 71.422976 177.337799) (xy 71.677065 177.490094) (xy 71.915004 177.666561)
+					(xy 72.134499 177.865501) (xy 72.333439 178.084996) (xy 72.509906 178.322935) (xy 72.662201 178.577024)
+					(xy 72.788858 178.844817) (xy 72.888657 179.123736) (xy 72.960636 179.411093) (xy 73.004103 179.704122)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(footprint "CTCSS_THT:JigRegistration_4.03mm"
+		(layer "F.Cu")
+		(uuid "115a69da-1e40-4cfe-8e7c-ca59db07a5e8")
+		(at 70 70)
+		(descr "Carvera Air jig primary registration hole; NPTH 4.03 mm finished target for measured 4.000 mm pin. Not an enclosure mount. Reserve radius 3.015 mm on both faces.")
+		(property "Reference" "H5"
+			(at 0 -4.015 0)
+			(layer "F.SilkS")
+			(uuid "1c1ae6ca-d18c-4f6f-9863-289a23bf4d39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "JigRegistration_4.03mm"
+			(at 0 4.015 0)
+			(layer "F.Fab")
+			(uuid "5f990b64-b1c0-4ebf-9a7a-fdfea2f03ca0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6773f4f-ad15-4d31-b5d3-5322907a0b8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15188aac-fbe5-4167-bef2-e28a37bc646f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 3.015 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "a537fc74-63a4-4a3c-9206-6be5d40676da")
+		)
+		(fp_rect
+			(start -3.015 -3.015)
+			(end 3.015 3.015)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "19517bc9-87f2-4b5b-ad49-64f7c25454e6")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.015 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "113dd3c1-639d-4a38-a7ff-a16c14d77f1c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.015 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "0b792ef3-5436-41df-970b-ca301dff0c9b")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 4.03 4.03)
+			(drill 4.03)
+			(layers "*.Cu" "*.Mask")
+			(uuid "ac701bd5-8665-4b14-a9b7-e1449bcd2dec")
+		)
+		(zone
+			(layers "F.Cu" "B.Cu")
+			(uuid "64c60e47-4f26-478a-89cc-ee2d18a0ee05")
+			(name "Jig registration clearance")
+			(hatch edge 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints not_allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+				(island_removal_mode 0)
+			)
+			(polygon
+				(pts
+					(xy 73.018638 70) (xy 73.004103 70.295878) (xy 72.960636 70.588907) (xy 72.888657 70.876264) (xy 72.788858 71.155183)
+					(xy 72.662201 71.422976) (xy 72.509906 71.677065) (xy 72.333439 71.915004) (xy 72.134499 72.134499)
+					(xy 71.915004 72.333439) (xy 71.677065 72.509906) (xy 71.422976 72.662201) (xy 71.155183 72.788858)
+					(xy 70.876264 72.888657) (xy 70.588907 72.960636) (xy 70.295878 73.004103) (xy 70 73.018638) (xy 69.704122 73.004103)
+					(xy 69.411093 72.960636) (xy 69.123736 72.888657) (xy 68.844817 72.788858) (xy 68.577024 72.662201)
+					(xy 68.322935 72.509906) (xy 68.084996 72.333439) (xy 67.865501 72.134499) (xy 67.666561 71.915004)
+					(xy 67.490094 71.677065) (xy 67.337799 71.422976) (xy 67.211142 71.155183) (xy 67.111343 70.876264)
+					(xy 67.039364 70.588907) (xy 66.995897 70.295878) (xy 66.981362 70) (xy 66.995897 69.704122) (xy 67.039364 69.411093)
+					(xy 67.111343 69.123736) (xy 67.211142 68.844817) (xy 67.337799 68.577024) (xy 67.490094 68.322935)
+					(xy 67.666561 68.084996) (xy 67.865501 67.865501) (xy 68.084996 67.666561) (xy 68.322935 67.490094)
+					(xy 68.577024 67.337799) (xy 68.844817 67.211142) (xy 69.123736 67.111343) (xy 69.411093 67.039364)
+					(xy 69.704122 66.995897) (xy 70 66.981362) (xy 70.295878 66.995897) (xy 70.588907 67.039364) (xy 70.876264 67.111343)
+					(xy 71.155183 67.211142) (xy 71.422976 67.337799) (xy 71.677065 67.490094) (xy 71.915004 67.666561)
+					(xy 72.134499 67.865501) (xy 72.333439 68.084996) (xy 72.509906 68.322935) (xy 72.662201 68.577024)
+					(xy 72.788858 68.844817) (xy 72.888657 69.123736) (xy 72.960636 69.411093) (xy 73.004103 69.704122)
+				)
+			)
 		)
 		(embedded_fonts no)
 	)
@@ -490,19 +789,19 @@
 			(uuid "2c7e97e3-3f49-48fb-aeae-cf78b1dcba95")
 		)
 		(pad "1" thru_hole rect
-			(at 0 0 -90)
+			(at 0 0 270)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "/TONE_WIPER")
 			(uuid "81bd5715-84a0-460f-a006-6a60a55b3d5d")
 		)
 		(pad "2" thru_hole circle
-			(at 5 0 -90)
+			(at 5 0 270)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "Net-(C3-Pad2)")
 			(uuid "2bcb4f06-259c-4d38-aae5-0b5779c33683")
@@ -1082,19 +1381,19 @@
 			(uuid "3cafb8c1-dc0f-4ebf-a51c-d6e3611b2f04")
 		)
 		(pad "1" thru_hole rect
-			(at 0 0 -90)
+			(at 0 0 270)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "/FILTER_1")
 			(uuid "9a4daec6-2f01-4633-85e7-a4e4b4f96641")
 		)
 		(pad "2" thru_hole circle
-			(at 2.5 0 -90)
+			(at 2.5 0 270)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "GND")
 			(uuid "bd971d2a-db01-4dda-ab73-97138a75e12d")
@@ -1193,7 +1492,7 @@
 			(at 0 0)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "+8V")
 			(uuid "9beab1b6-3700-4ac3-935f-eb0749c818be")
@@ -1202,7 +1501,7 @@
 			(at 2.5 0)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "GND")
 			(uuid "8756c206-5538-48a1-8c72-d42599137700")
@@ -2591,7 +2890,7 @@
 			(at 0 0)
 			(size 2 2)
 			(drill 1.1)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "+5V")
 			(uuid "202c5cba-b54c-41ce-8f26-96175ed42127")
@@ -2600,7 +2899,7 @@
 			(at 15 0)
 			(size 2 2)
 			(drill 1.1)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "GND")
 			(uuid "103258e6-5ea8-4858-a811-eaa46dc61da2")
@@ -3181,6 +3480,306 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "CTCSS_THT:JigRegistration_4.12mm"
+		(layer "F.Cu")
+		(uuid "92f0e460-4e6c-45af-8520-e9a5d1957ee8")
+		(at 120 70)
+		(descr "Carvera Air jig secondary registration hole; NPTH 4.12 mm finished target for measured 4.000 mm pin. Not an enclosure mount. Reserve radius 3.06 mm on both faces.")
+		(property "Reference" "H7"
+			(at 0 -4.06 0)
+			(layer "F.SilkS")
+			(uuid "ff882222-78c8-45a7-8983-1609a60924b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "JigRegistration_4.12mm"
+			(at 0 4.06 0)
+			(layer "F.Fab")
+			(uuid "c1ae1109-9352-49c8-a4a0-f29ab26b22bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c52feb16-0917-48ef-84d0-19643dd99830")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a026c029-c623-4078-98c2-374a365e8507")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 3.06 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "651966a0-c555-4446-bbeb-df0989f5802b")
+		)
+		(fp_rect
+			(start -3.06 -3.06)
+			(end 3.06 3.06)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "9e0f6945-939d-43bb-a471-50b62accd3f0")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.06 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "db866b65-00de-4172-bb7a-671679ae9e96")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.06 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "01cad653-1632-4835-bab1-62b87bb19006")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 4.12 4.12)
+			(drill 4.12)
+			(layers "*.Cu" "*.Mask")
+			(uuid "58f23997-5ef0-403d-9f2f-023da74e3a8b")
+		)
+		(zone
+			(layers "F.Cu" "B.Cu")
+			(uuid "ca1547fb-ca5a-4cc2-8e96-b031b770cda2")
+			(name "Jig registration clearance")
+			(hatch edge 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints not_allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+				(island_removal_mode 0)
+			)
+			(polygon
+				(pts
+					(xy 123.063692 70) (xy 123.04894 70.300294) (xy 123.004824 70.597697) (xy 122.931771 70.889343)
+					(xy 122.830483 71.172424) (xy 122.701935 71.444215) (xy 122.547367 71.702096) (xy 122.368266 71.943586)
+					(xy 122.166358 72.166358) (xy 121.943586 72.368266) (xy 121.702096 72.547367) (xy 121.444215 72.701935)
+					(xy 121.172424 72.830483) (xy 120.889343 72.931771) (xy 120.597697 73.004824) (xy 120.300294 73.04894)
+					(xy 120 73.063692) (xy 119.699706 73.04894) (xy 119.402303 73.004824) (xy 119.110657 72.931771)
+					(xy 118.827576 72.830483) (xy 118.555785 72.701935) (xy 118.297904 72.547367) (xy 118.056414 72.368266)
+					(xy 117.833642 72.166358) (xy 117.631734 71.943586) (xy 117.452633 71.702096) (xy 117.298065 71.444215)
+					(xy 117.169517 71.172424) (xy 117.068229 70.889343) (xy 116.995176 70.597697) (xy 116.95106 70.300294)
+					(xy 116.936308 70) (xy 116.95106 69.699706) (xy 116.995176 69.402303) (xy 117.068229 69.110657)
+					(xy 117.169517 68.827576) (xy 117.298065 68.555785) (xy 117.452633 68.297904) (xy 117.631734 68.056414)
+					(xy 117.833642 67.833642) (xy 118.056414 67.631734) (xy 118.297904 67.452633) (xy 118.555785 67.298065)
+					(xy 118.827576 67.169517) (xy 119.110657 67.068229) (xy 119.402303 66.995176) (xy 119.699706 66.95106)
+					(xy 120 66.936308) (xy 120.300294 66.95106) (xy 120.597697 66.995176) (xy 120.889343 67.068229)
+					(xy 121.172424 67.169517) (xy 121.444215 67.298065) (xy 121.702096 67.452633) (xy 121.943586 67.631734)
+					(xy 122.166358 67.833642) (xy 122.368266 68.056414) (xy 122.547367 68.297904) (xy 122.701935 68.555785)
+					(xy 122.830483 68.827576) (xy 122.931771 69.110657) (xy 123.004824 69.402303) (xy 123.04894 69.699706)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(footprint "CTCSS_THT:JigRegistration_4.12mm"
+		(layer "F.Cu")
+		(uuid "96b4ac7f-9a49-4728-ae1b-c468d2861334")
+		(at 120 180)
+		(descr "Carvera Air jig secondary registration hole; NPTH 4.12 mm finished target for measured 4.000 mm pin. Not an enclosure mount. Reserve radius 3.06 mm on both faces.")
+		(property "Reference" "H8"
+			(at 0 -4.06 0)
+			(layer "F.SilkS")
+			(uuid "b52ece18-f7c7-4726-a562-f4edd8a7a06e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "JigRegistration_4.12mm"
+			(at 0 4.06 0)
+			(layer "F.Fab")
+			(uuid "b5d9d222-5efc-462a-ac2f-d1324665aecb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6512c514-2b1c-47f9-ad20-d6a6eee98c4b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "090d9ec5-cb9f-41bf-ae55-f4f2bdbb9cd3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 3.06 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "ceb769c0-2921-4003-9a49-69b777a63162")
+		)
+		(fp_rect
+			(start -3.06 -3.06)
+			(end 3.06 3.06)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "334b2ad1-d204-4907-8d80-8910bea0fe6a")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.06 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "0da70c04-a944-47d4-854b-39d08d3bd7c8")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.06 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "036e6c77-7dbc-4e79-afbd-45d3edcada28")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 4.12 4.12)
+			(drill 4.12)
+			(layers "*.Cu" "*.Mask")
+			(uuid "2689512a-ef09-4b28-b38d-eaf32816d8ff")
+		)
+		(zone
+			(layers "F.Cu" "B.Cu")
+			(uuid "3699c1c7-e6ec-4441-8845-a4fc6463b503")
+			(name "Jig registration clearance")
+			(hatch edge 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints not_allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+				(island_removal_mode 0)
+			)
+			(polygon
+				(pts
+					(xy 123.063692 180) (xy 123.04894 180.300294) (xy 123.004824 180.597697) (xy 122.931771 180.889343)
+					(xy 122.830483 181.172424) (xy 122.701935 181.444215) (xy 122.547367 181.702096) (xy 122.368266 181.943586)
+					(xy 122.166358 182.166358) (xy 121.943586 182.368266) (xy 121.702096 182.547367) (xy 121.444215 182.701935)
+					(xy 121.172424 182.830483) (xy 120.889343 182.931771) (xy 120.597697 183.004824) (xy 120.300294 183.04894)
+					(xy 120 183.063692) (xy 119.699706 183.04894) (xy 119.402303 183.004824) (xy 119.110657 182.931771)
+					(xy 118.827576 182.830483) (xy 118.555785 182.701935) (xy 118.297904 182.547367) (xy 118.056414 182.368266)
+					(xy 117.833642 182.166358) (xy 117.631734 181.943586) (xy 117.452633 181.702096) (xy 117.298065 181.444215)
+					(xy 117.169517 181.172424) (xy 117.068229 180.889343) (xy 116.995176 180.597697) (xy 116.95106 180.300294)
+					(xy 116.936308 180) (xy 116.95106 179.699706) (xy 116.995176 179.402303) (xy 117.068229 179.110657)
+					(xy 117.169517 178.827576) (xy 117.298065 178.555785) (xy 117.452633 178.297904) (xy 117.631734 178.056414)
+					(xy 117.833642 177.833642) (xy 118.056414 177.631734) (xy 118.297904 177.452633) (xy 118.555785 177.298065)
+					(xy 118.827576 177.169517) (xy 119.110657 177.068229) (xy 119.402303 176.995176) (xy 119.699706 176.95106)
+					(xy 120 176.936308) (xy 120.300294 176.95106) (xy 120.597697 176.995176) (xy 120.889343 177.068229)
+					(xy 121.172424 177.169517) (xy 121.444215 177.298065) (xy 121.702096 177.452633) (xy 121.943586 177.631734)
+					(xy 122.166358 177.833642) (xy 122.368266 178.056414) (xy 122.547367 178.297904) (xy 122.701935 178.555785)
+					(xy 122.830483 178.827576) (xy 122.931771 179.110657) (xy 123.004824 179.402303) (xy 123.04894 179.699706)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(footprint "MountingHole:MountingHole_4mm"
 		(layer "F.Cu")
 		(uuid "9852dea7-de68-4d49-a4eb-1854bc5c4030")
@@ -3632,7 +4231,7 @@
 			(at 0 0)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "+5V")
 			(uuid "adfd02ea-2951-4fd3-8ed3-0a8b0c1e4aec")
@@ -3641,7 +4240,7 @@
 			(at 2.5 0)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "GND")
 			(uuid "3f511672-0aba-4f4a-b729-b3216152e1fa")
@@ -4686,19 +5285,19 @@
 			(uuid "8a74ce83-02e6-4130-a214-548710192752")
 		)
 		(pad "1" thru_hole rect
-			(at 0 0 -90)
+			(at 0 0 270)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "/FILTER_2")
 			(uuid "da03062f-e882-4193-b3cb-ec99845f7cdb")
 		)
 		(pad "2" thru_hole circle
-			(at 2.5 0 -90)
+			(at 2.5 0 270)
 			(size 2 2)
 			(drill 0.9)
-			(layers "B.Cu" "B.Mask")
+			(layers "*.Cu" "B.Mask")
 			(remove_unused_layers no)
 			(net "GND")
 			(uuid "c3673803-8aa0-48fc-bebc-3f498d9a9f3d")
@@ -6937,39 +7536,6 @@
 			)
 		)
 	)
-	(gr_text "C6 4u7 63V P15"
-		(at 74.5 71.5 0)
-		(layer "F.SilkS")
-		(uuid "a797a639-b477-4a53-9ef2-e44a0dbb196d")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "TP3 +5V"
-		(at 92.5 85 0)
-		(layer "F.SilkS")
-		(uuid "ce2c90b2-1e8d-499f-980a-bf31448c2ab7")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "Q1 2N3904TAR"
-		(at 119 193 0)
-		(layer "F.SilkS")
-		(uuid "c52fabbb-8f47-4642-956c-fdc962c7dc02")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(gr_text "J4 LCD"
 		(at 60 117 0)
 		(layer "F.SilkS")
@@ -7018,6 +7584,17 @@
 		(at 77 126.5 0)
 		(layer "F.SilkS")
 		(uuid "177b23a5-1d23-4cb8-8838-39a8525dfb03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "C6 4u7 63V P15"
+		(at 80 71.5 0)
+		(layer "F.SilkS")
+		(uuid "c82ea97e-2073-490f-8b12-17e14136476a")
 		(effects
 			(font
 				(size 1 1)
@@ -7095,6 +7672,17 @@
 		(at 91 153 0)
 		(layer "F.SilkS")
 		(uuid "1743e401-56b6-4bea-bc3f-8faad2c91545")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "TP3 +5V"
+		(at 92.5 85 0)
+		(layer "F.SilkS")
+		(uuid "ce2c90b2-1e8d-499f-980a-bf31448c2ab7")
 		(effects
 			(font
 				(size 1 1)
@@ -7245,10 +7833,10 @@
 			)
 		)
 	)
-	(gr_text "PTT DRIVER"
-		(at 119 179.5 0)
+	(gr_text "Q1 2N3904TAR"
+		(at 119 193 0)
 		(layer "F.SilkS")
-		(uuid "608b6efb-1cb1-46a1-a3ee-bba54f669ca0")
+		(uuid "c52fabbb-8f47-4642-956c-fdc962c7dc02")
 		(effects
 			(font
 				(size 1 1)
@@ -7301,9 +7889,9 @@
 		)
 	)
 	(gr_text "R11 100k"
-		(at 124 182 0)
+		(at 131 182 0)
 		(layer "F.SilkS")
-		(uuid "55df1544-3f77-4c68-b209-d33865282b2d")
+		(uuid "33a2f1cc-e97b-410a-8d77-750ef6066afe")
 		(effects
 			(font
 				(size 1 1)
@@ -7366,6 +7954,17 @@
 			)
 		)
 	)
+	(gr_text "PTT DRIVER"
+		(at 132 176 0)
+		(layer "F.SilkS")
+		(uuid "00aa4415-6b51-434c-9624-e0107df64d22")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "IC-229H CTCSS INTERFACE"
 		(at 100 60 0)
 		(layer "F.SilkS")
@@ -7374,6 +7973,17 @@
 			(font
 				(size 1.3 1.3)
 				(thickness 0.195)
+			)
+		)
+	)
+	(gr_text "JIG P1=H5 P2=H6 P3=H7 P4=H8 | PANEL x=Ky-50 y=Kx-50 | FLIP x'=150-x"
+		(at 100 207 0)
+		(layer "Dwgs.User")
+		(uuid "e24ec6ce-56cc-41e4-909f-9109de3e4fec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)

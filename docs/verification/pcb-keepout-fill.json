@@ -1,0 +1,11 @@
+{
+  "board_sha256": "a494d36c1ef0f2cbb7d9030a1380cf396513a0ba1cd261929025821e7b6c35c4",
+  "method": "In-memory native KiCad zone-fill experiment at H5, with the same temporary B.Cu GND zone and only ZoneFills exclusion toggled. No test copper was saved to the design.",
+  "sample_radius_mm": 2.7,
+  "samples": 64,
+  "filled_samples": {
+    "keepouts_enabled": 0,
+    "control_zone_fill_allowed": 64
+  },
+  "result": "PASS"
+}

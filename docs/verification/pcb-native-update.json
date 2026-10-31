@@ -1,0 +1,21 @@
+{
+  "native_api": "KiCad10 pcbnew",
+  "authorized_scope": [
+    "Footprint-owned keepouts in saved board and libraries",
+    "Native thickness1.5mm"
+  ],
+  "board_sha256": "a494d36c1ef0f2cbb7d9030a1380cf396513a0ba1cd261929025821e7b6c35c4",
+  "preserved": {
+    "track_segments": 242,
+    "pad_geometry_and_nets": 119,
+    "holes": 119
+  },
+  "machining_geometry_max_change_mm": {
+    "copper_boundaries": 0.0,
+    "isolation_centerlines": 0.0,
+    "legend_hatch": 7.105427357601002e-14
+  },
+  "before_cam_input_sha256": "db8e6b4562d05d87bb640225f4178761b3ec7f6367c37251fa313fc6f6dd6f01",
+  "after_cam_input_sha256": "2ae7a8b256529e8d26be1470c13076afcbece35cdcbfbd3c64339ab9c2a13b0b",
+  "result": "PASS: constraints/thickness updated; machining geometry unchanged"
+}

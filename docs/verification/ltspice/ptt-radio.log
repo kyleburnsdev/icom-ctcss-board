@@ -1,0 +1,78 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\ptt-radio.cir
+Start Time: Sun Oct 25 10:01:05 2026
+Options:numdgt=16 plotwinsize=0
+
+.step vh=4.2 vs=4.75
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step vh=5 vs=4.75
+Direct Newton iteration succeeded in finding operating point.
+
+.step vh=4.2 vs=5
+Direct Newton iteration succeeded in finding operating point.
+
+.step vh=5 vs=5
+Direct Newton iteration succeeded in finding operating point.
+
+.step vh=4.2 vs=5.25
+Direct Newton iteration succeeded in finding operating point.
+
+.step vh=5 vs=5.25
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.244 seconds.
+Total iterations: 10442
+
+Files loaded:
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\ptt-radio.cir
+
+
+Measurement: keyed
+  step	V(radio_ptt)	at
+     1	0.0211928023987	0.002
+     2	0.020632804974	0.002
+     3	0.0213706035119	0.002
+     4	0.0207807931529	0.002
+     5	0.0215473729425	0.002
+     6	0.0209280783293	0.002
+
+Measurement: reset
+  step	V(radio_ptt)	at
+     1	4.21439719412	0.004
+     2	4.21439434372	0.004
+     3	4.44175629717	0.004
+     4	4.44175350723	0.004
+     5	4.66910991712	0.004
+     6	4.66910715501	0.004
+
+Measurement: sink_current
+  step	Ic(Q1)	at
+     1	0.000188958039707	0.002
+     2	0.000188985252766	0.002
+     3	0.000200183034208	0.002
+     4	0.000200210771439	0.002
+     5	0.000211411951179	0.002
+     6	0.000211443813051	0.002
+
+Measurement: detector_keyed
+  step	V(detect_out)	at
+     1	4.74999868968	0.002
+     2	4.74999869534	0.002
+     3	4.99999863256	0.002
+     4	4.99999863875	0.002
+     5	5.24999857584	0.002
+     6	5.24999858258	0.002
+
+Measurement: detector_released
+  step	V(detect_out)	at
+     1	0.0481781586869	0.004
+     2	0.048178159186	0.004
+     3	0.0475623397692	0.004
+     4	0.0475623402131	0.004
+     5	0.0470271656513	0.004
+     6	0.0470271660532	0.004

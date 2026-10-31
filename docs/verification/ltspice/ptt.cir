@@ -1,0 +1,27 @@
+* PTT driver sensitivity using an intentionally generic NPN, NOT an onsemi model
+* R10/R11/Q1 connectivity matches exported KiCad netlist; Q order is C B E.
+* 8V/1.6k represents the existing provisional 5mA target, NOT measured radio.
+* BF sweep tests sensitivity; these models do NOT establish production limits.
+.param VH=5 BF=100
+.step param VH list 4.2 5
+.step param BF list 40 100 300
+Vradio pullup 0 8
+Rradio pullup radio_ptt 1.6k
+Vcommand drive 0 {VH}
+Venable enable 0 PWL(0 0 1m 0 1.001m 5 3m 5 3.001m 0)
+Sdrive drive d8 enable 0 DriveSwitch
+.model DriveSwitch SW(Ron=25 Roff=1e12 Vt=2.5)
+Ileak 0 d8 1u
+R10 d8 base 4.7k
+R11 base 0 100k
+Q1 radio_ptt base 0 GenericNPN
+.model GenericNPN NPN(IS=1e-14 BF={BF} VAF=100 CJE=8p CJC=4p TF=350p TR=250n)
+.tran 0 5m 0 1u
+.options numdgt=16 plotwinsize=0
+.meas tran keyed FIND V(radio_ptt) AT 2m
+.meas tran reset FIND V(radio_ptt) AT 4m
+.meas tran base_current FIND Ib(Q1) AT 2m
+.meas tran collector_current FIND Ic(Q1) AT 2m
+.meas tran reset_base FIND V(base) AT 4m
+.save V(radio_ptt) V(base) V(d8) Ib(Q1) Ic(Q1)
+.end

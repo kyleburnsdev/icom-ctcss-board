@@ -5,11 +5,39 @@ Run these commands from the repository root. They are maintained project tools; 
 - `python tools/check-netlist.py`: checks the final exported netlist in `docs/verification/schematic-complete.net`. Uses the Python standard library.
 - `python tools/tone-response.py`: runs the illustrative tone-chain model. Uses the Python standard library; see `docs/implementation/tone-response.md` for limitations.
 - `python tools/check-final-board.py`: reads the saved PCB and refreshes `docs/verification/final-board-inventory.json`. Requires KiCad's Python environment with `pcbnew`. It does not save or change the PCB.
-- `python tools/export-landscape-registration.py`: regenerates the landscape manufacturing geometry and manifest under `manufacturing/pcb/carvera-air/landscape-y-flip/`. Requires `gerbonara` and the existing manufacturing exports. This writes deliverables; run only when intentionally refreshing that package.
 
 Generated reports describe the source revision used to generate them. Regeneration requires appropriate review before treating outputs as accepted manufacturing evidence.
 
-The board inventory uses the selected maximum capacitor body envelopes and a conservative module/socket allowance. Refresh it before the landscape exporter, which uses its track/pad count to cross-check exported copper. The exporter preserves existing user `.mkc` projects; it does not rebuild their imports or toolpaths. Reimport revised geometry and validate CAM separately.
+## PCB CAM
+
+- `python tools/prepare-pcb-cam.py`: merges current native Gerber copper, creates
+  isolation offsets, pad-only mask-clearing paths and positive legend hatches, checks all 119 holes, and exports
+  the registration/assembly drawings. Requires gerbonara 1.6.3 and Shapely 2.2.
+- `build-pcb-cam.py`: runs inside FreeCAD 1.1.1 through Robust MCP Server
+  `execute_python`. Load it into a retained namespace, call `build(root)` and
+  advance the returned generator once per stage. The native document is saved
+  under `mechanical/pcb/`; intentional existing edits must be preserved first.
+  Call `export_milling(root)` / `export_laser(root)` for review NC.
+- Preserve and close the native project, then call `inspect_saved(root)` from
+  that module to reopen/check saved paths and source identities. Native paths
+  use installed FreeCAD proxies; the saved project has no scratch dependency.
+- `python tools/verify-pcb-cam.py`: verifies current input identities, posted
+  ideal cutter sweep, mask-tool containment in 111 inset pad regions, absence of
+  work-zero reset commands, laser power gating, modes and tool changes; checks source
+  DRC/ERC and the reopened CAM identity; runs the circuit netlist assertions;
+  refreshes PCB/export manifests. Requires gerbonara/Shapely and the KiCad CLI.
+
+See [PCB setup and acceptance](../manufacturing/pcb/carvera-air/README.md).
+The pinned OEM FreeCAD milling post under `tools/post/` retains its LGPL license;
+laser translation is separate. These scripts do not connect to a machine.
+
+Production order is copper isolation, bottom mask/cure/pad opening, initial
+electrical/enclosure holes, top coating/legend, then hole clearing if needed.
+Every program retains the copper G54 Z0 established before trace cutting.
+The mask job uses the spring-loaded Makera tool, never a rigid substitute;
+Z−0.20 mm is spring-tool overtravel below copper, not intended copper removal.
+
+The board inventory uses selected maximum capacitor body envelopes and a conservative module/socket allowance. It verifies four enclosure mounts and four independent jig holes, reports selected-body clearances and records the saved board hash. It verifies all four footprint-owned keepouts, their layers/exclusion flags and the 1.5 mm native thickness. See the [FreeCAD CAM migration](../docs/implementation/pcb-jig-and-freecad-cam.md).
 
 ## Enclosure builder
 

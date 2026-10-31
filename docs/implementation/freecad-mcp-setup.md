@@ -58,9 +58,16 @@ Using an MCP SDK client over stdio, with the installed executable and XML-RPC en
 8. FreeCAD was closed and reopened without a startup macro. The bridge automatically restarted; `freecad-mcp --check` again reported a successful connection to **FreeCAD 1.1.1**, GUI available.
 9. `codex mcp get freecad` recognized the enabled stdio configuration. Its TOML parsed successfully.
 
-Disposable setup files remain in the ignored `.agent-scratch/freecad-mcp-setup/` directory because automatic command approval rejected scratch cleanup. They include the upstream checkout, test scripts, native/STEP test exports, package inventory, and raw test results. The installed integration does not depend on them. Native tool availability inside a newly restarted Codex session remains the final client-side check; this already-running conversation cannot reload its tool inventory.
+The installed integration has no dependency on setup scratch files. On 2026-10-29,
+the installed stdio server connected to FreeCAD 1.1.1 and generated the native
+PCB CAM project through `execute_python`. Direct tool exposure depends on the
+client session; an MCP SDK stdio client can use the same server when needed.
 
 ## Sources
 
 - [Upstream release source](https://github.com/spkane/freecad-addon-robust-mcp-server/tree/eb2f6fba2a5422ad390213fae380a1acac040cdf)
 - [Official Codex MCP configuration documentation](https://developers.openai.com/codex/mcp)
+
+## PCB CAM migration — 2026-10-29
+
+Use Robust MCP Server for FreeCAD CAM as well as enclosure CAD. The setup checks above establish historical CAD connectivity, not CAM/postprocessor or laser qualification. See the [PCB migration](pcb-jig-and-freecad-cam.md) for discovery, job and acceptance requirements. Konnect remains the KiCad interface.

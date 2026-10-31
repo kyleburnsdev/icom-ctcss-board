@@ -1,63 +1,46 @@
 {
-  "revision": "2026-10-22 approved-source component substitutions",
+  "date": "2026-10-29",
   "source_sha256": {
-    "icom-ctcss-board.kicad_pcb": "5353a1ab79438466237beaa4acd8da4c75964fbfc7b1ee9f8587dbc0e43fc585",
-    "icom-ctcss-board.kicad_pro": "e1145de79179aa94216ae802e63e79f80d9a8e03e82948c4306afcd0066d83de",
-    "icom-ctcss-board.kicad_sch": "2b4d0f6b251cbe1a2bee54bc0166810619f8169cb23300a76d3e1122eb8bed77"
+    "electronics/fp-lib-table": "f36a0acb0a80b6a9cc9c1360ac63f818c4d449309fa32ccf04f1249ba42effdc",
+    "electronics/icom-ctcss-board.kicad_pcb": "a494d36c1ef0f2cbb7d9030a1380cf396513a0ba1cd261929025821e7b6c35c4",
+    "electronics/icom-ctcss-board.kicad_pro": "e1145de79179aa94216ae802e63e79f80d9a8e03e82948c4306afcd0066d83de",
+    "electronics/icom-ctcss-board.kicad_sch": "2b4d0f6b251cbe1a2bee54bc0166810619f8169cb23300a76d3e1122eb8bed77",
+    "electronics/libraries/Biacco42_ProMicro.pretty/ProMicro.kicad_mod": "a752ba8bb1b3bb57d5e735e1a81327ded0ed0c43c4d308238a9983a7d156ac2d",
+    "electronics/libraries/CTCSS.kicad_sym": "c87a3588b364a8134685b85cb575e420af972517f260f8b914246e9b9fdb255d",
+    "electronics/libraries/CTCSS_THT.pretty/C_Disc_P2.5_CNC.kicad_mod": "5e6e1aa320109c206fd18f9e56cf9a63672bb59cda4fdd723bf1b5e8ccb0d002",
+    "electronics/libraries/CTCSS_THT.pretty/C_Film1u_P5_CNC.kicad_mod": "3a8eee5124097a4b2859b1d4dd74dfb77989b10ebd91342fd70ebf3b7b6f4219",
+    "electronics/libraries/CTCSS_THT.pretty/C_Film4u7_P15_CNC.kicad_mod": "e48b77c184136a38679d920c284d6cd6e42e93237614f800fd030c6571ff71df",
+    "electronics/libraries/CTCSS_THT.pretty/C_Film4u7_P5_CNC.kicad_mod": "a5b22e4e890039c97d05f2d9e51ce69cb2f55f551842a121d90eef9d19feebd9",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x02_CNC.kicad_mod": "2bf8ae0e85e254033dc41bcc00357b37648328212ba89caa2f266f7fea1de343",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x03_CNC.kicad_mod": "6ac76a442c1551d965516a4fc6aaaf04773180fbb6610379d8de8dd841937e16",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x04_CNC.kicad_mod": "6e40981833fe0c2b8e3f65a917431651c81b0382215a11047e731d5e328e1ec5",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x05_CNC.kicad_mod": "018122e907d0479f97ec70ab560de034436fe6e44de4c1aec6bbe44f9b95bee3",
+    "electronics/libraries/CTCSS_THT.pretty/Header_1x08_CNC.kicad_mod": "487c57f881d1ca6253fb21fa6e0fb41f824699743f42a477bb90a738fdb0c908",
+    "electronics/libraries/CTCSS_THT.pretty/JigRegistration_4.03mm.kicad_mod": "8c3952c9ed7aa4eb848a54abf5b3af8d7a51efcc0ce9dfc4fe197c79101de1de",
+    "electronics/libraries/CTCSS_THT.pretty/JigRegistration_4.12mm.kicad_mod": "837270aa2f9776ea15434f7cf192752e2575c01c3a1a8b3731181f41e4f79145",
+    "electronics/libraries/CTCSS_THT.pretty/ProMicro_CNC_BCu.kicad_mod": "3ef396102e0b9a924283386f275410a35659d20e98eb840d85d34f60ede819a2",
+    "electronics/libraries/CTCSS_THT.pretty/Q_TO92_Formed_CNC.kicad_mod": "75f5b824965c44e6fec40b7b7c4df3e551fe9253dc752dbc04de749afd9068af",
+    "electronics/libraries/CTCSS_THT.pretty/R_P5.08_CNC.kicad_mod": "2b258d150375757e47e6de97b04007d2f98be71cd932798c51d58258dab3a508",
+    "electronics/libraries/CTCSS_THT.pretty/RV_3296W_CNC.kicad_mod": "a5c348d80915651dd5830d6be9d2f33796790b7c783282160a6462c14bbb58b1",
+    "electronics/libraries/CTCSS_THT.pretty/TP_CNC.kicad_mod": "52314bae143b5dee7c0a70c79e34111058652abaa5cb419637b526d2d0fa6b86",
+    "electronics/sym-lib-table": "4e7867c62d225527defe3a2a5acfd59c0a91c0f2f2490f926dea597341ce0418"
   },
-  "equipment": "Makera Carvera Air PCB kit and laser; 1.5 mm single-sided blank; copper bottom only",
-  "checks": {
-    "ERC_errors": 0,
-    "ERC_warnings": 0,
-    "DRC_errors": 0,
-    "unconnected_items": 0,
-    "DRC_warnings": 115,
-    "netlist_assertions": 61,
-    "functional_components": 38,
-    "BCu_track_segments": 242,
-    "routing_vias": 0,
-    "zones": 0,
-    "electrical_holes": 111,
-    "drill_diameters_mm": {
-      "0.9": 46,
-      "1.1": 65,
-      "4.0": 4
-    },
-    "mounting_holes": 4,
-    "copper_objects": 353,
-    "legend_objects": 6961,
-    "legend_policy": "exclude native footprint reference/value fields; retain board-level labels and artwork",
-    "registration": "four mounting holes retained; landscape transformation verified in landscape-y-flip/manifest.json",
-    "visual_review": "schematic, assembly, copper and clean Gerber legend inspected"
+  "coordinate_policy": "Native unmirrored KiCad plots. FreeCAD applies panel mapping and one face transform.",
+  "physical_copper_layers": [
+    "B.Cu"
+  ],
+  "holes": {
+    "electrical": 111,
+    "enclosure": 4,
+    "jig": 4
   },
+  "status": "CAD/CAM migration verified; physical process qualification pending",
   "files": {
-    "icom-ctcss-board-B_Cu.gbl": {
-      "sha256": "398ce4c64b7c443a537ec38b1cc672f1b4d42a6052f5ac94573d2298b2ba3ff7",
-      "bytes": 21340
-    },
-    "icom-ctcss-board-Edge_Cuts.gm1": {
-      "sha256": "ad66ee52c36294090617df11e8daefc3b452e74fb8454e79aa6cd213a1a807a2",
-      "bytes": 717
-    },
-    "icom-ctcss-board-F_Silkscreen.gto": {
-      "sha256": "de52b2e92980cadbcc766cc52955ca863fa584afc345707aa2c1fb51e0eb6932",
-      "bytes": 368533
-    },
-    "icom-ctcss-board-NPTH.drl": {
-      "sha256": "d15bcce6989660f497c902d5249b9c79894a43aad4081d1d864d7fc7ddea142e",
-      "bytes": 399
-    },
-    "icom-ctcss-board-PTH.drl": {
-      "sha256": "76f81c783fc2c28658d3b961fd4d401e434a61e01f11b20f68fea568454f2a7c",
-      "bytes": 2063
-    },
-    "icom-ctcss-board-top-legend.svg": {
-      "sha256": "e37b6563ae59e50fb682f3e3fa4ad1e8d88ad1c34b2288fca9b236eadb0fb430",
-      "bytes": 277981
-    }
-  },
-  "landscape_manifest_sha256": "6ebfc3236c14300c4ef95b551a5662a50d55fb7c9be57049a20f5dce1e58b9b3",
-  "manufacturing_preflight": "Generic fab-house preflight is not applicable to this user-defined CNC process; direct KiCad DRC, native inventory and Gerber/drill checks supply geometry evidence. Machine/tool/coupon and radio acceptance remain open.",
-  "verdict": "Carrier-board sourcing and geometry refresh complete. Adapters already owned. CAM rebuild, mechanical integration, physical/coupon/radio acceptance and firmware incomplete.",
-  "cam_project_status": "Existing ctcss-board-cam.mkc preserved; earlier geometry, must reimport and rebuild toolpaths."
+    "icom-ctcss-board-B_Cu.gbl": "0a5305100f2daf0acb3120e75d66941d48b3d87882ff9cd2e6e6af57a820d2f6",
+    "icom-ctcss-board-Edge_Cuts.gm1": "be7ecb674caa79681a94007633224478f84819b3693ae32b2cd6948db053ce7a",
+    "icom-ctcss-board-F_Silkscreen.gto": "d87d6b4b82e6979d375c92a53c4ba3c2ee5b0864e92cc8f0d5af85c543363738",
+    "icom-ctcss-board-NPTH.drl": "a86d78bc74a5f5858bea9d400ef09c372b133bbd1069a2bcd25b586a31674a85",
+    "icom-ctcss-board-PTH.drl": "cd468dd7ced9d4131dac9e8776968c55d9c85e1a61d2ed6e9e472d92fa5c7e1c",
+    "icom-ctcss-board-top-legend.svg": "a5a352eac1049553a1509f8c7661b887da0d33de2ede44566ffafacc6f65b4a2"
+  }
 }

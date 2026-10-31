@@ -1,0 +1,16 @@
+* Averaged PWM envelope: idle=0 or 2.5V; enable .05s, disable .3s
+.include nominal.inc
+.param RL=1k W=1
+.step param IDLE list 0 2.5
+.step param FT list 67 151.4 254.1
+Bdrive pwm 0 V=if(time<.05,IDLE,if(time<.3,2.5+2.25*sin(2*pi*FT*(time-.05)),IDLE))
+.include tone-network.inc
+Rload audio 0 {RL}
+.options numdgt=16
+.tran 0 .8 0 20u
+.options plotwinsize=0 reltol=1e-6
+.meas tran off_peak MAX abs(V(audio)) FROM .3 TO .35
+.meas tran off_25ms FIND V(audio) AT .325
+.meas tran off_250ms FIND V(audio) AT .55
+.save V(audio) V(pwm)
+.end

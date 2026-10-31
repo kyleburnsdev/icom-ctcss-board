@@ -29,11 +29,17 @@
 
 ## KiCad design integrity
 
-- Follow the applicable KiCad/Konnect skills. Use Konnect tools for modifications to KiCad design files, libraries, and library tables; do not edit their serialized contents with text manipulation.
+- Follow the applicable KiCad/Konnect skills. Prefer Konnect for supported operations. When a required operation has no usable Konnect capability, use KiCad's supported native API under the user's standing authorization; missing support must not block completion. Preserve exact saved/live state, use native load/save, verify affected sources/outputs, and never patch serialized contents with text manipulation or custom serialization. Do not bypass stale-state or integrity guards.
 - Keep design sources, required project libraries, library tables, and design rules under version control.
 - Distinguish final verification evidence from historical results; do not present an earlier revision's checks as validation of the current design.
 - Take care not to specify components that cannot be easily sourced. No design meets its minimum bar if it requires components that cannot be obtained
 - Strive for the simplest solution that works - your best work is what can be easily described to a learner and understood
+
+## PCB machining workflow
+
+- Use FreeCAD CAM through **Robust MCP Server** to create editable jobs, calculate and inspect toolpaths, and deliver reviewed machine outputs. Use Konnect for KiCad changes. Do not reintroduce Makera CAM/Studio projects or manual instructions asking the user to reconstruct intended toolpaths.
+- Follow `docs/implementation/pcb-jig-and-freecad-cam.md` for this project's jig interface, independent registration-hole preparation, setup-only PCB pins, face transforms, breakthrough protection and release checks. The enclosure's four corner mounts are separate from the four jig registration holes.
+- Discover actual CAM and postprocessor capabilities before promising generated NC. Keep milling, laser and physical qualification evidence distinct and tied to the current revision.
 
 ## Design for 3D printing
 

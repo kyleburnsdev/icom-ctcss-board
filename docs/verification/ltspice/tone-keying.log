@@ -1,0 +1,66 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-keying.cir
+Start Time: Sun Oct 25 09:54:45 2026
+Options:numdgt=16 plotwinsize=0 reltol=1e-6
+
+.step idle=0 ft=67
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+reltol = 1e-06
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step idle=2.5 ft=67
+Direct Newton iteration succeeded in finding operating point.
+
+.step idle=0 ft=151.4
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step idle=2.5 ft=151.4
+Direct Newton iteration succeeded in finding operating point.
+
+.step idle=0 ft=254.1
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step idle=2.5 ft=254.1
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.993 seconds.
+Total iterations: 80079
+
+Files loaded:
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-keying.cir
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\nominal.inc
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-network.inc
+
+
+Measurement: off_peak
+  step	MAX(abs(V(audio)))	FROM	TO
+     1	0.00114482920628	0.3	0.35
+     2	0.00108053315924	0.3	0.35
+     3	0.00113491001523	0.3	0.35
+     4	0.00100693541951	0.3	0.35
+     5	0.00113663437093	0.3	0.35
+     6	0.000576295144873	0.3	0.35
+
+Measurement: off_25ms
+  step	V(audio)	at
+     1	-0.000918734031063	0.325
+     2	-1.3179270277e-06	0.325
+     3	-0.000912660411381	0.325
+     4	4.75550411332e-06	0.325
+     5	-0.000923373365195	0.325
+     6	-5.95689143144e-06	0.325
+
+Measurement: off_250ms
+  step	V(audio)	at
+     1	-0.000100899665261	0.55
+     2	-1.44740905996e-07	0.55
+     3	-0.000100232631961	0.55
+     4	5.22271687825e-07	0.55
+     5	-0.000101409178619	0.55
+     6	-6.5421365842e-07	0.55

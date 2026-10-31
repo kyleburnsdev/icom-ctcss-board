@@ -1,0 +1,85 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-pwm.cir
+Start Time: Sun Oct 25 09:55:36 2026
+Options:numdgt=16 plotwinsize=0 reltol=1e-5
+
+.step ft=67
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+reltol = 1e-05
+Direct Newton iteration succeeded in finding operating point.
+
+.step ft=151.4
+Direct Newton iteration succeeded in finding operating point.
+
+.step ft=254.1
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 20.623 seconds.
+Total iterations: 4909199
+
+Files loaded:
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-pwm.cir
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\nominal.inc
+C:\src\personal-repos\icom-ctcss-board\.agent-scratch\ltspice-validation\tone-network.inc
+
+Fourier components of V(audio)
+step 1
+N-Period=5
+DC component:-1.30381e-07
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 6.700e+01	 1.114e-03	 1.000e+00	  104.80°	    0.00°
+    2   	 1.340e+02	 3.926e-07	 3.524e-04	   24.23°	  -80.58°
+    3   	 2.010e+02	 2.651e-07	 2.380e-04	  131.58°	   26.77°
+    4   	 2.680e+02	 1.892e-07	 1.698e-04	  -84.97°	 -189.78°
+    5   	 3.350e+02	 3.549e-07	 3.186e-04	  130.82°	   26.01°
+    6   	 4.020e+02	 3.476e-07	 3.121e-04	 -118.97°	 -223.77°
+    7   	 4.690e+02	 7.727e-08	 6.936e-05	 -145.90°	 -250.71°
+    8   	 5.360e+02	 1.123e-07	 1.008e-04	 -132.68°	 -237.49°
+    9   	 6.030e+02	 1.156e-07	 1.038e-04	  -44.41°	 -149.21°
+   10   	 6.700e+02	 3.778e-08	 3.391e-05	  -89.68°	 -194.49°
+Partial Harmonic Distortion: 0.065989%
+Total Harmonic Distortion:   0.466719%
+
+step 2
+N-Period=5
+DC component:-7.90544e-07
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.514e+02	 1.006e-03	 1.000e+00	  123.90°	    0.00°
+    2   	 3.028e+02	 1.259e-07	 1.251e-04	  -99.00°	 -222.90°
+    3   	 4.542e+02	 3.981e-07	 3.958e-04	   44.87°	  -79.03°
+    4   	 6.056e+02	 1.643e-07	 1.633e-04	   85.70°	  -38.20°
+    5   	 7.570e+02	 1.037e-07	 1.031e-04	  161.89°	   37.99°
+    6   	 9.084e+02	 5.122e-08	 5.092e-05	  148.66°	   24.76°
+    7   	 1.060e+03	 3.703e-08	 3.682e-05	  -34.95°	 -158.85°
+    8   	 1.211e+03	 2.975e-08	 2.958e-05	   93.39°	  -30.51°
+    9   	 1.363e+03	 8.556e-09	 8.507e-06	  -54.94°	 -178.84°
+   10   	 1.514e+03	 3.907e-08	 3.885e-05	  -90.49°	 -214.39°
+Partial Harmonic Distortion: 0.046482%
+Total Harmonic Distortion:   0.432388%
+
+step 3
+N-Period=5
+DC component:7.01699e-07
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 2.541e+02	 8.416e-04	 1.000e+00	  142.34°	    0.00°
+    2   	 5.082e+02	 3.145e-07	 3.737e-04	  -36.65°	 -178.98°
+    3   	 7.623e+02	 1.640e-07	 1.949e-04	   96.72°	  -45.62°
+    4   	 1.016e+03	 7.812e-08	 9.283e-05	   79.29°	  -63.05°
+    5   	 1.270e+03	 9.075e-08	 1.078e-04	 -178.87°	 -321.21°
+    6   	 1.525e+03	 1.103e-07	 1.311e-04	   87.41°	  -54.92°
+    7   	 1.779e+03	 4.088e-08	 4.858e-05	  172.15°	   29.81°
+    8   	 2.033e+03	 4.816e-08	 5.722e-05	  177.65°	   35.32°
+    9   	 2.287e+03	 1.612e-08	 1.915e-05	   97.01°	  -45.33°
+   10   	 2.541e+03	 3.934e-08	 4.675e-05	  -41.92°	 -184.26°
+Partial Harmonic Distortion: 0.047252%
+Total Harmonic Distortion:   0.562211%
+

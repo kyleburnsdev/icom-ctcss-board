@@ -2,14 +2,14 @@
 
 A Pro Micro based interface that adds selectable CTCSS tones to an Icom IC-229H microphone audio path, with PTT forwarding, an encoder, LCD, bypass control and status LEDs.
 
-The schematic and routed PCB prototype are complete. The first enclosure iteration is implemented in FreeCAD with print-oriented parts and fit coupons. Firmware, physical manufacturing and radio acceptance remain outstanding. Manufacturing files are preparation material; machine settings and the physical process still require coupon validation.
+The schematic and routed PCB prototype are complete. The jig interface, enforced keepouts and native FreeCAD CAM migration are verified. Machining uses Robust MCP Server; physical setup and process qualification remain open. The first enclosure iteration is implemented in FreeCAD with print-oriented parts and fit coupons. Firmware, physical manufacturing and radio acceptance remain outstanding. Manufacturing files are preparation material; machine settings and the physical process still require coupon validation.
 
 | Area | Entry point |
 | --- | --- |
 | Requirements, parts and build instructions | [Project documentation](docs/README.md) |
 | Electronics | [KiCad project](electronics/icom-ctcss-board.kicad_pro), with project-local libraries beside it |
 | PCB manufacturing | [Carvera Air package](manufacturing/pcb/carvera-air/README.md) |
-| Makera Studio CAM | [CAM project and supporting imports](manufacturing/pcb/carvera-air/landscape-y-flip/README.md) |
+| PCB jig / FreeCAD CAM migration | [Required changes and job contract](docs/implementation/pcb-jig-and-freecad-cam.md) |
 | Enclosure | [Mechanical workspace](mechanical/enclosure/README.md) |
 | Arduino firmware | [Firmware workspace](firmware/README.md) |
 | Engineering scripts | [Tools and dependencies](tools/README.md) |

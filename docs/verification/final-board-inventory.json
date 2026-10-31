@@ -1,5 +1,5 @@
 {
-  "source": "read-only KiCad pcbnew.LoadBoard after Konnect save",
+  "source": "read-only native KiCad pcbnew.LoadBoard on saved PCB",
   "track_count": 242,
   "track_layers": {
     "B.Cu": 242
@@ -13,28 +13,60 @@
   "circuit_parts": 38,
   "mounting_holes": [
     {
+      "reference": "H6",
+      "x": 70.0,
+      "y": 180.0,
+      "diameter": 4.03,
+      "purpose": "jig_registration"
+    },
+    {
+      "reference": "H5",
+      "x": 70.0,
+      "y": 70.0,
+      "diameter": 4.03,
+      "purpose": "jig_registration"
+    },
+    {
       "reference": "H2",
       "x": 144.0,
       "y": 56.0,
-      "diameter": 4
+      "diameter": 4,
+      "purpose": "enclosure_mount"
+    },
+    {
+      "reference": "H7",
+      "x": 120.0,
+      "y": 70.0,
+      "diameter": 4.12,
+      "purpose": "jig_registration"
+    },
+    {
+      "reference": "H8",
+      "x": 120.0,
+      "y": 180.0,
+      "diameter": 4.12,
+      "purpose": "jig_registration"
     },
     {
       "reference": "H4",
       "x": 56.0,
       "y": 194.0,
-      "diameter": 4
+      "diameter": 4,
+      "purpose": "enclosure_mount"
     },
     {
       "reference": "H1",
       "x": 56.0,
       "y": 56.0,
-      "diameter": 4
+      "diameter": 4,
+      "purpose": "enclosure_mount"
     },
     {
       "reference": "H3",
       "x": 144.0,
       "y": 194.0,
-      "diameter": 4
+      "diameter": 4,
+      "purpose": "enclosure_mount"
     }
   ],
   "electrical_pads": 111,
@@ -77,6 +109,20 @@
       "y": 94.0,
       "rotation": -90.0,
       "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "H6",
+      "x": 70.0,
+      "y": 180.0,
+      "rotation": 0.0,
+      "footprint": "JigRegistration_4.03mm"
+    },
+    {
+      "reference": "H5",
+      "x": 70.0,
+      "y": 70.0,
+      "rotation": 0.0,
+      "footprint": "JigRegistration_4.03mm"
     },
     {
       "reference": "RV1",
@@ -224,6 +270,20 @@
       "y": 134.0,
       "rotation": -90.0,
       "footprint": "R_P5.08_CNC"
+    },
+    {
+      "reference": "H7",
+      "x": 120.0,
+      "y": 70.0,
+      "rotation": 0.0,
+      "footprint": "JigRegistration_4.12mm"
+    },
+    {
+      "reference": "H8",
+      "x": 120.0,
+      "y": 180.0,
+      "rotation": 0.0,
+      "footprint": "JigRegistration_4.12mm"
     },
     {
       "reference": "H4",
@@ -797,5 +857,107 @@
     }
   ],
   "body_gaps_below_2mm": [],
-  "body_assumptions": "Selected maximum capacitor bodies and nominal other bodies; 37x18.24 module/socket envelope including 3mm-wide socket strips. Actual socket and USB cable fit still require dry fit."
+  "body_assumptions": "Selected maximum capacitor bodies and nominal other bodies; 37x18.24 module/socket envelope including 3mm-wide socket strips. Actual socket and USB cable fit still require dry fit.",
+  "board_sha256": "a494d36c1ef0f2cbb7d9030a1380cf396513a0ba1cd261929025821e7b6c35c4",
+  "saved_board_thickness_mm": 1.5,
+  "required_stock_thickness_mm": 1.5,
+  "board_thickness_matches_stock": true,
+  "jig_body_clearances": [
+    {
+      "reference": "H6",
+      "nearest_body": "TP6",
+      "hole_edge_to_body_mm": 9.485,
+      "hole_edge_to_track_copper_mm": 2.485,
+      "hole_edge_to_pad_box_mm": 9.485
+    },
+    {
+      "reference": "H5",
+      "nearest_body": "C6",
+      "hole_edge_to_body_mm": 3.485,
+      "hole_edge_to_track_copper_mm": 1.9702,
+      "hole_edge_to_pad_box_mm": 6.2312
+    },
+    {
+      "reference": "H7",
+      "nearest_body": "R6",
+      "hole_edge_to_body_mm": 5.3473,
+      "hole_edge_to_track_copper_mm": 1.9252,
+      "hole_edge_to_pad_box_mm": 4.94
+    },
+    {
+      "reference": "H8",
+      "nearest_body": "Q1",
+      "hole_edge_to_body_mm": 2.46,
+      "hole_edge_to_track_copper_mm": 2.1082,
+      "hole_edge_to_pad_box_mm": 2.3769
+    }
+  ],
+  "jig_keepout_status": "PASS: four footprint-owned all-copper rule areas, all five exclusion flags verified",
+  "jig_keepouts": [
+    {
+      "reference": "H5",
+      "owner": "footprint",
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "minimum_inscribed_radius_mm": 3.0150018457064416,
+      "flags": {
+        "Tracks": true,
+        "Vias": true,
+        "Pads": true,
+        "ZoneFills": true,
+        "Footprints": true
+      }
+    },
+    {
+      "reference": "H6",
+      "owner": "footprint",
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "minimum_inscribed_radius_mm": 3.0150018457064416,
+      "flags": {
+        "Tracks": true,
+        "Vias": true,
+        "Pads": true,
+        "ZoneFills": true,
+        "Footprints": true
+      }
+    },
+    {
+      "reference": "H7",
+      "owner": "footprint",
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "minimum_inscribed_radius_mm": 3.0600018135584537,
+      "flags": {
+        "Tracks": true,
+        "Vias": true,
+        "Pads": true,
+        "ZoneFills": true,
+        "Footprints": true
+      }
+    },
+    {
+      "reference": "H8",
+      "owner": "footprint",
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "minimum_inscribed_radius_mm": 3.0600018135584537,
+      "flags": {
+        "Tracks": true,
+        "Vias": true,
+        "Pads": true,
+        "ZoneFills": true,
+        "Footprints": true
+      }
+    }
+  ],
+  "rule_area_count": 4
 }

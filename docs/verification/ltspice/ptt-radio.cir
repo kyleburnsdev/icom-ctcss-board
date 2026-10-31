@@ -1,0 +1,34 @@
+* IC-229A/E/H service manual section 9 LOGIC UNIT, PDF page 36.
+* Radio reference names prefixed r_ to distinguish carrier board Q1/R10/R11.
+* J1 pin 5 = D12 cathode + C15; R56=22k, R57=220k, R58=100k.
+* Generic transistor/diode models; topology and resistances from Icom schematic.
+.param VH=5
+.step param VH list 4.2 5
+.step param VS list 4.75 5 5.25
+Vlogic logic5 0 {VS}
+Rr56 logic5 detect_diode 22k
+Rr57 detect_diode detect_base 220k
+Rr58 detect_base 0 100k
+Dr12 detect_diode radio_ptt GenericDiode
+Cr15 radio_ptt 0 1n
+Rr53 logic5 detect_out 100k
+Qr5 detect_out detect_base 0 GenericNPN
+Vcommand drive 0 {VH}
+Venable enable 0 PWL(0 0 1m 0 1.001m 5 3m 5 3.001m 0)
+Sdrive drive d8 enable 0 DriveSwitch
+.model DriveSwitch SW(Ron=25 Roff=1e12 Vt=2.5)
+Ileak 0 d8 1u
+R10 d8 base 4.7k
+R11 base 0 100k
+Q1 radio_ptt base 0 GenericNPN
+.model GenericNPN NPN(IS=1e-14 BF=100 VAF=100 CJE=8p CJC=4p TF=350p TR=250n)
+.model GenericDiode D(IS=2n N=1.8 RS=1 CJO=2p)
+.tran 0 5m 0 1u
+.options numdgt=16 plotwinsize=0
+.meas tran keyed FIND V(radio_ptt) AT 2m
+.meas tran reset FIND V(radio_ptt) AT 4m
+.meas tran sink_current FIND Ic(Q1) AT 2m
+.meas tran detector_keyed FIND V(detect_out) AT 2m
+.meas tran detector_released FIND V(detect_out) AT 4m
+.save V(radio_ptt) V(base) V(detect_base) V(detect_out) Ic(Q1)
+.end

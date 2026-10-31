@@ -92,6 +92,15 @@ The [P0 enclosure package](../../manufacturing/enclosure/README.md) defines cabl
 
 The [package-fit inspection render](../reference/sourcing-package-fit.png) shows the selected small capacitor, C3, C6 and Q1 footprints on a disposable inspection board. It is package evidence, not the final assembly layout.
 
-Fresh [verification record](../verification/sourcing-revision.json): ERC0/0; DRC0errors/0unconnected with115 retained warnings;61 exported-netlist assertions pass; independent source IPC-2581 comparison matches all111 electrical pads. Native inventory:242 B.Cu tracks,0vias,0zones,38 parts+4mounts. Body clearance check uses selected maximum capacitor envelopes: minimum2.14mm overall, C4/C5 to module/socket allowance2.38mm, C6 to TP3 2.6926mm. Manufacturer pin/package drawings, disposable placement render/IPC readback and final assembly/copper/legend/schematic renders were inspected. Physical tolerances still require actual fit testing.
+Selected maximum capacitor envelopes give minimum body spacing of 2.14 mm overall,
+C4/C5 to module/socket clearance of 2.38 mm and C6 to TP3 clearance of 2.6926 mm.
+Use the [current revision record](../verification/pcb-revision.json) for PCB checks.
+The dated purchasing findings above establish component selection; physical
+assembly tolerances and machining acceptance remain separate.
 
-Exports now contain46 holes at0.9mm,65 at1.1mm and4 mounting holes at4mm. Landscape registration checks all353 copper objects and6,961 legend objects. **Existing Studio .mkc is older user work: reimport revised geometry and regenerate toolpaths.** No current G-code or machining acceptance is claimed. Coupon/drill/registration, load/regulator heating, PTT saturation/default release, microphone noise/deviation and firmware remain acceptance work. Earlier 2026-10-20 review-summary.json remains historical and must not validate this revision.
+The current manufacturing package contains 46 electrical holes at 0.9 mm,
+65 at 1.1 mm, four 4 mm enclosure mounts and four independent jig holes.
+See the [current PCB workflow](pcb-jig-and-freecad-cam.md) and
+[revision manifest](../verification/pcb-revision.json) for manufacturing status.
+The jig migration changes no purchased electronic component or circuit route.
+Coupon/registration, assembly fit, powered-radio acceptance and firmware remain open.

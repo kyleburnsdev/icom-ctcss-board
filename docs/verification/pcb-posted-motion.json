@@ -1,0 +1,123 @@
+{
+  "scope": "Posted review NC, planar ideal cutter; physical holder/fixture/Z-stack qualification excluded.",
+  "files": {
+    "00-registration-preparation.nc": {
+      "sha256": "d07d29a47d4b33325263361b0fadf5f67d2d3013120438ca1dd00c2bf59ede24",
+      "tool_changes": [
+        3
+      ],
+      "bounds_mm": {
+        "X": [
+          18.341938673452606,
+          131.6580613265474
+        ],
+        "Y": [
+          18.386934154324436,
+          71.6580613265474
+        ],
+        "Z": [
+          -1.65,
+          15.0
+        ]
+      },
+      "parsed_motion_count": 519
+    },
+    "10-bottom-copper.nc": {
+      "sha256": "1c19fc0999555ff93b48e86cbc508a8a44a0387bbf12079033187aa37c988253",
+      "tool_changes": [
+        2
+      ],
+      "bounds_mm": {
+        "X": [
+          3.45,
+          126.2648
+        ],
+        "Y": [
+          2.45,
+          92.753
+        ],
+        "Z": [
+          -0.1,
+          15.0
+        ]
+      },
+      "parsed_motion_count": 20569,
+      "posted_isolation_copper_overlap_mm2": 0.0
+    },
+    "20-bottom-mask-removal.nc": {
+      "sha256": "6fbc9b80532a0108245ba255670c7e3e9729530438337406cedccbd33f4b10c5",
+      "tool_changes": [
+        4
+      ],
+      "bounds_mm": {
+        "X": [
+          8.90359,
+          122.79641
+        ],
+        "Y": [
+          4.90359,
+          90.79641
+        ],
+        "Z": [
+          -0.2,
+          15.0
+        ]
+      },
+      "parsed_motion_count": 16391,
+      "pads_checked": 111,
+      "rpm": 6000,
+      "feed_mm_min": 400,
+      "plunge_mm_min": 200,
+      "spring_tool_overtravel_below_original_copper_mm": 0.2,
+      "original_pre_isolation_copper_z0": true,
+      "conservative_envelope_outside_inset_pads_mm2": 0.0,
+      "minimum_nominal_tip_opening_area_fraction": 0.8784799172742382,
+      "process": "Fully cured bottom mask; before electrical drilling. Spring preload and intact copper require physical qualification."
+    },
+    "30-bottom-holes.nc": {
+      "sha256": "86c27ffc696392aa001542a2ac887975507407c5c06de086c98ddf0d76943eba",
+      "tool_changes": [
+        3
+      ],
+      "bounds_mm": {
+        "X": [
+          4.501935727546812,
+          145.6980642724532
+        ],
+        "Y": [
+          4.501935727546815,
+          95.6980642724532
+        ],
+        "Z": [
+          -1.65,
+          15.0
+        ]
+      },
+      "parsed_motion_count": 23864,
+      "electrical_and_mount_holes_checked": 115
+    },
+    "40-top-legend-laser.nc": {
+      "sha256": "3120b9c0f71a03ac99340a6db7a012c7a2ae0ceab3d19364e92c9124f57e4f87",
+      "tool_changes": [],
+      "bounds_mm": {
+        "X": [
+          9.29376,
+          146.2548
+        ],
+        "Y": [
+          3.20799,
+          98.25799
+        ],
+        "Z": [
+          0.0,
+          15.0
+        ]
+      },
+      "parsed_motion_count": 144341,
+      "powered_xy_segments": 24049,
+      "power_fraction": 0.05,
+      "feed_mm_min": 500,
+      "process": "One pass on fully UV-cured white mask; qualify on the first full board after IPA cleaning."
+    }
+  }
+}

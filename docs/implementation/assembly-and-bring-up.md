@@ -6,14 +6,24 @@ Supplement the circuit BOM with two 1×12, 2.54 mm female socket strips (15.24 m
 
 ## CNC board inspection
 
-Follow the [manufacturing order](../../manufacturing/pcb/carvera-air/landscape-y-flip/README.md#manufacturing-order): complete bottom isolation and drilling, then deburr and pass the bare-board checks below **before either top coating is applied**. Keep the top support surface bare and flat throughout precision isolation milling.
+Follow the [manufacturing order](pcb-jig-and-freecad-cam.md#jobs-maintained-through-robust-mcp-server): isolate bottom copper and inspect exposed channels/continuity, apply and cure bottom mask, open pads with the Makera spring tool, then drill and deburr **before top coating is applied**. Keep the top support surface bare and flat throughout precision isolation milling. Retain the copper G54 Z0 established before trace cutting for all subsequent programs; do not capture a new work zero on a coating or after remounting/flipping.
 
 1. Check the final bottom-copper preview against the top-side assembly drawing. Confirm the CAM transform for bottom-side machining before cutting: exported board coordinates are not permission to mirror an arbitrary number of times. Check registration using an asymmetric pin-1 feature and mounting-hole coordinates.
 2. On the milled board, inspect every isolation channel for copper whiskers and bridges. Remove chips and burrs without cutting traces or lifting pads. Inspect the compact socket/header gaps under magnification.
 3. Check actual drill sizes and hole registration on sacrificial material before the circuit board. Holes are unplated: a trace or pad on the top side cannot provide connectivity.
 4. Check bare-board continuity against the final netlist. Each net should be continuous end-to-end, with no connection to neighboring nets. Verify both +8V and +5V are isolated from GND and from each other while the module is absent. Through the eventual resistive signal paths, a nonzero resistance may be intended; use the schematic to distinguish it from a copper short.
 
-After those checks pass, flip about Y, re-register, and apply the top legend using the [dedicated Gerber/SVG and UV-mask process instructions](../../manufacturing/pcb/carvera-air/README.md#top-legend-and-uv-solder-mask-process). Prove coating, selective cure, cleaning and registration on a coupon first. The assembly drawing includes F.Fab details and must not replace the legend exposure artwork. Keep holes clear and orientation marks readable. Retain locating features until both sides are finished; after final release/cleaning, repeat continuity and short checks before fitting parts.
+After those checks pass, flip about Y, re-register, and apply the top legend using the [dedicated Gerber/SVG and white-mask marking instructions](../../manufacturing/pcb/carvera-air/README.md#setup-40-top-coating-and-legend). Fully UV-cure the white coating before laser marking. Use the first full board as the marking test piece; inspect legibility, retention and coating integrity after IPA cleaning, then adjust the next board if needed. The assembly drawing includes F.Fab details and must not replace the legend marking artwork. Keep holes clear and orientation marks readable. Retain locating features until both sides are finished; after final release/cleaning, repeat continuity and short checks before fitting parts.
+
+After both face coatings and bottom pad opening are complete, inspect all holes.
+If coating obstructs them, use the [independent bottom-hole program](../../manufacturing/pcb/carvera-air/README.md#setup-30-independent-bottom-holes)
+before fitting parts. Re-register after remounting, withdraw all PCB pins,
+retain the original pre-isolation copper G54 Z0, reproduce original seating,
+and protect breakthrough and the finished top coating. Do not capture a new zero.
+Clean debris, inspect pad integrity, check lead fit, and repeat continuity/short
+checks. Keep jig registration holes clear; the clearing program excludes them.
+The pad-opening job runs before initial electrical holes; do not run its spring
+tip across already-open electrical holes.
 
 ## Assembly order
 
