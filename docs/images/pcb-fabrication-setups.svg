@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+  <title>PCB production faces and registration</title>
+  <desc>Two plan views of the 150 by 100 millimeter blank, with panel registration holes at 20 and 130 in X and 20 and 70 in Y. Bottom J1 pin 1 is at panel 20,40; top J1 pin 1 is at 130,40. The flip preserves Y and reverses X. PCB pins are removed before cutting.</desc>
+  <rect width="1100" height="650" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#20364a">
+    <text x="40" y="38" font-size="25" font-weight="bold">Same blank, two machine-facing views</text>
+    <text x="40" y="65" font-size="16">Plan view • dimensions in mm • fixture hardware omitted for clarity</text>
+    <text x="70" y="105" font-size="21" font-weight="bold">BOTTOM UP — files 10, 20 and 30</text>
+    <text x="610" y="105" font-size="21" font-weight="bold">TOP UP — file 40</text>
+    <!-- Each panel is drawn at 2.8 pixels/mm, with Y increasing upward. -->
+    <rect x="70" y="130" width="420" height="280" fill="#f9ede0" stroke="#8c5c29" stroke-width="2"/>
+    <rect x="610" y="130" width="420" height="280" fill="#f3f5f6" stroke="#51697e" stroke-width="2"/>
+    <!-- Enclosure mounts at panel (6,6), (144,6), (6,94), (144,94). -->
+    <g fill="#fff" stroke="#8895a0" stroke-width="1.5">
+      <circle cx="86.8" cy="393.2" r="5.6"/><circle cx="473.2" cy="393.2" r="5.6"/>
+      <circle cx="86.8" cy="146.8" r="5.6"/><circle cx="473.2" cy="146.8" r="5.6"/>
+      <circle cx="626.8" cy="393.2" r="5.6"/><circle cx="1013.2" cy="393.2" r="5.6"/>
+      <circle cx="626.8" cy="146.8" r="5.6"/><circle cx="1013.2" cy="146.8" r="5.6"/>
+    </g>
+    <!-- Primary row Y20, secondary row Y70; names track the physical hole through the flip. -->
+    <g fill="#fff" stroke="#167b71" stroke-width="3">
+      <circle cx="126" cy="354" r="5.642"/><circle cx="434" cy="354" r="5.642"/>
+      <circle cx="126" cy="214" r="5.768"/><circle cx="434" cy="214" r="5.768"/>
+      <circle cx="666" cy="354" r="5.642"/><circle cx="974" cy="354" r="5.642"/>
+      <circle cx="666" cy="214" r="5.768"/><circle cx="974" cy="214" r="5.768"/>
+    </g>
+    <g font-size="16" fill="#11675f">
+      <text x="110" y="195">P4</text><text x="420" y="195">P3</text>
+      <text x="110" y="385">P2</text><text x="420" y="385">P1</text>
+      <text x="650" y="195">P3</text><text x="960" y="195">P4</text>
+      <text x="650" y="385">P1</text><text x="960" y="385">P2</text>
+    </g>
+    <g stroke="#b3362c" stroke-width="2.5" fill="none">
+      <path d="M118 298 H134 M126 290 V306"/>
+      <path d="M966 298 H982 M974 290 V306"/>
+    </g>
+    <g font-size="16" fill="#a12c24">
+      <text x="147" y="292">J1 pin 1</text><text x="147" y="314">panel (20,40)</text>
+      <text x="815" y="292">J1 pin 1</text><text x="815" y="314">panel (130,40)</text>
+    </g>
+    <g stroke="#51697e" stroke-width="1.5" fill="none">
+      <path d="M70 430 H490 M70 423 V437 M490 423 V437"/>
+      <path d="M610 430 H1030 M610 423 V437 M1030 423 V437"/>
+      <path d="M50 130 V410 M43 130 H57 M43 410 H57"/>
+      <path d="M70 410 H105 M70 410 V375 M610 410 H645 M610 410 V375"/>
+    </g>
+    <g font-size="16">
+      <text x="260" y="454">150</text><text x="800" y="454">150</text>
+      <text x="14" y="278">100</text>
+      <text x="70" y="480">Panel (0,0) → jig (0.10,0.10)</text>
+      <text x="610" y="480">Panel (0,0) → jig (0.10,0.10)</text>
+    </g>
+    <g stroke="#167b71" stroke-width="3" fill="none">
+      <path d="M528 190 V350 M519 190 H537 M519 350 H537"/>
+    </g>
+    <text x="550" y="214" text-anchor="middle" font-size="14" transform="rotate(90 550 214)">Y-parallel flip axis</text>
+    <rect x="40" y="510" width="1020" height="105" rx="8" fill="#eaf3f2"/>
+    <text x="60" y="538" font-size="18" font-weight="bold">Flip x′ = 150 − x, y′ = y. Do not rotate in-plane or mirror the NC again.</text>
+    <text x="60" y="568" font-size="17">Green: jig registration holes. Grey corner holes: separate 4 mm enclosure mounts.</text>
+    <text x="60" y="595" font-size="17">Register → bond/cure → withdraw ALL four PCB pins → machine. Retain original copper G54 Z0.</text>
+  </g>
+</svg>

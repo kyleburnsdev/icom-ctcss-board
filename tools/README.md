@@ -4,6 +4,7 @@ Run these commands from the repository root. They are maintained project tools; 
 
 - `python tools/check-netlist.py`: checks the final exported netlist in `docs/verification/schematic-complete.net`. Uses the Python standard library.
 - `python tools/tone-response.py`: runs the illustrative tone-chain model. Uses the Python standard library; see `docs/implementation/tone-response.md` for limitations.
+- `python tools/create-legend-print-test.py`: generates the unmirrored 100 x 150 mm negative-legend PDF with external crop marks and measurement references. Requires ReportLab and pypdf; see the [print instructions](../manufacturing/pcb/carvera-air/print-masks/README.md).
 - `python tools/check-final-board.py`: reads the saved PCB and refreshes `docs/verification/final-board-inventory.json`. Requires KiCad's Python environment with `pcbnew`. It does not save or change the PCB.
 
 Generated reports describe the source revision used to generate them. Regeneration requires appropriate review before treating outputs as accepted manufacturing evidence.

@@ -7,6 +7,7 @@ The editable schematic and routed PCB prototype are complete. The jig interface,
 - [BOM CSV](../reference/bom.csv), [part/footprint details](footprint-review.md), and [assembly/bring-up procedure](assembly-and-bring-up.md)
 - [J5/J6 wiring table](assembly-and-bring-up.md#j5j6-cable-wiring): each switch/LED has its own signal/ground pair; no external return splice
 - [CNC geometry package and instructions](../../manufacturing/pcb/carvera-air/README.md)
+- [PCB fabrication guide](../pcb-fabrication-guide.md): illustrated operator sequence, tools, setup, coatings, flip and final hole clearing
 - [Jig and FreeCAD CAM migration](pcb-jig-and-freecad-cam.md): current PCB interface, Robust MCP Server jobs and remaining acceptance
 - [P1 enclosure](enclosure-p1.md): editable FreeCAD assembly, print meshes, fit coupons and mechanical assembly
 - [FreeCAD Robust MCP setup](freecad-mcp-setup.md): local enclosure CAD tooling, Codex configuration, and connection verification

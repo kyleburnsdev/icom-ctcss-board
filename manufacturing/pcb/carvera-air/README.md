@@ -1,5 +1,14 @@
 # Carvera Air PCB manufacturing
 
+For one board's electronic components and module sockets, use the [DigiKey upload CSV](../digikey-board-parts.csv) and [purchasing notes](../../../docs/digikey-board-parts.md).
+
+For the laser-printer scaling trial, use the [negative legend PDF and print instructions](print-masks/README.md).
+
+**Start with the [PCB fabrication guide](../../../docs/pcb-fabrication-guide.md)**
+for the illustrated machine/workbench sequence, tools, optional registration
+preparation, original copper-zero strategy, coating/flip steps and final hole
+clearing. This README holds package contents and engineering/regeneration detail.
+
 Editable source: [FreeCAD CAM project](../../../mechanical/pcb/icom-ctcss-pcb-cam.FCStd).
 Use **Robust MCP Server** for FreeCAD CAM and Konnect for KiCad. The
 [workflow](../../../docs/implementation/pcb-jig-and-freecad-cam.md) defines the jig interface.
