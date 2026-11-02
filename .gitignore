@@ -26,3 +26,6 @@ _autosave-*
 # FreeCAD automatic backups
 *.FCStd[0-9]
 *.FCBak
+
+# STM32CubeMX local workspace metadata
+firmware/radio_standin/.mxproject

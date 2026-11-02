@@ -2,7 +2,7 @@
 
 A Pro Micro based interface that adds selectable CTCSS tones to an Icom IC-229H microphone audio path, with PTT forwarding, an encoder, LCD, bypass control and status LEDs.
 
-The schematic and routed PCB prototype are complete. The jig interface, enforced keepouts and native FreeCAD CAM migration are verified. Machining uses Robust MCP Server; physical setup and process qualification remain open. The first enclosure iteration is implemented in FreeCAD with print-oriented parts and fit coupons. Firmware, physical manufacturing and radio acceptance remain outstanding. Manufacturing files are preparation material; machine settings and the physical process still require coupon validation.
+The schematic and routed PCB prototype are complete; assembly components have been ordered and the PCB is prepared for assembly. The first enclosure iteration is implemented in FreeCAD with print-oriented parts and fit coupons. Pro Micro firmware and a NUCLEO-F767ZI phase-one test driver are implemented, with build, host-test and USB verification. Begin breadboard testing with the [phase-one guide](docs/implementation/firmware-phase1-guide.md); wired timing, UI hardware and analog/radio acceptance remain outstanding. Manufacturing process evidence is recorded separately in the relevant packages.
 
 | Area | Entry point |
 | --- | --- |

@@ -7,7 +7,7 @@ This standard-library nodal AC calculation evaluates the implemented R1–R5/C1/
 
 ## Selectable tone frequencies
 
-No component fixes the generated frequency at 151.4 Hz. Firmware must synthesize the selected tone on D9; the RC network is a broad low-pass reconstruction filter, not a tuned tone oscillator or narrow band-pass. The nominal 10 kHz PWM carrier is separate from the selected tone frequency. No firmware has been implemented.
+No component fixes the generated frequency at 151.4 Hz. Firmware synthesizes the selected tone on D9; the RC network is a broad low-pass reconstruction filter, not a tuned tone oscillator or narrow band-pass. The nominal 10 kHz PWM carrier is separate from the selected tone frequency. See the [implemented waveform](firmware-architecture.md); physical analog acceptance remains separate from this model.
 
 Example transfer magnitudes at maximum trimmer setting, using the illustrative 1 kΩ load:
 

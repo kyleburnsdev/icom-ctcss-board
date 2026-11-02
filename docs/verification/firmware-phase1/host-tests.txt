@@ -1,0 +1,17 @@
+control_test.cpp
+control.cpp
+journal.cpp
+Generating Code...
+PASS control, interlocks, bounce/wrap, UI, 50 presets, torn EEPROM writes, CRC corruption
+capture_test.cpp
+control.cpp
+Generating Code...
+Compiling...
+pwm_capture.c
+Generating Code...
+PASS capture: all 50 tones, idle, rollover, edge loss; worst synthetic error 0.004996 Hz
+display_test.cpp
+display.cpp
+control.cpp
+Generating Code...
+PASS display: 16x2 content, TX/pending, Cancel, bounded calls, fault/recovery

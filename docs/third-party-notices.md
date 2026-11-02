@@ -9,6 +9,16 @@ The root MIT license covers original project contributions. Required third-party
 
 ## External reference material
 
+The STM32 test-driver project was generated with STM32CubeMX 6.16.1 and
+STM32CubeF7 1.17.3. Required copied dependencies retain their upstream notices:
+[STM32 HAL license](../firmware/radio_standin/Drivers/STM32F7xx_HAL_Driver/LICENSE.md),
+[CMSIS core license](../firmware/radio_standin/Drivers/CMSIS/LICENSE.txt) and
+[STM32 CMSIS device license](../firmware/radio_standin/Drivers/CMSIS/Device/ST/STM32F7xx/LICENSE.md).
+Generated ST files retain their copyright/license headers; the project's MIT
+license does not replace these terms. Original application modules and tests
+remain covered by the project's MIT license. Arduino/SparkFun packages are
+installed as external build dependencies, not copied into this repository.
+
 `tools/post/makera_legacy_post.py` is the unmodified OEM FreeCAD postprocessor
 from MakeraInc/CarveraProfiles commit `de08a657bdc9c230a094dbdba792acd70bfcdf32`,
 SHA-256 `a5a10005b6e40caf6563937c328f2e99da168805fc7f819948e72bf8c2c8b115`.

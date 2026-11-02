@@ -14,6 +14,7 @@ The editable schematic and routed PCB prototype are complete. The jig interface,
 - [Top legend SVG for laser preparation](../../manufacturing/pcb/carvera-air/native-exports/icom-ctcss-board-top-legend.svg), with F.SilkS Gerber in the same package
 - [Independent review](design-review.md), [layout evidence](pcb-layout.md), and [acceptance checklist](acceptance-checklist.md)
 - [LTspice electrical validation](ltspice-validation.md): filter tolerances, PWM reconstruction, tone-disable transient and service-manual PTT load
+- [Firmware architecture](firmware-architecture.md) and [phase-one breadboard tests](firmware-phase1-guide.md): Pro Micro plus NUCLEO-F767ZI
 
 Verification: ERC zero errors/warnings; final DRC zero errors and zero unconnected items; 61 exported-netlist assertions pass. Native PCB inventory confirms 242 B.Cu segments, no routing vias or pours, 100 × 150 mm outline and four 4 mm mounting holes. The final DRC retains 115 documented non-electrical warnings, including original footprint text overlaps. The independent aggregate review also flags LCD pull-up and bulk-capacitance assumptions requiring physical checks.
 

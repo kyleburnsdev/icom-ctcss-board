@@ -1,6 +1,6 @@
 # CTCSS/PL firmware requirements — version-one baseline
 
-**Status: version-one baseline accepted by the user on 2026-10-20; implementation has not started.** The consolidated UI flow and engineering defaults below are agreed requirements. Hardware identification and physical acceptance remain outstanding; PCB cleanup is complete; acceptance of this baseline does not mean those checks have passed.
+**Status: version-one baseline accepted by the user on 2026-10-20; firmware implemented on 2026-11-02.** The consolidated UI flow and engineering defaults below are agreed requirements. See the [implementation and fault policy](../implementation/firmware-architecture.md), [phase-one guide](../implementation/firmware-phase1-guide.md) and [current verification](../verification/firmware-phase1/README.md). Hardware identification and physical acceptance remain outstanding; implementation does not mean those checks have passed.
 
 **Completed control change:** OFF is removed altogether. The interface stays powered with the radio so microphone PTT forwarding remains available. There is no OFF switch, OFFSET feature, software power-off or sleep substitute. J5 is now BYPASS/GND only, R16 and the A0 switch wiring are removed, and U1 A0 is intentionally unused. The BOM and manufacturing files reflect this cleanup.
 
@@ -197,7 +197,7 @@ The LCD backpack address/controller mapping and actual encoder detent/transition
 
 ## State model and remaining fault policy
 
-Use these cases to guide implementation and acceptance. The other-peripheral/waveform-fault policy remains to be defined; no behavior is claimed as implemented.
+Use these cases to guide implementation and acceptance. The [implementation note](../implementation/firmware-architecture.md#fault-decisions) defines the additional EEPROM, waveform and USB fault policies; physical acceptance remains separate.
 
 | State | Radio PTT | Tone | Indications |
 | --- | --- | --- | --- |
@@ -210,7 +210,7 @@ Use these cases to guide implementation and acceptance. The other-peripheral/wav
 | Bypass disabled while microphone held | Remains asserted | Resume the transmission's latched frequency; do not apply a pending saved frequency | PTT LED stays on; bypass LED turns off |
 | Release | Released within agreed latency | Stop under agreed sequencing | PTT LED off |
 | Display-only fault | Continue normal qualified microphone PTT forwarding | Last valid selection when keyed and not bypassed; retain any current transmission latch | PTT/bypass LEDs continue; no unseen menu changes |
-| Other peripheral/waveform fault | Policy still to define by fault class | Policy still to define by fault class | Do not treat all faults as equivalent to display loss |
+| Timer1 configuration fault | Release PTT; latch until reset | Stop timer / D9 LOW | Fault message; see implementation note for detection limits |
 
 ## Measurable acceptance criteria and outstanding checks
 
@@ -235,4 +235,4 @@ Hardware prerequisites remain in the [assembly/bring-up procedure](../implementa
 
 ## Implementation boundary and next steps
 
-The user accepted the consolidated UI flow and engineering defaults as the version-one baseline on 2026-10-20 and the Arduino sketch approach on 2026-10-21. Requirements alignment is complete for those behaviors and the firmware approach. Next, identify the actual LCD backpack/encoder, use the cleaned-up PCB constraints, and choose/verify the Arduino core/board package, libraries, build/upload tooling, timer allocation and display driver against these constraints. Define the remaining fault policy and radio-dependent acceptance limits before implementation acceptance. PCB cleanup is complete; firmware implementation has not started.
+The accepted behavior and Arduino sketch are now implemented with pinned toolchain/core versions, fixed PCB mapping, explicit timer allocation and a configurable display driver. The NUCLEO-F767ZI implements the bare-Pro-Micro phase-one test fixture. Next, execute the wired phase-one guide, identify the LCD backpack/encoder, then measure the assembled carrier and radio. Radio-dependent amplitude/distortion limits and physical acceptance remain open. Current checks are recorded separately from historical requirements decisions.

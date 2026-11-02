@@ -76,3 +76,12 @@ Run `python tools/prepare-enclosure-plates.py` after mesh export. Uses Python's 
 The primary output is `manufacturing/enclosure/p1-enclosure.3mf`: three named plates, nineteen instances, embedded shared settings and all three sliced toolpaths. All objects use slot 1 with no individual process overrides. The script checks ZIP integrity, plate order, counts, profiles, saved geometry/transforms, brim/exclusion reservations, bed faces and slice success. Evidence goes to `docs/verification/enclosure-p1/multi-plate-checks.json`; raw resolved profiles, arranged meshes and logs go to `.agent-scratch/enclosure-p1/plates/`. The final project has no scratch dependency.
 
 Profile resolution/export follow the [Bambu CLI documentation](https://github.com/bambulab/BambuStudio/wiki/Command-Line-Usage) and [native plate-assembly implementation](https://github.com/bambulab/BambuStudio/blob/master/src/BambuStudio.cpp).
+## Firmware build and test tools
+
+`build-firmware.ps1` builds the Arduino Pro Micro and/or CubeMX-generated
+NUCLEO-F767ZI projects without flashing. `test-firmware.ps1` runs native C++
+control/journal, PWM-capture and display-model tests. `phase1-test.py` uses pyserial 3.5 to
+run USB-only or wired bench checks and writes timestamped, source-hashed JSON.
+Dependencies, commands and protocols are in the [firmware README](../firmware/README.md);
+physical connections are in the [phase-one guide](../docs/implementation/firmware-phase1-guide.md).
+Builds, temporary reports and captures belong in `.agent-scratch/firmware/`.

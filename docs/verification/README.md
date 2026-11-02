@@ -6,6 +6,7 @@ and review summaries are removed; retrieve earlier revisions from Git history.
 
 | Record | Scope |
 | --- | --- |
+| [Firmware phase one](firmware-phase1/README.md) | Pro Micro/NUCLEO builds, native tests, programming and USB-only checks; wired acceptance pending |
 | [DRC](final-drc.json) | Saved board: zero errors/unconnected, 115 retained warnings |
 | [Inventory](final-board-inventory.json) | Copper restrictions, component envelopes, eight mechanical holes and nominal jig clearances |
 | [CAM input geometry](pcb-cam-geometry.json) | Native export identities, merged copper, hole counts, ideal cutter sweep and legend hatch |
