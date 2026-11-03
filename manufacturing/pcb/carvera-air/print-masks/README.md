@@ -1,32 +1,20 @@
-# Negative legend paper scaling test
+# Folded double-layer negative legend mask
 
-[Print the PDF](top-legend-negative-100x150mm.pdf) on Letter paper. The artwork
-rectangle is exactly **100 x 150 mm** in the PDF. Black means leave uncured;
-white means cure (unprinted, transparent film in a later exposure test).
-The existing top-legend SVG is inverted in colour only, without mirroring.
+[Print the mask PDF](top-legend-negative-100x150mm.pdf), then follow the
+[illustrated printing, folding and exposure guide](../../../../docs/folded-mask-guide.md).
 
-| Step | Material / holding | Action / next check |
-| --- | --- | --- |
-| Print | Letter paper in printer | Actual size / 100%; disable Fit and driver scaling |
-| Measure | Cooled sheet flat on bench | Measure horizontal 100 mm and vertical 150 mm tick-centre spans |
-| Trim | Sheet on cutting mat | Use external corner marks to trim the 100 x 150 mm rectangle |
+One Letter page contains two exact **150 x 100 mm** fields: the existing
+100 x 150 mm legend rotated clockwise, plus its reflection across the fold.
+Four paired targets, a fold line, outer trim boundary and independent
+100/150 mm measurement references are included. Retain **170 x 222 mm** of
+film, folding to **170 x 111 mm**. Black blocks UV; white is unprinted film.
+Print Actual size / 100%, simplex, without Fit or printer mirroring.
 
-Use a ruler or calipers, straightedge, cutting mat and knife or paper trimmer.
-The PDF itself illustrates the trim lines through external crop marks and
-provides independent dimension references. Mid-edge ticks help alignment.
-Measure before trimming so the references remain available. Check both axes;
-record actual measurements. If correction is needed, the scale multiplier is
-intended length divided by measured length. A single percentage works only
-when both axes require the same correction. Do not call the physical print
-dimensionally accepted merely because the print dialog says 100%.
+The user reported that the single toner layer did not sufficiently block UV.
+This is the next two-layer exposure experiment; opacity and exposure settings
+have not yet been physically accepted.
 
-This is a scaling test, not a qualified exposure process or replacement of the
-current machining instructions. Paper is sufficient for this test. A future
-transparency must be measured separately after printing and cooling.
-
-Generated with [the reusable script](../../../../tools/create-legend-print-test.py)
-using Python, ReportLab and pypdf. It uses
-[the existing native SVG](../native-exports/icom-ctcss-board-top-legend.svg).
-The PDF source hash is printed in its footer. Verified: one Letter page,
-100 x 150 mm vector field, 1,141 white source paths, external trim marks,
-and visually inspected rendered page. Printer scaling has not yet been measured.
+Regenerate with `python tools/create-legend-print-test.py` from the repository
+root (Python, ReportLab and pypdf). The [generator](../../../../tools/create-legend-print-test.py)
+uses the [native legend SVG](../native-exports/icom-ctcss-board-top-legend.svg)
+without changing the PCB. See the guide for current verification and physical checks.

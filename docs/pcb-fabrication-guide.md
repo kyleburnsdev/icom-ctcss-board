@@ -294,6 +294,14 @@ There is no final registration-hole recut and no routine perimeter separation.
    and [BOM](reference/bom.csv). Radio power and functional acceptance belong
    to that later procedure; do not fit components before fabrication checks pass.
 
+## Folded transparency experiment
+
+For the next top-legend UV exposure experiment after the single toner layer
+failed to block enough UV, use the [double-layer mask and folding guide](folded-mask-guide.md).
+It supplies two rotated masks, a mirrored fold partner and alignment targets.
+The experiment has separate exposure acceptance; the laser-marking procedure
+above describes the existing alternative process.
+
 ## Sources for editing and deeper checks
 
 - [Editable FreeCAD CAM](../mechanical/pcb/icom-ctcss-pcb-cam.FCStd) and

@@ -2,7 +2,7 @@
 
 For one board's electronic components and module sockets, use the [DigiKey upload CSV](../digikey-board-parts.csv) and [purchasing notes](../../../docs/digikey-board-parts.md).
 
-For the laser-printer scaling trial, use the [negative legend PDF and print instructions](print-masks/README.md).
+For the doubled-transparency exposure experiment, use the [negative legend PDF](print-masks/top-legend-negative-100x150mm.pdf) and [illustrated folding guide](../../../docs/folded-mask-guide.md).
 
 **Start with the [PCB fabrication guide](../../../docs/pcb-fabrication-guide.md)**
 for the illustrated machine/workbench sequence, tools, optional registration
