@@ -7976,6 +7976,126 @@
 			)
 		)
 	)
+	(gr_text "STATUS / J6 R6 R7\nPTT AND BYPASS LEDS\nLIMIT LED CURRENT"
+		(at 76 61.5 270)
+		(layer "B.SilkS")
+		(uuid "bce8cfc8-52b3-4c43-9dbd-a288f83d67e9")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "UI / J3 J4 J5 R12-R15\nENCODER LCD BYPASS\nBYPASS MUTES TONE"
+		(at 84 61.5 270)
+		(layer "B.SilkS")
+		(uuid "ac2f875b-243a-464b-bf42-7936110eb499")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "PTT OUT / R10 R11 Q1\nD8 DRIVES Q1\nPULL RADIO PTT LOW"
+		(at 92 61.5 270)
+		(layer "B.SilkS")
+		(uuid "8e549362-acef-431c-814f-7dd46f1e60db")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "PTT IN / R8 R9\nSENSE MIC SWITCH\nACTIVE LOW TO D7"
+		(at 100 61.5 270)
+		(layer "B.SilkS")
+		(uuid "2b3216e2-a2b6-489b-935d-602886038b26")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "MIX / C3 R5\nAC-COUPLE TONE\nMIC AUDIO PASSES"
+		(at 108 61.5 270)
+		(layer "B.SilkS")
+		(uuid "99bf0361-9f30-47a9-9a42-2e1682ffa0bc")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "LEVEL / R3 R4 RV1\nATTENUATE AND ADJUST\nTONE AMPLITUDE"
+		(at 116 61.5 270)
+		(layer "B.SilkS")
+		(uuid "5fd89895-ed7f-409b-b263-5eef8838f072")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "FILTER / R1 R2 C1 C2\nSMOOTH D9 PWM\nTO SUBAUDIBLE TONE"
+		(at 124 61.5 270)
+		(layer "B.SilkS")
+		(uuid "4912799e-3251-406d-862f-68c283e20c64")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "CONTROL / U1\nSELECT CTCSS TONE\nFORWARD MIC PTT"
+		(at 132 61.5 270)
+		(layer "B.SilkS")
+		(uuid "2731f913-b44a-4f0a-8f5a-2693a3f963d0")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "POWER / C4-C6\n+8V TO U1 RAW\nU1 VCC SUPPLIES +5V"
+		(at 139 61.5 270)
+		(layer "B.SilkS")
+		(uuid "8c28fb27-562e-43af-a0ab-7d9992e7ad7f")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "CTCSS SUBSYSTEMS"
+		(at 145 125 270)
+		(layer "B.SilkS")
+		(uuid "f4c0f2fb-90ac-4fd8-8aec-0bf059d5f2c9")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
 	(gr_text "JIG P1=H5 P2=H6 P3=H7 P4=H8 | PANEL x=Ky-50 y=Kx-50 | FLIP x'=150-x"
 		(at 100 207 0)
 		(layer "Dwgs.User")

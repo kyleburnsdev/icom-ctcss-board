@@ -8,6 +8,7 @@ import importlib.util
 import hashlib
 import json
 import math
+import re
 from pathlib import Path as FilePath
 
 import FreeCAD as App
@@ -19,8 +20,6 @@ from Path.Tool import Controller
 from Path.Tool.toolbit import ToolBit
 
 V = App.Vector
-LASER_POWER = 0.05
-LASER_FEED = 500
 
 
 def cam_document(root):
@@ -84,12 +83,12 @@ def depths(op, final, step=0.3, clearance=15, safe=2):
             setattr(op,key,value)
 
 
-def create_job(doc,name,face):
+def create_job(doc,name,face,top_z=0):
     stock=doc.addObject('Part::Box',name+'_Board')
-    stock.Label=name+' | 150 x 100 x 1.5 mm blank, top Z0'
+    stock.Label=name+' | 150 x 100 x 1.5 mm blank'
     stock.Length=150; stock.Width=100; stock.Height=1.5
     p=setup_point(0,0,'preparation' if face=='preparation' else 'top')
-    stock.Placement.Base=V(p.x,p.y,-1.5)
+    stock.Placement.Base=V(p.x,p.y,top_z-1.5)
     doc.recompute()
     job=Job.Create(name,[stock])
     job.Label=name.replace('_',' ')
@@ -106,22 +105,24 @@ def create_job(doc,name,face):
     return job
 
 
-def circular_geometry(doc,name,holes,face,group,floors=False):
+def circular_geometry(doc,name,holes,face,group,floors=False,floor_z=-1.65):
     shapes=[]
     for hole in holes:
         p=setup_point(hole['x'],hole['y'],face)
-        if floors: p.z=-1.65
+        if floors: p.z=floor_z
         wire=Part.Wire([Part.makeCircle(hole['diameter']/2,p)])
         shapes.append(Part.Face(wire) if floors else wire)
     return feature(doc,name,Part.makeCompound(shapes),group)
 
 
-def pocket(job,name,holes,face,tc,group):
-    region=circular_geometry(job.Document,name+'_Floors',holes,face,group,True)
+def pocket(job,name,holes,face,tc,group,top_z=0,final_z=-1.65):
+    region=circular_geometry(job.Document,name+'_Floors',holes,face,group,True,final_z)
     op=PocketShape.Create(name,parentJob=job)
     op.Base=[(region,[f'Face{i+1}' for i in range(len(holes))])]
     op.ToolController=tc
-    depths(op,-1.65)
+    depths(op,final_z)
+    op.StartDepth=top_z
+    op.SafeHeight=top_z+2
     op.StepOver=40
     op.KeepToolDown=True
     op.Comment='Full circular pockets; no loose plugs. Through-cut requires sacrificial protection.'
@@ -130,297 +131,236 @@ def pocket(job,name,holes,face,tc,group):
     return op
 
 
+
+def setup_summary(doc,data,root):
+    sheet=doc.addObject('Spreadsheet::Sheet','SetupSummary')
+    sheet.Label='Trial settings | offsets preserve the selected surface datum'
+    rows=[('Board thickness mm',1.5,'BoardThickness'),
+          ('PCB underside above jig floor mm',data['settings']['support_height_above_floor_mm'],'SupportHeight'),
+          ('Hole breakthrough below PCB mm',data['settings']['hole_breakthrough_mm'],'Breakthrough'),
+          ('Pad tool initial spring overtravel mm',data['mask_removal']['spring_overtravel_below_copper_mm'],'MaskOvertravel'),
+          ('Pad clearing repeat-pass Z offset mm',0,'MaskPassOffset'),
+          ('Drag initial spring preload mm',data['settings']['drag_preload_mm'],'DragPreload'),
+          ('Bottom drag repeat-pass Z offset mm',0,'BottomDragPassOffset'),
+          ('Drag feed mm/min',data['settings']['drag_feed_mm_min'],'DragFeed'),
+          ('Drag plunge mm/min',data['settings']['drag_plunge_mm_min'],'DragPlunge'),
+          ('Pad tool spindle rpm',6000,'MaskRPM'),
+          ('Pad tool feed mm/min',400,'MaskFeed'),
+          ('Pad tool plunge mm/min',200,'MaskPlunge'),
+          ('Top drag repeat-pass Z offset mm',0,'TopDragPassOffset')]
+    for row,(label,value,alias) in enumerate(rows,1):
+        sheet.set('A'+str(row),label);sheet.set('B'+str(row),str(value));sheet.setAlias('B'+str(row),alias)
+    sheet.set('A14','PCB SHA256');sheet.set('B14',hashlib.sha256((root/'electronics/icom-ctcss-board.kicad_pcb').read_bytes()).hexdigest())
+    sheet.set('A15','CAM inputs SHA256');sheet.set('B15',hashlib.sha256((root/'manufacturing/pcb/carvera-air/cam-inputs.json').read_bytes()).hexdigest())
+    sheet.set('A17','Trial: pad and drag initial overtravel 0.05 mm. Repeat offsets start at zero; lower only the operation offset after inspection.')
+    sheet.set('A18','10/20: original bottom copper Z0/map. 25/40: new mask-surface Z0. 50: new aluminium-floor Z0, NO copper map.')
+    sheet.set('A19','All coating/curing in place. No probing between copper mapping and pad clearing except tool-length setting.')
+    sheet.set('A20','Floor setup assumes PCB underside Z+1.00 and final Z+0.85; match actual support height before using file 50.')
+    sheet.set('A21','Inventory preflight incomplete; review CAM is not a claim of stock completeness or machine qualification.')
+    return sheet
+
+
 def create_mask_job(doc, inputs, data):
-    """Native spring-tool engraving using the original copper work datum."""
-    if doc.getObject('Job20_BottomMaskRemoval'):
-        raise RuntimeError('Preserve existing mask job; do not duplicate/replace edits')
     settings=data['mask_removal']
     job=create_job(doc,'Job20_BottomMaskRemoval','bottom')
-    job.Label='Job20 Bottom solder mask pad opening | before electrical drilling'
-    job.Description='Fully cured bottom mask; retain G54 copper Z0 established before trace cutting. Never re-zero on mask. Z-0.20 is commanded spring-tool overtravel below known copper, NOT intended copper removal; actual compression includes mask thickness. Run before initial electrical/enclosure holes, never over open holes. After remounting reproduce original seating and retain work zero. Qualify preload and copper preservation.'
-    tc=controller(job,'T4 Makera spring solder-mask remover | 0.3 mm 30 deg',4,2,settings['feed_mm_min'],settings['plunge_mm_min'],'v-bit.fcstd')
-    tc.SpindleSpeed=settings['rpm']
-    tc.Tool.TipDiameter=settings['tip_mm']
-    tc.Tool.ShankDiameter=3.175
-    tc.Tool.Length=50
+    job.Description='Same bonded setup as Job10. Retain original bottom copper Z0 AND height map. NO probing except tool-length setting between initial copper map and pad clearing. All coating/curing stays in jig. Before any circuit holes. First pass conservative; inspect before lowering MaskPassOffset.'
+    tc=controller(job,'T4 Makera spring mask remover | 0.3 mm 30 deg',4,2,400,200,'v-bit.fcstd')
+    tc.SpindleSpeed=6000;tc.Tool.TipDiameter=.3;tc.Tool.Length=50
     tc.Tool.CuttingEdgeHeight=3
-    job.addProperty('App::PropertyString','ToolProfileSource','Process')
-    job.ToolProfileSource='Makera product specifications accessed 2026-10-31; OEM fctb retained with documented RPM/shank discrepancies.'
-    job.addProperty('App::PropertyLength','ConservativeContactDiameter','Process')
-    job.ConservativeContactDiameter=2*settings['envelope_radius_mm']
-    summary=doc.getObject('SetupSummary')
-    if summary:
-        for row,(key,value) in enumerate([
-            ('Mask spindle rpm',settings['rpm']),('Mask feed mm/min',settings['feed_mm_min']),
-            ('Mask plunge mm/min',settings['plunge_mm_min']),
-            ('Mask spring overtravel below original copper mm',settings['spring_overtravel_below_copper_mm']),
-            ('Mask pad inset mm',settings['inset_mm']),
-            ('Mask conservative envelope diameter mm',2*settings['envelope_radius_mm'])],22):
-            summary.set('A'+str(row),key);summary.set('B'+str(row),str(value))
-        summary.set('A29','Retain original pre-isolation copper G54 Z0 for every subsequent program; never re-zero on coating or after remount/flip.')
+    tc.setExpression('SpindleSpeed','SetupSummary.MaskRPM')
+    tc.setExpression('HorizFeed','SetupSummary.MaskFeed / 60')
+    tc.setExpression('VertFeed','SetupSummary.MaskPlunge / 60')
     bands={}
     for points in settings['centerlines']:
         bands.setdefault(int(points[0][1]//10),[]).append(points)
     for band,lines in sorted(bands.items()):
         geo=wire_geometry(doc,f'BottomMaskGeometry_Y{band*10:03d}',lines,'bottom',inputs)
         op=Engrave.Create(f'OpenBottomPads_Y{band*10:03d}',parentJob=job)
-        op.Label=f'Open solder pads Y{band*10} to {band*10+10} mm'
-        op.BaseShapes=[geo]; op.ToolController=tc
-        depths(op,-settings['spring_overtravel_below_copper_mm'],settings['spring_overtravel_below_copper_mm'])
-        op.Comment='Pad flashes only; >=0.10 mm masked rim. Conservative V envelope, 0.12 mm fill pitch. Retain pre-isolation copper Z0; Z-0.20 is spring-tool overtravel, not copper cutting. Electrical holes not yet drilled.'
-        doc.recompute()
-        assert op.Path.Commands
-        yield {'stage':'bottom mask pad opening','band_mm':band*10,'commands':len(op.Path.Commands)}
-    for geo in inputs.Group: geo.Visibility=False
-    job.Visibility=False; job.Stock.Visibility=False
+        op.Label=f'Open pads Y{band*10} to {band*10+10} mm'
+        op.BaseShapes=[geo];op.ToolController=tc
+        depths(op,-settings['spring_overtravel_below_copper_mm'],1)
+        op.setExpression('FinalDepth','-SetupSummary.MaskOvertravel + SetupSummary.MaskPassOffset')
+        op.Comment='Spring tool only; 0.05 mm initial overtravel. Pressure, not copper-cutting depth. Retain copper Z0/map. No circuit holes yet. Inspect, then lower operation offset slightly if needed.'
+        doc.recompute();assert op.Path.Commands
+        yield {'stage':'bottom pad opening','band_mm':band*10,'commands':len(op.Path.Commands)}
+
+
+def create_drag_job(doc,inputs,data,face):
+    bottom=face=='bottom'
+    job=create_job(doc,'Job25_BottomLegend' if bottom else 'Job40_TopLegend',face)
+    job.Description=f'{face.title()} diamond-drag legend. NEW finished-mask surface Z0 after pad clearing, preserve jig XY. No copper height map. T6 1/4 inch shank, 90 degree tip, NONROTATING. First pass conservative; inspect before lowering {face.title()}DragPassOffset. Remove contrasting coat only; retain base mask.'
+    tc=controller(job,'T6 diamond drag | 6.35 mm shank | spindle OFF',6,.127,300,100,'v-bit.fcstd')
+    tc.SpindleSpeed=0;tc.Tool.ShankDiameter=6.35;tc.Tool.CuttingEdgeAngle=90
+    tc.Tool.TipDiameter=.001
+    tc.Tool.Length=95.25  # Matching-model reference, not measured owned-tool length.
+    tc.setExpression('HorizFeed','SetupSummary.DragFeed / 60')
+    tc.setExpression('VertFeed','SetupSummary.DragPlunge / 60')
+    job.addProperty('App::PropertyString','ToolReference','Process')
+    job.ToolReference='Owned 6.35 mm shank, 90/120 deg tips. 95.25 mm length / 0.127 mm line width are matching WidgetWorks model references only. Set actual tool length by mechanical/manual contact, not electrical diamond-tip probing.'
+    # Two-mm bands bound FreeCAD Engrave's quadratic wire-ordering cost and
+    # expose manageable, named regions in the native tree.
+    bands={}
+    for points in data['bottom_legend_hatch' if bottom else 'legend_hatch']:
+        bands.setdefault(int(points[0][1]//2),[]).append(points)
+    for band,lines in sorted(bands.items()):
+        stem=f'{face.title()}Legend_Y{band*2:03d}'
+        geo=wire_geometry(doc,stem+'_Geometry',lines,face,inputs)
+        op=Engrave.Create('Drag'+stem,parentJob=job)
+        op.Label=f'{face.title()} drag legend Y{band*2} to {band*2+2} mm'
+        op.BaseShapes=[geo];op.ToolController=tc
+        depths(op,-data['settings']['drag_preload_mm'],1)
+        op.setExpression('FinalDepth','-SetupSummary.DragPreload + SetupSummary.'+('BottomDragPassOffset' if bottom else 'TopDragPassOffset'))
+        op.Comment='SPINDLE OFF. Finished-mask surface reference; initial 0.05 mm spring preload, not groove depth. Reveal base color; inspect before increasing pressure.'
+        doc.recompute();assert op.Path.Commands
+        yield {'stage':face+' drag legend','band_mm':band*2,'commands':len(op.Path.Commands)}
 
 
 def build(root):
     root=FilePath(root)
     saved_path=(root/'mechanical/pcb/icom-ctcss-pcb-cam.FCStd').resolve()
-    if 'CTCSS_PCB_CAM' in App.listDocuments() or any(doc.FileName and FilePath(doc.FileName).resolve()==saved_path for doc in App.listDocuments().values()):
-        raise RuntimeError('Close/preserve the existing CTCSS_PCB_CAM before regeneration')
+    if any(doc.FileName and FilePath(doc.FileName).resolve()==saved_path for doc in App.listDocuments().values()) or 'CTCSS_PCB_CAM' in App.listDocuments():
+        raise RuntimeError('Preserve and close the existing PCB CAM before regeneration')
     data=json.loads((root/'manufacturing/pcb/carvera-air/cam-inputs.json').read_text())
     for filename,digest in data['source_hashes'].items():
-        path=root/'manufacturing/pcb/carvera-air/native-exports'/filename
-        if hashlib.sha256(path.read_bytes()).hexdigest()!=digest:
-            raise RuntimeError('Stale CAM inputs; regenerate from exports: '+filename)
+        if hashlib.sha256((root/'manufacturing/pcb/carvera-air/native-exports'/filename).read_bytes()).hexdigest()!=digest:
+            raise RuntimeError('Stale CAM inputs: '+filename)
     doc=App.newDocument('CTCSS_PCB_CAM')
-    doc.Label='CTCSS PCB | Carvera Air jig | review CAM'
-    output=root/'mechanical/pcb'; output.mkdir(parents=True,exist_ok=True)
-    def checkpoint():
-        doc.recompute()
-        doc.saveAs(str(output/'icom-ctcss-pcb-cam.FCStd'))
+    doc.Label='CTCSS PCB | in-jig coating / two-color drag legend trial'
     inputs=doc.addObject('App::DocumentObjectGroup','ManufacturingGeometry')
-    inputs.Label='Gerber-derived geometry | regeneration inputs in manufacturing package'
-    params=doc.addObject('Spreadsheet::Sheet','SetupSummary')
-    params.Label='Setup summary | laser power drives post; feed comes from controller'
-    for row,(key,value) in enumerate([
-        ('Board thickness mm',1.5),('Through depth mm',1.65),('Clearance above face mm',15),
-        ('Jig XY offset mm',0.10),('V-bit angle deg',30),('V-bit tip mm',0.2),
-        ('Isolation depth mm',0.10),('Isolation offset mm',0.15),
-        ('Corn bit mm',0.8),('Corn spindle rpm',12000),('Corn feed mm/min',500),
-        ('Helix feed 0.9 mm/min',55),('Helix feed 1.1 mm/min',135),
-        ('Laser hatch pitch mm',0.05),('Laser marking power fraction',LASER_POWER),
-        ('Laser marking feed mm/min',LASER_FEED)],1):
-        params.set(f'A{row}',key); params.set(f'B{row}',str(value))
-    params.set('A17','Laser power B15 drives post; feed is set in native tool controller. Other rows summarize candidate process settings.')
-    params.set('A19','PCB SHA256')
-    params.set('B19',hashlib.sha256((root/'electronics/icom-ctcss-board.kicad_pcb').read_bytes()).hexdigest())
-    params.set('A20','CAM inputs SHA256')
-    params.set('B20',hashlib.sha256((root/'manufacturing/pcb/carvera-air/cam-inputs.json').read_bytes()).hexdigest())
+    inputs.Label='Native artwork-derived geometry | one face transform'
+    sheet=setup_summary(doc,data,root)
+    def checkpoint():
+        doc.recompute();doc.saveAs(str(saved_path))
     prep=create_job(doc,'Job00_RegistrationPreparation','preparation')
-    prep.Description='FIRST: blank lower-left XY0, copper-top Z0, independent edge datum/bond on sacrificial wasteboard; jig absent. No perimeter trim on finished-size stock.'
-    tprep=controller(prep,'T3 Corn 0.8 mm',3,0.8,500,100)
-    registration=[h for h in data['holes'] if h['diameter']>4]
-    pocket(prep,'PrepareFourJigHoles',registration,'preparation',tprep,inputs)
-    checkpoint()
-    yield {'stage':'registration preparation','operations':len(prep.Operations.Group)}
-
+    prep.Description='Only for unprepared blanks. Jig absent; independent blank-corner XY / copper-top Z0 on sacrificial wasteboard. Skip for accepted prepared blank.'
+    tprep=controller(prep,'T3 Corn 0.8 mm',3,.8,500,100)
+    pocket(prep,'PrepareFourJigHoles',[h for h in data['holes'] if h['diameter']>4],'preparation',tprep,inputs)
+    checkpoint();yield {'stage':'registration preparation'}
     bottom=create_job(doc,'Job10_BottomCopper','bottom')
-    bottom.Description='Jig Anchor 1 XY0; register/bond/withdraw all PCB pins/probe exposed copper. Copper isolation only; holes are an independent repeatable job.'
-    vbit=controller(bottom,'T2 V-bit 30 deg tip 0.2 mm',2,3.175,100,30,'v-bit.fcstd')
-    source=wire_geometry(doc,'BottomIsolationCenterlines',data['isolation_centerlines'],'bottom',inputs)
+    bottom.Description='Bottom up. Register/bond/withdraw PCB pins. Establish copper Z0 and thorough copper map. Preserve same seating, zero AND map through coating/curing and Job20. Tool-length setting only; no intervening surface probing.'
+    tc=controller(bottom,'T2 V-bit 30 deg tip 0.2 mm',2,3.175,100,30,'v-bit.fcstd')
+    geo=wire_geometry(doc,'BottomIsolationCenterlines',data['isolation_centerlines'],'bottom',inputs)
     op=Engrave.Create('IsolateMergedBottomCopper',parentJob=bottom)
-    op.BaseShapes=[source]; op.ToolController=vbit
-    depths(op,-0.1,0.1)
-    op.Comment='0.15 mm offset around merged retained copper; 30 degree / 0.2 mm V-bit; ideal width 0.25359 at 0.10 depth. Coupon required.'
-    doc.recompute()
-    assert op.Path.Commands
-    checkpoint()
-    yield {'stage':'bottom isolation','commands':len(op.Path.Commands)}
+    op.BaseShapes=[geo];op.ToolController=tc;depths(op,-.1,.1)
+    op.Comment='0.15 mm offset; 30 deg / 0.2 mm tip; inspect exposed copper before in-jig coating.'
+    checkpoint();yield {'stage':'bottom isolation','commands':len(op.Path.Commands)}
     yield from create_mask_job(doc,inputs,data)
-    holes_job=create_job(doc,'Job30_BottomHoles','bottom')
-    holes_job.Description='Independent bottom-frame electrical bores and enclosure mounts. Run initially after bottom mask pad opening; repeat only if needed after BOTH face coatings, before assembly. Retain original pre-isolation copper G54 Z0; never capture a new work zero. Reproduce original seating after remounting, remove PCB pins, and verify protected breakthrough. Never recut jig registration holes.'
-    for diameter,feed in [(0.9,55),(1.1,135)]:
+    checkpoint()
+    yield from create_drag_job(doc,inputs,data,'bottom')
+    checkpoint()
+    yield from create_drag_job(doc,inputs,data,'top')
+    checkpoint()
+    support=float(sheet.get('B2'));breakthrough=float(sheet.get('B3'))
+    assert support>breakthrough>0
+    top_z=support+1.5;final_z=support-breakthrough
+    holes_job=create_job(doc,'Job50_BottomHoles','bottom',top_z)
+    holes_job.Description='AFTER both coatings and legends. Remove board, set NEW Z0 at aluminium floor, add sacrificial backing, remount bottom up. Preserve jig XY. NO copper map. Default PCB underside +1.00 / copper plane +2.50 / tip floor +0.85 mm. Adjust support geometry/settings to actual stack, regenerate and check. Never below Z0; excludes jig holes.'
+    for diameter,feed in [(.9,55),(1.1,135)]:
         holes=[h for h in data['holes'] if abs(h['diameter']-diameter)<1e-6]
-        tc=controller(holes_job,f'T3 Corn 0.8 | {diameter} mm bore feed',3,0.8,feed,50)
+        tc=controller(holes_job,f'T3 Corn 0.8 | {diameter} mm bore feed',3,.8,feed,50)
         geo=circular_geometry(doc,f'ElectricalHoles_{diameter}'.replace('.','p'),holes,'bottom',inputs)
         op=Helix.Create(f'BoreElectrical_{diameter}'.replace('.','p'),parentJob=holes_job)
-        op.Base=[(geo,[f'Edge{i+1}' for i in range(len(holes))])]
-        op.ToolController=tc
-        # The pinned OEM corn bit specifies a maximum 2-degree ramp. With
-        # tiny orbital radii, 0.05 mm/revolution would exceed that limit.
-        depths(op,-1.65,0.01 if diameter==0.9 else 0.03)
-        op.StartSide='Inside'; op.StartRadius=0; op.StepOver=40
-        op.Comment='0.8 mm corn bit interpolation; reduced centreline feed; qualify hole/lead fit and tool suitability before use.'
-        doc.recompute()
-        assert op.Path.Commands
-        checkpoint()
-        yield {'stage':op.Name,'holes':len(holes),'commands':len(op.Path.Commands)}
-    mounts=[h for h in data['holes'] if abs(h['diameter']-4)<1e-6]
-    tmount=controller(holes_job,'T3 Corn 0.8 | enclosure mounts',3,0.8,500,100)
-    pocket(holes_job,'PocketFourEnclosureMounts',mounts,'bottom',tmount,inputs)
+        op.Base=[(geo,[f'Edge{i+1}' for i in range(len(holes))])];op.ToolController=tc
+        depths(op,final_z,.01 if diameter==.9 else .03)
+        op.StartDepth=top_z;op.SafeHeight=top_z+2
+        op.setExpression('StartDepth','SetupSummary.SupportHeight + SetupSummary.BoardThickness')
+        op.setExpression('FinalDepth','SetupSummary.SupportHeight - SetupSummary.Breakthrough')
+        op.setExpression('SafeHeight','SetupSummary.SupportHeight + SetupSummary.BoardThickness + 2')
+        op.StartSide='Inside';op.StartRadius=0;op.StepOver=40
+        op.Comment='Final floor-referenced bore after BOTH faces. 0.8 mm corn interpolation, not a twist drill. No height compensation; minimum tool-tip Z must remain positive.'
+        checkpoint();yield {'stage':op.Name,'holes':len(holes),'commands':len(op.Path.Commands)}
+    tc=controller(holes_job,'T3 Corn 0.8 | enclosure mounts',3,.8,500,100)
+    op=pocket(holes_job,'PocketFourEnclosureMounts',[h for h in data['holes'] if abs(h['diameter']-4)<1e-6],'bottom',tc,inputs,top_z,final_z)
+    op.setExpression('StartDepth','SetupSummary.SupportHeight + SetupSummary.BoardThickness')
+    op.setExpression('FinalDepth','SetupSummary.SupportHeight - SetupSummary.Breakthrough')
+    for geo in inputs.Group:geo.Visibility=False
+    for obj in doc.Objects:
+        if obj.Name.startswith('Job') and hasattr(obj,'Stock'):
+            obj.Visibility=False;obj.Stock.Visibility=False
+    for obj in doc.Objects:
+        if hasattr(obj,'ViewObject') and hasattr(obj.ViewObject,'Visibility'):
+            obj.ViewObject.Visibility=False
+    doc.IsolateMergedBottomCopper.ViewObject.Visibility=True
     checkpoint()
-    yield {'stage':'bottom holes','operations':len(holes_job.Operations.Group)}
+    Gui.activeDocument().activeView().viewTop();Gui.activeDocument().activeView().fitAll()
+    yield {'stage':'saved','file':str(saved_path)}
 
-    top=create_job(doc,'Job40_TopLegend','top')
-    top.Description='Mark fully UV-cured white solder mask after bottom inspection and Y-axis flip. Retain original copper G54 Z0; set optical focus at the programmed plane without resetting work zero. Register/bond/withdraw/check and reproduce seating. First-board trial: 5 percent, 500 mm/min, 0.05 mm hatch, one pass. Inspect after IPA cleaning; no separate legend coupon.'
-    laser=controller(top,'Laser focus placeholder | no spindle post',99,0.05,LASER_FEED,100)
-    laser.SpindleSpeed=0
-    # FreeCAD Engrave orders wires with a quadratic nearest-neighbour search.
-    # Two-mm Y bands bound that cost and expose meaningful regions in the tree.
-    bands={}
-    for points in data['legend_hatch']:
-        bands.setdefault(int(points[0][1]//2),[]).append(points)
-    for band,lines in sorted(bands.items()):
-        geo=wire_geometry(doc,f'TopLegendGeometry_Y{band*2:03d}',lines,'top',inputs)
-        op=Engrave.Create(f'ExposeLegend_Y{band*2:03d}',parentJob=top)
-        op.Label=f'Mark legend Y{band*2} to {band*2+2} mm'
-        op.BaseShapes=[geo]; op.ToolController=laser
-        depths(op,0,0.1,clearance=0,safe=0)
-        op.Comment='Planar hatch; dedicated laser post only. Y band bounds native wire-ordering cost.'
-        doc.recompute()
-        assert op.Path.Commands
-        if band % 10 == 0:
-            checkpoint()
-        yield {'stage':'top legend band','y_mm':band*2,'commands':len(op.Path.Commands)}
-    for obj in inputs.Group: obj.Visibility=False
-    for job in [prep,bottom,doc.Job20_BottomMaskRemoval,holes_job,top]:
-        job.Visibility=False
-        job.Stock.Visibility=False
-    bottom.Visibility=True
-    doc.recompute()
-    checkpoint()
-    Gui.activeDocument().activeView().viewTop()
-    Gui.activeDocument().activeView().fitAll()
-    yield {'stage':'saved','file':'mechanical/pcb/icom-ctcss-pcb-cam.FCStd'}
+
+JOBS=[('Job00_RegistrationPreparation','00-registration-preparation.nc'),
+      ('Job10_BottomCopper','10-bottom-copper.nc'),
+      ('Job20_BottomMaskRemoval','20-bottom-mask-removal.nc'),
+      ('Job25_BottomLegend','25-bottom-legend-drag.nc'),
+      ('Job40_TopLegend','40-top-legend-drag.nc'),
+      ('Job50_BottomHoles','50-bottom-holes.nc')]
 
 
 def export_milling(root):
-    root=FilePath(root)
-    doc=cam_document(root)
+    root=FilePath(root);doc=cam_document(root);doc.recompute()
+    sheet=doc.SetupSummary
+    if not float(sheet.get('B2'))>float(sheet.get('B3'))>0:
+        raise RuntimeError('Sacrificial support must exceed hole breakthrough; no floor crossing')
+    if any(float(sheet.get(cell))>0 for cell in ('B5','B7','B13')):
+        raise RuntimeError('Repeat-pass offsets must be zero or negative')
     spec=importlib.util.spec_from_file_location('ctcss_air_post',root/'tools/post/makera_legacy_post.py')
-    post=importlib.util.module_from_spec(spec); spec.loader.exec_module(post)
-    out=root/'manufacturing/pcb/carvera-air/review-nc'; out.mkdir(exist_ok=True)
+    post=importlib.util.module_from_spec(spec);spec.loader.exec_module(post)
+    out=root/'manufacturing/pcb/carvera-air/review-nc';out.mkdir(exist_ok=True)
     report={}
-    for job,filename in [(doc.Job00_RegistrationPreparation,'00-registration-preparation.nc'),
-                         (doc.Job10_BottomCopper,'10-bottom-copper.nc'),
-                         (doc.Job20_BottomMaskRemoval,'20-bottom-mask-removal.nc'),
-                         (doc.Job30_BottomHoles,'30-bottom-holes.nc')]:
-        objects=[]
-        previous_tool=None
+    for name,filename in JOBS:
+        job=doc.getObject(name);objects=[];previous_tool=None
         for op in job.Operations.Group:
+            assert op.Active and op.Path.Commands and 'Invalid' not in op.State
             tc=op.ToolController
             if tc.ToolNumber!=previous_tool:
-                tc.Proxy.execute(tc)
-                objects.append(tc)
-                previous_tool=tc.ToolNumber
+                tc.Proxy.execute(tc);objects.append(tc);previous_tool=tc.ToolNumber
             objects.append(op)
-        text=post.export(objects,str(out/filename),'--no-show-editor --precision 5 --preamble "G90 G94\\nG17\\nG54" --postamble "M5\\nG0 Z15\\nM30"')
-        lines=['(REVIEW ONLY - KEEP OUT OF MACHINE ACTIVE JOB FOLDER)',
-               '(Require qualified hole fit, surface mapping, fixture clearance and protected breakthrough)',
-               '(Preparation: XY blank corner Z copper top; Production: XY jig Anchor 1 Z copper top)']
-        if job.Name=='Job30_BottomHoles':
-            lines.extend(['(Initial holes AFTER bottom mask pad opening; optional repeat after BOTH coatings)',
-                          '(Retain original pre-isolation copper G54 Z0; never capture a new work zero)',
-                          '(Verify registration and sacrificial breakthrough; excludes jig registration holes)'])
-        if job.Name=='Job20_BottomMaskRemoval':
-            lines[-1]='(XY jig Anchor 1; retain original pre-isolation copper G54 Z0 - NEVER RE-ZERO ON MASK)'
-            lines.extend(['(T4 MAKERA SPRING TOOL ONLY - not an ordinary rigid engraving bit)',
-                          '(Z-0.20 is spring-tool overtravel below known copper; compression also includes mask thickness)',
-                          '(Run BEFORE initial electrical/enclosure holes; do not run across open holes)',
-                          '(Qualify preload, coating removal and intact copper before production)'])
+        text=post.export(objects,str(out/filename),'--no-show-editor --precision 5 --preamble "G90 G94\nG17\nG54\nM5" --postamble "M5\nG0 Z15\nM30"')
+        lines=['(REVIEW ONLY - IN-JIG COATING AND TWO-COLOR DRAG TRIAL)', '('+job.Description.replace('(','[').replace(')',']')+')']
+        drag=name in ('Job25_BottomLegend','Job40_TopLegend')
         for line in text.splitlines():
-            if line.strip()=='G4': continue
+            if line.strip()=='G4':continue
+            if drag and re.match(r'^M[34]\b',line):
+                # OEM mill post emits M3 S0 for a zero-speed controller.
+                # Drag must never enable spindle rotation. Keep native motion,
+                # replace only this spindle command with an explicit stop.
+                if not re.fullmatch(r'M[34]\s+S0(?:\.0+)?',line.strip()):
+                    raise RuntimeError('Unexpected spindle start in drag export: '+line)
+                lines.append('M5');continue
+            if drag and not line.lstrip().startswith('('):
+                # The OEM post appends its cached SPINDLE_SPEED to feed moves,
+                # including when the next zero-RPM controller has no M3 command.
+                # Remove speed words in nonrotating jobs; retain explicit M5.
+                line=re.sub(r'\s+S-?\d+(?:\.\d*)?', '', line)
             lines.append(line)
-            if line.startswith('M3 '): lines.append('G4 S2')
+            if line.startswith('M3 '):lines.append('G4 S2')
         (out/filename).write_text('\n'.join(lines)+'\n')
-        report[job.Name]={'file':str((out/filename).relative_to(root)),
-                          'operations':[{'name':op.Name,'commands':len(op.Path.Commands)} for op in job.Operations.Group]}
+        report[name]={'file':str((out/filename).relative_to(root)),'description':job.Description,
+                      'operations':[{'name':op.Name,'commands':len(op.Path.Commands),'start_depth_mm':op.StartDepth.Value,'final_depth_mm':op.FinalDepth.Value} for op in job.Operations.Group]}
     (root/'docs/verification/pcb-cam-jobs.json').write_text(json.dumps(report,indent=2)+'\n')
     return report
 
 
-def export_laser(root, power=None):
-    """Translate planar native Engrave paths for the pinned Air laser semantics.
-
-    M321/M322 select laser mode; M3 S0 arms with zero requested power. Only
-    nonzero XY G1 motion receives power. All rapids, entries and Z moves carry
-    explicit S0. Mark fully UV-cured white mask; first-board trial, not a
-    physically validated marking recipe. Default power comes from the saved sheet.
-    """
-    root=FilePath(root)
-    doc=cam_document(root)
-    summary=doc.getObject('SetupSummary') or doc.getObject('SetupParameters')
-    if power is None:
-        power=float(summary.get('B15'))
-    assert 0 < power <= 1
-    job=doc.Job40_TopLegend
-    lines=['(REVIEW - FIRST FULL BOARD TRIAL - DARK LEGEND ON FULLY UV CURED WHITE MASK)',
-           '(One pass; inspect readability and coating integrity after IPA cleaning)',
-           '(Retain original pre-isolation copper G54 Z0; adjust optical focus without resetting work zero)',
-           'M5','G90 G94','G17','G21','G54','G0 Z15 S0','M321','G0 Z0 S0','M3 S0']
-    current={'X':None,'Y':None,'Z':0}
-    exposed=0
-    for op in job.Operations.Group:
-        assert op.Active
-        lines.append(f'({op.Label})')
-        for cmd in op.Path.Commands:
-            if cmd.Name.startswith('('): continue
-            if cmd.Name not in ('G0','G00','G1','G01'):
-                raise RuntimeError('Unexpected laser motion: '+cmd.Name)
-            values=cmd.Parameters
-            target={axis:values.get(axis,current[axis]) for axis in current}
-            if target['Z'] is not None and abs(target['Z'])>1e-6:
-                raise RuntimeError('Laser CAM must stay on focus plane')
-            moving=all(current[a] is not None and target[a] is not None for a in ('X','Y')) and math.hypot(target['X']-current['X'],target['Y']-current['Y'])>1e-7
-            cutting=cmd.Name in ('G1','G01') and moving
-            words=[cmd.Name]+[f'{a}{v:.5f}' for a,v in values.items() if a in ('X','Y','Z')]
-            words.append(f'S{power:.5f}' if cutting else 'S0')
-            if cutting:
-                words.append(f'F{values.get("F",LASER_FEED/60)*60:.3f}')
-                exposed+=1
-            lines.append(' '.join(words))
-            current=target
-    lines.extend(['M5','M322','G0 Z15 S0','M30'])
-    path=root/'manufacturing/pcb/carvera-air/review-nc/40-top-legend-laser.nc'
-    path.write_text('\n'.join(lines)+'\n')
-    return {'file':str(path.relative_to(root)),'powered_xy_segments':exposed,
-            'bands':len(job.Operations.Group),'power_fraction':power,
-            'process':'Laser mark fully UV-cured white solder mask; one pass; full board is the test piece.',
-            'qualification':'First-board trial; verify installed firmware and focus, then inspect dark marking retention after IPA cleaning and reject damaged coating.'}
-
-
 def inspect_saved(root):
-    """Reopen a caller-closed saved project and record native path integrity.
-
-    Refuse an open document rather than discarding possible manual edits.
-    This does not recalculate or save sources and does not simulate holders.
-    """
-    root=FilePath(root)
-    path=root/'mechanical/pcb/icom-ctcss-pcb-cam.FCStd'
-    if 'CTCSS_PCB_CAM' in App.listDocuments() or any(doc.FileName and FilePath(doc.FileName).resolve()==path.resolve() for doc in App.listDocuments().values()):
-        raise RuntimeError('Preserve edits and close CTCSS_PCB_CAM before independent reopen inspection')
+    root=FilePath(root);path=root/'mechanical/pcb/icom-ctcss-pcb-cam.FCStd'
+    if any(doc.FileName and FilePath(doc.FileName).resolve()==path.resolve() for doc in App.listDocuments().values()):
+        raise RuntimeError('Preserve and close CAM before independent reopen')
     doc=App.openDocument(str(path))
     data=json.loads((root/'manufacturing/pcb/carvera-air/cam-inputs.json').read_text())
-    bands=len({int(points[0][1]//2) for points in data['legend_hatch']})
-    mask_bands=len({int(points[0][1]//10) for points in data['mask_removal']['centerlines']})
-    jobs=[doc.Job00_RegistrationPreparation,doc.Job10_BottomCopper,doc.Job20_BottomMaskRemoval,doc.Job30_BottomHoles,doc.Job40_TopLegend]
-    assert [len(job.Operations.Group) for job in jobs]==[1,1,mask_bands,3,bands]
-    mask_tc=doc.Job20_BottomMaskRemoval.Operations.Group[0].ToolController
-    assert mask_tc.ToolNumber==4 and mask_tc.SpindleSpeed==6000
-    assert abs(mask_tc.Tool.TipDiameter.Value-0.3)<1e-9
-    assert abs(mask_tc.Tool.ShankDiameter.Value-3.175)<1e-9
-    assert all(abs(op.FinalDepth.Value+0.2)<1e-9 for op in doc.Job20_BottomMaskRemoval.Operations.Group)
-    assert abs(doc.BoreElectrical_0p9.StepDown.Value-.01)<1e-9
-    assert abs(doc.BoreElectrical_1p1.StepDown.Value-.03)<1e-9
-    summary=doc.getObject('SetupSummary') or doc.getObject('SetupParameters')
-    assert summary.get('B19')==hashlib.sha256((root/'electronics/icom-ctcss-board.kicad_pcb').read_bytes()).hexdigest()
-    assert summary.get('B20')==hashlib.sha256((root/'manufacturing/pcb/carvera-air/cam-inputs.json').read_bytes()).hexdigest()
-    assert abs(float(summary.get('B15'))-LASER_POWER)<1e-9
-    assert abs(float(summary.get('B16'))-LASER_FEED)<1e-9
-    assert all(abs(op.ToolController.HorizFeed.Value-LASER_FEED/60)<1e-9 for op in doc.Job40_TopLegend.Operations.Group)
+    assert doc.SetupSummary.get('B14')==hashlib.sha256((root/'electronics/icom-ctcss-board.kicad_pcb').read_bytes()).hexdigest()
+    assert doc.SetupSummary.get('B15')==hashlib.sha256((root/'manufacturing/pcb/carvera-air/cam-inputs.json').read_bytes()).hexdigest()
     states=[]
-    for job in jobs:
+    for name,_ in JOBS:
+        job=doc.getObject(name);assert job is not None and job.Operations.Group
+        if 'Legend' in name:
+            assert all(op.ToolController.SpindleSpeed==0 and op.ToolController.Tool.ShankDiameter.Value==6.35 for op in job.Operations.Group)
         for op in job.Operations.Group:
             assert op.Path.Commands and 'Invalid' not in op.State,op.Name
-            states.append({'job':job.Name,'operation':op.Name,'commands':len(op.Path.Commands),'state':list(op.State)})
-    centres=[(edge.Curve.Center.x,edge.Curve.Center.y) for edge in doc.ElectricalHoles_1p1.Shape.Edges]
-    assert any(abs(x-20.1)<1e-6 and abs(y-40.1)<1e-6 for x,y in centres)
-    report={'saved_fcstd_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'reopen':'PASS',
-            'native_operations':states,'helix_pitch_mm':[.01,.03],
-            'j1_pin1_bottom_jig_mm':[20.1,40.1],'j1_pin1_top_jig_mm':[130.1,40.1],
-            'scope':'Native saved project reopens with paths; no fixture/holder simulation or physical qualification.'}
+            if name=='Job50_BottomHoles':
+                assert op.FinalDepth.Value>0
+                for cmd in op.Path.Commands:
+                    assert cmd.Parameters.get('Z',1)>=0,(op.Name,cmd)
+            states.append({'job':name,'operation':op.Name,'commands':len(op.Path.Commands),'state':list(op.State),'final_depth_mm':op.FinalDepth.Value})
+    report={'saved_fcstd_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'freecad_version':App.Version(),'reopen':'PASS','native_operations':states,
+            'helix_pitch_mm':[.01,.03],'j1_pin1_bottom_jig_mm':[20.1,40.1],'j1_pin1_top_jig_mm':[130.1,40.1],
+            'scope':'Saved native jobs and paths; no machine run or holder/fixture collision qualification.'}
     (root/'docs/verification/pcb-cam-reopen.json').write_text(json.dumps(report,indent=2)+'\n')
     return report

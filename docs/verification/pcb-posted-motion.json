@@ -2,7 +2,7 @@
   "scope": "Posted review NC, planar ideal cutter; physical holder/fixture/Z-stack qualification excluded.",
   "files": {
     "00-registration-preparation.nc": {
-      "sha256": "d07d29a47d4b33325263361b0fadf5f67d2d3013120438ca1dd00c2bf59ede24",
+      "sha256": "b6ec4236a756944ba005ea456cde3a2c1e973301defca7fa744e70d50c7c0178",
       "tool_changes": [
         3
       ],
@@ -23,7 +23,7 @@
       "parsed_motion_count": 519
     },
     "10-bottom-copper.nc": {
-      "sha256": "1c19fc0999555ff93b48e86cbc508a8a44a0387bbf12079033187aa37c988253",
+      "sha256": "7b658b1ec01c68d8d6483c34f40e9a6e0aac9596be429e379fae5b5392a857d2",
       "tool_changes": [
         2
       ],
@@ -45,7 +45,7 @@
       "posted_isolation_copper_overlap_mm2": 0.0
     },
     "20-bottom-mask-removal.nc": {
-      "sha256": "6fbc9b80532a0108245ba255670c7e3e9729530438337406cedccbd33f4b10c5",
+      "sha256": "16c79aca57050df9e2d0dceb6b0f7bba05c89151a95da2ff62e26cda2af3bf29",
       "tool_changes": [
         4
       ],
@@ -59,7 +59,7 @@
           90.79641
         ],
         "Z": [
-          -0.2,
+          -0.05,
           15.0
         ]
       },
@@ -68,14 +68,70 @@
       "rpm": 6000,
       "feed_mm_min": 400,
       "plunge_mm_min": 200,
-      "spring_tool_overtravel_below_original_copper_mm": 0.2,
+      "spring_tool_overtravel_below_original_copper_mm": 0.05,
       "original_pre_isolation_copper_z0": true,
       "conservative_envelope_outside_inset_pads_mm2": 0.0,
       "minimum_nominal_tip_opening_area_fraction": 0.8784799172742382,
       "process": "Fully cured bottom mask; before electrical drilling. Spring preload and intact copper require physical qualification."
     },
-    "30-bottom-holes.nc": {
-      "sha256": "86c27ffc696392aa001542a2ac887975507407c5c06de086c98ddf0d76943eba",
+    "25-bottom-legend-drag.nc": {
+      "sha256": "745df2bbb31f8b51376e54be06f684b89645127c69126c33435519b5ee3b8c6c",
+      "tool_changes": [
+        6
+      ],
+      "bounds_mm": {
+        "X": [
+          66.29714,
+          146.84571
+        ],
+        "Y": [
+          24.20593,
+          95.80593
+        ],
+        "Z": [
+          -0.05,
+          15.0
+        ]
+      },
+      "parsed_motion_count": 65612,
+      "drag_xy_segments": 10931,
+      "spindle_start_commands": 0,
+      "feed_mm_min": 300,
+      "initial_preload_mm": 0.05,
+      "reference": "New finished-mask Z0; no copper height map",
+      "process": "Conservative first pass; inspect before lowering the independent operation offset. Retain base mask.",
+      "coverage": "Centerline containment in positive legend; actual groove width/pressure and coating removal are physical trial results."
+    },
+    "40-top-legend-drag.nc": {
+      "sha256": "959c0c1b88f2056e6ccb1704967989d55997d0e5bed74fd203887aa9a3ae880f",
+      "tool_changes": [
+        6
+      ],
+      "bounds_mm": {
+        "X": [
+          9.29376,
+          146.2548
+        ],
+        "Y": [
+          3.20799,
+          98.25799
+        ],
+        "Z": [
+          -0.05,
+          15.0
+        ]
+      },
+      "parsed_motion_count": 144341,
+      "drag_xy_segments": 24049,
+      "spindle_start_commands": 0,
+      "feed_mm_min": 300,
+      "initial_preload_mm": 0.05,
+      "reference": "New finished-mask Z0; no copper height map",
+      "process": "Conservative first pass; inspect before lowering the independent operation offset. Retain base mask.",
+      "coverage": "Centerline containment in positive legend; actual groove width/pressure and coating removal are physical trial results."
+    },
+    "50-bottom-holes.nc": {
+      "sha256": "87494d6407e41e3d89387dc0af164562f6ada9901d21b66b9ebc9d1e10c162a4",
       "tool_changes": [
         3
       ],
@@ -89,35 +145,14 @@
           95.6980642724532
         ],
         "Z": [
-          -1.65,
+          0.85,
           15.0
         ]
       },
       "parsed_motion_count": 23864,
-      "electrical_and_mount_holes_checked": 115
-    },
-    "40-top-legend-laser.nc": {
-      "sha256": "3120b9c0f71a03ac99340a6db7a012c7a2ae0ceab3d19364e92c9124f57e4f87",
-      "tool_changes": [],
-      "bounds_mm": {
-        "X": [
-          9.29376,
-          146.2548
-        ],
-        "Y": [
-          3.20799,
-          98.25799
-        ],
-        "Z": [
-          0.0,
-          15.0
-        ]
-      },
-      "parsed_motion_count": 144341,
-      "powered_xy_segments": 24049,
-      "power_fraction": 0.05,
-      "feed_mm_min": 500,
-      "process": "One pass on fully UV-cured white mask; qualify on the first full board after IPA cleaning."
+      "electrical_and_mount_holes_checked": 115,
+      "reference": "Aluminium floor Z0; no height compensation",
+      "all_tool_tip_motion_above_floor": true
     }
   }
 }

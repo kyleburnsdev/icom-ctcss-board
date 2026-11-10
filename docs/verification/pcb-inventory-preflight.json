@@ -1,0 +1,95 @@
+{
+  "inventory_root": "C:\\src\\personal-repos\\toolpath-studio-inventory",
+  "attempts": [
+    {
+      "tier": "environment",
+      "root": null,
+      "result": "AGENT_INVENTORY_ROOT is unset"
+    },
+    {
+      "tier": "harness",
+      "root": "C:\\src\\personal-repos\\toolpath-studio-inventory",
+      "result": "selected"
+    }
+  ],
+  "passed": false,
+  "project": "icom-ctcss-board",
+  "revision": "2026-11-10 mask trial",
+  "issues": [
+    {
+      "code": "unavailable",
+      "subject": "tooling/diamond-drag-engraving-bit-quarter-inch",
+      "message": "Item is not available in_stock"
+    },
+    {
+      "code": "inventory",
+      "subject": "stock/pcb-blank-single-sided-150x100x1p5",
+      "message": "Missing item: stock/pcb-blank-single-sided-150x100x1p5"
+    },
+    {
+      "code": "inventory",
+      "subject": "tooling/makera-pcb-kit",
+      "message": "Missing item: tooling/makera-pcb-kit"
+    },
+    {
+      "code": "inventory",
+      "subject": "stock/pcb-mask-trial-consumables",
+      "message": "Missing item: stock/pcb-mask-trial-consumables"
+    },
+    {
+      "code": "quantity",
+      "subject": "tooling/diamond-drag-engraving-bit-quarter-inch",
+      "message": "Available quantity is unknown"
+    },
+    {
+      "code": "unavailable",
+      "subject": "machines/makera-carvera-air",
+      "message": "Item is not available in_stock"
+    },
+    {
+      "code": "process",
+      "subject": "pcb-mask-trial",
+      "message": "Machine does not list the requested process"
+    },
+    {
+      "code": "material",
+      "subject": "pcb-mask-trial",
+      "message": "Machine does not list the requested material/process combination"
+    },
+    {
+      "code": "envelope",
+      "subject": "pcb-mask-trial",
+      "message": "Usable machine envelope is unknown"
+    },
+    {
+      "code": "bom_reference",
+      "subject": "pcb-mask-trial",
+      "message": "Missing valid BOM line for stock/pcb-blank-single-sided-150x100x1p5"
+    },
+    {
+      "code": "bom_reference",
+      "subject": "pcb-mask-trial",
+      "message": "Missing valid BOM line for tooling/makera-pcb-kit"
+    },
+    {
+      "code": "bom_reference",
+      "subject": "pcb-mask-trial",
+      "message": "Missing valid BOM line for stock/pcb-mask-trial-consumables"
+    },
+    {
+      "code": "material_stock",
+      "subject": "pcb-mask-trial",
+      "message": "Operation must reference BOM stock with matching material"
+    }
+  ],
+  "evidence_sha256": {
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\index.yaml": "fa7f6ab24892a981f28407a1a05d0ff95588597785ca9490c29540f3951ad6d6",
+    "C:\\src\\personal-repos\\icom-ctcss-board\\docs\\verification\\pcb-inventory-preflight-input.json": "51f20e18985306e34934008832f1a4ea3313dba1ca448d666fb45de5c6df2ab9",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\tooling\\index.yaml": "8216768afea484cbcda29c968fb6aa8cd7fc4d6a6b52f1ec88136108b3072ce4",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\tooling\\diamond-drag-engraving-bit-quarter-inch\\specs.yaml": "e5a16165f364fc0e0c5e99226a13bd8bf68da5e062cfbc2650f7ae2a3952801b",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\stock\\index.yaml": "4a34d5b192c7dfa99ed9929e5cfb7f61f48aed148cec6c97ebbc6efcd647cf41",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\machines\\index.yaml": "6ef6be0c11a7acf164316593587e077f34b07bf67f496df16838154e9f0c5d4e",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\machines\\makera-carvera-air\\specs.yaml": "16568a78f2583805b7e3b944cdaceaa5655ddc500c9d4d9413d72e1cc43469b6"
+  },
+  "limits": "Recorded stock/capability check only; no reservation, nesting, collision, electrical, CAM/slicer, laser process or physical qualification."
+}

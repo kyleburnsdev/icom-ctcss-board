@@ -1,5 +1,9 @@
 # Print and fold the double-layer legend mask
 
+**Historical experiment:** the current next-board candidate uses contrasting
+mask layers and diamond-drag legends. Follow the [fabrication guide](pcb-fabrication-guide.md)
+for that attempt; retain this guide as the transparency alternative.
+
 Start with one **Letter-size laser-printer-compatible transparency**, printed
 on its designated printable face. Each board image is 150 mm across the page
 and 100 mm high. B is above A, reflected across their shared fold. The user

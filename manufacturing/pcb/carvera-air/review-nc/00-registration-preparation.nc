@@ -1,14 +1,17 @@
-(REVIEW ONLY - KEEP OUT OF MACHINE ACTIVE JOB FOLDER)
-(Require qualified hole fit, surface mapping, fixture clearance and protected breakthrough)
-(Preparation: XY blank corner Z copper top; Production: XY jig Anchor 1 Z copper top)
+(REVIEW ONLY - IN-JIG COATING AND TWO-COLOR DRAG TRIAL)
+(Only for unprepared blanks. Jig absent; independent blank-corner XY / copper-top Z0 on sacrificial wasteboard. Skip for accepted prepared blank.)
 (Exported by FreeCAD)
 (Post Processor: ctcss_air_post)
-(Output Time:2026-10-31 10:06:14.814572)
-(@FC|TOOL|number=3|name=T3 Corn 0.8 mm|id=818d38e4-8ba2-45d5-bfb0-f98eb98b2936|type=Endmill|diameter=0.8|shankdiameter=3.175|flutelength=5.5|length=38)
+(Output Time:2026-11-10 13:49:57.680789)
+(@FC|TOOL|number=3|name=T3 Corn 0.8 mm|id=ba527116-a659-466d-ae66-eb73c4bb2bfa|type=Endmill|diameter=0.8|shankdiameter=3.175|flutelength=5.5|length=38)
 (begin preamble)
 G90 G94
+
 G17
+
 G54
+
+M5
 
 G21
 (begin operation: T3 Corn 0.8 mm001)
@@ -545,7 +548,9 @@ G0 Z15.00000
 (finish operation: PrepareFourJigHoles)
 (begin postamble)
 M5
+
 G0 Z15
+
 M30
 
 G21

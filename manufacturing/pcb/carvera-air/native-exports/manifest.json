@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-11-10",
   "source_sha256": {
     "electronics/fp-lib-table": "f36a0acb0a80b6a9cc9c1360ac63f818c4d449309fa32ccf04f1249ba42effdc",
-    "electronics/icom-ctcss-board.kicad_pcb": "a494d36c1ef0f2cbb7d9030a1380cf396513a0ba1cd261929025821e7b6c35c4",
+    "electronics/icom-ctcss-board.kicad_pcb": "3443c8990e78a9669dd5a49a534c4eb87c8465d3ada177200b9a289cf52eac51",
     "electronics/icom-ctcss-board.kicad_pro": "e1145de79179aa94216ae802e63e79f80d9a8e03e82948c4306afcd0066d83de",
     "electronics/icom-ctcss-board.kicad_sch": "2b4d0f6b251cbe1a2bee54bc0166810619f8169cb23300a76d3e1122eb8bed77",
     "electronics/libraries/Biacco42_ProMicro.pretty/ProMicro.kicad_mod": "a752ba8bb1b3bb57d5e735e1a81327ded0ed0c43c4d308238a9983a7d156ac2d",
@@ -36,11 +36,12 @@
   },
   "status": "CAD/CAM migration verified; physical process qualification pending",
   "files": {
-    "icom-ctcss-board-B_Cu.gbl": "0a5305100f2daf0acb3120e75d66941d48b3d87882ff9cd2e6e6af57a820d2f6",
-    "icom-ctcss-board-Edge_Cuts.gm1": "be7ecb674caa79681a94007633224478f84819b3693ae32b2cd6948db053ce7a",
-    "icom-ctcss-board-F_Silkscreen.gto": "d87d6b4b82e6979d375c92a53c4ba3c2ee5b0864e92cc8f0d5af85c543363738",
-    "icom-ctcss-board-NPTH.drl": "a86d78bc74a5f5858bea9d400ef09c372b133bbd1069a2bcd25b586a31674a85",
-    "icom-ctcss-board-PTH.drl": "cd468dd7ced9d4131dac9e8776968c55d9c85e1a61d2ed6e9e472d92fa5c7e1c",
+    "icom-ctcss-board-B_Cu.gbl": "0c3c0977534c0a9cdf791db9074d7a5909858c24ddd0063f8c1cb355c9b843cf",
+    "icom-ctcss-board-B_Silkscreen.gbo": "b34fa378d02dad63a0e0f2e14d4dcaadcc5abe16b75eb7138c04ab18c07b0950",
+    "icom-ctcss-board-Edge_Cuts.gm1": "299981a7fd893e286d0d8f116d9ec5cdc31a55b36ff01f0c02f2db6f63b299c8",
+    "icom-ctcss-board-F_Silkscreen.gto": "d45142df45e317de435a404ad5639402a66d5be7832b86cfe77eb8928bb66edb",
+    "icom-ctcss-board-NPTH.drl": "71f545e28dde17aa502ed19323546874230ae96588082baaf1ff5cb3848d3b20",
+    "icom-ctcss-board-PTH.drl": "a06b62e9fc8f8f1864b7b5b8ae75fd57c8b560e54446360a84641a7bc05e389f",
     "icom-ctcss-board-top-legend.svg": "a5a352eac1049553a1509f8c7661b887da0d33de2ede44566ffafacc6f65b4a2"
   }
 }

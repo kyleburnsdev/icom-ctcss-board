@@ -1,194 +1,121 @@
 # Carvera Air PCB manufacturing
 
-For one board's electronic components and module sockets, use the [DigiKey upload CSV](../digikey-board-parts.csv) and [purchasing notes](../../../docs/digikey-board-parts.md).
+**Start with the [illustrated fabrication guide](../../../docs/pcb-fabrication-guide.md).**
+It gives the chronological setups, tools, surface references and inspection steps.
+Use the [attempt log](../../../docs/pcb-attempt-log.md) at the machine.
 
-For the doubled-transparency exposure experiment, use the [negative legend PDF](print-masks/top-legend-negative-100x150mm.pdf) and [illustrated folding guide](../../../docs/folded-mask-guide.md).
+This package implements the **2026-11-10 in-jig coating and two-color diamond-drag
+candidate**. Physical results are pending. NC is for review/controller preview;
+no machine operation is claimed. The generalized skill library remains unchanged.
 
-**Start with the [PCB fabrication guide](../../../docs/pcb-fabrication-guide.md)**
-for the illustrated machine/workbench sequence, tools, optional registration
-preparation, original copper-zero strategy, coating/flip steps and final hole
-clearing. This README holds package contents and engineering/regeneration detail.
+## Current files
 
-Editable source: [FreeCAD CAM project](../../../mechanical/pcb/icom-ctcss-pcb-cam.FCStd).
-Use **Robust MCP Server** for FreeCAD CAM and Konnect for KiCad. The
-[workflow](../../../docs/implementation/pcb-jig-and-freecad-cam.md) defines the jig interface.
-
-**CAD/CAM migration verified; physical process qualification pending.** Four
-footprint-owned keepouts enforce copper/placement exclusions, and native KiCad
-thickness matches the 1.5 mm stock and CAM model. Required operations unsupported
-by Konnect used KiCad's native API under the standing user fallback rule.
-
-Actual fixture/holder clearance, protective Z stack, height mapping, hole fit and
-milling qualification remain acceptance work. Verify the physical setup before
-running `review-nc/`; qualify the legend on the first full board after IPA cleaning.
-
-## Deliverables
-
-| File | Purpose |
+| File | Purpose / reference |
 | --- | --- |
-| `native-exports/` | Current unmirrored B.Cu, F.SilkS, outline and drills, with source/export hashes |
-| `cam-inputs.json` | Merged copper, isolation centerlines, hole geometry and positive legend hatches in the top panel frame |
-| [Registration drawing](registration.svg) | Full blank, eight mechanical holes, finished jig fits and flip |
-| `review-nc/00-registration-preparation.nc` | Separate first setup: clear all four jig holes in one mounting |
-| `review-nc/10-bottom-copper.nc` | Bottom copper isolation only |
-| `review-nc/20-bottom-mask-removal.nc` | Makera spring-tool pad clearing after bottom coating, before electrical drilling |
-| `review-nc/30-bottom-holes.nc` | Independent 111 electrical bores and four enclosure mounts; optional repeat after both coatings |
-| `review-nc/40-top-legend-laser.nc` | Dark legend marking on fully UV-cured white mask; first full-board trial |
-| `pcb-corn-0.8mm.fctb` | Pinned OEM tool reference used by the FreeCAD tool controllers |
-| `pcb-mask-removal.fctb` | Unmodified OEM mask-tool reference; corrections below apply in native controllers |
+| [Native FreeCAD CAM](../../../mechanical/pcb/icom-ctcss-pcb-cam.FCStd) | Six editable jobs, native operations/controllers and a settings spreadsheet |
+| `native-exports/` | Unmirrored B.Cu, F.SilkS, B.SilkS, outline and drills; one face transform in FreeCAD |
+| `cam-inputs.json` | Merged copper, isolation/pad paths, separate positive top/bottom legend hatches and all 119 holes |
+| [Registration drawing](registration.svg) | Four jig holes, fit requirements, frame and flip |
+| [00-registration-preparation.nc](review-nc/00-registration-preparation.nc) | Only for an unprepared blank, independent sacrificial setup |
+| [10-bottom-copper.nc](review-nc/10-bottom-copper.nc) | Isolation with exposed-copper Z0 and initial map |
+| [20-bottom-mask-removal.nc](review-nc/20-bottom-mask-removal.nc) | 111 pads after all bottom coats; same copper zero/map, only tool-length setting in between |
+| [25-bottom-legend-drag.nc](review-nc/25-bottom-legend-drag.nc) | Optional bottom subsystem explanations; if used, new outer-mask Z0, spindle off |
+| [40-top-legend-drag.nc](review-nc/40-top-legend-drag.nc) | Existing top assembly/pin labels; new outer-mask Z0, spindle off |
+| [50-bottom-holes.nc](review-nc/50-bottom-holes.nc) | 111 electrical bores + four enclosure mounts after both faces; floor Z0, sacrificial backing, no map |
+| `pcb-mask-removal.fctb` | Historical OEM tool reference; current native controller uses corrected shank/RPM and lighter trial overtravel |
 
-All physical copper is B.Cu. All 119 holes are unplated, including electrical
-drills labeled PTH by KiCad. H1–H4 are 4 mm enclosure mounts; H5/H6 are 4.03 mm
-and H7/H8 4.12 mm nominal finished registration holes for measured 4.000 mm pins.
+No perimeter program is needed for the finished-size full-board blank. Old file 30
+and the laser file 40 are superseded; they are not part of this attempt.
 
-## Setup 00: prepare registration holes
+## Settings and deliberate datum changes
 
-Mount the finished-size 150 × 100 × 1.5 mm blank on a flat sacrificial wasteboard,
-with the aluminium jig absent. Establish independent straight-edge XY datums:
-X0 Y0 is the blank's panel lower-left. Bond the blank with tape/CA or a qualified
-equivalent. Set G54 Z0 on its actual copper top. The program uses absolute
-millimeters, 15 mm clearance and Z−1.65 mm, entering sacrificial material by
-nominally 0.15 mm. Account for board thickness/flatness and holder clearance.
-No perimeter trim is needed on this finished-size blank.
+All coating and curing stay in the jig. Preserve the bond, original copper Z0
+and original copper height map from isolation through pad clearing. No surface
+probing or remapping is allowed in that interval, only tool-length setting that
+preserves the work datum. For each legend, set a new finished-mask surface Z0
+after pad clearing; disable the copper map. Preserve jig XY through every setup.
 
-T3: 0.8 mm corn bit, 12,000 RPM, 500 mm/min feed, 100 mm/min plunge, 0.3 mm
-stepdown and 40% stepover. These candidate settings use the retained OEM tool
-baseline and require a coupon. Full pocket clearing avoids loose plugs. Native
-CAM's ideal swept diameters are about 4.026/4.116 mm; qualify actual finished fit.
-Deburr both faces. For measured 4.000 mm pins, accept P1/P2 at 4.02–4.04 mm and
-P3/P4 at 4.10–4.15 mm, with correct 110 × 50 mm spacing and burr-free slip fit.
-Never force a binding board onto pins.
+Running file 25 is optional. If omitting it, skip contrasting bottom coats and
+the bottom drag setup/Z setting; proceed from accepted pad clearing directly to
+the top-face flip. Keep the protective bottom coating and pad clearing. Artwork,
+CAM jobs, top-legend and final-hole steps are unchanged.
 
-## Setup 10: registered bottom face
+For final holes, remove the board, zero at the aluminium floor, add sacrificial
+backing and register/bond bottom up again. Remove PCB pins before machining.
+The default PCB underside is +1.00 mm, its copper plane +2.50 mm and final tip
+depth +0.85 mm. Every posted motion must stay above floor zero. A materially
+different support height requires updating CAM and checking the resulting NC.
 
-Pocket lower-left / Anchor 1 is G54 XY0; panel-to-jig adds 0.10 mm to X and Y.
-Register on all four PCB pins, seat/cure the painter's-tape/CA bond, withdraw
-all four PCB pins, and check no movement. Bed locator pins stay installed.
-Probe/height-map exposed copper after removing PCB pins; confirm copper-top Z0.
-Successive operations on an undisturbed bond retain the setup.
+In native **SetupSummary**:
 
-The aluminium floor is not a spoilboard. A −1.65 mm through-cut requires
-protected breakthrough beneath the 1.5 mm PCB. Protective layers change pocket
-seating, adhesive height, pin engagement and Z clearance. Accept the complete
-physical stack first. Keep adhesive clear of sockets/vents and include bed pins,
-screws, clamps and holders in collision review.
+| Alias | Default | Meaning |
+| --- | ---: | --- |
+| `BoardThickness` | 1.5 mm | Established PCB thickness |
+| `SupportHeight` | 1.0 mm | Selected final PCB underside height above aluminium floor |
+| `Breakthrough` | 0.15 mm | Final floor-referenced Z = support height − breakthrough |
+| `MaskOvertravel` | 0.05 mm | Conservative initial pad-tool spring overtravel below copper |
+| `MaskPassOffset` | 0 mm | Lower slightly only after inspecting pad clearing |
+| `DragPreload` | 0.05 mm | Conservative initial spring preload below outer-mask surface |
+| `BottomDragPassOffset` / `TopDragPassOffset` | 0 / 0 mm | Independent repeat-pass adjustments; leave each at zero for its first pass |
+| `DragFeed` / `DragPlunge` | 300 / 100 mm/min | Selected trial speeds; spindle remains off |
+| `MaskRPM` / `MaskFeed` / `MaskPlunge` | 6000 / 400 / 200 | Makera reference speeds |
 
-T2: owned 30° V-bit, 0.2 mm tip; candidate 0.10 mm depth, 100 mm/min feed,
-30 mm/min plunge, 12,000 RPM. Centerlines are 0.15 mm outside merged retained
-copper; ideal width is 0.25359 mm. Posted planar sweep is checked against copper.
-Actual runout, height variation and depth remain coupon inputs.
+Prefer too little removal on both spring-tool processes. Clean/inspect, then
+lower the appropriate operation offset slightly, recompute/export/recheck and
+repeat if needed. Do not move the saved surface datum or automate increasing
+passes. A command changes spring pressure, not a guaranteed removal depth.
 
-## Setup 20: bottom solder mask and pad opening
+T6 uses the owned ¼-inch shank / selected 90° diamond tip. Use a matching collet,
+manual/mechanical surface contact and actual tool-length setting; diamond is not
+an electrical probe. Reference length/line width in the native tool are from a
+matching WidgetWorks model, not measurements of the owned tool. See the guide
+for settings provenance and the actual clearance/inspection procedure.
 
-After copper isolation, inspect/clean the channels and check continuity/shorts
-while the copper is exposed. Apply bottom UV solder mask, keep the four jig
-holes clear, and fully cure it. Run job 20 **before initial electrical/enclosure
-drilling**, while there are no open electrical holes for the spring tip to enter.
+## Regeneration
 
-T4 is the Makera spring-loaded UV solder-mask remover, 0.3 mm tip, 30°, 3.175 mm
-shank, approximately 50 mm long. The [current Makera specifications](https://www.makera.com/products/uv-solder-mask-removal-tool-1-8-shank)
-give 6,000 RPM, 400 mm/min feed, 200 mm/min plunge and 0.2 mm DOC. The retained
-[OEM FreeCAD profile](https://github.com/MakeraInc/CarveraProfiles/blob/de08a657bdc9c230a094dbdba792acd70bfcdf32/CAM_Post_Processors/Freecad/Tools/Bit/Makera_UV_Solder_Mask_Removal_Tool_PCB.fctb)
-instead contains 8,000 RPM and a 6 mm shank. The native controller uses the
-current product's 6,000 RPM / 3.175 mm values, retaining the OEM file unchanged
-(SHA-256 `6fca74d1a97d0a2bab82c889a79912df22450e3b78d54df3a14839787d92e6d5`).
+1. Save and verify the exact board through Konnect/native KiCad. Preserve all
+   unsaved editor work. Export B.Cu, F.SilkS, B.SilkS, Edge.Cuts and drills with
+   Konnect. Then run **KiCad's bundled Python** on
+   [export-pcb-legends.py](../../../tools/export-pcb-legends.py) to omit duplicate
+   footprint fields and drill marks, an option Konnect's exporter does not expose.
+2. Run `python tools/prepare-pcb-cam.py` from the repository root. Requires
+   gerbonara 1.6.3, Shapely 2.2 and resvg-py for the derived bottom illustration.
+   Keep its source hashes and review geometry.
+3. Preserve and close existing PCB CAM. Through **Robust MCP Server**
+   `execute_python`, load [build-pcb-cam.py](../../../tools/build-pcb-cam.py)
+   into a retained namespace and advance `build(root)` once per stage. The
+   resulting jobs use FreeCAD's native Engrave, Helix and PocketShape operations.
+4. Call `export_milling(root)` for all six review files. This uses the pinned
+   OEM mill post. For drag jobs it replaces OEM `M3 S0` with `M5` and removes
+   cached spindle-speed words from moves, leaving native motion intact;
+   unexpected spindle-start values cause refusal.
+5. Save/close and call `inspect_saved(root)` to reopen/read back native paths.
+   Run `python tools/verify-pcb-cam.py` for final posted-path/source checks.
+   Refresh the illustrations and guide if geometry, settings or sequence changed.
 
-**Retain the G54 copper Z0 established before trace cutting. Do not capture a
-new work zero for pad clearing, drilling, the flip or legend.** Tool-length
-calibration must preserve that work datum. The mask program commands Z−0.20 mm
-relative to known copper: this is spring-tool overtravel, not intended copper
-removal. Actual spring compression also includes coating thickness. Qualify
-preload and mask removal with intact copper; do not substitute a rigid V-bit.
-After any remount, reproduce the original seating/adhesive stack rather than
-zeroing on the new surface. Any required height/focus correction is an explicit
-operation offset relative to the original datum, never a new G54 zero.
+Native parameters remain editable in FreeCAD. After a setting change, recompute,
+save, export and verify affected jobs; do not hand-edit toolpaths or NC depths.
 
-Paths use all 111 pad flashes from current B.Cu artwork, excluding tracks.
-Opening regions are inset by 0.10 mm; centerlines compensate for a conservative
-0.40718 mm V envelope at 0.2 mm travel, with 0.12 mm fill pitch. The nominal
-0.3 mm spring-tip contact leaves additional edge mask. Check complete usable
-soldering area, retained pad rims and absence of copper lifting after cleaning.
+## Evidence and remaining acceptance
 
-## Setup 30: independent bottom holes
+- [Current revision manifest](../../../docs/verification/pcb-revision.json),
+  [native readback](../../../docs/verification/pcb-cam-reopen.json),
+  [posted motion](../../../docs/verification/pcb-posted-motion.json).
+- [Bottom text/native geometry check](../../../docs/verification/pcb-bottom-legend.json),
+  [bottom artwork](../../../docs/images/pcb-bottom-subsystems.png),
+  [jig/coordinate contract](../../../docs/implementation/pcb-jig-and-freecad-cam.md).
+- Inventory helper preflight is incomplete: detailed stock/consumable entries,
+  tool count and usable process/envelope records are missing. This does not
+  change the established project equipment facts or claim a stock outage; it
+  does prevent calling the package inventory-qualified. See its separately
+  recorded [coverage](../../../docs/verification/pcb-inventory-preflight.json).
 
-Run `30-bottom-holes.nc` initially after bottom pad opening for drilling,
-deburring and electrical inspection. After bottom mask/pad opening and top coating/legend are
-both finished, inspect every hole. If coating has blocked holes, the same
-independent program can be run again from the bottom before fitting components.
-It repeats the complete 115-hole bore/mount cycle; it is not a reduced-depth
-scraping pass. It never recuts the four registration holes. Keep those holes
-clear throughout coating so remounting retains the original datum.
+The trial must establish pad exposure without copper damage, mask adhesion and
+readable contrasting legends with intact base coating. Controller preview, actual
+holder/fixture clearance, floor protection, fit and physical trial acceptance are
+separate from the recorded native/planar checks. No machine was connected or run.
 
-After a remount, register/bond/withdraw all four PCB pins and check alignment,
-including J1 pin 1. Retain the **original pre-isolation copper-top G54 Z0**;
-do not capture a new zero on either copper or mask. Reproduce original seating
-and account for coating in the support stack without redefining the datum. Protect
-the completed top coating from bond/release damage and provide sacrificial
-breakthrough beneath it. Inspect pad edges for lifting/chipping, clean debris,
-check lead fit, and repeat continuity/short checks after any clearing cycle.
-An undisturbed bond needs no extra registration just for a program/tool change.
-
-T3 interpolates 46 × 0.9 mm holes at 55 mm/min and 0.01 mm/revolution pitch,
-then 65 × 1.1 mm holes at 135 mm/min and 0.03 mm/revolution. Both pitches give
-1.823° ramps, within the OEM reference's 2° limit. Four 4 mm enclosure mounts
-are cleared afterward. Qualify lead fit and tool entry behavior. This program
-requests T3 only; changing feed controllers does not change the physical tool.
-
-## Setup 40: top coating and legend
-
-Pass bottom isolation/continuity and drilled-hole inspection, clean/deburr, then flip about Y:
-x′=150−x, y′=y. Register, bond, withdraw all PCB pins and check seating again.
-J1 pin 1 checks orientation: jig top (130.10,40.10), bottom (20.10,40.10) mm.
-Apply a thin, uniform white UV solder-mask coating, keeping holes clear, and
-fully cure it under the UV lamp according to its product instructions. Laser-mark
-the cured white surface directly to produce the dark legend.
-
-Install/focus the Air laser on the actual coated face at the programmed Z0 plane
-while retaining the original copper G54 zero. Adjust optical focus without
-resetting the work datum; reproduce seating after the flip. The separate
-review program uses M321/M322 mode selection, explicit S0 on rapids, entries and
-Z moves, and positive power only during nonzero XY feeds. First-board trial:
-**5% power, 500 mm/min, 0.05 mm hatch pitch, one pass**. These agent-selected
-settings reduce nominal power/feed by a factor of 20 from the previous saved
-20%/100 mm/min job; they are not a physically validated marking recipe.
-Confirm installed firmware's mode/power/focus behavior. Use the full board as
-the test piece; no separate legend coupon is required. Clean with IPA and inspect
-the actual labels for readability, sharp edges and retention. Reject loose soot,
-smearing, blistering, flaking, broad discolored halos or exposed substrate.
-Record settings and the cleaned result, then adjust the next board as needed.
-Use the enclosed laser process and specified eye protection. Complete the final
-hole inspection/clearing after both face coatings, not between them. No routine
-perimeter-separation job is needed on this finished-size blank.
-
-## Regeneration and verification
-
-Export selected layers/drills through Konnect. The clean F.SilkS plot excludes
-native footprint reference/value fields and retains board-level labels; KiCad CLI
-provides `--exclude-refdes --exclude-value`. Run `python tools/prepare-pcb-cam.py`
-with gerbonara 1.6.3 / Shapely 2.2. Load `tools/build-pcb-cam.py` through Robust
-MCP Server `execute_python`, call `build(root)` and advance its generator once per
-stage. Preserve native edits first; the builder refuses an open `CTCSS_PCB_CAM`.
-The setup sheet is descriptive; edit native operation/controller properties to
-change settings, then regenerate/recheck dependent geometry.
-
-Call `export_milling(root)` and `export_laser(root)` in that module, then run
-`inspect_saved(root)` after preserving/closing the project, then
-`python tools/verify-pcb-cam.py`. Inspect the reopened native tree and paths.
-[Revision](../../../docs/verification/pcb-revision.json),
-[geometry](../../../docs/verification/pcb-cam-geometry.json),
-[jobs](../../../docs/verification/pcb-cam-jobs.json) and
-[posted-motion checks](../../../docs/verification/pcb-posted-motion.json)
-state the verified scope. No upload, machine connection or cutting occurs.
-The [pad-opening view](../../../docs/verification/pcb-mask-paths.png) shows the
-ten editable pad-region operations; [native addition evidence](../../../docs/verification/pcb-mask-job.json)
-records unchanged preceding toolpaths. Posted checks cover all 111 inset pad
-regions, zero conservative sweep outside them, all 115 electrical/enclosure
-holes, and absence of work-zero reset commands.
-
-Milling uses the pinned [OEM FreeCAD post](https://github.com/MakeraInc/CarveraProfiles/blob/de08a657bdc9c230a094dbdba792acd70bfcdf32/CAM_Post_Processors/Freecad/1.1PostProcessor/makera_legacy_post.py),
-retained with its LGPL notice under `tools/post/`. The project supplies G54,
-two-second spin-up and a non-homing ending. Laser translation follows the
-[OEM firmware](https://github.com/MakeraInc/CarveraFirmware/blob/6e12557cfa5eff446bb5fe014354eaa03abf0caa/src/modules/tools/laser/Laser.cpp)
-and [Air manual](https://wiki.makera.com/en/Air/Manual). The
-[OEM corn-bit definition](https://github.com/MakeraInc/CarveraProfiles/blob/de08a657bdc9c230a094dbdba792acd70bfcdf32/CAM_Post_Processors/Freecad/Tools/Bit/Makera_TiN_Coating_Corn_Bit_0.8_5.5mm_PCB.fctb)
-is retained beside the outputs.
+For electronic parts, see the [DigiKey CSV](../digikey-board-parts.csv) and
+[purchasing notes](../../../docs/digikey-board-parts.md). The
+[folded-transparency guide](../../../docs/folded-mask-guide.md) records an earlier
+experiment; it is not a step in this candidate.

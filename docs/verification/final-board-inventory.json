@@ -858,7 +858,7 @@
   ],
   "body_gaps_below_2mm": [],
   "body_assumptions": "Selected maximum capacitor bodies and nominal other bodies; 37x18.24 module/socket envelope including 3mm-wide socket strips. Actual socket and USB cable fit still require dry fit.",
-  "board_sha256": "a494d36c1ef0f2cbb7d9030a1380cf396513a0ba1cd261929025821e7b6c35c4",
+  "board_sha256": "3443c8990e78a9669dd5a49a534c4eb87c8465d3ada177200b9a289cf52eac51",
   "saved_board_thickness_mm": 1.5,
   "required_stock_thickness_mm": 1.5,
   "board_thickness_matches_stock": true,

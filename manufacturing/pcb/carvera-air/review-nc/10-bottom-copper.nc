@@ -1,14 +1,17 @@
-(REVIEW ONLY - KEEP OUT OF MACHINE ACTIVE JOB FOLDER)
-(Require qualified hole fit, surface mapping, fixture clearance and protected breakthrough)
-(Preparation: XY blank corner Z copper top; Production: XY jig Anchor 1 Z copper top)
+(REVIEW ONLY - IN-JIG COATING AND TWO-COLOR DRAG TRIAL)
+(Bottom up. Register/bond/withdraw PCB pins. Establish copper Z0 and thorough copper map. Preserve same seating, zero AND map through coating/curing and Job20. Tool-length setting only; no intervening surface probing.)
 (Exported by FreeCAD)
 (Post Processor: ctcss_air_post)
-(Output Time:2026-10-31 10:06:14.814572)
-(@FC|TOOL|number=2|name=T2 V-bit 30 deg tip 0.2 mm|id=279cb529-ffa6-4468-95dc-2ed6493358cb|type=VBit|diameter=3.175|shankdiameter=3.175|tipdiameter=0.2|flutelength=5.5|length=38|cuttingedgeangle=30)
+(Output Time:2026-11-10 13:49:57.680789)
+(@FC|TOOL|number=2|name=T2 V-bit 30 deg tip 0.2 mm|id=f8668a65-ddca-443e-b97b-5edb2d7c25ce|type=VBit|diameter=3.175|shankdiameter=3.175|tipdiameter=0.2|flutelength=5.5|length=38|cuttingedgeangle=30)
 (begin preamble)
 G90 G94
+
 G17
+
 G54
+
+M5
 
 G21
 (begin operation: T2 V-bit 30 deg tip 0.2 mm001)
@@ -20,7 +23,7 @@ G4 S2
 (finish operation: T2 V-bit 30 deg tip 0.2 mm001)
 (begin operation: IsolateMergedBottomCopper)
 (IsolateMergedBottomCopper)
-(0.15 mm offset around merged retained copper; 30 degree / 0.2 mm V-bit; ideal width 0.25359 at 0.10 depth. Coupon required.)
+(0.15 mm offset; 30 deg / 0.2 mm tip; inspect exposed copper before in-jig coating.)
 G0 Z15.00000
 G0 Z15.00000
 G0 X30.62061 Y46.97493
@@ -20595,7 +20598,9 @@ G0 Z15.00000
 (finish operation: IsolateMergedBottomCopper)
 (begin postamble)
 M5
+
 G0 Z15
+
 M30
 
 G21

@@ -41,6 +41,76 @@
 - Follow `docs/implementation/pcb-jig-and-freecad-cam.md` for this project's jig interface, independent registration-hole preparation, setup-only PCB pins, face transforms, breakthrough protection and release checks. The enclosure's four corner mounts are separate from the four jig registration holes.
 - Discover actual CAM and postprocessor capabilities before promising generated NC. Keep milling, laser and physical qualification evidence distinct and tied to the current revision.
 
+### Candidate workflow for the next PCB attempt
+
+Agreed 2026-11-10. Use this workspace-local candidate to guide the next attempt;
+it is not yet a physically proven process. Where the older manufacturing order,
+all-operations copper datum, or laser legend instructions conflict with this
+sequence, this section takes precedence for the next attempt. Preserve the
+existing jig registration, XY origin and Y-parallel flip contract. Update affected
+CAM jobs and the illustrated fabrication guide before machining; existing review
+NC does not implement this candidate automatically. Keep the generalized skill
+library unchanged until successful results justify promoting the workflow.
+
+1. **Prepared blank, bottom up.** Start with the four jig registration holes
+   already prepared and accepted; their preparation remains separate from circuit
+   drilling. Register, bond and withdraw the four setup-only PCB pins as usual.
+   Establish bottom copper Z zero, obtain a thorough copper height map, run bottom
+   trace clearing, then clean and inspect the copper.
+2. **Bottom coating in place.** Apply multiple thin UV solder-mask layers, with
+   light sanding between cured layers for bonding and cleaning before recoating.
+   If a bottom legend is wanted, finish with just enough thin contrasting mask
+   layers to hide the base color. All coating and curing happen with the board
+   secured in the jig. Keep its seating unchanged through sanding and pad clearing.
+3. **Bottom pad clearing.** Retain the original bottom copper Z zero and height
+   map. Between initial mapping and pad clearing, perform **no probing except
+   tool-length setting**; tool-length setting must preserve the work datum.
+   Disable start options that would obtain a new surface zero or replace the map.
+   Clear pads only after all coating layers are applied and cured. Do not drill
+   circuit or enclosure holes yet.
+4. **Optional bottom legend.** Retain the supplied B.SilkS subsystem text and CAM
+   job, but running file 25 is optional. If omitted, skip contrasting bottom coats
+   and the bottom drag setup/Z setting; proceed from accepted pad clearing directly
+   to the top-face flip. If running the legend, after
+   pad clearing, obtain a new surface Z
+   reference on the finished mask and use diamond-drag engraving to remove the
+   contrasting outer color and reveal the base color. Retain the base coating.
+5. **Top face.** Flip using the established jig transform and register/bond/remove
+   pins again. For a two-sided copper board, establish top copper Z zero and a
+   thorough new height map, then clear top traces. Apply and cure thin mask layers
+   in place, adding contrasting outer layers if a top legend is wanted. For a
+   two-sided copper board, clear top pads using that face's original copper zero
+   and map, with the same prohibition on intervening probing except tool-length
+   setting. Obtain a finished-mask Z reference for any top diamond-drag legend.
+   This project's single-sided board needs no top copper isolation or top pad
+   clearing; its top coating and legend remain applicable.
+6. **Drill after both faces are finished.** Remove the board, establish Z zero
+   at the aluminium jig floor, add sacrificial backing and remount bottom up
+   using the usual registration procedure. Use backing thick enough for complete
+   drilling/profile breakthrough without reaching aluminium. Keep this a practical
+   hobby setup; detailed tolerance analysis is not a prerequisite to trying it.
+   Run the circuit/enclosure-hole job with jig-floor Z zero as the absolute lower
+   tool-tip limit: no paths below zero. Do not apply the earlier copper height
+   map to this floor-referenced setup. Do not recut the jig registration holes.
+7. **Conditional profiling and finish.** Profile last only if needed, with the
+   same floor limit and retained workholding. The finished-size full-board blank
+   needs no routine perimeter cut. Clean, deburr, inspect pads/holes/coatings and
+   check electrical continuity/isolation before assembly.
+
+For **both pad clearing and diamond-drag engraving**, prefer removing too little
+material on the first pass to removing too much. Clean and inspect between passes.
+If removal is insufficient, lower the operation's starting Z slightly to increase
+spring pressure and repeat as needed. Record this as an explicit operation offset;
+preserve the saved surface datum and applicable height map. Spring overtravel is
+pressure adjustment, not a guaranteed material-removal depth. Do not reuse the
+old copper-referenced pad-clearing setup for mask-surface-referenced legend work.
+
+Use the attempt to establish clean pad exposure, interlayer adhesion, readable
+contrasting legends and intact base mask/copper. Record actual settings,
+adjustments and observed results in `docs/` before considering skill-library
+promotion. These are trial acceptance observations, not additional blockers to
+considering this approach a candidate.
+
 ## Design for 3D printing
 
 - **Maintain a bias toward printing what we can and only fall back to purchased materials with clear justification.** Evaluate integrated printed features first, then separate printed parts, before adding purchased mechanical items. Carryover from an earlier BOM or convenience alone is not sufficient justification.

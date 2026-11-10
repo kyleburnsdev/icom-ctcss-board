@@ -1,5 +1,15 @@
 {
-  "saved_fcstd_sha256": "0621d8c07ecd066d368c8fcbfeb8708d85406adaa129f59f7e2d4d0489b47f77",
+  "saved_fcstd_sha256": "94f4c58b92fd58949fcfea33b387f8dafac82514cf339ce9223b6daed0a89d20",
+  "freecad_version": [
+    "1",
+    "1",
+    "1",
+    "20260414 (Git shallow)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "(HEAD detached at 0108fd4b4)",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
   "reopen": "PASS",
   "native_operations": [
     {
@@ -8,7 +18,8 @@
       "commands": 523,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -1.65
     },
     {
       "job": "Job10_BottomCopper",
@@ -16,7 +27,8 @@
       "commands": 20573,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.1
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -24,7 +36,8 @@
       "commands": 1209,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -32,7 +45,8 @@
       "commands": 537,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -40,7 +54,8 @@
       "commands": 1131,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -48,7 +63,8 @@
       "commands": 2928,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -56,7 +72,8 @@
       "commands": 3750,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -64,7 +81,8 @@
       "commands": 2538,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -72,7 +90,8 @@
       "commands": 1572,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -80,7 +99,8 @@
       "commands": 1446,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -88,7 +108,8 @@
       "commands": 1083,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
       "job": "Job20_BottomMaskRemoval",
@@ -96,423 +117,728 @@
       "commands": 219,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": -0.05
     },
     {
-      "job": "Job30_BottomHoles",
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y024",
+      "commands": 3753,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y026",
+      "commands": 3627,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y028",
+      "commands": 9,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y032",
+      "commands": 3891,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y034",
+      "commands": 3843,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y036",
+      "commands": 15,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y040",
+      "commands": 3471,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y042",
+      "commands": 3525,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y044",
+      "commands": 9,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y048",
+      "commands": 3321,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y050",
+      "commands": 3117,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y052",
+      "commands": 9,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y056",
+      "commands": 3351,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y058",
+      "commands": 2619,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y060",
+      "commands": 9,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y064",
+      "commands": 3789,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y066",
+      "commands": 3897,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y068",
+      "commands": 15,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y072",
+      "commands": 3873,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y074",
+      "commands": 3603,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y076",
+      "commands": 9,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y080",
+      "commands": 3459,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y082",
+      "commands": 3033,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y084",
+      "commands": 9,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y086",
+      "commands": 2265,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y088",
+      "commands": 2175,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y090",
+      "commands": 1797,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job25_BottomLegend",
+      "operation": "DragBottomLegend_Y094",
+      "commands": 3177,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y002",
+      "commands": 93,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y004",
+      "commands": 579,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y006",
+      "commands": 837,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y008",
+      "commands": 1797,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y010",
+      "commands": 1869,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y012",
+      "commands": 1053,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y014",
+      "commands": 1827,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y016",
+      "commands": 2595,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y018",
+      "commands": 1575,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y020",
+      "commands": 591,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y022",
+      "commands": 1851,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y024",
+      "commands": 2457,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y026",
+      "commands": 2187,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y028",
+      "commands": 1959,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y030",
+      "commands": 2757,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y032",
+      "commands": 4041,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y034",
+      "commands": 3501,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y036",
+      "commands": 3555,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y038",
+      "commands": 4041,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y040",
+      "commands": 4413,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y042",
+      "commands": 4257,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y044",
+      "commands": 4419,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y046",
+      "commands": 4479,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y048",
+      "commands": 4041,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y050",
+      "commands": 5505,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y052",
+      "commands": 5883,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y054",
+      "commands": 5019,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y056",
+      "commands": 4203,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y058",
+      "commands": 3123,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y060",
+      "commands": 2259,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y062",
+      "commands": 2169,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y064",
+      "commands": 4575,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y066",
+      "commands": 6933,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y068",
+      "commands": 6681,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y070",
+      "commands": 3459,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y072",
+      "commands": 3669,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y074",
+      "commands": 2433,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y076",
+      "commands": 669,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y078",
+      "commands": 1491,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y080",
+      "commands": 2697,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y082",
+      "commands": 2925,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y084",
+      "commands": 4545,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y086",
+      "commands": 4713,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y088",
+      "commands": 4995,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y090",
+      "commands": 2277,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y092",
+      "commands": 1197,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y094",
+      "commands": 1413,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y096",
+      "commands": 795,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job40_TopLegend",
+      "operation": "DragTopLegend_Y098",
+      "commands": 39,
+      "state": [
+        "Up-to-date"
+      ],
+      "final_depth_mm": -0.05
+    },
+    {
+      "job": "Job50_BottomHoles",
       "operation": "BoreElectrical_0p9",
       "commands": 15599,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": 0.85
     },
     {
-      "job": "Job30_BottomHoles",
+      "job": "Job50_BottomHoles",
       "operation": "BoreElectrical_1p1",
       "commands": 7740,
       "state": [
         "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": 0.85
     },
     {
-      "job": "Job30_BottomHoles",
+      "job": "Job50_BottomHoles",
       "operation": "PocketFourEnclosureMounts",
       "commands": 535,
       "state": [
         "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y002",
-      "commands": 93,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y004",
-      "commands": 579,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y006",
-      "commands": 837,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y008",
-      "commands": 1797,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y010",
-      "commands": 1869,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y012",
-      "commands": 1053,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y014",
-      "commands": 1827,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y016",
-      "commands": 2595,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y018",
-      "commands": 1575,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y020",
-      "commands": 591,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y022",
-      "commands": 1851,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y024",
-      "commands": 2457,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y026",
-      "commands": 2187,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y028",
-      "commands": 1959,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y030",
-      "commands": 2757,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y032",
-      "commands": 4041,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y034",
-      "commands": 3501,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y036",
-      "commands": 3555,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y038",
-      "commands": 4041,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y040",
-      "commands": 4413,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y042",
-      "commands": 4257,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y044",
-      "commands": 4419,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y046",
-      "commands": 4479,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y048",
-      "commands": 4041,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y050",
-      "commands": 5505,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y052",
-      "commands": 5883,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y054",
-      "commands": 5019,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y056",
-      "commands": 4203,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y058",
-      "commands": 3123,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y060",
-      "commands": 2259,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y062",
-      "commands": 2169,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y064",
-      "commands": 4575,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y066",
-      "commands": 6933,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y068",
-      "commands": 6681,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y070",
-      "commands": 3459,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y072",
-      "commands": 3669,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y074",
-      "commands": 2433,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y076",
-      "commands": 669,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y078",
-      "commands": 1491,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y080",
-      "commands": 2697,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y082",
-      "commands": 2925,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y084",
-      "commands": 4545,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y086",
-      "commands": 4713,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y088",
-      "commands": 4995,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y090",
-      "commands": 2277,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y092",
-      "commands": 1197,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y094",
-      "commands": 1413,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y096",
-      "commands": 795,
-      "state": [
-        "Up-to-date"
-      ]
-    },
-    {
-      "job": "Job40_TopLegend",
-      "operation": "ExposeLegend_Y098",
-      "commands": 39,
-      "state": [
-        "Up-to-date"
-      ]
+      ],
+      "final_depth_mm": 0.85
     }
   ],
   "helix_pitch_mm": [
@@ -527,5 +853,5 @@
     130.1,
     40.1
   ],
-  "scope": "Native saved project reopens with paths; no fixture/holder simulation or physical qualification."
+  "scope": "Saved native jobs and paths; no machine run or holder/fixture collision qualification."
 }

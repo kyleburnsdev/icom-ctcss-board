@@ -24,8 +24,9 @@ ANGLE = 30
 DEPTH = 0.10
 RADIUS = (TIP + 2*DEPTH*math.tan(math.radians(ANGLE/2)))/2
 MASK_TIP = 0.30
-MASK_DEPTH = 0.20
-MASK_RADIUS = (MASK_TIP + 2*MASK_DEPTH*math.tan(math.radians(15)))/2
+MASK_DEPTH = 0.05  # Conservative first-pass spring overtravel, not removal depth.
+MASK_ENVELOPE_DEPTH = 0.20  # Keep the previously checked conservative XY allowance.
+MASK_RADIUS = (MASK_TIP + 2*MASK_ENVELOPE_DEPTH*math.tan(math.radians(15)))/2
 MASK_INSET = 0.10
 MASK_PITCH = 0.12
 
@@ -59,12 +60,29 @@ def boundaries(shape):
     return [list(r.coords) for p in polygons(shape) for r in [p.exterior,*p.interiors]]
 
 
+def bottom_reference(copper, legend):
+    """Actual bottom artwork in the machining view, with pale copper context."""
+    import resvg_py
+    def path(shape):
+        return ' '.join('M'+' L'.join(f'{150-x:.5f},{100-y:.5f}' for x,y in ring)+' Z'
+                        for ring in boundaries(shape))
+    svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 150 100">
+<rect width="150" height="100" fill="#ecf4ee"/>
+<path d="{path(copper)}" fill="#b9c8bb" fill-rule="evenodd"/>
+<path d="{path(legend)}" fill="#172e25" fill-rule="evenodd"/>
+</svg>'''
+    images=ROOT/'docs/images';images.mkdir(exist_ok=True)
+    (images/'pcb-bottom-subsystems.svg').write_text(svg)
+    (images/'pcb-bottom-subsystems.png').write_bytes(resvg_py.svg_to_bytes(svg_string=svg))
+
+
 def mask_geometry():
     """Pad flashes only, before drilling; never expose connecting tracks.
 
-    Bound the spring tool by the larger rigid-V envelope at the published DOC.
-    DOC is commanded overtravel below retained copper Z0 into spring compliance,
-    not copper removal depth; coating thickness also contributes to compression.
+    Retain the larger rigid-V envelope at the 0.20 mm reference DOC while the
+    trial starts at 0.05 mm. These values describe commanded overtravel below
+    retained copper Z0 into spring compliance, not copper removal depth;
+    coating thickness also contributes to compression.
     The nominal contact tip is 0.3 mm; this allowance leaves extra edge mask.
     """
     pads=[]; paths=[]
@@ -136,6 +154,7 @@ def drawings(holes):
 def main():
     copper = artwork(EXPORTS/'icom-ctcss-board-B_Cu.gbl')
     legend = artwork(EXPORTS/'icom-ctcss-board-F_Silkscreen.gto')
+    bottom_legend = artwork(EXPORTS/'icom-ctcss-board-B_Silkscreen.gbo')
     expanded = copper.buffer(OFFSET,quad_segs=24)
     rings = boundaries(expanded)
     swept = unary_union([LineString(r).buffer(RADIUS,quad_segs=24) for r in rings])
@@ -150,27 +169,44 @@ def main():
     for x,y,d in expected:
         assert any(abs(h['x']-x)<1e-6 and abs(h['y']-y)<1e-6 and abs(h['diameter']-d)<1e-6 for h in holes)
     drawings(holes)
-    # Horizontal laser fill clipped to positive legend, preserving counters.
-    # Mark fully cured white mask; qualify settings on the first full board.
-    hatch=[]
-    lo,hi=legend.bounds[1],legend.bounds[3]
-    y=lo+0.025
-    while y < hi:
-        cut=legend.intersection(LineString([(-1,y),(151,y)]))
-        for line in getattr(cut,'geoms',[cut]):
-            if line.geom_type=='LineString' and line.length>0.005:
-                hatch.append(list(line.coords))
-        y+=0.05
+    bottom_reference(copper,bottom_legend)
+    # Positive legend fill for nonrotating diamond drag. Preserve letter counters.
+    # Native artwork is unmirrored; the face transform happens once in FreeCAD.
+    def hatch_artwork(shape):
+        hatch=[]
+        lo,hi=shape.bounds[1],shape.bounds[3]
+        y=lo+0.025
+        while y < hi:
+            cut=shape.intersection(LineString([(-1,y),(151,y)]))
+            for line in getattr(cut,'geoms',[cut]):
+                if line.geom_type=='LineString' and line.length>0.005:
+                    hatch.append(list(line.coords))
+            y+=0.05
+        return hatch
+    hatch=hatch_artwork(legend)
+    bottom_hatch=hatch_artwork(bottom_legend)
+    # Both legend paths must avoid the registration holes that already exist.
+    from shapely.geometry import Point
+    for face,shape in [('top',legend),('bottom',bottom_legend)]:
+        for h in holes:
+            if face=='top' and h['diameter']<=4:
+                continue  # Circuit holes and enclosure mounts do not exist yet.
+            clearance=Point(h['x'],h['y']).buffer(h['diameter']/2+0.25)
+            assert shape.intersection(clearance).area<1e-8,(face,h)
     mask=mask_geometry()
     data={'copper_boundaries':boundaries(copper),'isolation_centerlines':rings,'mask_removal':mask,
-          'legend_boundaries':boundaries(legend),'legend_hatch':hatch,'holes':holes,
+          'legend_boundaries':boundaries(legend),'legend_hatch':hatch,
+          'bottom_legend_boundaries':boundaries(bottom_legend),'bottom_legend_hatch':bottom_hatch,'holes':holes,
           'settings':{'isolation_offset_mm':OFFSET,'vbit_tip_mm':TIP,'vbit_angle_deg':ANGLE,
                       'isolation_depth_mm':DEPTH,'ideal_cut_width_mm':2*RADIUS,
-                      'curve_approximation_mm':ERROR,'legend_hatch_pitch_mm':0.05},
-          'source_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in EXPORTS.iterdir() if p.suffix in ('.gbl','.gto','.drl','.gm1')}}
+                      'curve_approximation_mm':ERROR,'legend_hatch_pitch_mm':0.05,
+                      'drag_preload_mm':0.05,'drag_feed_mm_min':300,'drag_plunge_mm_min':100,
+                      'support_height_above_floor_mm':1.0,'hole_breakthrough_mm':0.15},
+          'source_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in EXPORTS.iterdir() if p.suffix in ('.gbl','.gbo','.gto','.drl','.gm1')}}
     (OUT/'cam-inputs.json').write_text(json.dumps(data,separators=(',',':'))+'\n')
     report={'source_hashes':data['source_hashes'],'electrical_holes':111,'enclosure_mounts':4,'jig_holes':4,
-            'isolation_loops':len(rings),'legend_hatch_segments':len(hatch),'copper_regions':len(polygons(copper)),
+            'isolation_loops':len(rings),'legend_hatch_segments':len(hatch),
+            'bottom_legend_hatch_segments':len(bottom_hatch),'copper_regions':len(polygons(copper)),
             'swept_cutter_copper_intersection_mm2':swept.intersection(copper).area,'settings':data['settings'],
             'mask_pad_count':len(mask['pads']),'mask_centerlines':len(mask['centerlines']),
             'mask_envelope_radius_mm':MASK_RADIUS,

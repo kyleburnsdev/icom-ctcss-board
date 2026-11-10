@@ -10,6 +10,7 @@ import re
 import subprocess
 from pathlib import Path
 import importlib.util
+from importlib.metadata import version
 
 ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('prepare_pcb_cam',ROOT/'tools/prepare-pcb-cam.py')
@@ -60,7 +61,7 @@ def main():
     from shapely.affinity import affine_transform
     copper=affine_transform(copper,[-1,0,0,1,150.1,0.1])
     result={'scope':'Posted review NC, planar ideal cutter; physical holder/fixture/Z-stack qualification excluded.','files':{}}
-    for name in ['00-registration-preparation.nc','10-bottom-copper.nc','20-bottom-mask-removal.nc','30-bottom-holes.nc','40-top-legend-laser.nc']:
+    for name in ['00-registration-preparation.nc','10-bottom-copper.nc','20-bottom-mask-removal.nc','25-bottom-legend-drag.nc','40-top-legend-drag.nc','50-bottom-holes.nc']:
         path=folder/'review-nc'/name
         text=path.read_text()
         assert 'G21' in text and 'G54' in text and 'G90 G94' in text and 'M30' in text
@@ -87,7 +88,7 @@ def main():
             mask=data['mask_removal']
             assert changes==[4] and re.search(r'\bM3\s+S6000(?:\D|$)',text)
             assert abs(record['bounds_mm']['Z'][0]+mask['spring_overtravel_below_copper_mm'])<1e-6
-            assert 'SPRING TOOL ONLY' in text and 'NEVER RE-ZERO ON MASK' in text
+            assert 'NO probing except tool-length setting' in text and 'height map' in text
             cuts=[LineString([(x,y) for x,y,z in m['points']]) for m in moves
                   if m['code']!=0 and any(z<0 for x,y,z in m['points'])
                   and len(set((x,y) for x,y,z in m['points']))>1]
@@ -104,13 +105,16 @@ def main():
             coverage=[nominal.intersection(p).area/p.area for p in openings]
             assert min(coverage)>0.70,min(coverage)
             record.update({'pads_checked':111,'rpm':6000,'feed_mm_min':400,'plunge_mm_min':200,
-                           'spring_tool_overtravel_below_original_copper_mm':0.2,'original_pre_isolation_copper_z0':True,
+                           'spring_tool_overtravel_below_original_copper_mm':mask['spring_overtravel_below_copper_mm'],'original_pre_isolation_copper_z0':True,
                            'conservative_envelope_outside_inset_pads_mm2':outside,
                            'minimum_nominal_tip_opening_area_fraction':min(coverage),
                            'process':'Fully cured bottom mask; before electrical drilling. Spring preload and intact copper require physical qualification.'})
-        elif name.startswith('30'):
+        elif name.startswith('50'):
             assert changes==[3]
-            assert abs(record['bounds_mm']['Z'][0]+1.65)<1e-6
+            support=data['settings']['support_height_above_floor_mm']
+            final=support-data['settings']['hole_breakthrough_mm']
+            assert abs(record['bounds_mm']['Z'][0]-final)<1e-6
+            assert all(z>0 for m in moves for x,y,z in m['points'])
             # Match every cutting endpoint against the original 115 bore/mount
             # circles. The four registration holes must never be recut here.
             holes=[h for h in data['holes'] if h['diameter']<=4]
@@ -119,32 +123,42 @@ def main():
             for move in moves:
                 if move['code']==0: continue
                 for x,y,z in move['points']:
-                    if z>=0: continue
+                    if z>=support+1.5: continue
                     matches=[i for i,h in enumerate(holes)
                              if math.hypot(x-(150.1-h['x']),y-(h['y']+0.1))<=h['diameter']/2-0.4+0.006]
                     assert len(matches)==1,(x,y,z,matches)
                     reached.update(matches)
             assert len(reached)==115
             record['electrical_and_mount_holes_checked']=len(reached)
+            record['reference']='Aluminium floor Z0; no height compensation'
+            record['all_tool_tip_motion_above_floor']=True
         else:
-            assert not changes and 'M321' in text and 'M322' in text and 'M3 S0' in text
-            powered=0
-            powers=set(); feeds=set()
+            assert changes==[6] and 'M5' in text
+            assert not re.search(r'\bM0?[34](?:\s|$)',text)
+            executable='\n'.join(re.sub(r'\([^)]*\)','',line) for line in text.splitlines())
+            assert not re.search(r'\bS-?\d',executable),'Drag NC must have no spindle-speed words'
+            assert 'M321' not in text and 'M322' not in text
+            assert abs(record['bounds_mm']['Z'][0]+data['settings']['drag_preload_mm'])<1e-6
+            face='bottom' if name.startswith('25') else 'top'
+            legend=geometry.artwork(folder/f'native-exports/icom-ctcss-board-{ "B" if face=="bottom" else "F" }_Silkscreen.{ "gbo" if face=="bottom" else "gto" }')
+            legend=affine_transform(legend,[-1,0,0,1,150.1,.1] if face=='bottom' else [1,0,0,1,.1,.1])
+            from shapely.prepared import prep
+            allowed=prep(legend.buffer(.00003))
+            cuts=0
             for move in moves:
                 xy=math.dist(move['points'][0][:2],move['points'][-1][:2])
-                if move['code']==0 or xy<1e-7:
-                    assert move['s']==0
-                if move['s'] and move['s']>0:
-                    assert move['code']==1 and xy>1e-7
-                    assert all(abs(p[2])<1e-7 for p in move['points'])
-                    powers.add(move['s']); feeds.add(move['feed'])
-                    powered+=1
-            assert powered==len(data['legend_hatch'])
-            assert powers=={0.05} and feeds=={500},(powers,feeds)
-            record['powered_xy_segments']=powered
-            record['power_fraction']=0.05
-            record['feed_mm_min']=500
-            record['process']='One pass on fully UV-cured white mask; qualify on the first full board after IPA cleaning.'
+                if move['code']==0 and xy>1e-7:
+                    assert all(z>=0 for x,y,z in move['points'])
+                if move['code']!=0 and xy>1e-7 and any(z<0 for x,y,z in move['points']):
+                    assert allowed.covers(LineString([(x,y) for x,y,z in move['points']])),(name,move)
+                    assert move['feed']<=data['settings']['drag_feed_mm_min']+.0001
+                    cuts+=1
+            assert cuts==len(data['bottom_legend_hatch' if face=='bottom' else 'legend_hatch']),(cuts,face)
+            record.update({'drag_xy_segments':cuts,'spindle_start_commands':0,'feed_mm_min':300,
+                           'initial_preload_mm':data['settings']['drag_preload_mm'],
+                           'reference':'New finished-mask Z0; no copper height map',
+                           'process':'Conservative first pass; inspect before lowering the independent operation offset. Retain base mask.',
+                           'coverage':'Centerline containment in positive legend; actual groove width/pressure and coating removal are physical trial results.'})
         result['files'][name]=record
     (ROOT/'docs/verification/pcb-posted-motion.json').write_text(json.dumps(result,indent=2)+'\n')
     source_paths=sorted(p for p in (ROOT/'electronics').rglob('*') if p.is_file() and
@@ -152,16 +166,13 @@ def main():
                         '.history' not in p.parts and not any(part.endswith('-backups') for part in p.parts))
     digest=lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
     sources={p.relative_to(ROOT).as_posix():digest(p) for p in source_paths}
-    native_manifest={'date':'2026-10-29','source_sha256':sources,
+    native_manifest={'date':'2026-11-10','source_sha256':sources,
                      'coordinate_policy':'Native unmirrored KiCad plots. FreeCAD applies panel mapping and one face transform.',
                      'physical_copper_layers':['B.Cu'],'holes':{'electrical':111,'enclosure':4,'jig':4},
                      'status':'CAD/CAM migration verified; physical process qualification pending',
                      'files':{p.name:digest(p) for p in sorted((folder/'native-exports').iterdir()) if p.is_file() and p.name!='manifest.json'}}
     (folder/'native-exports/manifest.json').write_text(json.dumps(native_manifest,indent=2)+'\n')
-    reports=['final-drc.json','erc-complete.json','final-board-inventory.json','pcb-cam-geometry.json','pcb-cam-jobs.json','pcb-cam-reopen.json','pcb-posted-motion.json','pcb-keepout-fill.json','pcb-native-update.json','schematic-complete.net']
-    if (ROOT/'docs/verification/pcb-cam-job-split.json').exists():
-        reports.append('pcb-cam-job-split.json')
-    reports.append('pcb-mask-job.json')
+    reports=['final-drc.json','erc-complete.json','final-board-inventory.json','pcb-cam-geometry.json','pcb-cam-jobs.json','pcb-cam-reopen.json','pcb-posted-motion.json','pcb-bottom-legend.json','pcb-inventory-preflight.json','schematic-complete.net']
     drc=json.loads((ROOT/'docs/verification/final-drc.json').read_text())
     violations=drc['violations']+drc['unconnected_items']+drc['schematic_parity']
     erc=json.loads((ROOT/'docs/verification/erc-complete.json').read_text())
@@ -177,27 +188,44 @@ def main():
             'netlist_assertions':assertion_count,'saved_CAM_reopen':'PASS',
             'posted_planar_copper_overlap_mm2':result['files']['10-bottom-copper.nc']['posted_isolation_copper_overlap_mm2']}
     inventory=json.loads((ROOT/'docs/verification/final-board-inventory.json').read_text())
+    bottom_check=json.loads((ROOT/'docs/verification/pcb-bottom-legend.json').read_text())
+    assert bottom_check['board_sha256']==digest(ROOT/'electronics/icom-ctcss-board.kicad_pcb')
+    assert bottom_check['electrical_geometry_unchanged']
+    bottom_artwork=geometry.artwork(folder/'native-exports/icom-ctcss-board-B_Silkscreen.gbo')
+    from shapely.geometry import Point
+    assert all(bottom_artwork.distance(Point(h['x'],h['y']))-h['diameter']/2>=.25 for h in data['holes'])
+    checks['bottom_legend_minimum_hole_clearance_mm']=min(bottom_artwork.distance(Point(h['x'],h['y']))-h['diameter']/2 for h in data['holes'])
+    checks['drag_spindle_speed_words']=0
+    checks['final_hole_minimum_tool_tip_z_mm']=result['files']['50-bottom-holes.nc']['bounds_mm']['Z'][0]
     assert inventory['board_thickness_matches_stock'] and inventory['rule_area_count']==4
     assert inventory['jig_keepout_status'].startswith('PASS:')
     checks['jig_rule_areas']=inventory['rule_area_count']
     checks['native_thickness_mm']=inventory['saved_board_thickness_mm']
     assert checks['DRC_errors']==checks['unconnected']==checks['ERC_errors']==0
-    manifest={'date':'2026-10-31','revision':'Makera spring-tool bottom pad opening between copper isolation and independent repeatable holes',
+    manifest={'date':'2026-11-10','revision':'In-jig coating, bottom subsystem legend, two-face diamond drag and final floor-referenced holes',
               'source_sha256':sources,'konnect':'0.13.0',
+              'freecad':reopened['freecad_version'],
+              'geometry_packages':{name:version(name) for name in ['gerbonara','shapely','resvg-py']},
               'kicad':subprocess.check_output(['C:/Program Files/KiCad/10.0/bin/kicad-cli.exe','--version'],text=True).strip(),
               'checks':checks,
               'evidence_sha256':{name:digest(ROOT/'docs/verification'/name) for name in reports},
               'cam_source_sha256':digest(ROOT/'mechanical/pcb/icom-ctcss-pcb-cam.FCStd'),
               'cam_inputs_sha256':digest(folder/'cam-inputs.json'),
-              'build_tools_sha256':{name:digest(ROOT/name) for name in ['tools/prepare-pcb-cam.py','tools/build-pcb-cam.py','tools/verify-pcb-cam.py','tools/check-final-board.py','tools/check-netlist.py','tools/post/makera_legacy_post.py']},
+              'build_tools_sha256':{name:digest(ROOT/name) for name in ['tools/export-pcb-legends.py','tools/prepare-pcb-cam.py','tools/build-pcb-cam.py','tools/verify-pcb-cam.py','tools/check-final-board.py','tools/check-netlist.py','tools/post/makera_legacy_post.py']},
+              'operator_docs_sha256':{name:digest(ROOT/name) for name in ['docs/pcb-fabrication-guide.md','docs/pcb-attempt-log.md','docs/images/pcb-trial-z-references.svg','docs/images/pcb-bottom-subsystems.svg','docs/images/pcb-bottom-subsystems.png','manufacturing/pcb/carvera-air/README.md']},
               'review_NC_sha256':{name:record['sha256'] for name,record in result['files'].items()},
-              'migration_status':'COMPLETE: native PCB interface and FreeCAD CAM verified',
-              'native_api_fallback':['Footprint-owned keepout rule areas in board and project libraries','Set native board thickness to1.5mm'],
+              'preparation_status':'Native PCB and CAM trial preparation verified; physical trial pending; inventory preflight incomplete',
+              'native_api_fallback':['Multiline bottom text and mirroring: Konnect output failed native loading; recovered original clean board and used PCB_TEXT API','Clean native legend plotting: Konnect exporter lacks footprint-field/drill-mark suppression options'],
+              'historical_evidence_reuse':{'erc-complete.json':'Schematic is unchanged; original ERC run retained, not relabeled as a new run.',
+                    'pcb-keepout-fill.json':'Historical controlled fill test; current native inventory and unchanged electrical geometry establish applicability.',
+                    'pcb-mask-job.json':'Historical 0.20 mm mask addition record, superseded by current 0.05 mm trial paths.',
+                    'pcb-cam-job-split.json':'Historical copper/hole split comparison, not current floor-referenced hole validation.'},
               'mask_tool_profile_sha256':digest(folder/'pcb-mask-removal.fctb'),
-              'manufacturing_verdict':'CAD/CAM checks pass including bottom pad opening; physical setup/process qualification pending',
+              'manufacturing_verdict':'Native and posted trial checks pass; no physical qualification or inventory-completeness claim',
               'open_items':['Physical hole fit, flip repeatability, tool/holder/bed-fixture clearance, protected breakthrough and surface mapping.',
-                            'Spring-tool preload with retained original copper datum, mask removal and intact copper after cleaning; no physical mask qualification performed.',
-                            'Milling/drill qualification, first-board dark legend retention on fully UV-cured white mask after IPA cleaning, and assembly/radio acceptance.']}
+                            'Coating products/layer counts/cures, interlayer adhesion, spring-tool pad exposure and intact copper.',
+                            'Two-color diamond-drag contrast with intact base mask; actual pressure/line width, mechanical tool setting and 1/4 inch collet clearance.',
+                            'Final sacrificial setup and floor-referenced bores, inventory coverage, assembly/radio acceptance.']}
     (ROOT/'docs/verification/pcb-revision.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(json.dumps(result,indent=2))
 

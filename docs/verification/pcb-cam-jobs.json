@@ -1,81 +1,589 @@
 {
   "Job00_RegistrationPreparation": {
     "file": "manufacturing\\pcb\\carvera-air\\review-nc\\00-registration-preparation.nc",
+    "description": "Only for unprepared blanks. Jig absent; independent blank-corner XY / copper-top Z0 on sacrificial wasteboard. Skip for accepted prepared blank.",
     "operations": [
       {
         "name": "PrepareFourJigHoles",
-        "commands": 523
+        "commands": 523,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -1.65
       }
     ]
   },
   "Job10_BottomCopper": {
     "file": "manufacturing\\pcb\\carvera-air\\review-nc\\10-bottom-copper.nc",
+    "description": "Bottom up. Register/bond/withdraw PCB pins. Establish copper Z0 and thorough copper map. Preserve same seating, zero AND map through coating/curing and Job20. Tool-length setting only; no intervening surface probing.",
     "operations": [
       {
         "name": "IsolateMergedBottomCopper",
-        "commands": 20573
+        "commands": 20573,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.1
       }
     ]
   },
   "Job20_BottomMaskRemoval": {
     "file": "manufacturing\\pcb\\carvera-air\\review-nc\\20-bottom-mask-removal.nc",
+    "description": "Same bonded setup as Job10. Retain original bottom copper Z0 AND height map. NO probing except tool-length setting between initial copper map and pad clearing. All coating/curing stays in jig. Before any circuit holes. First pass conservative; inspect before lowering MaskPassOffset.",
     "operations": [
       {
         "name": "OpenBottomPads_Y000",
-        "commands": 1209
+        "commands": 1209,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y010",
-        "commands": 537
+        "commands": 537,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y020",
-        "commands": 1131
+        "commands": 1131,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y030",
-        "commands": 2928
+        "commands": 2928,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y040",
-        "commands": 3750
+        "commands": 3750,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y050",
-        "commands": 2538
+        "commands": 2538,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y060",
-        "commands": 1572
+        "commands": 1572,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y070",
-        "commands": 1446
+        "commands": 1446,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y080",
-        "commands": 1083
+        "commands": 1083,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       },
       {
         "name": "OpenBottomPads_Y090",
-        "commands": 219
+        "commands": 219,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
       }
     ]
   },
-  "Job30_BottomHoles": {
-    "file": "manufacturing\\pcb\\carvera-air\\review-nc\\30-bottom-holes.nc",
+  "Job25_BottomLegend": {
+    "file": "manufacturing\\pcb\\carvera-air\\review-nc\\25-bottom-legend-drag.nc",
+    "description": "Bottom diamond-drag legend. NEW finished-mask surface Z0 after pad clearing, preserve jig XY. No copper height map. T6 1/4 inch shank, 90 degree tip, NONROTATING. First pass conservative; inspect before lowering BottomDragPassOffset. Remove contrasting coat only; retain base mask.",
+    "operations": [
+      {
+        "name": "DragBottomLegend_Y024",
+        "commands": 3753,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y026",
+        "commands": 3627,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y028",
+        "commands": 9,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y032",
+        "commands": 3891,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y034",
+        "commands": 3843,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y036",
+        "commands": 15,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y040",
+        "commands": 3471,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y042",
+        "commands": 3525,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y044",
+        "commands": 9,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y048",
+        "commands": 3321,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y050",
+        "commands": 3117,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y052",
+        "commands": 9,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y056",
+        "commands": 3351,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y058",
+        "commands": 2619,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y060",
+        "commands": 9,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y064",
+        "commands": 3789,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y066",
+        "commands": 3897,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y068",
+        "commands": 15,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y072",
+        "commands": 3873,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y074",
+        "commands": 3603,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y076",
+        "commands": 9,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y080",
+        "commands": 3459,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y082",
+        "commands": 3033,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y084",
+        "commands": 9,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y086",
+        "commands": 2265,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y088",
+        "commands": 2175,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y090",
+        "commands": 1797,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragBottomLegend_Y094",
+        "commands": 3177,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      }
+    ]
+  },
+  "Job40_TopLegend": {
+    "file": "manufacturing\\pcb\\carvera-air\\review-nc\\40-top-legend-drag.nc",
+    "description": "Top diamond-drag legend. NEW finished-mask surface Z0 after pad clearing, preserve jig XY. No copper height map. T6 1/4 inch shank, 90 degree tip, NONROTATING. First pass conservative; inspect before lowering TopDragPassOffset. Remove contrasting coat only; retain base mask.",
+    "operations": [
+      {
+        "name": "DragTopLegend_Y002",
+        "commands": 93,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y004",
+        "commands": 579,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y006",
+        "commands": 837,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y008",
+        "commands": 1797,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y010",
+        "commands": 1869,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y012",
+        "commands": 1053,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y014",
+        "commands": 1827,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y016",
+        "commands": 2595,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y018",
+        "commands": 1575,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y020",
+        "commands": 591,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y022",
+        "commands": 1851,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y024",
+        "commands": 2457,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y026",
+        "commands": 2187,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y028",
+        "commands": 1959,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y030",
+        "commands": 2757,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y032",
+        "commands": 4041,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y034",
+        "commands": 3501,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y036",
+        "commands": 3555,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y038",
+        "commands": 4041,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y040",
+        "commands": 4413,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y042",
+        "commands": 4257,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y044",
+        "commands": 4419,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y046",
+        "commands": 4479,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y048",
+        "commands": 4041,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y050",
+        "commands": 5505,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y052",
+        "commands": 5883,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y054",
+        "commands": 5019,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y056",
+        "commands": 4203,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y058",
+        "commands": 3123,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y060",
+        "commands": 2259,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y062",
+        "commands": 2169,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y064",
+        "commands": 4575,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y066",
+        "commands": 6933,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y068",
+        "commands": 6681,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y070",
+        "commands": 3459,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y072",
+        "commands": 3669,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y074",
+        "commands": 2433,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y076",
+        "commands": 669,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y078",
+        "commands": 1491,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y080",
+        "commands": 2697,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y082",
+        "commands": 2925,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y084",
+        "commands": 4545,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y086",
+        "commands": 4713,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y088",
+        "commands": 4995,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y090",
+        "commands": 2277,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y092",
+        "commands": 1197,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y094",
+        "commands": 1413,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y096",
+        "commands": 795,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      },
+      {
+        "name": "DragTopLegend_Y098",
+        "commands": 39,
+        "start_depth_mm": 0.0,
+        "final_depth_mm": -0.05
+      }
+    ]
+  },
+  "Job50_BottomHoles": {
+    "file": "manufacturing\\pcb\\carvera-air\\review-nc\\50-bottom-holes.nc",
+    "description": "AFTER both coatings and legends. Remove board, set NEW Z0 at aluminium floor, add sacrificial backing, remount bottom up. Preserve jig XY. NO copper map. Default PCB underside +1.00 / copper plane +2.50 / tip floor +0.85 mm. Adjust support geometry/settings to actual stack, regenerate and check. Never below Z0; excludes jig holes.",
     "operations": [
       {
         "name": "BoreElectrical_0p9",
-        "commands": 15599
+        "commands": 15599,
+        "start_depth_mm": 2.5,
+        "final_depth_mm": 0.85
       },
       {
         "name": "BoreElectrical_1p1",
-        "commands": 7740
+        "commands": 7740,
+        "start_depth_mm": 2.5,
+        "final_depth_mm": 0.85
       },
       {
         "name": "PocketFourEnclosureMounts",
-        "commands": 535
+        "commands": 535,
+        "start_depth_mm": 2.5,
+        "final_depth_mm": 0.85
       }
     ]
   }
