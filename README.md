@@ -9,6 +9,7 @@ The schematic and routed PCB prototype are complete; assembly components have be
 | Requirements, parts and build instructions | [Project documentation](docs/README.md) |
 | Electronics | [KiCad project](electronics/icom-ctcss-board.kicad_pro), with project-local libraries beside it |
 | PCB manufacturing | [Carvera Air package](manufacturing/pcb/carvera-air/README.md) |
+| Sublimation feature trial | [Color artwork and coupon](manufacturing/pcb/sublimation/README.md), [white-mask fabrication guide](docs/pcb-fabrication-guide.md) |
 | PCB jig / FreeCAD CAM migration | [Required changes and job contract](docs/implementation/pcb-jig-and-freecad-cam.md) |
 | Enclosure | [Mechanical workspace](mechanical/enclosure/README.md) |
 | Arduino firmware | [Firmware workspace](firmware/README.md) |

@@ -1,233 +1,368 @@
-# Making the Icom CTCSS PCB on the Carvera Air
+# White-mask PCB with a sublimated top legend
 
-Start with a **150 × 100 × 1.5 mm single-sided blank**, 150 mm along machine X,
-**bottom copper up**. Use the four accepted jig registration holes; skip file 00
-if they are already prepared. Machine before fitting components.
+Feature trial, **2026-11-12**, on `feature/sublimation-silkscreen`. Start with the
+existing **150 × 100 × 1.5 mm single-sided blank**, 150 mm along machine X,
+bottom copper up. Both faces use **white UV solder mask**. Keep the board
+unpopulated through coating, transfer and drilling. Accepted prepared jig holes
+allow registration preparation to be skipped.
 
-This **2026-11-10 candidate** keeps all coating/curing in the jig, engraves both
-legends through contrasting outer mask layers, with the bottom legend optional,
-and drills only after both faces
-are finished. Files are review outputs; no machine run or physical acceptance
-is claimed. Record results in the [attempt log](pcb-attempt-log.md).
+**Positive artwork; no transfer mirroring in the files. The printer mirrors
+automatically. Leave file/application mirroring off.** White means unprinted mask.
+Only the top carries artwork. The bottom has protective white mask and exposed
+pads, with no printed legend or second transfer setup.
 
 ## Sequence at a glance
 
-| Run this linked file | Holding and reference | Afterward |
+| Run / action | Holding and reference | Next check |
 | --- | --- | --- |
-| [00 — registration preparation](../manufacturing/pcb/carvera-air/review-nc/00-registration-preparation.nc), unprepared blanks only | Jig absent; blank-corner XY, copper-top Z0; sacrificial wasteboard | Deburr and accept all four jig holes; move to jig |
-| [10 — bottom isolation](../manufacturing/pcb/carvera-air/review-nc/10-bottom-copper.nc) | Registered tape/CA bond; PCB pins removed; exposed-copper Z0 and thorough height map | Inspect copper and check continuity/isolation |
-| Coat/cure bottom, then [20 — pad clearing](../manufacturing/pcb/carvera-air/review-nc/20-bottom-mask-removal.nc) | Same undisturbed bond, original copper Z0 **and map** | Clean/inspect and repeat conservatively if needed; no circuit holes |
-| [25 — optional bottom legend](../manufacturing/pcb/carvera-air/review-nc/25-bottom-legend-drag.nc) | Same bond/XY; new finished-mask surface Z0; disable copper map | Inspect contrast/base mask, or skip from accepted pad clearing directly to the top-face flip |
-| Flip, coat/cure top, then [40 — top legend](../manufacturing/pcb/carvera-air/review-nc/40-top-legend-drag.nc) | Top up; register/bond/remove pins; new finished-mask surface Z0 | Clean/inspect; repeat only if needed |
-| [50 — final holes](../manufacturing/pcb/carvera-air/review-nc/50-bottom-holes.nc) | Remove board; zero aluminium floor; add sacrificial backing; remount bottom up; no height map | Inspect 111 electrical holes and four enclosure mounts; deburr/check electrically |
-| Conditional final profile | Last, retained workholding and same floor limit | Not needed on this finished-size blank; no profile NC supplied |
+| [Transfer coupon](../manufacturing/pcb/sublimation/transfer-coupon-letter.pdf) on matching coated scrap | Separate flat heat-transfer setup; no machine datum | Accept dye uptake, adhesion, detail and both coatings after one heat cycle |
+| [00 registration preparation](../manufacturing/pcb/carvera-air/review-nc/00-registration-preparation.nc), only if needed | Jig absent; blank-corner XY / copper Z0; sacrificial wasteboard | Accept four slip-fit jig holes |
+| [10 bottom isolation](../manufacturing/pcb/carvera-air/review-nc/10-bottom-copper.nc) | Registered tape/CA bond; PCB pins removed; copper Z0 + thorough map | Inspect copper continuity/isolation |
+| Cure white bottom mask; [20 pad clearing](../manufacturing/pcb/carvera-air/review-nc/20-bottom-mask-removal.nc) | Undisturbed seating; original copper zero/map | Accept 111 pad openings; no circuit holes |
+| Flip; coat/cure white top | Register/bond/remove pins; preserve jig XY | No top copper isolation/pad clearing on this board |
+| Release; [top transfer](../manufacturing/pcb/sublimation/top-color-letter.pdf) only | Separate supported flat press setup; no jig or tape/CA bond under heat | Inspect printed top and unprinted bottom coating/pads after heating |
+| [50 final holes](../manufacturing/pcb/carvera-air/review-nc/50-bottom-holes.nc) | Zero aluminium floor with board removed; add backing; remount bottom up; no map | 111 electrical holes + four enclosure mounts |
+| Conditional profile; clean, deburr, inspect | Profile last with retained workholding and floor limit | Finished-size blank needs no routine profile; hand off to assembly |
 
-Each program ends separately. Complete the intervening coating, cleaning and
-inspection before loading the next; NC does not enforce manual transitions.
+**Skip files 25 and 40 and T6 entirely.** No contrasting coats, drag engraving,
+laser or legend surface probing. Native CAM retains the old legend jobs; the
+branch guide selects the sequence above. Existing 00/10/20/50 are unchanged
+review outputs, not newly qualified machine programs. The prior
+[diamond-drag guide](pcb-diamond-drag-guide.md) is historical for this branch.
 
-## Tools, supplies and initial settings
+## Supplies and settings
 
-- Blank and completed jig; four **4 × 20 mm setup-only PCB pins**. The two bed
-  locator pins and jig mounting screws stay installed.
-- Painter's tape/CA, IPA, wipes, light sanding abrasive, chip/deburring tools,
-  magnification, multimeter and representative component/header leads.
-- Base-color and contrasting-color UV solder mask plus the curing source.
-  Record the actual products, coats and cure times; use product curing instructions.
-- Sacrificial wasteboard for optional file 00. For final holes, **1 mm flat
-  sacrificial backing is the selected starting setup**, keeping sockets and
-  release ports clear. The aluminium is never sacrificial material.
-- **T2:** 30° V-bit / 0.2 mm tip. **T3:** Makera 0.8 mm corn bit.
-- **T4:** Makera spring-loaded mask remover, 0.3 mm / 30°, 3.175 mm shank.
-- **T6:** owned spring-loaded diamond drag tool, **6.35 mm / ¼-inch shank**,
-  **90° tip** selected for this attempt, matching collet, **spindle off**.
-  The owned 120° tip is an alternative for a later trial.
+- Existing blank/jig, four **4 × 20 mm setup-only PCB pins**, painter's tape/CA,
+  IPA/wipes, light abrasive, magnification, multimeter, deburring tools and
+  representative component/header leads. Bed locator pins/screws stay installed.
+- **Converted Epson E-15000**, **Cosmos Ink sublimation ink**, **Mechanic white UV
+  solder mask**: established user inputs. Exact mask product code, ink version,
+  transfer paper and color settings remain to be recorded. The supplied printer
+  name is retained as given, rather than silently selecting another model.
+- **Generic 12 × 12-inch clamshell T-shirt heat press**, the user's instructed
+  trial assumption; make/model unspecified. A smooth, firm silicone press pad,
+  sublimation heat tape, fresh white unwaxed blowout/butcher paper, an optional
+  thin PTFE/Teflon press-cover sheet, heat gloves, scissors, lint-free wipes,
+  a flat heat-resistant cooling surface and matching coated scrap. The press's
+  existing silicone lower pad is sufficient if smooth and continuously supported;
+  do not automatically stack another pillow on it. If a separate pad is needed,
+  a **2–3 mm firm heat-press silicone sheet**, rated for at least **210 °C**, is
+  the selected accessory specification; it should extend at least 10 mm beyond
+  every board edge. These consumables are a preparation checklist, not a claim
+  of inventory-confirmed stock. See the
+  [equipment and process record](implementation/pcb-sublimation-trial.md).
 
-Diamond cannot use electrical tip touch-off. Set finished-mask contact manually
-or mechanically and follow the applicable tool-length procedure. Native tool
-length 95.25 mm and nominal line width 0.127 mm are matching WidgetWorks model
-references, not measurements of the owned tool. Check actual body/holder reach
-and clearance to the bed pins, screws and jig before running.
-
-| Program / tool | RPM | Feed / plunge, mm/min | Initial depth and motion |
-| --- | ---: | --- | --- |
-| 00 / T3 | 12,000 | 500 / 100 | Copper Z−1.65; 0.3 mm stepdown; 40% stepover |
-| 10 / T2 | 12,000 | 100 / 30 | Copper Z−0.10; 0.15 mm isolation offset |
-| 20 / T4 | 6,000 | 400 / 200 | Copper Z−0.05 initial spring overtravel |
-| 25 and 40 / T6 | **0 / off** | 300 / 100 | Mask Z−0.05 initial spring preload; 0.05 mm hatch |
-| 50: 46 × 0.9 mm bores / T3 | 12,000 | 55 / 50 | Floor Z+0.85; helix pitch 0.01 mm/revolution |
-| 50: 65 × 1.1 mm bores / T3 | 12,000 | 135 / 50 | Floor Z+0.85; helix pitch 0.03 mm/revolution |
-| 50: four 4 mm mounts / T3 | 12,000 | 500 / 100 | Floor Z+0.85; 0.3 mm stepdown; 40% stepover |
-
-Clearance is Z+15 mm. Normal safe height is 2 mm above the modeled work surface,
-Z+4.50 for file 50. The holes are corn-bit interpolations, not twist-drilled holes.
-File 50 models the PCB underside at +1.00, copper plane +2.50 and 0.15 mm
-breakthrough. Thin adhesive/coating below the PCB increases penetration into
-backing. No tip path may reach or pass below floor zero. For materially different
-support, update native `SupportHeight`, regenerate and check file 50.
-
-[Makera's reference](https://global.makera.com/products/uv-solder-mask-removal-tool-1-8-shank)
-is 6,000 RPM, 400/200 mm/min and 0.2 mm DOC. Our **0.05 mm** initial overtravel
-is a conservative selected trial value. The
-[matching drag-tool manual](https://bitsbits.com/wp-content/uploads/2022/02/CNC-Engraver-250-Directions-for-Use-2021.pdf)
-supports nonrotating operation; our drag preload/feed/hatch are trial choices for
-this coating stack. These settings are not physically qualified here.
-
-## Face, registration and surface references
-
-![Bottom/top orientation and Y-axis flip](images/pcb-fabrication-setups.svg)
-
-Keep **XY at the jig pocket lower-left / Anchor 1**. Panel-to-jig mapping is
-J=(x+0.10,y+0.10). Flip about the Y-parallel midline: x′=150−x, y′=y.
-FreeCAD applies the face transform once; do not mirror NC/artwork again.
-J1 pin 1 is bottom J=(20.10,40.10), top J=(130.10,40.10).
-
-For every mounting: register on four PCB pins, seat/cure the tape/CA bond,
-withdraw **all four**, then check no movement. Pins locate; the bond retains.
-Do not unnecessarily rebond between programs on an undisturbed setup.
-
-![Schematic Z references and repeat-pass offsets](images/pcb-trial-z-references.svg)
-
-| Stage | Z reference and compensation |
+| Setting | Value / provenance |
 | --- | --- |
-| 10 through 20 | Original copper Z0 and original copper height map; unchanged seating |
-| 25 and 40 | New finished-mask surface Z0 for the presented face; copper map disabled |
-| 50 | New aluminium-floor Z0 established with board removed; backing added afterward; no map |
+| Print geometry | Top 100 × 150 mm portrait; no bottom artwork |
+| Print setup | Letter, simplex, Actual size / 100%, no Fit; selected export contract |
+| Transfer mirror | Printer automatic, user supplied; file/application mirror off |
+| Press format | Generic 12 × 12-inch clamshell; user-directed assumption. Nominal platen 304.8 × 304.8 mm; the 150 × 100 mm board fits in either artwork orientation |
+| Color | Six sRGB design colors; record actual Cosmos ink/paper/driver settings; coupon acceptance pending |
+| White-mask cure | Follow exact Mechanic product instructions; actual coats/cure not recorded |
+| First printed coupon | **185 °C / 365 °F, 60 s, light pressure, warm peel at approximately 40–50 °C**; agent-selected starting trial, not a Mechanic specification |
+| Trial progression | 195 °C / 383 °F for 60 s, then 90 s if needed; optional final 200 °C / 392 °F for 90 s only if coating remains sound |
+| Pressure adjustment | Start light; test medium only to correct demonstrated contact loss. No heavy pressure in this initial series |
+| Physical qualification | None yet; use the [attempt log](pcb-attempt-log.md) |
 
-Reference changes are manual **between programs**. NC selects G54 but does not
-rewrite its origin. The copper map is retained/applied in Controller; it is not
-embedded in the nominal NC. Between initial copper mapping and pad clearing,
-**NO probing except tool-length setting** is allowed. Tool-length setting must
-preserve the work datum and map.
+The [Cosmos color-profile page](https://cosmos-ink.com/pages/color-profiles-cosmos-ink%C2%AE)
+is the supplier reference; do not substitute another ink's profile. No retrieved
+manufacturer source qualifies direct sublimation into this particular Mechanic
+mask. White is the required visual foundation; dye uptake and heat behavior are
+the experiment. Sublimation needs a receptive polymer surface according to
+[Sawgrass substrate guidance](https://www.sawgrassink.com/blog/coated-or-uncoated-products/).
+The starting recipe below is a concrete test proposal for that uncertainty.
+Start with direct transfer into cured white mask; do not silently add a clear
+receptive overcoat or contrasting layers. The basis and limits of the selected
+recipe are in [the process record](implementation/pcb-sublimation-trial.md#starting-recipe-and-source-basis).
 
-## 00 — prepare registration holes only if needed
+## 1. Qualify the transfer on scrap
 
-1. Keep the jig absent. Bond the blank to sacrificial wasteboard with independent
-   edge datums. Set blank lower-left XY0 and actual copper-top Z0.
-2. Preview/run file 00 with T3; protect its Z−1.65 breakthrough.
-3. Remove, deburr/clean both faces and accept spacing and slip fit before production.
+### Build this press stack
 
-| Holes | Panel centers, mm | Finished fit for measured 4.000 mm pins |
-| --- | --- | --- |
-| P1/H5, P2/H6 | (20,20), (130,20) | 4.02–4.04 mm, nominal 4.03 |
-| P3/H7, P4/H8 | (20,70), (130,70) | 4.10–4.15 mm, nominal 4.12 |
+![Sublimation stack and edge-taping plan](images/pcb-sublimation-press-stack.svg)
 
-For other pin sizes, use pin +0.02–0.04 / +0.10–0.15 respectively. Check
-110 × 50 mm spacing; never force binding pins. H1–H4 are separate enclosure mounts.
-An accepted prepared blank skips file 00 entirely.
+From the bottom up: **lower platen → smooth firm silicone pad → fresh blowout
+paper → PCB, white top up → transfer, printed side down → fresh blowout paper
+→ optional thin PTFE cover → heated upper platen**. The inked paper touches the
+white mask directly. No PTFE film, release paper or air gap goes between them.
+Protect the unprinted bottom too; it still gets hot and carries exposed pads.
 
-## 10 — isolate and inspect bottom copper
+The silicone is a supported cushion for a rigid board: it accommodates small
+surface differences without making the PCB balance on high spots. Use one flat,
+continuous pad, with no seams, wrinkles, pillow edge, folded tape bundle or debris
+under the board. A soft stuffed garment pillow is a poor starting support here.
+Do not put a thick silicone pad above the transfer; that changes heat delivery
+and invalidates this starting dwell. The press remains outside the CNC setup.
 
-1. Clean/register/bond bottom up, keeping the top support face bare. Keep tape/CA
-   out of sockets and push-off mouths. Remove PCB pins and check seating/XY.
-2. Establish exposed-copper Z0 and obtain a thorough board height map. Retain
-   both through file 20; disable subsequent start options that would replace either.
-3. Preview/run file 10 with T2. Clear chips, inspect channels and remove whiskers
-   without lifting copper, particularly around pad/track junctions and headers.
-4. Check continuity and unintended shorts against the
+**PTFE/Teflon:** a thin reusable cover may protect the upper platen, but keep
+fresh absorbent paper between it and the transfer. It does not replace the
+silicone cushion or disposable blowout paper. Start without an extra loose PTFE
+sheet if the platen already has a suitable cover; if using one, use the same
+sheet throughout the comparisons. Replace the blowout paper every press so dye
+does not mark the next coupon. Do not use waxed paper. Clean/reject contaminated
+or textured cover sheets; woven texture can imprint softened mask. The
+[Transfer Press handling guide](https://www.thetransferpress.co.uk/PBCPPlayer.asp?ID=2374266)
+explains why absorbent paper helps moisture escape whereas PTFE does not.
+
+### Set light pressure on the actual stack
+
+With the press cold, load an unprinted scrap of the same thickness and all the
+chosen pad/paper/cover layers. Back off the pressure knob, close gently, then
+increase until the handle latches with modest one-hand effort and the whole
+stack is held flat. **Light** means secure contact without forcing the latch,
+visibly bowing the PCB or deeply indenting its edges into the pad. Check front
+and rear edges; a clamshell can load them differently. Thin paper feelers at
+the four corners should all be gripped when closed; remove them before heating.
+
+**Medium** is a small additional tightening that gives firm full-area contact
+with noticeably more handle resistance, still without board bending or coating
+imprints. Mark the knob and record turns from first contact. These are practical
+settings for this press, not calibrated psi. **Heavy** pressure is excluded from
+the initial trial: it adds coating-imprint and board-flex risk without fixing a
+non-receptive coating. Recheck pressure whenever the stack thickness changes.
+
+### Heat-and-transfer trial sequence
+
+Use a **fresh, room-temperature coated coupon and fresh transfer for every row**.
+Use the same mask cure, paper, pad, cover, center-platen position and light
+pressure unless the row explicitly changes one. Keep transfers top-side only.
+
+| Test | Temperature / dwell | Pressure / removal | Purpose and next action |
+| --- | --- | --- | --- |
+| H0, heat-only witness | 185 °C / 365 °F, 60 s; clean unprinted paper against mask | Light; cool before inspecting | Check coating release, yellowing, adhesion and bottom-pad imprint before spending a printed coupon |
+| T1, first printed coupon | **185 °C / 365 °F, 60 s** | **Light; warm peel, approximately 40–50 °C** | Selected starting recipe; accept if colors/detail/adhesion pass |
+| T2, if T1 is uniformly weak but intact | 195 °C / 383 °F, 60 s | Same light / warm peel | Change temperature only |
+| T3, if T2 improves but remains weak | 195 °C / 383 °F, 90 s | Same light / warm peel | Change dwell only |
+| T4, optional last temperature check | 200 °C / 392 °F, 90 s | Same light / warm peel | Only if T3 leaves the coating sound; do not exceed this initial series |
+
+These are **agent-selected experimental settings**, not manufacturer ratings or
+physical results. They bracket useful hard-substrate conditions while beginning
+below the common 195–205 °C range. Do not run the whole ladder after a good result.
+If H0 damages the mask, resolve cure/coating behavior before printed tests; a
+fresh 175–180 °C / 60 s witness is a reasonable lower-temperature comparison.
+If T1–T4 give almost no retained dye, further heating/pressure is a poor default:
+check ink/paper orientation and whether this mask accepts dye. A known-good
+sublimation blank, if available, can separate printer/process trouble from mask
+uptake. No receptive overcoat is silently introduced.
+
+1. **Prepare and dry.** Coat matching scrap on both sides as the board will be
+   coated, with representative exposed copper on the bottom witness. Fully UV
+   cure using the actual Mechanic product's instructions. Remove sanding dust,
+   clean and let solvent evaporate fully. The final top must be dry, smooth and
+   non-tacky. Do not substitute an unverified thermal bake for UV cure. Keep
+   paper dry. The first run does not need a separate hot prepress of the coated
+   PCB; H0 is a separate witness, not an extra cycle on each printed coupon.
+2. **Print and proof.** Print the [coupon PDF](../manufacturing/pcb/sublimation/transfer-coupon-letter.pdf)
+   at Actual size, 100%. Measure **54 × 38 mm** between crop-mark centers on a
+   plain-paper proof. File F L shapes are readable; the printer automatically
+   reverses the sheet and the transferred result must be readable again.
+   Let the print dry at least **10 minutes** as an initial handling allowance,
+   longer if needed until smear-free; do not touch or wipe the printed image.
+   Trim labels/crop marks away, keeping a **5–10 mm unprinted handling margin**
+   where practical. Cut out any crop marks left in that margin. Keep the artwork
+   field full size; do not scale it to create a margin.
+3. **Align and tape while cold.** Lay the transfer face up, place the coupon's
+   white receiving face down onto it, and align the field to the coupon edges.
+   Use **6–10 mm sublimation heat tape**, not painter's/masking tape. Start with
+   two opposite edge tabs, then secure the other two edges. Bridge paper to the
+   board edge/back so the sheet cannot slide or lift when the clamshell opens.
+   Burnish tape to the paper/edge without creasing the image. Keep tape off ink,
+   functional labels and exposed pads; test its release on the witness coating.
+   Turn the assembly top-up and verify contact without bubbles or slack.
+4. **Edge seal, without wrapping the whole board.** Four well-seated tabs are
+   the starting arrangement. If the paper edges lift, add short strips along the
+   lifting edge, outside the image, leaving a small vent gap at corners. A
+   tape hinge on one side plus tabs on the other edges is useful. This seals
+   against movement/edge lift; an airtight envelope is unnecessary. Do not wrap
+   a thick tape ridge underneath the rigid PCB or seal damp paper into the stack.
+   Never tape directly across a printed test-point legend to hold it down.
+5. **Heat and press.** Warm the empty press to the test setpoint and allow
+   **3–5 minutes after it first reaches temperature** for stabilization. Center
+   the cold taped assembly on fresh bottom paper, top/transfer up. Add fresh
+   upper paper and the chosen cover; close gently without dragging the paper.
+   Start the dwell timer when fully closed. Keep hands clear of the clamshell
+   hinge; use heat gloves for the hot assembly. Record the displayed setpoint;
+   a contact temperature measurement, if available, is separate evidence of
+   actual platen/interface temperature, not interchangeable with the display.
+6. **Open without ghosting.** At the timer, raise the upper platen slowly.
+   If paper/board follows it, stop lifting and let it release back onto support
+   rather than allowing a drop. Remove the loose upper cover/blowout sheet
+   without shifting the taped transfer. Move the assembly with gloves to a flat
+   heat-resistant cooling surface, still taped. Do not slide or rub the paper
+   over the warm image, bend the board, water-quench it or stack it against a
+   previously printed surface.
+7. **Warm peel first.** Keep the paper restrained while cooling to approximately
+   **40–50 °C**, then release the retaining tabs while holding the paper still.
+   Lift one edge and remove the paper in one smooth motion up and away, avoiding
+   a second touch to the image. This is dye transfer, not an HTV film being peeled
+   down onto the board. If paper binds or mask starts to lift, stop pulling and
+   let it cool to room temperature before trying again gently. A stuck/lifted
+   coating is a failed coupon, not a cue to scrape the finished board clean.
+8. **Compare peel timing only if needed.** On fresh coupons at the best thermal
+   recipe, compare warm peel with **cold peel at about 20–30 °C** if sticking or
+   coating softness was a problem. If warm peel produces ghosting despite good
+   restraint, test a **hot peel within about 5 seconds** on another coupon using
+   gloves and supported handling, provided the mask showed no softening.
+   Hot peel removes the transfer quickly but gives the least recovery from
+   sticking; cold peel reduces handling of warm mask but keeps dye paper against
+   it longer. Keep all other settings fixed and record actual delay/temperature.
+9. **Inspect cool.** Compare against an unpressed white witness under the same
+   light. Check swatches, white knockout, readable F L, ghosting, color spread,
+   paper fiber residue, coating adhesion and board flatness. Lines under each
+   swatch are **0.10 / 0.15 / 0.20 / 0.30 mm**, top to bottom. Accept continuous
+   0.15 mm detail; 0.10 mm is exploratory. Transfer a cropped sample of the top
+   test-point guide too, checking its 0.8 mm text and 0.12 mm strokes. Inspect
+   the unprinted bottom for sticking, pad imprints and mask lifting. Check a
+   copper witness's solderability after the same cooling/cleaning procedure.
+10. **Accept and carry forward.** Record the successful recipe, paper/cover/pad
+    stack, knob position, tape pattern, peel delay and photos in the
+    [trial log](pcb-attempt-log.md). Then use that recipe for one full board,
+    checking center and corners: a small coupon does not prove full-board contact.
+    Do not change paper, cushion, PTFE cover and dwell together for that step.
+
+### Read the failure before changing the next coupon
+
+| Observation after cooling | Next controlled change |
+| --- | --- |
+| Evenly faint print, coating intact | Follow T1 → T2 → T3; verify paper's printed face touches mask |
+| Faint patches, good color elsewhere | Check wrinkles, debris, support and front/rear contact first; then try **medium** pressure on a fresh coupon at the same temperature/time |
+| Offset double image / fuzzy edges | Improve tape restraint and slow opening/removal; do not compensate with heavy pressure |
+| Brown/yellow white mask, broad dye bleed or loss of fine detail | Reduce temperature or dwell on a fresh coupon; compare the unpressed witness |
+| Tape/paper texture, edge dents, softened or lifted mask | Reduce pressure; check full UV cure and pad/cover texture; compare cold peel |
+| Paper sticks but coating remains hard | Compare cold removal and fresh dry paper; do not rub paper fibers into the image |
+| No useful dye after the bounded ladder | Check a known-good sublimation blank if available; record possible mask non-receptivity rather than continuing to add heat |
+
+No second-side transfer is part of this workflow. The unprinted bottom is
+inspected because it shares the single top-transfer heat cycle.
+
+## 2. Isolate, coat and clear bottom pads
+
+![Established jig geometry and flip for sublimation](images/pcb-sublimation-setups.svg)
+
+Keep **XY at pocket lower-left / Anchor 1**; **J=(x+0.10,y+0.10)**.
+Flip about the Y-parallel midline, **x′=150−x, y′=y**, never end-for-end.
+Four PCB pins locate while seating/curing the bond; withdraw all four and confirm
+no movement before CNC. Bed locator pins/screws stay fixed. Keep sockets/release
+ports clear of adhesive and retain the full blank/four holes through all setups.
+
+1. For unprepared holes only, file 00 runs with jig absent and independent
+   sacrificial restraint. Use copper-top Z0 and blank-corner XY. Accept centers
+   (20,20), (130,20), (20,70), (130,70) mm at 110 × 50 mm spacing. For measured
+   4.000 mm pins, first-row fit is 4.02–4.04 mm, second-row 4.10–4.15 mm. See
+   the [registration drawing](../manufacturing/pcb/carvera-air/registration.svg).
+   H1–H4 are separate enclosure mounts. Prepared accepted blanks skip this step.
+2. Clean/register/bond bottom up. Establish exposed-copper Z0 and thorough map;
+   run file 10. Clean channels and check continuity/isolation against the
    [schematic](reference/schematic-complete.pdf), including +8 V, +5 V and GND.
-   Accept exposed copper before coating.
+3. Leave the seating undisturbed. Apply/cure enough thin white coats for a
+   continuous opaque foundation. Intercoat sanding/cleaning and all curing stay
+   in the jig. No contrasting outer coats.
+4. Retain the **original copper zero and map** through pad clearing. Between
+   mapping and clearing: **no probing except tool-length setting**, which must
+   preserve both. Disable start options that replace the datum/map.
+5. Run file 20 over **111 pads**; clean and inspect exposure, copper and mask
+   rims. Prefer too little removal. If needed lower `MaskPassOffset` slightly,
+   recompute/export/check and repeat without moving zero/map. −0.01 mm is a
+   selected example increment. Spring overtravel adjusts pressure, not known
+   removal depth. Stop for lifting, tearing or bottoming; do not drill yet.
 
-## Coat/cure bottom in place, then 20 — open pads
+| File / tool | RPM | Feed / plunge mm/min | Depth / motion |
+| --- | ---: | --- | --- |
+| 00 / T3, Makera 0.8 mm corn bit | 12,000 | 500 / 100 | Copper −1.65 mm; 0.3 mm stepdown; 40% stepover |
+| 10 / T2, 30° V-bit / 0.2 mm tip | 12,000 | 100 / 30 | Copper −0.10 mm; 0.15 mm isolation offset |
+| 20 / T4, 0.3 mm / 30° spring mask remover | 6,000 | 400 / 200 | Copper −0.05 mm initial spring overtravel |
 
-1. Leave the board bonded in the jig. Apply thin base-color layers; cure, lightly
-   sand between layers for bonding and clean away residue before recoating.
-   Keep registration holes clear and seating unchanged throughout.
-2. If running the optional bottom legend, add just enough thin contrasting outer
-   layers to hide the base; cure them. Otherwise, contrasting bottom coats are
-   unnecessary; complete/cure the protective base coating before pad clearing.
-   **All coating and curing happen without removing the board from the jig.**
-3. Fit/calibrate T4 while retaining copper zero/map. No surface probing or remapping.
-4. Run file 20 over all **111 pads**. Paths retain at least a planned 0.10 mm mask
-   rim; the conservative XY allowance from 0.2 mm overtravel remains despite the
-   lighter 0.05 mm initial setting. Clean and inspect useful pad exposure and copper.
-5. Prefer removing too little. If needed, lower **`MaskPassOffset`** slightly
-   (−0.01 mm is a selected example increment), recompute/export/recheck and repeat.
-   Preserve the saved copper zero/map. Inspect between passes; record total offset.
+These are inherited review settings. T4 speed/feed follow the
+[Makera reference](https://global.makera.com/products/uv-solder-mask-removal-tool-1-8-shank);
+0.05 mm overtravel is a conservative trial choice. Clearance is Z+15 mm; inspect
+actual holder reach/fixture clearance before running. No physical run is claimed.
 
-This changes spring pressure, not a known removal depth. Stop for copper lifting,
-tool bottoming or coating tearing. Circuit/enclosure holes must not exist yet;
-do not rerun this pad path over drilled holes where its tip could drop in or snag.
+## 3. Cure white top, then transfer off the jig
 
-## 25 — optional bottom subsystem legend
+1. Release with the established IPA method and dry. Protect bottom; flip about
+   Y, register/bond top up, remove PCB pins and check seating. No top isolation
+   or top pad clearing is required. Coat/cure white top in the jig.
+2. After both white faces and pad openings are accepted, release and clean all
+   adhesive residue. Copper zero/map has completed its job; do not reuse it
+   after release. Move only the board to the separate flat press support.
+   Keep the CNC jig, tape/CA bond and all pins out of the heat press.
+3. Print and measure the full-size top PDF; trim off all page furniture. It is
+   portrait and readable from the finished top face. The printer handles transfer
+   mirroring. No bottom artwork is supplied or needed.
 
-**Run this toolpath only if you want the supplied bottom subsystem lettering.**
-The artwork and CAM job remain available. To omit it, finish and inspect pad
-clearing, then proceed directly to the top-face flip below. Skip the bottom drag
-tool setup and mask-surface Z setting as well. Top legend and final-hole steps
-are unchanged.
+![Top artwork, 100 × 150 mm; bottom remains unprinted](images/pcb-sublimation-top.png)
 
-![Current bottom legend over a pale copper reference](images/pcb-bottom-subsystems.png)
+Colors supplement text: burnt orange power, blue ground, green logic, purple
+analog, magenta status, dark gray neutral. Top includes a boxed test-point guide
+above the Pro Micro, in place of the decorative waveform. It remains visible
+outside the selected component-body envelopes. The 0.8 mm lettering uses the
+same native KiCad stroke style as the other small labels; include it in the
+coupon's board-text readability check.
+No new polarity, tolerance or high-voltage claims are implied. Top ink excludes
+jig-hole edges plus **1 mm**. This is a selected artwork clearance, not measured
+registration. The bottom has no ink or legend-clearance requirement.
 
-*Actual B.SilkS/B.Cu bottom-view geometry. Pale copper is an orientation reference,
-not exposed copper in the finished coating.*
+| Test point | Purpose of the printed guidance |
+| --- | --- |
+| TP1 | Ground reference / probe return for the other points |
+| TP2 | RAW supply input, nominal +8 V when powered from that input |
+| TP3 | Regulated +5 V rail |
+| TP4 | Raw D9 PWM, before the RC filter |
+| TP5 | Filtered tone after the second RC stage |
+| TP6 | Microphone audio plus the injected tone at the mix node |
+| TP7 | Microphone PTT sense input; active low |
+| TP8 | Radio PTT output; Q1 pulls it low to key the radio |
 
-1. Retain bond/XY; disable copper mapping and obtain **new finished-mask Z0**
-   by manual/mechanical first contact with T6. Keep the spindle off.
-2. Preview/run file 25 with the 90° tip. Clean and inspect the revealed base color.
-3. If needed, lower **`BottomDragPassOffset`** slightly, regenerate/recheck and
-   repeat. Keep the saved mask-surface datum. Stop for peeling, chipping or base-mask
-   penetration; retain continuous base insulation and readable lettering.
+Use TP1 for the scope ground clip. TP8's inactive voltage depends on the
+connected radio/pull-up; the legend does not promise a logic-high voltage there.
+Tone presence depends on firmware/PTT/bypass state. Supply labels are nominal
+functions, not measured results or acceptance limits.
 
-The legend gives component references and jobs for power, control, PWM filtering,
-level adjustment, audio mixing, PTT input/output, UI and status LEDs.
+4. Align using board edges and the prepared four-hole pattern, with a plain-paper
+   outline proof/backlighting as needed. Unequal row-end margins identify
+   orientation. Top J1 pin 1 is **(40,130)** mm from portrait upper left.
+   Check the corresponding board
+   location before taping. Text centers are not pad centers. Previews contain
+   no printed hole targets; do not add hot press pins to locate the transfer.
+5. Tape top paper ink-side against the mask. Support flat without trapped chips
+   or local hard pressure points. Use the accepted coupon recipe and peel/cool
+   method. Inspect fine text and registration at J1/headers and board edges.
+   **≤0.25 mm** is the selected initial alignment target, to be logged physically.
+6. Leave the bottom unprinted. Inspect its coating and pads for support residue,
+   heat damage or mask lifting. Carry a scrap pad
+   witness through the same heat/cleaning cycle and check solderability before
+   populating the board. Reject impaired pads or unreadable functional labels.
 
-## Flip, coat/cure top in place, then 40 — top legend
+## 4. Drill last and finish
 
-1. Release carefully, protect the finished bottom, flip about Y and register/bond
-   top up. Withdraw PCB pins and check J1 pin 1.
-2. This board needs **no top copper isolation or top pad opening**. Apply/cure thin
-   base coats, lightly sand/clean between layers, then add/cure contrasting coats.
-   Keep the board in the jig throughout.
-3. Obtain finished-mask Z0 with copper mapping disabled; fit/set T6, spindle off,
-   and preview/run file 40. Clean and inspect.
-4. If needed, adjust **`TopDragPassOffset`**, regenerate/recheck and repeat.
-   It starts at zero independently of any bottom repeat-pass correction.
+1. Remove board; clean jig; establish **aluminium-floor Z0** while preserving jig
+   XY. Add selected **1 mm flat sacrificial backing**, keeping sockets/release
+   ports clear. Register/bond bottom up; remove PCB pins. No copper map.
+2. File 50 models underside +1.00, copper +2.50, minimum tip **Z+0.85 mm**:
+   0.15 mm breakthrough into backing. Aluminium is never sacrificial. Different
+   support requires updating native `SupportHeight`, regeneration and path checks.
+   Every tool-tip motion must stay above floor zero. Clearance +15; safe +4.50 mm.
+3. Preview/run T3 at 12,000 RPM: 46 × 0.9 mm bores at feed/plunge 55/50 mm/min,
+   0.01 mm/rev helix; 65 × 1.1 mm at 135/50, 0.03 mm/rev; four 4 mm enclosure
+   mounts at 500/100, 0.3 mm stepdown, 40% stepover. These are inherited corn-bit
+   interpolations, not twist-drilled holes. Do not recut the four jig holes.
+4. Finished-size stock needs no perimeter cut. Any later profile runs last with
+   retained workholding/floor limit and needs prepared native CAM/output.
+5. Release with IPA. If needed remove jig from bed locators and alternate gentle
+   pressure through push-off ports; do not force an intact bond. Clean adhesive,
+   chips and burrs; inspect all **119 holes**, pads, coatings and labels. Check
+   lead fit and continuity/isolation before assembly.
+6. Record settings, offsets, photos and checks in the [trial log](pcb-attempt-log.md),
+   then proceed to [assembly/bring-up](implementation/assembly-and-bring-up.md)
+   using the [BOM](reference/bom.csv).
 
-For future double-sided boards, map/isolate top copper first and preserve that
-face's zero/map through coating and pad clearing, with only tool-length setting
-in between. Additional top copper/pad jobs would be needed; this single-sided
-package intentionally does not contain them.
+## Evidence and editing
 
-## 50 — final holes with sacrificial backing
-
-1. After both faces are finished, remove the board and clean the jig. Obtain new
-   Z0 at the **aluminium floor**, preserving jig XY.
-2. Add the sacrificial backing and register/bond bottom up. Keep sockets/release
-   ports clear; remove all PCB pins. Do not zero on the PCB or reuse its copper map.
-3. Preview file 50: nominal 1 mm support, minimum tip **Z+0.85 mm**, complete
-   breakthrough into backing and every motion above floor Z0. Fit/calibrate T3
-   while preserving floor zero. Keep this a practical hobby setup.
-4. Run 111 electrical bores and four enclosure mounts. Do not recut jig holes.
-   Clean/deburr, inspect all holes/both coatings, check lead fit and repeat electrical
-   checks. No perimeter operation is needed for the finished-size board.
-5. A later profile job, if needed, runs last with retained workholding and the
-   same floor limit; prepare and check it before use.
-
-## Release, clean and hand off
-
-1. Stop the spindle and release the bond with the established IPA method; allow
-   surfaces to dry. If needed, remove the jig from its bed locators and use gentle
-   alternating pressure through the board push-off ports. Do not force a still-bonded
-   board or confuse pin-ejection bores with release ports.
-2. Remove adhesive, debris and burrs. Inspect copper, pads, all **119 holes**
-   including four prepared jig holes, both coating stacks and any engraved legends.
-3. Record actual products/coats/cures, offsets/pass counts, exposure, adhesion and
-   contrast in the [attempt log](pcb-attempt-log.md), separately from CAD checks.
-4. Continue to [assembly and bring-up](implementation/assembly-and-bring-up.md)
-   using the [BOM](reference/bom.csv) after fabrication checks pass.
-
-## Editing and evidence
-
-- [Native CAM](../mechanical/pcb/icom-ctcss-pcb-cam.FCStd),
-  [manufacturing package](../manufacturing/pcb/carvera-air/README.md),
-  [regeneration tools](../tools/README.md).
-- [Revision manifest](verification/pcb-revision.json),
-  [saved CAM readback](verification/pcb-cam-reopen.json),
-  [posted-motion checks](verification/pcb-posted-motion.json),
-  [bottom legend verification](verification/pcb-bottom-legend.json).
-- [Registration drawing](../manufacturing/pcb/carvera-air/registration.svg)
-  and [coordinate contract](implementation/pcb-jig-and-freecad-cam.md).
-
-The laser and [folded-transparency experiment](folded-mask-guide.md) are historical
-alternatives. Do not substitute their programs into this attempt. Physical success
-is pending; keep this workflow local until results justify skill-library promotion.
+[Artwork evidence](verification/pcb-sublimation.json) binds the saved PCB, native
+exports, metadata, generator and print files by hash. Generation refuses stale
+inputs. [Regeneration](../tools/README.md) overwrites derived color SVGs/PDFs.
+The [package README](../manufacturing/pcb/sublimation/README.md) links all files.
+Circuit geometry and CAM remain unchanged; previous CAM checks are historical,
+not evidence of a new run. See the [equipment/process record](implementation/pcb-sublimation-trial.md)
+for inventory gaps and physical acceptance. No generalized skill-library changes.

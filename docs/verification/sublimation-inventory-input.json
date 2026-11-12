@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "project": "icom-ctcss-board",
+  "revision": "2026-11-12 sublimation trial - inherited milling subset only",
+  "items": [
+    {
+      "category": "stock",
+      "id": "pcb-blank-single-sided-150x100x1p5",
+      "quantity": 1,
+      "unit": "sheet",
+      "requires": {
+        "thickness_mm": 1.5
+      }
+    },
+    {
+      "category": "tooling",
+      "id": "makera-pcb-kit",
+      "quantity": 1,
+      "unit": "each",
+      "requires": {}
+    },
+    {
+      "category": "stock",
+      "id": "pcb-mask-trial-consumables",
+      "quantity": 1,
+      "unit": "each",
+      "requires": {}
+    }
+  ],
+  "operations": [
+    {
+      "id": "pcb-mask-trial",
+      "machine": "makera-carvera-air",
+      "process": "pcb_isolation_milling",
+      "material": "FR4",
+      "work_envelope_mm": [
+        150.2,
+        100.2,
+        25
+      ],
+      "uses": [
+        {
+          "category": "stock",
+          "id": "pcb-blank-single-sided-150x100x1p5"
+        },
+        {
+          "category": "tooling",
+          "id": "makera-pcb-kit"
+        },
+        {
+          "category": "stock",
+          "id": "pcb-mask-trial-consumables"
+        }
+      ]
+    }
+  ]
+}

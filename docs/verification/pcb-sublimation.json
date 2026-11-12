@@ -1,0 +1,102 @@
+{
+  "status": "Digital trial artwork; no physical qualification",
+  "transfer_mirror_applied": false,
+  "printer_transfer_mirror": "automatic, user supplied",
+  "palette": {
+    "neutral": "#263445",
+    "power": "#b43a12",
+    "ground": "#175c9c",
+    "logic": "#14733f",
+    "analog": "#7438a4",
+    "status": "#9b285c"
+  },
+  "board_sha256": "3443c8990e78a9669dd5a49a534c4eb87c8465d3ada177200b9a289cf52eac51",
+  "native_exports_manifest_sha256": "c5141b4d99335f5bff2e4543cb21e712675ff2b817174cb7bd9ac7220d8dd76c",
+  "metadata_sha256": "eadc28c80358414702353b7fec9eed448bd3a12862ee1b815489e72dbe60fa2f",
+  "subtitle_override": {
+    "original": "SELECTABLE CTCSS | 5V PRO MICRO | CNC B.Cu ONLY",
+    "printed": "SELECTABLE CTCSS | 5V PRO MICRO"
+  },
+  "test_point_guide": [
+    {
+      "reference": "TP1",
+      "net": "GND",
+      "printed": "TP1 GND - PROBE RETURN"
+    },
+    {
+      "reference": "TP2",
+      "net": "+8V",
+      "printed": "TP2 RAW - +8V INPUT"
+    },
+    {
+      "reference": "TP3",
+      "net": "+5V",
+      "printed": "TP3 VCC - +5V RAIL"
+    },
+    {
+      "reference": "TP4",
+      "net": "/PWM_D9",
+      "printed": "TP4 PWM - RAW D9"
+    },
+    {
+      "reference": "TP5",
+      "net": "/FILTER_2",
+      "printed": "TP5 FILTER - SMOOTH TONE"
+    },
+    {
+      "reference": "TP6",
+      "net": "/MIC_AUDIO",
+      "printed": "TP6 MIX - MIC + TONE"
+    },
+    {
+      "reference": "TP7",
+      "net": "/PTT_SENSE_D7",
+      "printed": "TP7 SENSE - LOW = PTT"
+    },
+    {
+      "reference": "TP8",
+      "net": "/RADIO_PTT",
+      "printed": "TP8 PTT OUT - LOW = KEYED"
+    }
+  ],
+  "silkscreen_faces": [
+    "top"
+  ],
+  "bottom_legend": "none",
+  "faces": {
+    "top": {
+      "size_mm": [
+        100,
+        150
+      ],
+      "native_legend_ink_area_mm2": 331.52717488,
+      "total_printed_ink_area_mm2": 339.83437192,
+      "excluded_ink_area_mm2": 0.0,
+      "removed_ink_area_mm2": 0,
+      "j1_pin1_face_mm": [
+        40,
+        130
+      ]
+    }
+  },
+  "guide_layout": {
+    "portrait_bounds_mm": [
+      40.35,
+      18.612900000000003,
+      60.097621,
+      33.47859999999999
+    ],
+    "body_envelopes_sha256": "94c8cc9a0367cc53338d2a29df7f91070992d0d280a4b6cea3279e26444562a4",
+    "minimum_selected_body_clearance_mm": 3.230659059696648,
+    "pad_and_jig_clearance": "no overlap",
+    "font_height_mm": 0.8,
+    "row_pitch_mm": 1.45
+  },
+  "files": {
+    "top-color.svg": "5217b603b3ef9f48d4805e21f6f17feb285e6608b8788468413f5e05f0fe9afa",
+    "top-color-letter.pdf": "d9b35a6f1347a60ff093e444551f7cf92d2cf0651416b596e28e84faaade2368",
+    "transfer-coupon.svg": "fdb197af9916574fd50e9bc3e083b5d5ca8a993a88e14b4a298a2ee25fb99c26",
+    "transfer-coupon-letter.pdf": "cf006e4d785b0926107fb4598f28ba0c55714c7abb931cb37af2448768b66a50"
+  },
+  "generator_sha256": "62ab76bacbdabfa2a28d3996fa0095d1ccc665c20077f55d41e7b349f4d729f3"
+}

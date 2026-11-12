@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54mm" height="38mm" viewBox="0 0 54 38">
+<title>Positive sublimation artwork - printer handles transfer mirroring</title>
+<g id="neutral-swatch"><title>neutral-swatch</title><path d="M9.00000,3.00000 L9.00000,9.00000 L3.00000,9.00000 L3.00000,3.00000 L9.00000,3.00000 Z" fill="#263445" fill-rule="evenodd"/></g>
+<g id="neutral-line-0.1"><title>neutral-line-0.1</title><path d="M9.00000,12.00000 L9.00000,12.10000 L3.00000,12.10000 L3.00000,12.00000 L9.00000,12.00000 Z" fill="#263445" fill-rule="evenodd"/></g>
+<g id="neutral-line-0.15"><title>neutral-line-0.15</title><path d="M9.00000,14.00000 L9.00000,14.15000 L3.00000,14.15000 L3.00000,14.00000 L9.00000,14.00000 Z" fill="#263445" fill-rule="evenodd"/></g>
+<g id="neutral-line-0.2"><title>neutral-line-0.2</title><path d="M9.00000,16.00000 L9.00000,16.20000 L3.00000,16.20000 L3.00000,16.00000 L9.00000,16.00000 Z" fill="#263445" fill-rule="evenodd"/></g>
+<g id="neutral-line-0.3"><title>neutral-line-0.3</title><path d="M9.00000,18.00000 L9.00000,18.30000 L3.00000,18.30000 L3.00000,18.00000 L9.00000,18.00000 Z" fill="#263445" fill-rule="evenodd"/></g>
+<g id="power-swatch"><title>power-swatch</title><path d="M17.00000,3.00000 L17.00000,9.00000 L11.00000,9.00000 L11.00000,3.00000 L17.00000,3.00000 Z" fill="#b43a12" fill-rule="evenodd"/></g>
+<g id="power-line-0.1"><title>power-line-0.1</title><path d="M17.00000,12.00000 L17.00000,12.10000 L11.00000,12.10000 L11.00000,12.00000 L17.00000,12.00000 Z" fill="#b43a12" fill-rule="evenodd"/></g>
+<g id="power-line-0.15"><title>power-line-0.15</title><path d="M17.00000,14.00000 L17.00000,14.15000 L11.00000,14.15000 L11.00000,14.00000 L17.00000,14.00000 Z" fill="#b43a12" fill-rule="evenodd"/></g>
+<g id="power-line-0.2"><title>power-line-0.2</title><path d="M17.00000,16.00000 L17.00000,16.20000 L11.00000,16.20000 L11.00000,16.00000 L17.00000,16.00000 Z" fill="#b43a12" fill-rule="evenodd"/></g>
+<g id="power-line-0.3"><title>power-line-0.3</title><path d="M17.00000,18.00000 L17.00000,18.30000 L11.00000,18.30000 L11.00000,18.00000 L17.00000,18.00000 Z" fill="#b43a12" fill-rule="evenodd"/></g>
+<g id="ground-swatch"><title>ground-swatch</title><path d="M25.00000,3.00000 L25.00000,9.00000 L19.00000,9.00000 L19.00000,3.00000 L25.00000,3.00000 Z" fill="#175c9c" fill-rule="evenodd"/></g>
+<g id="ground-line-0.1"><title>ground-line-0.1</title><path d="M25.00000,12.00000 L25.00000,12.10000 L19.00000,12.10000 L19.00000,12.00000 L25.00000,12.00000 Z" fill="#175c9c" fill-rule="evenodd"/></g>
+<g id="ground-line-0.15"><title>ground-line-0.15</title><path d="M25.00000,14.00000 L25.00000,14.15000 L19.00000,14.15000 L19.00000,14.00000 L25.00000,14.00000 Z" fill="#175c9c" fill-rule="evenodd"/></g>
+<g id="ground-line-0.2"><title>ground-line-0.2</title><path d="M25.00000,16.00000 L25.00000,16.20000 L19.00000,16.20000 L19.00000,16.00000 L25.00000,16.00000 Z" fill="#175c9c" fill-rule="evenodd"/></g>
+<g id="ground-line-0.3"><title>ground-line-0.3</title><path d="M25.00000,18.00000 L25.00000,18.30000 L19.00000,18.30000 L19.00000,18.00000 L25.00000,18.00000 Z" fill="#175c9c" fill-rule="evenodd"/></g>
+<g id="logic-swatch"><title>logic-swatch</title><path d="M33.00000,3.00000 L33.00000,9.00000 L27.00000,9.00000 L27.00000,3.00000 L33.00000,3.00000 Z" fill="#14733f" fill-rule="evenodd"/></g>
+<g id="logic-line-0.1"><title>logic-line-0.1</title><path d="M33.00000,12.00000 L33.00000,12.10000 L27.00000,12.10000 L27.00000,12.00000 L33.00000,12.00000 Z" fill="#14733f" fill-rule="evenodd"/></g>
+<g id="logic-line-0.15"><title>logic-line-0.15</title><path d="M33.00000,14.00000 L33.00000,14.15000 L27.00000,14.15000 L27.00000,14.00000 L33.00000,14.00000 Z" fill="#14733f" fill-rule="evenodd"/></g>
+<g id="logic-line-0.2"><title>logic-line-0.2</title><path d="M33.00000,16.00000 L33.00000,16.20000 L27.00000,16.20000 L27.00000,16.00000 L33.00000,16.00000 Z" fill="#14733f" fill-rule="evenodd"/></g>
+<g id="logic-line-0.3"><title>logic-line-0.3</title><path d="M33.00000,18.00000 L33.00000,18.30000 L27.00000,18.30000 L27.00000,18.00000 L33.00000,18.00000 Z" fill="#14733f" fill-rule="evenodd"/></g>
+<g id="analog-swatch"><title>analog-swatch</title><path d="M41.00000,3.00000 L41.00000,9.00000 L35.00000,9.00000 L35.00000,3.00000 L41.00000,3.00000 Z" fill="#7438a4" fill-rule="evenodd"/></g>
+<g id="analog-line-0.1"><title>analog-line-0.1</title><path d="M41.00000,12.00000 L41.00000,12.10000 L35.00000,12.10000 L35.00000,12.00000 L41.00000,12.00000 Z" fill="#7438a4" fill-rule="evenodd"/></g>
+<g id="analog-line-0.15"><title>analog-line-0.15</title><path d="M41.00000,14.00000 L41.00000,14.15000 L35.00000,14.15000 L35.00000,14.00000 L41.00000,14.00000 Z" fill="#7438a4" fill-rule="evenodd"/></g>
+<g id="analog-line-0.2"><title>analog-line-0.2</title><path d="M41.00000,16.00000 L41.00000,16.20000 L35.00000,16.20000 L35.00000,16.00000 L41.00000,16.00000 Z" fill="#7438a4" fill-rule="evenodd"/></g>
+<g id="analog-line-0.3"><title>analog-line-0.3</title><path d="M41.00000,18.00000 L41.00000,18.30000 L35.00000,18.30000 L35.00000,18.00000 L41.00000,18.00000 Z" fill="#7438a4" fill-rule="evenodd"/></g>
+<g id="status-swatch"><title>status-swatch</title><path d="M49.00000,3.00000 L49.00000,9.00000 L43.00000,9.00000 L43.00000,3.00000 L49.00000,3.00000 Z" fill="#9b285c" fill-rule="evenodd"/></g>
+<g id="status-line-0.1"><title>status-line-0.1</title><path d="M49.00000,12.00000 L49.00000,12.10000 L43.00000,12.10000 L43.00000,12.00000 L49.00000,12.00000 Z" fill="#9b285c" fill-rule="evenodd"/></g>
+<g id="status-line-0.15"><title>status-line-0.15</title><path d="M49.00000,14.00000 L49.00000,14.15000 L43.00000,14.15000 L43.00000,14.00000 L49.00000,14.00000 Z" fill="#9b285c" fill-rule="evenodd"/></g>
+<g id="status-line-0.2"><title>status-line-0.2</title><path d="M49.00000,16.00000 L49.00000,16.20000 L43.00000,16.20000 L43.00000,16.00000 L49.00000,16.00000 Z" fill="#9b285c" fill-rule="evenodd"/></g>
+<g id="status-line-0.3"><title>status-line-0.3</title><path d="M49.00000,18.00000 L49.00000,18.30000 L43.00000,18.30000 L43.00000,18.00000 L49.00000,18.00000 Z" fill="#9b285c" fill-rule="evenodd"/></g>
+<g id="orientation-F"><title>orientation-F</title><path d="M12.00000,23.00000 L12.00000,22.00000 L5.00000,22.00000 L4.00000,22.00000 L4.00000,23.00000 L4.00000,27.00000 L4.00000,28.00000 L4.00000,34.00000 L5.00000,34.00000 L5.00000,28.00000 L10.00000,28.00000 L10.00000,27.00000 L5.00000,27.00000 L5.00000,23.00000 L12.00000,23.00000 Z" fill="#263445" fill-rule="evenodd"/></g>
+<g id="orientation-L"><title>orientation-L</title><path d="M17.00000,22.00000 L16.00000,22.00000 L16.00000,33.00000 L16.00000,34.00000 L17.00000,34.00000 L24.00000,34.00000 L24.00000,33.00000 L17.00000,33.00000 L17.00000,22.00000 Z" fill="#b43a12" fill-rule="evenodd"/></g>
+<g id="white-knockout"><title>white-knockout</title><path d="M29.00000,22.00000 L29.00000,34.00000 L39.00000,34.00000 L39.00000,22.00000 L29.00000,22.00000 Z M37.00000,32.00000 L31.00000,32.00000 L31.00000,24.00000 L37.00000,24.00000 L37.00000,32.00000 Z" fill="#7438a4" fill-rule="evenodd"/></g>
+<g id="gray-patch"><title>gray-patch</title><path d="M51.00000,22.00000 L51.00000,34.00000 L43.00000,34.00000 L43.00000,22.00000 L51.00000,22.00000 Z" fill="#808080" fill-rule="evenodd"/></g>
+</svg>

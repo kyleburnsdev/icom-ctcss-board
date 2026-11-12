@@ -11,6 +11,35 @@ Generated reports describe the source revision used to generate them. Regenerati
 
 ## PCB CAM
 
+### Sublimation color trial
+
+1. With the intended PCB saved, run read-only metadata export using KiCad 10's
+   bundled Python (Konnect has no board-text bounding-box reader):
+   `& 'C:/Program Files/KiCad/10.0/bin/python.exe' tools/export-sublimation-metadata.py`.
+   This writes `docs/verification/sublimation-board-metadata.json` and a native
+   top-legend Gerber under `manufacturing/pcb/sublimation/source/`, never the PCB.
+   The in-memory sublimation derivative replaces the machining subtitle with
+   `SELECTABLE CTCSS | 5V PRO MICRO`, retaining KiCad's font and centering.
+   It also adds the eight-point bench guide to this derivative, asserting each
+   point's saved net assignment. The color generator checks its frame against
+   pads, jig exclusions and the selected body envelopes before exporting.
+2. Run `python tools/create-sublimation-artwork.py`. Dependencies: gerbonara,
+   Shapely, reportlab, pypdf and resvg-py. It validates existing native export
+   hashes against PCB/project/libraries and refuses stale inputs; refresh the
+   native exports/manifest via the established process after a PCB change.
+3. Inspect the top and coupon SVG/PDF pairs in `manufacturing/pcb/sublimation/`,
+   white-backed top preview in `docs/images/` and `docs/verification/pcb-sublimation.json`.
+   Print PDFs Actual size / 100%. No transfer mirroring is applied: the printer
+   automatically mirrors. No bottom legend is generated; its historical notes
+   are omitted from the in-memory derivative and metadata.
+
+SVGs use millimeters and named color groups. Generator changes are the maintained
+source for repeated exports; direct artwork edits are overwritten. No native
+KiCad/CAM/NC file is modified. Use the [guide](../docs/pcb-fabrication-guide.md)
+for coupon acceptance and the revised manual sequence; skip drag jobs 25/40.
+
+### Retained native machining jobs
+
 - `export-pcb-legends.py`: run with KiCad's bundled Python after normal Konnect
   Gerber/drill export. Uses native PLOT_CONTROLLER to export F.SilkS/B.SilkS
   without duplicate footprint fields or drill marks, options Konnect does not

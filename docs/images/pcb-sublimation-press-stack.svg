@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="900" viewBox="0 0 1360 900">
+  <title>PCB sublimation press stack and edge taping</title>
+  <desc>Schematic cross-section, not to scale. Heat comes from above. Transfer ink touches white top mask directly. The rigid PCB sits on fresh blowout paper and one firm silicone lower pad. A separate plan shows the 100 by 150 millimeter top face with current jig-hole centers and four tape tabs outside the artwork.</desc>
+  <rect width="1360" height="900" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#263445">
+    <text x="40" y="42" font-size="27" font-weight="bold">TOP-ONLY SUBLIMATION / PRESS SETUP</text>
+    <text x="40" y="72" font-size="18">First printed coupon: 185 °C / 365 °F · 60 s · LIGHT pressure · WARM peel at about 40–50 °C</text>
+    <text x="40" y="101" font-size="16">Selected trial settings; no machine run or Mechanic mask qualification claimed.</text>
+    <text x="40" y="148" font-size="21" font-weight="bold">Cross-section / schematic, thicknesses exaggerated</text>
+    <g stroke="#526274" stroke-width="1.5">
+      <rect x="55" y="177" width="330" height="48" fill="#e9b2a4"/>
+      <rect x="55" y="239" width="330" height="10" fill="#dbdce0"/>
+      <rect x="70" y="268" width="300" height="16" fill="#faf6dc"/>
+      <rect x="88" y="302" width="264" height="16" fill="#dce9f4"/>
+      <rect x="100" y="341" width="240" height="8" fill="#fff"/>
+      <rect x="100" y="349" width="240" height="55" fill="#d8ddc2"/>
+      <rect x="100" y="404" width="240" height="8" fill="#c88751"/>
+      <rect x="100" y="412" width="240" height="8" fill="#fff"/>
+      <rect x="70" y="444" width="300" height="16" fill="#faf6dc"/>
+      <rect x="55" y="484" width="330" height="52" rx="3" fill="#b3cdc7"/>
+      <rect x="55" y="556" width="330" height="48" fill="#d7dde5"/>
+    </g>
+    <g stroke="#263445" stroke-width="1.2">
+      <path d="M395 202 H430 M395 244 H430 M380 276 H430 M362 310 H430 M350 345 H430 M350 377 H430 M350 412 H430 M380 452 H430 M395 510 H430 M395 581 H430"/>
+    </g>
+    <g font-size="17">
+      <text x="440" y="208">Heated upper platen</text>
+      <text x="440" y="250">Optional THIN PTFE / Teflon cover</text>
+      <text x="440" y="282">Fresh absorbent blowout paper</text>
+      <text x="440" y="316">Transfer paper / INK SIDE DOWN</text>
+      <text x="440" y="351">White top solder mask / receiving face</text>
+      <text x="440" y="383">Rigid FR4 / 1.5 mm board thickness</text>
+      <text x="440" y="418">Bottom copper + white mask / pads open</text>
+      <text x="440" y="458">Fresh protective blowout paper</text>
+      <text x="440" y="516">ONE smooth, firm silicone support pad</text>
+      <text x="440" y="587">Flat lower platen / continuous support</text>
+    </g>
+    <g stroke="#b43a12" fill="#b43a12" stroke-width="2">
+      <path d="M155 320 V336 M220 320 V336 M285 320 V336"/>
+      <path d="M150 331 L155 337 L160 331 M215 331 L220 337 L225 331 M280 331 L285 337 L290 331" fill="none"/>
+    </g>
+    <rect x="40" y="630" width="750" height="108" rx="7" fill="#edf4f2"/>
+    <text x="56" y="658" font-size="18" font-weight="bold">INK TOUCHES MASK DIRECTLY</text>
+    <text x="56" y="687" font-size="17">No PTFE, protective paper or silicone between ink and mask.</text>
+    <text x="56" y="715" font-size="17">No jig, pins, tape/CA bond or stuffed garment pillow in the press.</text>
+    <text x="855" y="148" font-size="21" font-weight="bold">Cold taping / plan schematic</text>
+    <text x="855" y="176" font-size="16">100 × 150 mm top / Y down on this page</text>
+    <rect x="970" y="210" width="280" height="400" fill="#dce9f4" stroke="#526274" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="990" y="230" width="240" height="360" fill="#fff" stroke="#263445" stroke-width="2"/>
+    <!-- Current native top view: H5 (20,20), H6 (20,130), H7 (70,20), H8 (70,130). -->
+    <g fill="#fff" stroke="#14733f" stroke-width="2">
+      <circle cx="1038" cy="278" r="4.84"/><circle cx="1038" cy="542" r="4.84"/>
+      <circle cx="1158" cy="278" r="4.94"/><circle cx="1158" cy="542" r="4.94"/>
+    </g>
+    <g fill="#ebc55d" fill-opacity="0.75" stroke="#9a771a" stroke-width="1">
+      <rect x="1098" y="200" width="24" height="55"/>
+      <rect x="1098" y="565" width="24" height="55"/>
+      <rect x="960" y="398" width="55" height="24"/>
+      <rect x="1205" y="398" width="55" height="24"/>
+    </g>
+    <g font-size="17" text-anchor="middle">
+      <text x="1110" y="330">TRANSFER INK</text>
+      <text x="1110" y="356">AGAINST WHITE TOP</text>
+      <text x="1110" y="467">Four edge tabs</text>
+      <text x="1110" y="493">outside printed detail</text>
+    </g>
+    <text x="855" y="655" font-size="17">Blue dashed: handling margin in paper.</text>
+    <text x="855" y="683" font-size="17">Gold: heat-tape tabs to board edge/back.</text>
+    <text x="855" y="711" font-size="17">Green: existing jig holes / no press pins.</text>
+    <text x="855" y="748" font-size="17">Add edge strips only if lifting occurs;</text>
+    <text x="855" y="776" font-size="17">leave corner vents. Do not trap moisture.</text>
+    <rect x="40" y="797" width="1280" height="66" rx="7" fill="#f6ece5"/>
+    <text x="57" y="824" font-size="18" font-weight="bold">Open slowly → keep transfer taped while cooling → peel up and away without sliding.</text>
+    <text x="57" y="850" font-size="17">Inspect BOTH coatings after this one heat cycle. Record pad, cover, tape pattern, pressure-knob position and peel delay.</text>
+  </g>
+</svg>

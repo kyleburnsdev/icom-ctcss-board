@@ -1,0 +1,84 @@
+{
+  "inventory_root": "C:\\src\\personal-repos\\toolpath-studio-inventory",
+  "attempts": [
+    {
+      "tier": "environment",
+      "root": null,
+      "result": "AGENT_INVENTORY_ROOT is unset"
+    },
+    {
+      "tier": "harness",
+      "root": "C:\\src\\personal-repos\\toolpath-studio-inventory",
+      "result": "selected"
+    }
+  ],
+  "passed": false,
+  "project": "icom-ctcss-board",
+  "revision": "2026-11-12 sublimation trial - inherited milling subset only",
+  "issues": [
+    {
+      "code": "inventory",
+      "subject": "stock/pcb-blank-single-sided-150x100x1p5",
+      "message": "Missing item: stock/pcb-blank-single-sided-150x100x1p5"
+    },
+    {
+      "code": "inventory",
+      "subject": "tooling/makera-pcb-kit",
+      "message": "Missing item: tooling/makera-pcb-kit"
+    },
+    {
+      "code": "inventory",
+      "subject": "stock/pcb-mask-trial-consumables",
+      "message": "Missing item: stock/pcb-mask-trial-consumables"
+    },
+    {
+      "code": "unavailable",
+      "subject": "machines/makera-carvera-air",
+      "message": "Item is not available in_stock"
+    },
+    {
+      "code": "process",
+      "subject": "pcb-mask-trial",
+      "message": "Machine does not list the requested process"
+    },
+    {
+      "code": "material",
+      "subject": "pcb-mask-trial",
+      "message": "Machine does not list the requested material/process combination"
+    },
+    {
+      "code": "envelope",
+      "subject": "pcb-mask-trial",
+      "message": "Usable machine envelope is unknown"
+    },
+    {
+      "code": "bom_reference",
+      "subject": "pcb-mask-trial",
+      "message": "Missing valid BOM line for stock/pcb-blank-single-sided-150x100x1p5"
+    },
+    {
+      "code": "bom_reference",
+      "subject": "pcb-mask-trial",
+      "message": "Missing valid BOM line for tooling/makera-pcb-kit"
+    },
+    {
+      "code": "bom_reference",
+      "subject": "pcb-mask-trial",
+      "message": "Missing valid BOM line for stock/pcb-mask-trial-consumables"
+    },
+    {
+      "code": "material_stock",
+      "subject": "pcb-mask-trial",
+      "message": "Operation must reference BOM stock with matching material"
+    }
+  ],
+  "evidence_sha256": {
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\index.yaml": "fa7f6ab24892a981f28407a1a05d0ff95588597785ca9490c29540f3951ad6d6",
+    "C:\\src\\personal-repos\\icom-ctcss-board\\docs\\verification\\sublimation-inventory-input.json": "5771eeb83bec9d3a9b9c36737e501c52b75d23a91150144b575838fa85b7d012",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\stock\\index.yaml": "4a34d5b192c7dfa99ed9929e5cfb7f61f48aed148cec6c97ebbc6efcd647cf41",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\tooling\\index.yaml": "2dccebf5848d44e4e0a0dfc3f4898feeedb295afac06abe4a84b0d2f8501fff3",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\machines\\index.yaml": "e2840480d6388fa22f7b9b7a1e1acb54ff1ae40914b65b22dfafd49dc7b480c1",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\machines\\makera-carvera-air\\specs.yaml": "e4016ad77bba1bf0ffb05f7a57ba3a8ce821edd0bbae72143b2c1bd52080bf6d"
+  },
+  "limits": "Recorded stock/capability check only; no reservation, nesting, collision, electrical, CAM/slicer, laser process or physical qualification."
+}

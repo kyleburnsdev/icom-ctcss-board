@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-12",
+  "files": {
+    "top-color-letter.pdf": {
+      "pages": 1,
+      "page_points": [
+        612,
+        792
+      ],
+      "print_scaling": "None"
+    },
+    "top-color.svg": {
+      "width": "100mm",
+      "height": "150mm",
+      "no_transfer_transform": true
+    },
+    "transfer-coupon-letter.pdf": {
+      "pages": 1,
+      "page_points": [
+        612,
+        792
+      ],
+      "print_scaling": "None"
+    },
+    "transfer-coupon.svg": {
+      "width": "54mm",
+      "height": "38mm",
+      "no_transfer_transform": true
+    }
+  },
+  "local_links": "all current guide, package, trial and tool links exist",
+  "j1_witness": "native metadata matches top portrait coordinate (40,130) mm",
+  "registration_holes": 4,
+  "visual_review": "Final top and coupon PDFs inspected; top preview retained; no bottom legend or preview",
+  "physical_run": false,
+  "artwork_manifest_sha256": "69ecec60c0c760d637e4b15ad6c98d3cb32259dc138ec5795cdfbec6d9dbf002",
+  "subtitle": "SELECTABLE CTCSS | 5V PRO MICRO",
+  "test_point_guide": "All eight assignments match saved PCB nets; guide clears pads, jig holes, native legend and selected component bodies",
+  "silkscreen_faces": [
+    "top"
+  ],
+  "bottom_legend": "Removed from current derivative and print package"
+}

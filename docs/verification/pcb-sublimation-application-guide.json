@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-12",
+  "scope": "Application guide only; artwork/circuit/CAM unchanged",
+  "selected_first_coupon": {
+    "temperature_c": 185,
+    "temperature_f": 365,
+    "dwell_s": 60,
+    "pressure": "light",
+    "peel": "warm, approximately 40-50 C"
+  },
+  "progression": [
+    {
+      "temperature_c": 195,
+      "dwell_s": 60
+    },
+    {
+      "temperature_c": 195,
+      "dwell_s": 90
+    },
+    {
+      "temperature_c": 200,
+      "dwell_s": 90,
+      "optional": true
+    }
+  ],
+  "stack": "lower platen / firm silicone pad / fresh paper / PCB top up / ink-down transfer / fresh paper / optional thin PTFE / heated upper platen",
+  "illustration": "Visually inspected at native 1360x900; labels readable and unclipped; plan matches current 100x150 outline and four jig-hole centers",
+  "local_links": "PASS for four updated guide/package/log/process documents",
+  "physical_press_runs": 0,
+  "sha256": {
+    "docs/pcb-fabrication-guide.md": "473de7ffdc655814a1037ac8e85b717024931781a589038993be6a7876b1c5b6",
+    "docs/pcb-attempt-log.md": "8d95380dd4bca7cdebc92d722b3d0cc04d1e2bed30d9eb677d048c9b7a535160",
+    "manufacturing/pcb/sublimation/README.md": "f7939e08809508206acb7df1556806450c2602a968ab24e5b1c44f54784e85c2",
+    "docs/implementation/pcb-sublimation-trial.md": "b1cb098221d978b8c38c1e2e86316bc2968dc3890f4dc30ce531a5634f0757eb",
+    "docs/images/pcb-sublimation-press-stack.svg": "7b3c73148a217965eb1fc3a11468ec350fe40aa84c9dcd0dce99e4389558fac4"
+  }
+}

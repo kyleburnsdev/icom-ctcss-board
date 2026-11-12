@@ -43,6 +43,23 @@
 
 ### Candidate workflow for the next PCB attempt
 
+**Feature branch override — 2026-11-12:** On `feature/sublimation-silkscreen`,
+use the white Mechanic UV mask / sublimation trial in
+`docs/pcb-fabrication-guide.md` and `manufacturing/pcb/sublimation/README.md`.
+The user owns a converted Epson E-15000 with Cosmos Ink sublimation ink. The
+printer mirrors automatically: **do not mirror artwork for sublimation**.
+The current sublimation artwork is **top only**. Bottom silkscreen notes and
+print outputs are removed from this derivative; do not restore an optional
+bottom transfer or require a second heat cycle. Preserve protective bottom mask
+and pad clearing. Retained monochrome B.SilkS/CAM files belong to the previous
+candidate, not this branch's fabrication sequence.
+Skip contrasting coats, drag legend jobs 25/40 and their Z/tool setups. Preserve
+copper zero/map through bottom pad clearing, coat/cure top, then release for
+separate flat heat transfer; drill afterward with the existing floor datum.
+Keep circuit/jig geometry unchanged and qualify matching coupons first. The
+older sequence below and retained native drag jobs are the previous candidate;
+do not mix them into this branch. Do not promote this trial to the skill library.
+
 Agreed 2026-11-10. Use this workspace-local candidate to guide the next attempt;
 it is not yet a physically proven process. Where the older manufacturing order,
 all-operations copper datum, or laser legend instructions conflict with this

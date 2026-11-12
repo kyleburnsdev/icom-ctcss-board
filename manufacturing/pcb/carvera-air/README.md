@@ -1,10 +1,15 @@
 # Carvera Air PCB manufacturing
 
+**Sublimation feature branch:** follow the [current guide](../../../docs/pcb-fabrication-guide.md)
+and [color print package](../sublimation/README.md). Use only 00 if needed,
+10, 20 and 50; **skip 25/40 and contrasting mask coats**. The native CAM/jobs
+and the diamond-drag description below are retained from the prior candidate.
+
 **Start with the [illustrated fabrication guide](../../../docs/pcb-fabrication-guide.md).**
 It gives the chronological setups, tools, surface references and inspection steps.
 Use the [attempt log](../../../docs/pcb-attempt-log.md) at the machine.
 
-This package implements the **2026-11-10 in-jig coating and two-color diamond-drag
+The retained CAM package implements the **2026-11-10 in-jig coating and two-color diamond-drag
 candidate**. Physical results are pending. NC is for review/controller preview;
 no machine operation is claimed. The generalized skill library remains unchanged.
 
