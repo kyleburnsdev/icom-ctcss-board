@@ -11,7 +11,7 @@ The editable schematic and routed PCB prototype are complete. The jig interface,
 - [Jig and FreeCAD CAM migration](pcb-jig-and-freecad-cam.md): current PCB interface, Robust MCP Server jobs and remaining acceptance
 - [P1 enclosure](enclosure-p1.md): editable FreeCAD assembly, print meshes, fit coupons and mechanical assembly
 - [FreeCAD Robust MCP setup](freecad-mcp-setup.md): local enclosure CAD tooling, Codex configuration, and connection verification
-- [Top legend SVG](../../manufacturing/pcb/carvera-air/native-exports/icom-ctcss-board-top-legend.svg), with F.SilkS/B.SilkS Gerbers for the current diamond-drag trial in the same package
+- [Heat-transfer methods](../pcb-fabrication-guide.md): [laser transparency](../pcb-laser-transparency-guide.md) and [sublimation artwork/coupon](../../manufacturing/pcb/sublimation/README.md)
 - [Independent review](design-review.md), [layout evidence](pcb-layout.md), and [acceptance checklist](acceptance-checklist.md)
 - [LTspice electrical validation](ltspice-validation.md): filter tolerances, PWM reconstruction, tone-disable transient and service-manual PTT load
 - [Firmware architecture](firmware-architecture.md) and [phase-one breadboard tests](firmware-phase1-guide.md): Pro Micro plus NUCLEO-F767ZI

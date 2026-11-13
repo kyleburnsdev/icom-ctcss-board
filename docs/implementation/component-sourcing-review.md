@@ -94,13 +94,13 @@ The [package-fit inspection render](../reference/sourcing-package-fit.png) shows
 
 Selected maximum capacitor envelopes give minimum body spacing of 2.14 mm overall,
 C4/C5 to module/socket clearance of 2.38 mm and C6 to TP3 clearance of 2.6926 mm.
-Use the [current revision record](../verification/pcb-revision.json) for PCB checks.
+Use the [board inventory](../verification/final-board-inventory.json) for PCB checks.
 The dated purchasing findings above establish component selection; physical
 assembly tolerances and machining acceptance remain separate.
 
 The current manufacturing package contains 46 electrical holes at 0.9 mm,
 65 at 1.1 mm, four 4 mm enclosure mounts and four independent jig holes.
 See the [current PCB workflow](pcb-jig-and-freecad-cam.md) and
-[revision manifest](../verification/pcb-revision.json) for manufacturing status.
+[board inventory](../verification/final-board-inventory.json) for manufacturing status.
 The jig migration changes no purchased electronic component or circuit route.
 Coupon/registration, assembly fit, powered-radio acceptance and firmware remain open.

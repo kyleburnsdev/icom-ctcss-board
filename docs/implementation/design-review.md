@@ -1,7 +1,7 @@
 # Hardware verification and remaining acceptance
 
 Current PCB revision: 2026-10-29 jig-interface migration. The
-[revision manifest](../verification/pcb-revision.json) identifies source files
+[board inventory](../verification/final-board-inventory.json) identifies source files
 and check scope. The circuit and routing are unchanged; H5–H8 registration holes,
 their footprints/courtyards, setup notes and three relocated legend labels are new.
 
@@ -35,7 +35,7 @@ fallback because Konnect does not implement their writers.
   setup, physical tool/holder/bed-pin collision review and actual surface-height
   compensation before machining.
 - Qualify hole sizes/spacing/slip fit, flip repeatability, isolation depth/width,
-  electrical hole fit and UV/laser settings on representative material.
+  electrical hole fit and coating/heat-transfer settings on representative material.
 - Verify purchased module/socket/USB and enclosure/cable access on a prototype.
 - Complete current-limited power, USB/radio power isolation, supply/regulator
   temperature, PTT key/release/reset, audio/noise and tone-deviation checks in the

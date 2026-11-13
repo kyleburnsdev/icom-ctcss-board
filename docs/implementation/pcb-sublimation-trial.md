@@ -6,13 +6,13 @@ Prepared 2026-11-12. Operator entry point:
 | ID | Requirement / acceptance |
 | --- | --- |
 | SUB-01 | Isolate experiment on `feature/sublimation-silkscreen`; integrate only after physical results |
-| SUB-02 | Mechanic white UV solder-mask foundation; no contrasting engraving coats |
+| SUB-02 | Mechanic white UV solder-mask foundation |
 | SUB-03 | Converted Epson E-15000 with Cosmos Ink sublimation ink, as supplied by user |
 | SUB-04 | Positive, finished-face-readable artwork; no transfer reflection; printer automatically mirrors |
 | SUB-05 | Preserve current circuit, hole geometry, jig XY and Y-parallel flip |
 | SUB-06 | Top-only color artwork with pin labels/test-point guide; bottom remains unprinted; no invented electrical/tolerance claims |
 | SUB-07 | Small independent coupon first: six colors, white knockout, fine lines, orientation, adhesion and heat-cycle acceptance |
-| SUB-08 | Preserve copper zero/map through pad clearing; release for transfer afterward; floor-referenced drilling last |
+| SUB-08 | Preserve copper zero/map through pad clearing; floor-referenced drilling before first flip; top coating/transfer; conditional hole cleanup |
 | SUB-09 | Inspect printed top and unprinted bottom after one transfer cycle; verify registration and solderability before assembly |
 
 ## Equipment and inventory
@@ -125,12 +125,9 @@ Top portrait coordinates are `(Kx−50, Ky−50)`. The printer performs the sole
 transfer reflection. Top J1 pin 1 is (40,130) in the page field.
 The four registration holes retain the established board geometry and clearance.
 
-The current derivative has **no bottom silkscreen**: native export omits the
-historical B.SilkS notes from its in-memory board/metadata, and the generator
-produces no bottom SVG, PDF or preview. The original monochrome PCB/Gerber/CAM
-snapshot is retained for the prior candidate; it is not the current sublimation
-artwork. Its physical circuit geometry remains the source for unchanged milling.
-There is no bottom transfer setup or second-cycle acceptance requirement.
+The transfer artwork is **top only**. The native export and generator produce
+no bottom print or preview. KiCad remains authoritative for circuit geometry.
+The bottom retains protective mask and exposed pads, with no second transfer.
 
 [Hash evidence](../verification/pcb-sublimation.json) records clipped native
 legend area. Named color groups are editable SVG assets,
@@ -143,9 +140,10 @@ the top J1 coordinate, four registration holes and local documentation links.
 The final PDF sheets, top preview and updated jig illustration were visually
 inspected. These are digital checks only.
 
-No machine or press has run. Before integration, complete the coupon/board
-[attempt log](../pcb-attempt-log.md), including product/press settings, single-cycle
-behavior of both coatings, white-mask adhesion, readability, pad solderability, final drilled-hole
-inspection and electrical continuity/isolation. Existing native CAM outputs are
-unchanged historical review files. No paid review service, release, PR, commit
-or push is part of this trial preparation.
+No sublimation press run has been reported. The separate laser transparency
+[test](../pcb-attempt-log.md#laser-transparency-transfer-test) demonstrates viable
+heat transfer; its settings do not qualify sublimation. Before accepting this
+sibling method, complete the coupon/board log with actual settings, coating
+adhesion, readability, pad solderability, hole inspection and electrical checks.
+Follow the [fabrication guide](../pcb-fabrication-guide.md) for pre-flip drilling
+and conditional cleanup. Digital checks do not establish physical acceptance.

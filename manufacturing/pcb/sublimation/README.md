@@ -4,6 +4,11 @@
 and [trial log](../../../docs/pcb-attempt-log.md).
 Branch `feature/sublimation-silkscreen`; physical acceptance pending.
 
+[Laser transparency transfer](../../../docs/pcb-laser-transparency-guide.md)
+is a sibling press method with a user-reported sharp, clean result at
+330 °F / 60 s / heavy pressure and a refrigerated cold peel. Its recipe and
+printer orientation are separate from this sublimation trial.
+
 | Print file | Editable source | Actual artwork field |
 | --- | --- | --- |
 | [Top / Letter PDF](top-color-letter.pdf) | [Top SVG](top-color.svg) | 100 × 150 mm portrait |
@@ -20,7 +25,7 @@ been removed. Leave bottom white mask and pad openings as prepared.
 Printer/ink: user-supplied converted Epson E-15000 / Cosmos Ink. Foundation:
 Mechanic white UV solder mask. Run the coupon first: **185 °C / 365 °F, 60 s,
 light pressure, warm peel around 40–50 °C** is the selected starting experiment,
-not a Mechanic-rated process. The [application procedure](../../../docs/pcb-fabrication-guide.md#1-qualify-the-transfer-on-scrap)
+not a Mechanic-rated process. The [application procedure](../../../docs/pcb-fabrication-guide.md#flow-b-sublimation-untested-trial)
 gives the press-stack drawing, heat-tape arrangement, temperature/dwell ladder,
 pressure/peel comparisons and failure responses. Product-specific physical
 acceptance remains open. See the
@@ -33,9 +38,10 @@ blowout paper above/below the assembly, and an optional thin PTFE upper cover.
 Keep ink directly against mask; tape edges against movement before heating.
 
 Use [Carvera review outputs](../carvera-air/README.md) 00 if needed, 10, 20 and
-50 with the new guide's transitions. **Skip legend files 25/40 and contrasting
-mask coats.** Retain copper zero/map through pad clearing; transfer off the jig
-afterward; drill last using the established floor datum. Native CAM is unchanged.
+50 with the guide's transitions. Retain copper zero/map through pad clearing; transfer off the jig
+after top coating. Drill before the first flip using the floor datum so holes
+can aid alignment; repeat only if obstructed after top work. The proposed order
+is unrun. Native CAM is unchanged.
 
 Named SVG groups retain existing text with color cues and a boxed guide to
 TP1–TP8 above the Pro Micro. It replaces the decorative waveform and identifies

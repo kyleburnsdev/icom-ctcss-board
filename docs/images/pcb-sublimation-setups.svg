@@ -55,8 +55,8 @@
     </g>
     <text x="550" y="214" text-anchor="middle" font-size="14" transform="rotate(90 550 214)">Y-parallel flip axis</text>
     <rect x="40" y="510" width="1020" height="105" rx="8" fill="#eaf3f2"/>
-    <text x="60" y="538" font-size="18" font-weight="bold">Flip x′ = 150 − x, y′ = y. Transfer off jig; printer mirrors artwork.</text>
-    <text x="60" y="568" font-size="17">Green: jig registration holes. Grey: enclosure holes drilled later in file 50.</text>
+    <text x="60" y="538" font-size="18" font-weight="bold">Flip x′ = 150 − x, y′ = y. Heat transfer off jig; use chosen method’s print orientation.</text>
+    <text x="60" y="568" font-size="17">Green: jig registration holes. Grey: enclosure holes; file 50 runs before the first flip.</text>
     <text x="60" y="595" font-size="17">Register → bond/cure → withdraw ALL four PCB pins. Copper / mask / floor Z references: see fabrication guide.</text>
   </g>
 </svg>

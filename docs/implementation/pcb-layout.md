@@ -46,7 +46,7 @@ Actual socket, cable and populated assembly fits remain prototype checks.
 
 [PCB inventory](../verification/final-board-inventory.json),
 [DRC](../verification/final-drc.json) and the
-[revision manifest](../verification/pcb-revision.json) identify the saved design.
+[board inventory](../verification/final-board-inventory.json) identify the saved design.
 DRC reports zero errors and zero unconnected items, retaining 115 warnings:
 38 circuit-footprint library comparisons, 35 footprint-field/artwork overlaps,
 and 42 schematic metadata/mechanical parity warnings. Jig footprints are marked

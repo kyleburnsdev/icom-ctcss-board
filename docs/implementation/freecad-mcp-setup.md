@@ -70,4 +70,4 @@ client session; an MCP SDK stdio client can use the same server when needed.
 
 ## PCB CAM migration — 2026-10-29
 
-Use Robust MCP Server for FreeCAD CAM as well as enclosure CAD. The setup checks above establish historical CAD connectivity, not CAM/postprocessor or laser qualification. See the [PCB migration](pcb-jig-and-freecad-cam.md) for discovery, job and acceptance requirements. Konnect remains the KiCad interface.
+Use Robust MCP Server for FreeCAD CAM as well as enclosure CAD. The setup checks above establish historical CAD connectivity, not CAM/postprocessor or heat-transfer qualification. See the [PCB migration](pcb-jig-and-freecad-cam.md) for discovery, job and acceptance requirements. Konnect remains the KiCad interface.

@@ -4,7 +4,6 @@ Run these commands from the repository root. They are maintained project tools; 
 
 - `python tools/check-netlist.py`: checks the final exported netlist in `docs/verification/schematic-complete.net`. Uses the Python standard library.
 - `python tools/tone-response.py`: runs the illustrative tone-chain model. Uses the Python standard library; see `docs/implementation/tone-response.md` for limitations.
-- `python tools/create-legend-print-test.py`: generates a Letter PDF with two rotated 150 x 100 mm negative-legend copies reflected across a fold, plus targets, trim and scale references. Requires ReportLab and pypdf; see the [folding guide](../docs/folded-mask-guide.md).
 - `python tools/check-final-board.py`: reads the saved PCB and refreshes `docs/verification/final-board-inventory.json`. Requires KiCad's Python environment with `pcbnew`. It does not save or change the PCB.
 
 Generated reports describe the source revision used to generate them. Regeneration requires appropriate review before treating outputs as accepted manufacturing evidence.
@@ -30,62 +29,33 @@ Generated reports describe the source revision used to generate them. Regenerati
 3. Inspect the top and coupon SVG/PDF pairs in `manufacturing/pcb/sublimation/`,
    white-backed top preview in `docs/images/` and `docs/verification/pcb-sublimation.json`.
    Print PDFs Actual size / 100%. No transfer mirroring is applied: the printer
-   automatically mirrors. No bottom legend is generated; its historical notes
-   are omitted from the in-memory derivative and metadata.
+   automatically mirrors. The transfer artwork is top only.
 
 SVGs use millimeters and named color groups. Generator changes are the maintained
 source for repeated exports; direct artwork edits are overwritten. No native
 KiCad/CAM/NC file is modified. Use the [guide](../docs/pcb-fabrication-guide.md)
-for coupon acceptance and the revised manual sequence; skip drag jobs 25/40.
+for coupon acceptance and the fabrication sequence.
 
-### Retained native machining jobs
+### Native machining work
 
-- `export-pcb-legends.py`: run with KiCad's bundled Python after normal Konnect
-  Gerber/drill export. Uses native PLOT_CONTROLLER to export F.SilkS/B.SilkS
-  without duplicate footprint fields or drill marks, options Konnect does not
-  expose. Reads the saved board and never saves/modifies sources.
-- `python tools/prepare-pcb-cam.py`: merge current unmirrored Gerbers, generate
-  isolation/pad paths and separate positive top/bottom drag hatches, check all
-  119 holes and export registration/assembly drawings and the bottom subsystem
-  illustration. Requires gerbonara 1.6.3, Shapely 2.2 and resvg-py. FreeCAD applies
-  the one face transform.
-- `build-pcb-cam.py`: run inside FreeCAD 1.1.1 through Robust MCP Server
-  `execute_python`. Preserve/close any existing PCB CAM, load the module in a
-  retained namespace, call `build(root)` and advance once per stage. Outputs the
-  native project in mechanical/pcb; each native job/controller remains editable.
-- `export_milling(root)`: export all six current review programs with the pinned
-  OEM post. Drag exports replace OEM M3 S0 with M5, strip cached spindle-speed
-  words from moves and reject unexpected spindle starts. Native geometry/motion
-  is unchanged by that post correction.
-- Save/close, then `inspect_saved(root)` to reopen/read back operations/settings.
-- `python tools/verify-pcb-cam.py`: independently check sources and posted modes,
-  tool changes, copper sweep, 111 pad openings, positive-legend drag centerlines,
-  spindle-off behavior and all-positive floor-referenced hole motion. Refreshes
-  exact-revision manifests. Requires gerbonara/Shapely and KiCad CLI.
+Use FreeCAD 1.1.1 through Robust MCP Server for editable CAM work. Preserve
+unsaved work and exact source identity before mutation or regeneration.
+The [machining package](../manufacturing/pcb/carvera-air/README.md) identifies
+the selected programs: registration preparation, bottom isolation, bottom pad
+clearing and circuit/enclosure holes. The [jig contract](../docs/implementation/pcb-jig-and-freecad-cam.md)
+gives coordinate transforms and datum requirements.
 
-Example loading through Robust MCP Server execute_python:
+Preserve original copper zero/map through pad clearing. Then drill on
+sacrificial backing with aluminium-floor Z0 before the first flip. Coat/cure
+top in the jig, release for the chosen heat transfer, and inspect holes. A
+repeat hole pass is conditional on obstruction and uses the restored floor
+setup with no copper map. Do not run pad clearing over open electrical holes.
 
-```python
-from pathlib import Path
-root = Path("C:/src/personal-repos/icom-ctcss-board")
-App._pcb_namespace = {"__name__": "pcb_builder"}
-exec(compile((root / "tools/build-pcb-cam.py").read_text(),
-             "build-pcb-cam.py", "exec"), App._pcb_namespace)
-App._pcb_build = App._pcb_namespace["build"](root)
-_result_ = next(App._pcb_build)
-```
-
-Advance `next(App._pcb_build)` once per stage to completion; then call
-`App._pcb_namespace["export_milling"](root)`. Preserve/close the saved document
-before `inspect_saved(root)`. Do not retry a timed-out mutation until its state
-is inspected. These tools do not connect to the machine.
-
-Order: bottom isolate/map; in-jig coats/cures; pad clearing on original copper
-zero/map; bottom drag; flip/in-jig coats/cures/top drag; final sacrificial-backed
-holes on new floor zero. No probing except tool-length setting between copper
-mapping and pad clearing. Initial spring settings are 0.05 mm; native independent
-repeat-pass offsets preserve saved surface datums. See the
-[fabrication guide](../docs/pcb-fabrication-guide.md) for settings and acceptance.
+After CAM changes, recompute and save native operations, inspect/reopen the
+source, export the selected programs with the pinned mill post, and check
+actual posted paths, tool changes, cutter sweep and floor limits before a
+machine run. Checks must match the exact jobs/settings and saved source.
+The revised pre-flip drilling sequence has not yet been physically run.
 
 ## Enclosure builder
 

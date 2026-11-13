@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <title>Heat-transfer PCB datums and drilling order</title>
+  <desc>Schematic sections, not to scale. Retain copper zero and map through bottom pad clearing. After pad clearing, release to set aluminium-floor zero, add one millimeter backing and remount bottom up. Drill before first flip; repeat only for obstructed holes after top work.</desc>
+  <rect width="1200" height="700" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#243444">
+    <text x="35" y="44" font-size="27" font-weight="bold">BOTTOM PAD CLEARING → DRILL → FIRST FLIP → TOP HEAT TRANSFER</text>
+    <text x="35" y="78" font-size="18">Schematic, not to scale. Jig XY stays fixed; drilling order is proposed and not yet physically run.</text>
+    <rect x="30" y="110" width="545" height="445" rx="8" fill="#f2f6f9"/>
+    <rect x="600" y="110" width="570" height="445" rx="8" fill="#f2f6f9"/>
+    <text x="50" y="147" font-size="22" font-weight="bold">10 → coat/cure → 20: keep seating</text>
+    <text x="620" y="147" font-size="22" font-weight="bold">50: drill before first flip</text>
+    <rect x="65" y="220" width="415" height="20" fill="#fff" stroke="#243444"/>
+    <text x="65" y="201" font-size="18">White bottom mask; open pads with file 20</text>
+    <path d="M65 243 H480" stroke="#b66c2f" stroke-width="5"/>
+    <text x="65" y="283" font-size="19">Original bottom copper Z0 + height map</text>
+    <rect x="65" y="300" width="415" height="64" fill="#d9d6af" stroke="#243444"/>
+    <text x="85" y="340" font-size="19">1.5 mm PCB substrate</text>
+    <rect x="65" y="370" width="415" height="35" fill="#b9c3cc" stroke="#243444"/>
+    <text x="65" y="439" font-size="18">Same tape/CA bond and jig seating.</text>
+    <text x="65" y="469" font-size="18">No surface probing or remapping.</text>
+    <text x="65" y="499" font-size="18">Only datum-preserving tool-length setting.</text>
+    <text x="65" y="529" font-size="18">Finish pad clearing before opening holes.</text>
+    <path d="M642 240 H1100" stroke="#b66c2f" stroke-width="5"/>
+    <rect x="642" y="244" width="458" height="95" fill="#d9d6af" stroke="#243444"/>
+    <rect x="642" y="340" width="458" height="63" fill="#d8bc8a" stroke="#243444"/>
+    <rect x="642" y="405" width="458" height="30" fill="#b9c3cc" stroke="#243444"/>
+    <path d="M625 405 H1120" stroke="#a33a22" stroke-width="3"/>
+    <path d="M1080 185 V391 l-9 -16 m9 16 9 -16" fill="none" stroke="#14733f" stroke-width="4"/>
+    <text x="642" y="214" font-size="18">Copper plane +2.50 mm</text>
+    <text x="656" y="278" font-size="18">PCB underside +1.00 mm</text>
+    <text x="656" y="322" font-size="18">Selected backing: 1.00 mm</text>
+    <text x="656" y="367" font-size="18">Tip +0.85 mm</text>
+    <text x="656" y="394" font-size="16">0.15 mm breakthrough into backing</text>
+    <text x="642" y="468" font-size="19" font-weight="bold">Aluminium floor Z0; no copper map</text>
+    <text x="642" y="499" font-size="18">Zero with board removed, then add backing.</text>
+    <text x="642" y="529" font-size="18">Preserve jig XY. Every tool-tip move above Z0.</text>
+    <text x="35" y="598" font-size="21" font-weight="bold">Clean/deburr holes → flip → coat/cure top → release → align transfer using holes</text>
+    <text x="35" y="634" font-size="19">After top work: inspect holes. Repeat 50 only if obstructed; restore floor setup/backing and disable mapping.</text>
+    <text x="35" y="668" font-size="18">Skip cleanup if clear. Withdraw PCB pins before CNC; never recut the four jig holes or rerun pad clearing.</text>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+  <title>Laser transparency PCB transfer press stack</title>
+  <desc>Schematic, not to scale. Paper wraps the taped PCB and transparency. A pad supports the rigid board below. Heat enters from the upper platen. Refrigerate before cold peeling.</desc>
+  <rect width="1100" height="650" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#243444">
+    <text x="36" y="44" font-size="27" font-weight="bold">LASER TRANSPARENCY / TOP TRANSFER</text>
+    <text x="36" y="79" font-size="21">Observed: 330 °F (~166 °C) / 60 seconds / HEAVY pressure</text>
+    <text x="36" y="109" font-size="18">Schematic cross-section, not to scale; no dimensional claims.</text>
+    <rect x="70" y="150" width="510" height="45" fill="#b9c3cc" stroke="#243444"/>
+    <text x="610" y="180" font-size="20">Heated upper platen</text>
+    <path d="M170 202 v24 m-7 -8 7 8 7 -8 M330 202 v24 m-7 -8 7 8 7 -8 M490 202 v24 m-7 -8 7 8 7 -8" fill="none" stroke="#a33a22" stroke-width="3"/>
+    <path d="M105 244 H545 V388 H105 Z" fill="#fff5da" stroke="#937b45" stroke-width="2"/>
+    <text x="610" y="250" font-size="20">Paper wraps taped PCB assembly</text>
+    <rect x="125" y="278" width="400" height="18" fill="#d9eff5" stroke="#243444"/>
+    <text x="610" y="290" font-size="20">Transparency: printed side DOWN</text>
+    <path d="M145 298 H505" stroke="#111" stroke-width="4"/>
+    <text x="610" y="323" font-size="20">Print contacts receiving top mask</text>
+    <rect x="125" y="306" width="400" height="52" fill="#d9d6af" stroke="#243444"/>
+    <text x="610" y="357" font-size="20">Rigid PCB; bottom stays unprinted</text>
+    <path d="M130 271 H113 V363 H140 M520 271 H537 V363 H510" fill="none" stroke="#bc723a" stroke-width="6"/>
+    <text x="610" y="392" font-size="18">Heat tape holds film to board at edges</text>
+    <rect x="70" y="410" width="510" height="53" fill="#b6cbbb" stroke="#243444"/>
+    <text x="610" y="444" font-size="20">Support pad beneath rigid PCB</text>
+    <rect x="70" y="480" width="510" height="35" fill="#b9c3cc" stroke="#243444"/>
+    <text x="610" y="505" font-size="20">Lower platen; no CNC jig or pins</text>
+    <text x="36" y="570" font-size="22" font-weight="bold">Align through film → heat tape → paper wrap → press</text>
+    <text x="36" y="610" font-size="22">Keep film positioned → refrigerate → cold peel → inspect</text>
+  </g>
+</svg>

@@ -1,19 +1,21 @@
 # PCB CAM source
 
 Open [icom-ctcss-pcb-cam.FCStd](icom-ctcss-pcb-cam.FCStd) in FreeCAD 1.1.1.
-Six native jobs implement prepared-hole setup, bottom isolation, bottom pad
-clearing, bottom/top diamond-drag legends and final floor-referenced bores.
-ManufacturingGeometry contains artwork-derived wires. SetupSummary contains
-editable settings, independent repeat-pass offsets and source hashes.
+Use Job00_RegistrationPreparation only for an unprepared blank, then
+Job10_BottomCopper, Job20_BottomMaskRemoval and Job50_BottomHoles at the stages
+in the [fabrication guide](../../docs/pcb-fabrication-guide.md).
+Drill after bottom pad clearing and before the first flip so holes can help
+align the top transparency. A repeat hole pass after top work is conditional
+on obstruction. This revised order is a proposed, unrun sequence.
 
-Follow the [fabrication guide](../../docs/pcb-fabrication-guide.md) and
-[package instructions](../../manufacturing/pcb/carvera-air/README.md).
-All coating/curing stays in the jig. Preserve copper zero/map until pad clearing,
-then use deliberate mask-surface references for legends and a floor reference
-for the final sacrificial-backed hole setup. Spindle stays off for T6 drag jobs.
+ManufacturingGeometry contains machining wires; SetupSummary contains
+parameters and source hashes. Preserve original copper zero/map through pad
+clearing. Drilling uses aluminium-floor Z0 and sacrificial backing, with no
+copper map. Then flip and coat/cure top in the jig; release for heat transfer.
+The same floor-referenced contract applies to conditional hole cleanup.
 
-Initial spring overtravel/preload is 0.05 mm. Inspect before lowering only the
-applicable operation offset; save/recompute/export/recheck after changes. The
-nominal final underside +1.00 mm and breakthrough 0.15 mm give tip Z+0.85 mm.
-No perimeter job is needed for this full-size blank. Physical trial acceptance
-and inventory completeness are pending; native checks are not machine runs.
+Initial pad-tool overtravel is 0.05 mm. Inspect before lowering MaskPassOffset;
+save/recompute/export/recheck after changes. The selected underside +1.00 mm
+and breakthrough 0.15 mm give tip Z+0.85 mm. No routine perimeter job is needed.
+Native checks do not establish physical machining acceptance. See the
+[package](../../manufacturing/pcb/carvera-air/README.md).

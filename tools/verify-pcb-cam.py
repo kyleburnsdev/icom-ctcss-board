@@ -212,7 +212,7 @@ def main():
               'cam_source_sha256':digest(ROOT/'mechanical/pcb/icom-ctcss-pcb-cam.FCStd'),
               'cam_inputs_sha256':digest(folder/'cam-inputs.json'),
               'build_tools_sha256':{name:digest(ROOT/name) for name in ['tools/export-pcb-legends.py','tools/prepare-pcb-cam.py','tools/build-pcb-cam.py','tools/verify-pcb-cam.py','tools/check-final-board.py','tools/check-netlist.py','tools/post/makera_legacy_post.py']},
-              'operator_docs_sha256':{name:digest(ROOT/name) for name in ['docs/pcb-fabrication-guide.md','docs/pcb-attempt-log.md','docs/images/pcb-trial-z-references.svg','docs/images/pcb-bottom-subsystems.svg','docs/images/pcb-bottom-subsystems.png','manufacturing/pcb/carvera-air/README.md']},
+              'operator_docs_sha256':{name:digest(ROOT/name) for name in ['docs/pcb-fabrication-guide.md','docs/pcb-attempt-log.md','docs/images/pcb-heat-transfer-z-references.svg','docs/images/pcb-bottom-subsystems.svg','docs/images/pcb-bottom-subsystems.png','manufacturing/pcb/carvera-air/README.md']},
               'review_NC_sha256':{name:record['sha256'] for name,record in result['files'].items()},
               'preparation_status':'Native PCB and CAM trial preparation verified; physical trial pending; inventory preflight incomplete',
               'native_api_fallback':['Multiline bottom text and mirroring: Konnect output failed native loading; recovered original clean board and used PCB_TEXT API','Clean native legend plotting: Konnect exporter lacks footprint-field/drill-mark suppression options'],

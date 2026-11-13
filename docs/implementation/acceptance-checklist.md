@@ -77,10 +77,13 @@ Design evidence is linked in the [implementation index](README.md) and [independ
 - [x] Top legend Gerber and matching full-board SVG exported and visually inspected; duplicate native reference/value fields excluded, readable board labels retained.
 - [x] Separate H5–H8 jig holes and both-face courtyards are saved; current track/pad/body clearance checks pass.
 - [x] Native board/library keepouts enforce all five exclusions on both copper layers; native KiCad thickness matches 1.5 mm stock/CAM. Unsupported Konnect operations used the authorized native API fallback.
-- [x] Editable FreeCAD CAM reopens with 54 native operations and corrected bore pitches; posted review NC passes modes, tool-change, planar cutter-sweep and laser power-gating checks.
+- [ ] Verify native CAM and posted review NC against the selected registration, isolation, pad-clearing and floor-referenced hole programs; inspect tool changes, planar cutter sweep and floor limits.
 - [ ] Qualify protected breakthrough, actual holder/fixture clearance, surface mapping and the [setup/coupon process](pcb-jig-and-freecad-cam.md).
-- [ ] Actual fixture/flip repeatability, scale and asymmetric pin-1 alignment proven on the machine before machining/exposure.
-- [ ] First full-board trial: white mask fully UV-cured before dark laser marking; inspect after IPA cleaning for readable, retained lettering and intact coating. No separate legend coupon. References, values, pin functions, pin 1, transistor leads, capacitor polarity, module orientation, trimmer adjustment direction, and block names remain readable after assembly.
+- [ ] Actual fixture/flip repeatability, scale and asymmetric pin-1 alignment proven on the machine before machining.
+- [x] User's laser transparency test: sharp, clean transfer at 330 °F / 60 s / heavy pressure; pad, heat tape, paper wrap, refrigerated cold peel; easy alignment.
+- [ ] Sublimation coupon acceptance; no sublimation physical run yet.
+- [ ] Trial the revised order: drill after bottom pad clearing and before the first flip; align transparency using holes; repeat floor-referenced hole clearing after top work only if obstructed.
+- [ ] Full-board acceptance: readable transferred top labels, coating adhesion, clean pads and holes, solderability and continuity/isolation before assembly.
 
 - [ ] Top and bottom visual reviews cover soldering access, socket insertion, USB-C cable clearance, enclosure, cables, and test-point access.
 

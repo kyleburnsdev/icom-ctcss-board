@@ -76,70 +76,55 @@ geometry; keep native exports unmirrored. Verify all four centers and an
 asymmetric circuit feature, such as J1 pin 1, on both faces. Only native, unmirrored exports are maintained. Transformed geometry exists
 inside the FreeCAD setup; reference bottom-view SVGs are not CAM inputs.
 
-## Current trial CAM — 2026-11-10
+## Machining and heat-transfer sequence
 
-The [fabrication guide](../pcb-fabrication-guide.md) is the operator procedure.
-The [package README](../../manufacturing/pcb/carvera-air/README.md) gives native
-settings and regeneration. This candidate supersedes the earlier all-operations
-copper datum, early drilling and laser legend sequence for the next attempt.
+Use the [fabrication guide](../pcb-fabrication-guide.md) at the machine and the
+[manufacturing package](../../manufacturing/pcb/carvera-air/README.md) for files
+and settings. Heat transfer is the top-legend process. Laser transparency has
+produced a sharp, clean transfer with easy alignment; sublimation is untested.
 
-| Native job | Reference and purpose |
+| Native job / action | Reference and purpose |
 | --- | --- |
-| Job00_RegistrationPreparation | Independent copper-top setup on sacrificial wasteboard; skip for accepted prepared blank |
-| Job10_BottomCopper | Exposed bottom copper Z0 + thorough height map; isolate only |
-| Job20_BottomMaskRemoval | Same undisturbed bond, copper Z0 and map after all bottom coats; no intervening probing except tool-length setting |
-| Job25_BottomLegend | Optional execution; if skipped, proceed from pad clearing directly to the flip. If used: new finished-mask Z0; nonrotating diamond drag reveals base color through contrasting outer coats |
-| Job40_TopLegend | After Y-axis flip and in-jig coating/curing; new top mask-surface Z0; nonrotating diamond drag |
-| Job50_BottomHoles | After both faces; new aluminium-floor Z0 with board removed, sacrificial backing, bottom-up remount; no height map |
+| Job00_RegistrationPreparation | Independent copper-top setup on sacrificial wasteboard; skip accepted prepared holes |
+| Job10_BottomCopper | Exposed bottom copper Z0 + thorough map; isolate |
+| Job20_BottomMaskRemoval | Same bond, copper Z0/map after bottom coats; only datum-preserving tool-length setting between mapping and clearing |
+| Job50_BottomHoles | Before first flip: release, zero aluminium floor, add backing and remount bottom up; no map |
+| Flip, coat/cure top, then heat transfer | Coat in jig; release for separate press; align transparency to drilled holes |
+| Conditional repeat of Job50_BottomHoles | After front-side work only if holes are obstructed; restore floor setup/backing, no map |
 
-All coating/curing stays in the jig; keep seating unchanged through each face's
-pad clearing. Only tool-length setting is allowed between copper mapping and
-pad clearing, preserving that zero/map. Copper mapping is disabled for mask-
-referenced legends and floor-referenced holes. Keep jig XY unchanged.
+Pre-flip drilling is the user's proposed sequence, not a completed machine run.
+Its purpose is to provide holes for transparency alignment. The successful
+transfer test does not establish the complete fabrication sequence.
 
-Use conservative first passes for pad clearing and both legends. Native
-SetupSummary exposes initial 0.05 mm overtravel/preload and independent repeat
-offsets: MaskPassOffset, BottomDragPassOffset and TopDragPassOffset. After
-cleaning/inspection, lower only the applicable operation offset slightly,
-recompute/export/recheck and repeat if needed. Spring compression changes
-pressure; it is not a guaranteed removal depth. Do not overwrite saved datums.
+Coating/curing stays in the jig. Keep bottom seating unchanged through pad
+clearing; only datum-preserving tool-length setting is allowed after copper
+mapping. Complete pad clearing before drilling; do not run its spring tip over
+open electrical holes. SetupSummary provides MaskOvertravel = 0.05 mm and
+MaskPassOffset = 0 initially. Clean/inspect before lowering only that operation
+offset, recomputing and rechecking. Spring pressure is not a known removal depth.
 
-The final hole job models 1 mm underside support and 0.15 mm breakthrough:
-PCB underside +1.00, copper plane +2.50, minimum tip +0.85 mm above aluminium
-floor zero. All posted hole motion must stay positive; no copper height map is
-used. The 0.8 mm corn bit interpolates 111 electrical holes and four enclosure
-mounts. Registration holes are excluded. No perimeter cut is needed on this
-finished-size full-board blank. Adapt support settings if materially different;
-do not turn this hobby setup into an unnecessary tolerance-analysis exercise.
+For each hole setup, the selected 1 mm support and 0.15 mm breakthrough give
+PCB underside +1.00 mm, copper +2.50 mm and tip +0.85 mm relative to aluminium
+floor zero. Every hole move must stay above zero; use no copper map. The
+0.8 mm corn bit interpolates 111 electrical holes and four enclosure mounts,
+excluding the four jig holes. Clean/deburr before the first flip. A changed
+support height requires CAM updates and output checks.
 
-The source remains mechanical/pcb/icom-ctcss-pcb-cam.FCStd, generated with native
-FreeCAD operations through Robust MCP Server. ManufacturingGeometry stores
-artwork-derived wires; SetupSummary gives settings and source hashes. T6 uses
-the owned 6.35 mm shank / selected 90° diamond tip, spindle off. Reference
-length and line width describe a matching WidgetWorks model, not measured owned
-tool geometry. Diamond contact uses manual/mechanical setting, not electrical
-tip probing. See the guide for tools, settings provenance and clearance checks.
+On the top face, keep holes clear while coating, then release/clean the PCB.
+Only the board goes to the separate press. After transfer, inspect holes and
+skip cleanup if clear; otherwise restore the same floor-referenced contract
+for the repeat hole pass. No routine perimeter cut is needed on finished stock.
 
-## Current verification and physical acceptance
+## Verification and physical acceptance
 
-[Bottom legend verification](../verification/pcb-bottom-legend.json) records
-native mirrored multiline text and unchanged electrical geometry. Konnect's
-multiline writer produced a file KiCad could not load; the clean original board
-was recovered and text was added with KiCad's native PCB_TEXT API. No live editor
-or unrelated saved board changes were present. Clean native legend plotting also
-uses the native API because Konnect export does not expose footprint-field and
-drill-mark suppression. Source/library rules and thickness remain intact.
+Use Robust MCP Server for the native FreeCAD source
+`mechanical/pcb/icom-ctcss-pcb-cam.FCStd`. Preserve source identity and unsaved
+work before any change. Verify native operations, posted motion, floor limits
+and fixture clearance against the actual jobs being run. Native/planar checks
+do not establish physical pad exposure, coating behavior or hole fit.
 
-The [revision manifest](../verification/pcb-revision.json) identifies current
-native/readback/posted checks and distinguishes historical evidence reuse.
-Older mask-addition, job-split and controlled-fill reports keep their original
-scope and dates; they are not new validation of this trial's depths or legends.
-The unchanged schematic's ERC/netlist evidence remains applicable. Native
-geometry and DRC checks do not establish physical coating removal or fixture fit.
-
-Use the [attempt log](../pcb-attempt-log.md) to capture coat/cure details,
-pressure adjustments, usable pad exposure, interlayer adhesion, readable
-contrasting legends with retained base mask, hole fit and electrical checks.
-The inventory helper report has incomplete stock/capability coverage and is not
-a stock-completeness pass. No machine was operated or physical trial accepted.
-Keep the workflow local until successful results justify skill-library promotion.
+Use the [attempt log](../pcb-attempt-log.md) for transfer conditions/results,
+pre-flip drilling and any cleanup, pad exposure, coating adhesion, hole fit and
+electrical checks. The inventory report has incomplete stock/capability coverage;
+it is not a stock-completeness pass. Keep generalized skill-library updates
+separate from this workspace-local process.

@@ -1,12 +1,26 @@
-# White-mask PCB with a sublimated top legend
+# White-mask PCB with a heat-transferred top legend
 
-Feature trial, **2026-11-12**, on `feature/sublimation-silkscreen`. Start with the
+**Heat transfer is the legend process.** The user's laser transparency test
+demonstrates that this model is viable and provides the confidence and
+repeatability sought for this build. Choose one of these sibling methods:
+
+| Method | Recipe / evidence | Procedure |
+| --- | --- | --- |
+| Laser transparency transfer | **Tested successfully:** sharp, clean transfer; easy alignment at **330 °F / 60 s / heavy pressure**, followed by refrigeration and a cold peel | [Flow A: tested recipe](#flow-a-laser-transparency-tested-recipe), [physical test record](pcb-attempt-log.md#laser-transparency-transfer-test) |
+| Sublimation | **Not yet tested**; selected starting trial **365 °F / 60 s / light pressure / warm peel** | [Flow B: untested trial](#flow-b-sublimation-untested-trial), [print package](../manufacturing/pcb/sublimation/README.md) |
+
+The fabrication sequence is shared. Section 1 contains both transfer flows:
+follow **A** to use the successful transparency recipe, or **B** to test
+sublimation. The scrap-coupon qualification and temperature ladder belong to
+flow B. Flow A proceeds with the recipe established by the user's real test.
+
+Process updated **2026-11-13** on `feature/sublimation-silkscreen`. Start with the
 existing **150 × 100 × 1.5 mm single-sided blank**, 150 mm along machine X,
 bottom copper up. Both faces use **white UV solder mask**. Keep the board
 unpopulated through coating, transfer and drilling. Accepted prepared jig holes
 allow registration preparation to be skipped.
 
-**Positive artwork; no transfer mirroring in the files. The printer mirrors
+**For sublimation: positive artwork; no transfer mirroring in the files. The printer mirrors
 automatically. Leave file/application mirroring off.** White means unprinted mask.
 Only the top carries artwork. The bottom has protective white mask and exposed
 pads, with no printed legend or second transfer setup.
@@ -15,26 +29,42 @@ pads, with no printed legend or second transfer setup.
 
 | Run / action | Holding and reference | Next check |
 | --- | --- | --- |
-| [Transfer coupon](../manufacturing/pcb/sublimation/transfer-coupon-letter.pdf) on matching coated scrap | Separate flat heat-transfer setup; no machine datum | Accept dye uptake, adhesion, detail and both coatings after one heat cycle |
+| Select [flow A](#flow-a-laser-transparency-tested-recipe) or [flow B](#flow-b-sublimation-untested-trial); for B, qualify the [sublimation coupon](../manufacturing/pcb/sublimation/transfer-coupon-letter.pdf) first | A uses the tested transparency recipe; B starts on matching coated scrap | Keep each method's temperature, pressure and peel instructions together |
 | [00 registration preparation](../manufacturing/pcb/carvera-air/review-nc/00-registration-preparation.nc), only if needed | Jig absent; blank-corner XY / copper Z0; sacrificial wasteboard | Accept four slip-fit jig holes |
 | [10 bottom isolation](../manufacturing/pcb/carvera-air/review-nc/10-bottom-copper.nc) | Registered tape/CA bond; PCB pins removed; copper Z0 + thorough map | Inspect copper continuity/isolation |
 | Cure white bottom mask; [20 pad clearing](../manufacturing/pcb/carvera-air/review-nc/20-bottom-mask-removal.nc) | Undisturbed seating; original copper zero/map | Accept 111 pad openings; no circuit holes |
+| [50 holes before first flip](../manufacturing/pcb/carvera-air/review-nc/50-bottom-holes.nc) | Zero aluminium floor with board removed; add backing; remount bottom up; no map | 111 electrical holes + four enclosure mounts |
 | Flip; coat/cure white top | Register/bond/remove pins; preserve jig XY | No top copper isolation/pad clearing on this board |
-| Release; [top transfer](../manufacturing/pcb/sublimation/top-color-letter.pdf) only | Separate supported flat press setup; no jig or tape/CA bond under heat | Inspect printed top and unprinted bottom coating/pads after heating |
-| [50 final holes](../manufacturing/pcb/carvera-air/review-nc/50-bottom-holes.nc) | Zero aluminium floor with board removed; add backing; remount bottom up; no map | 111 electrical holes + four enclosure mounts |
+| Release; top transfer using chosen method | Separate supported flat press setup; no jig or tape/CA bond under heat | Inspect printed top and unprinted bottom coating/pads after heating |
+| Conditional hole cleanup after top work | Restore floor-referenced bottom-up setup/backing; no copper map; repeat file 50 only if holes are obstructed | Clear holes without pad/coating damage; skip if clear |
 | Conditional profile; clean, deburr, inspect | Profile last with retained workholding and floor limit | Finished-size blank needs no routine profile; hand off to assembly |
 
-**Skip files 25 and 40 and T6 entirely.** No contrasting coats, drag engraving,
-laser or legend surface probing. Native CAM retains the old legend jobs; the
-branch guide selects the sequence above. Existing 00/10/20/50 are unchanged
-review outputs, not newly qualified machine programs. The prior
-[diamond-drag guide](pcb-diamond-drag-guide.md) is historical for this branch.
+The machining programs in this process are **00 if needed, 10, 20 and 50**.
+They are review outputs; physical machining acceptance remains separate from
+the reported successful transparency transfer. **Drilling before the first flip**
+is the proposed order so holes can help align transparency; it has not yet been
+physically run. File numbering does not require drilling last.
 
 ## Supplies and settings
+
+### Shared fabrication supplies
 
 - Existing blank/jig, four **4 × 20 mm setup-only PCB pins**, painter's tape/CA,
   IPA/wipes, light abrasive, magnification, multimeter, deburring tools and
   representative component/header leads. Bed locator pins/screws stay installed.
+- White UV solder mask and curing source, flat heat press, lower support pad,
+  heat tape, protective paper, heat gloves and trimming tools.
+
+### Flow A supplies: laser transparency
+
+- Laser printer/toner and laser-compatible transparency.
+- Pad beneath the rigid PCB, heat tape to hold the aligned film, paper to wrap
+  the board, and refrigerator for the cold peel, as used in the successful test.
+- Use **330 °F / 60 seconds / heavy pressure** and the refrigerated cold peel.
+  See [flow A](#flow-a-laser-transparency-tested-recipe) for the complete procedure.
+
+### Flow B supplies and trial settings: sublimation
+
 - **Converted Epson E-15000**, **Cosmos Ink sublimation ink**, **Mechanic white UV
   solder mask**: established user inputs. Exact mask product code, ink version,
   transfer paper and color settings remain to be recorded. The supplied printer
@@ -63,7 +93,7 @@ review outputs, not newly qualified machine programs. The prior
 | First printed coupon | **185 °C / 365 °F, 60 s, light pressure, warm peel at approximately 40–50 °C**; agent-selected starting trial, not a Mechanic specification |
 | Trial progression | 195 °C / 383 °F for 60 s, then 90 s if needed; optional final 200 °C / 392 °F for 90 s only if coating remains sound |
 | Pressure adjustment | Start light; test medium only to correct demonstrated contact loss. No heavy pressure in this initial series |
-| Physical qualification | None yet; use the [attempt log](pcb-attempt-log.md) |
+| Sublimation physical qualification | Not yet run; use the [attempt log](pcb-attempt-log.md) |
 
 The [Cosmos color-profile page](https://cosmos-ink.com/pages/color-profiles-cosmos-ink%C2%AE)
 is the supplier reference; do not substitute another ink's profile. No retrieved
@@ -73,12 +103,64 @@ the experiment. Sublimation needs a receptive polymer surface according to
 [Sawgrass substrate guidance](https://www.sawgrassink.com/blog/coated-or-uncoated-products/).
 The starting recipe below is a concrete test proposal for that uncertainty.
 Start with direct transfer into cured white mask; do not silently add a clear
-receptive overcoat or contrasting layers. The basis and limits of the selected
+receptive overcoat. The basis and limits of the selected
 recipe are in [the process record](implementation/pcb-sublimation-trial.md#starting-recipe-and-source-basis).
 
-## 1. Qualify the transfer on scrap
+## 1. Choose the transfer flow
 
-### Build this press stack
+### Flow A: Laser transparency (tested recipe)
+
+The user's real test produced a **sharp, clean transfer**. The transparency
+made alignment **really easy**, and refrigerating before the cold peel worked
+very well. Use that successful combination directly:
+
+| Setting / handling | Successful test |
+| --- | --- |
+| Flat heat press | **330 °F (approximately 166 °C), 60 seconds, heavy pressure** |
+| Rigid-board support | **Pad beneath the PCB** |
+| Alignment restraint | **Heat tape holds the transparency in position** |
+| Press protection | **PCB wrapped in paper** |
+| Film removal | **Refrigerate the board with film in place, then cold peel** |
+
+![Laser transparency press stack](images/pcb-laser-transparency-stack.svg)
+
+For the board, complete the shared bottom work, pre-flip drilling and top
+coating in sections 2–4, then perform these steps with the released board:
+
+1. **Print and align.** Print the top legend on laser-compatible transparency
+   at actual size. Place the printed side against the receiving top face so
+   the finished text will read correctly. Look through the film to align with
+   drilled holes and board features. Keep the 100 × 150 mm artwork field at
+   100% scale. The Epson automatic-mirror setting belongs to sublimation;
+   use the laser printer's appropriate transfer orientation.
+2. **Tape.** Use heat tape to hold the transparency in its aligned position
+   throughout pressing and cooling. Check that securing it did not shift it.
+3. **Wrap and support.** Wrap the taped PCB in paper and place the assembly
+   on the lower pad. The pad supports the rigid board. Keep the paper smooth
+   and the support free of chips or hard ridges.
+4. **Press.** Set the flat heat press to **330 °F**, use **heavy pressure**,
+   and press for **60 seconds**. Lift out with heat gloves, keeping the film
+   positioned against the board.
+5. **Refrigerate and cold peel.** Leave the film attached while cooling the
+   board in the refrigerator, then remove the film cold. This is the removal
+   method that worked very well in the user's test.
+6. **Inspect and continue.** Check the sharpness of small text, alignment,
+   coating and exposed pads. Inspect the drilled holes and use section 5's
+   cleanup only if they are obstructed. Record the result in the
+   [attempt log](pcb-attempt-log.md#laser-transparency-transfer-test), then
+   continue with final cleaning and electrical checks before assembly.
+
+The [standalone transparency guide](pcb-laser-transparency-guide.md) gives the
+same flow for use at the press. Flow A does not require the sublimation coupon,
+heat-only witness, temperature ladder or peel comparison below.
+
+### Flow B: Sublimation (untested trial)
+
+This method has **not yet been tested**. Complete the scrap qualification below
+before using it on the board. All settings, pressure limits, coupon criteria
+and peel comparisons in this flow apply to sublimation.
+
+#### Build this press stack
 
 ![Sublimation stack and edge-taping plan](images/pcb-sublimation-press-stack.svg)
 
@@ -105,7 +187,7 @@ or textured cover sheets; woven texture can imprint softened mask. The
 [Transfer Press handling guide](https://www.thetransferpress.co.uk/PBCPPlayer.asp?ID=2374266)
 explains why absorbent paper helps moisture escape whereas PTFE does not.
 
-### Set light pressure on the actual stack
+#### Set light pressure on the actual stack
 
 With the press cold, load an unprinted scrap of the same thickness and all the
 chosen pad/paper/cover layers. Back off the pressure knob, close gently, then
@@ -122,7 +204,7 @@ settings for this press, not calibrated psi. **Heavy** pressure is excluded from
 the initial trial: it adds coating-imprint and board-flex risk without fixing a
 non-receptive coating. Recheck pressure whenever the stack thickness changes.
 
-### Heat-and-transfer trial sequence
+#### Heat-and-transfer trial sequence
 
 Use a **fresh, room-temperature coated coupon and fresh transfer for every row**.
 Use the same mask cure, paper, pad, cover, center-platen position and light
@@ -221,7 +303,7 @@ uptake. No receptive overcoat is silently introduced.
     checking center and corners: a small coupon does not prove full-board contact.
     Do not change paper, cushion, PTFE cover and dwell together for that step.
 
-### Read the failure before changing the next coupon
+#### Read the failure before changing the next coupon
 
 | Observation after cooling | Next controlled change |
 | --- | --- |
@@ -257,7 +339,7 @@ ports clear of adhesive and retain the full blank/four holes through all setups.
    [schematic](reference/schematic-complete.pdf), including +8 V, +5 V and GND.
 3. Leave the seating undisturbed. Apply/cure enough thin white coats for a
    continuous opaque foundation. Intercoat sanding/cleaning and all curing stay
-   in the jig. No contrasting outer coats.
+   in the jig.
 4. Retain the **original copper zero and map** through pad clearing. Between
    mapping and clearing: **no probing except tool-length setting**, which must
    preserve both. Disable start options that replace the datum/map.
@@ -278,16 +360,44 @@ These are inherited review settings. T4 speed/feed follow the
 0.05 mm overtravel is a conservative trial choice. Clearance is Z+15 mm; inspect
 actual holder reach/fixture clearance before running. No physical run is claimed.
 
-## 3. Cure white top, then transfer off the jig
+## 3. Drill before the first flip
+
+![Copper and floor references for pre-flip drilling](images/pcb-heat-transfer-z-references.svg)
+
+1. After bottom pad clearing is accepted, remove board; clean jig; establish **aluminium-floor Z0** while preserving jig
+   XY. Add selected **1 mm flat sacrificial backing**, keeping sockets/release
+   ports clear. Register/bond bottom up; remove PCB pins. No copper map.
+2. File 50 models underside +1.00, copper +2.50, minimum tip **Z+0.85 mm**:
+   0.15 mm breakthrough into backing. Aluminium is never sacrificial. Different
+   support requires updating native `SupportHeight`, regeneration and path checks.
+   Every tool-tip motion must stay above floor zero. Clearance +15; safe +4.50 mm.
+3. Preview/run T3 at 12,000 RPM: 46 × 0.9 mm bores at feed/plunge 55/50 mm/min,
+   0.01 mm/rev helix; 65 × 1.1 mm at 135/50, 0.03 mm/rev; four 4 mm enclosure
+   mounts at 500/100, 0.3 mm stepdown, 40% stepover. These are inherited corn-bit
+   interpolations, not twist-drilled holes. Do not recut the four jig holes.
+4. Clean chips and deburr both faces without lifting pads. Inspect the 111
+   electrical holes and four enclosure mounts for size, registration and lead
+   fit; do not proceed with burrs that prevent flat seating. Inspect the four
+   prepared jig holes too: **119 holes total**. Check continuity/isolation.
+   Pad clearing is complete; do not run its spring tip over open electrical holes.
+5. Release/clean the board for the first flip. The floor-referenced drilling
+   setup ends here; retain jig XY and use the established Y-parallel flip.
+
+## 4. Cure white top, then transfer off the jig
 
 1. Release with the established IPA method and dry. Protect bottom; flip about
    Y, register/bond top up, remove PCB pins and check seating. No top isolation
-   or top pad clearing is required. Coat/cure white top in the jig.
+   or top pad clearing is required. Coat/cure white top in the jig, keeping the
+   drilled holes clear. Inspect hole openings after curing; any remaining
+   obstruction is handled by the conditional cleanup after transfer.
 2. After both white faces and pad openings are accepted, release and clean all
    adhesive residue. Copper zero/map has completed its job; do not reuse it
    after release. Move only the board to the separate flat press support.
    Keep the CNC jig, tape/CA bond and all pins out of the heat press.
-3. Print and measure the full-size top PDF; trim off all page furniture. It is
+3. For laser transparency, use [flow A](#flow-a-laser-transparency-tested-recipe)
+   for printing, alignment, pressing and cold peeling, then continue at step 6.
+   For sublimation, print and measure the [full-size top PDF](../manufacturing/pcb/sublimation/top-color-letter.pdf);
+   trim off all page furniture. It is
    portrait and readable from the finished top face. The printer handles transfer
    mirroring. No bottom artwork is supplied or needed.
 
@@ -319,7 +429,8 @@ connected radio/pull-up; the legend does not promise a logic-high voltage there.
 Tone presence depends on firmware/PTT/bypass state. Supply labels are nominal
 functions, not measured results or acceptance limits.
 
-4. Align using board edges and the prepared four-hole pattern, with a plain-paper
+4. Align using board edges, drilled circuit/enclosure holes and the prepared
+   four-hole jig pattern, with a plain-paper
    outline proof/backlighting as needed. Unequal row-end margins identify
    orientation. Top J1 pin 1 is **(40,130)** mm from portrait upper left.
    Check the corresponding board
@@ -330,30 +441,31 @@ functions, not measured results or acceptance limits.
    method. Inspect fine text and registration at J1/headers and board edges.
    **≤0.25 mm** is the selected initial alignment target, to be logged physically.
 6. Leave the bottom unprinted. Inspect its coating and pads for support residue,
-   heat damage or mask lifting. Carry a scrap pad
-   witness through the same heat/cleaning cycle and check solderability before
-   populating the board. Reject impaired pads or unreadable functional labels.
+   heat damage or mask lifting. Reject impaired pads or unreadable functional
+   labels. For the untested sublimation flow, carry a scrap pad witness through
+   the same heat/cleaning cycle and check solderability before populating the
+   board; that witness is part of sublimation qualification.
 
-## 4. Drill last and finish
+## 5. Conditional hole cleanup and finish
 
-1. Remove board; clean jig; establish **aluminium-floor Z0** while preserving jig
-   XY. Add selected **1 mm flat sacrificial backing**, keeping sockets/release
-   ports clear. Register/bond bottom up; remove PCB pins. No copper map.
-2. File 50 models underside +1.00, copper +2.50, minimum tip **Z+0.85 mm**:
-   0.15 mm breakthrough into backing. Aluminium is never sacrificial. Different
-   support requires updating native `SupportHeight`, regeneration and path checks.
-   Every tool-tip motion must stay above floor zero. Clearance +15; safe +4.50 mm.
-3. Preview/run T3 at 12,000 RPM: 46 × 0.9 mm bores at feed/plunge 55/50 mm/min,
-   0.01 mm/rev helix; 65 × 1.1 mm at 135/50, 0.03 mm/rev; four 4 mm enclosure
-   mounts at 500/100, 0.3 mm stepdown, 40% stepover. These are inherited corn-bit
-   interpolations, not twist-drilled holes. Do not recut the four jig holes.
-4. Finished-size stock needs no perimeter cut. Any later profile runs last with
-   retained workholding/floor limit and needs prepared native CAM/output.
-5. Release with IPA. If needed remove jig from bed locators and alternate gentle
+1. After the top transfer is complete, inspect every circuit/enclosure hole.
+   **Skip the cleanup pass if holes are clear and lead fit is accepted.** If
+   top coating obstructs holes, repeat file 50 only after restoring the setup
+   in [section 3](#3-drill-before-the-first-flip): board removed for floor Z0,
+   sacrificial backing, bottom-up registration, PCB pins withdrawn and no map.
+   Preserve jig XY and positive floor clearance; do not reuse copper Z0.
+2. Inspect the output/controller preview for that setup before repeating the
+   hole job. Keep the finished top supported and protected from trapped chips.
+   Do not recut jig holes or rerun pad clearing. Inspect pads/coatings and hole
+   fit afterward. Repeating the full hole job is conditional, not routine.
+3. Finished-size stock needs no perimeter cut. Any needed profile runs last
+   with retained workholding and floor protection, after native CAM preparation
+   and output checks.
+4. Release with IPA. If needed remove jig from bed locators and alternate gentle
    pressure through push-off ports; do not force an intact bond. Clean adhesive,
    chips and burrs; inspect all **119 holes**, pads, coatings and labels. Check
    lead fit and continuity/isolation before assembly.
-6. Record settings, offsets, photos and checks in the [trial log](pcb-attempt-log.md),
+5. Record settings, offsets and checks in the [trial log](pcb-attempt-log.md),
    then proceed to [assembly/bring-up](implementation/assembly-and-bring-up.md)
    using the [BOM](reference/bom.csv).
 
@@ -363,6 +475,7 @@ functions, not measured results or acceptance limits.
 exports, metadata, generator and print files by hash. Generation refuses stale
 inputs. [Regeneration](../tools/README.md) overwrites derived color SVGs/PDFs.
 The [package README](../manufacturing/pcb/sublimation/README.md) links all files.
-Circuit geometry and CAM remain unchanged; previous CAM checks are historical,
-not evidence of a new run. See the [equipment/process record](implementation/pcb-sublimation-trial.md)
-for inventory gaps and physical acceptance. No generalized skill-library changes.
+Circuit geometry and CAM remain unchanged; digital checks do not establish
+physical machining acceptance. See the [equipment/process record](implementation/pcb-sublimation-trial.md)
+for sublimation inputs and the [attempt log](pcb-attempt-log.md) for the observed
+transparency results. No generalized skill-library changes.

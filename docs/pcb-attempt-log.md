@@ -1,8 +1,58 @@
-# White-mask sublimation trial log
+# PCB legend transfer trial log
 
-Prepared 2026-11-12 on `feature/sublimation-silkscreen`. **No physical run yet.**
-Use the [guide](pcb-fabrication-guide.md); retain earlier work in the
-[diamond-drag log](pcb-diamond-drag-attempt-log.md).
+Prepared 2026-11-12 on `feature/sublimation-silkscreen`. Updated with the user's
+laser transparency results reported 2026-11-13; test date not supplied.
+**Sublimation has not been physically run.**
+Use the [heat-transfer fabrication guide](pcb-fabrication-guide.md).
+
+## Laser transparency transfer test
+
+User-reported physical test; use the [sibling procedure](pcb-laser-transparency-guide.md).
+The board was already beat up, with layers of solder mask scraped off.
+The test was still sufficient to
+establish the observations below.
+
+| Input / outcome | Actual setting or result supplied by user |
+| --- | --- |
+| Transfer method | Laser transparency transfer |
+| Press | Flat heat press |
+| Temperature / dwell / pressure | **330 °F (approximately 166 °C), 60 seconds, heavy pressure** |
+| Lower support | Pad beneath the PCB because the board is rigid |
+| Restraint | Heat tape held the transparency in position during pressing |
+| Press protection | PCB wrapped in paper before loading |
+| Cooling / peel | Board placed in refrigerator for a while, then film removed cold; worked very well |
+| Transfer quality | Sharp and clean |
+| Alignment | Transparency made alignment really easy |
+| Decision | Retain as a sibling option to proposed sublimation |
+
+**Process decision, 2026-11-13:** use heat transfer for the legend. The user
+finds this model more confidence inspiring and repeatable. The transparency
+test demonstrates its viability; sublimation remains an untested sibling option.
+
+Not recorded: printer/toner and transparency identifiers, printed artwork
+revision and mirror settings, pad specification, paper type, pressure-control
+position, refrigeration duration and peel temperature. Do not substitute the
+sublimation printer's automatic-mirror behavior for this printer's settings.
+Coating durability, electrical checks and full-board production acceptance
+were not reported; they are separate from the observed transfer quality.
+
+## Fabrication sequence trial (not run)
+
+User-proposed order, 2026-11-13: drill after bottom pad clearing, before the first
+flip, so holes help align transparency. After top work, a second hole pass is
+an option only if holes are obstructed. Both passes use sacrificial backing,
+aluminium-floor Z0, preserved jig XY and no copper map. This order has not yet
+been physically run. Complete pad clearing before opening electrical holes.
+
+| Check | Actual result |
+| --- | --- |
+| Pre-flip backing / floor Z0 / hole sizes / deburring | Not run |
+| Alignment using drilled holes | Not run |
+| Top coating/transfer hole obstruction / lead fit | Not inspected |
+| Cleanup needed? / repeat pass / final lead fit | Not run; skip if holes clear |
+| Final pad/coating integrity and continuity/isolation | Not inspected |
+
+## Sublimation trial (not run)
 
 | Input / outcome | Actual setting or result |
 | --- | --- |
@@ -44,7 +94,7 @@ checks, transfers, machine runs and electrical measurements.
 
 Run only as far as needed. Each row uses fresh, room-temperature coated scrap
 and fresh paper. Keep light pressure/warm peel unless the test changes that one
-variable. See the [complete application procedure](pcb-fabrication-guide.md#1-qualify-the-transfer-on-scrap).
+variable. See the [complete application procedure](pcb-fabrication-guide.md#flow-b-sublimation-untested-trial).
 
 | ID | Selected setting | Actual setting / observations / photo | Accept / next change |
 | --- | --- | --- | --- |

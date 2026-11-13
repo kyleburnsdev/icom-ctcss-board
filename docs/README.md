@@ -8,7 +8,7 @@ For making the board, follow the [illustrated PCB fabrication guide](pcb-fabrica
 
 This project adds a firmware-generated, user-selectable CTCSS/PL tone to the microphone audio path of an Icom IC-229H. Microphone audio passes through the board, while the Pro Micro reads microphone PTT and drives the radio's PTT through an NPN transistor. An off-board encoder, LCD, one bypass switch and two LEDs provide the user interface. **151.4 Hz is one required supported tone, not a fixed operating frequency.**
 
-The carrier board is 100 × 150 mm, with top-mounted through-hole components and a socketed 5 V / 16 MHz USB-C Pro Micro. It uses bottom copper only, with no routing vias, wire jumpers or copper pours. The next Carvera Air attempt uses in-jig coating/curing, two-color diamond-drag legends on both faces and final sacrificial-backed holes referenced to the jig floor. Bottom labels explain the subsystems and their component references. Follow the [fabrication guide](pcb-fabrication-guide.md) and record actual results in the [attempt log](pcb-attempt-log.md); this candidate is not yet physically qualified.
+The carrier board is 100 × 150 mm, with top-mounted through-hole components and a socketed 5 V / 16 MHz USB-C Pro Micro. It uses bottom copper only, with no routing vias, wire jumpers or copper pours. The process uses in-jig coating/curing and a heat-transferred top legend, with laser transparency and sublimation as sibling options. Laser transparency produced a sharp, clean result; sublimation is untested. The proposed sequence drills after bottom pad clearing, before the first flip, to help transparency alignment; an obstructed-hole cleanup pass after top work is conditional. Both hole setups use sacrificial backing and aluminium-floor Z0. The bottom remains unprinted. Follow the [fabrication guide](pcb-fabrication-guide.md) and record actual results in the [attempt log](pcb-attempt-log.md); this candidate is not yet physically qualified.
 
 The schematic and routed PCB prototype are complete. **Firmware and physical manufacturing/radio acceptance remain outstanding.** The jig/CAM migration, including enforced keepouts and 1.5 mm native thickness, is verified. Recorded hardware checks report zero ERC errors/warnings, zero DRC errors or unrouted connections, and 61 passing connectivity assertions. The [design review](implementation/design-review.md) documents the remaining warnings and bench checks.
 
@@ -55,13 +55,13 @@ These are outside the 38-instance schematic BOM. Socket, UI and harness selectio
 | Insulating standoff/fastener set | 4 | For 4 mm mounting holes; check washer clearance and enclosure fit |
 | Enclosure / panel | 1, as required | Allow for the module USB cable, 12.5 mm-high C6, UI controls, headers and wiring |
 | 1.5 mm single-sided copper-clad blank | 1 | Finished board is 150 × 100 mm; allow stock/fixture margins if the chosen CAM setup needs them |
-| Sacrificial coupon material | At least 1 piece | Prove milling, drill fit and registration; qualify legend marking on the first full circuit board |
+| Sacrificial coupon material | At least 1 piece | Prove milling, drill fit and registration; qualify the chosen heat transfer on matching coated scrap |
 
 The module mounts in the two socket strips; do not solder it permanently to the carrier board. All selected carrier-board capacitors are nonpolarized.
 
 ## Equipment, consumables and unfinished work
 
-For fabrication, use the Carvera Air/PCB kit, 30°/0.2 mm-tip isolation bit, 0.8 mm corn bit for hole interpolation, Makera spring mask remover, and owned ¼-inch-shank diamond drag tool with the selected 90° tip. Have base and contrasting UV-mask colors, the curing source and final sacrificial backing ready. The [fabrication guide](pcb-fabrication-guide.md) gives current tools, conservative trial settings, deliberate surface references and inspection steps.
+For fabrication, use the Carvera Air/PCB kit, 30°/0.2 mm-tip isolation bit, 0.8 mm corn bit for hole interpolation, Makera spring mask remover, white UV mask and curing source, sacrificial backing, and a supported flat heat press with the chosen transfer consumables. The [fabrication guide](pcb-fabrication-guide.md) gives current tools, conservative trial settings, deliberate surface references and inspection steps.
 
 Assembly and bring-up require soldering tools and consumables, a multimeter, a current-limited bench supply and a suitable USB cable. Tone/noise and radio-deviation acceptance require appropriate measurement equipment and test firmware. Verify the actual radio cable pinout, microphone-port current capacity, module regulator heating, PTT voltage/current and tone injection level before normal radio operation.
 
@@ -86,4 +86,4 @@ Firmware still needs to implement the selectable tone table, waveform/PWM genera
 | Review electrical simulation before the prototype | [LTspice validation and service-manual PTT analysis](implementation/ltspice-validation.md) |
 | Browse implementation notes and verification | [Implementation index](implementation/README.md) |
 
-Use the **current two-pin J5 / four-pin J6 files** together. Older three-pin header layouts and intermediate routing/checkpoint artifacts are isolated in ignored `.agent-scratch/` and are not the current manufacturing set. The supplied manufacturing files are geometry for CAM review, not approved CNC/laser G-code.
+Use the **current two-pin J5 / four-pin J6 files** together. Older three-pin header layouts and intermediate routing/checkpoint artifacts are isolated in ignored `.agent-scratch/` and are not the current manufacturing set. The supplied manufacturing files are geometry for CAM review, not released CNC programs.
