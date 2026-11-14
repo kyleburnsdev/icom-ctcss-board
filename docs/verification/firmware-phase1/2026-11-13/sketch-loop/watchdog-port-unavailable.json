@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-13T15:39:36.714117+00:00",
+  "port": "COM14",
+  "passed": false,
+  "cycles": [],
+  "transcript": [],
+  "scope": "USB watchdog recovery only; no D8 release or bootloader-pin capture",
+  "script_sha256": "d21b5d5634070b9e4fc625668940dc2bcd6ff3e77d609a7096d11df77906f13d",
+  "error": "SerialException(\"could not open port 'COM14': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)\")"
+}

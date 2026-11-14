@@ -1,0 +1,33 @@
+
+Connecting to programmer: .
+Found programmer: Id = "CATERIN"; type = S
+    Software Version = 1.0; No Hardware Version given.
+Programmer supports auto addr increment.
+Programmer supports buffered memory access with buffersize=128 bytes.
+
+Programmer supports the following devices:
+    Device code: 0x44
+
+avrdude.exe: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% -0.00s
+
+avrdude.exe: Device signature = 0x1e9587 (probably m32u4)
+avrdude.exe: reading input file "C:\src\personal-repos\icom-ctcss-board\.agent-scratch\firmware\avr-production-lcd0x3e-grove-v4\icom_ctcss.ino.hex"
+avrdude.exe: writing flash (14260 bytes):
+
+Writing | ################################################## | 100% 1.10s
+
+avrdude.exe: 14260 bytes of flash written
+avrdude.exe: verifying flash memory against C:\src\personal-repos\icom-ctcss-board\.agent-scratch\firmware\avr-production-lcd0x3e-grove-v4\icom_ctcss.ino.hex:
+avrdude.exe: load data flash data from input file C:\src\personal-repos\icom-ctcss-board\.agent-scratch\firmware\avr-production-lcd0x3e-grove-v4\icom_ctcss.ino.hex:
+avrdude.exe: input file C:\src\personal-repos\icom-ctcss-board\.agent-scratch\firmware\avr-production-lcd0x3e-grove-v4\icom_ctcss.ino.hex contains 14260 bytes
+avrdude.exe: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.14s
+
+avrdude.exe: verifying ...
+avrdude.exe: 14260 bytes of flash verified
+
+avrdude.exe done.  Thank you.
+

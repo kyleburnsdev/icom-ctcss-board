@@ -1,0 +1,23 @@
+PASS control, interlocks, bounce/wrap, UI, 50 presets, torn EEPROM writes, CRC corruption
+PASS exhaustive: 65,536 numeric inputs, 10,000 manual values, 1,872 TX latches, 65,536 eight-event input sequences
+PASS capture: all 50 tones, idle, rollover, edge loss; worst synthetic error 0.004996 Hz
+PASS actual tone.cpp: 1,872 manual tones, bounds, idle/ramp, timer guards, fault stop; worst nominal-clock error 0.011875 Hz
+PASS display: 16x2 content, TX/pending, Cancel, bounded calls, fault/recovery
+PASS actual sketch loop (normal): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (held): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (bypass): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (held-bypass): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (wrap): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (no-lcd): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (standalone): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (write-fault): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (normal): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS display: 16x2 content, TX/pending, Cancel, bounded calls, fault/recovery
+PASS actual sketch loop (normal): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (held): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (bypass): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (held-bypass): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (wrap): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (no-lcd): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (standalone): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release
+PASS actual sketch loop (write-fault): boot/interlock, bounce, PTT/bypass, pending save/latch, EEPROM service, LCD loss/recovery, stalled/absent USB, timer fault, upload release

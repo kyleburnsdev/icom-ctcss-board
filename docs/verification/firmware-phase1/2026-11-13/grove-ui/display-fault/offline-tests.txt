@@ -1,0 +1,12 @@
+test_failed_display_recovery_cannot_pass (__main__.ClampTests.test_failed_display_recovery_cannot_pass) ... ok
+test_ineffective_clamp_rejected_and_released (__main__.ClampTests.test_ineffective_clamp_rejected_and_released) ... ok
+test_lcd_must_actually_go_offline (__main__.ClampTests.test_lcd_must_actually_go_offline) ... ok
+test_relative_mode_rejected_before_drive (__main__.ClampTests.test_relative_mode_rejected_before_drive) ... ok
+test_saved_selection_change_rejected (__main__.ClampTests.test_saved_selection_change_rejected) ... ok
+test_valid_clamp_and_recovery (__main__.ClampTests.test_valid_clamp_and_recovery) ... ok
+test_wrong_meter_lead_level_rejected_before_drive (__main__.ClampTests.test_wrong_meter_lead_level_rejected_before_drive) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.010s
+
+OK

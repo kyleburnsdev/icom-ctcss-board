@@ -38,7 +38,7 @@ void set(bool enabled,uint16_t tenthsHz) {
   if (tenthsHz!=lastTone) {
     // Actual sample clock = nominal * (1 + ppm / 1e6).
     uint64_t denominator=uint64_t(100000)*(1000000L+clockCorrectionPpm);
-    uint32_t increment=(uint64_t(tenthsHz)*4294967296ULL*1000000ULL+denominator/2)/denominator;
+    uint32_t increment=static_cast<uint32_t>((uint64_t(tenthsHz)*4294967296ULL*1000000ULL+denominator/2)/denominator);
     ATOMIC_BLOCK(ATOMIC_RESTORESTATE) { phaseIncrement=increment; }
     lastTone=tenthsHz;
   }

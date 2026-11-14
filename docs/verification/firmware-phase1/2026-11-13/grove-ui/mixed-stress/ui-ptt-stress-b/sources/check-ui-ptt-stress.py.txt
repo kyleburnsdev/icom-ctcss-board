@@ -1,0 +1,168 @@
+"""Bounded Grove UI/PTT campaign: original five fixture drives, CH1=D7 CH2=D8.
+
+Start on the freshly reset home screen (default Presets menu selection), with
+the original encoder-A connection on D4. Radio
+and bench supply disconnected. Changes selection temporarily, restores it.
+Every batch retains one six-second paired acquisition. No new wiring or flash.
+"""
+import argparse
+from datetime import datetime,timezone
+import hashlib
+import json
+from pathlib import Path
+import time
+from bench.serial_device import Device
+from bench.rigol_scope import Scope,ownership
+from bench.ptt_stress_measurement import evaluate
+
+ROOT=Path(__file__).resolve().parents[1]
+PRESETS=(670,693,719,744,770,797,825,854,885,915,948,974,1000,1035,1072,
+         1109,1148,1188,1230,1273,1318,1365,1413,1462,1514,1567,1598,1622,
+         1655,1679,1713,1738,1773,1799,1835,1862,1899,1928,1966,1995,
+         2035,2065,2107,2181,2257,2291,2336,2418,2503,2541)
+
+
+def require(ok,message):
+    if not ok:raise RuntimeError(message)
+
+
+def button(fixture,duration=.12):
+    fixture.command('BUTTON 1');time.sleep(duration)
+    fixture.command('BUTTON 0');time.sleep(.12)
+
+
+def detent(fixture,reverse=False):
+    names=('ENCB','ENCA') if reverse else ('ENCA','ENCB')
+    for name,value in [(names[0],1),(names[1],1),(names[0],0),(names[1],0)]:
+        fixture.command(f'{name} {value}');time.sleep(.005)
+
+
+def run(args,report):
+    fixture=arduino=None
+    try:
+        fixture=Device(args.standin,'fixture',report['transcript'])
+        require('board=NUCLEO-F767ZI' in fixture.command('ID'),'Wrong fixture')
+        fixture.command('STOP');arduino=Device(args.pro,'arduino',report['transcript'])
+        initial=arduino.status();report['initial']=initial
+        require(initial['bench']==1 and initial['lcd']==1 and initial['armed']==1 and
+                not any(initial[k] for k in ('tx','bypass','busy','fault')),'Requires healthy idle Grove bench image')
+        fixture.command('ARM')
+        button(fixture);button(fixture)  # Home -> menu Presets -> preset browser.
+        start_index=min(range(50),key=lambda i:abs(PRESETS[i]-initial['saved']))
+        report['starting_preset_index']=start_index
+        with ownership(),Scope() as scope:
+            before=scope.status();report['scope_before']=before
+            require(not(before['settings'][':TRIG:SWE']=='SING' and before['trigger']!='STOP'),'Preserve armed capture')
+            settings={}
+            for c in (1,2):
+                settings.update({f':CHAN{c}:{k}':v for k,v in [('DISP','1'),('PROB','10'),('SCAL','1'),('OFFS','-2.5'),('COUP','DC'),('BWL','OFF'),('INV','0')]})
+            settings.update({':TIM:SCAL':'0.5',':TIM:OFFS':'0',':ACQ:TYPE':'NORM',
+                ':TRIG:MODE':'EDGE',':TRIG:SWE':'NORM',':TRIG:EDG:SOUR':'CHAN1',':TRIG:EDG:SLOP':'NEG',':TRIG:EDG:LEV':'2'})
+            try:
+                scope.running(True)
+                for k,v in settings.items():scope.write(f'{k} {v}')
+                time.sleep(.4);scope.write(':ACQ:MDEP 600000');time.sleep(.2);scope.write(':TRIG:EDG:LEV 2')
+                require(scope.q(':ACQ:MDEP')=='600000','Depth not accepted')
+                report['scope_configured']=scope.status()
+                require(abs(float(scope.q(':TRIG:EDG:LEV'))-2)<.001,'Trigger level incorrect')
+                for batch in range(args.batches):
+                    folder=args.output/f'batch-{batch+1:02}';folder.mkdir()
+                    bypass=batch%2;fixture.command(f'BYPASS {bypass}')
+                    scope.write(':TRIG:SWE NORM');scope.write(':TRIG:EDG:SLOP NEG');scope.write(':TRIG:EDG:LEV 2')
+                    scope.running(True);scope.write(':SING')
+                    until=time.monotonic()+3.5
+                    while time.monotonic()<until:
+                        fixture.status();time.sleep(.2)
+                    require(scope.q(':TRIG:STAT') in ('WAIT','RUN'),'Premature trigger')
+                    activity=[];stimulus_started=time.monotonic()
+                    for pair in range(8):
+                        expected_saved=arduino.status()['saved']
+                        fixture.command('PTT 1');time.sleep(.012)
+                        keyed=arduino.status()
+                        require(keyed['tx']==1 and keyed['active']==expected_saved,'Keyed tone latch incorrect')
+                        save_busy=None
+                        if pair==0 and (batch+1)%5==0:
+                            target=670 if (batch+1)%10 else 2541
+                            arduino.command(f'SAVE {target}');save_busy=arduino.status()
+                            require(save_busy['busy']==1,'Periodic save not observed active')
+                            # Editing is intentionally gated while storage is busy.
+                            # Keep TX held, but wait for durable completion before
+                            # issuing a detent counted by the final UI oracle.
+                            deadline=time.monotonic()+1
+                            while arduino.status()['busy']:
+                                require(time.monotonic()<deadline,'Periodic save did not complete')
+                                time.sleep(.01)
+                        detent(fixture);time.sleep(.025)
+                        observed=arduino.status()
+                        require(observed['tx']==1 and observed['active']==expected_saved and
+                                observed['lcd']==1 and observed['fault']==0,'UI/save disturbed active TX or display')
+                        fixture.command('PTT 0');time.sleep(.025)
+                        released=arduino.status()
+                        require(released['tx']==0 and released['lcd']==1 and released['fault']==0,'PTT did not release cleanly')
+                        activity.append({'pair':pair+1,'keyed':keyed,'save_busy':save_busy,'during_ui':observed,'released':released})
+                    elapsed=time.monotonic()-stimulus_started
+                    require(elapsed<2.8,'Stimulus exceeded three-second posttrigger budget')
+                    deadline=time.monotonic()+4
+                    while scope.q(':TRIG:STAT')!='STOP':
+                        fixture.status();require(time.monotonic()<deadline,'No completed mixed-activity trigger');time.sleep(.05)
+                    channels=[]
+                    for c in (1,2):
+                        state=fixture.status();require(state['armed']==1 and state['drive']==2*bypass,'Fixture drive/lease changed')
+                        meta=scope.capture(folder/f'ch{c}',channel=c,single=False,max_points=600000)
+                        require(scope.q(':TRIG:STAT')=='STOP','Scope restarted between channel reads')
+                        channels.append(((folder/f'ch{c}/waveform.u8').read_bytes(),meta['preamble']))
+                    measured=evaluate(*channels[0],*channels[1],8)
+                    row={'name':folder.name,'bypass':bypass,'stimulus_host_s':elapsed,'activity':activity,'measurement':measured}
+                    report['batches'].append(row);(folder/'measurement.json').write_text(json.dumps(row,indent=2)+'\n',encoding='utf-8')
+                    print(folder.name,'16 edges, worst ms',round(measured['max_latency_ms'],4),flush=True)
+                fixture.command('BYPASS 0')
+                button(fixture)  # Save the browsed preset as an independent detent-count check.
+                expected=PRESETS[(start_index+8*args.batches)%50]
+                deadline=time.monotonic()+2
+                while arduino.status()['busy']:
+                    require(time.monotonic()<deadline,'Final UI save did not finish');time.sleep(.02)
+                counted=arduino.status();report['detent_count_check']={'expected_saved':expected,'observed':counted}
+                require(counted['saved']==expected,'UI preset does not match commanded detent count')
+                # UI save returns to Presets menu (menu=0). Select Back to home.
+                detent(fixture,reverse=True);button(fixture)
+            finally:
+                fixture.command('STOP');scope.running(True)
+                for k in settings:scope.write(f'{k} {before["settings"][k]}')
+                scope.write(':ACQ:MDEP '+before['settings'][':ACQ:MDEP']);scope.running(before['trigger']!='STOP')
+                after=scope.status();report['scope_after']=after
+                mismatch={k:[before['settings'][k],after['settings'][k]] for k in list(settings)+[':ACQ:MDEP'] if before['settings'][k]!=after['settings'][k]}
+                report['scope_restored']=not mismatch and ((before['trigger']=='STOP')==(after['trigger']=='STOP'))
+                require(report['scope_restored'],f'Scope restoration failed: {mismatch}')
+    finally:
+        try:
+            if fixture:
+                fixture.command('STOP');report['fixture_final']=fixture.status()
+                require(report['fixture_final']['armed']==0 and report['fixture_final']['drive']==0,'Fixture not released')
+            if arduino and 'initial' in report:
+                arduino.save(report['initial']['saved']);time.sleep(.1)
+                report['arduino_final']=arduino.status();state=report['arduino_final']
+                require(state['lcd']==1 and not any(state[k] for k in ('tx','bypass','busy','fault')) and
+                        state['saved']==report['initial']['saved'],'Final state not restored')
+        finally:
+            if fixture:fixture.close()
+            if arduino:arduino.close()
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--pro',required=True);parser.add_argument('--standin',required=True)
+    parser.add_argument('--batches',type=int,default=10)
+    parser.add_argument('--output',type=Path,required=True)
+    args=parser.parse_args()
+    if args.pro==args.standin or not 1<=args.batches<=20:parser.error('Distinct ports and 1..20 batches required')
+    args.output.mkdir(parents=True,exist_ok=False)
+    sources=[Path(__file__),ROOT/'tools/bench/ptt_stress_measurement.py',ROOT/'tools/bench/ptt_measurement.py',ROOT/'tools/bench/rigol_scope.py',ROOT/'tools/bench/serial_device.py']
+    report={'utc':datetime.now(timezone.utc).isoformat(),'passed':False,'batches':[],'transcript':[],
+            'source_sha256':{p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
+            'wiring':'Original five fixture drives; Grove V4; scope CH1 D7 CH2 D8 x10; USB only'}
+    try:run(args,report);report['passed']=True
+    except BaseException as error:report['error']=repr(error);raise
+    finally:(args.output/'result.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+
+
+if __name__=='__main__':main()

@@ -1,0 +1,234 @@
+{
+  "utc": "2026-11-13T14:39:30.603935+00:00",
+  "base_commit": "238bf91fdde500d511e76939bc20782697cf22af",
+  "working_tree": "Uncommitted verification additions; no commit/push or device programming",
+  "scope": "Host verification and AVR rebuilds only; no live DUT tests",
+  "compiler": "MSVC 19.44.35207, /W4 /WX, assertions enabled",
+  "host_tests": "pass",
+  "tone_test": {
+    "settings": 1872,
+    "nominal_carrier_hz": 10000,
+    "samples_per_setting": 20000,
+    "worst_nominal_clock_error_hz": 0.011875,
+    "scope": "Actual tone.cpp with single-threaded fake registers; not AVR timing or measured hardware"
+  },
+  "avr_builds": {
+    "production": {
+      "flash_bytes": 10536,
+      "static_ram_bytes": 764
+    },
+    "bench": {
+      "flash_bytes": 11470,
+      "static_ram_bytes": 829
+    },
+    "production_lcd0x27": {
+      "flash_bytes": 14256,
+      "static_ram_bytes": 1364
+    }
+  },
+  "source_sha256": {
+    "firmware/icom_ctcss/config.h": "6cd8f972ddc775d8f3c2f07cad91910ec404e6cc437a33e2232ad8632157312d",
+    "firmware/icom_ctcss/control.cpp": "cb5a0fd6e0d263065b04e1644b2b607bc7fa6520d4ebf76c6bad5d649d9cdc72",
+    "firmware/icom_ctcss/control.h": "b4224881ff389745df7d596b2ceb1cdc758b3626fa8b57d6340e10307f5137fb",
+    "firmware/icom_ctcss/display.cpp": "683b893167327ec33c82631a6a2dfa5db9ca0c14812c28e7973b76cb5210b834",
+    "firmware/icom_ctcss/display.h": "c7f9859d1f9d6598aa44d49d5066799ee27a722dfa068138681b0d30ace11f82",
+    "firmware/icom_ctcss/icom_ctcss.ino": "042ba25217873ba71e7e88fd8342a025e59ab72a2b9925268cc6561127431c24",
+    "firmware/icom_ctcss/journal.cpp": "54f6c55eee7e5515500e1d4f9c15cbab8de9dbd606148928363af62fdfe45d2a",
+    "firmware/icom_ctcss/journal.h": "8613819d8acbaa8c0fc49084456f2ee64a2c6dd3264701a550d9f763aa9c1608",
+    "firmware/icom_ctcss/sine_table.h": "e8eaf8e3b95c40286d96606f14c737265412f3c2b4550e99a1ba8ff6725ac595",
+    "firmware/icom_ctcss/storage.cpp": "f486608578a03fca293e1d742bb60f27aa196c02f60b26934b191c46e751b669",
+    "firmware/icom_ctcss/storage.h": "4219b879f61ddeea0f473f28facd106b324293d55e01c7dce5f4ef8d9eefcbb7",
+    "firmware/icom_ctcss/tone.cpp": "a5878305d9d10254e38531c2c8c85dc29836e673fd16916e94cca939356d223d",
+    "firmware/icom_ctcss/tone.h": "aef13d59bafe689d88251dad187987fb1a441bc97711e1c528b9996ad845549e",
+    "firmware/tests/capture_test.cpp": "95947b927d16a1364b6abbb31cf3e455be9024ff5cb1be85b763248d1c9153a6",
+    "firmware/tests/control_test.cpp": "3faed951bb17b63c9dc4eada6774db6ccdd03ffe8159874fbe09a878ff9fc8cd",
+    "firmware/tests/display_test.cpp": "bcbfa020c9724f849c0e8cb417f5c41c2294e68f123ec0b3e5b3edead41e6e90",
+    "firmware/tests/tone_test.cpp": "562bb5c2eb84f655b22efff5c60ee33c35ab5c4bdddee6dbac252e890f448101",
+    "firmware/tests/fakes/Arduino.h": "9508e000dc50f1be2c1cd00111659870a0c7d02ceb6a09904a1f1a988ebcdf26",
+    "firmware/tests/fakes/Wire.h": "1bbedbdf253abfbb75b9b05329571f4f1e256b64afbd6b3100fbf3c9c48c0347",
+    "firmware/tests/tone_fakes/Arduino.h": "95c755173da45f2b753f5a27a634bafda99d2e2f1350ff8ef0e3cd9c67a2e076",
+    "firmware/tests/tone_fakes/avr/interrupt.h": "d1801ae2ed6e70bbc954fa7e37471df5dc73bd4ecdbb57942bc90f4a2b1291ae",
+    "firmware/tests/tone_fakes/avr/pgmspace.h": "0d3cd26482d3175c5e5e47033e2b7b54507d7b95f1e3753abf633618ad4a6ad1",
+    "firmware/tests/tone_fakes/util/atomic.h": "1b29b754e8a0ea258f67a1626143d64b9c13f02b3951adfd970cda80c417a955",
+    "tools/test-firmware.ps1": "92eaa0884485d947350fb80e5c02c30775f7a700111d027f079402e4d4750ee4",
+    "tools/build-firmware.ps1": "a1e1d77288b5226e39ad942348569b79f50c4d24246a32d9ee863cee2468da81"
+  },
+  "build_artifact_sha256": {
+    "avr-bench/icom_ctcss.ino.hex": "55d763b768fa7bb3692934231d2d0b7dbc89c74b2937bc4062a96c35d360aeff",
+    "avr-production/icom_ctcss.ino.hex": "ee5c9e0766f9aba36c3cebf9da68e88d6676c860c271de3cf4cda54c976837e1",
+    "avr-production-lcd0x27/icom_ctcss.ino.hex": "b0a13b4391bc1eabd1caabd117a7dbdf94fba12fdf4835ca69a13c3d0389d79b"
+  },
+  "hex_matches_2026_11_02": {
+    "avr-bench/icom_ctcss.ino.hex": true,
+    "avr-production/icom_ctcss.ino.hex": true,
+    "avr-production-lcd0x27/icom_ctcss.ino.hex": true
+  },
+  "evidence_sha256": {
+    "host-tests.txt": "df124a4220fea2aefefcd82c4e7a55ac3913ab293d76ba72e4bef33ac2635867",
+    "usb-results.json": "68b1d3f785b2bfb7f61502041296ce2d4418be9a41cf582735feb8b19a6a1c24",
+    "usb-diagnostics.json": "918e6da2842752a70550be99cf8439b155d9f77c09fe5e15609d0bccba920979",
+    "idle-pwm/result.json": "4d2080a0ef2a51553a1bb089742a8c80df81de6af6ea97991265e8d285cf6851",
+    "idle-pwm/scope.png": "db52ee897a13a54499a6362678814e4c08a427b6bc27dc49411356189bf6d373",
+    "idle-pwm/waveform.png": "8ff5afd65389764002e2897409a5a64d5dc1793b63b7cc5e887166c14ed469fc",
+    "idle-pwm/acquisition-development/attempt-a.json": "1d12d6fc7619c9058eb9154da5b3338b1425f03f653adcf03f757835c6da4df5",
+    "idle-pwm/acquisition-development/attempt-b.json": "b8266721ecc007d2ebb1a5a40e8fe453d6a7f89d779e53df07c5c6915b74cd10",
+    "idle-pwm/acquisition-development/attempt-c.json": "b16997d110a5f9b22d44abed67072ce48a7c1fff227faa025d24a88246f1bdcd",
+    "idle-pwm/acquisition-development/idle-pwm-command-diagnostic.json": "ca25ed068772b598b12be78ca63972710513778085fa9b907728ba026dcc6f6f",
+    "idle-pwm/acquisition-development/idle-pwm-recovery.json": "735ef93eeb25b789976ddcff059b9268f3ba87b6eb4d5c4871621aef84fd75b5",
+    "idle-pwm/capture/before.json": "e210cef8a9b83dfbd21f80642482efd6d1bdd1d4406a37554cd6d070d2db7486",
+    "idle-pwm/capture/capture.json": "897ddd687287c3912b9ed6820ff5b442e92a1f8ebe8b3e2a8e7c6d60cc661f38",
+    "idle-pwm/capture/waveform.u8": "2702553aa646a8a16c6d61800e2481935765235ae39824caa11e71b78e068f5b",
+    "idle-pwm-usb-stress/first-attempt-missing-dependency.json": "e613a0ca3a6409a1902317faa8d65880603663af7b9c352beca30a01edea4148",
+    "idle-pwm-usb-stress/result.json": "8ae25268b7d9609209bbff405ea9089c8104bf4ac3de9bedecdb0fde1ecef389",
+    "idle-pwm-usb-stress/scope.bmp": "dfd221d80e13bcc998879258c1e0190732a41c4af4432669b9a8ad7769d66f82",
+    "idle-pwm-usb-stress/capture/before.json": "e210cef8a9b83dfbd21f80642482efd6d1bdd1d4406a37554cd6d070d2db7486",
+    "idle-pwm-usb-stress/capture/capture.json": "79a778650bdac0305b367976e99e48443fbada76b2d9e62efd4cff91ef37e150",
+    "idle-pwm-usb-stress/capture/waveform.u8": "a079b17c095b47dae605936aa5b0835ca6db73e3a47956e23a8a73755245c334",
+    "README.md": "9281b9e7e7eea20bec0f7dd32f6de599067ce7f52ae419f916b8bfad7a428deb",
+    "grove-ui/README.md": "ee5326a6dc4a954e9bd46a48e14efd999abf952e3bb6589bc63e382caec9b51e",
+    "grove-ui/manifest.json": "6ffff222e13db518983100315edab365b2a0a6d775c5f7ff0a78de921a362486",
+    "grove-ui/production/README.md": "c45b56fc1b0cf3f2f162a5c52135cdf297fb37bc44b9e476470d85aa1ba50d60",
+    "grove-ui/production/manifest.json": "48d05801f195552d888803b324aa8081c301038ec07fa4280cfbb9931bd85d29",
+    "resistor-checks/measurement.json": "91fc7047322084688258a7ddd63daf10611da95c42184b19eae2242ca6c9d6d9",
+    "resistor-checks/README.md": "8ad46f4c4563745c0acf1a31b39dad776300becf6e62e1b9869d4e8a3a81c69d",
+    "resistor-checks/resistor-2.json": "4655f7e11b7ccfd1aa07e1c3c65f5e9666030f3401fe3163e0e12529ac56b110",
+    "resistor-checks/resistor-3.json": "615c3eba107d54ee572ce1f2d522c393d1d3ff843bfe7df3b217e7b9f5c22759",
+    "resistor-checks/resistor-4.json": "959b0bb27c6285c458a3e0526efb7445beccfa6961d2603eb0a9c46b86b20a0a",
+    "resistor-checks/resistor-5.json": "d9976858cbc38a62b22f47c1cd08a8272643f34e697f2cb2276447e77a750046",
+    "resistor-checks/settled-repeat.json": "e08a8f7cce0b249a508bfb3a00c197879aa3a005838716ae4a2374f4da6f3534",
+    "resistor-checks/status.json": "82028e2fee101db2c7e63105b3b0f1f8d41d6656406bf965adefe4a637e679fe"
+  },
+  "device_observation": {
+    "rigol": "Read-only identity/status returned DS1202Z-E firmware 00.06.04",
+    "saleae": "Windows present device, no acquisition",
+    "supply": "Matching USB serial identity only, not opened",
+    "arduino_and_stlink": "No matching serial devices enumerated"
+  },
+  "pending": [
+    "Physical display-bus faults deferred for breadboard space",
+    "Real EC11 and final control wiring",
+    "Broader physical frequency sweep and longer soak",
+    "Controlled power-path/held cold-start/interrupted-save testing",
+    "Loaded carrier, reconstruction filter, audio and radio integration"
+  ],
+  "live_usb": {
+    "report": "usb-results.json",
+    "passed": true,
+    "pro_port": "COM14",
+    "standin_port": "COM5",
+    "standin_identity": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000",
+    "standin_final_command_state": "armed=0 drive=0",
+    "scope": "Arduino saves and watchdog USB recovery only; fixture STOP/status, no stimulus drives or pin measurements",
+    "flashed_image_verification": "Not performed in this session; runtime protocol/config identified, no upload"
+  },
+  "idle_pwm": {
+    "passed": true,
+    "report": "idle-pwm/result.json",
+    "physical_connections": "User confirmed D9 to CH1, ground to Arduino GND, USB power, no other Arduino connections; physical x10 requested in setup",
+    "sample_points": 1200000,
+    "sample_interval_s": 4e-08,
+    "scope_settings_restored": true,
+    "frequency_hz": 9999.757328064841,
+    "duty_percent": [
+      50.04,
+      50.08
+    ],
+    "plateau_v": [
+      0.05121094,
+      4.3529299
+    ],
+    "pending": "Correct supply below rated 16 MHz envelope and repeat affected measurements; PTT/modulated tone remain untested",
+    "failures": "idle-pwm/acquisition-development: a/b error-query timeouts; c depth readback mismatch; all restored settings, d succeeded after settling channel configuration"
+  },
+  "usb_robustness": {
+    "passed": true,
+    "report": "usb-diagnostics.json",
+    "scope": "Malformed-command and traffic/recovery state checks only; no simultaneous electrical measurement"
+  },
+  "bench_tool_sha256_recorded_after_run": {
+    "tools/check-idle-pwm.py": "9789ff1ff91effd284aeb33b58c3120bdc1617f8997fafd4a3b9ab9fa3061162",
+    "tools/usb-diagnostics-test.py": "eb09f0b5425ff3df739dd34a1d06816a527cb00c954d731f29f82b57de4035a4",
+    "tools/bench/rigol_scope.py": "25807cafc840e44bba42a4dac50038f785b67b6e1351165e3673090b7fc0d1c1",
+    "tools/bench/test_idle_pwm.py": "68a5d210e3789d6f7b6cc06bed519ee3face8164b7fe32ff61d67ab65eb965df",
+    "tools/bench/requirements.txt": "05ef8cbafccde86ef6d3e7deffa1ca3ed352c57cba99cf0a85c862d10409e72a"
+  },
+  "supply_finding": {
+    "source": "User multimeter measurement VCC-to-GND",
+    "vcc_v_approx": 4.38,
+    "minimum_vcc_at_16mhz_v": 4.5,
+    "reference": "https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Summary.pdf",
+    "nominal_supply_accepted": false,
+    "disposition": "Conditional tests continue; nominal-supply acceptance remains open",
+    "user_authorization": "Continue as-is at measured 4.38 V, accepting likely rework; do not block conditional testing"
+  },
+  "concurrent_usb_pwm": {
+    "passed": true,
+    "report": "idle-pwm-usb-stress/result.json",
+    "status_replies": 541,
+    "supply": "User-reported approximately 4.38 V; continued testing expressly authorized"
+  },
+  "bench_tool_sha256_current": {
+    "tools/check-idle-pwm.py": "59ebe6823fe0a326c1888e992e23e8581f997dcdf6566d992b4ff96dbcd72d0f",
+    "tools/check-ptt-timing.py": "584a0c631ca87bf35ff7740889c28d25141d51e38f34d6a4d47edcf98a4f72cb",
+    "tools/check-bypass-timing.py": "0dd0968fb368efd1dbbd23be9e0598001b2c09676e18fe919b3a901fd54bb033",
+    "tools/nucleo-tone-test.py": "6a4910409769a98929b6372920a257a6daeb532573f9091b54b4b16bc46c705e",
+    "tools/check-ui-ptt-stress.py": "de29edc0ef34df257024aa71fb7c6b813955612bd42538e19a057b0c7869987f",
+    "tools/exercise-ui-input.py": "470de0cb19cd91c02e8c7fa1bdd2197bc68305e61c033f44caf268ddba501a08"
+  },
+  "sketch_loop_verification": {
+    "passed": true,
+    "manifest": "sketch-loop/manifest.json",
+    "runs_per_compiler": 9,
+    "hardware": "No new hardware checks; devices unavailable at attempt; physical fixture deferred"
+  },
+  "minimal_nucleo_physical": {
+    "passed": true,
+    "manifest": "nucleo-minimal/manifest.json",
+    "application_flash_match_bytes": 11470,
+    "nominal_supply_accepted": false,
+    "electrical_ptt_timing": "pending two-channel probe setup"
+  },
+  "electrical_ptt": {
+    "accepted": true,
+    "manifest": "ptt-electrical/manifest.json",
+    "transition_count": 28,
+    "worst_ms": 5.3622,
+    "watchdog_upper_bounds_ms": [
+      328.58,
+      326.72
+    ],
+    "physical_bypass_latency": "pending D10/D9 probe setup"
+  },
+  "physical_bypass_timing": {
+    "accepted": true,
+    "manifest": "bypass-electrical/manifest.json",
+    "transition_count": 8,
+    "max_settle_ms": 10.1378,
+    "max_onset_ms": 5.4692
+  },
+  "current_installed_firmware": {
+    "configuration": "Grove V4 production",
+    "hex_sha256": "cbdd81b59ab4645b21e01b0dddfd0898f1fc502f9de407f76f385aabcf86deee",
+    "record": "grove-ui/production/README.md",
+    "ptt_max_ms": 5.1478,
+    "production_bypass_midpoint_max_ms": 10.2598,
+    "production_bypass_onset_max_ms": 5.394,
+    "serial_closed_tone_hz": 151.3962879747686,
+    "production_regression": "pass within recorded digital envelope",
+    "final_screen_user_confirmed": true
+  },
+  "initial_pending": [
+    "Fixture qualification and wired tests",
+    "Independent timing/waveform captures",
+    "UI/fault/power/production regressions",
+    "Carrier and radio integration"
+  ],
+  "learning_guide": {
+    "record": "../../../learning/firmware-testing-field-guide-2026-11-13.pdf",
+    "sha256": "78825ea33833a448eea896ea6f557f96aa034c7cb348ab72a4362f8d97526dcf",
+    "pages": 55,
+    "distinct_screen_images": 38,
+    "retained_screen_files": 41,
+    "scope": "Documentation from retained evidence; no additional live tests."
+  }
+}

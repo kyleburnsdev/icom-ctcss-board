@@ -1,0 +1,195 @@
+"""Minimal F767ZI-driven PTT/bypass and scope campaign; see tools/bench/README.md.
+
+Requires the two open-drain drive lines, series resistors, pull-ups and common
+ground; D9 -> Rigol CH1 x10. No output sense dividers are required for this mode.
+USB command state is not independent proof of D8/LED levels or latency.
+"""
+import argparse
+from datetime import datetime, timezone
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+import time
+
+import serial
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class Device:
+    def __init__(self, port, transcript):
+        self.port, self.transcript = port, transcript
+        self.connection = serial.Serial(port,115200,timeout=.1,write_timeout=1)
+        time.sleep(.2)
+        self.connection.reset_input_buffer()
+
+    def command(self, command):
+        self.connection.write((command+'\n').encode('ascii'))
+        until, raw = time.monotonic()+2, bytearray()
+        while not raw.endswith(b'\n'):
+            if time.monotonic() > until:
+                raise TimeoutError(f'{self.port}: incomplete {command} reply {raw!r}')
+            raw.extend(self.connection.read(1))
+        reply = raw.decode('ascii').strip()
+        self.transcript.append({'port':self.port,'command':command,'reply':reply,
+                                'monotonic_s':time.monotonic()})
+        if reply.startswith('ERR'):
+            raise RuntimeError(f'{self.port}: {reply}')
+        return reply
+
+    def status(self):
+        reply=self.command('STATUS')
+        expected='CTCSS1 ' if self.port_kind=='arduino' else 'STATUS '
+        require(reply.startswith(expected),f'Wrong status identity: {reply}')
+        return {k:int(v) for word in reply.split() if '=' in word for k,v in [word.split('=',1)]}
+
+    def save(self, tone):
+        require(self.command(f'SAVE {tone}').startswith('OK'),'Save not queued')
+        until=time.monotonic()+2
+        while time.monotonic()<until:
+            state=self.status()
+            if not state['busy']:
+                require(state['saved']==tone,f'Save not durable: {state}')
+                return
+            time.sleep(.02)
+        raise TimeoutError('Durable save timeout')
+
+    def close(self):
+        self.connection.close()
+
+
+def require(condition, message):
+    if not condition:
+        raise RuntimeError(message)
+
+
+def run(args, report):
+    pro=fixture=None
+    original=None
+    try:
+        fixture=Device(args.standin,report['transcript']); fixture.port_kind='fixture'
+        require(fixture.command('ID').startswith('STANDIN1 phase=1 board=NUCLEO-F767ZI '),
+                'Wrong fixture identity')
+        fixture.command('STOP')
+        pro=Device(args.pro,report['transcript']); pro.port_kind='arduino'
+        initial=pro.status(); report['initial']=initial
+        require(initial['bench']==1 and initial['armed']==1 and initial['tx']==0 and
+                initial['fault']==0 and initial['busy']==0,'Requires idle, armed, healthy bench Arduino')
+        original=initial['saved']
+        fixture.command('ARM')
+
+        def state(tx,bypass,active):
+            observed=pro.status()
+            require((observed['tx'],observed['bypass'],observed['active'],observed['fault'])==
+                    (tx,bypass,active,0),f'Unexpected Arduino command state: {observed}')
+            return observed
+
+        def drive(command):
+            fixture.command(command); time.sleep(.05)
+
+        def capture(name,tone,expected_drive):
+            directory=args.output/name
+            command=[sys.executable,str(ROOT/'tools/check-idle-pwm.py'),'--output',str(directory)]
+            if tone is not None:
+                command+=['--tone-hz',str(tone/10)]
+            with (args.output/f'{name}.log').open('w',encoding='utf-8') as log:
+                child=subprocess.Popen(command,stdout=log,stderr=subprocess.STDOUT,
+                                       creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
+                until=time.monotonic()+90
+                try:
+                    while child.poll() is None:
+                        # Exclusive fixture port ownership; refresh its five-second
+                        # drive lease throughout scope setup, acquisition and transfer.
+                        observed=fixture.status()
+                        require(observed['armed']==1 and observed['drive']==expected_drive,
+                                f'Fixture drive lost during capture: {observed}')
+                        if time.monotonic()>until:
+                            raise TimeoutError('Scope subprocess exceeded 90-second budget')
+                        time.sleep(.25)
+                finally:
+                    if child.poll() is None:
+                        child.terminate(); child.wait(timeout=5)
+                        report['scope_interrupted']=True
+            require(child.returncode==0,f'{name}: scope capture failed; inspect retained log/report')
+            result=json.loads((directory/'result.json').read_text())
+            require(result['passed'] and result['settings_restored'],'Scope result not accepted')
+            report['checks'].append({'name':name,'measurement':result['measurement']})
+            print(name,result['measurement'],flush=True)
+
+        if args.tones:
+            for tone in args.tones:
+                pro.save(tone)
+                drive('PTT 1'); state(1,0,tone)
+                capture(f'tone-{tone}',tone,1)
+                drive('PTT 0'); state(0,0,tone)
+            return
+
+        pro.save(1514)
+        drive('PTT 1'); state(1,0,1514)
+        capture('tone-1514',1514,1)
+        drive('BYPASS 1'); state(1,1,1514)
+        capture('bypass-idle',None,3)
+        pro.save(1000); state(1,1,1514)
+        drive('BYPASS 0'); state(1,0,1514)
+        capture('resumed-latched-1514',1514,1)
+        drive('PTT 0'); state(0,0,1000)
+        drive('PTT 1'); state(1,0,1000)
+        capture('next-transmission-1000',1000,1)
+        drive('PTT 0'); state(0,0,1000)
+    finally:
+        errors=[]
+        if fixture is not None:
+            try:
+                fixture.command('STOP')
+                report['fixture_final']=fixture.status()
+                require(report['fixture_final']['armed']==0 and report['fixture_final']['drive']==0,
+                        'Fixture cleanup not released')
+            except BaseException as error:
+                errors.append(f'Fixture STOP/readback: {error!r}')
+            finally:
+                fixture.close()
+        if pro is not None:
+            try:
+                time.sleep(.05)
+                if original is not None:
+                    pro.save(original)
+                report['arduino_final']=pro.status()
+                require(report['arduino_final']['tx']==0,'Arduino still commands PTT after cleanup')
+            except BaseException as error:
+                errors.append(f'Arduino restore/readback: {error!r}')
+            finally:
+                pro.close()
+        if errors:
+            report['cleanup_errors']=errors
+            raise RuntimeError('; '.join(errors))
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--pro',required=True)
+    parser.add_argument('--standin',required=True)
+    parser.add_argument('--output',required=True,type=Path)
+    parser.add_argument('--tones',type=int,nargs='+',help='Instead of latch sequence, measure these tones in tenths of Hz (670..2541)')
+    args=parser.parse_args()
+    if args.tones and (any(not 670<=tone<=2541 for tone in args.tones) or len(set(args.tones))!=len(args.tones)):
+        parser.error('--tones must be distinct values from 670 through 2541')
+    require(args.pro!=args.standin,'Arduino and fixture ports must differ')
+    args.output.mkdir(parents=True,exist_ok=False)
+    sources=[Path(__file__)]+list((ROOT/'tools/bench').glob('*.py'))+[ROOT/'tools/check-idle-pwm.py']
+    report={'utc':datetime.now(timezone.utc).isoformat(),'passed':False,'checks':[], 'transcript':[],
+            'scope':'Minimal-drive fixture: scope-measured PWM plus USB state; no independent D8/LED or latency observation',
+            'source_sha256':{p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sources}}
+    try:
+        run(args,report)
+        report['passed']=True
+    except BaseException as error:
+        report['error']=repr(error)
+        raise
+    finally:
+        (args.output/'result.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+
+
+if __name__=='__main__':
+    main()

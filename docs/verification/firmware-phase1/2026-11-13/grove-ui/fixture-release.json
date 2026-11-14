@@ -1,0 +1,17 @@
+[
+  {
+    "port": "COM5",
+    "command": "ID",
+    "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000"
+  },
+  {
+    "port": "COM5",
+    "command": "STOP",
+    "reply": "OK stopped"
+  },
+  {
+    "port": "COM5",
+    "command": "STATUS",
+    "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=127 errors=0 bouncing=0 bounce_late_us=0"
+  }
+]

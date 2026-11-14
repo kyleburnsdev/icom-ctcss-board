@@ -1,28 +1,45 @@
 #pragma once
 #include <stdint.h>
 #include <string.h>
+#include <assert.h>
+#include "config.h"
 // Host-only transaction model, not an electrical bus simulator.
 struct FakeWire {
   bool fail=false, timedOut=false;
   uint32_t calls=0, timeout=0;
   uint8_t bytes[8]={}, length=0, address=0;
+  uint8_t target=0, rgb[9]={};
+  bool failBacklight=false;
   char ddram[128]={};
   void begin() { memset(ddram,' ',sizeof ddram); }
   void setClock(uint32_t) {}
   void setWireTimeout(uint32_t value,bool) { timeout=value; }
   void clearWireTimeoutFlag() { timedOut=false; }
   bool getWireTimeoutFlag() { return timedOut; }
-  void beginTransmission(uint8_t) { length=0; }
+  void beginTransmission(uint8_t value) { length=0; target=value; }
   void write(uint8_t value) { bytes[length++]=value; }
   uint8_t endTransmission() {
     ++calls;
     if (fail) { timedOut=true; return 4; }
+#if CTCSS_LCD_GROVE_V4
+    assert(length==2);
+    if (target==0x62) {
+      if (failBacklight) return 2;
+      assert(bytes[0]<sizeof rgb); rgb[bytes[0]]=bytes[1]; return 0;
+    }
+    assert(target==0x3e && (bytes[0]==0x40 || bytes[0]==0x80));
+    uint8_t value=bytes[1];
+    if (bytes[0]==0x40) { ddram[address]=char(value); address=(address+1)&127; }
+    else if (value&0x80) address=value&127;
+    else if (value==1) { memset(ddram,' ',sizeof ddram); address=0; }
+#else
     if (length==6) {
       uint8_t value=(bytes[0]&0xf0)|(bytes[3]>>4);
       if (bytes[0]&1) { ddram[address]=char(value); address=(address+1)&127; }
       else if (value&0x80) address=value&127;
       else if (value==1) { memset(ddram,' ',sizeof ddram); address=0; }
     }
+#endif
     return 0;
   }
 };

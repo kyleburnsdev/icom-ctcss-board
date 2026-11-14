@@ -1,0 +1,134 @@
+{
+  "utc": "2026-11-13T17:45:18.113470+00:00",
+  "scope": "Minimal fixture input/control-state qualification; no independent output level or latency measurement",
+  "passed": true,
+  "transcript": [
+    {
+      "port": "COM5",
+      "command": "ID",
+      "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000",
+      "monotonic_s": 79213.343
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped",
+      "monotonic_s": 79213.343
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=876 reset=0",
+      "monotonic_s": 79213.546
+    },
+    {
+      "port": "COM5",
+      "command": "ARM",
+      "reply": "OK armed lease_ms=5000",
+      "monotonic_s": 79213.562
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 1",
+      "reply": "OK drive",
+      "monotonic_s": 79213.562
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=1996 reset=0",
+      "monotonic_s": 79213.609
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 0",
+      "reply": "OK drive",
+      "monotonic_s": 79213.609
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2080 reset=0",
+      "monotonic_s": 79213.671
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 1",
+      "reply": "OK drive",
+      "monotonic_s": 79213.671
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=1 armed=1 lcd=0 busy=0 fault=0 loop_us=2080 reset=0",
+      "monotonic_s": 79213.718
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 0",
+      "reply": "OK drive",
+      "monotonic_s": 79213.734
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2080 reset=0",
+      "monotonic_s": 79213.781
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped",
+      "monotonic_s": 79213.781
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=207 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 79213.796
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2080 reset=0",
+      "monotonic_s": 79213.859
+    }
+  ],
+  "initial": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 876,
+    "reset": 0
+  },
+  "fixture_final": {
+    "armed": 0,
+    "drive": 0,
+    "sense": 6,
+    "latency_valid": 0,
+    "latency_us": 0,
+    "poll_us": 207,
+    "errors": 0,
+    "bouncing": 0,
+    "bounce_late_us": 0
+  },
+  "arduino_final": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2080,
+    "reset": 0
+  }
+}

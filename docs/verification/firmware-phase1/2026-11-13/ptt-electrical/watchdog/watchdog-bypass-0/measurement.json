@@ -1,0 +1,47 @@
+{
+  "name": "watchdog-bypass-0",
+  "bypass": 0,
+  "measurement": {
+    "passed": true,
+    "release_upper_bound_ms": 328.5800000000001,
+    "marker_last_fall_s": -0.32863,
+    "output_fall_s": -4.999999999988347e-05,
+    "marker_pulse_widths_ms": [
+      0.9999999999998899,
+      0.9999999999998899,
+      0.9999999999998899,
+      0.9999999999998899
+    ],
+    "no_output_rekey_in_record": true,
+    "held_after_release_observed_s": 3.0000400000000003,
+    "sample_interval_s": 1e-05,
+    "scope": "Physical pre-HANG marker to D8 LOW is a conservative upper bound, not an exact HANG timestamp"
+  },
+  "status_before_hang": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 1,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2180,
+    "reset": 0
+  },
+  "status_held_after_reset": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 0,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 1476,
+    "reset": 0
+  },
+  "host_usb_recovery_s": 0.8589999999967404
+}

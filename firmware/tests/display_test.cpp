@@ -1,4 +1,5 @@
 #include "display.h"
+#include "config.h"
 #include "Wire.h"
 #include <assert.h>
 #include <stdio.h>
@@ -28,5 +29,13 @@ int main() {
   Wire.fail=true; ui.digit=1; run(200); assert(!Display::available());
   assert(control.transmitting && control.activeTone()==1514 && control.saved==1000);
   Wire.fail=false; ui.unavailable(); run(1300); assert(Display::available()); row(0,"TX 151.4 Hz");
+#if CTCSS_LCD_GROVE_V4
+  assert(Wire.rgb[0]==0 && Wire.rgb[1]==0 && Wire.rgb[8]==0xaa);
+  assert(Wire.rgb[2]==64 && Wire.rgb[3]==64 && Wire.rgb[4]==64);
+  Wire.fail=true; ui.screen=Ctcss::Screen::Menu; run(200); assert(!Display::available());
+  Wire.fail=false; Wire.failBacklight=true; run(1300); assert(!Display::available());
+  Wire.failBacklight=false; ui.unavailable(); run(1500); assert(Display::available());
+  row(0,"TX 151.4 Hz");
+#endif
   puts("PASS display: 16x2 content, TX/pending, Cancel, bounded calls, fault/recovery");
 }

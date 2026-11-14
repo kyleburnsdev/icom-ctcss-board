@@ -1,0 +1,40 @@
+{
+  "identity": {
+    "manufacturer": "RIGOL TECHNOLOGIES",
+    "model": "DS1202Z-E",
+    "firmware": "00.06.04"
+  },
+  "trigger": "STOP",
+  "samplerate_hz": 5000000.0,
+  "settings": {
+    ":TIM:SCAL": "1.0000000e-02",
+    ":TIM:OFFS": "0.0000000e+00",
+    ":ACQ:MDEP": "600000",
+    ":ACQ:TYPE": "NORM",
+    ":TRIG:MODE": "EDGE",
+    ":TRIG:SWE": "SING",
+    ":TRIG:EDG:SOUR": "CHAN1",
+    ":TRIG:EDG:SLOP": "NEG",
+    ":TRIG:EDG:LEV": "2.000000e+00",
+    ":WAV:SOUR": "CHAN1",
+    ":WAV:MODE": "NORM",
+    ":WAV:FORM": "BYTE",
+    ":WAV:STAR": "1",
+    ":WAV:STOP": "1200",
+    ":SYST:LOCK": "0",
+    ":CHAN1:DISP": "1",
+    ":CHAN1:SCAL": "1.000000e+00",
+    ":CHAN1:OFFS": "-2.500000e+00",
+    ":CHAN1:PROB": "1.000000e+01",
+    ":CHAN1:COUP": "DC",
+    ":CHAN1:BWL": "OFF",
+    ":CHAN1:INV": "0",
+    ":CHAN2:DISP": "1",
+    ":CHAN2:SCAL": "1.000000e+00",
+    ":CHAN2:OFFS": "-2.500000e+00",
+    ":CHAN2:PROB": "1.000000e+01",
+    ":CHAN2:COUP": "DC",
+    ":CHAN2:BWL": "OFF",
+    ":CHAN2:INV": "0"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "queries": [
+    {
+      "command": "FUNC1?",
+      "raw": "\"RES\"",
+      "raw_hex": "22524553220a"
+    },
+    {
+      "command": "CALC:FUNC?",
+      "raw": "NONe",
+      "raw_hex": "4e4f4e650a"
+    },
+    {
+      "command": "RANGE?",
+      "raw": "10 kΩ",
+      "raw_hex": "3130206bcea90a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001582E+04",
+      "raw_hex": "2b312e303031353832452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001636E+04",
+      "raw_hex": "2b312e303031363336452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001591E+04",
+      "raw_hex": "2b312e303031353931452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001658E+04",
+      "raw_hex": "2b312e303031363538452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001603E+04",
+      "raw_hex": "2b312e303031363033452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001653E+04",
+      "raw_hex": "2b312e303031363533452b30340a"
+    },
+    {
+      "command": "FUNC1?",
+      "raw": "\"VOLT\"",
+      "raw_hex": "22564f4c54220a"
+    },
+    {
+      "command": "AUTO?",
+      "raw": "1",
+      "raw_hex": "310a"
+    },
+    {
+      "command": "CALC:FUNC?",
+      "raw": "NONe",
+      "raw_hex": "4e4f4e650a"
+    }
+  ],
+  "scope": "Repeat after longer mode settling; initial zeroes in prior report retained as transients",
+  "range": "10 kΩ",
+  "readings_ohm": [
+    10015.82,
+    10016.36,
+    10015.91,
+    10016.58,
+    10016.03,
+    10016.53
+  ],
+  "summary_ohm": {
+    "mean": 10016.205,
+    "min": 10015.82,
+    "max": 10016.58
+  },
+  "after": {
+    "function": "\"VOLT\"",
+    "auto": "1",
+    "math": "NONe"
+  }
+}

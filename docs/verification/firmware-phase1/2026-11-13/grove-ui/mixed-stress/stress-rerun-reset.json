@@ -1,0 +1,22 @@
+[
+  {
+    "port": "COM5",
+    "command": "STOP",
+    "reply": "OK stopped"
+  },
+  {
+    "port": "COM5",
+    "command": "STATUS",
+    "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=208 errors=0 bouncing=0 bounce_late_us=0"
+  },
+  {
+    "port": "COM14",
+    "command": "STATUS",
+    "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=3016 reset=0"
+  },
+  {
+    "port": "COM14",
+    "command": "STATUS",
+    "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=1000 reset=0"
+  }
+]

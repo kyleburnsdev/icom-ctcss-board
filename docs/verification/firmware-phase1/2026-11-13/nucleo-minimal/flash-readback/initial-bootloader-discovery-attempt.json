@@ -1,0 +1,6 @@
+{
+  "utc": "2026-11-13T17:51:31.724531+00:00",
+  "operation": "Read-only application flash verification via existing Caterina; no firmware/fuse/bootloader write",
+  "fixture_state": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+  "application_after": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=1476 reset=0"
+}

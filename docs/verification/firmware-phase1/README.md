@@ -1,5 +1,9 @@
 # Firmware verification — 2026-11-02
 
+**Newer offline checks:** [November 13 verification restart](2026-11-13/README.md)
+adds exhaustive control/waveform coverage and current AVR rebuilds. The live
+results below remain the November 2 USB session.
+
 **Implemented, built and USB-tested; wired phase-one acceptance is pending.**
 The user connected both boards for programming/USB tests and chose to wire
 the fixture later. No inter-board signal wires, reconstructed audio, radio,

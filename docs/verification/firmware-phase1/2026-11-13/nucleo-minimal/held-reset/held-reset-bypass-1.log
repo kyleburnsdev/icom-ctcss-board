@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": {
+    "carrier_within_selected_1_percent": true,
+    "every_period_98_to_102_us": true,
+    "every_duty_48_to_52_percent": true,
+    "low_level_minus_0_3_to_0_5_v": true,
+    "high_level_4_to_5_5_v": true,
+    "not_adc_clipped": true
+  },
+  "frequency_hz": 9999.757328064841,
+  "complete_periods": 478,
+  "period_min_us": 100.0,
+  "period_max_us": 100.03999999999999,
+  "duty_min_percent": 50.03999999999999,
+  "duty_max_percent": 50.080000000000005,
+  "low_plateau_v": 0.05121094,
+  "high_plateau_v": 4.3529299,
+  "sample_interval_s": 4e-08,
+  "scope": "Idle PWM only; selected coarse limits, not tone accuracy or calibrated jitter"
+}

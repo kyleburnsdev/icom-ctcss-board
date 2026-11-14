@@ -1,0 +1,153 @@
+{
+  "utc": "2026-11-13T14:40:40.701283+00:00",
+  "mode": "usb",
+  "ports": {
+    "pro": "COM14",
+    "standin": null
+  },
+  "checks": [
+    {
+      "name": "initial",
+      "data": {
+        "bench": 1,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 0,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 0,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 1988,
+        "reset": 0
+      }
+    },
+    {
+      "name": "usb_save_670",
+      "data": {
+        "bench": 1,
+        "saved": 670,
+        "active": 670,
+        "tx": 0,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 0,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2060,
+        "reset": 0
+      }
+    },
+    {
+      "name": "usb_save_1514",
+      "data": {
+        "bench": 1,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 0,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 0,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2060,
+        "reset": 0
+      }
+    },
+    {
+      "name": "usb_save_2541",
+      "data": {
+        "bench": 1,
+        "saved": 2541,
+        "active": 2541,
+        "tx": 0,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 0,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2064,
+        "reset": 0
+      }
+    },
+    {
+      "name": "usb_save_1000",
+      "data": {
+        "bench": 1,
+        "saved": 1000,
+        "active": 1000,
+        "tx": 0,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 0,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2064,
+        "reset": 0
+      }
+    },
+    {
+      "name": "usb_watchdog_persistence",
+      "data": {
+        "status": {
+          "bench": 1,
+          "saved": 1000,
+          "active": 1000,
+          "tx": 0,
+          "bypass": 0,
+          "armed": 1,
+          "lcd": 0,
+          "busy": 0,
+          "fault": 0,
+          "loop_us": 888,
+          "reset": 0
+        },
+        "host_reconnect_s": 0.9210000000020955,
+        "note": "USB reconnect time is NOT electrical PTT release latency"
+      }
+    },
+    {
+      "name": "restored_original_tone",
+      "data": 1514
+    }
+  ],
+  "source_sha256": {
+    "firmware\\icom_ctcss\\config.h": "6cd8f972ddc775d8f3c2f07cad91910ec404e6cc437a33e2232ad8632157312d",
+    "firmware\\icom_ctcss\\control.cpp": "cb5a0fd6e0d263065b04e1644b2b607bc7fa6520d4ebf76c6bad5d649d9cdc72",
+    "firmware\\icom_ctcss\\control.h": "b4224881ff389745df7d596b2ceb1cdc758b3626fa8b57d6340e10307f5137fb",
+    "firmware\\icom_ctcss\\display.cpp": "683b893167327ec33c82631a6a2dfa5db9ca0c14812c28e7973b76cb5210b834",
+    "firmware\\icom_ctcss\\display.h": "c7f9859d1f9d6598aa44d49d5066799ee27a722dfa068138681b0d30ace11f82",
+    "firmware\\icom_ctcss\\icom_ctcss.ino": "042ba25217873ba71e7e88fd8342a025e59ab72a2b9925268cc6561127431c24",
+    "firmware\\icom_ctcss\\journal.cpp": "54f6c55eee7e5515500e1d4f9c15cbab8de9dbd606148928363af62fdfe45d2a",
+    "firmware\\icom_ctcss\\journal.h": "8613819d8acbaa8c0fc49084456f2ee64a2c6dd3264701a550d9f763aa9c1608",
+    "firmware\\icom_ctcss\\sine_table.h": "e8eaf8e3b95c40286d96606f14c737265412f3c2b4550e99a1ba8ff6725ac595",
+    "firmware\\icom_ctcss\\storage.cpp": "f486608578a03fca293e1d742bb60f27aa196c02f60b26934b191c46e751b669",
+    "firmware\\icom_ctcss\\storage.h": "4219b879f61ddeea0f473f28facd106b324293d55e01c7dce5f4ef8d9eefcbb7",
+    "firmware\\icom_ctcss\\tone.cpp": "a5878305d9d10254e38531c2c8c85dc29836e673fd16916e94cca939356d223d",
+    "firmware\\icom_ctcss\\tone.h": "aef13d59bafe689d88251dad187987fb1a441bc97711e1c528b9996ad845549e",
+    "tools\\phase1-test.py": "349e71355b6112ac55d47f94dace53ef10594a54fa4fc27c85e64265f559a5fe",
+    "firmware\\radio_standin\\Core\\Inc\\gpio.h": "e2d62f964a0b7f238384ed6a20a181d09df9647240a268dc547acf5b35099f74",
+    "firmware\\radio_standin\\Core\\Inc\\iwdg.h": "b012c075d782caee63b0d43a4110f20c88399c547cfd6421bd0d3dba71519856",
+    "firmware\\radio_standin\\Core\\Inc\\main.h": "1d2bd5f251942c17e1ea788d1b29c0e71bf1f018bb21fa8e43c95fe7a3032ae8",
+    "firmware\\radio_standin\\Core\\Inc\\pwm_capture.h": "fbec1e3025a371d862544692b4a28989f2fba995f02e7246697bd3a23ee16c4d",
+    "firmware\\radio_standin\\Core\\Inc\\standin.h": "611eba57e33ad3b730c357cba1637c81c8d78c788a95412cf9c433810c343c77",
+    "firmware\\radio_standin\\Core\\Inc\\stm32f7xx_hal_conf.h": "b9fafbf5f13a6fbe1e80641e471e8ac54709603f1fe3d47a4357ae760b20a4e7",
+    "firmware\\radio_standin\\Core\\Inc\\stm32f7xx_it.h": "7f9747155cc3de3665f374d8752ce6d04e70e9a4b16e108b546d03ca884bd249",
+    "firmware\\radio_standin\\Core\\Inc\\tim.h": "f1029af1571f326cdcb25fa8b7605171d54085a8947c09e5621bbf3e24d3a9f7",
+    "firmware\\radio_standin\\Core\\Inc\\usart.h": "8167e4e06c52c66878f9effd3e551251c0f1393284a111f4ab2f73b491657f60",
+    "firmware\\radio_standin\\Core\\Src\\gpio.c": "8d8d3a8fef769316590c2b557067bab2e3dafb06bb970de563998bf1acee39d0",
+    "firmware\\radio_standin\\Core\\Src\\iwdg.c": "56225f42732c3ddede677e0220e76dcea7b9be11e383cee48120a9a3f6ca59e9",
+    "firmware\\radio_standin\\Core\\Src\\main.c": "9867235fd7beb6428e9e85e0e1767bdd6c820102db64f9f69e663b63a38a8643",
+    "firmware\\radio_standin\\Core\\Src\\pwm_capture.c": "5f901c15663b92f0d44e4caccbfab071bfb693929aa90651d157b6a82fe7132b",
+    "firmware\\radio_standin\\Core\\Src\\standin.c": "b5dc85f1d99e8f64eb5bde9a9bad67b4834453628b8f4997d210f341d6b8c6d3",
+    "firmware\\radio_standin\\Core\\Src\\stm32f7xx_hal_msp.c": "8d1306809443710c54c4824e838ba03b98476e930f13e38fb3322bfac33bde8a",
+    "firmware\\radio_standin\\Core\\Src\\stm32f7xx_it.c": "6f5f888df3cbe45c1fac2188359870575aad4f3300369bbe25a32edc9afb1607",
+    "firmware\\radio_standin\\Core\\Src\\syscalls.c": "03c06c72eafb44b499814cf9234aba57dd830f345d9b8779b5d7090e78517600",
+    "firmware\\radio_standin\\Core\\Src\\sysmem.c": "ad20f7b1fa1e7c73330727747222cf2ffa3245ebf035230ee9a157545e79df95",
+    "firmware\\radio_standin\\Core\\Src\\system_stm32f7xx.c": "56708ddf7ed692355e8a82262af956063949220e3638f515d6884c6f2ae8ece1",
+    "firmware\\radio_standin\\Core\\Src\\tim.c": "5f65974e1cabe9dd94f13980ab3b0d92526e1b1f22634aa94f3293a9ecaade1b",
+    "firmware\\radio_standin\\Core\\Src\\usart.c": "54ce5d53fad4ab20195e908d070b80de4d8049e8399c4cbb9556872d814c044e",
+    "firmware\\radio_standin\\radio_standin.ioc": "9b901b5459b860cfecb9bbb56a13440101b9b863a47eb64d96b7e6fe858e86fa"
+  },
+  "passed": true
+}

@@ -1,0 +1,79 @@
+{
+  "utc": "2026-11-13T15:47:10.300880+00:00",
+  "scope": "Offline actual-sketch integration; no new live PTT/bypass test, flash or wiring change",
+  "passed": true,
+  "compilers": [
+    "MSVC 19.44.35207",
+    "Clang 19.1.5 x86_64-pc-windows-msvc"
+  ],
+  "host_language": "C++14 (AVR settings unchanged)",
+  "sketch_runs_per_compiler": 9,
+  "scenarios": [
+    "normal",
+    "held",
+    "bypass",
+    "held-bypass",
+    "wrap",
+    "no-lcd",
+    "standalone",
+    "write-fault",
+    "display-disabled build normal"
+  ],
+  "simulation": {
+    "step_us": 100,
+    "eeprom_byte_completion_us": 3400,
+    "GPIO_USB_Wire_EEPROM": "host models; actual setup/loop/control/tone/storage/display sources",
+    "waveform_assertions": "Actual ISR OCR1A samples verify idle midpoint, amplitude and nominal 151.4/100.0 Hz through pending-save/resumption/new-transmission sequence",
+    "limitations": [
+      "Not AVR instruction or interrupt timing",
+      "Not electrical pin levels/latency",
+      "Not real watchdog reset or bootloader",
+      "Not electrical EEPROM write/power-cut qualification",
+      "Not actual LCD hardware"
+    ]
+  },
+  "source_sha256": {
+    "firmware/icom_ctcss/config.h": "6cd8f972ddc775d8f3c2f07cad91910ec404e6cc437a33e2232ad8632157312d",
+    "firmware/icom_ctcss/control.cpp": "cb5a0fd6e0d263065b04e1644b2b607bc7fa6520d4ebf76c6bad5d649d9cdc72",
+    "firmware/icom_ctcss/control.h": "b4224881ff389745df7d596b2ceb1cdc758b3626fa8b57d6340e10307f5137fb",
+    "firmware/icom_ctcss/display.cpp": "683b893167327ec33c82631a6a2dfa5db9ca0c14812c28e7973b76cb5210b834",
+    "firmware/icom_ctcss/display.h": "c7f9859d1f9d6598aa44d49d5066799ee27a722dfa068138681b0d30ace11f82",
+    "firmware/icom_ctcss/icom_ctcss.ino": "042ba25217873ba71e7e88fd8342a025e59ab72a2b9925268cc6561127431c24",
+    "firmware/icom_ctcss/journal.cpp": "54f6c55eee7e5515500e1d4f9c15cbab8de9dbd606148928363af62fdfe45d2a",
+    "firmware/icom_ctcss/journal.h": "8613819d8acbaa8c0fc49084456f2ee64a2c6dd3264701a550d9f763aa9c1608",
+    "firmware/icom_ctcss/sine_table.h": "e8eaf8e3b95c40286d96606f14c737265412f3c2b4550e99a1ba8ff6725ac595",
+    "firmware/icom_ctcss/storage.cpp": "f486608578a03fca293e1d742bb60f27aa196c02f60b26934b191c46e751b669",
+    "firmware/icom_ctcss/storage.h": "4219b879f61ddeea0f473f28facd106b324293d55e01c7dce5f4ef8d9eefcbb7",
+    "firmware/icom_ctcss/tone.cpp": "a5878305d9d10254e38531c2c8c85dc29836e673fd16916e94cca939356d223d",
+    "firmware/icom_ctcss/tone.h": "aef13d59bafe689d88251dad187987fb1a441bc97711e1c528b9996ad845549e",
+    "firmware/tests/capture_test.cpp": "95947b927d16a1364b6abbb31cf3e455be9024ff5cb1be85b763248d1c9153a6",
+    "firmware/tests/control_test.cpp": "3faed951bb17b63c9dc4eada6774db6ccdd03ffe8159874fbe09a878ff9fc8cd",
+    "firmware/tests/display_test.cpp": "bcbfa020c9724f849c0e8cb417f5c41c2294e68f123ec0b3e5b3edead41e6e90",
+    "firmware/tests/sketch_test.cpp": "7693dfebcf37a61ed02dfe4523a670e8a3312bdaa6f3d66d3ccdaa1719cb211b",
+    "firmware/tests/tone_test.cpp": "562bb5c2eb84f655b22efff5c60ee33c35ab5c4bdddee6dbac252e890f448101",
+    "firmware/tests/fakes/Arduino.h": "9508e000dc50f1be2c1cd00111659870a0c7d02ceb6a09904a1f1a988ebcdf26",
+    "firmware/tests/fakes/Wire.h": "1bbedbdf253abfbb75b9b05329571f4f1e256b64afbd6b3100fbf3c9c48c0347",
+    "firmware/tests/sketch_fakes/Arduino.h": "ff4e5da5b9e70338c34edc453e767578c20545a7b16ba4ced157714787f9bd6d",
+    "firmware/tests/tone_fakes/Arduino.h": "95c755173da45f2b753f5a27a634bafda99d2e2f1350ff8ef0e3cd9c67a2e076",
+    "firmware/tests/sketch_fakes/avr/eeprom.h": "ac56f2f93e6a677e3bd60552075f283c6516e856d0c3a64b00b04384e4bc6647",
+    "firmware/tests/sketch_fakes/avr/io.h": "32352e957b5bb4ee262fb52a5fc39f91263ed29e0979e13366dfb333299d4258",
+    "firmware/tests/sketch_fakes/avr/wdt.h": "868f29899acaaf058978d15b4e23e1700093d202b595760f21af2d33089f8d40",
+    "firmware/tests/tone_fakes/avr/interrupt.h": "d1801ae2ed6e70bbc954fa7e37471df5dc73bd4ecdbb57942bc90f4a2b1291ae",
+    "firmware/tests/tone_fakes/avr/pgmspace.h": "0d3cd26482d3175c5e5e47033e2b7b54507d7b95f1e3753abf633618ad4a6ad1",
+    "firmware/tests/tone_fakes/util/atomic.h": "1b29b754e8a0ea258f67a1626143d64b9c13f02b3951adfd970cda80c417a955",
+    "tools/test-firmware.ps1": "2fa2f10a4d3fccdae7cd71bb45439a12d1387b260b98a924ae02646b177a6e7c",
+    "tools/usb-watchdog-test.py": "60c834b52eae832658df6e6e4b2acfe3e1ad049f5c03519411fcec386f9db3e4",
+    "tools/bench/test_usb_watchdog.py": "0d21b013e616508a72aaab947865bc16c1cf932113ecaebd6f396072b35faecf"
+  },
+  "evidence_sha256": {
+    "clang-tests.txt": "a3330d5b3cdeb02e4243cabea760d59fb662c607d549d633a2b76de8ef649b53",
+    "msvc-tests.txt": "898658e9cf3ca25545350f8b51cb61a21b9ee0e3fa1f61c08dd651f760c70d9c",
+    "watchdog-port-unavailable.json": "543f3db8a98db9e30c292a96f573e2839ace0ffc80ba411e886b9a5dc20dd1c6"
+  },
+  "hardware_followup": {
+    "attempt": "watchdog-port-unavailable.json",
+    "result": "inconclusive; Arduino and NUCLEO no longer enumerating, only supply COM11 visible",
+    "new_watchdog_runner": "Four mocked verdict tests pass; repeated live path not run",
+    "physical_fixture": "Deferred at user request; NUCLEO drive sequence remains unrun"
+  }
+}

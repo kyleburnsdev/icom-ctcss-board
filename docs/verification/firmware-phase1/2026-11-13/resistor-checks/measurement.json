@@ -1,0 +1,206 @@
+{
+  "utc": "2026-11-13T16:57:03.066742+00:00",
+  "port": "COM15",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4",
+      "raw_hex": null
+    },
+    {
+      "command": "FUNC1?",
+      "raw": "\"VOLT\"",
+      "raw_hex": "22564f4c54220a"
+    },
+    {
+      "command": "AUTO?",
+      "raw": "1",
+      "raw_hex": "310a"
+    },
+    {
+      "command": "RANGE?",
+      "raw": "10 V",
+      "raw_hex": "313020560a"
+    },
+    {
+      "command": "RATE?",
+      "raw": "S",
+      "raw_hex": "530a"
+    },
+    {
+      "command": "CALC:FUNC?",
+      "raw": "NONe",
+      "raw_hex": "4e4f4e650a"
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "raw": "+0.000000E+00",
+      "raw_hex": "2b302e303030303030452b30300a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "-5.044024E-05",
+      "raw_hex": "2d352e303434303234452d30350a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "-5.044024E-05",
+      "raw_hex": "2d352e303434303234452d30350a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+8.356139E-05",
+      "raw_hex": "2b382e333536313339452d30350a"
+    },
+    {
+      "command": "FUNC1?",
+      "raw": "\"RES\"",
+      "raw_hex": "22524553220a"
+    },
+    {
+      "command": "AUTO?",
+      "raw": "1",
+      "raw_hex": "310a"
+    },
+    {
+      "command": "RANGE?",
+      "raw": "10 kΩ",
+      "raw_hex": "3130206bcea90a"
+    },
+    {
+      "command": "RATE?",
+      "raw": "S",
+      "raw_hex": "530a"
+    },
+    {
+      "command": "CALC:FUNC?",
+      "raw": "NONe",
+      "raw_hex": "4e4f4e650a"
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "raw": "+0.000000E+00",
+      "raw_hex": "2b302e303030303030452b30300a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+0.000000E+00",
+      "raw_hex": "2b302e303030303030452b30300a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+0.000000E+00",
+      "raw_hex": "2b302e303030303030452b30300a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001582E+04",
+      "raw_hex": "2b312e303031353832452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001623E+04",
+      "raw_hex": "2b312e303031363233452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001623E+04",
+      "raw_hex": "2b312e303031363233452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001641E+04",
+      "raw_hex": "2b312e303031363431452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001563E+04",
+      "raw_hex": "2b312e303031353633452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.001563E+04",
+      "raw_hex": "2b312e303031353633452b30340a"
+    },
+    {
+      "command": "FUNC1?",
+      "raw": "\"VOLT\"",
+      "raw_hex": "22564f4c54220a"
+    },
+    {
+      "command": "AUTO?",
+      "raw": "1",
+      "raw_hex": "310a"
+    },
+    {
+      "command": "RANGE?",
+      "raw": "10 V",
+      "raw_hex": "313020560a"
+    },
+    {
+      "command": "RATE?",
+      "raw": "S",
+      "raw_hex": "530a"
+    },
+    {
+      "command": "CALC:FUNC?",
+      "raw": "NONe",
+      "raw_hex": "4e4f4e650a"
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "raw": "+0.000000E+00",
+      "raw_hex": "2b302e303030303030452b30300a"
+    }
+  ],
+  "writes": [
+    "CONF:RES AUTO",
+    "CONF:VOLT:DC AUTO",
+    "RATE S"
+  ],
+  "completed": true,
+  "before": {
+    "function": "\"VOLT\"",
+    "auto": "1",
+    "range": "10 V",
+    "rate": "S",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "dc_voltage_before_v": [
+    -5.044024e-05,
+    -5.044024e-05,
+    8.356139e-05
+  ],
+  "resistance_state": {
+    "function": "\"RES\"",
+    "auto": "1",
+    "range": "10 kΩ",
+    "rate": "S",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "readings_ohm": [
+    0.0,
+    0.0,
+    10015.82,
+    10016.23,
+    10016.23,
+    10016.41,
+    10015.63,
+    10015.63
+  ],
+  "summary_ohm": {
+    "mean": 7511.99375,
+    "min": 0.0,
+    "max": 10016.41
+  },
+  "after": {
+    "function": "\"VOLT\"",
+    "auto": "1",
+    "range": "10 V",
+    "rate": "S",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  }
+}

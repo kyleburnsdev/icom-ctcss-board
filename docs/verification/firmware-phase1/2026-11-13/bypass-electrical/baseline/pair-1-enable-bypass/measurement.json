@@ -1,0 +1,34 @@
+{
+  "name": "pair-1-enable-bypass",
+  "measurement": {
+    "bypass_enabled": true,
+    "input_edge_s": -3.999999999976245e-07,
+    "midpoint_tolerance_duty_percent": 0.5,
+    "sample_interval_s": 2e-07,
+    "complete_carrier_periods": 1199,
+    "scope": "D10 physical input to raw PWM duty response; excludes analog filter decay",
+    "settled_midpoint_ms": 10.137800000000002,
+    "checks": {
+      "continuous_carrier": true,
+      "not_adc_clipped": true,
+      "initially_modulated": true,
+      "settled_midpoint_within_25_ms": true,
+      "final_midpoint": true
+    },
+    "passed": true
+  },
+  "arduino_state": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 1,
+    "bypass": 1,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2100,
+    "reset": 0
+  },
+  "save_state_before_stimulus": null
+}

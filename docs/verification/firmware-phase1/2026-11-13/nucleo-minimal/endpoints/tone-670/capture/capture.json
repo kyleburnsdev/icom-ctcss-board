@@ -1,0 +1,28 @@
+{
+  "identity": {
+    "manufacturer": "RIGOL TECHNOLOGIES",
+    "model": "DS1202Z-E",
+    "firmware": "00.06.04"
+  },
+  "channel": 1,
+  "mode": "raw",
+  "acquisition": "single",
+  "points": 12000000,
+  "preamble": {
+    "format": 0.0,
+    "type": 2.0,
+    "points": 12000000.0,
+    "count": 1.0,
+    "xincrement": 5e-07,
+    "xorigin": -3.0,
+    "xreference": 0.0,
+    "yincrement": 0.05121094,
+    "yorigin": -49.0,
+    "yreference": 99.0
+  },
+  "seconds": 20.531000000002678,
+  "probe_factor": 10.0,
+  "volts_formula": "(code - yorigin - yreference) * yincrement",
+  "seconds_formula": "(zero_based_index - xreference) * xincrement + xorigin",
+  "restored": true
+}

@@ -1,0 +1,34 @@
+"""Evaluate synchronized physical D7/D8 records, without host-command timing."""
+import math
+
+
+def edges(raw,p):
+    if len(raw)!=p['points'] or len(raw)<1000:
+        raise ValueError('Incomplete/insufficient channel samples')
+    if not math.isfinite(p['xincrement']) or not 0<p['xincrement']<=1e-6:
+        raise ValueError('Insufficient time resolution')
+    codes=sorted(raw);low,high=codes[len(raw)//10],codes[9*len(raw)//10]
+    if high-low<20:raise ValueError('Channel does not contain resolved LOW and HIGH states')
+    threshold=(low+high)/2
+    rise=[];fall=[]
+    for index in range(1,len(raw)):
+        at=(index-p['xreference'])*p['xincrement']+p['xorigin']
+        if raw[index-1]<threshold<=raw[index]:rise.append(at)
+        elif raw[index]<threshold<=raw[index-1]:fall.append(at)
+    return rise,fall
+
+
+def evaluate(input_raw,input_p,output_raw,output_p,pressed):
+    for key in ('points','xincrement','xreference','xorigin'):
+        if input_p[key]!=output_p[key]:raise ValueError(f'Channel time axes do not align: {key}')
+    ir,iff=edges(input_raw,input_p);orr,of=edges(output_raw,output_p)
+    source,other_source=(iff,ir) if pressed else (ir,iff)
+    destination,other_destination=(orr,of) if pressed else (of,orr)
+    if len(source)!=1 or len(destination)!=1 or other_source or other_destination:
+        raise ValueError('Expected exactly one input/output transition; missing edges or extra pulses')
+    latency=destination[0]-source[0]
+    return {'passed':0<=latency<=.025,'pressed':pressed,'input_edge_s':source[0],
+            'output_edge_s':destination[0],'latency_ms':latency*1000,
+            'selected_limit_ms':25,'sample_interval_s':input_p['xincrement'],
+            'edge_resolution_bound_s':2*input_p['xincrement'],
+            'scope':'Physical D7 to D8 midpoint-threshold latency including qualification; finite record only'}

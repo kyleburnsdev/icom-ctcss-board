@@ -5,6 +5,8 @@
 - [NUCLEO-F767ZI project](radio_standin/radio_standin.ioc): STM32CubeMX/HAL C,
   phase-one open-drain stimulus, PWM capture, PTT/LED observation and USB-host commands.
 - **Start at the [illustrated phase-one test guide](../docs/implementation/firmware-phase1-guide.md).**
+- [Extended verification campaign and acceptance gates](../docs/implementation/firmware-verification-plan.md)
+  cover the bare Arduino through instrumented stress tests and solution integration.
 - [Architecture and fault policy](../docs/implementation/firmware-architecture.md),
   [verification record](../docs/verification/firmware-phase1/README.md),
   [accepted requirements](../docs/requirements/firmware-specification.md).
@@ -13,6 +15,14 @@ Implementation and USB testing are complete; wired timing, analog and radio
 acceptance are separate steps. The unidentified LCD backpack is disabled by
 default (`CTCSS_LCD_ADDRESS=0`). Its address/pin mapping and the actual encoder's
 direction/detent setting must be selected before UI hardware acceptance.
+
+The subsequently identified bench display is **Grove LCD RGB Backlight V4.0**.
+The [current production regression](../docs/verification/firmware-phase1/2026-11-13/grove-ui/production/README.md)
+records the installed/verified `-GroveV4` production image, physical UI/PTT/bypass
+checks and serial-closed waveform measurement. Use that record for present
+digital acceptance; the paragraph above describes the original disabled-display
+default, which remains available. Real EC11, power and loaded integration gates
+are listed separately in the current record.
 
 ## Tool versions and dependencies
 
@@ -30,7 +40,7 @@ direction/detent setting must be selected before UI hardware acceptance.
 | CMake / Ninja | CMake ≥3.22 and Ninja on PATH; exact run versions in verification |
 | STM32CubeProgrammer | 2.21.0 |
 | Python | 3.12, `pyserial==3.5` for hardware runner |
-| Host C++ tests | C++11 compiler; MSVC 19.44 and Clang supported |
+| Host C++ tests | C++14 host compiler; MSVC 19.44 and Clang supported; AVR build settings unchanged |
 
 Install Arduino packages once:
 
@@ -55,6 +65,8 @@ programming; neither the bootloader nor fuse settings was replaced.
 ./tools/build-firmware.ps1 -Target ProMicro -Bench
 # Identified PCF8574-compatible display example only; verify its mapping first.
 ./tools/build-firmware.ps1 -Target ProMicro -LcdAddress 0x27
+# Grove LCD RGB Backlight V4.0; selects direct LCD 0x3e and backlight 0x62.
+./tools/build-firmware.ps1 -Target ProMicro -Bench -GroveV4
 # arm-none-eabi-gcc, CMake and Ninja must be on PATH.
 ./tools/build-firmware.ps1 -Target Standin -Configuration Release
 ./tools/build-firmware.ps1 -Target Standin -Configuration Debug
@@ -92,6 +104,21 @@ upload, use the module's reset-to-bootloader procedure and upload during its
 boot window. Do not burn a replacement bootloader as a routine upload step.
 
 ## Run tests
+
+`-GroveV4` explicitly selects a separate protocol; setting `-LcdAddress 0x3e`
+alone still selects PCF8574 and is insufficient. Grove startup uses full-byte
+LCD commands and bounded PCA9632 setup, with a selected modest white backlight
+(64/255 per channel). A failed LCD or backlight initialization keeps the UI
+offline and retries after one second. PTT runs between transactions. The native
+suite exercises both protocols, including Grove backlight NACK/recovery and the
+eight actual-sketch scenarios. See the [Grove bring-up record](../docs/verification/firmware-phase1/2026-11-13/grove-ui/README.md).
+
+The native suite includes the actual sketch setup/loop with simulated input
+pins, USB, EEPROM and display transactions, in addition to module tests. It
+tests PTT/bypass integration before fixture wiring is available, without adding
+a software keying command to the board. Host simulated time is not physical
+latency or AVR instruction-timing evidence; see the
+[verification campaign](../docs/implementation/firmware-verification-plan.md).
 
 In a Visual Studio developer shell with Clang, or with a configured GNU C++ compiler:
 

@@ -1,0 +1,45 @@
+{
+  "reason": "idle-pwm attempt a failed at error queue query; settings restored verified in attempt report",
+  "action": "Explicit *CLS to recover documented error-query timeout condition",
+  "errors_after": [],
+  "after": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "AUTO",
+    "samplerate_hz": 1000000000.0,
+    "settings": {
+      ":TIM:SCAL": "2.0000000e-04",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "AUTO",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "AUTO",
+      ":TRIG:EDG:SOUR": "CHAN2",
+      ":TRIG:EDG:SLOP": "POS",
+      ":TRIG:EDG:LEV": "1.500000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "0",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-1.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-1.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  }
+}

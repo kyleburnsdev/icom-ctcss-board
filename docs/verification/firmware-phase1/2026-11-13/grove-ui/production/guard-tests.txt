@@ -1,0 +1,11 @@
+test_bypass_production_baseline (__main__.ProductionGuards.test_bypass_production_baseline) ... ok
+test_bypass_production_save_rejected (__main__.ProductionGuards.test_bypass_production_save_rejected) ... ok
+test_bypass_production_wrong_tone_rejected (__main__.ProductionGuards.test_bypass_production_wrong_tone_rejected) ... ok
+test_ptt_production_baseline (__main__.ProductionGuards.test_ptt_production_baseline) ... ok
+test_ptt_production_hang_rejected (__main__.ProductionGuards.test_ptt_production_hang_rejected) ... ok
+test_ptt_production_save_rejected (__main__.ProductionGuards.test_ptt_production_save_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.042s
+
+OK

@@ -1,0 +1,95 @@
+{
+  "action": "short",
+  "passed": true,
+  "screen_acceptance": "requires visual observation",
+  "before": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 1,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2104,
+    "reset": 0
+  },
+  "after": {
+    "bench": 1,
+    "saved": 1567,
+    "active": 1567,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 1,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2104,
+    "reset": 0
+  },
+  "saved_changed": true,
+  "fixture_final": {
+    "armed": 0,
+    "drive": 0,
+    "sense": 6,
+    "latency_valid": 0,
+    "latency_us": 0,
+    "poll_us": 207,
+    "errors": 0,
+    "bouncing": 0,
+    "bounce_late_us": 0
+  },
+  "transcript": [
+    {
+      "port": "COM5",
+      "command": "ID",
+      "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=207 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2104 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "ARM",
+      "reply": "OK armed lease_ms=5000"
+    },
+    {
+      "port": "COM5",
+      "command": "BUTTON 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM5",
+      "command": "BUTTON 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1567 active=1567 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2104 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=207 errors=0 bouncing=0 bounce_late_us=0"
+    }
+  ]
+}

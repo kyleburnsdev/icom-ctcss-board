@@ -1,0 +1,24 @@
+test_axes_misaligned (test_ptt_measurement.PttTests.test_axes_misaligned) ... ok
+test_bounce_extra_output_pulse_rejected (test_ptt_measurement.PttTests.test_bounce_extra_output_pulse_rejected) ... ok
+test_bounce_press_uses_final_stable_edge (test_ptt_measurement.PttTests.test_bounce_press_uses_final_stable_edge) ... ok
+test_bounce_release_uses_final_stable_edge (test_ptt_measurement.PttTests.test_bounce_release_uses_final_stable_edge) ... ok
+test_extra_output_pulse (test_ptt_measurement.PttTests.test_extra_output_pulse) ... ok
+test_incomplete (test_ptt_measurement.PttTests.test_incomplete) ... ok
+test_missing_output (test_ptt_measurement.PttTests.test_missing_output) ... ok
+test_output_precedes_input (test_ptt_measurement.PttTests.test_output_precedes_input) ... ok
+test_press (test_ptt_measurement.PttTests.test_press) ... ok
+test_release (test_ptt_measurement.PttTests.test_release) ... ok
+test_too_late (test_ptt_measurement.PttTests.test_too_late) ... ok
+test_all_edges_measured (test_ptt_stress_measurement.StressTests.test_all_edges_measured) ... ok
+test_axis_mismatch (test_ptt_stress_measurement.StressTests.test_axis_mismatch) ... ok
+test_extra_output_glitch (test_ptt_stress_measurement.StressTests.test_extra_output_glitch) ... ok
+test_insufficient_posthistory (test_ptt_stress_measurement.StressTests.test_insufficient_posthistory) ... ok
+test_late_response (test_ptt_stress_measurement.StressTests.test_late_response) ... ok
+test_missing_output (test_ptt_stress_measurement.StressTests.test_missing_output) ... ok
+test_missing_samples (test_ptt_stress_measurement.StressTests.test_missing_samples) ... ok
+test_untriggered_record (test_ptt_stress_measurement.StressTests.test_untriggered_record) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.134s
+
+OK

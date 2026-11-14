@@ -1,0 +1,768 @@
+{
+  "utc": "2026-11-13T22:10:54.883971+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "current-tone-1514",
+      "measurement": {
+        "passed": true,
+        "checks": {
+          "encoded_tone_within_0_1_hz_nominal_scope_timebase": true,
+          "carrier_within_selected_1_percent": true,
+          "every_period_98_to_102_us": true,
+          "modulation_reaches_both_extremes": true,
+          "duty_within_selected_11_to_89_percent": true,
+          "not_adc_clipped": true
+        },
+        "expected_tone_hz": 151.4,
+        "encoded_tone_hz": 151.3962879747686,
+        "error_hz": -0.0037120252314082336,
+        "carrier_hz": 9999.758331118037,
+        "complete_periods": 59998,
+        "tone_crossings": 908,
+        "duty_min_percent": 12.5,
+        "duty_max_percent": 88.0,
+        "period_min_us": 99.99999999999999,
+        "period_max_us": 100.49999999999999,
+        "duration_s": 6.0,
+        "sample_interval_s": 5e-07,
+        "scope": "Raw PWM encoding only; no analog audio/distortion measurement; absolute reference accuracy unqualified"
+      }
+    }
+  ],
+  "transcript": [
+    {
+      "port": "COM5",
+      "command": "ID",
+      "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000",
+      "monotonic_s": 95150.109
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped",
+      "monotonic_s": 95150.125
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0",
+      "monotonic_s": 95150.328
+    },
+    {
+      "port": "COM5",
+      "command": "ARM",
+      "reply": "OK armed lease_ms=5000",
+      "monotonic_s": 95150.328
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 1",
+      "reply": "OK drive",
+      "monotonic_s": 95150.343
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95150.406
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95150.656
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95150.921
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95151.187
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95151.453
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95151.703
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95151.968
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95152.234
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95152.5
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95152.75
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95153.015
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95153.281
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95153.546
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95153.796
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95154.062
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95154.328
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95154.578
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95154.843
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95155.109
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95155.375
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95155.625
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95155.89
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95156.156
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95156.421
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95156.671
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95156.937
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95157.203
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95157.468
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95157.718
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95157.984
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95158.25
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95158.515
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95158.765
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95159.031
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95159.296
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95159.546
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95159.812
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95160.078
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95160.343
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95160.593
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95160.859
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95161.125
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95161.375
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95161.64
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95161.906
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95162.171
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95162.421
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95162.687
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95162.953
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95163.218
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95163.468
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95163.734
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95164.0
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95164.25
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95164.515
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95164.781
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95165.046
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95165.296
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95165.562
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95165.828
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95166.078
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95166.343
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95166.609
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95166.875
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95167.125
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95167.39
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95167.656
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95167.906
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95168.171
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95168.437
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95168.703
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95168.953
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95169.218
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95169.484
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95169.75
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95170.0
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95170.265
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95170.531
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95170.781
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95171.046
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95171.312
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95171.578
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95171.828
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95172.093
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95172.359
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95172.609
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95172.875
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95173.14
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95173.406
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95173.656
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95173.921
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95174.187
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95174.453
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95174.703
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95174.968
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95175.234
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95175.484
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95175.75
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95176.015
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95176.281
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95176.531
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95176.796
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 0",
+      "reply": "OK drive",
+      "monotonic_s": 95177.046
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0",
+      "monotonic_s": 95177.312
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped",
+      "monotonic_s": 95177.312
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0",
+      "monotonic_s": 95177.328
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0",
+      "monotonic_s": 95177.39
+    }
+  ],
+  "scope": "Minimal-drive fixture: scope-measured PWM plus USB state; no independent D8/LED or latency observation",
+  "source_sha256": {
+    "tools/nucleo-tone-test.py": "6a4910409769a98929b6372920a257a6daeb532573f9091b54b4b16bc46c705e",
+    "tools/bench/bypass_measurement.py": "008df4791402a4ab5c682ecbe3820d43226f46751b37d1be4f16297d6744d9f4",
+    "tools/bench/ptt_measurement.py": "db303b2192aeb9427a5eea6d51075bd344c5d00205eef4ce1730202fd8e30c31",
+    "tools/bench/ptt_stress_measurement.py": "1b9bbaa3d0d801008648baf8c9ae14cae7e72fe917c4a7936a3355eae3065eaa",
+    "tools/bench/rigol_scope.py": "83fb7eb19c85bce732f862fbb071e54c1105f94f2d45c0412ceca981cc351ae4",
+    "tools/bench/serial_device.py": "41c0ada1cdb9b4defab117c49601f01ac670be6754161b8d7919da9c53c9a328",
+    "tools/bench/test_bypass_measurement.py": "e4359dcab6a858aeb2b39b2d61fe91adb909bb969490123124d148ddac7d0bd0",
+    "tools/bench/test_display_clamp.py": "32ae06a3c773cec1e44696b5b7abf5d3e5cea90c7baa68494966d0aff63361f6",
+    "tools/bench/test_idle_pwm.py": "68a5d210e3789d6f7b6cc06bed519ee3face8164b7fe32ff61d67ab65eb965df",
+    "tools/bench/test_production_bench_guards.py": "28751e877b6bc226de368aeb3cff774df0054d3d205ee98d34aeeb59b46e9133",
+    "tools/bench/test_ptt_measurement.py": "1a3d858fa54b9203564316e6a35fbb2b209bded3456b755ce1c6d4cfb88c42f4",
+    "tools/bench/test_ptt_stress_measurement.py": "bd7d694dd9138804ae9b8a5773a162b6390bdfd3b813d419553154155a2d2346",
+    "tools/bench/test_scope_run_state.py": "d87778e9a2709b158e975b8b28a0c9efb252c16f2501825b9789da19b148ffdb",
+    "tools/bench/test_tone_measurement.py": "2012fcde061f9ae1a64d9028554838a1080cb94e5fbe3f0eca7327acad761bf9",
+    "tools/bench/test_usb_watchdog.py": "0d21b013e616508a72aaab947865bc16c1cf932113ecaebd6f396072b35faecf",
+    "tools/bench/test_watchdog_measurement.py": "33d0f1749553f12db14cc8a3c8e7da22c5487dd9189b2f1eca5bb571ca51ce83",
+    "tools/bench/tone_measurement.py": "34f9ab8ae42c560d2b4b056c556c02cf391be23694f26d1a9283f37ad36701c2",
+    "tools/bench/usb_traffic.py": "bfc2451ce72a24e1b534f5edfaa84fd543bf4fe67a19684cfdac3345d0dee8a5",
+    "tools/bench/xdm1251.py": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777",
+    "tools/check-idle-pwm.py": "59ebe6823fe0a326c1888e992e23e8581f997dcdf6566d992b4ff96dbcd72d0f"
+  },
+  "initial": {
+    "bench": 0,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 1,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2416,
+    "reset": 0
+  },
+  "arduino_serial_closed_during_current_capture": true,
+  "fixture_final": {
+    "armed": 0,
+    "drive": 0,
+    "sense": 6,
+    "latency_valid": 0,
+    "latency_us": 0,
+    "poll_us": 210,
+    "errors": 0,
+    "bouncing": 0,
+    "bounce_late_us": 0
+  },
+  "arduino_final": {
+    "bench": 0,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 1,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2416,
+    "reset": 0
+  }
+}

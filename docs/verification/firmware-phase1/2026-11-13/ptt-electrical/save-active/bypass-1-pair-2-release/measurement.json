@@ -1,0 +1,41 @@
+{
+  "name": "bypass-1-pair-2-release",
+  "bypass": 1,
+  "measurement": {
+    "passed": true,
+    "pressed": false,
+    "input_edge_s": -1.9999999999881224e-07,
+    "output_edge_s": 0.004363999999999993,
+    "latency_ms": 4.364199999999991,
+    "selected_limit_ms": 25,
+    "sample_interval_s": 2e-07,
+    "edge_resolution_bound_s": 4e-07,
+    "scope": "Physical D7 to D8 midpoint-threshold latency including qualification; finite record only"
+  },
+  "arduino_state": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 1,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2180,
+    "reset": 0
+  },
+  "save_state_immediately_before_stimulus": {
+    "bench": 1,
+    "saved": 1000,
+    "active": 1514,
+    "tx": 1,
+    "bypass": 1,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 1,
+    "fault": 0,
+    "loop_us": 2180,
+    "reset": 0
+  }
+}

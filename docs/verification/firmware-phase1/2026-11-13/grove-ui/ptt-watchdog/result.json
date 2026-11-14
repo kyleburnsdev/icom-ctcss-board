@@ -1,0 +1,907 @@
+{
+  "utc": "2026-11-13T21:37:06.581479+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "watchdog-bypass-0",
+      "bypass": 0,
+      "measurement": {
+        "passed": true,
+        "release_upper_bound_ms": 327.07,
+        "marker_last_fall_s": -0.3271099999999998,
+        "output_fall_s": -3.999999999981796e-05,
+        "marker_pulse_widths_ms": [
+          1.0100000000003995,
+          0.9999999999998899,
+          1.000000000000334,
+          0.9999999999998899
+        ],
+        "no_output_rekey_in_record": true,
+        "held_after_release_observed_s": 3.00003,
+        "sample_interval_s": 1e-05,
+        "scope": "Physical pre-HANG marker to D8 LOW is a conservative upper bound, not an exact HANG timestamp"
+      },
+      "status_before_hang": {
+        "bench": 1,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 1,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 3284,
+        "reset": 0
+      },
+      "status_held_after_reset": {
+        "bench": 1,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 0,
+        "bypass": 0,
+        "armed": 0,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 1412,
+        "reset": 0
+      },
+      "host_usb_recovery_s": 0.8279999999940628
+    },
+    {
+      "name": "watchdog-bypass-1",
+      "bypass": 1,
+      "measurement": {
+        "passed": true,
+        "release_upper_bound_ms": 327.9399999999999,
+        "marker_last_fall_s": -0.3279799999999997,
+        "output_fall_s": -3.999999999981796e-05,
+        "marker_pulse_widths_ms": [
+          0.9999999999998899,
+          0.9999999999998899,
+          0.9999999999998899,
+          0.9999999999998899
+        ],
+        "no_output_rekey_in_record": true,
+        "held_after_release_observed_s": 3.00003,
+        "sample_interval_s": 1e-05,
+        "scope": "Physical pre-HANG marker to D8 LOW is a conservative upper bound, not an exact HANG timestamp"
+      },
+      "status_before_hang": {
+        "bench": 1,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 1,
+        "bypass": 1,
+        "armed": 1,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2524,
+        "reset": 0
+      },
+      "status_held_after_reset": {
+        "bench": 1,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 0,
+        "bypass": 1,
+        "armed": 0,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 900,
+        "reset": 0
+      },
+      "host_usb_recovery_s": 0.8279999999940628
+    }
+  ],
+  "transcript": [
+    {
+      "port": "COM5",
+      "command": "ID",
+      "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=3284 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "ARM",
+      "reply": "OK armed lease_ms=5000"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=3284 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "BOUNCE 1",
+      "reply": "OK bouncing"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=3284 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=0 lcd=1 busy=0 fault=0 loop_us=1412 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2100 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2100 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2524 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=3"
+    },
+    {
+      "port": "COM5",
+      "command": "BOUNCE 1",
+      "reply": "OK bouncing"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2524 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=1 armed=0 lcd=1 busy=0 fault=0 loop_us=900 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2036 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2036 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=2"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2068 reset=0"
+    }
+  ],
+  "wiring": "Rigol CH1 x10 D7 input; CH2 x10 D8 output; common Arduino GND; F767 minimal-drive fixture",
+  "source_sha256": {
+    "tools/check-ptt-timing.py": "b01eac0a9fb071d143ec56cc3eb034ed5972d6b1f89fc71249aeff575d770cf8",
+    "tools/bench/serial_device.py": "41c0ada1cdb9b4defab117c49601f01ac670be6754161b8d7919da9c53c9a328",
+    "tools/bench/ptt_measurement.py": "db303b2192aeb9427a5eea6d51075bd344c5d00205eef4ce1730202fd8e30c31",
+    "tools/bench/rigol_scope.py": "83fb7eb19c85bce732f862fbb071e54c1105f94f2d45c0412ceca981cc351ae4"
+  },
+  "initial": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 1,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 3284,
+    "reset": 0
+  },
+  "scope_before": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "AUTO",
+    "samplerate_hz": 1000000000.0,
+    "settings": {
+      ":TIM:SCAL": "2.0000000e-04",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "AUTO",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "AUTO",
+      ":TRIG:EDG:SOUR": "CHAN2",
+      ":TRIG:EDG:SLOP": "POS",
+      ":TRIG:EDG:LEV": "1.500000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "0",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-1.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-1.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "scope_configured": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "RUN",
+    "samplerate_hz": 100000.0,
+    "settings": {
+      ":TIM:SCAL": "5.0000000e-01",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "600000",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "NORM",
+      ":TRIG:EDG:SOUR": "CHAN1",
+      ":TRIG:EDG:SLOP": "NEG",
+      ":TRIG:EDG:LEV": "2.000000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "1",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-2.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-2.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "scope_after": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "AUTO",
+    "samplerate_hz": 1000000000.0,
+    "settings": {
+      ":TIM:SCAL": "2.0000000e-04",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "AUTO",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "AUTO",
+      ":TRIG:EDG:SOUR": "CHAN2",
+      ":TRIG:EDG:SLOP": "POS",
+      ":TRIG:EDG:LEV": "1.500000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "0",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-1.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-1.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "scope_restored": true,
+  "fixture_final": {
+    "armed": 0,
+    "drive": 0,
+    "sense": 6,
+    "latency_valid": 0,
+    "latency_us": 0,
+    "poll_us": 210,
+    "errors": 0,
+    "bouncing": 0,
+    "bounce_late_us": 2
+  },
+  "arduino_final": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 1,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2068,
+    "reset": 0
+  }
+}

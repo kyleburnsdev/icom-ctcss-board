@@ -1,0 +1,122 @@
+{
+  "utc": "2026-11-13T16:59:02.711752+00:00",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4",
+      "raw_hex": null
+    },
+    {
+      "command": "FUNC1?",
+      "raw": "\"VOLT\"",
+      "raw_hex": "22564f4c54220a"
+    },
+    {
+      "command": "AUTO?",
+      "raw": "1",
+      "raw_hex": "310a"
+    },
+    {
+      "command": "CALC:FUNC?",
+      "raw": "NONe",
+      "raw_hex": "4e4f4e650a"
+    },
+    {
+      "command": "RATE?",
+      "raw": "S",
+      "raw_hex": "530a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "-1.220828E-06",
+      "raw_hex": "2d312e323230383238452d30360a"
+    },
+    {
+      "command": "FUNC1?",
+      "raw": "\"RES\"",
+      "raw_hex": "22524553220a"
+    },
+    {
+      "command": "CALC:FUNC?",
+      "raw": "NONe",
+      "raw_hex": "4e4f4e650a"
+    },
+    {
+      "command": "RANGE?",
+      "raw": "10 kΩ",
+      "raw_hex": "3130206bcea90a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.007488E+04",
+      "raw_hex": "2b312e303037343838452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.007570E+04",
+      "raw_hex": "2b312e303037353730452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.007545E+04",
+      "raw_hex": "2b312e303037353435452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.007567E+04",
+      "raw_hex": "2b312e303037353637452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.007570E+04",
+      "raw_hex": "2b312e303037353730452b30340a"
+    },
+    {
+      "command": "MEAS1?",
+      "raw": "+1.007507E+04",
+      "raw_hex": "2b312e303037353037452b30340a"
+    },
+    {
+      "command": "FUNC1?",
+      "raw": "\"VOLT\"",
+      "raw_hex": "22564f4c54220a"
+    },
+    {
+      "command": "AUTO?",
+      "raw": "1",
+      "raw_hex": "310a"
+    },
+    {
+      "command": "CALC:FUNC?",
+      "raw": "NONe",
+      "raw_hex": "4e4f4e650a"
+    }
+  ],
+  "complete": true,
+  "before": {
+    "function": "\"VOLT\"",
+    "auto": "1",
+    "math": "NONe",
+    "rate": "S"
+  },
+  "voltage_before_v": -1.220828e-06,
+  "range": "10 kΩ",
+  "readings_ohm": [
+    10074.88,
+    10075.7,
+    10075.45,
+    10075.67,
+    10075.7,
+    10075.07
+  ],
+  "summary_ohm": {
+    "mean": 10075.411666666667,
+    "min": 10074.88,
+    "max": 10075.7
+  },
+  "after": {
+    "function": "\"VOLT\"",
+    "auto": "1",
+    "math": "NONe"
+  }
+}

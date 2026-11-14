@@ -1,0 +1,28 @@
+{
+  "name": "bypass-1-pair-3-press",
+  "bypass": 1,
+  "measurement": {
+    "passed": true,
+    "pressed": true,
+    "input_edge_s": -1.9999999999881224e-07,
+    "output_edge_s": 0.0046821999999999975,
+    "latency_ms": 4.682399999999996,
+    "selected_limit_ms": 25,
+    "sample_interval_s": 2e-07,
+    "edge_resolution_bound_s": 4e-07,
+    "scope": "Physical D7 to D8 midpoint-threshold latency including qualification; finite record only"
+  },
+  "arduino_state": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 1,
+    "bypass": 1,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2180,
+    "reset": 0
+  }
+}

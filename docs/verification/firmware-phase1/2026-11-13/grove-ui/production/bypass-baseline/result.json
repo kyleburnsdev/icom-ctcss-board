@@ -1,0 +1,614 @@
+{
+  "utc": "2026-11-13T22:08:19.951891+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "pair-1-enable-bypass",
+      "measurement": {
+        "bypass_enabled": true,
+        "input_edge_s": -3.999999999976245e-07,
+        "midpoint_tolerance_duty_percent": 0.5,
+        "sample_interval_s": 2e-07,
+        "complete_carrier_periods": 1199,
+        "scope": "D10 physical input to raw PWM duty response; excludes analog filter decay",
+        "settled_midpoint_ms": 10.2598,
+        "checks": {
+          "continuous_carrier": true,
+          "not_adc_clipped": true,
+          "initially_modulated": true,
+          "settled_midpoint_within_25_ms": true,
+          "final_midpoint": true
+        },
+        "passed": true
+      },
+      "arduino_state": {
+        "bench": 0,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 1,
+        "bypass": 1,
+        "armed": 1,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2152,
+        "reset": 0
+      },
+      "save_state_before_stimulus": null
+    },
+    {
+      "name": "pair-1-resume-tone",
+      "measurement": {
+        "bypass_enabled": false,
+        "input_edge_s": -1.9999999999881224e-07,
+        "midpoint_tolerance_duty_percent": 0.5,
+        "sample_interval_s": 2e-07,
+        "complete_carrier_periods": 1199,
+        "scope": "D10 physical input to raw PWM duty response; excludes analog filter decay",
+        "modulation_onset_ms": 5.344399999999992,
+        "full_modulation_span_ms": 11.844600000000003,
+        "checks": {
+          "continuous_carrier": true,
+          "not_adc_clipped": true,
+          "initially_midpoint": true,
+          "modulation_onset_within_25_ms": true,
+          "both_modulation_extremes_within_25_ms": true,
+          "final_modulation": true
+        },
+        "passed": true
+      },
+      "arduino_state": {
+        "bench": 0,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 1,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2416,
+        "reset": 0
+      },
+      "save_state_before_stimulus": null
+    },
+    {
+      "name": "pair-2-enable-bypass",
+      "measurement": {
+        "bypass_enabled": true,
+        "input_edge_s": -1.9999999999881224e-07,
+        "midpoint_tolerance_duty_percent": 0.5,
+        "sample_interval_s": 2e-07,
+        "complete_carrier_periods": 1199,
+        "scope": "D10 physical input to raw PWM duty response; excludes analog filter decay",
+        "settled_midpoint_ms": 8.536800000000005,
+        "checks": {
+          "continuous_carrier": true,
+          "not_adc_clipped": true,
+          "initially_modulated": true,
+          "settled_midpoint_within_25_ms": true,
+          "final_midpoint": true
+        },
+        "passed": true
+      },
+      "arduino_state": {
+        "bench": 0,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 1,
+        "bypass": 1,
+        "armed": 1,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2416,
+        "reset": 0
+      },
+      "save_state_before_stimulus": null
+    },
+    {
+      "name": "pair-2-resume-tone",
+      "measurement": {
+        "bypass_enabled": false,
+        "input_edge_s": -6.000000000033756e-07,
+        "midpoint_tolerance_duty_percent": 0.5,
+        "sample_interval_s": 2e-07,
+        "complete_carrier_periods": 1199,
+        "scope": "D10 physical input to raw PWM duty response; excludes analog filter decay",
+        "modulation_onset_ms": 4.5158000000000005,
+        "full_modulation_span_ms": 13.216000000000005,
+        "checks": {
+          "continuous_carrier": true,
+          "not_adc_clipped": true,
+          "initially_midpoint": true,
+          "modulation_onset_within_25_ms": true,
+          "both_modulation_extremes_within_25_ms": true,
+          "final_modulation": true
+        },
+        "passed": true
+      },
+      "arduino_state": {
+        "bench": 0,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 1,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2416,
+        "reset": 0
+      },
+      "save_state_before_stimulus": null
+    },
+    {
+      "name": "pair-3-enable-bypass",
+      "measurement": {
+        "bypass_enabled": true,
+        "input_edge_s": -8.000000000021878e-07,
+        "midpoint_tolerance_duty_percent": 0.5,
+        "sample_interval_s": 2e-07,
+        "complete_carrier_periods": 1199,
+        "scope": "D10 physical input to raw PWM duty response; excludes analog filter decay",
+        "settled_midpoint_ms": 9.489600000000008,
+        "checks": {
+          "continuous_carrier": true,
+          "not_adc_clipped": true,
+          "initially_modulated": true,
+          "settled_midpoint_within_25_ms": true,
+          "final_midpoint": true
+        },
+        "passed": true
+      },
+      "arduino_state": {
+        "bench": 0,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 1,
+        "bypass": 1,
+        "armed": 1,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2416,
+        "reset": 0
+      },
+      "save_state_before_stimulus": null
+    },
+    {
+      "name": "pair-3-resume-tone",
+      "measurement": {
+        "bypass_enabled": false,
+        "input_edge_s": 0.0,
+        "midpoint_tolerance_duty_percent": 0.5,
+        "sample_interval_s": 2e-07,
+        "complete_carrier_periods": 1199,
+        "scope": "D10 physical input to raw PWM duty response; excludes analog filter decay",
+        "modulation_onset_ms": 5.393999999999996,
+        "full_modulation_span_ms": 13.994199999999998,
+        "checks": {
+          "continuous_carrier": true,
+          "not_adc_clipped": true,
+          "initially_midpoint": true,
+          "modulation_onset_within_25_ms": true,
+          "both_modulation_extremes_within_25_ms": true,
+          "final_modulation": true
+        },
+        "passed": true
+      },
+      "arduino_state": {
+        "bench": 0,
+        "saved": 1514,
+        "active": 1514,
+        "tx": 1,
+        "bypass": 0,
+        "armed": 1,
+        "lcd": 1,
+        "busy": 0,
+        "fault": 0,
+        "loop_us": 2416,
+        "reset": 0
+      },
+      "save_state_before_stimulus": null
+    }
+  ],
+  "transcript": [
+    {
+      "port": "COM5",
+      "command": "ID",
+      "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2092 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "ARM",
+      "reply": "OK armed lease_ms=5000"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2092 reset=0"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2152 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2152 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=206 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=208 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=208 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=1 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=1 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM14",
+      "command": "STATUS",
+      "reply": "CTCSS1 bench=0 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=1 busy=0 fault=0 loop_us=2416 reset=0"
+    }
+  ],
+  "wiring": "CH1 Arduino D10 bypass; CH2 Arduino D9 PWM; both x10; common Arduino GND; F767 drive fixture",
+  "source_sha256": {
+    "tools/check-bypass-timing.py": "0dd0968fb368efd1dbbd23be9e0598001b2c09676e18fe919b3a901fd54bb033",
+    "tools/bench/serial_device.py": "41c0ada1cdb9b4defab117c49601f01ac670be6754161b8d7919da9c53c9a328",
+    "tools/bench/rigol_scope.py": "83fb7eb19c85bce732f862fbb071e54c1105f94f2d45c0412ceca981cc351ae4",
+    "tools/bench/ptt_measurement.py": "db303b2192aeb9427a5eea6d51075bd344c5d00205eef4ce1730202fd8e30c31",
+    "tools/bench/bypass_measurement.py": "008df4791402a4ab5c682ecbe3820d43226f46751b37d1be4f16297d6744d9f4"
+  },
+  "initial": {
+    "bench": 0,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 1,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2092,
+    "reset": 0
+  },
+  "scope_before": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "TD",
+    "samplerate_hz": 1000000000.0,
+    "settings": {
+      ":TIM:SCAL": "2.0000000e-04",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "AUTO",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "AUTO",
+      ":TRIG:EDG:SOUR": "CHAN2",
+      ":TRIG:EDG:SLOP": "POS",
+      ":TRIG:EDG:LEV": "1.500000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "0",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-1.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-1.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "scope_configured": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "WAIT",
+    "samplerate_hz": 5000000.0,
+    "settings": {
+      ":TIM:SCAL": "1.0000000e-02",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "600000",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "NORM",
+      ":TRIG:EDG:SOUR": "CHAN1",
+      ":TRIG:EDG:SLOP": "NEG",
+      ":TRIG:EDG:LEV": "2.000000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "1",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-2.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-2.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "scope_after": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "TD",
+    "samplerate_hz": 1000000000.0,
+    "settings": {
+      ":TIM:SCAL": "2.0000000e-04",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "AUTO",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "AUTO",
+      ":TRIG:EDG:SOUR": "CHAN2",
+      ":TRIG:EDG:SLOP": "POS",
+      ":TRIG:EDG:LEV": "1.500000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "0",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-1.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-1.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "scope_restored": true,
+  "fixture_final": {
+    "armed": 0,
+    "drive": 0,
+    "sense": 6,
+    "latency_valid": 0,
+    "latency_us": 0,
+    "poll_us": 209,
+    "errors": 0,
+    "bouncing": 0,
+    "bounce_late_us": 0
+  },
+  "arduino_final": {
+    "bench": 0,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 1,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2416,
+    "reset": 0
+  }
+}

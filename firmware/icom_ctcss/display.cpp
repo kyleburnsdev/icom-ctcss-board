@@ -6,29 +6,46 @@
 #include <string.h>
 
 namespace Display {
+#if !CTCSS_LCD_GROVE_V4
 // Explicit common PCF8574 backpack mapping: P0 RS, P1 RW, P2 E, P3 BL,
 // P4..P7 D4..D7. Change these constants after identifying a different backpack.
 constexpr uint8_t rsMask=1, enableMask=4, backlightMask=8;
 constexpr uint8_t dataPins[4]={4,5,6,7};
+#endif
 static bool online=false;
 static uint8_t initStep=0, position=0, renderStep=0;
 static uint32_t due=0, frameAt=0;
 static char wanted[32], shown[32];
 static uint8_t cursor=255, shownCursor=255;
+#if !CTCSS_LCD_GROVE_V4
 static uint8_t packed(uint8_t nibble,bool data) {
   uint8_t result=backlightMask|(data?rsMask:0);
   for (uint8_t i=0;i<4;++i) if (nibble & (1<<i)) result|=1<<dataPins[i];
   return result;
 }
+#endif
 static bool write(uint8_t value,bool data,bool half=false) {
   Wire.clearWireTimeoutFlag();
   Wire.beginTransmission(CTCSS_LCD_ADDRESS);
+#if CTCSS_LCD_GROVE_V4
+  (void)half;
+  Wire.write(data?0x40:0x80); Wire.write(value);
+#else
   uint8_t high=packed(value>>4,data), low=packed(value & 15,data);
   Wire.write(high); Wire.write(high|enableMask); Wire.write(high);
   if (!half) { Wire.write(low); Wire.write(low|enableMask); Wire.write(low); }
+#endif
   uint8_t error=Wire.endTransmission();
   return error==0 && !Wire.getWireTimeoutFlag();
 }
+#if CTCSS_LCD_GROVE_V4
+static bool backlight(uint8_t reg,uint8_t value) {
+  Wire.clearWireTimeoutFlag();
+  Wire.beginTransmission(0x62); Wire.write(reg); Wire.write(value);
+  uint8_t error=Wire.endTransmission();
+  return error==0 && !Wire.getWireTimeoutFlag();
+}
+#endif
 void begin() {
   memset(shown,0,sizeof shown);
   if (!CTCSS_LCD_ADDRESS) return;
@@ -78,11 +95,22 @@ void service(uint32_t now,const Ctcss::Control &c,const Ctcss::Ui &u,bool saving
   due=now+1; // one transaction per loop; PTT is serviced between transactions
   bool ok=true;
   if (!online) {
+#if CTCSS_LCD_GROVE_V4
+    // Full-byte LCD commands; PCA9632 setup is also one transaction per loop.
+    const uint8_t commands[]={0x38,0x38,0x38,0x08,0x01,0x06,0x0C};
+    const uint8_t registers[]={0x00,0x01,0x08,0x02,0x03,0x04};
+    const uint8_t values[]={0x00,0x00,0xAA,64,64,64};
+    const uint8_t steps=sizeof commands+sizeof registers;
+    ok=initStep<sizeof commands ? write(commands[initStep],false) :
+      backlight(registers[initStep-sizeof commands],values[initStep-sizeof commands]);
+#else
     const uint8_t commands[]={0x30,0x30,0x30,0x20,0x28,0x08,0x01,0x06,0x0C};
+    const uint8_t steps=sizeof commands;
     ok=write(commands[initStep],false,initStep<4);
+#endif
     if (ok) {
       due=now+5;
-      if (++initStep==sizeof commands) {
+      if (++initStep==steps) {
         initStep=0; online=true; memset(shown,0,sizeof shown); shownCursor=255;
         frameAt=now-50; renderStep=0;
       }

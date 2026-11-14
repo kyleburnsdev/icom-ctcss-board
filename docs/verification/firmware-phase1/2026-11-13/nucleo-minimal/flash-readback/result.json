@@ -1,0 +1,73 @@
+{
+  "operation": "Read-only AVR109 flash read; discover observed bootloader rather than infer identity from application board package",
+  "observations": [
+    {
+      "elapsed_s": 0.0,
+      "ports": {
+        "COM5": [
+          1155,
+          14155
+        ],
+        "COM11": [
+          1046,
+          20497
+        ],
+        "COM14": [
+          6991,
+          37382
+        ],
+        "COM15": [
+          11836,
+          22368
+        ]
+      }
+    },
+    {
+      "elapsed_s": 0.15600000000267755,
+      "ports": {
+        "COM5": [
+          1155,
+          14155
+        ],
+        "COM11": [
+          1046,
+          20497
+        ],
+        "COM15": [
+          11836,
+          22368
+        ]
+      }
+    },
+    {
+      "elapsed_s": 0.46899999999732245,
+      "ports": {
+        "COM5": [
+          1155,
+          14155
+        ],
+        "COM11": [
+          1046,
+          20497
+        ],
+        "COM15": [
+          11836,
+          22368
+        ],
+        "COM16": [
+          9025,
+          54
+        ]
+      }
+    }
+  ],
+  "bootloader_port": "COM16",
+  "exit_code": 0,
+  "readback_bytes": 32730,
+  "readback_sha256": "a811db65586d5492ee75c2ea7a223a42007d89b2e71c7543d5446b63b558ee1b",
+  "expected_hex_sha256": "55d763b768fa7bb3692934231d2d0b7dbc89c74b2937bc4062a96c35d360aeff",
+  "application_addresses_compared": 11470,
+  "application_matches": true,
+  "mismatch_count": 0,
+  "application_after": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=904 reset=0"
+}

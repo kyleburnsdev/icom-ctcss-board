@@ -6,6 +6,20 @@ Unless explicitly identified as user-provided, dimensions and load screens below
 
 ## Working values and validation
 
+### Display and enclosure sequencing — user decision, 2026-11-13
+
+Carry the **Grove LCD RGB Backlight V4.0** used successfully in the firmware
+bench session into the actual design. This supersedes the DFR0063 display choice
+underlying P1/ER-06; the existing P1 window, mounts and display allocation are
+historical geometry, not an accepted fit for the Grove module.
+
+Defer enclosure iteration until the working assembled PCB has an **as-built**
+record. At that point capture the installed Grove display, populated PCB,
+connectors and harness envelopes, then revise the enclosure together around that
+assembly. Do not revise the case for each interim electrical or component change.
+Existing CAD and print packages remain P1 references; this decision does not
+change their geometry or establish Grove fit.
+
 ### Direction for the next iteration — user correction, 2026-10-22
 
 The user clarified that “as few plates as practical” is an optimization preference, not a fixed three-plate requirement. P1's packing combined the quick sizing plate with assembly-critical production parts and mixed intended colors on that plate. Do not carry that arrangement forward as a design rule. The current P1 CAD, meshes, 3MF and manufacturing notes remain unchanged by this correction.

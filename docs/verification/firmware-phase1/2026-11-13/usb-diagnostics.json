@@ -1,0 +1,1432 @@
+{
+  "utc": "2026-11-13T14:47:11.337302+00:00",
+  "port": "COM14",
+  "scope": "USB protocol/state only; no electrical measurement",
+  "passed": true,
+  "checks": [
+    "invalid commands rejected; state unchanged; parser resynchronized",
+    "fragmented command and CRLF accepted",
+    "200 consecutive STATUS replies preserve state",
+    "recovers after 16-command burst and 0.5 s stalled reader"
+  ],
+  "transcript": [
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=1476 reset=0"
+    },
+    {
+      "send_ascii": "\n"
+    },
+    {
+      "reply": "ERR command"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2008 reset=0"
+    },
+    {
+      "send_ascii": "UNKNOWN\n"
+    },
+    {
+      "reply": "ERR command"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2012 reset=0"
+    },
+    {
+      "send_ascii": "SAVE\n"
+    },
+    {
+      "reply": "ERR command"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2012 reset=0"
+    },
+    {
+      "send_ascii": "SAVE 669\n"
+    },
+    {
+      "reply": "ERR save"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2016 reset=0"
+    },
+    {
+      "send_ascii": "SAVE 2542\n"
+    },
+    {
+      "reply": "ERR save"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2016 reset=0"
+    },
+    {
+      "send_ascii": "SAVE 65536\n"
+    },
+    {
+      "reply": "ERR save"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2016 reset=0"
+    },
+    {
+      "send_ascii": "SAVE -1\n"
+    },
+    {
+      "reply": "ERR save"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2016 reset=0"
+    },
+    {
+      "send_ascii": "SAVE abc\n"
+    },
+    {
+      "reply": "ERR save"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2060 reset=0"
+    },
+    {
+      "send_ascii": "SAVE 1514x\n"
+    },
+    {
+      "reply": "ERR save"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS extra\n"
+    },
+    {
+      "reply": "ERR command"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n"
+    },
+    {
+      "reply": "ERR line too long"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STA"
+    },
+    {
+      "send_ascii": "TUS\r\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2064 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2068 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\nSTATUS\n"
+    },
+    {
+      "send_ascii": "\n"
+    },
+    {
+      "reply": "ERR command"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    },
+    {
+      "send_ascii": "STATUS\n"
+    },
+    {
+      "reply": "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0"
+    }
+  ],
+  "backpressure_raw": [
+    "CTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCS",
+    "S1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\nCTCSS1 bench=1 saved=1514 active=1514 tx=0 bypass=0 armed=1 lcd=0 busy=0 fault=0 loop_us=2072 reset=0\n"
+  ],
+  "source_sha256": {
+    "tools/usb-diagnostics-test.py": "eb09f0b5425ff3df739dd34a1d06816a527cb00c954d731f29f82b57de4035a4",
+    "firmware/icom_ctcss/config.h": "6cd8f972ddc775d8f3c2f07cad91910ec404e6cc437a33e2232ad8632157312d",
+    "firmware/icom_ctcss/control.cpp": "cb5a0fd6e0d263065b04e1644b2b607bc7fa6520d4ebf76c6bad5d649d9cdc72",
+    "firmware/icom_ctcss/control.h": "b4224881ff389745df7d596b2ceb1cdc758b3626fa8b57d6340e10307f5137fb",
+    "firmware/icom_ctcss/display.cpp": "683b893167327ec33c82631a6a2dfa5db9ca0c14812c28e7973b76cb5210b834",
+    "firmware/icom_ctcss/display.h": "c7f9859d1f9d6598aa44d49d5066799ee27a722dfa068138681b0d30ace11f82",
+    "firmware/icom_ctcss/icom_ctcss.ino": "042ba25217873ba71e7e88fd8342a025e59ab72a2b9925268cc6561127431c24",
+    "firmware/icom_ctcss/journal.cpp": "54f6c55eee7e5515500e1d4f9c15cbab8de9dbd606148928363af62fdfe45d2a",
+    "firmware/icom_ctcss/journal.h": "8613819d8acbaa8c0fc49084456f2ee64a2c6dd3264701a550d9f763aa9c1608",
+    "firmware/icom_ctcss/sine_table.h": "e8eaf8e3b95c40286d96606f14c737265412f3c2b4550e99a1ba8ff6725ac595",
+    "firmware/icom_ctcss/storage.cpp": "f486608578a03fca293e1d742bb60f27aa196c02f60b26934b191c46e751b669",
+    "firmware/icom_ctcss/storage.h": "4219b879f61ddeea0f473f28facd106b324293d55e01c7dce5f4ef8d9eefcbb7",
+    "firmware/icom_ctcss/tone.cpp": "a5878305d9d10254e38531c2c8c85dc29836e673fd16916e94cca939356d223d",
+    "firmware/icom_ctcss/tone.h": "aef13d59bafe689d88251dad187987fb1a441bc97711e1c528b9996ad845549e"
+  },
+  "initial": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 1476,
+    "reset": 0
+  },
+  "traffic": {
+    "commands": 200,
+    "elapsed_s": 0.9219999999913853
+  },
+  "final": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 0,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2072,
+    "reset": 0
+  }
+}

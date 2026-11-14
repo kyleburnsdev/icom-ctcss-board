@@ -1,0 +1,39 @@
+test_tone_measurement.py
+test_endpoints_and_middle (__main__.ToneTests.test_endpoints_and_middle) ... ok
+test_incomplete (__main__.ToneTests.test_incomplete) ... ok
+test_insufficient_modulation (__main__.ToneTests.test_insufficient_modulation) ... ok
+test_missing_period (__main__.ToneTests.test_missing_period) ... ok
+test_no_modulation (__main__.ToneTests.test_no_modulation) ... ok
+test_wrong_frequency (__main__.ToneTests.test_wrong_frequency) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.347s
+
+OK
+
+test_bypass_measurement.py
+test_late_suppression (__main__.BypassTests.test_late_suppression) ... ok
+test_misaligned (__main__.BypassTests.test_misaligned) ... ok
+test_missing_carrier (__main__.BypassTests.test_missing_carrier) ... ok
+test_never_resumes (__main__.BypassTests.test_never_resumes) ... ok
+test_never_suppresses (__main__.BypassTests.test_never_suppresses) ... ok
+test_resumption (__main__.BypassTests.test_resumption) ... ok
+test_suppression (__main__.BypassTests.test_suppression) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.192s
+
+OK
+
+test_production_bench_guards.py
+test_bypass_production_baseline (__main__.ProductionGuards.test_bypass_production_baseline) ... ok
+test_bypass_production_save_rejected (__main__.ProductionGuards.test_bypass_production_save_rejected) ... ok
+test_bypass_production_wrong_tone_rejected (__main__.ProductionGuards.test_bypass_production_wrong_tone_rejected) ... ok
+test_ptt_production_baseline (__main__.ProductionGuards.test_ptt_production_baseline) ... ok
+test_ptt_production_hang_rejected (__main__.ProductionGuards.test_ptt_production_hang_rejected) ... ok
+test_ptt_production_save_rejected (__main__.ProductionGuards.test_ptt_production_save_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.021s
+
+OK

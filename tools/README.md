@@ -95,10 +95,35 @@ The primary output is `manufacturing/enclosure/p1-enclosure.3mf`: three named pl
 Profile resolution/export follow the [Bambu CLI documentation](https://github.com/bambulab/BambuStudio/wiki/Command-Line-Usage) and [native plate-assembly implementation](https://github.com/bambulab/BambuStudio/blob/master/src/BambuStudio.cpp).
 ## Firmware build and test tools
 
+`python tools/build-firmware-learning-guide.py` rebuilds the self-contained
+[November 13 learning guide](../docs/learning/firmware-testing-field-guide-2026-11-13.pdf)
+from retained repository evidence. Requires Python, ReportLab and Pillow; it never
+accesses hardware. Original screen pixels are embedded unchanged, with PDF vector
+annotations. The PDF goes in `docs/learning/`; build QA metadata goes in
+`.agent-scratch/firmware-learning-guide/`. Visually review a rendered rebuild before
+replacing the accepted document and its provenance manifest.
+
 `build-firmware.ps1` builds the Arduino Pro Micro and/or CubeMX-generated
 NUCLEO-F767ZI projects without flashing. `test-firmware.ps1` runs native C++
-control/journal, PWM-capture and display-model tests. `phase1-test.py` uses pyserial 3.5 to
+control/journal, actual tone ISR with a host register model, PWM-capture and display-model tests. `phase1-test.py` uses pyserial 3.5 to
 run USB-only or wired bench checks and writes timestamped, source-hashed JSON.
 Dependencies, commands and protocols are in the [firmware README](../firmware/README.md);
 physical connections are in the [phase-one guide](../docs/implementation/firmware-phase1-guide.md).
 Builds, temporary reports and captures belong in `.agent-scratch/firmware/`.
+
+`usb-diagnostics-test.py --pro COM_PORT --output NEW_REPORT.json` checks bench
+firmware parser rejection/recovery, fragmented commands, 200 STATUS requests and
+a bounded stalled-reader burst. Requires pyserial 3.5, idle Arduino with signal
+pins disconnected (passive probes allowed), exclusive serial ownership and a
+new report path. It issues no valid SAVE, HANG, programming or stimulus command.
+Nonzero exit means failure/incomplete evidence; JSON retains raw replies and
+source hashes. It measures USB state/recovery, not electrical output timing.
+The November 13 live robustness sequence passed. See the
+[bench setup and scope procedure](bench/README.md) for `check-idle-pwm.py`,
+dependencies, exact wiring, limits, evidence, recovery and offline evaluator tests.
+
+The native suite also compiles `sketch_test.cpp`, including the unchanged Arduino
+sketch and actual control/tone/storage/display modules. Nine host executions
+cover PTT/bypass and faults through simulated hardware interfaces. No physical
+connections are required. The model and its limits are described in the
+[verification campaign](../docs/implementation/firmware-verification-plan.md).

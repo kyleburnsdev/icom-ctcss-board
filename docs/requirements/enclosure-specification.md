@@ -1,5 +1,11 @@
 # Enclosure requirements
 
+**Current direction — 2026-11-13:** use the Grove LCD RGB Backlight V4.0.
+Defer enclosure changes until the working assembled PCB's as-built is available;
+then revise around the installed assembly. The dimensions below describe P1,
+including its earlier display allocation. See the
+[accepted sequencing decision](enclosure-decision-register.md#display-and-enclosure-sequencing--user-decision-2026-11-13).
+
 Baseline: prototype P1, 2026-10-22. Use the dimensions and construction below for enclosure development. Maintain parameter decisions and prototype findings in the [enclosure decision register](enclosure-decision-register.md); keep unresolved-value tracking exclusively in that register.
 
 ## Purpose and operating context

@@ -11,6 +11,14 @@ constexpr uint8_t radioPtt = 8, tone = 9, bypass = 10;
 #ifndef CTCSS_LCD_ADDRESS
 #define CTCSS_LCD_ADDRESS 0
 #endif
+// Grove LCD RGB Backlight V4: direct LCD at 0x3e, PCA9632 at 0x62.
+// Default retains the PCF8574 backpack protocol.
+#ifndef CTCSS_LCD_GROVE_V4
+#define CTCSS_LCD_GROVE_V4 0
+#endif
+#if CTCSS_LCD_GROVE_V4 && CTCSS_LCD_ADDRESS != 0x3e
+#error Grove V4 requires CTCSS_LCD_ADDRESS=0x3e
+#endif
 #ifndef CTCSS_BENCH
 #define CTCSS_BENCH 0
 #endif

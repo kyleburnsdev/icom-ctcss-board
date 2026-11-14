@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": {
+    "encoded_tone_within_0_1_hz_nominal_scope_timebase": true,
+    "carrier_within_selected_1_percent": true,
+    "every_period_98_to_102_us": true,
+    "modulation_reaches_both_extremes": true,
+    "duty_within_selected_11_to_89_percent": true,
+    "not_adc_clipped": true
+  },
+  "expected_tone_hz": 254.1,
+  "encoded_tone_hz": 254.09393642789146,
+  "error_hz": -0.0060635721085304795,
+  "carrier_hz": 9999.75999775998,
+  "complete_periods": 59998,
+  "tone_crossings": 1524,
+  "duty_min_percent": 12.5,
+  "duty_max_percent": 88.0,
+  "period_min_us": 99.99999999999999,
+  "period_max_us": 100.49999999999999,
+  "duration_s": 6.0,
+  "sample_interval_s": 5e-07,
+  "scope": "Raw PWM encoding only; no analog audio/distortion measurement; absolute reference accuracy unqualified"
+}

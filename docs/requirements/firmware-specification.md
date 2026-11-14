@@ -193,7 +193,11 @@ These defaults were accepted by the user for version one. They are implementatio
 | Tone amplitude | Start with one documented digital amplitude setting and the physical RV1 adjustment; measure range-wide deviation before deciding whether per-tone compensation is needed |
 | USB | No startup wait for a serial host; programming and optional diagnostics only. USB connection/reset must not assert PTT or override the release-before-rearm rule |
 
-The LCD backpack address/controller mapping and actual encoder detent/transition behavior remain hardware-identification inputs. Keep them configurable; do not infer them solely from “1602.”
+The selected display is the **Grove LCD RGB Backlight V4.0**, accepted for the
+actual design on 2026-11-13 after bench testing with the Grove-enabled firmware
+(LCD address 0x3E, RGB backlight address 0x62). Actual encoder detent/transition
+behavior remains a physical acceptance input; bench UI tests used the NUCLEO
+contact emulator. Keep hardware mappings explicit and configurable.
 
 ## State model and remaining fault policy
 

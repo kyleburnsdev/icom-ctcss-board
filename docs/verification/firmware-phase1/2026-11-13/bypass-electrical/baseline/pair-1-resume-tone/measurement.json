@@ -1,0 +1,36 @@
+{
+  "name": "pair-1-resume-tone",
+  "measurement": {
+    "bypass_enabled": false,
+    "input_edge_s": -3.999999999976245e-07,
+    "midpoint_tolerance_duty_percent": 0.5,
+    "sample_interval_s": 2e-07,
+    "complete_carrier_periods": 1199,
+    "scope": "D10 physical input to raw PWM duty response; excludes analog filter decay",
+    "modulation_onset_ms": 4.769999999999996,
+    "full_modulation_span_ms": 12.670199999999992,
+    "checks": {
+      "continuous_carrier": true,
+      "not_adc_clipped": true,
+      "initially_midpoint": true,
+      "modulation_onset_within_25_ms": true,
+      "both_modulation_extremes_within_25_ms": true,
+      "final_modulation": true
+    },
+    "passed": true
+  },
+  "arduino_state": {
+    "bench": 1,
+    "saved": 1514,
+    "active": 1514,
+    "tx": 1,
+    "bypass": 0,
+    "armed": 1,
+    "lcd": 0,
+    "busy": 0,
+    "fault": 0,
+    "loop_us": 2100,
+    "reset": 0
+  },
+  "save_state_before_stimulus": null
+}

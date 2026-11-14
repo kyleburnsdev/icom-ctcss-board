@@ -83,7 +83,57 @@ static void persistence() {
     memcpy(b,expected,sizeof b); b[byte]^=1<<bit; assert(!decodeRecord(b,seq,tone));
   }
 }
+static void exhaustiveSelections() {
+  // Independently enumerate the accepted numerical contract, including every
+  // invalid uint16_t value and every four-digit manual editor value.
+  for (uint32_t value=0;value<=65535;++value) {
+    bool valid=value>=670 && value<=2541;
+    Control c;
+    assert(c.commit(uint16_t(value))==valid);
+    assert(c.saved==(valid ? value : 1514));
+    if (value<10000) {
+      Ui u; u.screen=Screen::Manual; u.edit=uint16_t(value);
+      assert(u.gesture(Gesture::Long,1514)==(valid ? value : 0));
+      assert(u.rangeError==!valid);
+      u.digit=4;
+      assert(u.gesture(Gesture::Long,1514)==0 && u.screen==Screen::Menu);
+    }
+  }
+  for (uint16_t value=670;value<=2541;++value) {
+    Control c; assert(c.commit(value));
+    c.inputs(false,false,true); c.inputs(true,false,true);
+    assert(c.transmitting && c.activeTone()==value && c.toneEnabled());
+    uint16_t next=value==2541 ? 670 : uint16_t(value+1);
+    assert(c.commit(next));
+    c.inputs(true,true,true);
+    assert(c.transmitting && !c.toneEnabled() && c.activeTone()==value);
+    c.inputs(true,false,true);
+    assert(c.transmitting && c.toneEnabled() && c.activeTone()==value);
+    c.inputs(false,false,true);
+    assert(!c.transmitting && c.activeTone()==next);
+    c.inputs(true,false,true); assert(c.activeTone()==next);
+  }
+}
+
+static void exhaustiveInputSequences() {
+  // All 65,536 eight-event combinations of microphone/bypass levels after
+  // reset, compared with a release-before-press reference state machine.
+  for (uint32_t sequence=0;sequence<65536;++sequence) {
+    Control c;
+    bool released=false;
+    for (unsigned event=0;event<8;++event) {
+      unsigned levels=(sequence>>(2*event))&3;
+      bool pressed=(levels&1)!=0, bypassOn=(levels&2)!=0;
+      bool expectedTx=released && pressed;
+      c.inputs(pressed,bypassOn,true);
+      if (!pressed) released=true;
+      assert(c.armed==released && c.transmitting==expectedTx);
+      assert(c.toneEnabled()==(expectedTx && !bypassOn));
+    }
+  }
+}
 int main() {
-  interlock(); inputs(); uiTest(); persistence();
+  interlock(); inputs(); uiTest(); persistence(); exhaustiveSelections(); exhaustiveInputSequences();
   puts("PASS control, interlocks, bounce/wrap, UI, 50 presets, torn EEPROM writes, CRC corruption");
+  puts("PASS exhaustive: 65,536 numeric inputs, 10,000 manual values, 1,872 TX latches, 65,536 eight-event input sequences");
 }

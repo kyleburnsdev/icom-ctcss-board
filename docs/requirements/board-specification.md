@@ -1,5 +1,11 @@
 # Icom IC-229H CTCSS Tone Generator — Board Specification
 
+**Display decision — 2026-11-13:** carry the bench-tested **Grove LCD RGB
+Backlight V4.0** into the assembled design. Retain the defined J4 GND/+5V/SDA/SCL
+interface and the Grove-enabled firmware configuration. Enclosure changes wait
+for the working assembled PCB's as-built; see the
+[decision register](enclosure-decision-register.md#display-and-enclosure-sequencing--user-decision-2026-11-13).
+
 ## Purpose
 
 Build an inline microphone interface for the Icom IC-229H that adds an MCU-generated, user-selectable CTCSS/PL tone to microphone audio and intercepts PTT. **151.4 Hz must be supported; it is not a fixed operating frequency.** The firmware requirements now select it as the first-use/invalid-settings fallback, while valid saved selections take precedence. Firmware selects other PL tones through the encoder/LCD UI. These are subaudible tone frequencies, not repeater RF frequencies. The PWM carrier is nominally **10 kHz** and is distinct from the selected tone frequency.
