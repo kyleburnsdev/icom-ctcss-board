@@ -1,0 +1,37 @@
+{
+  "revision": "B1",
+  "artifact_checks_passed": true,
+  "local_links_checked": 97,
+  "files_sha256": {
+    "manufacturing/bench-holder/base.stl": "e6b60d2412c7ad65c2383898ba7bdded7e28623debf9aa98b4416a184be38b78",
+    "manufacturing/bench-holder/bench-holder-b1.3mf": "da207915d520514c91f3478195d32283910b8ca3f54b162ed7f57614cc4bcc45",
+    "manufacturing/bench-holder/bench-holder-b1.step": "f126b633d9ae6a7e4370049514f64fe885f060cb91d7c1981e2ba56f53e6730f",
+    "manufacturing/bench-holder/controlpanel.stl": "c320035f2e4298e9e013228e69237138a06de3daf810f74abb63ca4cc5f270c8",
+    "manufacturing/bench-holder/insertcoupon.stl": "b693cdb558d56265825058ec6521faf9df10ba828d8c9721818e63b032348ece",
+    "manufacturing/bench-holder/interfacecoupon.stl": "e7eb8057bc538b82613ee655c22af49bc2aa55a889ffe191c3ec4efce6b318eb",
+    "manufacturing/bench-holder/ledkeeper.stl": "a72ad6e44aed2089d7d4a7ee134c4f4eec434e8904b442901e921d906c9e1557",
+    "manufacturing/bench-holder/mountcoupon.stl": "a470675e9ddfb5ea97dc64b0c7033c67597d8d08f90051ab820105006bc68f5f",
+    "manufacturing/bench-holder/pcbspacer.stl": "c3b97602071086df48d4455e1d31057944679a6776c35d279ce2dde70da6bcaa",
+    "manufacturing/bench-holder/README.md": "8133774c577c176b840475b114afa145198e5754382a86ae5b8f8f5fda48ef6d",
+    "mechanical/bench-holder/bench-holder-b1.FCStd": "1b68a6ec4275545024f69b881a803247199ad232377ab832114d92b923967186",
+    "mechanical/bench-holder/README.md": "c09d3f4cdad5ce238e2a9fdb6cf37cec9735c20a233675adb7206d860058d6ee",
+    "tools/build-bench-holder.py": "34b7cdf53627e7eb58870b8879740b209d426de2fb1b1f64e7c9a2ac28f21fd2",
+    "tools/bench-holder-threads.py": "edd319bc584e6d0b9eaba117b4d727077748f7027b1bfea36cd0f83f7640daac",
+    "tools/prepare-bench-holder.py": "f320f867cb8edb2d8e7ef8ecfcfc7e7d7ab9b7c8f529ef0b7f14e6f22dafeda2",
+    "tools/inspect-bench-holder.py": "db8cb55e62fb5b3f8f96596d3f3d109c93b3109f2cdc38fc9e6b099e1205c32f",
+    "tools/render-bench-holder.py": "ae069e2cd10eceaf5d2071a5691ecf66ac2df38f05035849f782af704a663a54",
+    "docs/bench-holder-guide.md": "412f858ee844034c41e8ace583f2cd85729248fe9f003aa8029eaea2a537f779"
+  },
+  "physical_acceptance": "not run",
+  "gui_reopen": "Bambu Studio named 0.20 mm process, 4 walls, 3 coarse skin layers; height ranges shown on base and mount coupon",
+  "native_gui_review": "Native SubtractiveHelix features; save/reopen and explicit through-core/lower-bore checks passed",
+  "optimization": {
+    "prior_project_sha256": "6251a0283e2cf154e73369ef61876f14ce1993255b8977633985a2f704b76f12",
+    "prior_seconds": 30466.7236328125,
+    "optimized_seconds": 24437.13232421875,
+    "saved_seconds": 6029.59130859375,
+    "saved_percent": 19.79074409596151,
+    "optimized_filament_g": 227.0699119567871
+  },
+  "inventory_item": "stock/m3-d5-l4-heat-set-inserts; prior helper readback unchanged"
+}

@@ -2,6 +2,17 @@
 
 Run these commands from the repository root. They are maintained project tools; agent-only scripts and intermediate outputs belong in ignored `.agent-scratch/`.
 
+The temporary holder uses `build-bench-holder.py` with FreeCAD 1.1's bundled
+Python and its `bench-holder-threads.py` native helix helper. Ordinary Python
+`prepare-bench-holder.py` prepares the three-plate Bambu Studio 3MF using installed
+X1C/Generic PLA profiles and the existing enclosure plate helpers. No printer
+connection is made. `inspect-bench-holder.py` uses the installed Robust MCP
+XML-RPC bridge for native assembly presentation/checks; it refuses to replace
+live documents. `render-bench-holder.py`, run with FreeCAD's bundled Python
+(matplotlib/Pillow), draws the guide and actual G-code layer sheets. See the
+[native model notes](../mechanical/bench-holder/README.md) for commands and
+[operator guide](../docs/bench-holder-guide.md) for printing and testing.
+
 - `python tools/check-netlist.py`: checks the final exported netlist in `docs/verification/schematic-complete.net`. Uses the Python standard library.
 - `python tools/tone-response.py`: runs the illustrative tone-chain model. Uses the Python standard library; see `docs/implementation/tone-response.md` for limitations.
 - `python tools/check-final-board.py`: reads the saved PCB and refreshes `docs/verification/final-board-inventory.json`. Requires KiCad's Python environment with `pcbnew`. It does not save or change the PCB.

@@ -1,0 +1,42 @@
+{
+  "revision": "B1",
+  "project_sha256": "da207915d520514c91f3478195d32283910b8ca3f54b162ed7f57614cc4bcc45",
+  "plates": [
+    {
+      "id": 1,
+      "layers": [
+        0.2,
+        1.4,
+        3.2,
+        8.6,
+        9.28,
+        14.8
+      ],
+      "extrusion_layer_count": 173
+    },
+    {
+      "id": 2,
+      "layers": [
+        0.2,
+        3.0,
+        8.6,
+        9.28,
+        15.36,
+        70.96
+      ],
+      "extrusion_layer_count": 395
+    },
+    {
+      "id": 3,
+      "layers": [
+        0.2,
+        1.4,
+        2.8,
+        3.2,
+        8.8,
+        10.2
+      ],
+      "extrusion_layer_count": 57
+    }
+  ]
+}

@@ -7,6 +7,7 @@ The schematic and routed PCB prototype are complete; assembly components have be
 | Area | Entry point |
 | --- | --- |
 | Requirements, parts and build instructions | [Project documentation](docs/README.md) |
+| Temporary bench assembly and radio-free testing | [Illustrated holder guide](docs/bench-holder-guide.md) and [print package](manufacturing/bench-holder/README.md) |
 | Electronics | [KiCad project](electronics/icom-ctcss-board.kicad_pro), with project-local libraries beside it |
 | PCB manufacturing | [Carvera Air package](manufacturing/pcb/carvera-air/README.md) |
 | PCB heat transfer | [Fabrication guide](docs/pcb-fabrication-guide.md), [laser transparency](docs/pcb-laser-transparency-guide.md), [sublimation artwork and coupon](manufacturing/pcb/sublimation/README.md) |

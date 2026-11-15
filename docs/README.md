@@ -2,6 +2,10 @@
 
 For making the board, follow the [illustrated PCB fabrication guide](pcb-fabrication-guide.md).
 
+For the assembled board and off-board controls before the final enclosure, use
+the [temporary bench-holder and radio-free test guide](bench-holder-guide.md),
+with its [three-plate print package](../manufacturing/bench-holder/README.md).
+
 **Carrier-board sourcing revision complete (2026-10-22):** obsolete Q1/C3 selections and the unavailable C6 selection have been replaced, with exact supplier-linked parts for all 38 BOM instances. See the [purchasing list and remaining product acceptance](implementation/component-sourcing-review.md). Radio/microphone adapters are already owned; physical manufacturing/radio acceptance and firmware remain open; this is a buildable carrier-board design, not a released product.
 
 **Control cleanup complete:** J5 is a two-pin bypass connector. The obsolete OFF/A0 switch circuit and R16 have been removed; A0 is intentionally unused. The board stays powered with the radio. The BOM and manufacturing files reflect this revision.

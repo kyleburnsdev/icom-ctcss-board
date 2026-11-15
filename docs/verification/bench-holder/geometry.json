@@ -1,0 +1,307 @@
+{
+  "revision": "B1",
+  "freecad_version": [
+    "1",
+    "1",
+    "1",
+    "20260414 (Git shallow)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "(HEAD detached at 0108fd4b4)",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "native_reopen": true,
+  "parts": [
+    {
+      "name": "Base",
+      "bounds_mm": [
+        210.0,
+        220.0,
+        75.0
+      ],
+      "solid_count": 1,
+      "valid": true,
+      "mesh_closed": true,
+      "mesh_facets": 66222,
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "sha256": "e6b60d2412c7ad65c2383898ba7bdded7e28623debf9aa98b4416a184be38b78"
+    },
+    {
+      "name": "ControlPanel",
+      "bounds_mm": [
+        210.0,
+        90.0,
+        11.300000000000004
+      ],
+      "solid_count": 1,
+      "valid": true,
+      "mesh_closed": true,
+      "mesh_facets": 47198,
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        4.9960036108132044e-15
+      ],
+      "sha256": "c320035f2e4298e9e013228e69237138a06de3daf810f74abb63ca4cc5f270c8"
+    },
+    {
+      "name": "LedKeeper",
+      "bounds_mm": [
+        36.0,
+        12.0,
+        4.000000000000001
+      ],
+      "solid_count": 1,
+      "valid": true,
+      "mesh_closed": true,
+      "mesh_facets": 1052,
+      "print_translation_mm": [
+        -142.0,
+        -66.0,
+        4.3298697960381105e-15
+      ],
+      "sha256": "a72ad6e44aed2089d7d4a7ee134c4f4eec434e8904b442901e921d906c9e1557"
+    },
+    {
+      "name": "PcbSpacer",
+      "bounds_mm": [
+        8.0,
+        8.0,
+        2.0
+      ],
+      "solid_count": 1,
+      "valid": true,
+      "mesh_closed": true,
+      "mesh_facets": 1008,
+      "print_translation_mm": [
+        4.0,
+        4.0,
+        -0.0
+      ],
+      "sha256": "c3b97602071086df48d4455e1d31057944679a6776c35d279ce2dde70da6bcaa"
+    },
+    {
+      "name": "InterfaceCoupon",
+      "bounds_mm": [
+        122.0,
+        45.0,
+        3.0
+      ],
+      "solid_count": 1,
+      "valid": true,
+      "mesh_closed": true,
+      "mesh_facets": 5072,
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "sha256": "e7eb8057bc538b82613ee655c22af49bc2aa55a889ffe191c3ec4efce6b318eb"
+    },
+    {
+      "name": "MountCoupon",
+      "bounds_mm": [
+        96.0,
+        52.0,
+        15.217500033288614
+      ],
+      "solid_count": 1,
+      "valid": true,
+      "mesh_closed": true,
+      "mesh_facets": 35040,
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "sha256": "a470675e9ddfb5ea97dc64b0c7033c67597d8d08f90051ab820105006bc68f5f"
+    },
+    {
+      "name": "InsertCoupon",
+      "bounds_mm": [
+        90.0,
+        25.0,
+        26.433756729740644
+      ],
+      "solid_count": 1,
+      "valid": true,
+      "mesh_closed": true,
+      "mesh_facets": 10242,
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "sha256": "b693cdb558d56265825058ec6521faf9df10ba828d8c9721818e63b032348ece"
+    }
+  ],
+  "board_holes_mm": [
+    [
+      31,
+      111
+    ],
+    [
+      169,
+      111
+    ],
+    [
+      31,
+      199
+    ],
+    [
+      169,
+      199
+    ]
+  ],
+  "lcd_holes_mm": [
+    [
+      22,
+      25
+    ],
+    [
+      62,
+      25
+    ],
+    [
+      42,
+      65
+    ],
+    [
+      82,
+      65
+    ]
+  ],
+  "panel_pins_mm": [
+    [
+      7,
+      8
+    ],
+    [
+      203,
+      8
+    ],
+    [
+      7,
+      82
+    ],
+    [
+      203,
+      82
+    ]
+  ],
+  "control_holes": [
+    [
+      "Encoder",
+      120,
+      48,
+      7.2
+    ],
+    [
+      "Bypass",
+      155,
+      48,
+      6.5
+    ],
+    [
+      "PttButton",
+      190,
+      48,
+      16.3
+    ],
+    [
+      "MicAdapter",
+      120,
+      18,
+      16.2
+    ],
+    [
+      "RadioAdapter",
+      165,
+      18,
+      16.2
+    ],
+    [
+      "PttLed",
+      148,
+      72,
+      5.2
+    ],
+    [
+      "BypassLed",
+      172,
+      72,
+      5.2
+    ]
+  ],
+  "pcb_underside_z_mm": 15,
+  "pcb_support_height_mm": 12,
+  "panel_front_underside_z_mm": 30,
+  "panel_angle_deg": 30,
+  "insert_pilot_diameter_mm": 4.6,
+  "insert_pocket_depth_mm": 5.5,
+  "pcb_underlead_floor_clearance_for_2mm_leads_mm": 10,
+  "pcb_screw_holes": "upper 6 mm modeled M3 x 0.5 thread, lower 3.4 mm clearance bore; no blind floor",
+  "pcb_thread_length_mm": 6,
+  "pcb_thread_start_z_mm": 9,
+  "panel_labels": [
+    "LCD",
+    "TONE",
+    "BYPASS",
+    "PTT TEST",
+    "PTT",
+    "BYPASS",
+    "MIC",
+    "RADIO"
+  ],
+  "source_sha256": "1b68a6ec4275545024f69b881a803247199ad232377ab832114d92b923967186",
+  "generator_sha256": "34b7cdf53627e7eb58870b8879740b209d426de2fb1b1f64e7c9a2ac28f21fd2",
+  "gui_native_review": true,
+  "native_presenter": "Robust MCP XML-RPC bridge; native API visibility and saved view",
+  "production_intersections_mm3": {
+    "Base / ControlPanel": 0.0,
+    "Base / PcbReference": 0.0,
+    "ControlPanel / LedKeeper": 1.837831702350155
+  },
+  "pcb_screw_path_checks": [
+    {
+      "center_mm": [
+        31,
+        111
+      ],
+      "lower_clearance_obstruction_mm3": 0.0,
+      "through_core_obstruction_mm3": 0.0,
+      "upper_thread_material_mm3": 13.759426391517222
+    },
+    {
+      "center_mm": [
+        169,
+        111
+      ],
+      "lower_clearance_obstruction_mm3": 0.0,
+      "through_core_obstruction_mm3": 0.0,
+      "upper_thread_material_mm3": 13.759419146088998
+    },
+    {
+      "center_mm": [
+        31,
+        199
+      ],
+      "lower_clearance_obstruction_mm3": 0.0,
+      "through_core_obstruction_mm3": 0.0,
+      "upper_thread_material_mm3": 13.759401808228478
+    },
+    {
+      "center_mm": [
+        169,
+        199
+      ],
+      "lower_clearance_obstruction_mm3": 0.0,
+      "through_core_obstruction_mm3": 0.0,
+      "upper_thread_material_mm3": 13.759427520939782
+    }
+  ]
+}
