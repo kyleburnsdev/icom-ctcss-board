@@ -1,0 +1,245 @@
+{
+  "revision": "C1",
+  "local_links_checked": [
+    [
+      "docs/enclosure-c1-guide.md",
+      "../manufacturing/enclosure-c1/ctcss-c1.3mf"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "images/enclosure-c1/layout.png"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "images/enclosure-c1/radio-interface.png"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "images/enclosure-c1/assembly.png"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "verification/enclosure-c1/inventory-preflight.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "final-product-wiring-guide.md"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "reference/ic229h-mounting.md"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../mechanical/enclosure/c1/ctcss-c1.FCStd"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../manufacturing/enclosure-c1/supporting/step/ctcss-c1-assembly.step"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "verification/enclosure-c1/cad-checks.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "verification/enclosure-c1/export-checks.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "verification/enclosure-c1/slicer-checks.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../tools/build-enclosure-c1.py"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../tools/export-enclosure-c1.py"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../docs/enclosure-c1-guide.md"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "ctcss-c1.3mf"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../mechanical/enclosure/c1/ctcss-c1.FCStd"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "supporting/step/ctcss-c1-assembly.step"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "supporting/stl/"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../docs/verification/enclosure-c1/"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../docs/reference/ic229h-mounting.md"
+    ],
+    [
+      "mechanical/enclosure/c1/README.md",
+      "ctcss-c1.FCStd"
+    ],
+    [
+      "mechanical/enclosure/c1/README.md",
+      "../../../docs/enclosure-c1-guide.md"
+    ],
+    [
+      "mechanical/enclosure/c1/README.md",
+      "../../../manufacturing/enclosure-c1/README.md"
+    ],
+    [
+      "mechanical/enclosure/c1/README.md",
+      "../../../tools/build-enclosure-c1.py"
+    ],
+    [
+      "mechanical/enclosure/c1/README.md",
+      "../../../tools/export-enclosure-c1.py"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "cad-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "export-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "slicer-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layer-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layers-1.png"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layers-2.png"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layers-3.png"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layers-4.png"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "inventory-preflight.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "inventory-input.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "../../enclosure-c1-guide.md"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "../../reference/ic229h-mounting.md"
+    ]
+  ],
+  "primary_3mf_sha256": "bbf786f0e849ac3bccf6e1debb08d3712136d501c66b84c8bcfad98d8a986a2c",
+  "native_reopen": "16 installed instances and 16 unique bodies/coupons verified",
+  "native_slicer_reopen": {
+    "version": "BambuStudio 02.08.02.61",
+    "return_code": 0,
+    "plates": 4,
+    "objects": 27,
+    "warnings": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "settings_match": true
+  },
+  "plate_estimates": [
+    {
+      "id": 1,
+      "minutes": 148.25323893229168,
+      "grams": 56.98712921142578
+    },
+    {
+      "id": 2,
+      "minutes": 807.5525390625,
+      "grams": 316.2587585449219
+    },
+    {
+      "id": 3,
+      "minutes": 176.63636067708333,
+      "grams": 75.2485122680664
+    },
+    {
+      "id": 4,
+      "minutes": 413.17486979166665,
+      "grams": 157.9776611328125
+    }
+  ],
+  "visual_review": "Guide schematics/native assembly/base views and 16 actual extrusion panels inspected; interfaces and skins continuous at sampled heights; physical bridges/fit remain coupon checks.",
+  "physical_acceptance": "not run",
+  "inventory_preflight": "record gaps; user PLA and M3 stock inputs preserved",
+  "sha256": {
+    "docs/enclosure-c1-guide.md": "93dc7fd9b3498c2299473ec15d4f4314c914ecaf9d9e41fe96fb0de5be182c42",
+    "docs/images/enclosure-c1/assembly.png": "553295531dc3c666b4f400491e74ce684123889f027a7a9732483e67cfdb2baf",
+    "docs/images/enclosure-c1/base-and-panel.png": "5fff7753d873dd3567b02fd6be85e18c2aec3b6cb704031cb3a2a3ef22e6f937",
+    "docs/images/enclosure-c1/layout.png": "0c9a7a968542bd16275c5f779851371b6cd6d9909c059487aea0b66899aefa10",
+    "docs/images/enclosure-c1/radio-interface.png": "b8a635cbbaedc280a683fe7fa480d32e0ce6a2f4c8809d34f453e240841d8005",
+    "docs/reference/ic229h-mounting.md": "063d402bfcf347f01dc3275750d8e7a1fba7a82c15be7d4467e27f5ce4ef95fc",
+    "docs/verification/enclosure-c1/cad-checks.json": "9dafaf77a0504af62a05f81af60a942ad4edaa8eeb76983014e5de09a62f9c56",
+    "docs/verification/enclosure-c1/export-checks.json": "5974d6f9b54f9dde759eb77a321ff5633ea55d832418a7c97a764a0c15dfad23",
+    "docs/verification/enclosure-c1/inventory-input.json": "d214e125887f249723c926499a6e8cdfe3b09ba02b90e97b11981c39fc9620a0",
+    "docs/verification/enclosure-c1/inventory-preflight.json": "e316cd34d898613477cace8c72be2475e73b89ed5c63d8be5e7bdee1d727afae",
+    "docs/verification/enclosure-c1/layer-checks.json": "b7e8b0bdd6e01facbedef013ab0516d29a903f3c386f68c38225a63eb92dbef0",
+    "docs/verification/enclosure-c1/layers-1.png": "e06cbf58e3b11d1451f29260b41f5a87cd10b69a28879747b66077de0f4f8832",
+    "docs/verification/enclosure-c1/layers-2.png": "8179dada85344b9153e89074a23df33f4ef0dd637fbeef2d5398256521fac120",
+    "docs/verification/enclosure-c1/layers-3.png": "33c5534af730dd78fdaa4277ab6e4caa5c2855c66f3737d904794a855c16b68a",
+    "docs/verification/enclosure-c1/layers-4.png": "3ed5fef29495e726bfb0aefd701de2e94b6c816d52e5e38bde98b26b0ecd6985",
+    "docs/verification/enclosure-c1/README.md": "2c3a6982f25354241cacd119c855bb7df1683b65656641c02e1d4ef2c3b95f97",
+    "docs/verification/enclosure-c1/slicer-checks.json": "40241e365e1d947879494b0b01a77fee3fa7d01b0f2438c36c8a2e50c76219e5",
+    "manufacturing/enclosure-c1/ctcss-c1.3mf": "bbf786f0e849ac3bccf6e1debb08d3712136d501c66b84c8bcfad98d8a986a2c",
+    "manufacturing/enclosure-c1/mechanical-bom.csv": "82f949b039ac2c5ecd17f0afc31c4b14b258706dfeb9530a5aefebc7a76679d0",
+    "manufacturing/enclosure-c1/README.md": "0093da17cc5717bd1456185e73e92d8c6ad9038f29ec61358a2ecbf67e80d072",
+    "manufacturing/enclosure-c1/supporting/step/ctcss-c1-assembly.step": "855b508afc292b417f3700de7e6448fe992ed25aca9b71d6a7b2a5d4c71c1671",
+    "manufacturing/enclosure-c1/supporting/stl/base.stl": "47602d54da031050b13b7292cbbe35f38c61fe06c4f91665390835a97deff3a1",
+    "manufacturing/enclosure-c1/supporting/stl/controlpanel.stl": "1ad4d38aeeb87f07cce7dae9848bb46e3f67b2e5476abe37236282a4985dc277",
+    "manufacturing/enclosure-c1/supporting/stl/coverrailcoupon.stl": "f8b7c0c77a6de6194fa289db9a17f6803e89065288c85051713995dcca07eeb1",
+    "manufacturing/enclosure-c1/supporting/stl/covertonguecoupon.stl": "6ad533d19c50d08faf6c4fc515a57330b008315c78d151d4ad291038dd6ebfa5",
+    "manufacturing/enclosure-c1/supporting/stl/displayearclip.stl": "c7d50390d8d91cecfe9f935b24a94abe4ec218435b4f48616f2257b703275929",
+    "manufacturing/enclosure-c1/supporting/stl/displayfitcoupon.stl": "f3dd5dc4918800022a49c8158ca14269509069b9f5eec74b2c8b4e7b6f3d1c2c",
+    "manufacturing/enclosure-c1/supporting/stl/insertpilotcoupon.stl": "11eadbdd0d910a753f606a02edb62fe86c4bfbbb7177d3a186b26c9f45a67361",
+    "manufacturing/enclosure-c1/supporting/stl/ledkeeper.stl": "786fd34e9bcb83cd13c755c1a1cb293319d1cf5cf809724a2603f9d33a08e073",
+    "manufacturing/enclosure-c1/supporting/stl/leftradiocheek.stl": "d67219c33c449ed4f82fb56df07dbab8cc0624810f4d7d6eb78ca61a6b34a6fd",
+    "manufacturing/enclosure-c1/supporting/stl/leftradiosaddle.stl": "375817d9b17947858ec06985e73de4118d8f6fc3bf156ff1fc8b1a4269d04a31",
+    "manufacturing/enclosure-c1/supporting/stl/nubandstrapcoupon.stl": "2f92e384fb7ff4683b8fc055d8981b0030c3986d6b840dab38ea5f288038b43d",
+    "manufacturing/enclosure-c1/supporting/stl/pcbcornerstrap.stl": "8bfdf2690a2c1b04d103954e57995bd99e79a28c83ad1b8bbdd22449171e3849",
+    "manufacturing/enclosure-c1/supporting/stl/radiopatterncoupon.stl": "27e518e4cac19923b7744b9b244f9fee44c2f8fcd502527330a23c1a453a498d",
+    "manufacturing/enclosure-c1/supporting/stl/rightradiocheek.stl": "c65e1af8a713c42d0fbddf9cf29abd5af12d7545592a4aea2daecfc524d3786b",
+    "manufacturing/enclosure-c1/supporting/stl/rightradiosaddle.stl": "58cc3e3fad335ef382d9e552d95419c3cf2ea4388aab26b55a696f035d337c0b",
+    "manufacturing/enclosure-c1/supporting/stl/slidingcover.stl": "2da63372833aad95763660ebf951f234515069d8660f5c7155785b86a6f8bc60",
+    "mechanical/enclosure/c1/ctcss-c1.FCStd": "a7151c5d4e2c86eb7e448065ecc10850a99588b9b54ab68fc782904728acfa5f",
+    "mechanical/enclosure/c1/README.md": "3dc35868bbfc2f6749ed724d8097175e689f3a92bf38f132861a13019c727042",
+    "tools/bench-holder-threads.py": "edd319bc584e6d0b9eaba117b4d727077748f7027b1bfea36cd0f83f7640daac",
+    "tools/build-bench-holder.py": "34b7cdf53627e7eb58870b8879740b209d426de2fb1b1f64e7c9a2ac28f21fd2",
+    "tools/build-enclosure-c1.py": "0905ccf7ebb43d7ca2fff9d80f36bc4d5d5a5fbe479620652d9e8079648ff8c8",
+    "tools/export-enclosure-c1.py": "fb897632b05b2dc63e9e259d177d1fb93e07de0cd707c61e08dfa2c5951e43f2",
+    "tools/prepare-enclosure-c1.py": "5738254ba086bad126d810ce0659b42ae9d1a97c7e200e67eb92bfc78002e94c",
+    "tools/prepare-enclosure-plates.py": "d61cd519f8daa7e5696a9d222e709a82655f6d081d8fd09dc85385fa3f9c00f7",
+    "tools/render-enclosure-c1.py": "d7347fdd23ff40b8597a83b342fea5ff336e5b57798dedb7b2e07f6e7ec684c0"
+  }
+}

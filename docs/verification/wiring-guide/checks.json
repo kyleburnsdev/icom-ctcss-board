@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-16",
+  "result": "pass",
+  "header_positions_checked": 31,
+  "populated_board_contacts": 30,
+  "local_encoder_jumpers": 1,
+  "csv_rows": 32,
+  "local_guide_links_and_anchors_checked": 37,
+  "figures": 9,
+  "checks": [
+    "All CSV header nets match retained Konnect saved-PCB pads and Eeschema exported netlist",
+    "MIC/RADIO pass-through and intercepted PTT checked",
+    "RAW versus regulated VCC and LED series-resistor nets checked",
+    "Every row represented in guide; J3-4 empty; local encoder jumper included",
+    "Guide local links and anchors resolve"
+  ],
+  "tool": "Eeschema 10.0.0 netlist export via Konnect; Python documentation checks; Pillow 12.0.0",
+  "physical_checks": "Not run: harness construction, adapter mapping, encoder contacts, power/radio/mechanical acceptance",
+  "sha256": {
+    "electronics/icom-ctcss-board.kicad_pcb": "3443c8990e78a9669dd5a49a534c4eb87c8465d3ada177200b9a289cf52eac51",
+    "electronics/icom-ctcss-board.kicad_sch": "2b4d0f6b251cbe1a2bee54bc0166810619f8169cb23300a76d3e1122eb8bed77",
+    "firmware/icom_ctcss/config.h": "7472cf7ed38a3d3cf948b44324eef299adeb926d7e1d6db42c8d3080f6cd8252",
+    "docs/requirements/board-specification.md": "b7c027009787c596abbf05d39cb199e4172a359cd9e9ab566d46db24f3b4bb7c",
+    "docs/implementation/component-sourcing-review.md": "854658c7e2365383c4f325153cfaa4986f66e1d33c9c98d81bb33f6184f87466",
+    "docs/final-product-wiring-guide.md": "9e8b374f70c25810c5313cec88f69616493be4f2565d69021052096d0c989847",
+    "docs/reference/final-product-wire-list.csv": "3f20d351d9df77895e8ccddaf2d8a44cf759f5fc66a092376e2849e75cee5731",
+    "docs/verification/wiring-guide/header-readback.json": "8e93004962570f60f57733fd5d1c4b9f9aebee1c041aa6296d41d6c876d54271",
+    "docs/verification/wiring-guide/schematic.net": "abd133e241d80bda923b926e40fc2f720d9b53230f39bf4d9876c1302fa564bf",
+    "tools/render-wiring-guide.py": "2e31155a3b15d7572046853eec7e1d8f6933b7cf5ee054e1af671a4ba00d661d",
+    "tools/check-wiring-guide.py": "d7420e6b8ff19db47ccc3221806a3f849396eff1115a25d0733ebeccf55ba97a",
+    "tools/render-wiring-hardware.py": "0704164c89d1da7082476ade145ae7cd8aed1af25697da5668ce725dcefd9f61",
+    "docs/images/wiring/board-headers.png": "b36c5d27b2b86486c1e58f1e8b5e1857c07d330a97efcf53d407628f48df8289",
+    "docs/images/wiring/display-switch-leds.png": "e44ba8befe42236b5df54bfe48afcb9a43234ae5dd17fb226c740479dcac4dac",
+    "docs/images/wiring/ec11-hardware.png": "984bc57095aed56746a925c5cb31106e260db17cc4028d8df55c21e098912793",
+    "docs/images/wiring/ec11-pinout.png": "8edb737f1d873fd8a713724502c55a5f8aac8fa6c0e65b4b82e9e820058bc0ba",
+    "docs/images/wiring/encoder.png": "e60909e65532d7aea97de768a3f6661869ba73503c0c5870467c0b33768c7636",
+    "docs/images/wiring/gx16-hardware.png": "c0d38630332770cdd0968fa3be3f4b937bb88873a02056729a8b9567f0a7e463",
+    "docs/images/wiring/gx16-pinouts.png": "81c447e74be80d2b6a44cf22fdcdbc1a0420f24731bcd976d6c4e7590c4660bd",
+    "docs/images/wiring/mic-radio.png": "ea0de21fc691eeef978f5f426482e6d347f2c3582673317357257ae7f07ba262",
+    "docs/images/wiring/plug-views.png": "519fd796cd490872eb4194a4dac36b336a5a2bbf7d3654d9d0fecee6b37cfd6c"
+  }
+}

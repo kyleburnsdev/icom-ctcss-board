@@ -1,0 +1,316 @@
+{
+  "started_utc": "2026-11-16T18:48:31.741940+00:00",
+  "status": "incomplete",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T18:48:35.692885+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T18:48:37.065185+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T18:48:37.083347+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T18:48:37.103355+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T18:48:37.123398+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T18:48:37.132993+00:00",
+      "raw": "100 mV\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T18:48:37.153560+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T18:48:37.163128+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T18:48:37.183311+00:00",
+      "raw": "-1.537982E-04\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T18:48:43.520608+00:00",
+      "raw": "-1.920481E-04\n",
+      "roundtrip_s": 0.015000000013969839
+    }
+  ],
+  "supply_commands": [
+    {
+      "utc": "2026-11-16T18:48:31.759085+00:00",
+      "arguments": [
+        "--show"
+      ],
+      "response": "Driver functions:\n    Power supply\nScan options:\n    conn\n    serialcomm\n    force_detect\nkorad-kaxxxxp:conn=COM11 - Korad KA3005P [S/N: [redacted]] with 2 channels: V I\nSupported configuration options:\n    conn: COM11 (current)\n    continuous: on, off\n    limit_samples: 0 (current)\n    limit_time: 0 (current)\n    voltage: 0.000000 (current)\n    voltage_target: 0.000000, 31.000000, 0.010000\n    current: 0.000000 (current)\n    current_limit: 0.000000, 5.100000, 0.001000\n    enabled: on, off (current)\n    regulation: CC (current)\n    ocp_enabled: on (current), off\n    ovp_enabled: on, off (current)\n"
+    },
+    {
+      "utc": "2026-11-16T18:48:35.704384+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T18:48:37.192958+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=8.00:current_limit=0.050:ocp_enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T18:48:38.111637+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T18:48:39.480718+00:00",
+      "arguments": [
+        "--config",
+        "enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T18:48:40.166702+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035999998450279236\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T18:48:43.540289+00:00",
+      "arguments": [
+        "--config",
+        "enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T18:48:44.211638+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T18:48:45.613155+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=1.00:current_limit=0.050:ocp_enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T18:48:46.505689+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    }
+  ],
+  "setup_confirmed": true,
+  "meter_port": "COM15",
+  "supply_port": "COM11",
+  "connections": "Supply + TP2; supply minus and meter COM TP1; meter V/ohm TP3; PCB USB and all off-board devices disconnected",
+  "limits": {
+    "raw_v": 8,
+    "current_limit_a": 0.05,
+    "vcc_v": [
+      4.75,
+      5.25
+    ]
+  },
+  "source_hashes": {
+    "check-board-power.py": "621957313046e545ed8901f866bba2e4abc560b7300b1ce77454897d1f207d87",
+    "korad_supply.py": "3b6f4b33eb81238d42b4a61d14bafbb5586026f32576da1f3bc0fbf5d83f82c5",
+    "xdm1251.py": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777"
+  },
+  "pyserial_version": "3.5",
+  "supply_identity": {
+    "model": "KA3005P",
+    "firmware": "V1.5",
+    "serial_number": "[redacted]"
+  },
+  "meter_identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "supply_before": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "meter_before": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 mV",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "pre_voltage_v": -0.0001537982,
+  "settings_before_enable": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "enable_requested_utc": "2026-11-16T18:48:39.480718+00:00",
+  "supply_enabled": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.035999998450279236,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "vcc_readings_v": [
+    -0.0001920481
+  ],
+  "disable_requested_utc": "2026-11-16T18:48:43.540289+00:00",
+  "supply_output_off": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "supply_final": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "error": "RuntimeError: VCC outside selected 4.75\u20135.25 V screen",
+  "finished_utc": "2026-11-16T18:48:47.868035+00:00"
+}

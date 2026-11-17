@@ -1,5 +1,11 @@
 # Assembling and testing on the temporary bench holder
 
+**Rear-display replacement:** use the [B2 replacement-panel guide](bench-panel-b2-guide.md)
+and [B2 print project](../manufacturing/bench-panel-b2/bench-panel-b2.3mf) for the
+display mounted behind a screen window with printed rear thumb screws. Keep the
+already printed B1 base. The front-mounted LCD instructions below describe B1;
+the base, other controls and electrical checks still apply to B2.
+
 Use **PLA**, the already soldered PCB, the Grove LCD RGB Backlight V4.0, the
 encoder, bypass switch, two 5 mm LEDs, two GX16-8 adapters and the inventory
 **16 mm momentary push-button**. The radio and hand microphone stay disconnected.
@@ -43,7 +49,10 @@ Have the fully soldered board and its off-board parts, the selected 16 mm button
 PLA, a small driver, one steel M3 cleanup screw, four nylon M3 screws, four metal
 **M3 × 8** panel screws, four **M3 × D5 × L4** inserts, a temperature-controlled
 insert tip, side cutters/deburring tools, and insulated temporary test leads.
-The connector/switch/encoder's existing nuts retain those parts. No separate
+The connector and switch use their existing nuts. The EC11s lack nuts and washers:
+use the [printed encoder nut with integrated washer](ec11-flange-nut-guide.md)
+and its two-plate [N1 print project](../manufacturing/ec11-flange-nut/ec11-flange-nut-n1.3mf),
+accepting the thread-fit samples first. No separate
 purchased PCB standoffs, feet or panel brackets are needed.
 
 The saved process uses **Bambu X1 Carbon, 0.4 mm nozzle, Generic PLA, Textured
@@ -122,7 +131,8 @@ angle. Label positions on the printed panel identify every mounted component.*
    electronics. With the 3 mm panel, that screw projects 5 mm into a 5.5 mm pocket:
    **0.5 mm nominal tip clearance**. No washer is included in that stack.
 2. Mount the encoder, bypass toggle, 16 mm test button and both GX16-8 adapters
-   from their labeled face. Use their supplied nuts; do not let the bodies turn
+   from their labeled face. Use the accepted N1 printed flanged nut for the EC11
+   and the supplied nuts for the other parts; do not let the bodies turn
    and twist completed wiring. The **TONE** label must remain above the knob;
    **MIC** and **RADIO** remain below their connector flanges. Keep unused contacts
    insulated. Bypass position markings depend on the actual wired switch throw;

@@ -10,6 +10,276 @@ are modified.
 
 ## Set up
 
+### Brief populated-board power screen
+
+`check-board-power.py` uses the pinned bench dependencies below, the native
+sigrok nightly at `~/.local/share/sigrok-cli-nightly-20261105/sigrok-cli.exe`,
+and `korad_supply.py` (copied from the inventory's tested KA3005P helper).
+The test checks supply KA3005P/V1.5 and OWON XDM1251/V1.0.1.0.4 identities.
+
+**This command energizes the PCB.** First complete unpowered short screening
+and solder inspection. Supply starts OFF. Connect supply + to TP2, supply −
+and meter black COM to TP1, meter red V/Ω to TP3; leave PCB USB and all off-board
+components disconnected. Prepare meter DCV/autorange/S, math/secondary off.
+Close other instrument clients and confirm physical connections before running:
+
+```powershell
+.agent-scratch/firmware/bench-venv/Scripts/python.exe tools/bench/check-board-power.py --meter-port COM15 --supply-port COM11 --setup-confirmed --out NEW_REPORT.json
+```
+
+Rediscover explicit ports and use a new output file. For a **RAW measurement**,
+move red to TP2 with power off, confirm connections, and add `--measurement raw`.
+Never use the RAW option while red remains on TP3: it changes the expected range.
+
+The selected starting screen is 8.00 V RAW / 50 mA limit, OCP trip off so CC
+limiting is available. Pre-enable settings must read back correctly; enabled
+source must read CV, 7.8–8.2 V and less than 49 mA. After two seconds, collect
+eight displayed DMM readings with 0.5-second waits: VCC must be 4.75–5.25 V,
+or RAW 7.8–8.2 V with the RAW option. A failed reading stops the run. These are
+bench screening limits, not a regulator-load rating or calibrated uncertainty.
+Current and voltage telemetry are asynchronous; the DMM polls can repeat a
+conversion. The loaded display, radio, temperature and USB/backfeed checks are
+outside this command's scope. Do not increase the current limit to overcome a
+failure without diagnosing it.
+
+Normal/handled-error cleanup disables output and verifies OFF, then leaves
+1.00 V / 50 mA / OCP on. Meter receives no mode writes. Exit 0 with
+`power_screen_pass` means the selected readings and cleanup passed; exit 2
+means incomplete/failed screen. Inspect the raw report and actual final state.
+Typical run takes roughly 20 seconds including status queries; these waits do
+not define a hardware power-on timeout. On smoke, odor or rapid heating, use
+the physical output/power switch. USB/host loss can prevent software shutdown;
+after stopping the client, run `python tools/bench/korad_supply.py --port COM11 off`
+and require `enabled: false` before moving leads. If control fails, use the
+physical switch. Closing a process does not disable this supply.
+
+The November 16 first powered run stopped on a near-zero DMM reading and verified
+shutdown. The operator subsequently clarified that the meter was disconnected
+during that run. This exercised the failed-reading/cleanup path; it was neither
+a valid TP3 measurement nor evidence of a PCB power fault.
+
+For an idle-PWM check on the populated board, connect physical ×10 CH1 tip to
+TP4 and scope ground to TP1 with supply off; retain the VCC meter connection.
+Add `--idle-pwm-output NEW_CAPTURE_DIRECTORY --scope-probe-confirmed` to the
+power-screen command. The destination must not exist and its parent must exist.
+This runs the existing `tools/check-idle-pwm.py --raw-powered-board` after VCC
+passes, under the same current-limited RAW power. The child has a 60-second
+host timeout, restores scope settings and retains raw capture/evaluation; then
+the wrapper rechecks source/VCC and disables the supply. A timeout can interrupt
+child restoration; inspect its last retained settings before using the scope
+again. Supply cleanup still runs after the timeout. Pass requires
+`power_and_idle_pwm_pass`, child `passed=true`, `settings_restored=true`, and
+verified supply shutdown. This measures idle PWM at TP4 on the loaded carrier;
+it does not measure modulated tone or qualify analog filtering. The November 16
+populated-board idle run passed these checks.
+
+For idle filter screening, with output off add CH2 physical ×10 tip TP5 and
+ground TP1, retaining CH1 TP4/TP1 and VCC meter connections. Replace the PWM
+option with `--filter-output NEW_CAPTURE_DIRECTORY --filter-ripple-scale 0.1
+--scope-probe-confirmed` on the power-screen command. Put those flags on one
+command line. The wrapper runs `tools/check-idle-filter.py`, retains separate
+DC and AC RAW captures and verifies source/VCC/shutdown. Choose only one scope
+experiment per powered run. The child timeout remains 60 seconds.
+
+The filter child configures CH1 1 V/div DC as the 2.5 V rising-edge trigger,
+CH2 ×10 with 20 MHz bandwidth limit, 100 µs/div and 600 kpoint depth. CH2 is
+first 0.5 V/div DC with −1.5 V offset, then AC at the selected 0.01, 0.05 or
+0.1 V/div and zero offset. It waits 0.8 seconds after each mode/range change.
+It checks DC 1.35–1.75 V, central 1st–99th percentile ripple ≤80 mV, AC RMS
+≤20 mV, no clipping and at least 1 ms of samples. These are selected assembly
+screens; brief excursions outside those percentiles are retained in min/max
+and require engineering assessment. A pass is not a bound on every noise spike.
+The November 16 10/50 mV/div attempts clipped; the 100 mV/div attempt passed
+the coarse screens while retaining roughly ±0.28 V excursions of unresolved
+origin. See the populated-board evidence before interpreting that result.
+
+For a grounded-probe control, with supply off move only CH2 tip to TP1 and
+leave its ground clip TP1, CH1 TP4/TP1 and other wiring fixed. Add
+`--grounded-control` to the filter wrapper command with a new output directory
+and JSON. The child records ground DC/noise instead of asserting the TP5 DC
+range; it checks ground mean within ±50 mV and retains all noise extrema.
+`power_and_grounded_control_complete` means this control completed with cleanup,
+not that the filter passed. The November 16 control reproduced nearly the same
+fast spikes on ground; it established a setup contribution without identifying
+its precise coupling mechanism or producing a corrected PCB-noise value.
+
+For physical PTT/bypass-to-TP5 tests, connect the released F767ZI fixture while
+PCB output is off: GND CN10-5 to TP1; PF12 CN7-20 through 1 kΩ to J1-5; PF13
+CN10-2 through 1 kΩ to J5-1. Keep NUCLEO USB powered and PCB USB disconnected;
+do not join rails. The populated PCB supplies pull-ups. Use CH1 ×10 TP4/TP1,
+CH2 ×10 TP5/TP1 and meter TP3/TP1. On the power wrapper command replace other
+scope options with `--tone-output NEW_DIRECTORY --fixture-port COM5
+--scope-probe-confirmed` on one line. Use a new power JSON path as well.
+
+`tools/check-board-tone.py` verifies the fixture identity/released state, arms
+it and refreshes its five-second firmware lease every 0.5 seconds under exclusive
+serial ownership. The worker has a 90-second experiment budget. It captures five
+TP5 states: idle, PTT, bypass while held, resume while held, release. CH2 is
+0.5 V/div DC, −1.5 V offset, 20 MHz limit; CH1 triggers rising at 2.5 V,
+20 ms/div and 600 kpoints. Each command gets a 0.2-second settling allowance.
+Selected analog criteria and 32-sample averaging are recorded in each result;
+default expected saved tone is 151.4 Hz. This neither sets the Arduino tone nor
+verifies its binary identity. It writes no firmware or settings.
+
+Normal/error cleanup STOPs the fixture and requires armed=0/drive=0, restores
+scope settings, then the parent verifies source/VCC and supply shutdown. The
+parent child-process timeout is 120 seconds for this sequence; it is not a
+hardware shutdown timer. Require `power_and_board_tone_pass`, child passed and
+settings restored, fixture final release and supply final OFF. On interruption,
+keep the NUCLEO connected/powered, stop active clients, issue fixture STOP and
+verify release, and use the supply `off` recovery above. Remove fixture signal
+wires with PCB power off before unplugging the NUCLEO. The November 16 run passed.
+
+For a readable offline figure, run `python tools/plot-board-tone.py RUN_DIRECTORY`
+with matplotlib/numpy installed. It writes `tone-sequence.png` from retained RAW
+samples and exact preambles, showing 30 ms per independent 240 ms record with
+the same averaging as the evaluator. It never contacts hardware. Windows
+Python matplotlib 3.11.2 rendered the November 16 evidence.
+
+For loaded Q1 testing, with supply off add 1 kΩ from TP3 to TP8, move CH1 ×10
+tip to TP7 and CH2 ×10 tip to TP8, grounds TP1, retain NUCLEO and VCC meter
+wiring. On the power-wrapper command use `--ptt-output NEW_DIRECTORY
+--fixture-port COM5 --scope-probe-confirmed` on one line and a fresh power JSON.
+The 1 kΩ load gives roughly 5 mA when Q1 keys and dissipates at most 25 mW at
+5 V. It is a bench load; radio PTT ratings remain separately unmeasured.
+
+`tools/check-board-ptt.py` uses the shared bounded fixture owner in
+`bench/fixture_control.py`. It captures three press/release pairs in each bypass
+state. Both channels are 1 V/div DC, offset −2.5 V, ×10, 20 MHz limit; 10 ms/div,
+600 kpoints, real CH1 edge at 2.5 V, with 0.8-second arming before stimulus.
+Both channels are read from the same stopped acquisition with identical axes.
+Acceptance requires exactly one correct transition per channel, input LOW
+≤1.5 V, collector LOW ≤0.4 V, released HIGH 4.5–5.5 V and delay 0–25 ms.
+The first/last 20% of each record supplies plateau means. Source/meter limits,
+fixture STOP/release, scope restoration and power shutdown remain mandatory.
+The parent timeout is 120 seconds and the fixture worker budget 90 seconds;
+neither is an independent hardware power timeout. The November 16 twelve-event
+run passed. Require `power_and_loaded_ptt_pass` and all retained cleanup readbacks.
+
+Offline: `python -m unittest discover -s tools/bench -p test_board_ptt.py -v`.
+Plot: `python tools/plot-board-ptt.py RUN_DIRECTORY` (matplotlib/numpy); it reads
+retained RAW and writes `loaded-ptt-transitions.png` with three captures overlaid
+per condition. The plot is decimated for display; timing uses full samples.
+
+For divider/trimmer/C3/R5 output checks, with power off remove the TP3-to-TP8
+test load, move CH1 physical ×10 to TP5 and CH2 physical ×1 to TP6, grounds TP1.
+Retain NUCLEO and VCC meter wiring. The ×1 input provides nominal 1 MΩ loading;
+with C3=1 µF and R5=100 kΩ the nominal coupling time constant is about 1.1 s.
+Set RV1's selected endpoint gently while power is off. The specified Bourns
+3296W has 25 nominal turns of travel and an idling wiper at the endpoint: do not
+seek a firm stop by force. Thirty gentle CCW turns is the selected allowance
+for setting minimum from an unknown position; verify electrically afterward.
+
+Use `--mixing-output NEW_DIRECTORY --mixing-level maximum --fixture-port COM5
+--scope-probe-confirmed` on the power wrapper, on one line with a new power JSON.
+For minimum use `--mixing-level minimum` and new paths. The child
+`tools/check-board-mixing.py` asserts PTT, configures CH1 ×10/0.5 V/div DC/−1.5 V
+offset and CH2 ×1/0.1 V/div DC/zero offset, both 20 MHz limited, 20 ms/div,
+600 kpoints. After six seconds settling, it reads both channels from the same
+real-triggered stopped acquisition. It uses shared `bench/analog_tone.py`.
+
+Maximum screening limits: output p-p 0.10–0.22 V, averaged RMS 0.02–0.09 V,
+mean ±30 mV, nominal-timebase tone 151.4±0.2 Hz and TP6/TP5 amplitude ratio
+0.05–0.11. Minimum limits: p-p ≤20 mV, averaged RMS ≤10 mV, mean ±30 mV and
+ratio ≤0.015, while TP5 retains the active tone. No radio load is simulated.
+Afterward STOP/read back fixture, restore scope probe factors before scales/
+offsets, and verify parent source/VCC/shutdown. Require
+`power_and_mixing_maximum_pass` or `power_and_mixing_minimum_pass` with all
+cleanup readbacks. The first maximum run retained a restoration-order failure;
+explicit recovery and an accepted repeat are in the November 16 evidence.
+Minimum also passed; RV1 remains at minimum for later radio setup.
+
+Plot offline with `python tools/plot-board-mixing.py MAX_RUN MIN_RUN`; it writes
+`mixing-path.png` in MAX_RUN from retained RAW using matplotlib/numpy. The scope
+side remains restored to its prior metadata; subsequent use must match the
+physical probe factors again, especially after changing the CH2 switch.
+
+For loaded LED-driver checks, with power off put nominal 1 kΩ loads across
+J6-1/2 and J6-3/4, physical ×10 CH1 tip J6-1 and CH2 tip J6-3, grounds TP1.
+Keep NUCLEO/VCC meter/RAW wiring unchanged and RV1 minimum. Measure uncertain
+loose resistor values before fitting; a nominal 10 kΩ mistaken for 1 kΩ caused
+the first November 16 fixture discrepancy. The replacement measured 1.0004 kΩ.
+
+Use `--leds-output NEW_DIRECTORY --fixture-port COM5 --scope-probe-confirmed`
+on the parent wrapper, with a fresh power JSON. `tools/check-board-leds.py`
+captures idle, PTT only, both, bypass only and released. Both channels use ×10,
+1 V/div DC, −2 V offset and 20 MHz limit, 1 ms/div, 60 kpoints. Static states
+are **forced-triggered**, not edge-timing measurements. Accepted means are
+3.2–4.3 V HIGH and −0.3–0.4 V LOW; nominal 5 V through onboard 330 Ω into
+1 kΩ gives 3.759 V. Actual LEDs are not part of this test. All source, fixture
+and scope cleanup requirements remain unchanged; require
+`power_and_loaded_leds_pass`. The accepted November 16 repeat passed all states.
+
+`test_board_power.py` checks normal, bad-rail and child-timeout shutdown paths
+offline: `python -m unittest discover -s tools/bench -p test_board_power.py -v`.
+The parent now dispatches one named capture experiment without a long list of
+positional parameters; existing CLI options remain supported.
+
+For the final unpowered connector checklist, remove supply, scope, temporary
+loads and NUCLEO wiring, leave PCB USB disconnected and RV1 minimum. Check
+residual DCV first. Then short the DMM tips together off-PCB and run:
+
+```powershell
+.agent-scratch/firmware/bench-venv/Scripts/python.exe tools/bench/connector-meter.py prepare --port COM15 --setup-confirmed --out NEW_PREP.json
+```
+
+This changes meter mode and sources its resistance-test current. It verifies
+identity, initial DCV/math-off and shorted-tip residual ≤50 mV, selects
+RES/autorange/S, waits three seconds and records eight polls with 0.5-second
+waits. All shorted-tip values must be 0–2 Ω. On success it **intentionally
+leaves resistance mode active** for the operator; handled failure attempts DCV
+restoration. Keep PCB disconnected from every power source throughout.
+Use the 21 same-net checks and separate intercepted-PTT check in the
+[populated-board record](../../docs/verification/populated-board/2026-11-16/README.md#final-unpowered-connector-checklist).
+Record settled displayed numerical readings; do not substitute a beep alone.
+These human readings are operator-reported evidence, separate from USB captures.
+
+When done, leave tips off-PCB and restore/verify DCV before any powered use:
+
+```powershell
+.agent-scratch/firmware/bench-venv/Scripts/python.exe tools/bench/connector-meter.py finish --port COM15 --out NEW_FINISH.json
+```
+
+`finish` checks identity, sets DCV/autorange/rate S, and requires readback.
+Do not infer mode restoration from a closed COM port. On host/USB loss, keep the
+PCB unpowered and manually select DCV before reconnecting it. The November 16
+lead preparation measured 0.163–0.166 Ω. The owner subsequently reported C01–C21
+at 0.3 Ω maximum and N01 OL; the final USB readback confirmed DCV restored.
+
+### Populated-board resistance observations
+
+`measure-resistance.py` uses the existing pyserial dependency and XDM1251
+transport. It **changes measurement mode and sources meter test current**.
+Use only with USB, bench supply and every other source disconnected, black in
+COM and red in V/Ω, and established fixed probe endpoints. Keep the soldered-in
+Pro Micro installed. Do not move probes or operate the meter during the run.
+
+From the repository root, after confirming those connections:
+
+```powershell
+.agent-scratch/firmware/bench-venv/Scripts/python.exe tools/bench/measure-resistance.py --port COM15 --connections "Black TP1 GND; red TP3 +5V; all sources disconnected" --unpowered-confirmed --out NEW_REPORT.json
+```
+
+Rediscover the meter port before reuse; supply an unused output filename. The
+helper requires firmware V1.0.1.0.4, initial DCV with math/secondary off, and three
+displayed readings within ±50 mV. That is a selected precondition for this
+low-voltage PCB, not a general safe-energy or discharge criterion. It sets
+resistance autorange/rate S, waits three seconds, then retains 12 displayed
+readings separated by 0.75-second waits. Raw responses and settings identify
+overload separately from numeric resistance; capacitor charging may prevent a
+steady reading. There is no automatic DUT resistance threshold or pass verdict.
+
+Cleanup attempts DCV/autorange/rate S, verifies readback and records four
+post-test voltage polls after a three-second wait. The meter can leave charge
+on the PCB. Inspect post-test voltage before the next operation. Normal duration
+is roughly 20–30 seconds. Exit 0 means the observation and cleanup completed;
+exit 2 means incomplete/error. Preserve failures and inspect `dcv_restored` and
+raw queries. Host/USB loss can prevent cleanup: keep the DUT unpowered, stop the
+client, manually select DCV and check residual voltage before moving on.
+
+The November 16 TP3-to-ground run qualified this acquisition path on the
+populated board. It did not establish powered function or calibrated resistance.
+
 From the repository root, use Python 3.12:
 
 ```powershell

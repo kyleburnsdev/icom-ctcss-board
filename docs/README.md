@@ -1,10 +1,31 @@
 # Icom IC-229H selectable CTCSS/PL interface
 
+For the bench-derived final-enclosure prototype, use the [C1 fabrication and
+assembly guide](enclosure-c1-guide.md) and [four-plate PLA project](../manufacturing/enclosure-c1/README.md).
+The narrower base rotates the PCB, removes the PTT-test button, uses locating
+nubs/insert-fastened corner straps and carries a sliding radio cradle. See the
+[radio mounting evidence](reference/ic229h-mounting.md); physical load and thermal
+acceptance remain pending.
+
+For the completed November 16 populated-board checks, read the illustrated
+learning guide ([PDF](learning/populated-board-bench-checks-2026-11-16.pdf),
+[editable Word](learning/populated-board-bench-checks-2026-11-16.docx)). It explains
+the instrument setups, measured results, troubleshooting and remaining integration
+checks. The [bench record](verification/populated-board/2026-11-16/README.md)
+retains the underlying evidence.
+
 For making the board, follow the [illustrated PCB fabrication guide](pcb-fabrication-guide.md).
+
+For the final product harnesses, follow the [illustrated wiring and termination
+guide](final-product-wiring-guide.md). It covers J1–J6, the accepted Grove V4
+display, bare EC11, MIC/RADIO adapters, wire gauges/colors and every termination.
 
 For the assembled board and off-board controls before the final enclosure, use
 the [temporary bench-holder and radio-free test guide](bench-holder-guide.md),
 with its [three-plate print package](../manufacturing/bench-holder/README.md).
+For a rear-mounted LCD and internal display wiring, use the
+[B2 replacement-panel guide](bench-panel-b2-guide.md) and
+[two-plate print package](../manufacturing/bench-panel-b2/README.md), reusing the B1 base.
 
 **Carrier-board sourcing revision complete (2026-10-22):** obsolete Q1/C3 selections and the unavailable C6 selection have been replaced, with exact supplier-linked parts for all 38 BOM instances. See the [purchasing list and remaining product acceptance](implementation/component-sourcing-review.md). Radio/microphone adapters are already owned; physical manufacturing/radio acceptance and firmware remain open; this is a buildable carrier-board design, not a released product.
 

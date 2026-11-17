@@ -1,10 +1,13 @@
 # Enclosure
 
-**Current direction — 2026-11-13:** the actual design will use the Grove LCD RGB
-Backlight V4.0. Keep this P1 enclosure as a reference until the working assembled
-PCB's as-built is available, then revise the case around that assembly rather
-than each interim change. P1's earlier LCD window and mounts do not establish
-Grove fit. See the [decision register](../../docs/requirements/enclosure-decision-register.md#display-and-enclosure-sequencing--user-decision-2026-11-13).
+**Current direction — 2026-11-17:** [C1](c1/README.md) evolves the printed B1/B2
+bench concept into a 156 × 240 mm PLA enclosure/radio cradle. It uses the Grove
+V4.0, removes the PTT-test button, rotates the unchanged PCB 90°, substitutes
+nubs and insert-fastened corner straps, and adds a captured sliding cover with
+a 12° radio support. Start with the [C1 package](../../manufacturing/enclosure-c1/README.md)
+and [illustrated guide](../../docs/enclosure-c1-guide.md). C1 is a prototype;
+physical fit/load/temperature acceptance remains pending. P1 below is retained
+as an earlier reference and does not establish Grove or C1 fit.
 
 Open [icom-ctcss-enclosure.FCStd](icom-ctcss-enclosure.FCStd) in FreeCAD 1.1.1. P1 uses native Part Design bodies, constrained Sketcher profiles, Draft lettering and a Spreadsheet; no third-party workbench is required.
 

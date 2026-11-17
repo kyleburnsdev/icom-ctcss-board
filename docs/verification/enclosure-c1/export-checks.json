@@ -1,0 +1,443 @@
+{
+  "revision": "C1",
+  "parts": [
+    {
+      "name": "Base",
+      "bounds_mm": [
+        156.0,
+        240.0,
+        77.0
+      ],
+      "closed": true,
+      "facets": 9308,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_shift_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "sha256": "47602d54da031050b13b7292cbbe35f38c61fe06c4f91665390835a97deff3a1"
+    },
+    {
+      "name": "ControlPanel",
+      "bounds_mm": [
+        156.0,
+        90.0,
+        18.60000038146973
+      ],
+      "closed": true,
+      "facets": 37044,
+      "rotation_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "print_shift_mm": [
+        -0.0,
+        90.0,
+        3.0
+      ],
+      "sha256": "1ad4d38aeeb87f07cce7dae9848bb46e3f67b2e5476abe37236282a4985dc277"
+    },
+    {
+      "name": "LedKeeper",
+      "bounds_mm": [
+        36.0,
+        26.0,
+        6.900000095367439
+      ],
+      "closed": true,
+      "facets": 3052,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_shift_mm": [
+        -101.0,
+        -61.0,
+        8.5
+      ],
+      "sha256": "786fd34e9bcb83cd13c755c1a1cb293319d1cf5cf809724a2603f9d33a08e073"
+    },
+    {
+      "name": "PcbCornerStrap",
+      "bounds_mm": [
+        22.0,
+        10.0,
+        3.0
+      ],
+      "closed": true,
+      "facets": 1024,
+      "rotation_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "print_shift_mm": [
+        -0.0,
+        5.0,
+        3.000000000000001
+      ],
+      "sha256": "8bfdf2690a2c1b04d103954e57995bd99e79a28c83ad1b8bbdd22449171e3849"
+    },
+    {
+      "name": "DisplayEarClip",
+      "bounds_mm": [
+        10.0,
+        14.0,
+        3.0
+      ],
+      "closed": true,
+      "facets": 520,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_shift_mm": [
+        5.0,
+        4.0,
+        -0.0
+      ],
+      "sha256": "c7d50390d8d91cecfe9f935b24a94abe4ec218435b4f48616f2257b703275929"
+    },
+    {
+      "name": "SlidingCover",
+      "bounds_mm": [
+        149.39999389648438,
+        150.0,
+        58.99999999999999
+      ],
+      "closed": true,
+      "facets": 4796,
+      "rotation_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "print_shift_mm": [
+        -3.3000000000000007,
+        240.0,
+        62.29999999999999
+      ],
+      "sha256": "2da63372833aad95763660ebf951f234515069d8660f5c7155785b86a6f8bc60"
+    },
+    {
+      "name": "LeftRadioSaddle",
+      "bounds_mm": [
+        37.70000076293946,
+        155.0,
+        12.0
+      ],
+      "closed": true,
+      "facets": 3112,
+      "rotation_quaternion": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_shift_mm": [
+        -62.300000000000026,
+        -84.00000000000004,
+        20.000000000000195
+      ],
+      "sha256": "375817d9b17947858ec06985e73de4118d8f6fc3bf156ff1fc8b1a4269d04a31"
+    },
+    {
+      "name": "RightRadioSaddle",
+      "bounds_mm": [
+        37.700000762939425,
+        155.0,
+        11.999999999999972
+      ],
+      "closed": true,
+      "facets": 3112,
+      "rotation_quaternion": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "print_shift_mm": [
+        100.00000000000013,
+        -84.00000000000007,
+        -136.00000000000006
+      ],
+      "sha256": "58cc3e3fad335ef382d9e552d95419c3cf2ea4388aab26b55a696f035d337c0b"
+    },
+    {
+      "name": "LeftRadioCheek",
+      "bounds_mm": [
+        37.0,
+        80.99999999999999,
+        2.9999999999999885
+      ],
+      "closed": true,
+      "facets": 2044,
+      "rotation_quaternion": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_shift_mm": [
+        10.0,
+        -23.0,
+        -0.29999999999995525
+      ],
+      "sha256": "d67219c33c449ed4f82fb56df07dbab8cc0624810f4d7d6eb78ca61a6b34a6fd"
+    },
+    {
+      "name": "RightRadioCheek",
+      "bounds_mm": [
+        37.0,
+        81.0,
+        2.999999999999943
+      ],
+      "closed": true,
+      "facets": 2044,
+      "rotation_quaternion": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_shift_mm": [
+        10.000000000000016,
+        -23.000000000000018,
+        143.30000000000013
+      ],
+      "sha256": "c65e1af8a713c42d0fbddf9cf29abd5af12d7545592a4aea2daecfc524d3786b"
+    },
+    {
+      "name": "NubAndStrapCoupon",
+      "bounds_mm": [
+        36.0,
+        22.0,
+        17.100000381469727
+      ],
+      "closed": true,
+      "facets": 1540,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_shift_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "sha256": "2f92e384fb7ff4683b8fc055d8981b0030c3986d6b840dab38ea5f288038b43d"
+    },
+    {
+      "name": "InsertPilotCoupon",
+      "bounds_mm": [
+        46.0,
+        18.0,
+        9.0
+      ],
+      "closed": true,
+      "facets": 9288,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_shift_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "sha256": "11eadbdd0d910a753f606a02edb62fe86c4bfbbb7177d3a186b26c9f45a67361"
+    },
+    {
+      "name": "CoverRailCoupon",
+      "bounds_mm": [
+        20.0,
+        35.0,
+        21.0
+      ],
+      "closed": true,
+      "facets": 36,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_shift_mm": [
+        -0.0,
+        3.3306690738754696e-15,
+        -0.0
+      ],
+      "sha256": "f8b7c0c77a6de6194fa289db9a17f6803e89065288c85051713995dcca07eeb1"
+    },
+    {
+      "name": "CoverTongueCoupon",
+      "bounds_mm": [
+        17.0,
+        35.0,
+        9.000000000000002
+      ],
+      "closed": true,
+      "facets": 28,
+      "rotation_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "print_shift_mm": [
+        -0.0,
+        34.99999999999999,
+        8.999999999999998
+      ],
+      "sha256": "6ad533d19c50d08faf6c4fc515a57330b008315c78d151d4ad291038dd6ebfa5"
+    },
+    {
+      "name": "RadioPatternCoupon",
+      "bounds_mm": [
+        105.0,
+        30.0,
+        2.0
+      ],
+      "closed": true,
+      "facets": 3778,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_shift_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "sha256": "27e518e4cac19923b7744b9b244f9fee44c2f8fcd502527330a23c1a453a498d"
+    },
+    {
+      "name": "DisplayFitCoupon",
+      "bounds_mm": [
+        92.0,
+        74.0,
+        18.600000381469727
+      ],
+      "closed": true,
+      "facets": 8096,
+      "rotation_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "print_shift_mm": [
+        -5.0,
+        87.0,
+        2.9999999999999982
+      ],
+      "sha256": "f3dd5dc4918800022a49c8158ca14269509069b9f5eec74b2c8b4e7b6f3d1c2c"
+    }
+  ],
+  "intersections_mm3": {
+    "Base/ControlPanel": 0.0,
+    "Base/LedKeeper": 0.0,
+    "Base/PcbCornerStrap": 0.0,
+    "Base/InstalledPcbStrap2": 0.0,
+    "Base/InstalledPcbStrap3": 0.0,
+    "Base/InstalledPcbStrap4": 0.0,
+    "Base/DisplayEarClip": 0.0,
+    "Base/InstalledDisplayClip2": 0.0,
+    "Base/InstalledDisplayClip3": 0.0,
+    "Base/InstalledDisplayClip4": 0.0,
+    "Base/SlidingCover": 0.0,
+    "Base/LeftRadioSaddle": 0.0,
+    "Base/RightRadioSaddle": 0.0,
+    "Base/LeftRadioCheek": 0.0,
+    "Base/RightRadioCheek": 0.0,
+    "ControlPanel/LedKeeper": 0.0,
+    "ControlPanel/DisplayEarClip": 0.0,
+    "ControlPanel/InstalledDisplayClip2": 0.0,
+    "ControlPanel/InstalledDisplayClip3": 0.0,
+    "ControlPanel/InstalledDisplayClip4": 0.0,
+    "PcbCornerStrap/SlidingCover": 0.0,
+    "InstalledPcbStrap2/SlidingCover": 0.0,
+    "InstalledPcbStrap3/SlidingCover": 0.0,
+    "InstalledPcbStrap4/SlidingCover": 0.0,
+    "SlidingCover/LeftRadioSaddle": 0.0,
+    "Base/PcbReference": 0.0,
+    "Base/DisplayPcbReference": 0.0,
+    "Base/DisplayBezelReference": 0.0,
+    "Base/GrovePlugAndBendAllowance": 0.0,
+    "Base/EncoderRearEnvelope": 0.0,
+    "Base/ToggleRearEnvelope": 0.0,
+    "Base/MicRearEnvelope": 0.0,
+    "Base/RadioRearEnvelope": 0.0,
+    "ControlPanel/PcbReference": 0.0,
+    "ControlPanel/DisplayPcbReference": 0.0,
+    "ControlPanel/DisplayBezelReference": 0.0,
+    "ControlPanel/GrovePlugAndBendAllowance": 0.0,
+    "ControlPanel/EncoderRearEnvelope": 0.0,
+    "ControlPanel/ToggleRearEnvelope": 0.0,
+    "ControlPanel/MicRearEnvelope": 0.0,
+    "ControlPanel/RadioRearEnvelope": 0.0,
+    "SlidingCover/PcbReference": 0.0,
+    "SlidingCover/DisplayPcbReference": 0.0,
+    "SlidingCover/DisplayBezelReference": 0.0,
+    "SlidingCover/GrovePlugAndBendAllowance": 0.0,
+    "SlidingCover/EncoderRearEnvelope": 0.0,
+    "SlidingCover/ToggleRearEnvelope": 0.0,
+    "SlidingCover/MicRearEnvelope": 0.0,
+    "SlidingCover/RadioRearEnvelope": 0.0,
+    "SlidingCover/PcbComponentAllowance": 0.0
+  },
+  "slide_sweep_mm3": [
+    {
+      "rearward_translation_mm": 0,
+      "base_collision_mm3": 0.0
+    },
+    {
+      "rearward_translation_mm": 10,
+      "base_collision_mm3": 0.0
+    },
+    {
+      "rearward_translation_mm": 50,
+      "base_collision_mm3": 0.0
+    },
+    {
+      "rearward_translation_mm": 100,
+      "base_collision_mm3": 0.0
+    },
+    {
+      "rearward_translation_mm": 150,
+      "base_collision_mm3": 0.0
+    },
+    {
+      "rearward_translation_mm": 165,
+      "base_collision_mm3": 0.0
+    }
+  ],
+  "native_reopen": true,
+  "native_source_sha256": "a7151c5d4e2c86eb7e448065ecc10850a99588b9b54ab68fc782904728acfa5f",
+  "step_sha256": "855b508afc292b417f3700de7e6448fe992ed25aca9b71d6a7b2a5d4c71c1671",
+  "physical_acceptance": "not run",
+  "step_solid_count": 16,
+  "step_volume_difference_mm3": 0.002287222887389362,
+  "step_volume_tolerance_mm3": 0.01,
+  "reopened_installed_instances": 16
+}

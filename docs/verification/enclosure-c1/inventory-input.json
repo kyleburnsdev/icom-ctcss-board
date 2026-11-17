@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "project": "icom-ctcss-enclosure",
+  "revision": "C1",
+  "items": [
+    {"category":"stock","id":"bambu-lab-pla-matte-filament","quantity":1,"unit":"each","requires":{"material":"PLA Matte"}},
+    {"category":"stock","id":"m3-d5-l4-heat-set-inserts","quantity":32,"unit":"each","requires":{"thread":"M3","outer_diameter_mm":5,"length_mm":4}}
+  ],
+  "operations": [
+    {"id":"print-c1","machine":"bambu-labs-x1-carbon","process":"3d_printing","material":"PLA Matte","work_envelope_mm":[166,250,105],"uses":[{"category":"stock","id":"bambu-lab-pla-matte-filament"}]}
+  ]
+}

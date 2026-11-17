@@ -1,0 +1,473 @@
+{
+  "started_utc": "2026-11-16T20:59:25.521213+00:00",
+  "status": "incomplete",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T20:59:29.456939+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T20:59:30.816568+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T20:59:30.828104+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T20:59:30.848088+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T20:59:30.868257+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T20:59:30.878283+00:00",
+      "raw": "100 mV\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T20:59:30.897774+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T20:59:30.907787+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:30.928811+00:00",
+      "raw": "+7.425723E-03\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:37.183527+00:00",
+      "raw": "+4.998923E+00\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:37.696225+00:00",
+      "raw": "+4.999616E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:38.215974+00:00",
+      "raw": "+5.000353E+00\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:38.735148+00:00",
+      "raw": "+4.999742E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:39.254930+00:00",
+      "raw": "+4.999673E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:39.764919+00:00",
+      "raw": "+4.999078E+00\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:40.284396+00:00",
+      "raw": "+4.999520E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:59:40.804522+00:00",
+      "raw": "+4.999759E+00\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T20:59:42.164290+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T20:59:42.182552+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T20:59:42.192066+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T20:59:42.212247+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T20:59:42.232260+00:00",
+      "raw": "10 V\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T20:59:42.242268+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.03200000000651926
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T20:59:42.262456+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.0
+    }
+  ],
+  "supply_commands": [
+    {
+      "utc": "2026-11-16T20:59:25.539227+00:00",
+      "arguments": [
+        "--show"
+      ],
+      "response": "Driver functions:\n    Power supply\nScan options:\n    conn\n    serialcomm\n    force_detect\nkorad-kaxxxxp:conn=COM11 - Korad KA3005P [S/N: [redacted]] with 2 channels: V I\nSupported configuration options:\n    conn: COM11 (current)\n    continuous: on, off\n    limit_samples: 0 (current)\n    limit_time: 0 (current)\n    voltage: 0.000000 (current)\n    voltage_target: 0.000000, 31.000000, 0.010000\n    current: 0.000000 (current)\n    current_limit: 0.000000, 5.100000, 0.001000\n    enabled: on, off (current)\n    regulation: CC (current)\n    ocp_enabled: on (current), off\n    ovp_enabled: on, off (current)\n"
+    },
+    {
+      "utc": "2026-11-16T20:59:29.469357+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:59:30.938119+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=8.00:current_limit=0.050:ocp_enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T20:59:31.799919+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:59:33.153324+00:00",
+      "arguments": [
+        "--config",
+        "enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T20:59:33.828107+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035999998450279236\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:59:40.823033+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035000000149011612\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:59:54.867534+00:00",
+      "arguments": [
+        "--config",
+        "enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T20:59:55.549579+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:59:56.937793+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=1.00:current_limit=0.050:ocp_enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T20:59:57.833773+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    }
+  ],
+  "setup_confirmed": true,
+  "meter_port": "COM15",
+  "supply_port": "COM11",
+  "measurement": "vcc",
+  "connections": "Supply + TP2; supply minus and meter COM TP1; meter V/ohm TP3; PCB USB and final product components disconnected",
+  "limits": {
+    "raw_v": 8,
+    "current_limit_a": 0.05,
+    "vcc_v": [
+      4.75,
+      5.25
+    ]
+  },
+  "source_hashes": {
+    "check-board-power.py": "c7f5ec2ed415daec14e4b76347e74f432f827fa625cbd432984dc0e168ea1eda",
+    "korad_supply.py": "3b6f4b33eb81238d42b4a61d14bafbb5586026f32576da1f3bc0fbf5d83f82c5",
+    "xdm1251.py": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777",
+    "check-board-leds.py": "97261bd7d0e0d60297efbe2e533b90d2c0b3dad09cf4bb50e68d192a054b8e8a",
+    "rigol_scope.py": "83fb7eb19c85bce732f862fbb071e54c1105f94f2d45c0412ceca981cc351ae4",
+    "fixture_control.py": "afd011e8166bc5ef6ae4e95c90087711883a7366a1ff25d9ed104b4732237c3f",
+    "serial_device.py": "41c0ada1cdb9b4defab117c49601f01ac670be6754161b8d7919da9c53c9a328",
+    "ptt_measurement.py": "db303b2192aeb9427a5eea6d51075bd344c5d00205eef4ce1730202fd8e30c31",
+    "analog_tone.py": "67797c188a1bb76b760a44822360c4a038df4618a060307eecbec90f39797f01"
+  },
+  "scope_connections": "CH1 x10 J6-1; CH2 x10 J6-3; grounds TP1; 1k loads J6-1/2 and J6-3/4; RV1 minimum; connected while supply off",
+  "fixture_connections": "NUCLEO GND CN10-5 TP1; PF12 CN7-20 through 1k to J1-5; PF13 CN10-2 through 1k to J5-1; rails separate",
+  "pyserial_version": "3.5",
+  "supply_identity": {
+    "model": "KA3005P",
+    "firmware": "V1.5",
+    "serial_number": "[redacted]"
+  },
+  "meter_identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "supply_before": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "meter_before": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 mV",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "pre_voltage_v": 0.007425723,
+  "settings_before_enable": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "enable_requested_utc": "2026-11-16T20:59:33.153324+00:00",
+  "supply_enabled": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.035999998450279236,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "vcc_readings_v": [
+    4.998923,
+    4.999616,
+    5.000353,
+    4.999742,
+    4.999673,
+    4.999078,
+    4.99952,
+    4.999759
+  ],
+  "supply_after_measurement": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.03500000014901161,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "meter_after": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "10 V",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "measurement_checks_passed": true,
+  "leds_capture": {
+    "command": [
+      "C:\\src\\personal-repos\\icom-ctcss-board\\.agent-scratch\\firmware\\bench-venv\\Scripts\\python.exe",
+      "C:\\src\\personal-repos\\icom-ctcss-board\\tools\\check-board-leds.py",
+      "--output",
+      "docs\\verification\\populated-board\\2026-11-16\\loaded-leds",
+      "--fixture-port",
+      "COM5"
+    ],
+    "started_utc": "2026-11-16T20:59:42.273135+00:00",
+    "returncode": 2,
+    "stdout": "{\"passed\": false, \"error\": \"RuntimeError: Loaded J6 level screen failed at both\", \"cleanup_error\": null, \"states\": [{\"name\": \"idle\", \"ptt\": 0, \"bypass\": 0, \"acquisition\": \"forced_single_static_levels\", \"measurements\": [{\"passed\": true, \"asserted\": false, \"mean_v\": -7.024740000233197e-07, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -7.024740000233197e-07, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 1, \"sha256\": \"a4ce57b1eab82b475e531fb1f534207871d495edfaedd02ff28c3c5c4b759845\"}, {\"passed\": true, \"asserted\": false, \"mean_v\": -0.004363253646000106, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -0.004363253646000106, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 2, \"sha256\": \"4beb0960ca61c12955ec4053f85fe2df47177a8ac219bfe8ba9fbe7306b309cb\"}]}, {\"name\": \"ptt\", \"ptt\": 1, \"bypass\": 0, \"acquisition\": \"forced_single_static_levels\", \"measurements\": [{\"passed\": true, \"asserted\": true, \"mean_v\": 3.6477247977419998, \"selected_limits_v\": [3.2, 4.3], \"nominal_load_current_ma\": 3.6477247977419998, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 1, \"sha256\": \"beee6e5148c674aa06ac872cd94afc0d1c85ffd038d252c83c6867d56ad91d5d\"}, {\"passed\": true, \"asserted\": false, \"mean_v\": -0.0012811731006669071, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -0.0012811731006669071, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 2, \"sha256\": \"4fd1e120e365f4ea1f2a0bf9fae245d98932aab28724b7f6a742b788c16b6227\"}]}, {\"name\": \"both\", \"ptt\": 1, \"bypass\": 1, \"acquisition\": \"forced_single_static_levels\", \"measurements\": [{\"passed\": true, \"asserted\": true, \"mean_v\": 3.6496713531960006, \"selected_limits_v\": [3.2, 4.3], \"nominal_load_current_ma\": 3.6496713531960006, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 1, \"sha256\": \"e58ce3b471305c1e3f71f510d6d76f9d24429a337e225482d1dd95e49799f5bf\"}, {\"passed\": false, \"asserted\": true, \"mean_v\": 4.778241959789334, \"selected_limits_v\": [3.2, 4.3], \"nominal_load_current_ma\": 4.778241959789334, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 2, \"sha256\": \"1bcf19b98bab356244287eff42414ddf72afc695f14f2c90fa63875bc9f4681a\"}]}], \"fixture_final\": {\"armed\": 0, \"drive\": 0, \"sense\": 6, \"latency_valid\": 0, \"latency_us\": 0, \"poll_us\": 210, \"errors\": 0, \"bouncing\": 0, \"bounce_late_us\": 0}}\n",
+    "stderr": "",
+    "finished_utc": "2026-11-16T20:59:54.867534+00:00"
+  },
+  "disable_requested_utc": "2026-11-16T20:59:54.867534+00:00",
+  "supply_output_off": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "supply_final": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "error": "RuntimeError: leds_capture failed; inspect retained child evidence",
+  "finished_utc": "2026-11-16T20:59:59.221019+00:00"
+}

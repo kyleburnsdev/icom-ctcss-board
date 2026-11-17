@@ -1,0 +1,30 @@
+{
+  "revision": "B2",
+  "project_sha256": "ac94481a32d2f1b646c27d5b2497b7796f94abd4117bc4ed6ceb1d2cdff66483",
+  "plates": [
+    {
+      "plate": 1,
+      "inspected_heights_mm": [
+        0.2,
+        0.44,
+        1.04,
+        1.52,
+        4.04,
+        16.04
+      ],
+      "layers": 151
+    },
+    {
+      "plate": 2,
+      "inspected_heights_mm": [
+        0.2,
+        0.44,
+        1.04,
+        1.52,
+        4.04,
+        16.04
+      ],
+      "layers": 151
+    }
+  ]
+}

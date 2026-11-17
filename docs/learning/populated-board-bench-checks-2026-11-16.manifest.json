@@ -1,0 +1,1549 @@
+{
+  "purpose": "Illustrated instructional record of the November 16 physical populated-PCB checks. No new hardware tests.",
+  "validation": {
+    "pages": 14,
+    "figures": 13,
+    "tables": 13,
+    "page_bounds_issues": [],
+    "replacement_glyphs": 0,
+    "rendering": "Microsoft Word 16.0 native DOCX to PDF; Poppler pdftoppm 144 dpi PNG",
+    "canonical_renderer_unavailable": "render_docx.py failed: ModuleNotFoundError: pdf2image; LibreOffice not installed. Native Word export used.",
+    "visual_review": "All 14 pages inspected individually. Final changes on pages 8 and 12 inspected again; remaining final page renders confirmed pixel-identical to previously inspected renders. No clipping, overlaps or orphan pages observed.",
+    "bench_access_during_document_creation": false,
+    "offline_evidence_checks_passed": 160,
+    "software_unit_tests_passed": 16
+  },
+  "files": [
+    {
+      "path": "docs/learning/populated-board-bench-checks-2026-11-16.pdf",
+      "bytes": 1304585,
+      "sha256": "1374cd8eb3f1a126a4ad82f413fa9f788593a7257b8cd5ecdae7b53313b3e0c7"
+    },
+    {
+      "path": "docs/learning/populated-board-bench-checks-2026-11-16.docx",
+      "bytes": 1203807,
+      "sha256": "97a6f1b5276887a83fdc2473aec61554f3aae01c8bc14703501a244fcd907e0b"
+    },
+    {
+      "path": "tools/build-populated-board-learning-guide.py",
+      "bytes": 41881,
+      "sha256": "bd75e2e06822f385b4cc69ccb779918955f4b5ae09f08d7a17d33b04d338ab83"
+    },
+    {
+      "path": "tools/build-populated-board-learning-guide.ps1",
+      "bytes": 9820,
+      "sha256": "08f5f37f5d2399b0675a8ff0ab135bb13ab62609d9d21a2f9958750287e3f3d8"
+    },
+    {
+      "path": "docs/images/populated-board-learning/bench-setup.png",
+      "bytes": 124553,
+      "sha256": "c001bcdc764c6eb9d727a955c1eb3bbf1f427835d14a53328ce749958a49fe3b"
+    },
+    {
+      "path": "docs/images/populated-board-learning/bench-setup.svg",
+      "bytes": 58666,
+      "sha256": "ef977a969681f9aa9a8880c406718f81dc12a4893e3e9ac6613facb1eed22a2d"
+    },
+    {
+      "path": "docs/images/populated-board-learning/board-testpoints.png",
+      "bytes": 82785,
+      "sha256": "ecbb90530725b629d9880016988cc9276a43f4316230ab7e9b2f5988e50ec00d"
+    },
+    {
+      "path": "docs/images/populated-board-learning/board-testpoints.svg",
+      "bytes": 63057,
+      "sha256": "8b0592d31a647e762a199d721515c8aed4ab51e1c6d1742a059e815e6e9d0566"
+    },
+    {
+      "path": "docs/images/populated-board-learning/filter-ground-control.png",
+      "bytes": 106055,
+      "sha256": "e28496b990a7e024c77af15b80c70f4df3cbfd80a72d4d6facd282e2daffbab6"
+    },
+    {
+      "path": "docs/images/populated-board-learning/filter-ground-control.svg",
+      "bytes": 530046,
+      "sha256": "d83dc0cc7414ca04bba4b4cf27ff9038ea6559524b7ee7b6bb946b998a066934"
+    },
+    {
+      "path": "docs/images/populated-board-learning/functional-path.png",
+      "bytes": 64171,
+      "sha256": "ea192b192075ee2ab363bf26d77a6d5609f4491412aafe7016291d51ee226803"
+    },
+    {
+      "path": "docs/images/populated-board-learning/functional-path.svg",
+      "bytes": 41313,
+      "sha256": "38d07ef3f94ada4583c6bf0cc2c1d0a720e89a7d4a62a9856a9a8a4386d81b27"
+    },
+    {
+      "path": "docs/images/populated-board-learning/idle-pwm-annotated.png",
+      "bytes": 66718,
+      "sha256": "00a284b73fb0f542a57bd31d8a9fc5f7a7442aa637d5a2023f91a55ff2693924"
+    },
+    {
+      "path": "docs/images/populated-board-learning/idle-pwm-annotated.svg",
+      "bytes": 85545,
+      "sha256": "04f3af458564fffab47440ea32279f48ce3e781cc03ef2bab724be5d3ff12eef"
+    },
+    {
+      "path": "docs/images/populated-board-learning/integration-next-steps.png",
+      "bytes": 47929,
+      "sha256": "13c33237e816e170b1f4e3a741cc208ca60b4365aa439aa90e94e13d052564b4"
+    },
+    {
+      "path": "docs/images/populated-board-learning/integration-next-steps.svg",
+      "bytes": 32992,
+      "sha256": "219220c9becc169149ee041e123e167dfe31c9f7f4b240962ce8a6e8c5fbb9b7"
+    },
+    {
+      "path": "docs/images/populated-board-learning/led-load-diagnostic.png",
+      "bytes": 63554,
+      "sha256": "6f58b00d0941feccaca647748d03d5e4bb5106df6d342f55d25af722fd3fed37"
+    },
+    {
+      "path": "docs/images/populated-board-learning/led-load-diagnostic.svg",
+      "bytes": 41785,
+      "sha256": "38f3e8f6f8cd8c949ec409d1f386f066812bfbf0096683c6580cbe53aae8aa11"
+    },
+    {
+      "path": "docs/images/populated-board-learning/mixing-and-minimum.png",
+      "bytes": 179231,
+      "sha256": "4b9a96ab50536387c750306491c3ee0ae7ee07fed546cf1545b097cc5258175b"
+    },
+    {
+      "path": "docs/images/populated-board-learning/mixing-and-minimum.svg",
+      "bytes": 142748,
+      "sha256": "acdaf7cdeb3358b3557999d868e8454011f113e5c87b19d0f958f7e86a0d8d28"
+    },
+    {
+      "path": "docs/images/populated-board-learning/power-rails.png",
+      "bytes": 41611,
+      "sha256": "1a01dd7f8a3cfe20e39f253cc54c1a3fdf42de7f7693959f4cfdb22cd616da17"
+    },
+    {
+      "path": "docs/images/populated-board-learning/power-rails.svg",
+      "bytes": 29633,
+      "sha256": "e6903f77177bac69a567f0ad3fb3944a4b152f196b963611998ead5627e6be43"
+    },
+    {
+      "path": "docs/images/populated-board-learning/ptt-test-circuit.png",
+      "bytes": 57580,
+      "sha256": "0dc6e3cd745ce24920859feb731776333712b57bccd9e4ee83edc1ab3039e20f"
+    },
+    {
+      "path": "docs/images/populated-board-learning/ptt-test-circuit.svg",
+      "bytes": 43787,
+      "sha256": "b28e99d57829934b9473c4ca622303583e47deaae115fc28c04589c693cc6bd4"
+    },
+    {
+      "path": "docs/images/populated-board-learning/ptt-timing-annotated.png",
+      "bytes": 75048,
+      "sha256": "cdd1b2e9562b1e7aa168bb942f2c61f5293b501539f2bebb395cc55855371bb1"
+    },
+    {
+      "path": "docs/images/populated-board-learning/ptt-timing-annotated.svg",
+      "bytes": 94219,
+      "sha256": "ee9e016ee861077111c3caf10313c7919fdeb28d4ae9e950e2e058a63d45b8c4"
+    },
+    {
+      "path": "docs/images/populated-board-learning/resistance-settling.png",
+      "bytes": 90352,
+      "sha256": "6066190b97d74c796c9074cce9fe56939b84dc38395381f512671888738f50fa"
+    },
+    {
+      "path": "docs/images/populated-board-learning/resistance-settling.svg",
+      "bytes": 51242,
+      "sha256": "a508d443687f8e3610fc0538bc2b587283962efe9a51ef5d7b956dc4b9c1a040"
+    },
+    {
+      "path": "docs/images/populated-board-learning/tone-bypass-sequence.png",
+      "bytes": 156634,
+      "sha256": "1d8bea841f0ac70f9e965e8f6fa61da1837c5621b9196e65affae08b6cc8e784"
+    },
+    {
+      "path": "docs/images/populated-board-learning/tone-bypass-sequence.svg",
+      "bytes": 198779,
+      "sha256": "a9d1a71f0912fdd146fccf4c9da7b93dd25a31973ab6fbdf41a635f597a4bb99"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/bypass-led-replacement-resistor.json",
+      "bytes": 11621,
+      "sha256": "3cf948c4d0c2f70623a4b58476272121b6548b6bf2e0acc94f9740793664a1f4"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/bypass-led-test-resistor.json",
+      "bytes": 11576,
+      "sha256": "03ad9d597332baec1537e5ccab142bf161e7d146b5968b849f068b2e7d921fd5"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/connector-meter-finished.json",
+      "bytes": 3612,
+      "sha256": "3e6dcdcb6241be242fca702658b84dc31ef0467415ed6a6e591bb81b28f48611"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/connector-meter-preparation.json",
+      "bytes": 6970,
+      "sha256": "ad5f12dde28dd86fb5d2b3f63772d81aef6807b659cadc08c5d138b1e8f8fd96"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/connector-operator-results.json",
+      "bytes": 872,
+      "sha256": "f07d9fbde9f1495b57885578f4a45bec5c7290dd6ece6d21066c55ad210ee8bf"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/final-unpowered-vcc.json",
+      "bytes": 5203,
+      "sha256": "392d598704820702bba062701e6adb53ffeef766affaba4385b342dcfb9cb18f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/dc/before.json",
+      "bytes": 1047,
+      "sha256": "1f360482509298b747261ebcf24e9bc903fa81fc024d75a5294da041f2c793cb"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/dc/capture.json",
+      "bytes": 686,
+      "sha256": "4a8c2a24f6e03b82704e22474cc1d1fef57d9db23103c56a2a6fa68e18bcca18"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/dc/waveform.u8",
+      "bytes": 600000,
+      "sha256": "df8e470144e74ace38f7929e39339a6cc17574d969604d69bfcb65764533a309"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/dc.bmp",
+      "bytes": 1152054,
+      "sha256": "ec27d0c4899615fbcce331d2818515589f81e76c9e63db5ef2ae284eb7b1386b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/result.json",
+      "bytes": 6366,
+      "sha256": "01106f9d688d893dbf2405c51bdd9768045a530b2b98afcd0da7274dd088f18f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/ripple/before.json",
+      "bytes": 1047,
+      "sha256": "7b0ba448450ec36629a12b3737c86d683adba2a3fd614cff6b91b4b66300d0c7"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/ripple/capture.json",
+      "bytes": 686,
+      "sha256": "6a123d973122ac7dafef70b82fb989ba586fc23c9f1809b94745586f46ebbd49"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/ripple/waveform.u8",
+      "bytes": 600000,
+      "sha256": "504031c4582d511091249cd4a243456c2ab842188f40601119e2643c6198169b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/grounded-ch2-control/ripple.bmp",
+      "bytes": 1152054,
+      "sha256": "1d5cf97aae90aacdf3113c6a1c1b92658cb0ee05fca3e85226f934ce3f00fdf0"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/dc/before.json",
+      "bytes": 1048,
+      "sha256": "ffd2a45e93563ed25386d91977fa5d79f95e6272d4db2eb87d025a5a0c710d13"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/dc/capture.json",
+      "bytes": 692,
+      "sha256": "20cdd4769e02b3a04646cc2249e7e84ec508b7c369e4d6d146a63ca5bce9c7de"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/dc/waveform.u8",
+      "bytes": 600000,
+      "sha256": "c95ee7eef19ec20e4076e4612144fd94460dd4ccadce3005176bf5bfbc9ee5a8"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/dc.bmp",
+      "bytes": 1152054,
+      "sha256": "1a222f38decaffd101b5d78b05773c0e49ce72010d05ea4c611e70d3adb07a77"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/result.json",
+      "bytes": 6326,
+      "sha256": "b9a34803d3a707e382d62e98b46d2f24861dc835951eccf4d47139332a916484"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/ripple/before.json",
+      "bytes": 1047,
+      "sha256": "a31affabe7aee374b3ca5cb87abb7f1b833cb8d3380c6afe1c193ad3c024bb96"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/ripple/capture.json",
+      "bytes": 691,
+      "sha256": "7379d386a87602540ad49f0dc2cad42812adfa145d603b22efdd99e1912eb20b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/ripple/waveform.u8",
+      "bytes": 600000,
+      "sha256": "b09439b87f7efa0a49e26ca0ca87e9e4acef47da9aea3b91850bccf32fc2ca8d"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter/ripple.bmp",
+      "bytes": 1152054,
+      "sha256": "1898cc74d02dc281613dae05c434bd3a7ec619d86612d62569f9a3188c84472f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/dc/before.json",
+      "bytes": 1048,
+      "sha256": "ffd2a45e93563ed25386d91977fa5d79f95e6272d4db2eb87d025a5a0c710d13"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/dc/capture.json",
+      "bytes": 692,
+      "sha256": "db89cb8190e1b001ce9331c5447a929f3b33106ca11e3fab32f35e1bbc8444d2"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/dc/waveform.u8",
+      "bytes": 600000,
+      "sha256": "c24451e0bd0eed0289af14dda327ac9775f23e10980236939076f796c9409c25"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/dc.bmp",
+      "bytes": 1152054,
+      "sha256": "fe86c7720fb500a2e173fdfe3977e11dcfca5a1b12c8fb27dfe96a9ae60c8bfd"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/result.json",
+      "bytes": 6314,
+      "sha256": "5501abeb3803758ed7be47b369fc4890f5582487896c10f343d45c3d7653304a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/ripple/before.json",
+      "bytes": 1047,
+      "sha256": "7b0ba448450ec36629a12b3737c86d683adba2a3fd614cff6b91b4b66300d0c7"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/ripple/capture.json",
+      "bytes": 686,
+      "sha256": "6a123d973122ac7dafef70b82fb989ba586fc23c9f1809b94745586f46ebbd49"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/ripple/waveform.u8",
+      "bytes": 600000,
+      "sha256": "1b5837bc50ee123d826cba01d3f7e2f25fa13b6c9db76b88b8bb602356dab57f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-100mv/ripple.bmp",
+      "bytes": 1152054,
+      "sha256": "1d0f05ce4cf89345af53b3cad6002bbd03ade9ebebddad4e4b84cf48c4ca4649"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/dc/before.json",
+      "bytes": 1048,
+      "sha256": "ffd2a45e93563ed25386d91977fa5d79f95e6272d4db2eb87d025a5a0c710d13"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/dc/capture.json",
+      "bytes": 692,
+      "sha256": "06a96c56d985ce240c30f4b1dfae69218646061dcd85fd97e6ce368708b60573"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/dc/waveform.u8",
+      "bytes": 600000,
+      "sha256": "27e54bafb9af7ac79649b9cedd37a96b9d2b2aa6b742eeec795828877d93933f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/dc.bmp",
+      "bytes": 1152054,
+      "sha256": "2d53eb2c29323131e5a9cbc896ad1111af1bafb7ef6944ba7e84fd63271889fc"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/result.json",
+      "bytes": 6299,
+      "sha256": "8ef940fc8dc3e94e8ec76f34f30aab23b6ae3570d22fe0f903a565d5e52d1a8b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/ripple/before.json",
+      "bytes": 1047,
+      "sha256": "7e60e9f65b620bfc90444be9dabe6a4511de596798f6f304cb4552d9ef05fe30"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/ripple/capture.json",
+      "bytes": 686,
+      "sha256": "1afa1e7f64e7e0f89ab1aa7801fd46945beb0b42e30eeabdff22e4dc9e056361"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/ripple/waveform.u8",
+      "bytes": 600000,
+      "sha256": "a4d43f17a1bd3c9a3031259ad58bbe900f48866ab54f1676d83986aad9ae7c3b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-filter-wide/ripple.bmp",
+      "bytes": 1152054,
+      "sha256": "e54d43a05e9edaf1d6f7a0a3aebe72870f32735edb24fc98d2004729e7062086"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-pwm/capture/before.json",
+      "bytes": 1048,
+      "sha256": "e210cef8a9b83dfbd21f80642482efd6d1bdd1d4406a37554cd6d070d2db7486"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-pwm/capture/capture.json",
+      "bytes": 679,
+      "sha256": "16c1cd3297e2b8e0a7a918fdd7cf4a53cbbab1643abff7026c51af968b2d322b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-pwm/capture/waveform.u8",
+      "bytes": 1200000,
+      "sha256": "be0fee7511d6e43965a71392ca4e886c9ff15c019fb12eea74b39271ae0286ad"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-pwm/result.json",
+      "bytes": 4471,
+      "sha256": "b10f0864ea8ef1ba656bdefabcec622ef201016502510d998a769ee66c91badc"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/idle-pwm/scope.bmp",
+      "bytes": 1152054,
+      "sha256": "3c690e37cf5160dc0eacdbedef8f29139e575abe44a8ce833982efb2c8f0a537"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/learning-guide/canonical-render.log",
+      "bytes": 301,
+      "sha256": "215387402779a7a9b5409e1ec4ebaa8ef45d20e80d8a6934d40b715a2d3e8489"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/learning-guide/document-quality.json",
+      "bytes": 723,
+      "sha256": "2a6c2c8017fea13c28bfd6a781b145fd2437a59511d253cb107dab7a0a56448d"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/learning-guide/native-word-render.json",
+      "bytes": 317,
+      "sha256": "e145fe5fc2bc69752b5c7774dae8c45a7d31632401af0e367a31e402a5e7ef67"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/learning-guide/software-validation.txt",
+      "bytes": 1432,
+      "sha256": "9eb1bfd3cc0fc0d3dc886ce6f74d68d08b60c3a59b1f548983d2d2908c1ea3e0"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/learning-pad-locator.json",
+      "bytes": 13639,
+      "sha256": "ebe9a2bca8e072dc6804d309b660504439662125bdc03e6da17e3987b56db917"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/both/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/both/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "f85098b15aa0030393389334cc042340fe4f1768a47f171efc8f9ec4726b85d1"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/both/ch1/waveform.u8",
+      "bytes": 60000,
+      "sha256": "e58ce3b471305c1e3f71f510d6d76f9d24429a337e225482d1dd95e49799f5bf"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/both/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/both/ch2/capture.json",
+      "bytes": 698,
+      "sha256": "97391f5720ff4afdf0d37c3dcdc1551c7490e7d95a43a1ece2158ba6f8d9ad82"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/both/ch2/waveform.u8",
+      "bytes": 60000,
+      "sha256": "1bcf19b98bab356244287eff42414ddf72afc695f14f2c90fa63875bc9f4681a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/both/measurement.json",
+      "bytes": 991,
+      "sha256": "658e33cea4b93ab45930b5a63eed6ec716274d4271bc0b357bda541b9b965912"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/idle/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/idle/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "f85098b15aa0030393389334cc042340fe4f1768a47f171efc8f9ec4726b85d1"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/idle/ch1/waveform.u8",
+      "bytes": 60000,
+      "sha256": "a4ce57b1eab82b475e531fb1f534207871d495edfaedd02ff28c3c5c4b759845"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/idle/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/idle/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "915b8c634db1d9f48f19e5e2d8e6e07462128d377e2a22a9a9441568f85a6128"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/idle/ch2/waveform.u8",
+      "bytes": 60000,
+      "sha256": "4beb0960ca61c12955ec4053f85fe2df47177a8ac219bfe8ba9fbe7306b309cb"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/idle/measurement.json",
+      "bytes": 1010,
+      "sha256": "ef10f29692a549aa28373598a42d99db5f3793110b5b15ebe180dd9834eccf0a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/ptt/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/ptt/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "4f4389cb80cc983f5ab4e1196faec8c4da595b846e91096c11e227ac7e7272ee"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/ptt/ch1/waveform.u8",
+      "bytes": 60000,
+      "sha256": "beee6e5148c674aa06ac872cd94afc0d1c85ffd038d252c83c6867d56ad91d5d"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/ptt/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/ptt/ch2/capture.json",
+      "bytes": 698,
+      "sha256": "97391f5720ff4afdf0d37c3dcdc1551c7490e7d95a43a1ece2158ba6f8d9ad82"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/ptt/ch2/waveform.u8",
+      "bytes": 60000,
+      "sha256": "4fd1e120e365f4ea1f2a0bf9fae245d98932aab28724b7f6a742b788c16b6227"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/ptt/measurement.json",
+      "bytes": 1001,
+      "sha256": "097efe51c5d703178efe733b79a75aa619930456388192b86456b3c5d05322b3"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds/result.json",
+      "bytes": 14122,
+      "sha256": "20437f204cac8fe85b003bbbd48a2c823c2d4978f916dc2575c8c5dd956a280d"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/both/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/both/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "a3de9452bcb44c6515dfd125dd014eee60096b7464b5e45ec99328ed136274fb"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/both/ch1/waveform.u8",
+      "bytes": 60000,
+      "sha256": "9a0ca3177cde0024755f0d7df7d1e5312d5ed4fb51c09711795ba9a31bba0713"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/both/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/both/ch2/capture.json",
+      "bytes": 698,
+      "sha256": "97391f5720ff4afdf0d37c3dcdc1551c7490e7d95a43a1ece2158ba6f8d9ad82"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/both/ch2/waveform.u8",
+      "bytes": 60000,
+      "sha256": "50bed3f107ffbb806124aac31d3bb91e0a7ff63ab8f50e1c3f26ccb892420472"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/both/measurement.json",
+      "bytes": 990,
+      "sha256": "d4ebb673c993178bb683447969ef24fe58d3e37f7114c795ae8669d87cc74eba"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/bypass_only/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/bypass_only/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "f85098b15aa0030393389334cc042340fe4f1768a47f171efc8f9ec4726b85d1"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/bypass_only/ch1/waveform.u8",
+      "bytes": 60000,
+      "sha256": "9cda52a2612d761274acc44a1f4b401a121732e6da48f40891c6548b581f6693"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/bypass_only/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/bypass_only/ch2/capture.json",
+      "bytes": 698,
+      "sha256": "c57563c26bab552644d992ecff0ddce77cc6ee608a564942ba2dd47dedc33a05"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/bypass_only/ch2/waveform.u8",
+      "bytes": 60000,
+      "sha256": "1db690270b38f1a1edcb77a30cb462545583ed8f6e06cddb871cd2eb65ebfd99"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/bypass_only/measurement.json",
+      "bytes": 1011,
+      "sha256": "a408181c48531575af71a4df786961fa35d846dc940abe10d24dd54cdc9df182"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/idle/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/idle/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "f85098b15aa0030393389334cc042340fe4f1768a47f171efc8f9ec4726b85d1"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/idle/ch1/waveform.u8",
+      "bytes": 60000,
+      "sha256": "aba859b799ba91026e53624ecbd9a5fea8bc6c75a6486159dd86034b9e1f5de4"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/idle/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/idle/ch2/capture.json",
+      "bytes": 698,
+      "sha256": "c57563c26bab552644d992ecff0ddce77cc6ee608a564942ba2dd47dedc33a05"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/idle/ch2/waveform.u8",
+      "bytes": 60000,
+      "sha256": "d4930fac9f3663d28ec4e78c6ff60578cf69cafc8fb19185c3528bebeaf65079"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/idle/measurement.json",
+      "bytes": 1008,
+      "sha256": "7d20c165270c29af03a47b521801976881e89647a6107562c5f8d079301456c8"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/ptt/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/ptt/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "a3de9452bcb44c6515dfd125dd014eee60096b7464b5e45ec99328ed136274fb"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/ptt/ch1/waveform.u8",
+      "bytes": 60000,
+      "sha256": "799db54ccb0fb651a4430768225cb7d908d99be49c5ca871031a744e4dad9c57"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/ptt/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/ptt/ch2/capture.json",
+      "bytes": 698,
+      "sha256": "97391f5720ff4afdf0d37c3dcdc1551c7490e7d95a43a1ece2158ba6f8d9ad82"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/ptt/ch2/waveform.u8",
+      "bytes": 60000,
+      "sha256": "354bd974d073ff1eab8dea45855a3b2245a4bde9062ff18aaebd590284bd09e7"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/ptt/measurement.json",
+      "bytes": 1001,
+      "sha256": "a1568b6ea5e1a0b38ca1dd4375d2d4a18d86aaf9222cd7e6e01665b6197f0396"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/released/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/released/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "3482f57124a1e8336928d87db3abf57e1d788c2d2ac41c2b2664a9b62d13b59f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/released/ch1/waveform.u8",
+      "bytes": 60000,
+      "sha256": "a25c53187792d3d06ad30b989e4c43c54104e9cf2110fdcc095153d1323cabda"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/released/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "d295cd9e90ce22952d3ae479deddcdeabc58cade5d6b13e79d99a09f6a7f7558"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/released/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "7f6df62597f601635b4796256cf9d527a2bc2107d59379ff3b9094777cfb9814"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/released/ch2/waveform.u8",
+      "bytes": 60000,
+      "sha256": "616f2ce9b1ff98ef489461286933b829d3cf42cc1a7a883de5a294d3d373078e"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/released/measurement.json",
+      "bytes": 1014,
+      "sha256": "1410ed63bc67e1c78debe0f985b51e48c7135f298520ec751e0437d5db3e5385"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-leds-c/result.json",
+      "bytes": 18847,
+      "sha256": "2168c327db6ddf90848a694b84ff13d03e18c7cdae1ce37853a5d8ebd9122378"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-press/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-press/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "c3566e89e6ef5a73c1ce18fe6fcd041a2ddbd666ed7405b3e090a1c1e580f7ee"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-press/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "1330fea9dd70c22a2ed0c90e38505e2a88fe32730c1fdbe598cb50749fc4fb2a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-press/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-press/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "82a9707984a206c41d93b3c87ead4727e1ec18ba71c547c4371dedfdf524d73a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-press/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "f025788cabad091fd8d6da01abfe2d62a1252fe7fbdc56566633f9150990dd18"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-press/measurement.json",
+      "bytes": 1081,
+      "sha256": "6b505f0395327bafebd9306536f430a87493f244b69bc117470ed82cbed8e082"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-release/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-release/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "2b83f8758175ef04689158b879312632be59d56d708db0fd08ce1087c3e2e3c7"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-release/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "69a505e2e233e98e3378feee57696c5fe2fa7f3b61c31409ed490f0f91ef36d5"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-release/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-release/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "78ae8846f2c3d3f78092b1d4451f6fbea79e86985c4dd7aa875902d43d3c4d14"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-release/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "8fc94d2a67943fead74b74a944ccf64a1add1c38e15aca5892098143343d9417"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-1-release/measurement.json",
+      "bytes": 1085,
+      "sha256": "1f07c342d991f2ef14ab73692b982111be1a82bbdbd9226e685461a937dcd84c"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-press/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-press/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "99f1bc61a3b2b4b5aa27fdc2af09553decbfcf44bf6e21c9234c32cf7ac13d79"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-press/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "9546b01a8eed3846a6c6bfd78a8e4c942ef53deb2b70eddc21a72d1900ec473a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-press/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-press/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "d2dacf95b0276d779b87870f55a27d29275828c8b440b2a98878d46c865db65a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-press/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "3053d868f18eee74fcaf866cb70ed7686ef309ed2be1601e4d122dfca56abe84"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-press/measurement.json",
+      "bytes": 1090,
+      "sha256": "c72089339c2c438957003a6924792fb7de94926dd49b107abb48684f1b87117a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-release/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-release/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "e2f1f5904c3e68c1fc9dafc72e418d8438b8a810d003a6641417c6789b75f9f2"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-release/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "da43cbe390c3577a69e31fb0ff4595ab6267dc8c40dc822eaba14fa8e2a5c004"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-release/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-release/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "667635d26e9e19d6f3ae0751943c10d34ba2069043722970e42451c8d14c7b1c"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-release/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "83d4c81136798849112ad72fb442b46d734da61d861a705eda793bb2514ddb7c"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-2-release/measurement.json",
+      "bytes": 1093,
+      "sha256": "c5727521833b6e52c824acf2a86bf51394023b78e9d691025b3a00f3c96e49df"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-press/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-press/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "b3ae51dd67cf125f953957be73ede90582f30dbc66a87236facab8fc3b5068d7"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-press/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "4c4d1a9ab14a3d16c3b9f855871a172e4dd3854b2b81ce40b6d36f6892c54e61"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-press/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-press/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "93c8ab5b6581524532730593ccf3baaf91cb37f15b78b4e0f0461ee330628eb4"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-press/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "6823e6c0472340ccd77c860bf105d2283a39ed1a679a7a88af5e26e7ce776423"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-press/measurement.json",
+      "bytes": 1076,
+      "sha256": "450f48fe939d492b6887f65de036cbb468d4a35ce5e964b1e255258ccc561354"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-release/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-release/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "4d2df1fd0b4748bfda5e70200245ecbdd497c7bc28ad31466471213025b4d32a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-release/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "25ede46e48f9e267771a0e2b2f969d031004f2ce9e3ea7c4c16d2550b3edcdb9"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-release/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-release/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "82a9707984a206c41d93b3c87ead4727e1ec18ba71c547c4371dedfdf524d73a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-release/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "db5fd3c0de119cbf6e122328b788576c6a769dd07c86329c845fd05c025ea760"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-0-pair-3-release/measurement.json",
+      "bytes": 1088,
+      "sha256": "3c51076541d87d2fb4c9dce31d727eeb1a49262ddfac75f4f9e30cb9566d8ac6"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-press/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-press/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "1df780dc410363adaddcf95eeb3c31436ff2c9d292248f88d6b2b4869699980f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-press/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "9337b95f0bd464e9fc0ea1887af909f0ad430b471a87e435e5f327193526bfc9"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-press/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-press/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "d31ee16de4d3fb210cffc7370fe3427905ac2ac1dcd5f4b6aabf8724dee0aac0"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-press/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "4a79cad847faff24b0fd02091c26ed76c9565339d0c5cc0e53cbeaeb6bdd9d11"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-press/measurement.json",
+      "bytes": 1075,
+      "sha256": "5f0771b4454169e85308a656e5696a0dffbd111c55d6930af3d17b62439da7b8"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-release/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-release/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "18ae803d40a64ff3488e87bc5de44093d47c46c1568018fe6db0c2e538caa28e"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-release/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "7a83cc33e99680c505f5db45ac927d4ef0aa3e72b8bdf6b74fd74dbc39c808cf"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-release/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-release/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "bad4a54a4272daea058ebb73b24ef375848d318ae985f7b9bd5c74aa0ca284cd"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-release/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "43f0e5135aeb765ccc13855ae56fb07f1c081ad7469ffbd1b8eff60b32fb1872"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-1-release/measurement.json",
+      "bytes": 1071,
+      "sha256": "d8913c2e40bd78d01614463237da3f7264b296e05a26f9cafc51ab41966cb921"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-press/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-press/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "c3566e89e6ef5a73c1ce18fe6fcd041a2ddbd666ed7405b3e090a1c1e580f7ee"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-press/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "8f077e54ea864f77eb7da80c8c39b59b66721c79c45498e8716ed09fa5dbdfbe"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-press/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-press/ch2/capture.json",
+      "bytes": 686,
+      "sha256": "05ed7a52f5186a3ede6a95c3d227663559c324365dbd711d30cf545fddb7de21"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-press/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "c3267d9b0c09c5dd3c22e0755b88c5223aad2ba19e04aae8679b8174cf3ca9ff"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-press/measurement.json",
+      "bytes": 1083,
+      "sha256": "0994818887e7039a7f856bfa5cab2ae1f143215e67e487026082595e34fbaee4"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-release/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-release/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "18ae803d40a64ff3488e87bc5de44093d47c46c1568018fe6db0c2e538caa28e"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-release/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "f0652f22ec2fdd6e91b2a98b77594636c7997fda0adc4bd97e9e173dadce9f0d"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-release/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-release/ch2/capture.json",
+      "bytes": 699,
+      "sha256": "cf5361fcc377b49abed2bb8d97ba891513a3e2448dd3089f6771f846a5834776"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-release/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "b881da650c817a017536ee34db3523fdcdecc7cc7cd50ab42907f56aed00873f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-2-release/measurement.json",
+      "bytes": 1063,
+      "sha256": "d67367c5675ae8529e9679cad032a0d2d6a44cc48418ac9808be943b683114d7"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-press/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-press/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "bda3c034017b864aee2043ff06669094078cb52769a5096eed89cec764a50878"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-press/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "9c0ff439a4ab41399ac0c324a2ae9d5c9367dc81fd058ca688a33e4f3f7940d5"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-press/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "4b6316aa1a12a988f7c8e490d7f3ea8d029619e5623072b9f95b9c2b6c0e4f95"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-press/ch2/capture.json",
+      "bytes": 698,
+      "sha256": "683f446e0a5e07b1e8e30d4d474c191f50eefdcc57f03dfcb63aca0129c3e7a4"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-press/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "cbd63de497d51187d1082276159dd5ae13d763a5d97eb7999c39ed48df9f269a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-press/measurement.json",
+      "bytes": 1083,
+      "sha256": "08f90e2556ebffd688bc1883060c580139e63b33d9e334704044e516d89a7bcc"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-release/ch1/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-release/ch1/capture.json",
+      "bytes": 699,
+      "sha256": "a8f2e265e08d69dd1e4b89c2a45085f9278bd3f30478e396e2e9d6d344f31e34"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-release/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "7aa5f4eaf38450e7438a23c33bb9c8e789c5a1bef7f7a9a1a5e0beb89766e4f3"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-release/ch2/before.json",
+      "bytes": 1048,
+      "sha256": "d58f97bc809a8fe67cdadba94e56b64b04d64916c70c11aadc7599ffa49e745f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-release/ch2/capture.json",
+      "bytes": 698,
+      "sha256": "04205f379a15c88dad524693c1bcb47fd91ba0a85f4678762145b7aaa7562995"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-release/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "4c05042475b4337cad2589a80bc811fbe772d14e50e6391758a0be90d36d3b7b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/bypass-1-pair-3-release/measurement.json",
+      "bytes": 1090,
+      "sha256": "b41cf02cb907a1d8e7193996f03d3e26376d795139c8c907757f4bdeb413910e"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/loaded-ptt-transitions.png",
+      "bytes": 173742,
+      "sha256": "e3a283fb59d13069d3c3360031209976a276e3b6924102d5e5e006a5fef2a6e4"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/loaded-ptt/result.json",
+      "bytes": 46765,
+      "sha256": "2270c38a34ac4fa137189874501fccb769be5017f3a5b954143f2957dc0ee514"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/meter-initial-status.json",
+      "bytes": 2161,
+      "sha256": "20f76a1fde6499e55a357644039463ba45bbcc36d41c9a102403e8c4e24ba389"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "43cc2e1d5baff38ccbd170752bd348125657abec25d76a25698af69328028046"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum/ch1/capture.json",
+      "bytes": 697,
+      "sha256": "346a85348a604d41ddced57ffcca4313126bfefbc522e398956f94fab4784b69"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "6c7abc6a9d87c4771302280d66b3def9906cbe2205873de730cd0914bd663ef1"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "43cc2e1d5baff38ccbd170752bd348125657abec25d76a25698af69328028046"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum/ch2/capture.json",
+      "bytes": 697,
+      "sha256": "bbdfbfaec0b57709bfedbcfc5a3953ef95f4b2db411b2fd01d4696a72ef22556"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "eac92c074e8fb1f26f1dc5dd95836173404c50050b80d4d21ab16f2855fde838"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum/result.json",
+      "bytes": 12567,
+      "sha256": "70ae37a5103603d751e282697641294d6d1d3138e02d5da8c121d4e9c29d92d0"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum-b/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "43cc2e1d5baff38ccbd170752bd348125657abec25d76a25698af69328028046"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum-b/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "e6e4bd6b0a937d81e6f1acd76d4a8f9818aa7f16d741b9c1ba4cc73f164abdd4"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum-b/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "38d3685c20a4fafbfdeac16b6e993e7d72cba3d2242c7db6d3310d6748da9026"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum-b/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "43cc2e1d5baff38ccbd170752bd348125657abec25d76a25698af69328028046"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum-b/ch2/capture.json",
+      "bytes": 697,
+      "sha256": "665d68d911321f7944fcc080d32c70dc62a017cbd4b473ba98352a99f7369f02"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum-b/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "e1e7538c8dd1596b8f73d82d4daf8c5aeb2b0f3f6fab1f4f30a519bb90cc4f2f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum-b/mixing-path.png",
+      "bytes": 255061,
+      "sha256": "26df43a65fddaa90b3bd47db98f57f4565205e4e0b8e0dff64f0bdba100a7fde"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-maximum-b/result.json",
+      "bytes": 12501,
+      "sha256": "fd0fe16ca8d96b175920086c1c560c73a2e913ae56fda63859b80f31f69aa57e"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-minimum/ch1/before.json",
+      "bytes": 1047,
+      "sha256": "43cc2e1d5baff38ccbd170752bd348125657abec25d76a25698af69328028046"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-minimum/ch1/capture.json",
+      "bytes": 698,
+      "sha256": "7f7f43bcd566c59f7e3551c07b699ac29b154470362b95c87f886da3cc8aca15"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-minimum/ch1/waveform.u8",
+      "bytes": 600000,
+      "sha256": "30096d1bae8b88ed744ddd41f479ba958615889bc73b958d327be91ccedaa15b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-minimum/ch2/before.json",
+      "bytes": 1047,
+      "sha256": "43cc2e1d5baff38ccbd170752bd348125657abec25d76a25698af69328028046"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-minimum/ch2/capture.json",
+      "bytes": 697,
+      "sha256": "445e7ae5bbfbee6017aa49b310a576669cdf77547083072a09c77f2d78ebfc75"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-minimum/ch2/waveform.u8",
+      "bytes": 600000,
+      "sha256": "b1bb1f5471e15c20f120223a29bab39df860017780c7c9399a0c8655f8833e9e"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-minimum/result.json",
+      "bytes": 12597,
+      "sha256": "ae2a1b77f42350a8e20ec38ed4d2548181a2f6803cb7b810bcabb00376e95f9f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/mixing-scope-recovery.json",
+      "bytes": 3585,
+      "sha256": "d2be6a7347870c64a238c756b72b17f27a9dd0203a8b9cfc58af589b36349847"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/nucleo-prewire.json",
+      "bytes": 930,
+      "sha256": "59e19179181abfce43a2e19536867e48aaa0cc5544d7f36174024d67690bd32a"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/offline-replay-final.json",
+      "bytes": 15903,
+      "sha256": "c5d932bddf1ea1b8ad650eb7b779030cb3a97f0c60e6828e425eea754e9d160d"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/offline-replay.json",
+      "bytes": 15903,
+      "sha256": "c5d932bddf1ea1b8ad650eb7b779030cb3a97f0c60e6828e425eea754e9d160d"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/bypass/before.json",
+      "bytes": 1046,
+      "sha256": "45fd76818c4715697161e51fc0a9e9d6d39b1f15601b1c69d75ddeed7eefb3e8"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/bypass/capture.json",
+      "bytes": 690,
+      "sha256": "89986da6bcb05a1aa0de89b4127ea0973cfbc3f19f5d7873ef5564a7b0bdccd1"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/bypass/waveform.u8",
+      "bytes": 600000,
+      "sha256": "513241cbbc7cc0b7ccc6e8793477cd09f16d7a5e50d4bd7b285a60d70589edc7"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/bypass.bmp",
+      "bytes": 1152054,
+      "sha256": "2fcba78bb65aa804311e1400d70ded6ce7825bddf1cb73f6ecb0f20d7b12aa9b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/idle/before.json",
+      "bytes": 1048,
+      "sha256": "17d7a47d52b2b50058da1e9c55eb705545fb6ee19d0bd892beafbf83a7ff4d57"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/idle/capture.json",
+      "bytes": 690,
+      "sha256": "6c114a0c7283f71f1b9f1b2f4780cfb25a01bf31985891233a22c21d96b94ccd"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/idle/waveform.u8",
+      "bytes": 600000,
+      "sha256": "180a1a91b0923cf5d1b5ae1118efebd5ede4a3e7bf15fd132e742d687b23779f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/idle.bmp",
+      "bytes": 1152054,
+      "sha256": "2fcba78bb65aa804311e1400d70ded6ce7825bddf1cb73f6ecb0f20d7b12aa9b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/ptt/before.json",
+      "bytes": 1046,
+      "sha256": "45fd76818c4715697161e51fc0a9e9d6d39b1f15601b1c69d75ddeed7eefb3e8"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/ptt/capture.json",
+      "bytes": 690,
+      "sha256": "e183a5fba4cec8f5f5ec81b13c5d2d702c512875a4e94da52bc2c8a5a9f4d265"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/ptt/waveform.u8",
+      "bytes": 600000,
+      "sha256": "ce98fa28952e5c4151587b5521706991c182b034f2a480bfa91fbef63045815e"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/ptt.bmp",
+      "bytes": 1152054,
+      "sha256": "2fcba78bb65aa804311e1400d70ded6ce7825bddf1cb73f6ecb0f20d7b12aa9b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/release/before.json",
+      "bytes": 1046,
+      "sha256": "45fd76818c4715697161e51fc0a9e9d6d39b1f15601b1c69d75ddeed7eefb3e8"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/release/capture.json",
+      "bytes": 690,
+      "sha256": "2663e37ff28484888f7d28215537a2cc5abceb2304d93a1c3060f713906d2a8b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/release/waveform.u8",
+      "bytes": 600000,
+      "sha256": "e31296d36d6c2296d912b5346046bb2f8a6092377dc2e646f42d9b082c40aa44"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/release.bmp",
+      "bytes": 1152054,
+      "sha256": "2fcba78bb65aa804311e1400d70ded6ce7825bddf1cb73f6ecb0f20d7b12aa9b"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/result.json",
+      "bytes": 19150,
+      "sha256": "d9e5c48c09b542861fc6db4cc20d43df461ee60881784f7f9dbea1ffd24fe600"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/resume/before.json",
+      "bytes": 1046,
+      "sha256": "45fd76818c4715697161e51fc0a9e9d6d39b1f15601b1c69d75ddeed7eefb3e8"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/resume/capture.json",
+      "bytes": 689,
+      "sha256": "c89a66e63142ff958a205e6d68166c994f221099525199ace30afea5f541e385"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/resume/waveform.u8",
+      "bytes": 600000,
+      "sha256": "cc35e726fc07df294ea749240fd98aa99505209f88995bfa9a84ccbac5a88579"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/resume.bmp",
+      "bytes": 1152054,
+      "sha256": "ec61e3bae9120923de71ddec10db3dd944a8f23d0fbf1470f0eae262baa58c0f"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/physical-tone-bypass/tone-sequence.png",
+      "bytes": 230394,
+      "sha256": "696bc363729b2b42b7b92845bfdcaaefb6696234d1e8fce0ca7e508299a60edf"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-grounded-ch2-control.json",
+      "bytes": 22782,
+      "sha256": "9e6e20099414d758b5b49c56253313d176e39f88b5629e5d2a9acf87a49d8418"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-idle-filter-100mv.json",
+      "bytes": 22702,
+      "sha256": "73ac372e039eae34fb6c27d28b162cb614f6b56fba00a597a45a9289b59d52ac"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-idle-filter-wide.json",
+      "bytes": 14424,
+      "sha256": "76c5ed008845b4117e2b8e7a142e0ef9863729fe5d71d8f1e0b4998a351b5fe0"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-idle-filter.json",
+      "bytes": 14380,
+      "sha256": "8e693c10cf04a54ab314db5a5412529fe55a4bc0c044bd61164e5cd673c90e04"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-idle-pwm.json",
+      "bytes": 19973,
+      "sha256": "10df2353048959a5e433da2c2ebff1bbbbe8b397208c9eb9cd289d5d89a84289"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-loaded-leds-b.json",
+      "bytes": 9495,
+      "sha256": "89a74b885a6b02f014d4a65a9baa05cb357466bb381f6190da4fbd158710b4bf"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-loaded-leds-c.json",
+      "bytes": 40396,
+      "sha256": "824eedbd234851ec1fe514f7ebee34283e0ddd3614ae3826d9832ddf0fa92185"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-loaded-leds.json",
+      "bytes": 16432,
+      "sha256": "b4c46628d714b539409a2b38e0486de46b982564ea2e8986dbf89361e1281c53"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-loaded-ptt.json",
+      "bytes": 78786,
+      "sha256": "7c82284e576c145920c33a9ef142b0076f47d94b25a347c6ac5677494524e5de"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-mixing-maximum-b.json",
+      "bytes": 30633,
+      "sha256": "f9fcaacc0a4f837824e2e1976a61f4f365e4268aaf2540148521a68b7f4541be"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-mixing-maximum.json",
+      "bytes": 15471,
+      "sha256": "7cfdc391456a8fd02e9b2a920b59b7fb0f83adcd10442aa9a8742323489694d4"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-mixing-minimum.json",
+      "bytes": 30658,
+      "sha256": "85a4f7ea554c75eca75269e0aa3034a680816ffcd71648ae2c4ff5b84f5c430c"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/power-with-physical-tone-bypass.json",
+      "bytes": 39230,
+      "sha256": "77955eb4eb8eb7e65803bc03aed94807cbe0160ce2d10ee9646d0a8826522c77"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/raw-at-pcb.json",
+      "bytes": 12345,
+      "sha256": "c5234093b0c70dc52741443dac120149005560e06e2314b48adfc841cf32828c"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/raw-first-power-b.json",
+      "bytes": 8642,
+      "sha256": "7d5a438c2d5f9806cb18d77d9e21fe823ddf673256349c4e535870a615f640c2"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/raw-first-power.json",
+      "bytes": 1678,
+      "sha256": "f57a2f2ed09d891e1559d55de5112fcf88c19292b2196ca87793d20554c92f67"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/raw-to-vcc-pre-resistance-dcv.json",
+      "bytes": 5169,
+      "sha256": "d498b0eabd20e5fd02849f5006ef1a95bf1ac7dc76c5db881c6e2d43e9faa450"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/raw-to-vcc-resistance.json",
+      "bytes": 11560,
+      "sha256": "17df05960cb8eb383fdd1e3f7a7fff0467f4c5a4077de9b99e1fe6e4705dae82"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/README.md",
+      "bytes": 43429,
+      "sha256": "6bec4f3f4f575fecd09ff5e9133822fd7d2d984c5f647d23e5ce89428761302d"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/scope-initial-status.json",
+      "bytes": 1051,
+      "sha256": "8997c279347667be5238e94145e201a34918c04891c2365c023b71866f4030c6"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/supply-final-status.json",
+      "bytes": 203,
+      "sha256": "95b06109e5bdd2caab22081e06894568672516139b5880c1414a6eb329865b20"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/supply-initial-status.json",
+      "bytes": 203,
+      "sha256": "95b06109e5bdd2caab22081e06894568672516139b5880c1414a6eb329865b20"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/tp2-pre-resistance-dcv.json",
+      "bytes": 5138,
+      "sha256": "200244d45fdd4c578c8d42ab1f16827a551d9b392c7b18bd8e56041ff1545af6"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/tp2-to-ground-resistance.json",
+      "bytes": 11624,
+      "sha256": "0a07f46042fcfed2417372d697f77a3466503b19434bba718c8db334dcc7d6c1"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/tp2-unpowered-dcv.json",
+      "bytes": 5659,
+      "sha256": "0a1717105d42611b1dd66887a54cbc6183d7587750e3d9fb8eea6ea7882b07ee"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/tp3-to-ground-resistance.json",
+      "bytes": 11573,
+      "sha256": "816b15eff2845a88ec5795c0704ea544a904bca9e5217f35e1f9cfb5b8751e07"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/tp3-unpowered-dcv.json",
+      "bytes": 5636,
+      "sha256": "2cda0b304d7c460736646b5968362a30695d2f22876cada704ce8a9c20f43203"
+    },
+    {
+      "path": "docs/verification/populated-board/2026-11-16/vcc-at-pcb.json",
+      "bytes": 12320,
+      "sha256": "6eeb8744c74f821ab9da04d00cdf1484855c207cd6b4f2466d9e79cb7e7e18a4"
+    },
+    {
+      "path": "electronics/icom-ctcss-board.kicad_pcb",
+      "bytes": 208362,
+      "sha256": "3443c8990e78a9669dd5a49a534c4eb87c8465d3ada177200b9a289cf52eac51"
+    },
+    {
+      "path": "electronics/.history/icom-ctcss-board.kicad_sch",
+      "bytes": 147546,
+      "sha256": "d7a1eb3579eec29a559ac3b5a0dede5fce634486690ef1a17009c5e49286a5fb"
+    },
+    {
+      "path": "electronics/icom-ctcss-board.kicad_sch",
+      "bytes": 165759,
+      "sha256": "2b4d0f6b251cbe1a2bee54bc0166810619f8169cb23300a76d3e1122eb8bed77"
+    }
+  ],
+  "hash_scope": "File identity and reproducibility; hashes do not establish calibration or physical acceptance."
+}

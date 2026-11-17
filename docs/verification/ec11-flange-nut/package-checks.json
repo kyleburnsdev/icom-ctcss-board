@@ -1,0 +1,36 @@
+{
+  "local_links_checked": 46,
+  "missing": [],
+  "syntax": "pass",
+  "gui_reopen": {
+    "application": "Bambu Studio 2.8.2.61",
+    "plates": 2,
+    "filament": "Generic PLA",
+    "layer_height_mm": 0.12,
+    "initial_layer_height_mm": 0.12,
+    "wall_loops": 4,
+    "gyroid_percent": 30
+  },
+  "sha256": {
+    "manufacturing/ec11-flange-nut/coupona.step": "d41478c26405e1e00ed764c7ad0404e517ccbb219db5840a6a7b6d4a2c2624a6",
+    "manufacturing/ec11-flange-nut/coupona.stl": "c2ba15e27070241deeb150d2b55fe18478087acde8415adbc36eeecdca7e93f9",
+    "manufacturing/ec11-flange-nut/couponb.step": "64b88944088b592b1822819a5e1f916fa2832d1c76f1eec5502c433c8a8dc9b0",
+    "manufacturing/ec11-flange-nut/couponb.stl": "6f9f9e1ce3b0a972e60f12e26a6367125258a80638df88d820e420572c03fecd",
+    "manufacturing/ec11-flange-nut/couponc.step": "53811a2bfc612aa1857e10550ef02d5640ca7f76704d9480f9016c86c35be70e",
+    "manufacturing/ec11-flange-nut/couponc.stl": "7769e09a0b14c077bb6d47786eeedaac37364c50ead5ca5b0e5370c1fd593ee1",
+    "manufacturing/ec11-flange-nut/ec11-flange-nut-n1.3mf": "25b648303a7d1d44eff673c37fff444c69f61773925ab2b3b976797bb1039689",
+    "manufacturing/ec11-flange-nut/nuta.step": "153002cfddd9d76bc0c98addbe9b9f3ab4a6f7a7efaef75d97146af17819bfd8",
+    "manufacturing/ec11-flange-nut/nuta.stl": "1c9e7ee07acf8e10f5565c9496acfea26efc244493d9107da30d69f4f637d71d",
+    "manufacturing/ec11-flange-nut/nutb.step": "cdad901b5ed50478380f8fcd91cd5299f82415040b0413280c7f3f94e191a80e",
+    "manufacturing/ec11-flange-nut/nutb.stl": "3abac2afe2014681d526e13d2337ea0976e81a9dfc4fb3aacc18582e37d8a725",
+    "manufacturing/ec11-flange-nut/nutc.step": "bb993dc63d641ef478f8bc9fe24637a591eb5f27b0f08acabde44aa2b3c8b25d",
+    "manufacturing/ec11-flange-nut/nutc.stl": "f7699adfa849aed6c019d33d5b53610606e7abcbf1cfe9612f4c3ad7567a0881",
+    "manufacturing/ec11-flange-nut/README.md": "d042e9fd8964307f6de7bcfa2ae1e5583da7b2da8946c4478c526e680be0aa65",
+    "docs/images/ec11-flange-nut/seat-stack.png": "9af1b118a9865876e44a335d382004b69001f220327d29b4454c77930027552c",
+    "tools/build-ec11-flange-nut.py": "65bcc2ed8c8d31be1c8b581433ff241262d99ed2a7ce02ac24341be5926a0232",
+    "tools/prepare-ec11-flange-nut.py": "afe3f95b2c26b062fdc58513ea8e9a39a27424764cf4a017a983bf3e442edf32",
+    "tools/render-ec11-nut-guide.py": "987c5f692e9f879b71ba4ca655ab46cf72a993e55453fd16155f2a32170a7b5a",
+    "mechanical/bench-holder/ec11-flange-nut-n1.FCStd": "a7d2ab32325cbdf5db0b9501a23c5d7f192175f5620784cbe16cab0a6faeeafa",
+    "docs/ec11-flange-nut-guide.md": "8354aa0c319d37ddea37c036db643486d6dbfe2f4231ee6e4fb8077d9203fac0"
+  }
+}

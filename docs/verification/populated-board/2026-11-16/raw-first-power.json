@@ -1,0 +1,34 @@
+{
+  "started_utc": "2026-11-16T18:47:59.030822+00:00",
+  "status": "incomplete",
+  "queries": [],
+  "supply_commands": [
+    {
+      "utc": "2026-11-16T18:47:59.041827+00:00",
+      "arguments": [
+        "--show"
+      ],
+      "response": "Driver functions:\n    Power supply\nScan options:\n    conn\n    serialcomm\n    force_detect\nkorad-kaxxxxp:conn=COM11 - Korad KA3005P [S/N: [redacted]] with 2 channels: V I\nSupported configuration options:\n    conn: COM11 (current)\n    continuous: on, off\n    limit_samples: 0 (current)\n    limit_time: 0 (current)\n    voltage: 0.000000 (current)\n    voltage_target: 0.000000, 31.000000, 0.010000\n    current: 0.000000 (current)\n    current_limit: 0.000000, 5.100000, 0.001000\n    enabled: on, off (current)\n    regulation: CC (current)\n    ocp_enabled: on (current), off\n    ovp_enabled: on, off (current)\n"
+    }
+  ],
+  "setup_confirmed": true,
+  "meter_port": "COM15",
+  "supply_port": "COM11",
+  "connections": "Supply + TP2; supply minus and meter COM TP1; meter V/ohm TP3; PCB USB and all off-board devices disconnected",
+  "limits": {
+    "raw_v": 8,
+    "current_limit_a": 0.05,
+    "vcc_v": [
+      4.75,
+      5.25
+    ]
+  },
+  "source_hashes": {
+    "check-board-power.py": "7917b9d481108ff7b67f83194ef1dbf8cb12eea79be83bb25f1b847049d9decc",
+    "korad_supply.py": "3b6f4b33eb81238d42b4a61d14bafbb5586026f32576da1f3bc0fbf5d83f82c5",
+    "xdm1251.py": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777"
+  },
+  "pyserial_version": "3.5",
+  "error": "RuntimeError: Expected qualified KORAD V1.5 firmware",
+  "finished_utc": "2026-11-16T18:48:00.380821+00:00"
+}

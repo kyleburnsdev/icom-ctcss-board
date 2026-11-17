@@ -1,0 +1,79 @@
+{
+  "started_utc": "2026-11-16T18:08:58.315462+00:00",
+  "port": "COM15",
+  "baud": 115200,
+  "action": "status",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T18:08:58.328447+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T18:08:58.346019+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T18:08:58.366170+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T18:08:58.385180+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T18:08:58.405494+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T18:08:58.415495+00:00",
+      "raw": "100 mV\n",
+      "roundtrip_s": 0.030999999959021807
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T18:08:58.435490+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T18:08:58.446070+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.03200000000651926
+    }
+  ],
+  "status": "status_complete",
+  "settings_writes_sent": false,
+  "requested_count": 10,
+  "interval_after_response_s": 0.5,
+  "python_version": "3.12.10",
+  "script_sha256": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777",
+  "pyserial_version": "3.5",
+  "identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "state": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 mV",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "session_closed": true,
+  "finished_utc": "2026-11-16T18:08:58.471621+00:00"
+}

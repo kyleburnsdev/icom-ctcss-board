@@ -1,10 +1,55 @@
 # Enclosure decision and prototype register
 
-Baseline: P1, 2026-10-22. This is the **sole location** for working defaults awaiting final determination, fit uncertainties, alternatives and physical acceptance. The specification and manufacturing notes use these values directly.
+Current prototype: **C1, 2026-11-17**, evolving B1/B2. P1, 2026-10-22, remains the
+historical reference below. This is the **sole location** for working defaults
+awaiting final determination, fit uncertainties, alternatives and physical
+acceptance. The C1 guide uses the current values directly; the P1 specification
+continues to describe its earlier construction baseline.
 
 Unless explicitly identified as user-provided, dimensions and load screens below are agent-selected defaults, not measurements of the owned hardware or certified ratings. Established inputs remain: the 100 × 150 × 1.5 board and its four existing 4 mm holes, owned GX16-8 bulkheads and EC11, 5 mm LEDs, accepted electrical/UI behavior, no external USB opening and 256³ individual-part build volume. These are not reopened by fit prototyping. All linear dimensions below are mm.
 
 ## Working values and validation
+
+### C1 bench-derived enclosure — user direction, 2026-11-17
+
+User inputs: narrow the base by rotating the unchanged PCB 90°; compact the
+controls and remove the PTT-test button; replace threaded PCB posts with locating
+nubs through the mounting holes and insert-fastened corner straps; standardize
+enclosure fasteners on available M3 × 8 socket-head cap screws; use PLA; add a
+sliding cover that supports the radio at a useful viewing angle and uses its side
+mounts. Radio dimensions supplied by the user: first hole 39 mm from faceplate
+flat, 49 mm between the two holes along each side, both 20 mm above the bottom.
+The second front offset is therefore 88 mm. These remain established inputs.
+
+| ID | C1 choice / question | Evidence and next acceptance |
+| --- | --- | --- |
+| C1-01 | 156 × 240 base, 156 × 90 panel, 30° control face | Selected layout: 25.7% narrower than 210 mm B1; inspect seated viewing and plug access |
+| C1-02 | Main PCB X28–128/Y84–234, underside Z15 | Current native hole/reference and printed-instance checks; 12 mm underside support retained |
+| C1-03 | 3.6 × 2.1 nubs, 3 mm relieved corner straps | Selected 0.4 mm diametral hole allowance / 0.6 mm protrusion; independent nub/strap coupon required |
+| C1-04 | M3 D5 × L4 inserts; 4.6 diameter × 5.5 deep pilots | Owned insert dimensions; selected pilot has 4.4/4.6/4.8 trial; recipe/retention physically open |
+| C1-05 | Captured beveled cover tongues, 0.3 mm wall/bearing clearance, 0.4 mm vertical slope clearance | Digital installed and sampled sliding checks; actual rail coupon and full travel open |
+| C1-06 | Two 12 mm-wide side saddles, 12° radio pitch, M3 cheek attachments | Selected initial angle and load path; radio handling, creep and temperature acceptance open |
+| C1-07 | Radio pattern uses user 39/88/20 values; 4.4 clearance bores | Separate pattern template; installed alignment and OEM bolt projection still physical checks |
+| C1-08 | OEM mounting bolt 8820000530 → M4 × 8 | Icom service parts cross-reference, [documentation](../reference/ic229h-mounting.md); exception to enclosure M3 standard; maximum insertion depth unpublished |
+| C1-09 | PLA / X1C 0.4 / 0.20 mm / five walls / 30% gyroid | User material, selected process. Physical load/thermal qualification open; initial 45 °C PLA stop threshold is a selected prototype criterion |
+| C1-10 | 24 installed M3 screws/inserts, 8 additional trial inserts | M3 stock user-confirmed; insert count and four OEM bolts remain kit check; inventory preflight gaps retained separately |
+| C1-11 | Grove rear mount, insert-fastened ear clips and LED keeper | Selected clamp stack replaces custom display threads; independent actual-size LCD coupon and installed harness clearance open |
+| C1-12 | Open front bay, internal USB service with cover off | Bench-derived access/ventilation; actual harness/mated connector/driver paths remain installation checks |
+
+Print-versus-buy: integrate the floor, supports, nubs, walls, rail gussets and
+insert bosses; print all corner straps, LCD clips, LED keeper, saddles and cheeks.
+Metal M3 screws/inserts supply wear-resistant service threads. The radio's OEM
+M4 bolts fit its existing chassis threads. Reuse control bushing hardware and the
+existing EC11 nut rather than modifying their threads. No additional purchased
+standoffs, PCB screws, bracket hardware or washers are selected. A radio bolt grip
+spacer, if needed after comparison with the OEM bracket, should be printed.
+
+Current deliverables: [C1 source](../../mechanical/enclosure/c1/ctcss-c1.FCStd),
+[print package](../../manufacturing/enclosure-c1/README.md),
+[illustrated guide](../enclosure-c1-guide.md) and
+[revision evidence](../verification/enclosure-c1/). C1 digital checks do not
+establish physical fit, radio retention, repeated service or PLA temperature/load
+acceptance. P1 values below do not override this later direction.
 
 ### Display and enclosure sequencing — user decision, 2026-11-13
 

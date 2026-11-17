@@ -1,5 +1,16 @@
 # Assembly and bring-up procedure
 
+The populated PCB passed the selected pre-wiring checks on November 16, 2026.
+See the illustrated learning guide ([PDF](../learning/populated-board-bench-checks-2026-11-16.pdf),
+[Word](../learning/populated-board-bench-checks-2026-11-16.docx)) and
+[measured bench record](../verification/populated-board/2026-11-16/README.md).
+This supports staged off-board wiring; full-load UI and radio acceptance remain open.
+
+For every final-product cable connection, use the [illustrated wiring and
+termination guide](../final-product-wiring-guide.md) and its
+[wire schedule](../reference/final-product-wire-list.csv). It incorporates the
+accepted Grove V4 display and bare EC11, including the unused J3 +5 V cavity.
+
 Use the [final BOM](../reference/bom.csv) and [top assembly drawing](../reference/assembly-top.svg); do not assemble from an earlier checkpoint. Radio cable mapping, available port current, and tone deviation remain bench acceptance items.
 
 Supplement the circuit BOM with two 1×12, 2.54 mm female socket strips (15.24 mm between row centers), compatible module male pins if needed, external cable mates, and four suitable insulating standoffs/fasteners for 4 mm holes. Select sockets no wider than the assumed 3 mm body and confirm their pins fit the 1.1 mm holes. Reserve hardware within a 4 mm radius of each mounting-hole center; verify the actual washers against copper and components. External LCD, encoder, switches and LEDs are off-board accessories. Verify their ratings and connector orders before purchase/assembly. All selected board capacitors are nonpolarized; no electrolytic polarity assumption applies.

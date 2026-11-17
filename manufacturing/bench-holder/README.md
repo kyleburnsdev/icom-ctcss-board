@@ -1,7 +1,16 @@
 # B1 temporary bench holder
 
+**Latest display mounting:** the [B2 replacement panel](../bench-panel-b2/README.md)
+puts the display and wiring behind the face, with printed thumb screws. Reuse
+this B1 base and its hardware; only the removable panel needs replacing.
+
 **Print [bench-holder-b1.3mf](bench-holder-b1.3mf), starting with plate 01.**
 Follow the [illustrated fabrication, assembly and radio-free test guide](../../docs/bench-holder-guide.md).
+
+**Encoder mounting update:** the EC11s have no nuts or washers. Print the
+[N1 integrated-washer nut accessory](../ec11-flange-nut/README.md), starting with
+its independent thread-test plate. It fits B1's existing 7.2 mm hole / 20 mm
+recess and requires no holder reprint or separate washer.
 
 The labeled control face sits at 30°. Four M3 screws enter the user's M3 × D5 ×
 L4 heat-set inserts; four nylon M3 screws secure the PCB in the upper 6 mm of

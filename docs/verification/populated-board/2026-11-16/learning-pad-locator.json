@@ -1,0 +1,691 @@
+{
+  "date": "2026-11-16",
+  "method": "Read-only Konnect get_component_pads; exact board electronics/icom-ctcss-board.kicad_pcb",
+  "footprints": [
+    {
+      "reference": "TP1",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 56,
+          "y": 115,
+          "net": "GND",
+          "shape": "rect"
+        }
+      ]
+    },
+    {
+      "reference": "TP2",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 65,
+          "y": 91,
+          "net": "+8V",
+          "shape": "rect"
+        }
+      ]
+    },
+    {
+      "reference": "TP3",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 86,
+          "y": 86.5,
+          "net": "+5V",
+          "shape": "rect"
+        }
+      ]
+    },
+    {
+      "reference": "TP4",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 138,
+          "y": 137,
+          "net": "/PWM_D9",
+          "shape": "rect"
+        }
+      ]
+    },
+    {
+      "reference": "TP5",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 121,
+          "y": 155,
+          "net": "/FILTER_2",
+          "shape": "rect"
+        }
+      ]
+    },
+    {
+      "reference": "TP6",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 83,
+          "y": 180,
+          "net": "/MIC_AUDIO",
+          "shape": "rect"
+        }
+      ]
+    },
+    {
+      "reference": "TP7",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 86,
+          "y": 150,
+          "net": "/PTT_SENSE_D7",
+          "shape": "rect"
+        }
+      ]
+    },
+    {
+      "reference": "TP8",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 131,
+          "y": 190,
+          "net": "/RADIO_PTT",
+          "shape": "rect"
+        }
+      ]
+    },
+    {
+      "reference": "J1",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 90,
+          "y": 180,
+          "net": "/MIC_AUDIO",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 92.54,
+          "y": 180,
+          "net": "+8V",
+          "shape": "circle"
+        },
+        {
+          "number": "3",
+          "x": 95.08,
+          "y": 180,
+          "net": "/UP_DOWN",
+          "shape": "circle"
+        },
+        {
+          "number": "4",
+          "x": 97.62,
+          "y": 180,
+          "net": "/PIN4_SPARE",
+          "shape": "circle"
+        },
+        {
+          "number": "5",
+          "x": 100.16,
+          "y": 180,
+          "net": "/MIC_PTT_SWITCH",
+          "shape": "circle"
+        },
+        {
+          "number": "6",
+          "x": 102.7,
+          "y": 180,
+          "net": "GND",
+          "shape": "circle"
+        },
+        {
+          "number": "7",
+          "x": 105.24,
+          "y": 180,
+          "net": "GND",
+          "shape": "circle"
+        },
+        {
+          "number": "8",
+          "x": 107.78,
+          "y": 180,
+          "net": "/PIN8_PASS",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "J2",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 90,
+          "y": 190,
+          "net": "/MIC_AUDIO",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 92.54,
+          "y": 190,
+          "net": "+8V",
+          "shape": "circle"
+        },
+        {
+          "number": "3",
+          "x": 95.08,
+          "y": 190,
+          "net": "/UP_DOWN",
+          "shape": "circle"
+        },
+        {
+          "number": "4",
+          "x": 97.62,
+          "y": 190,
+          "net": "/PIN4_SPARE",
+          "shape": "circle"
+        },
+        {
+          "number": "5",
+          "x": 100.16,
+          "y": 190,
+          "net": "/RADIO_PTT",
+          "shape": "circle"
+        },
+        {
+          "number": "6",
+          "x": 102.7,
+          "y": 190,
+          "net": "GND",
+          "shape": "circle"
+        },
+        {
+          "number": "7",
+          "x": 105.24,
+          "y": 190,
+          "net": "GND",
+          "shape": "circle"
+        },
+        {
+          "number": "8",
+          "x": 107.78,
+          "y": 190,
+          "net": "/PIN8_PASS",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "J3",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 60,
+          "y": 142,
+          "net": "/ENC_CLK_D4",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 60,
+          "y": 144.54,
+          "net": "/ENC_DT_D5",
+          "shape": "circle"
+        },
+        {
+          "number": "3",
+          "x": 60,
+          "y": 147.08,
+          "net": "/ENC_SW_D6",
+          "shape": "circle"
+        },
+        {
+          "number": "4",
+          "x": 60,
+          "y": 149.62,
+          "net": "+5V",
+          "shape": "circle"
+        },
+        {
+          "number": "5",
+          "x": 60,
+          "y": 152.16,
+          "net": "GND",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "J4",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 60,
+          "y": 121,
+          "net": "GND",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 60,
+          "y": 123.54,
+          "net": "+5V",
+          "shape": "circle"
+        },
+        {
+          "number": "3",
+          "x": 60,
+          "y": 126.08,
+          "net": "/LCD_SDA_D2",
+          "shape": "circle"
+        },
+        {
+          "number": "4",
+          "x": 60,
+          "y": 128.62,
+          "net": "/LCD_SCL_D3",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "J5",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 140,
+          "y": 102,
+          "net": "/BYPASS_D10",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 140,
+          "y": 104.54,
+          "net": "GND",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "J6",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 140,
+          "y": 78,
+          "net": "/LED_PTT_ANODE",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 140,
+          "y": 80.54,
+          "net": "GND",
+          "shape": "circle"
+        },
+        {
+          "number": "3",
+          "x": 140,
+          "y": 83.08,
+          "net": "/LED_BYPASS_ANODE",
+          "shape": "circle"
+        },
+        {
+          "number": "4",
+          "x": 140,
+          "y": 85.62,
+          "net": "GND",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "U1",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 76.03,
+          "y": 112.62,
+          "net": "unconnected-(U1-TX_D1-Pad1)",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 78.57,
+          "y": 112.62,
+          "net": "unconnected-(U1-RX_D0-Pad2)",
+          "shape": "circle"
+        },
+        {
+          "number": "3",
+          "x": 81.11,
+          "y": 112.62,
+          "net": "GND",
+          "shape": "circle"
+        },
+        {
+          "number": "4",
+          "x": 83.65,
+          "y": 112.62,
+          "net": "GND",
+          "shape": "circle"
+        },
+        {
+          "number": "5",
+          "x": 86.19,
+          "y": 112.62,
+          "net": "/LCD_SDA_D2",
+          "shape": "circle"
+        },
+        {
+          "number": "6",
+          "x": 88.73,
+          "y": 112.62,
+          "net": "/LCD_SCL_D3",
+          "shape": "circle"
+        },
+        {
+          "number": "7",
+          "x": 91.27,
+          "y": 112.62,
+          "net": "/ENC_CLK_D4",
+          "shape": "circle"
+        },
+        {
+          "number": "8",
+          "x": 93.81,
+          "y": 112.62,
+          "net": "/ENC_DT_D5",
+          "shape": "circle"
+        },
+        {
+          "number": "9",
+          "x": 96.35,
+          "y": 112.62,
+          "net": "/ENC_SW_D6",
+          "shape": "circle"
+        },
+        {
+          "number": "10",
+          "x": 98.89,
+          "y": 112.62,
+          "net": "/PTT_SENSE_D7",
+          "shape": "circle"
+        },
+        {
+          "number": "11",
+          "x": 101.43,
+          "y": 112.62,
+          "net": "/PTT_DRIVE_D8",
+          "shape": "circle"
+        },
+        {
+          "number": "12",
+          "x": 103.97,
+          "y": 112.62,
+          "net": "/PWM_D9",
+          "shape": "circle"
+        },
+        {
+          "number": "13",
+          "x": 103.97,
+          "y": 97.38,
+          "net": "/BYPASS_D10",
+          "shape": "circle"
+        },
+        {
+          "number": "14",
+          "x": 101.43,
+          "y": 97.38,
+          "net": "unconnected-(U1-MOSI_D16-Pad14)",
+          "shape": "circle"
+        },
+        {
+          "number": "15",
+          "x": 98.89,
+          "y": 97.38,
+          "net": "unconnected-(U1-MISO_D14-Pad15)",
+          "shape": "circle"
+        },
+        {
+          "number": "16",
+          "x": 96.35,
+          "y": 97.38,
+          "net": "unconnected-(U1-SCK_D15-Pad16)",
+          "shape": "circle"
+        },
+        {
+          "number": "17",
+          "x": 93.81,
+          "y": 97.38,
+          "net": "unconnected-(U1-A0-Pad17)",
+          "shape": "circle"
+        },
+        {
+          "number": "18",
+          "x": 91.27,
+          "y": 97.38,
+          "net": "/PTT_LED_A1",
+          "shape": "circle"
+        },
+        {
+          "number": "19",
+          "x": 88.73,
+          "y": 97.38,
+          "net": "/BYPASS_LED_A2",
+          "shape": "circle"
+        },
+        {
+          "number": "20",
+          "x": 86.19,
+          "y": 97.38,
+          "net": "unconnected-(U1-A3-Pad20)",
+          "shape": "circle"
+        },
+        {
+          "number": "21",
+          "x": 83.65,
+          "y": 97.38,
+          "net": "+5V",
+          "shape": "circle"
+        },
+        {
+          "number": "22",
+          "x": 81.11,
+          "y": 97.38,
+          "net": "unconnected-(U1-RST-Pad22)",
+          "shape": "circle"
+        },
+        {
+          "number": "23",
+          "x": 78.57,
+          "y": 97.38,
+          "net": "GND",
+          "shape": "circle"
+        },
+        {
+          "number": "24",
+          "x": 76.03,
+          "y": 97.38,
+          "net": "+8V",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "R1",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 135,
+          "y": 145,
+          "net": "/PWM_D9",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 129.92,
+          "y": 145,
+          "net": "/FILTER_1",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "R2",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 120,
+          "y": 145,
+          "net": "/FILTER_1",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 114.92,
+          "y": 145,
+          "net": "/FILTER_2",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "R3",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 105,
+          "y": 145,
+          "net": "/FILTER_2",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 99.92,
+          "y": 145,
+          "net": "/DIVIDER",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "R4",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 99.92,
+          "y": 153,
+          "net": "/DIVIDER",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 99.92,
+          "y": 158.08,
+          "net": "GND",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "R5",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 103,
+          "y": 169,
+          "net": "Net-(C3-Pad2)",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 97.92,
+          "y": 169,
+          "net": "/MIC_AUDIO",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "RV1",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 110,
+          "y": 163,
+          "net": "GND",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 107.46,
+          "y": 163,
+          "net": "/TONE_WIPER",
+          "shape": "circle"
+        },
+        {
+          "number": "3",
+          "x": 104.92,
+          "y": 163,
+          "net": "/DIVIDER",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "reference": "Q1",
+      "source": "file",
+      "pads": [
+        {
+          "number": "1",
+          "x": 116,
+          "y": 187,
+          "net": "GND",
+          "shape": "rect"
+        },
+        {
+          "number": "2",
+          "x": 118.54,
+          "y": 187,
+          "net": "/PTT_BASE",
+          "shape": "circle"
+        },
+        {
+          "number": "3",
+          "x": 121.08,
+          "y": 187,
+          "net": "/RADIO_PTT",
+          "shape": "circle"
+        }
+      ]
+    }
+  ]
+}

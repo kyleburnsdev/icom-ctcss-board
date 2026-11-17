@@ -1,0 +1,2543 @@
+{
+  "revision": "C1",
+  "printer": "Bambu Lab X1 Carbon 0.4 nozzle",
+  "filament": "Generic PLA; explicit user choice",
+  "bed": "Textured PEI Plate",
+  "plates": [
+    {
+      "id": 1,
+      "name": "01 - TEST FIT - radio LCD nubs inserts rails",
+      "placements": [
+        {
+          "name": "displayfitcoupon",
+          "bounds_mm": [
+            25.0,
+            35.0,
+            117.0,
+            109.0
+          ],
+          "brim_bounds_mm": [
+            22.0,
+            32.0,
+            120.0,
+            112.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "radiopatterncoupon",
+          "bounds_mm": [
+            25.0,
+            130.0,
+            130.0,
+            160.0
+          ],
+          "brim_bounds_mm": [
+            22.0,
+            127.0,
+            133.0,
+            163.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "coverrailcoupon",
+          "bounds_mm": [
+            150.0,
+            35.0,
+            170.0,
+            70.0
+          ],
+          "brim_bounds_mm": [
+            147.0,
+            32.0,
+            173.0,
+            73.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "covertonguecoupon",
+          "bounds_mm": [
+            185.0,
+            35.0,
+            202.0,
+            70.0
+          ],
+          "brim_bounds_mm": [
+            182.0,
+            32.0,
+            205.0,
+            73.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "nubandstrapcoupon",
+          "bounds_mm": [
+            150.0,
+            90.0,
+            186.0,
+            112.0
+          ],
+          "brim_bounds_mm": [
+            147.0,
+            87.0,
+            189.0,
+            115.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "insertpilotcoupon",
+          "bounds_mm": [
+            150.0,
+            135.0,
+            196.0,
+            153.0
+          ],
+          "brim_bounds_mm": [
+            147.0,
+            132.0,
+            199.0,
+            156.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "pcbcornerstrap-test",
+          "bounds_mm": [
+            155.0,
+            175.0,
+            177.0,
+            185.0
+          ],
+          "brim_bounds_mm": [
+            152.0,
+            172.0,
+            180.0,
+            188.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "displayearclip-test-0",
+          "bounds_mm": [
+            25.0,
+            185.0,
+            35.0,
+            199.0
+          ],
+          "brim_bounds_mm": [
+            22.0,
+            182.0,
+            38.0,
+            202.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "displayearclip-test-1",
+          "bounds_mm": [
+            50.0,
+            185.0,
+            60.0,
+            199.0
+          ],
+          "brim_bounds_mm": [
+            47.0,
+            182.0,
+            63.0,
+            202.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "displayearclip-test-2",
+          "bounds_mm": [
+            75.0,
+            185.0,
+            85.0,
+            199.0
+          ],
+          "brim_bounds_mm": [
+            72.0,
+            182.0,
+            88.0,
+            202.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "displayearclip-test-3",
+          "bounds_mm": [
+            100.0,
+            185.0,
+            110.0,
+            199.0
+          ],
+          "brim_bounds_mm": [
+            97.0,
+            182.0,
+            113.0,
+            202.0
+          ],
+          "in_plane_rotation_deg": 0
+        }
+      ],
+      "saved_layout_readback": [
+        {
+          "name": "displayfitcoupon",
+          "local_bounds_mm": [
+            25.0,
+            35.0,
+            117.0,
+            109.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "radiopatterncoupon",
+          "local_bounds_mm": [
+            25.0,
+            130.0,
+            130.0,
+            160.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "coverrailcoupon",
+          "local_bounds_mm": [
+            150.0,
+            35.0,
+            170.0,
+            70.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "covertonguecoupon",
+          "local_bounds_mm": [
+            185.0,
+            35.0,
+            202.0,
+            70.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "nubandstrapcoupon",
+          "local_bounds_mm": [
+            150.0,
+            90.0,
+            186.0,
+            112.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "insertpilotcoupon",
+          "local_bounds_mm": [
+            150.0,
+            135.0,
+            196.0,
+            153.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "pcbcornerstrap-test",
+          "local_bounds_mm": [
+            155.0,
+            175.0,
+            177.0,
+            185.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "displayearclip-test-0",
+          "local_bounds_mm": [
+            25.0,
+            185.0,
+            35.0,
+            199.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "displayearclip-test-1",
+          "local_bounds_mm": [
+            50.0,
+            185.0,
+            60.0,
+            199.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "displayearclip-test-2",
+          "local_bounds_mm": [
+            75.0,
+            185.0,
+            85.0,
+            199.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "displayearclip-test-3",
+          "local_bounds_mm": [
+            100.0,
+            185.0,
+            110.0,
+            199.0
+          ],
+          "z_min_mm": 0.0
+        }
+      ],
+      "slicer_plate_origin_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": 2,
+      "name": "02 - FINAL - narrow base",
+      "placements": [
+        {
+          "name": "base",
+          "bounds_mm": [
+            50.0,
+            8.0,
+            206.0,
+            248.0
+          ],
+          "brim_bounds_mm": [
+            47.0,
+            5.0,
+            209.0,
+            251.0
+          ],
+          "in_plane_rotation_deg": 0
+        }
+      ],
+      "saved_layout_readback": [
+        {
+          "name": "base",
+          "local_bounds_mm": [
+            50.0,
+            8.0,
+            206.00000000000006,
+            248.0
+          ],
+          "z_min_mm": 0.0
+        }
+      ],
+      "slicer_plate_origin_mm": [
+        307.2,
+        0.0
+      ]
+    },
+    {
+      "id": 3,
+      "name": "03 - FINAL - panel cheeks and retainers",
+      "placements": [
+        {
+          "name": "controlpanel",
+          "bounds_mm": [
+            25.0,
+            35.0,
+            181.0,
+            125.0
+          ],
+          "brim_bounds_mm": [
+            22.0,
+            32.0,
+            184.0,
+            128.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "leftradiocheek",
+          "bounds_mm": [
+            25.0,
+            145.0,
+            105.99999999999999,
+            182.0
+          ],
+          "brim_bounds_mm": [
+            22.0,
+            142.0,
+            108.99999999999999,
+            185.0
+          ],
+          "in_plane_rotation_deg": 90
+        },
+        {
+          "name": "rightradiocheek",
+          "bounds_mm": [
+            120.0,
+            145.0,
+            201.0,
+            182.0
+          ],
+          "brim_bounds_mm": [
+            117.0,
+            142.0,
+            204.0,
+            185.0
+          ],
+          "in_plane_rotation_deg": 90
+        },
+        {
+          "name": "ledkeeper",
+          "bounds_mm": [
+            25.0,
+            210.0,
+            61.0,
+            236.0
+          ],
+          "brim_bounds_mm": [
+            22.0,
+            207.0,
+            64.0,
+            239.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "pcbcornerstrap-0",
+          "bounds_mm": [
+            80.0,
+            215.0,
+            102.0,
+            225.0
+          ],
+          "brim_bounds_mm": [
+            77.0,
+            212.0,
+            105.0,
+            228.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "pcbcornerstrap-1",
+          "bounds_mm": [
+            112.0,
+            215.0,
+            134.0,
+            225.0
+          ],
+          "brim_bounds_mm": [
+            109.0,
+            212.0,
+            137.0,
+            228.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "pcbcornerstrap-2",
+          "bounds_mm": [
+            144.0,
+            215.0,
+            166.0,
+            225.0
+          ],
+          "brim_bounds_mm": [
+            141.0,
+            212.0,
+            169.0,
+            228.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "pcbcornerstrap-3",
+          "bounds_mm": [
+            176.0,
+            215.0,
+            198.0,
+            225.0
+          ],
+          "brim_bounds_mm": [
+            173.0,
+            212.0,
+            201.0,
+            228.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "displayearclip-0",
+          "bounds_mm": [
+            80.0,
+            190.0,
+            90.0,
+            204.0
+          ],
+          "brim_bounds_mm": [
+            77.0,
+            187.0,
+            93.0,
+            207.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "displayearclip-1",
+          "bounds_mm": [
+            107.0,
+            190.0,
+            117.0,
+            204.0
+          ],
+          "brim_bounds_mm": [
+            104.0,
+            187.0,
+            120.0,
+            207.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "displayearclip-2",
+          "bounds_mm": [
+            134.0,
+            190.0,
+            144.0,
+            204.0
+          ],
+          "brim_bounds_mm": [
+            131.0,
+            187.0,
+            147.0,
+            207.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "displayearclip-3",
+          "bounds_mm": [
+            161.0,
+            190.0,
+            171.0,
+            204.0
+          ],
+          "brim_bounds_mm": [
+            158.0,
+            187.0,
+            174.0,
+            207.0
+          ],
+          "in_plane_rotation_deg": 0
+        }
+      ],
+      "saved_layout_readback": [
+        {
+          "name": "controlpanel",
+          "local_bounds_mm": [
+            25.0,
+            35.0,
+            181.0,
+            125.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "leftradiocheek",
+          "local_bounds_mm": [
+            25.0,
+            145.0,
+            106.0,
+            182.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "rightradiocheek",
+          "local_bounds_mm": [
+            120.0,
+            145.0,
+            201.0,
+            182.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "ledkeeper",
+          "local_bounds_mm": [
+            25.0,
+            210.0,
+            61.0,
+            236.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "pcbcornerstrap-0",
+          "local_bounds_mm": [
+            80.0,
+            215.0,
+            102.0,
+            225.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "pcbcornerstrap-1",
+          "local_bounds_mm": [
+            112.0,
+            215.0,
+            134.0,
+            225.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "pcbcornerstrap-2",
+          "local_bounds_mm": [
+            144.0,
+            215.0,
+            166.0,
+            225.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "pcbcornerstrap-3",
+          "local_bounds_mm": [
+            176.0,
+            215.0,
+            198.0,
+            225.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "displayearclip-0",
+          "local_bounds_mm": [
+            80.0,
+            190.0,
+            90.0,
+            204.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "displayearclip-1",
+          "local_bounds_mm": [
+            107.0,
+            190.0,
+            117.0,
+            204.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "displayearclip-2",
+          "local_bounds_mm": [
+            134.0,
+            190.0,
+            144.0,
+            204.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "displayearclip-3",
+          "local_bounds_mm": [
+            161.0,
+            190.0,
+            171.0,
+            204.0
+          ],
+          "z_min_mm": 0.0
+        }
+      ],
+      "slicer_plate_origin_mm": [
+        0.0,
+        -307.2
+      ]
+    },
+    {
+      "id": 4,
+      "name": "04 - FINAL - sliding cover and radio saddles",
+      "placements": [
+        {
+          "name": "slidingcover",
+          "bounds_mm": [
+            25.0,
+            35.0,
+            174.39999389648438,
+            185.0
+          ],
+          "brim_bounds_mm": [
+            22.0,
+            32.0,
+            177.39999389648438,
+            188.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "leftradiosaddle",
+          "bounds_mm": [
+            190.0,
+            34.999999999999986,
+            227.70000076293945,
+            190.0
+          ],
+          "brim_bounds_mm": [
+            187.0,
+            31.999999999999986,
+            230.70000076293945,
+            193.0
+          ],
+          "in_plane_rotation_deg": 0
+        },
+        {
+          "name": "rightradiosaddle",
+          "bounds_mm": [
+            25.0,
+            200.00000000000003,
+            180.0,
+            237.70000076293945
+          ],
+          "brim_bounds_mm": [
+            22.0,
+            197.00000000000003,
+            183.0,
+            240.70000076293945
+          ],
+          "in_plane_rotation_deg": 90
+        }
+      ],
+      "saved_layout_readback": [
+        {
+          "name": "slidingcover",
+          "local_bounds_mm": [
+            25.0,
+            35.0,
+            174.3999938,
+            185.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "leftradiosaddle",
+          "local_bounds_mm": [
+            189.9999919,
+            35.0,
+            227.69998879999997,
+            190.0
+          ],
+          "z_min_mm": 0.0
+        },
+        {
+          "name": "rightradiosaddle",
+          "local_bounds_mm": [
+            25.0,
+            199.9999919,
+            180.0,
+            237.6999888
+          ],
+          "z_min_mm": 0.0
+        }
+      ],
+      "slicer_plate_origin_mm": [
+        307.2,
+        -307.2
+      ]
+    }
+  ],
+  "embedded_settings": {
+    "accel_to_decel_enable": "0",
+    "accel_to_decel_factor": "50%",
+    "activate_air_filtration": [
+      "0"
+    ],
+    "additional_cooling_fan_speed": [
+      "70"
+    ],
+    "additional_fan_full_speed_layer": [
+      "0"
+    ],
+    "alternate_extra_wall": "0",
+    "ams_filament_load_time_ams": "0",
+    "ams_filament_load_time_ams_lite": "0",
+    "ams_filament_load_time_n3f_s": "0",
+    "ams_filament_unload_time_ams": "0",
+    "ams_filament_unload_time_ams_lite": "0",
+    "ams_filament_unload_time_n3f_s": "0",
+    "apply_scarf_seam_on_circles": "1",
+    "auxiliary_fan": "1",
+    "avoid_crossing_wall_includes_support": "0",
+    "bed_custom_model": "",
+    "bed_custom_texture": "",
+    "bed_exclude_area": [
+      "0x0",
+      "18x0",
+      "18x28",
+      "0x28"
+    ],
+    "bed_heat_soak_area": [],
+    "bed_temperature_formula": "by_first_filament",
+    "before_layer_change_gcode": "",
+    "best_object_pos": "0.5,0.5",
+    "bottom_color_penetration_layers": "3",
+    "bottom_shell_layers": "6",
+    "bottom_shell_thickness": "0",
+    "bottom_surface_density": "100%",
+    "bottom_surface_pattern": "monotonic",
+    "bridge_angle": "0",
+    "bridge_flow": "1",
+    "bridge_no_support": "0",
+    "bridge_speed": [
+      "50",
+      "50"
+    ],
+    "brim_object_gap": "0.1",
+    "brim_type": "outer_only",
+    "brim_width": "3",
+    "chamber_temperatures": [
+      "0"
+    ],
+    "change_filament_gcode": "M620 S[next_extruder]A\nM204 S9000\nG1 Z{max_layer_z + 3.0} F1200\n\nG1 X70 F21000\nG1 Y245\nG1 Y265 F3000\nM400\nM106 P1 S0\nM106 P2 S0\n{if old_filament_temp > 142 && next_extruder < 255}\nM104 S[old_filament_temp]\n{endif}\nG1 X90 F3000\nG1 Y255 F4000\nG1 X100 F5000\nG1 X120 F15000\n\nG1 X20 Y50 F21000\nG1 Y-3\n{if toolchange_count == 2}\n; get travel path for change filament\nM620.1 X[travel_point_1_x] Y[travel_point_1_y] F21000 P0\nM620.1 X[travel_point_2_x] Y[travel_point_2_y] F21000 P1\nM620.1 X[travel_point_3_x] Y[travel_point_3_y] F21000 P2\n{endif}\nM620.1 E F[old_filament_e_feedrate] T{nozzle_temperature_range_high[previous_extruder]}\nT[next_extruder]\nM620.1 E F[new_filament_e_feedrate] T{nozzle_temperature_range_high[next_extruder]}\n\n{if next_extruder < 255}\nM400\n\nG92 E0\n{if flush_length_1 > 1}\n; FLUSH_START\n; always use highest temperature to flush\nM400\nM109 S[nozzle_temperature_range_high]\n{if flush_length_1 > 23.7}\nG1 E23.7 F{old_filament_e_feedrate} ; do not need pulsatile flushing for start part\nG1 E{(flush_length_1 - 23.7) * 0.02} F50\nG1 E{(flush_length_1 - 23.7) * 0.23} F{old_filament_e_feedrate}\nG1 E{(flush_length_1 - 23.7) * 0.02} F50\nG1 E{(flush_length_1 - 23.7) * 0.23} F{new_filament_e_feedrate}\nG1 E{(flush_length_1 - 23.7) * 0.02} F50\nG1 E{(flush_length_1 - 23.7) * 0.23} F{new_filament_e_feedrate}\nG1 E{(flush_length_1 - 23.7) * 0.02} F50\nG1 E{(flush_length_1 - 23.7) * 0.23} F{new_filament_e_feedrate}\n{else}\nG1 E{flush_length_1} F{old_filament_e_feedrate}\n{endif}\n; FLUSH_END\nG1 E-[old_retract_length_toolchange] F1800\nG1 E[old_retract_length_toolchange] F300\n{endif}\n\n{if flush_length_2 > 1}\n; FLUSH_START\nG1 E{flush_length_2 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_2 * 0.02} F50\nG1 E{flush_length_2 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_2 * 0.02} F50\nG1 E{flush_length_2 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_2 * 0.02} F50\nG1 E{flush_length_2 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_2 * 0.02} F50\nG1 E{flush_length_2 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_2 * 0.02} F50\n; FLUSH_END\nG1 E-[new_retract_length_toolchange] F1800\nG1 E[new_retract_length_toolchange] F300\n{endif}\n\n{if flush_length_3 > 1}\n; FLUSH_START\nG1 E{flush_length_3 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_3 * 0.02} F50\nG1 E{flush_length_3 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_3 * 0.02} F50\nG1 E{flush_length_3 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_3 * 0.02} F50\nG1 E{flush_length_3 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_3 * 0.02} F50\nG1 E{flush_length_3 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_3 * 0.02} F50\n; FLUSH_END\nG1 E-[new_retract_length_toolchange] F1800\nG1 E[new_retract_length_toolchange] F300\n{endif}\n\n{if flush_length_4 > 1}\n; FLUSH_START\nG1 E{flush_length_4 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_4 * 0.02} F50\nG1 E{flush_length_4 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_4 * 0.02} F50\nG1 E{flush_length_4 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_4 * 0.02} F50\nG1 E{flush_length_4 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_4 * 0.02} F50\nG1 E{flush_length_4 * 0.18} F{new_filament_e_feedrate}\nG1 E{flush_length_4 * 0.02} F50\n; FLUSH_END\n{endif}\n; FLUSH_START\nM400\nM109 S[new_filament_temp]\nG1 E2 F{new_filament_e_feedrate} ;Compensate for filament spillage during waiting temperature\n; FLUSH_END\nM400\nG92 E0\nG1 E-[new_retract_length_toolchange] F1800\nM106 P1 S255\nM400 S3\nG1 X80 F15000\nG1 X60 F15000\nG1 X80 F15000\nG1 X60 F15000; shake to put down garbage\n\nG1 X70 F5000\nG1 X90 F3000\nG1 Y255 F4000\nG1 X100 F5000\nG1 Y265 F5000\nG1 X70 F10000\nG1 X100 F5000\nG1 X70 F10000\nG1 X100 F5000\nG1 X165 F15000; wipe and shake\nG1 Y256 ; move Y to aside, prevent collision\nM400\nG1 Z{max_layer_z + 3.0} F3000\n{if layer_z <= (initial_layer_print_height + 0.001)}\nM204 S[initial_layer_acceleration]\n{else}\nM204 S[default_acceleration]\n{endif}\n{else}\nG1 X[x_after_toolchange] Y[y_after_toolchange] Z[z_after_toolchange] F12000\n{endif}\nM621 S[next_extruder]A",
+    "circle_compensation_manual_offset": "0",
+    "circle_compensation_speed": [
+      "200"
+    ],
+    "close_additional_fan_first_x_layers": [
+      "1"
+    ],
+    "close_fan_the_first_x_layers": [
+      "1"
+    ],
+    "compatible_printers_condition": "",
+    "complete_print_exhaust_fan_speed": [
+      "70"
+    ],
+    "cool_plate_temp": [
+      "35"
+    ],
+    "cool_plate_temp_initial_layer": [
+      "35"
+    ],
+    "cooling_filter_enabled": "0",
+    "cooling_perimeter_transition_distance": [
+      "10"
+    ],
+    "cooling_slowdown_logic": [
+      "uniform_cooling"
+    ],
+    "counter_coef_1": [
+      "0"
+    ],
+    "counter_coef_2": [
+      "0.008"
+    ],
+    "counter_coef_3": [
+      "-0.041"
+    ],
+    "counter_limit_max": [
+      "0.033"
+    ],
+    "counter_limit_min": [
+      "-0.035"
+    ],
+    "counterbore_hole_bridging": "none",
+    "curr_bed_type": "Textured PEI Plate",
+    "default_acceleration": [
+      "10000",
+      "10000"
+    ],
+    "default_ams_type": "-1",
+    "default_filament_colour": [
+      ""
+    ],
+    "default_filament_profile": [
+      "Bambu PLA Basic @BBL X1C"
+    ],
+    "default_jerk": "0",
+    "default_nozzle_volume_type": [
+      "Standard"
+    ],
+    "default_print_profile": "0.20mm Standard @BBL X1C",
+    "deretraction_speed": [
+      "30",
+      "30"
+    ],
+    "detect_floating_vertical_shell": "1",
+    "detect_narrow_internal_solid_infill": "1",
+    "detect_overhang_wall": "1",
+    "detect_thin_wall": "0",
+    "diameter_limit": [
+      "50"
+    ],
+    "different_settings_to_system": [
+      "",
+      "",
+      ""
+    ],
+    "draft_shield": "disabled",
+    "during_print_exhaust_fan_speed": [
+      "70"
+    ],
+    "elefant_foot_compensation": "0.15",
+    "embedding_wall_into_infill": "0",
+    "enable_arc_fitting": "1",
+    "enable_circle_compensation": "0",
+    "enable_filament_dynamic_map": "0",
+    "enable_height_slowdown": [
+      "0",
+      "0"
+    ],
+    "enable_long_retraction_when_cut": "2",
+    "enable_mixed_color_sublayer": "0",
+    "enable_order_independent_overlap_carving": "0",
+    "enable_overhang_bridge_fan": [
+      "1"
+    ],
+    "enable_overhang_speed": [
+      "1",
+      "1"
+    ],
+    "enable_pre_heating": "0",
+    "enable_pressure_advance": [
+      "0"
+    ],
+    "enable_prime_tower": "1",
+    "enable_support": "0",
+    "enable_support_ironing": "0",
+    "enable_tower_interface_features": "0",
+    "enable_wrapping_detection": "0",
+    "enforce_support_layers": "0",
+    "eng_plate_temp": [
+      "0"
+    ],
+    "eng_plate_temp_initial_layer": [
+      "0"
+    ],
+    "ensure_vertical_shell_thickness": "enabled",
+    "exclude_object": "1",
+    "extruder_ams_count": [],
+    "extruder_clearance_dist_to_rod": "33",
+    "extruder_clearance_height_to_lid": "90",
+    "extruder_clearance_height_to_rod": "34",
+    "extruder_clearance_max_radius": "68",
+    "extruder_colour": [
+      "#018001"
+    ],
+    "extruder_max_nozzle_count": [
+      "1"
+    ],
+    "extruder_nozzle_stats": [],
+    "extruder_offset": [
+      "0x2"
+    ],
+    "extruder_printable_area": [],
+    "extruder_printable_height": [],
+    "extruder_type": [
+      "Direct Drive"
+    ],
+    "extruder_variant_list": [
+      "Direct Drive Standard,Direct Drive High Flow"
+    ],
+    "fan_cooling_layer_time": [
+      "100"
+    ],
+    "fan_direction": "left",
+    "fan_max_speed": [
+      "100"
+    ],
+    "fan_min_speed": [
+      "100"
+    ],
+    "farthest_point_timelapse": "1",
+    "filament_adaptive_volumetric_speed": [
+      "0"
+    ],
+    "filament_adhesiveness_category": [
+      "100"
+    ],
+    "filament_bridge_speed": [
+      "25"
+    ],
+    "filament_change_length": [
+      "10"
+    ],
+    "filament_change_length_nc": [
+      "10"
+    ],
+    "filament_colour": [
+      "#00AE42"
+    ],
+    "filament_cooling_before_tower": [
+      "0"
+    ],
+    "filament_cost": [
+      "20"
+    ],
+    "filament_density": [
+      "1.24"
+    ],
+    "filament_deretraction_speed": [
+      "nil"
+    ],
+    "filament_dev_ams_drying_ams_limitations": [
+      "1"
+    ],
+    "filament_dev_ams_drying_heat_distortion_temperature": [
+      "45"
+    ],
+    "filament_dev_ams_drying_temperature": [
+      "45"
+    ],
+    "filament_dev_ams_drying_time": [
+      "12"
+    ],
+    "filament_dev_chamber_drying_bed_temperature": [
+      "70"
+    ],
+    "filament_dev_chamber_drying_time": [
+      "12"
+    ],
+    "filament_dev_drying_cooling_temperature": [
+      "45"
+    ],
+    "filament_dev_drying_softening_temperature": [
+      "50"
+    ],
+    "filament_diameter": [
+      "1.75"
+    ],
+    "filament_enable_overhang_speed": [
+      "1"
+    ],
+    "filament_end_gcode": [
+      "; filament end gcode \n\n"
+    ],
+    "filament_extruder_compatibility": [
+      "0"
+    ],
+    "filament_extruder_variant": [
+      "Direct Drive Standard"
+    ],
+    "filament_flow_ratio": [
+      "0.98"
+    ],
+    "filament_flush_temp": [
+      "0"
+    ],
+    "filament_flush_temp_fast": [
+      "0"
+    ],
+    "filament_flush_volumetric_speed": [
+      "0"
+    ],
+    "filament_ids": [
+      "GFL99"
+    ],
+    "filament_is_mixed": [
+      "0"
+    ],
+    "filament_is_support": [
+      "0"
+    ],
+    "filament_long_retractions_when_cut": [
+      "nil"
+    ],
+    "filament_map": [
+      "1"
+    ],
+    "filament_map_2": [
+      "1"
+    ],
+    "filament_map_mode": "Auto For Flush",
+    "filament_max_volumetric_speed": [
+      "12"
+    ],
+    "filament_metal_stickiness": [
+      "None"
+    ],
+    "filament_minimal_purge_on_wipe_tower": [
+      "15"
+    ],
+    "filament_mixed_components": [
+      ""
+    ],
+    "filament_mixed_gradient": [
+      "0"
+    ],
+    "filament_mixed_gradient_curve": [
+      ""
+    ],
+    "filament_mixed_gradient_per_part": [
+      "0"
+    ],
+    "filament_mixed_gradient_range": [
+      ""
+    ],
+    "filament_mixed_sublayer_ratios": [
+      ""
+    ],
+    "filament_notes": "",
+    "filament_nozzle_map": [
+      "1"
+    ],
+    "filament_overhang_1_4_speed": [
+      "0"
+    ],
+    "filament_overhang_2_4_speed": [
+      "50"
+    ],
+    "filament_overhang_3_4_speed": [
+      "30"
+    ],
+    "filament_overhang_4_4_speed": [
+      "10"
+    ],
+    "filament_overhang_totally_speed": [
+      "10"
+    ],
+    "filament_pre_cooling_temperature": [
+      "0"
+    ],
+    "filament_pre_cooling_temperature_nc": [
+      "0"
+    ],
+    "filament_preheat_temperature_delta": [
+      "0"
+    ],
+    "filament_prime_volume": [
+      "45"
+    ],
+    "filament_prime_volume_nc": [
+      "60"
+    ],
+    "filament_printable": [
+      "3"
+    ],
+    "filament_ramming_travel_time": [
+      "0"
+    ],
+    "filament_ramming_travel_time_nc": [
+      "0"
+    ],
+    "filament_ramming_volumetric_speed": [
+      "-1"
+    ],
+    "filament_ramming_volumetric_speed_nc": [
+      "-1"
+    ],
+    "filament_retract_before_wipe": [
+      "nil"
+    ],
+    "filament_retract_length_nc": [
+      "14"
+    ],
+    "filament_retract_restart_extra": [
+      "nil"
+    ],
+    "filament_retract_when_changing_layer": [
+      "nil"
+    ],
+    "filament_retraction_distances_when_cut": [
+      "nil"
+    ],
+    "filament_retraction_length": [
+      "nil"
+    ],
+    "filament_retraction_minimum_travel": [
+      "nil"
+    ],
+    "filament_retraction_speed": [
+      "nil"
+    ],
+    "filament_scarf_gap": [
+      "15%"
+    ],
+    "filament_scarf_height": [
+      "10%"
+    ],
+    "filament_scarf_length": [
+      "10"
+    ],
+    "filament_scarf_seam_type": [
+      "none"
+    ],
+    "filament_self_index": [
+      "1"
+    ],
+    "filament_settings_id": [
+      "Generic PLA"
+    ],
+    "filament_shrink": [
+      "100%"
+    ],
+    "filament_soluble": [
+      "0"
+    ],
+    "filament_start_gcode": [
+      "; filament start gcode\n{if  (bed_temperature[current_extruder] >55)||(bed_temperature_initial_layer[current_extruder] >55)}M106 P3 S200\n{elsif(bed_temperature[current_extruder] >50)||(bed_temperature_initial_layer[current_extruder] >50)}M106 P3 S150\n{elsif(bed_temperature[current_extruder] >45)||(bed_temperature_initial_layer[current_extruder] >45)}M106 P3 S50\n{endif}\n\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}"
+    ],
+    "filament_tower_interface_pre_extrusion_dist": [
+      "10"
+    ],
+    "filament_tower_interface_pre_extrusion_length": [
+      "0"
+    ],
+    "filament_tower_interface_print_temp": [
+      "-1"
+    ],
+    "filament_tower_interface_purge_volume": [
+      "20"
+    ],
+    "filament_tower_ironing_area": [
+      "4"
+    ],
+    "filament_type": [
+      "PLA"
+    ],
+    "filament_velocity_adaptation_factor": [
+      "1"
+    ],
+    "filament_vendor": [
+      "Generic"
+    ],
+    "filament_volume_map": [
+      "0"
+    ],
+    "filament_wipe": [
+      "nil"
+    ],
+    "filament_wipe_distance": [
+      "nil"
+    ],
+    "filament_z_hop": [
+      "nil"
+    ],
+    "filament_z_hop_types": [
+      "nil"
+    ],
+    "filename_format": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode",
+    "fill_multiline": "1",
+    "filter_out_gap_fill": "0",
+    "first_layer_print_sequence": [
+      "0"
+    ],
+    "first_x_layer_fan_speed": [
+      "0"
+    ],
+    "first_x_layer_part_fan_speed": [
+      "0"
+    ],
+    "flush_into_infill": "0",
+    "flush_into_objects": "0",
+    "flush_into_support": "1",
+    "flush_multiplier": [
+      "1"
+    ],
+    "flush_multiplier_fast": [
+      "1.2"
+    ],
+    "flush_volumes_matrix": [
+      "0",
+      "280",
+      "280",
+      "280",
+      "280",
+      "0",
+      "280",
+      "280",
+      "280",
+      "280",
+      "0",
+      "280",
+      "280",
+      "280",
+      "280",
+      "0"
+    ],
+    "flush_volumes_vector": [
+      "140",
+      "140",
+      "140",
+      "140",
+      "140",
+      "140",
+      "140",
+      "140"
+    ],
+    "from": "project",
+    "full_fan_speed_layer": [
+      "0"
+    ],
+    "fuzzy_skin": "none",
+    "fuzzy_skin_first_layer": "0",
+    "fuzzy_skin_mode": "displacement",
+    "fuzzy_skin_noise_type": "classic",
+    "fuzzy_skin_octaves": "4",
+    "fuzzy_skin_persistence": "0.5",
+    "fuzzy_skin_point_distance": "0.8",
+    "fuzzy_skin_scale": "1",
+    "fuzzy_skin_thickness": "0.3",
+    "gap_infill_speed": [
+      "250",
+      "250"
+    ],
+    "gcode_add_line_number": "0",
+    "gcode_flavor": "marlin",
+    "grab_length": [
+      "0"
+    ],
+    "group_algo_with_time": "0",
+    "has_filament_switcher": "0",
+    "has_scarf_joint_seam": "0",
+    "head_wrap_detect_zone": [],
+    "hole_coef_1": [
+      "0"
+    ],
+    "hole_coef_2": [
+      "-0.008"
+    ],
+    "hole_coef_3": [
+      "0.23415"
+    ],
+    "hole_limit_max": [
+      "0.22"
+    ],
+    "hole_limit_min": [
+      "0.088"
+    ],
+    "hot_plate_temp": [
+      "55"
+    ],
+    "hot_plate_temp_initial_layer": [
+      "55"
+    ],
+    "hotend_cooling_rate": [
+      "2",
+      "2"
+    ],
+    "hotend_heating_rate": [
+      "2",
+      "2"
+    ],
+    "impact_strength_z": [
+      "10"
+    ],
+    "independent_support_layer_height": "1",
+    "infill_combination": "0",
+    "infill_direction": "45",
+    "infill_instead_top_bottom_surfaces": "0",
+    "infill_jerk": "9",
+    "infill_lock_depth": "1",
+    "infill_rotate_step": "0",
+    "infill_shift_step": "0.4",
+    "infill_wall_overlap": "15%",
+    "inherits_group": [
+      "",
+      "",
+      ""
+    ],
+    "initial_layer_acceleration": [
+      "500",
+      "500"
+    ],
+    "initial_layer_flow_ratio": "1",
+    "initial_layer_infill_speed": [
+      "105",
+      "105"
+    ],
+    "initial_layer_jerk": "9",
+    "initial_layer_line_width": "0.5",
+    "initial_layer_print_height": "0.2",
+    "initial_layer_speed": [
+      "50",
+      "50"
+    ],
+    "initial_layer_travel_acceleration": [
+      "6000",
+      "6000"
+    ],
+    "inner_wall_acceleration": [
+      "0",
+      "0"
+    ],
+    "inner_wall_jerk": "9",
+    "inner_wall_line_width": "0.45",
+    "inner_wall_speed": [
+      "60",
+      "60"
+    ],
+    "interface_shells": "0",
+    "interlocking_beam": "0",
+    "interlocking_beam_layer_count": "2",
+    "interlocking_beam_width": "0.8",
+    "interlocking_boundary_avoidance": "2",
+    "interlocking_depth": "2",
+    "interlocking_orientation": "22.5",
+    "internal_bridge_support_thickness": "0.8",
+    "internal_solid_infill_line_width": "0.42",
+    "internal_solid_infill_pattern": "zig-zag",
+    "internal_solid_infill_speed": [
+      "250",
+      "350"
+    ],
+    "ironing_direction": "45",
+    "ironing_fan_speed": [
+      "-1"
+    ],
+    "ironing_flow": "10%",
+    "ironing_inset": "0.21",
+    "ironing_pattern": "zig-zag",
+    "ironing_spacing": "0.15",
+    "ironing_speed": "30",
+    "ironing_type": "no ironing",
+    "is_infill_first": "0",
+    "layer_change_gcode": "; layer num/total_layer_count: {layer_num+1}/[total_layer_count]\n; update layer progress\nM73 L{layer_num+1}\nM991 S0 P{layer_num} ;notify layer change",
+    "layer_height": "0.2",
+    "line_width": "0.45",
+    "locked_skeleton_infill_pattern": "zigzag",
+    "locked_skin_infill_pattern": "crosszag",
+    "long_retractions_when_cut": [
+      "0",
+      "0"
+    ],
+    "long_retractions_when_ec": [
+      "0"
+    ],
+    "machine_bed_mass_Y": "0",
+    "machine_end_gcode": ";===== date: 20230428 =====================\nM400 ; wait for buffer to clear\nG92 E0 ; zero the extruder\nG1 E-0.8 F1800 ; retract\nG1 Z{max_layer_z + 0.5} F900 ; lower z a little\nG1 X65 Y245 F12000 ; move to safe pos \nG1 Y265 F3000\n\nG1 X65 Y245 F12000\nG1 Y265 F3000\nM140 S0 ; turn off bed\nM106 S0 ; turn off fan\nM106 P2 S0 ; turn off remote part cooling fan\nM106 P3 S0 ; turn off chamber cooling fan\n\nG1 X100 F12000 ; wipe\n; pull back filament to AMS\nM620 S255\nG1 X20 Y50 F12000\nG1 Y-3\nT255\nG1 X65 F12000\nG1 Y265\nG1 X100 F12000 ; wipe\nM621 S255\nM104 S0 ; turn off hotend\n\nM622.1 S1 ; for prev firmware, default turned on\nM1002 judge_flag timelapse_record_flag\nM622 J1\n    M400 ; wait all motion done\n    M991 S0 P-1 ;end smooth timelapse at safe pos\n    M400 S3 ;wait for last picture to be taken\nM623; end of \"timelapse_record_flag\"\n\nM400 ; wait all motion done\nM17 S\nM17 Z0.4 ; lower z motor current to reduce impact if there is something in the bottom\n{if (max_layer_z + 100.0) < 250}\n    G1 Z{max_layer_z + 100.0} F600\n    G1 Z{max_layer_z +98.0}\n{else}\n    G1 Z250 F600\n    G1 Z248\n{endif}\nM400 P100\nM17 R ; restore z current\n\nG90\nG1 X128 Y250 F3600\n\nM220 S100  ; Reset feedrate magnitude\nM201.2 K1.0 ; Reset acc magnitude\nM73.2   R1.0 ;Reset left time magnitude\nM1002 set_gcode_claim_speed_level : 0\n\nM17 X0.8 Y0.8 Z0.5 ; lower motor current to 45% power\n",
+    "machine_hotend_change_time": "0",
+    "machine_load_filament_time": "29",
+    "machine_max_acceleration_e": [
+      "5000",
+      "5000",
+      "5000",
+      "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+      "20000",
+      "20000",
+      "20000",
+      "20000"
+    ],
+    "machine_max_acceleration_retracting": [
+      "5000",
+      "5000",
+      "5000",
+      "5000"
+    ],
+    "machine_max_acceleration_travel": [
+      "9000",
+      "9000",
+      "9000",
+      "9000"
+    ],
+    "machine_max_acceleration_x": [
+      "20000",
+      "20000",
+      "20000",
+      "20000"
+    ],
+    "machine_max_acceleration_y": [
+      "20000",
+      "20000",
+      "20000",
+      "20000"
+    ],
+    "machine_max_acceleration_z": [
+      "500",
+      "500",
+      "500",
+      "500"
+    ],
+    "machine_max_force_Y": "0",
+    "machine_max_jerk_e": [
+      "2.5",
+      "2.5",
+      "2.5",
+      "2.5"
+    ],
+    "machine_max_jerk_x": [
+      "9",
+      "9",
+      "9",
+      "9"
+    ],
+    "machine_max_jerk_y": [
+      "9",
+      "9",
+      "9",
+      "9"
+    ],
+    "machine_max_jerk_z": [
+      "3",
+      "3",
+      "3",
+      "3"
+    ],
+    "machine_max_printed_mass": "0",
+    "machine_max_speed_e": [
+      "30",
+      "30",
+      "30",
+      "30"
+    ],
+    "machine_max_speed_x": [
+      "500",
+      "500",
+      "500",
+      "500"
+    ],
+    "machine_max_speed_y": [
+      "500",
+      "500",
+      "500",
+      "500"
+    ],
+    "machine_max_speed_z": [
+      "20",
+      "20",
+      "20",
+      "20"
+    ],
+    "machine_min_extruding_rate": [
+      "0"
+    ],
+    "machine_min_travel_rate": [
+      "0"
+    ],
+    "machine_pause_gcode": "M400 U1",
+    "machine_prepare_compensation_time": "260",
+    "machine_start_gcode": "G0 Z20 F9000\nG92 E0; G1 E-10 F1200\nG28\nM970 Q1 A10 B10 C130 K0\nM970 Q1 A10 B131 C250 K1\nM974 Q1 S1 P0\nM970 Q0 A10 B10 C130 H20 K0\nM970 Q0 A10 B131 C250 K1\nM974 Q0 S1 P0\nM220 S100 ;Reset Feedrate\nM221 S100 ;Reset Flowrate\nG29 ;Home\nG90;\nG92 E0 ;Reset Extruder \nG1 Z2.0 F3000 ;Move Z Axis up \nG1 X10.1 Y20 Z0.28 F5000.0 ;Move to start position\nM109 S205;\nG1 X10.1 Y200.0 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X10.4 Y200.0 Z0.28 F5000.0 ;Move to side a little\nG1 X10.4 Y20 Z0.28 F1500.0 E30 ;Draw the second line\nG92 E0 ;Reset Extruder \nG1 X110 Y110 Z2.0 F3000 ;Move Z Axis up",
+    "machine_switch_extruder_time": "0",
+    "machine_unload_filament_time": "28",
+    "master_extruder_id": "1",
+    "max_bridge_length": "0",
+    "max_layer_height": [
+      "0.28"
+    ],
+    "max_travel_detour_distance": "0",
+    "min_bead_width": "85%",
+    "min_feature_size": "25%",
+    "min_layer_height": [
+      "0.08"
+    ],
+    "minimum_sparse_infill_area": "15",
+    "mmu_segmented_region_interlocking_depth": "0",
+    "mmu_segmented_region_max_width": "0",
+    "monotonic_travel_into_wall": "0%",
+    "name": "project_settings",
+    "no_slow_down_for_cooling_on_outwalls": [
+      "0"
+    ],
+    "nozzle_diameter": [
+      "0.4"
+    ],
+    "nozzle_flush_dataset": [
+      "0",
+      "0"
+    ],
+    "nozzle_height": "4.2",
+    "nozzle_temperature": [
+      "220"
+    ],
+    "nozzle_temperature_initial_layer": [
+      "220"
+    ],
+    "nozzle_temperature_range_high": [
+      "240"
+    ],
+    "nozzle_temperature_range_low": [
+      "190"
+    ],
+    "nozzle_type": [
+      "hardened_steel",
+      "hardened_steel"
+    ],
+    "nozzle_volume": [
+      "107",
+      "107"
+    ],
+    "nozzle_volume_type": [
+      "Standard"
+    ],
+    "only_one_wall_first_layer": "0",
+    "ooze_prevention": "0",
+    "other_layers_print_sequence": [
+      "0"
+    ],
+    "other_layers_print_sequence_nums": "0",
+    "outer_wall_acceleration": [
+      "5000",
+      "5000"
+    ],
+    "outer_wall_jerk": "9",
+    "outer_wall_line_width": "0.45",
+    "outer_wall_speed": [
+      "40",
+      "40"
+    ],
+    "overhang_1_4_speed": [
+      "0",
+      "0"
+    ],
+    "overhang_2_4_speed": [
+      "50",
+      "50"
+    ],
+    "overhang_3_4_speed": [
+      "30",
+      "30"
+    ],
+    "overhang_4_4_speed": [
+      "10",
+      "10"
+    ],
+    "overhang_fan_speed": [
+      "100"
+    ],
+    "overhang_fan_threshold": [
+      "50%"
+    ],
+    "overhang_threshold_participating_cooling": [
+      "95%"
+    ],
+    "overhang_totally_speed": [
+      "10",
+      "30"
+    ],
+    "override_filament_scarf_seam_setting": "0",
+    "override_process_overhang_speed": [
+      "0"
+    ],
+    "physical_extruder_map": [
+      "0"
+    ],
+    "post_process": [],
+    "pre_start_fan_time": [
+      "0"
+    ],
+    "precise_outer_wall": "0",
+    "precise_z_height": "0",
+    "pressure_advance": [
+      "0.02"
+    ],
+    "prime_tower_brim_width": "3",
+    "prime_tower_enable_framework": "0",
+    "prime_tower_extra_rib_length": "0",
+    "prime_tower_fillet_wall": "1",
+    "prime_tower_flat_ironing": "0",
+    "prime_tower_infill_gap": "150%",
+    "prime_tower_lift_height": "-1",
+    "prime_tower_lift_speed": "90",
+    "prime_tower_max_speed": "90",
+    "prime_tower_rib_wall": "1",
+    "prime_tower_rib_width": "8",
+    "prime_tower_skip_points": "1",
+    "prime_tower_width": "35",
+    "prime_volume_mode": "Default",
+    "print_compatible_printers": [
+      "Bambu Lab X1 Carbon 0.4 nozzle",
+      "Bambu Lab X1 0.4 nozzle",
+      "Bambu Lab P1S 0.4 nozzle",
+      "Bambu Lab X1E 0.4 nozzle"
+    ],
+    "print_extruder_id": [
+      "1",
+      "1"
+    ],
+    "print_extruder_variant": [
+      "Direct Drive Standard",
+      "Direct Drive High Flow"
+    ],
+    "print_flow_ratio": "1",
+    "print_in_clockwise": "0",
+    "print_sequence": "by layer",
+    "print_settings_id": "C1 PLA fit prototype - 0.20 mm - 5 walls",
+    "printable_area": [
+      "0x0",
+      "256x0",
+      "256x256",
+      "0x256"
+    ],
+    "printable_height": "250",
+    "printer_extruder_id": [
+      "1",
+      "1"
+    ],
+    "printer_extruder_variant": [
+      "Direct Drive Standard",
+      "Direct Drive High Flow"
+    ],
+    "printer_model": "Bambu Lab X1 Carbon",
+    "printer_notes": "",
+    "printer_settings_id": "Bambu Lab X1 Carbon 0.4 nozzle",
+    "printer_structure": "corexy",
+    "printer_technology": "FFF",
+    "printer_variant": "0.4",
+    "printing_by_object_gcode": "",
+    "process_notes": "",
+    "raft_contact_distance": "0.1",
+    "raft_expansion": "1.5",
+    "raft_first_layer_density": "90%",
+    "raft_first_layer_expansion": "-1",
+    "raft_layers": "0",
+    "reduce_crossing_wall": "0",
+    "reduce_fan_stop_start_freq": [
+      "1"
+    ],
+    "reduce_infill_retraction_mode": "Auto",
+    "required_nozzle_HRC": [
+      "3"
+    ],
+    "resolution": "0.012",
+    "retract_before_wipe": [
+      "0%",
+      "0%"
+    ],
+    "retract_length_toolchange": [
+      "2",
+      "2"
+    ],
+    "retract_lift_above": [
+      "0",
+      "0"
+    ],
+    "retract_lift_below": [
+      "249",
+      "249"
+    ],
+    "retract_restart_extra": [
+      "0",
+      "0"
+    ],
+    "retract_restart_extra_toolchange": [
+      "0",
+      "0"
+    ],
+    "retract_when_changing_layer": [
+      "1",
+      "1"
+    ],
+    "retraction_distances_when_cut": [
+      "18",
+      "18"
+    ],
+    "retraction_distances_when_ec": [
+      "0"
+    ],
+    "retraction_length": [
+      "0.8",
+      "0.8"
+    ],
+    "retraction_minimum_travel": [
+      "1",
+      "1"
+    ],
+    "retraction_speed": [
+      "30",
+      "30"
+    ],
+    "role_base_wipe_speed": "1",
+    "scan_first_layer": "1",
+    "scarf_angle_threshold": "155",
+    "seam_gap": "15%",
+    "seam_placement_away_from_overhangs": "0",
+    "seam_position": "aligned",
+    "seam_slope_conditional": "1",
+    "seam_slope_entire_loop": "0",
+    "seam_slope_gap": "0",
+    "seam_slope_inner_walls": "1",
+    "seam_slope_min_length": "10",
+    "seam_slope_start_height": "10%",
+    "seam_slope_steps": "10",
+    "seam_slope_type": "none",
+    "silent_mode": "0",
+    "single_extruder_multi_material": "1",
+    "skeleton_infill_density": "15%",
+    "skeleton_infill_line_width": "0.45",
+    "skin_infill_density": "15%",
+    "skin_infill_depth": "2",
+    "skin_infill_line_width": "0.45",
+    "skirt_distance": "2",
+    "skirt_height": "1",
+    "skirt_loops": "0",
+    "skirt_per_object": "1",
+    "slice_closing_radius": "0.049",
+    "slicing_mode": "regular",
+    "slow_down_for_layer_cooling": [
+      "1"
+    ],
+    "slow_down_layer_time": [
+      "8"
+    ],
+    "slow_down_min_speed": [
+      "20"
+    ],
+    "slowdown_end_acc": [
+      "100000",
+      "100000"
+    ],
+    "slowdown_end_height": [
+      "400",
+      "400"
+    ],
+    "slowdown_end_speed": [
+      "1000",
+      "1000"
+    ],
+    "slowdown_start_acc": [
+      "100000",
+      "100000"
+    ],
+    "slowdown_start_height": [
+      "0",
+      "0"
+    ],
+    "slowdown_start_speed": [
+      "1000",
+      "1000"
+    ],
+    "small_perimeter_speed": [
+      "50%",
+      "50%"
+    ],
+    "small_perimeter_threshold": [
+      "0",
+      "0"
+    ],
+    "smooth_coefficient": "150",
+    "smooth_speed_discontinuity_area": "1",
+    "solid_infill_filament": "0",
+    "sparse_infill_acceleration": [
+      "100%",
+      "100%"
+    ],
+    "sparse_infill_anchor": "400%",
+    "sparse_infill_anchor_max": "20",
+    "sparse_infill_density": "30%",
+    "sparse_infill_filament": "0",
+    "sparse_infill_lattice_angle_1": "-45",
+    "sparse_infill_lattice_angle_2": "45",
+    "sparse_infill_line_width": "0.45",
+    "sparse_infill_pattern": "gyroid",
+    "sparse_infill_speed": [
+      "270",
+      "370"
+    ],
+    "spiral_mode": "0",
+    "spiral_mode_max_xy_smoothing": "200%",
+    "spiral_mode_smooth": "0",
+    "standby_temperature_delta": "-5",
+    "start_end_points": [
+      "30x-3",
+      "54x245"
+    ],
+    "supertack_plate_temp": [
+      "45"
+    ],
+    "supertack_plate_temp_initial_layer": [
+      "45"
+    ],
+    "support_air_filtration": "0",
+    "support_angle": "0",
+    "support_base_pattern": "default",
+    "support_base_pattern_spacing": "2.5",
+    "support_bottom_interface_spacing": "0.5",
+    "support_bottom_z_distance": "0.2",
+    "support_chamber_temp_control": "0",
+    "support_cooling_filter": "0",
+    "support_critical_regions_only": "0",
+    "support_expansion": "0",
+    "support_fast_purge_mode": "0",
+    "support_filament": "0",
+    "support_interface_bottom_layers": "2",
+    "support_interface_filament": "0",
+    "support_interface_loop_pattern": "0",
+    "support_interface_not_for_body": "1",
+    "support_interface_pattern": "auto",
+    "support_interface_spacing": "0.5",
+    "support_interface_speed": [
+      "80",
+      "80"
+    ],
+    "support_interface_top_layers": "2",
+    "support_ironing_direction": "0",
+    "support_ironing_flow": "10%",
+    "support_ironing_inset": "0",
+    "support_ironing_pattern": "zig-zag",
+    "support_ironing_spacing": "0.15",
+    "support_ironing_speed": "30",
+    "support_line_width": "0.42",
+    "support_object_first_layer_gap": "0.2",
+    "support_object_skip_flush": "0",
+    "support_object_xy_distance": "0.35",
+    "support_on_build_plate_only": "0",
+    "support_remove_small_overhang": "1",
+    "support_speed": [
+      "150",
+      "150"
+    ],
+    "support_style": "default",
+    "support_threshold_angle": "30",
+    "support_top_z_distance": "0.2",
+    "support_type": "tree(auto)",
+    "symmetric_infill_y_axis": "0",
+    "temperature_vitrification": [
+      "45"
+    ],
+    "template_custom_gcode": "",
+    "textured_plate_temp": [
+      "55"
+    ],
+    "textured_plate_temp_initial_layer": [
+      "55"
+    ],
+    "thick_bridges": "0",
+    "thumbnail_size": [
+      "50x50"
+    ],
+    "time_lapse_gcode": ";========Date 20250206========\nM622.1 S1 ; for prev firmware, default turned on\nM1002 judge_flag timelapse_record_flag\nM622 J1\n{if timelapse_type == 0} ; timelapse without wipe tower\nM971 S11 C10 O0\n{elsif timelapse_type == 1} ; timelapse with wipe tower\nG92 E0\nG1 X65 Y245 F20000 ; move to safe pos\nG17\nG2 Z{layer_z} I0.86 J0.86 P1 F20000\nG1 Y265 F3000\nM400 P300\nM971 S11 C10 O0\nG92 E0\nG1 X100 F5000\nG1 Y255 F20000\n{endif}\nM623\n",
+    "timelapse_type": "0",
+    "top_area_threshold": "200%",
+    "top_color_penetration_layers": "5",
+    "top_one_wall_type": "all top",
+    "top_shell_layers": "6",
+    "top_shell_thickness": "1",
+    "top_solid_infill_flow_ratio": [
+      "1",
+      "1"
+    ],
+    "top_surface_acceleration": [
+      "2000",
+      "2000"
+    ],
+    "top_surface_density": "100%",
+    "top_surface_jerk": "9",
+    "top_surface_line_width": "0.42",
+    "top_surface_pattern": "monotonicline",
+    "top_surface_speed": [
+      "200",
+      "300"
+    ],
+    "top_z_overrides_xy_distance": "0",
+    "travel_acceleration": [
+      "10000",
+      "10000"
+    ],
+    "travel_jerk": "9",
+    "travel_short_distance_acceleration": [
+      "250",
+      "250"
+    ],
+    "travel_speed": [
+      "500",
+      "500"
+    ],
+    "travel_speed_z": [
+      "0",
+      "0"
+    ],
+    "tree_support_branch_angle": "45",
+    "tree_support_branch_diameter": "2",
+    "tree_support_branch_diameter_angle": "5",
+    "tree_support_branch_distance": "5",
+    "tree_support_wall_count": "-1",
+    "upward_compatible_machine": [
+      "Bambu Lab P1S 0.4 nozzle",
+      "Bambu Lab P1P 0.4 nozzle",
+      "Bambu Lab X1 0.4 nozzle",
+      "Bambu Lab X1E 0.4 nozzle",
+      "Bambu Lab A1 0.4 nozzle",
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "use_firmware_retraction": "0",
+    "use_relative_e_distances": "1",
+    "version": "02.08.02.61",
+    "vertical_shell_speed": [
+      "80%",
+      "80%"
+    ],
+    "volumetric_speed_coefficients": [
+      "0 0 0 0 0 0"
+    ],
+    "wall_distribution_count": "1",
+    "wall_filament": "0",
+    "wall_generator": "arachne",
+    "wall_loops": "5",
+    "wall_sequence": "inner wall/outer wall",
+    "wall_transition_angle": "10",
+    "wall_transition_filter_deviation": "25%",
+    "wall_transition_length": "100%",
+    "wipe": [
+      "1",
+      "1"
+    ],
+    "wipe_distance": [
+      "2",
+      "2"
+    ],
+    "wipe_speed": "80%",
+    "wipe_tower_no_sparse_layers": "0",
+    "wipe_tower_rotation_angle": "0",
+    "wipe_tower_x": [
+      "15"
+    ],
+    "wipe_tower_y": [
+      "220"
+    ],
+    "wrapping_detection_gcode": "",
+    "wrapping_detection_layers": "20",
+    "wrapping_exclude_area": [],
+    "xy_contour_compensation": "0",
+    "xy_hole_compensation": "0",
+    "z_direction_outwall_speed_continuous": "0",
+    "z_hop": [
+      "0.4",
+      "0.4"
+    ],
+    "z_hop_types": [
+      "Auto Lift",
+      "Auto Lift"
+    ]
+  },
+  "shared_settings_no_object_or_plate_process_overrides": true,
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 2149,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 124,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 376.1457824707031,
+          "Bridge": 344.3677978515625,
+          "Brim": 181.9120330810547,
+          "Custom": 35.66128158569336,
+          "Gap infill": 11.397032737731934,
+          "Inner wall": 3128.205078125,
+          "Internal solid infill": 1766.9534912109375,
+          "Outer wall": 1533.1220703125,
+          "Overhang wall": 18.49720001220703,
+          "Sparse infill": 541.3474731445312,
+          "Top surface": 366.4534912109375,
+          "Travel": 606.40625,
+          "Undefined": 590.7572631835938
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 56.98712921142578,
+            "total_used_g": 56.98712921142578
+          }
+        ],
+        "generate_support_material_time": 104,
+        "id": 1,
+        "infill_time": 487,
+        "layer_filament_change": 0,
+        "main_predication": 8875.212890625,
+        "make_perimeters_time": 755,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 74.0,
+              "height": 18.600000381469727,
+              "width": 92.0,
+              "x": 25.0,
+              "y": 35.0,
+              "z": 0.0
+            },
+            "id": 15,
+            "name": "displayfitcoupon_1",
+            "triangle_count": 8096
+          },
+          {
+            "bbox": {
+              "depth": 30.0,
+              "height": 2.0,
+              "width": 105.0,
+              "x": 25.0,
+              "y": 130.0,
+              "z": 0.0
+            },
+            "id": 35,
+            "name": "radiopatterncoupon_1",
+            "triangle_count": 3778
+          },
+          {
+            "bbox": {
+              "depth": 35.0,
+              "height": 21.0,
+              "width": 20.0,
+              "x": 150.0,
+              "y": 35.0,
+              "z": 0.0
+            },
+            "id": 55,
+            "name": "coverrailcoupon_1",
+            "triangle_count": 36
+          },
+          {
+            "bbox": {
+              "depth": 35.0,
+              "height": 9.0,
+              "width": 17.0,
+              "x": 185.0,
+              "y": 35.0,
+              "z": -8.881784197001252e-16
+            },
+            "id": 75,
+            "name": "covertonguecoupon_1",
+            "triangle_count": 28
+          },
+          {
+            "bbox": {
+              "depth": 22.0,
+              "height": 17.100000381469727,
+              "width": 36.0,
+              "x": 150.0,
+              "y": 90.0,
+              "z": 0.0
+            },
+            "id": 95,
+            "name": "nubandstrapcoupon_1",
+            "triangle_count": 1540
+          },
+          {
+            "bbox": {
+              "depth": 18.0,
+              "height": 9.0,
+              "width": 46.0,
+              "x": 150.0,
+              "y": 135.0,
+              "z": 0.0
+            },
+            "id": 115,
+            "name": "insertpilotcoupon_1",
+            "triangle_count": 9288
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 22.0,
+              "x": 155.0,
+              "y": 175.0,
+              "z": 0.0
+            },
+            "id": 135,
+            "name": "pcbcornerstrap-test_1",
+            "triangle_count": 1024
+          },
+          {
+            "bbox": {
+              "depth": 14.0,
+              "height": 3.0,
+              "width": 10.0,
+              "x": 25.0,
+              "y": 185.0,
+              "z": 0.0
+            },
+            "id": 155,
+            "name": "displayearclip-test-0_1",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 14.0,
+              "height": 3.0,
+              "width": 10.0,
+              "x": 50.0,
+              "y": 185.0,
+              "z": 0.0
+            },
+            "id": 175,
+            "name": "displayearclip-test-1_1",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 14.0,
+              "height": 3.0,
+              "width": 10.0,
+              "x": 75.0,
+              "y": 185.0,
+              "z": 0.0
+            },
+            "id": 195,
+            "name": "displayearclip-test-2_1",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 14.0,
+              "height": 3.0,
+              "width": 10.0,
+              "x": 100.0,
+              "y": 185.0,
+              "z": 0.0
+            },
+            "id": 215,
+            "name": "displayearclip-test-3_1",
+            "triangle_count": 520
+          }
+        ],
+        "sliced_time": 2784,
+        "sliced_time_with_cache": 1220,
+        "total_predication": 8895.1943359375,
+        "triangle_count": 25870,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 867.141357421875,
+          "Bridge": 1685.1968994140625,
+          "Brim": 97.26258850097656,
+          "Custom": 35.49615478515625,
+          "Gap infill": 6.863795280456543,
+          "Inner wall": 21276.814453125,
+          "Internal solid infill": 6313.89794921875,
+          "Outer wall": 10349.25390625,
+          "Sparse infill": 4786.08984375,
+          "Top surface": 863.8909912109375,
+          "Travel": 2173.450439453125,
+          "Undefined": 2157.99072265625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 316.2587585449219,
+            "total_used_g": 316.2587585449219
+          }
+        ],
+        "generate_support_material_time": 100,
+        "id": 2,
+        "infill_time": 2504,
+        "layer_filament_change": 0,
+        "main_predication": 48433.1484375,
+        "make_perimeters_time": 841,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 240.0,
+              "height": 77.0,
+              "width": 155.99998474121094,
+              "x": 357.20001220703125,
+              "y": 8.0,
+              "z": 0.0
+            },
+            "id": 235,
+            "name": "base_1",
+            "triangle_count": 9308
+          }
+        ],
+        "sliced_time": 5226,
+        "sliced_time_with_cache": 1567,
+        "total_predication": 48453.15234375,
+        "triangle_count": 9308,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 563.2798461914062,
+          "Bridge": 793.156982421875,
+          "Brim": 211.32962036132812,
+          "Custom": 35.35240936279297,
+          "Gap infill": 16.00483512878418,
+          "Inner wall": 2948.679931640625,
+          "Internal solid infill": 2834.328125,
+          "Outer wall": 1464.997802734375,
+          "Overhang wall": 87.51597595214844,
+          "Sparse infill": 495.69317626953125,
+          "Top surface": 500.4142150878906,
+          "Travel": 666.336669921875,
+          "Undefined": 650.951904296875
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 75.2485122680664,
+            "total_used_g": 75.2485122680664
+          }
+        ],
+        "generate_support_material_time": 174,
+        "id": 3,
+        "infill_time": 1519,
+        "layer_filament_change": 0,
+        "main_predication": 10578.2451171875,
+        "make_perimeters_time": 1155,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 90.00001525878906,
+              "height": 18.600000381469727,
+              "width": 156.0,
+              "x": 25.0,
+              "y": -272.20001220703125,
+              "z": -1.7763568394002505e-15
+            },
+            "id": 255,
+            "name": "controlpanel_1",
+            "triangle_count": 37044
+          },
+          {
+            "bbox": {
+              "depth": 36.999996185302734,
+              "height": 3.0,
+              "width": 81.0,
+              "x": 25.0,
+              "y": -162.1999969482422,
+              "z": 5.773159728050814e-15
+            },
+            "id": 275,
+            "name": "leftradiocheek_1",
+            "triangle_count": 2044
+          },
+          {
+            "bbox": {
+              "depth": 36.999996185302734,
+              "height": 3.0,
+              "width": 81.0,
+              "x": 120.0,
+              "y": -162.1999969482422,
+              "z": 2.842170943040401e-14
+            },
+            "id": 295,
+            "name": "rightradiocheek_1",
+            "triangle_count": 2044
+          },
+          {
+            "bbox": {
+              "depth": 25.999996185302734,
+              "height": 6.900000095367432,
+              "width": 36.0,
+              "x": 25.0,
+              "y": -97.19999694824219,
+              "z": -3.552713678800501e-15
+            },
+            "id": 315,
+            "name": "ledkeeper_1",
+            "triangle_count": 3052
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 22.0,
+              "x": 80.0,
+              "y": -92.19999694824219,
+              "z": 0.0
+            },
+            "id": 335,
+            "name": "pcbcornerstrap-0_1",
+            "triangle_count": 1024
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 22.0,
+              "x": 112.0,
+              "y": -92.19999694824219,
+              "z": 0.0
+            },
+            "id": 355,
+            "name": "pcbcornerstrap-1_1",
+            "triangle_count": 1024
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 22.0,
+              "x": 144.0,
+              "y": -92.19999694824219,
+              "z": 0.0
+            },
+            "id": 375,
+            "name": "pcbcornerstrap-2_1",
+            "triangle_count": 1024
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 22.0,
+              "x": 176.0,
+              "y": -92.19999694824219,
+              "z": 0.0
+            },
+            "id": 395,
+            "name": "pcbcornerstrap-3_1",
+            "triangle_count": 1024
+          },
+          {
+            "bbox": {
+              "depth": 13.99999713897705,
+              "height": 3.0,
+              "width": 10.0,
+              "x": 80.0,
+              "y": -117.19999694824219,
+              "z": 0.0
+            },
+            "id": 415,
+            "name": "displayearclip-0_1",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 13.99999713897705,
+              "height": 3.0,
+              "width": 10.0,
+              "x": 107.0,
+              "y": -117.19999694824219,
+              "z": 0.0
+            },
+            "id": 435,
+            "name": "displayearclip-1_1",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 13.99999713897705,
+              "height": 3.0,
+              "width": 10.0,
+              "x": 134.0,
+              "y": -117.19999694824219,
+              "z": 0.0
+            },
+            "id": 455,
+            "name": "displayearclip-2_1",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 13.99999713897705,
+              "height": 3.0,
+              "width": 10.0,
+              "x": 161.0,
+              "y": -117.19999694824219,
+              "z": 0.0
+            },
+            "id": 475,
+            "name": "displayearclip-3_1",
+            "triangle_count": 520
+          }
+        ],
+        "sliced_time": 5097,
+        "sliced_time_with_cache": 1844,
+        "total_predication": 10598.181640625,
+        "triangle_count": 50360,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 773.54736328125,
+          "Bridge": 923.2362670898438,
+          "Brim": 164.6951904296875,
+          "Custom": 35.73762512207031,
+          "Gap infill": 5.539591312408447,
+          "Inner wall": 10128.740234375,
+          "Internal solid infill": 3727.947265625,
+          "Outer wall": 4785.8154296875,
+          "Overhang wall": 163.386474609375,
+          "Sparse infill": 2527.5908203125,
+          "Top surface": 682.5245971679688,
+          "Travel": 879.6533813476562,
+          "Undefined": 863.9299926757812
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 157.9776611328125,
+            "total_used_g": 157.9776611328125
+          }
+        ],
+        "generate_support_material_time": 62,
+        "id": 4,
+        "infill_time": 1998,
+        "layer_filament_change": 0,
+        "main_predication": 24770.5078125,
+        "make_perimeters_time": 628,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 150.00001525878906,
+              "height": 59.0,
+              "width": 149.3999786376953,
+              "x": 332.20001220703125,
+              "y": -272.20001220703125,
+              "z": 3.552713678800501e-15
+            },
+            "id": 495,
+            "name": "slidingcover_1",
+            "triangle_count": 4796
+          },
+          {
+            "bbox": {
+              "depth": 155.00001525878906,
+              "height": 12.0,
+              "width": 37.700008392333984,
+              "x": 497.1999816894531,
+              "y": -272.20001220703125,
+              "z": 0.0
+            },
+            "id": 515,
+            "name": "leftradiosaddle_1",
+            "triangle_count": 3112
+          },
+          {
+            "bbox": {
+              "depth": 37.69999313354492,
+              "height": 12.0,
+              "width": 154.99998474121094,
+              "x": 332.20001220703125,
+              "y": -107.20000457763672,
+              "z": 1.4210854715202004e-14
+            },
+            "id": 535,
+            "name": "rightradiosaddle_1",
+            "triangle_count": 3112
+          }
+        ],
+        "sliced_time": 4590,
+        "sliced_time_with_cache": 1548,
+        "total_predication": 24790.4921875,
+        "triangle_count": 11020,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 30.0,
+    "wall_loops": 5
+  },
+  "sha256": "bbf786f0e849ac3bccf6e1debb08d3712136d501c66b84c8bcfad98d8a986a2c"
+}

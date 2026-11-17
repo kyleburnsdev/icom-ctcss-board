@@ -1,0 +1,155 @@
+{
+  "revision": "N1",
+  "holder_sha256": "1b68a6ec4275545024f69b881a803247199ad232377ab832114d92b923967186",
+  "source_holder": "mechanical\\bench-holder\\bench-holder-b1.FCStd",
+  "panel_hole_mm": 7.2,
+  "seat_diameter_mm": 20,
+  "land_thickness_mm": 1.5,
+  "flange_diameter_mm": 14.0,
+  "flange_height_mm": 0.72,
+  "nut_height_mm": 3.0,
+  "hex_across_flats_mm": 11.0,
+  "pitch_mm": 0.75,
+  "thread_hand": "right",
+  "flange_radial_coverage_mm": 3.4,
+  "flange_seat_radial_clearance_mm": 3.0,
+  "parts": [
+    {
+      "name": "NutA",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 242.80468538371088,
+      "bounds_mm": [
+        13.99998298565697,
+        13.997806835744996,
+        3.0
+      ],
+      "bed_z_mm": 0.0,
+      "triangles": 7184,
+      "mesh_solid": true,
+      "radial_allowance_mm": 0.05,
+      "thread_feature_type": "PartDesign::SubtractiveHelix",
+      "fully_constrained_profiles": true
+    },
+    {
+      "name": "NutB",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 239.43851936167488,
+      "bounds_mm": [
+        13.994764202341685,
+        13.997947258525528,
+        3.0
+      ],
+      "bed_z_mm": 0.0,
+      "triangles": 7158,
+      "mesh_solid": true,
+      "radial_allowance_mm": 0.1,
+      "thread_feature_type": "PartDesign::SubtractiveHelix",
+      "fully_constrained_profiles": true
+    },
+    {
+      "name": "NutC",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 236.02387141416068,
+      "bounds_mm": [
+        13.993392517440952,
+        13.999507529806579,
+        3.0
+      ],
+      "bed_z_mm": 0.0,
+      "triangles": 7188,
+      "mesh_solid": true,
+      "radial_allowance_mm": 0.15,
+      "thread_feature_type": "PartDesign::SubtractiveHelix",
+      "fully_constrained_profiles": true
+    },
+    {
+      "name": "CouponA",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 265.10400908043977,
+      "bounds_mm": [
+        13.99998298565697,
+        13.997806835744996,
+        2.25
+      ],
+      "bed_z_mm": 0.0,
+      "triangles": 5718,
+      "mesh_solid": true,
+      "radial_allowance_mm": 0.05,
+      "thread_feature_type": "PartDesign::SubtractiveHelix",
+      "fully_constrained_profiles": true
+    },
+    {
+      "name": "CouponB",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 262.1562173783659,
+      "bounds_mm": [
+        13.994764202341685,
+        13.997947258525528,
+        2.25
+      ],
+      "bed_z_mm": 0.0,
+      "triangles": 5750,
+      "mesh_solid": true,
+      "radial_allowance_mm": 0.1,
+      "thread_feature_type": "PartDesign::SubtractiveHelix",
+      "fully_constrained_profiles": true
+    },
+    {
+      "name": "CouponC",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 259.1689401020154,
+      "bounds_mm": [
+        13.993392517440952,
+        13.999507529806579,
+        2.25
+      ],
+      "bed_z_mm": 0.0,
+      "triangles": 5766,
+      "mesh_solid": true,
+      "radial_allowance_mm": 0.15,
+      "thread_feature_type": "PartDesign::SubtractiveHelix",
+      "fully_constrained_profiles": true
+    }
+  ],
+  "panel_intersection_mm3": 0.0,
+  "cad_sha256": "a7d2ab32325cbdf5db0b9501a23c5d7f192175f5620784cbe16cab0a6faeeafa",
+  "reopened_native_source": true,
+  "stl_readback": [
+    {
+      "name": "coupona.stl",
+      "solid": true,
+      "bounds": "BoundBox (1.70143e-05, 0.000960063, 0, 14, 13.9988, 2.25)"
+    },
+    {
+      "name": "couponb.stl",
+      "solid": true,
+      "bounds": "BoundBox (2.68285e-05, 0.000930267, 0, 13.9948, 13.9989, 2.25)"
+    },
+    {
+      "name": "couponc.stl",
+      "solid": true,
+      "bounds": "BoundBox (0.00139851, 0.000246422, 0, 13.9948, 13.9998, 2.25)"
+    },
+    {
+      "name": "nuta.stl",
+      "solid": true,
+      "bounds": "BoundBox (1.70143e-05, 0.000960063, 0, 14, 13.9988, 3)"
+    },
+    {
+      "name": "nutb.stl",
+      "solid": true,
+      "bounds": "BoundBox (2.68285e-05, 0.000930267, 0, 13.9948, 13.9989, 3)"
+    },
+    {
+      "name": "nutc.stl",
+      "solid": true,
+      "bounds": "BoundBox (0.00139851, 0.000246422, 0, 13.9948, 13.9998, 3)"
+    }
+  ]
+}

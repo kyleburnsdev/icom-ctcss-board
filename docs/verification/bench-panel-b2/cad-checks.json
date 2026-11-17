@@ -1,0 +1,165 @@
+{
+  "revision": "B2",
+  "base_source_sha256": "1b68a6ec4275545024f69b881a803247199ad232377ab832114d92b923967186",
+  "parts": [
+    {
+      "name": "ControlPanel",
+      "bounds_mm": [
+        210.0,
+        90.0,
+        18.200000762939457
+      ],
+      "mesh_closed": true,
+      "solids": 1,
+      "triangles": 140136,
+      "sha256": "6bd8875319a04595c79846099e0a9b1d72d2287ac950611fb35e02479f973646"
+    },
+    {
+      "name": "DisplayThumbScrew",
+      "bounds_mm": [
+        17.0,
+        16.996639428893104,
+        9.399999618530273
+      ],
+      "mesh_closed": true,
+      "solids": 1,
+      "triangles": 9728,
+      "sha256": "d8f26fb2364775da3c98bb3c1af74140cdfbf574429034d476350951fb2df51c"
+    },
+    {
+      "name": "DisplayFitCoupon",
+      "bounds_mm": [
+        80.0,
+        68.9000015258789,
+        18.200000762939453
+      ],
+      "mesh_closed": true,
+      "solids": 1,
+      "triangles": 85512,
+      "sha256": "0acc2abe030aa8c5473fcdf538241070122be9d724344ac3fa782f413e8c6b59"
+    },
+    {
+      "name": "ThreadFitA",
+      "bounds_mm": [
+        14.0,
+        14.0,
+        10.0
+      ],
+      "mesh_closed": true,
+      "solids": 1,
+      "triangles": 10508,
+      "sha256": "8cf36fa819c6a6d39e0fb02f999c9e5011f9e71f8feb0b603abdeca116757271"
+    },
+    {
+      "name": "ThreadFitB",
+      "bounds_mm": [
+        14.0,
+        14.0,
+        10.0
+      ],
+      "mesh_closed": true,
+      "solids": 1,
+      "triangles": 10732,
+      "sha256": "bfb38f2727d2fae58157c3d26e6f00fa3b102eb019bd6fce3dc5796a86c32f17"
+    },
+    {
+      "name": "ThreadFitC",
+      "bounds_mm": [
+        14.0,
+        14.0,
+        10.0
+      ],
+      "mesh_closed": true,
+      "solids": 1,
+      "triangles": 10876,
+      "sha256": "3ae0fa381d501ebee2af310fbd7324882e63874d6f56e370037c36ac4b221f40"
+    }
+  ],
+  "ear_centers_mm": [
+    [
+      25,
+      22.9
+    ],
+    [
+      65,
+      22.9
+    ],
+    [
+      45,
+      67.1
+    ],
+    [
+      85,
+      67.1
+    ]
+  ],
+  "clamp_centers_mm": [
+    [
+      25,
+      15.899999999999999
+    ],
+    [
+      65,
+      15.899999999999999
+    ],
+    [
+      45,
+      74.1
+    ],
+    [
+      85,
+      74.1
+    ]
+  ],
+  "window_mm": [
+    20.15,
+    38.39,
+    65.5,
+    15.5
+  ],
+  "support_depth_mm": 14.0,
+  "thread": "custom 5 mm x 1 mm right hand; not M5",
+  "source_drawing": "https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/res/JHD1313%20FP-RGB-1%201.4.pdf#page=23",
+  "axial_envelope": "selected 9.8 mm PCB-front to bezel-front; max overall manufacturer 13.5 mm",
+  "physical_acceptance": "not run",
+  "base_difference_mm3": 0.0,
+  "protected_interface_difference_mm3": 0.0,
+  "reference_intersections_mm3": {
+    "RearDisplayPcbReference/Base": 0.0,
+    "RearDisplayPcbReference/ControlPanel": 0.0,
+    "RearDisplayBezelReference/Base": 0.0,
+    "RearDisplayBezelReference/ControlPanel": 0.0,
+    "DisplayRearElectronicsAllowance/Base": 0.0,
+    "DisplayRearElectronicsAllowance/ControlPanel": 0.0,
+    "DisplayPlugAndBendAllowance/Base": 0.0,
+    "DisplayPlugAndBendAllowance/ControlPanel": 0.0
+  },
+  "source_sha256": "dd74c2dd83dc76c519ad71ff86a63e4ac3219404930da311a491b42ff17d18eb",
+  "b1_unchanged": true,
+  "installed_screw_intersections_mm3": [
+    {
+      "panel": 0.0,
+      "display_pcb": 0.0
+    },
+    {
+      "panel": 0.0,
+      "display_pcb": 0.0
+    },
+    {
+      "panel": 0.0,
+      "display_pcb": 0.0
+    },
+    {
+      "panel": 0.0,
+      "display_pcb": 0.0
+    }
+  ],
+  "native_reopen": true,
+  "generator_sha256": "77f9a1c55b13918f0b918563db56b7d9fae7dc63d4a5fa0daac71d991a2f5732",
+  "native_tree_review": "Constrained profiles with native Pad/Pocket/helix history; reference geometry excluded from print project",
+  "step_readback": {
+    "solids": 7,
+    "valid": true,
+    "sha256": "bbcc5e1cd08e434bbecdc04979c1624275b2f5d6477df8e629eb8c31a861ce85"
+  }
+}

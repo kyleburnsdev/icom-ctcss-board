@@ -1,0 +1,30 @@
+{
+  "name": "bypass-0-pair-2-press",
+  "bypass": 0,
+  "measurement": {
+    "passed": true,
+    "checks": {
+      "input_high_4_5_to_5_5_v": true,
+      "input_low_below_1_5_v": true,
+      "collector_released_4_5_to_5_5_v": true,
+      "collector_asserted_below_0_4_v": true,
+      "latency_at_most_25_ms": true
+    },
+    "pressed": true,
+    "latency_ms": 4.9245999999999945,
+    "input_edge_s": -1.9999999999881224e-07,
+    "collector_edge_s": 0.0049243999999999954,
+    "input_high_v": 4.973531023191001,
+    "input_low_v": 1.0115695847400004,
+    "collector_high_v": 5.023782906081334,
+    "collector_low_v": 0.083811005092167,
+    "nominal_sink_current_ma": 4.916188994907833,
+    "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+    "sample_interval_s": 2e-07,
+    "two_edge_sampling_bound_s": 4e-07
+  },
+  "waveform_sha256": [
+    "9546b01a8eed3846a6c6bfd78a8e4c942ef53deb2b70eddc21a72d1900ec473a",
+    "3053d868f18eee74fcaf866cb70ed7686ef309ed2be1601e4d122dfca56abe84"
+  ]
+}

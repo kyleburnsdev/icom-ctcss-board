@@ -1,0 +1,1096 @@
+{
+  "started_utc": "2026-11-16T21:26:04.566210+00:00",
+  "status": "power_and_loaded_leds_pass",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T21:26:08.439996+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T21:26:09.816179+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T21:26:09.837875+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T21:26:09.857933+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T21:26:09.877999+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T21:26:09.887982+00:00",
+      "raw": "100 mV\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T21:26:09.907455+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T21:26:09.917506+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:09.927502+00:00",
+      "raw": "+4.862678E-02\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:16.213376+00:00",
+      "raw": "+4.998871E+00\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:16.735664+00:00",
+      "raw": "+4.999409E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:17.255293+00:00",
+      "raw": "+4.999447E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:17.775152+00:00",
+      "raw": "+4.999423E+00\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:18.294639+00:00",
+      "raw": "+4.999453E+00\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:18.804728+00:00",
+      "raw": "+5.000188E+00\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:19.324359+00:00",
+      "raw": "+4.999554E+00\n",
+      "roundtrip_s": 0.03200000000651926
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:19.844247+00:00",
+      "raw": "+5.000357E+00\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T21:26:21.212034+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T21:26:21.222253+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T21:26:21.242276+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T21:26:21.261846+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T21:26:21.282221+00:00",
+      "raw": "10 V\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T21:26:21.292196+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T21:26:21.302195+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:39.601904+00:00",
+      "raw": "+4.999771E+00\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:26:45.898524+00:00",
+      "raw": "+5.785086E-01\n",
+      "roundtrip_s": 0.015000000013969839
+    }
+  ],
+  "supply_commands": [
+    {
+      "utc": "2026-11-16T21:26:04.576935+00:00",
+      "arguments": [
+        "--show"
+      ],
+      "response": "Driver functions:\n    Power supply\nScan options:\n    conn\n    serialcomm\n    force_detect\nkorad-kaxxxxp:conn=COM11 - Korad KA3005P [S/N: [redacted]] with 2 channels: V I\nSupported configuration options:\n    conn: COM11 (current)\n    continuous: on, off\n    limit_samples: 0 (current)\n    limit_time: 0 (current)\n    voltage: 0.000000 (current)\n    voltage_target: 0.000000, 31.000000, 0.010000\n    current: 0.000000 (current)\n    current_limit: 0.000000, 5.100000, 0.001000\n    enabled: on, off (current)\n    regulation: CC (current)\n    ocp_enabled: on (current), off\n    ovp_enabled: on, off (current)\n"
+    },
+    {
+      "utc": "2026-11-16T21:26:08.459053+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T21:26:09.947580+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=8.00:current_limit=0.050:ocp_enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T21:26:10.833271+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T21:26:12.192774+00:00",
+      "arguments": [
+        "--config",
+        "enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T21:26:12.877704+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035999998450279236\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T21:26:19.862645+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035000000149011612\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T21:26:38.275356+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035000000149011612\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T21:26:39.623064+00:00",
+      "arguments": [
+        "--config",
+        "enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T21:26:40.308587+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T21:26:41.648239+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=1.00:current_limit=0.050:ocp_enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T21:26:42.509016+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    }
+  ],
+  "setup_confirmed": true,
+  "meter_port": "COM15",
+  "supply_port": "COM11",
+  "measurement": "vcc",
+  "connections": "Supply + TP2; supply minus and meter COM TP1; meter V/ohm TP3; PCB USB and final product components disconnected",
+  "limits": {
+    "raw_v": 8,
+    "current_limit_a": 0.05,
+    "vcc_v": [
+      4.75,
+      5.25
+    ]
+  },
+  "source_hashes": {
+    "check-board-power.py": "c7f5ec2ed415daec14e4b76347e74f432f827fa625cbd432984dc0e168ea1eda",
+    "korad_supply.py": "3b6f4b33eb81238d42b4a61d14bafbb5586026f32576da1f3bc0fbf5d83f82c5",
+    "xdm1251.py": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777",
+    "check-board-leds.py": "97261bd7d0e0d60297efbe2e533b90d2c0b3dad09cf4bb50e68d192a054b8e8a",
+    "rigol_scope.py": "83fb7eb19c85bce732f862fbb071e54c1105f94f2d45c0412ceca981cc351ae4",
+    "fixture_control.py": "afd011e8166bc5ef6ae4e95c90087711883a7366a1ff25d9ed104b4732237c3f",
+    "serial_device.py": "41c0ada1cdb9b4defab117c49601f01ac670be6754161b8d7919da9c53c9a328",
+    "ptt_measurement.py": "db303b2192aeb9427a5eea6d51075bd344c5d00205eef4ce1730202fd8e30c31",
+    "analog_tone.py": "67797c188a1bb76b760a44822360c4a038df4618a060307eecbec90f39797f01"
+  },
+  "scope_connections": "CH1 x10 J6-1; CH2 x10 J6-3; grounds TP1; 1k loads J6-1/2 and J6-3/4; RV1 minimum; connected while supply off",
+  "fixture_connections": "NUCLEO GND CN10-5 TP1; PF12 CN7-20 through 1k to J1-5; PF13 CN10-2 through 1k to J5-1; rails separate",
+  "pyserial_version": "3.5",
+  "supply_identity": {
+    "model": "KA3005P",
+    "firmware": "V1.5",
+    "serial_number": "[redacted]"
+  },
+  "meter_identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "supply_before": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "meter_before": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 mV",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "pre_voltage_v": 0.04862678,
+  "settings_before_enable": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "enable_requested_utc": "2026-11-16T21:26:12.192774+00:00",
+  "supply_enabled": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.035999998450279236,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "vcc_readings_v": [
+    4.998871,
+    4.999409,
+    4.999447,
+    4.999423,
+    4.999453,
+    5.000188,
+    4.999554,
+    5.000357
+  ],
+  "supply_after_measurement": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.03500000014901161,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "meter_after": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "10 V",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "measurement_checks_passed": true,
+  "leds_capture": {
+    "command": [
+      "C:\\src\\personal-repos\\icom-ctcss-board\\.agent-scratch\\firmware\\bench-venv\\Scripts\\python.exe",
+      "C:\\src\\personal-repos\\icom-ctcss-board\\tools\\check-board-leds.py",
+      "--output",
+      "docs\\verification\\populated-board\\2026-11-16\\loaded-leds-c",
+      "--fixture-port",
+      "COM5"
+    ],
+    "started_utc": "2026-11-16T21:26:21.323195+00:00",
+    "returncode": 0,
+    "stdout": "{\"passed\": true, \"error\": null, \"cleanup_error\": null, \"states\": [{\"name\": \"idle\", \"ptt\": 0, \"bypass\": 0, \"acquisition\": \"forced_single_static_levels\", \"measurements\": [{\"passed\": true, \"asserted\": false, \"mean_v\": -7.024740000233197e-07, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -7.024740000233197e-07, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 1, \"sha256\": \"aba859b799ba91026e53624ecbd9a5fea8bc6c75a6486159dd86034b9e1f5de4\"}, {\"passed\": true, \"asserted\": false, \"mean_v\": -0.01835556400933334, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -0.01835556400933334, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 2, \"sha256\": \"d4930fac9f3663d28ec4e78c6ff60578cf69cafc8fb19185c3528bebeaf65079\"}]}, {\"name\": \"ptt\", \"ptt\": 1, \"bypass\": 0, \"acquisition\": \"forced_single_static_levels\", \"measurements\": [{\"passed\": true, \"asserted\": true, \"mean_v\": 3.6466703842680004, \"selected_limits_v\": [3.2, 4.3], \"nominal_load_current_ma\": 3.6466703842680004, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 1, \"sha256\": \"799db54ccb0fb651a4430768225cb7d908d99be49c5ca871031a744e4dad9c57\"}, {\"passed\": true, \"asserted\": false, \"mean_v\": -0.0006741177983330776, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -0.0006741177983330776, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 2, \"sha256\": \"354bd974d073ff1eab8dea45855a3b2245a4bde9062ff18aaebd590284bd09e7\"}]}, {\"name\": \"both\", \"ptt\": 1, \"bypass\": 1, \"acquisition\": \"forced_single_static_levels\", \"measurements\": [{\"passed\": true, \"asserted\": true, \"mean_v\": 3.6357328640880002, \"selected_limits_v\": [3.2, 4.3], \"nominal_load_current_ma\": 3.6357328640880002, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 1, \"sha256\": \"9a0ca3177cde0024755f0d7df7d1e5312d5ed4fb51c09711795ba9a31bba0713\"}, {\"passed\": true, \"asserted\": true, \"mean_v\": 3.646078232396334, \"selected_limits_v\": [3.2, 4.3], \"nominal_load_current_ma\": 3.646078232396334, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 2, \"sha256\": \"50bed3f107ffbb806124aac31d3bb91e0a7ff63ab8f50e1c3f26ccb892420472\"}]}, {\"name\": \"bypass_only\", \"ptt\": 0, \"bypass\": 1, \"acquisition\": \"forced_single_static_levels\", \"measurements\": [{\"passed\": true, \"asserted\": false, \"mean_v\": -1.4049480000466395e-06, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -1.4049480000466395e-06, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 1, \"sha256\": \"9cda52a2612d761274acc44a1f4b401a121732e6da48f40891c6548b581f6693\"}, {\"passed\": true, \"asserted\": true, \"mean_v\": 3.6464778131016673, \"selected_limits_v\": [3.2, 4.3], \"nominal_load_current_ma\": 3.6464778131016673, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 2, \"sha256\": \"1db690270b38f1a1edcb77a30cb462545583ed8f6e06cddb871cd2eb65ebfd99\"}]}, {\"name\": \"released\", \"ptt\": 0, \"bypass\": 0, \"acquisition\": \"forced_single_static_levels\", \"measurements\": [{\"passed\": true, \"asserted\": false, \"mean_v\": -4.214844000139918e-06, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -4.214844000139918e-06, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 1, \"sha256\": \"a25c53187792d3d06ad30b989e4c43c54104e9cf2110fdcc095153d1323cabda\"}, {\"passed\": true, \"asserted\": false, \"mean_v\": -0.011390844372666577, \"selected_limits_v\": [-0.3, 0.4], \"nominal_load_current_ma\": -0.011390844372666577, \"current_basis\": \"Voltage across nominal 1 kOhm; calculated, not independent current measurement\", \"channel\": 2, \"sha256\": \"616f2ce9b1ff98ef489461286933b829d3cf42cc1a7a883de5a294d3d373078e\"}]}], \"fixture_final\": {\"armed\": 0, \"drive\": 0, \"sense\": 7, \"latency_valid\": 0, \"latency_us\": 0, \"poll_us\": 210, \"errors\": 0, \"bouncing\": 0, \"bounce_late_us\": 0}}\n",
+    "stderr": "",
+    "finished_utc": "2026-11-16T21:26:38.274852+00:00",
+    "result": {
+      "passed": true,
+      "settings_restored": true,
+      "fixture_transcript": [
+        {
+          "port": "COM5",
+          "command": "ID",
+          "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000"
+        },
+        {
+          "port": "COM5",
+          "command": "STOP",
+          "reply": "OK stopped"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=0 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "ARM",
+          "reply": "OK armed lease_ms=5000"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STOP",
+          "reply": "OK stopped"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=0 drive=0 sense=7 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+        }
+      ],
+      "states": [
+        {
+          "name": "idle",
+          "ptt": 0,
+          "bypass": 0,
+          "acquisition": "forced_single_static_levels",
+          "measurements": [
+            {
+              "passed": true,
+              "asserted": false,
+              "mean_v": -7.024740000233197e-07,
+              "selected_limits_v": [
+                -0.3,
+                0.4
+              ],
+              "nominal_load_current_ma": -7.024740000233197e-07,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 1,
+              "sha256": "aba859b799ba91026e53624ecbd9a5fea8bc6c75a6486159dd86034b9e1f5de4"
+            },
+            {
+              "passed": true,
+              "asserted": false,
+              "mean_v": -0.01835556400933334,
+              "selected_limits_v": [
+                -0.3,
+                0.4
+              ],
+              "nominal_load_current_ma": -0.01835556400933334,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 2,
+              "sha256": "d4930fac9f3663d28ec4e78c6ff60578cf69cafc8fb19185c3528bebeaf65079"
+            }
+          ]
+        },
+        {
+          "name": "ptt",
+          "ptt": 1,
+          "bypass": 0,
+          "acquisition": "forced_single_static_levels",
+          "measurements": [
+            {
+              "passed": true,
+              "asserted": true,
+              "mean_v": 3.6466703842680004,
+              "selected_limits_v": [
+                3.2,
+                4.3
+              ],
+              "nominal_load_current_ma": 3.6466703842680004,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 1,
+              "sha256": "799db54ccb0fb651a4430768225cb7d908d99be49c5ca871031a744e4dad9c57"
+            },
+            {
+              "passed": true,
+              "asserted": false,
+              "mean_v": -0.0006741177983330776,
+              "selected_limits_v": [
+                -0.3,
+                0.4
+              ],
+              "nominal_load_current_ma": -0.0006741177983330776,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 2,
+              "sha256": "354bd974d073ff1eab8dea45855a3b2245a4bde9062ff18aaebd590284bd09e7"
+            }
+          ]
+        },
+        {
+          "name": "both",
+          "ptt": 1,
+          "bypass": 1,
+          "acquisition": "forced_single_static_levels",
+          "measurements": [
+            {
+              "passed": true,
+              "asserted": true,
+              "mean_v": 3.6357328640880002,
+              "selected_limits_v": [
+                3.2,
+                4.3
+              ],
+              "nominal_load_current_ma": 3.6357328640880002,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 1,
+              "sha256": "9a0ca3177cde0024755f0d7df7d1e5312d5ed4fb51c09711795ba9a31bba0713"
+            },
+            {
+              "passed": true,
+              "asserted": true,
+              "mean_v": 3.646078232396334,
+              "selected_limits_v": [
+                3.2,
+                4.3
+              ],
+              "nominal_load_current_ma": 3.646078232396334,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 2,
+              "sha256": "50bed3f107ffbb806124aac31d3bb91e0a7ff63ab8f50e1c3f26ccb892420472"
+            }
+          ]
+        },
+        {
+          "name": "bypass_only",
+          "ptt": 0,
+          "bypass": 1,
+          "acquisition": "forced_single_static_levels",
+          "measurements": [
+            {
+              "passed": true,
+              "asserted": false,
+              "mean_v": -1.4049480000466395e-06,
+              "selected_limits_v": [
+                -0.3,
+                0.4
+              ],
+              "nominal_load_current_ma": -1.4049480000466395e-06,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 1,
+              "sha256": "9cda52a2612d761274acc44a1f4b401a121732e6da48f40891c6548b581f6693"
+            },
+            {
+              "passed": true,
+              "asserted": true,
+              "mean_v": 3.6464778131016673,
+              "selected_limits_v": [
+                3.2,
+                4.3
+              ],
+              "nominal_load_current_ma": 3.6464778131016673,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 2,
+              "sha256": "1db690270b38f1a1edcb77a30cb462545583ed8f6e06cddb871cd2eb65ebfd99"
+            }
+          ]
+        },
+        {
+          "name": "released",
+          "ptt": 0,
+          "bypass": 0,
+          "acquisition": "forced_single_static_levels",
+          "measurements": [
+            {
+              "passed": true,
+              "asserted": false,
+              "mean_v": -4.214844000139918e-06,
+              "selected_limits_v": [
+                -0.3,
+                0.4
+              ],
+              "nominal_load_current_ma": -4.214844000139918e-06,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 1,
+              "sha256": "a25c53187792d3d06ad30b989e4c43c54104e9cf2110fdcc095153d1323cabda"
+            },
+            {
+              "passed": true,
+              "asserted": false,
+              "mean_v": -0.011390844372666577,
+              "selected_limits_v": [
+                -0.3,
+                0.4
+              ],
+              "nominal_load_current_ma": -0.011390844372666577,
+              "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+              "channel": 2,
+              "sha256": "616f2ce9b1ff98ef489461286933b829d3cf42cc1a7a883de5a294d3d373078e"
+            }
+          ]
+        }
+      ],
+      "wiring": "Loaded J6 driver screening under parent RAW power; PCB USB disconnected.\n\n1k loads J6-1/2 and J6-3/4. CH1 x10 J6-1, CH2 x10 J6-3; grounds TP1.\nNUCLEO PTT/bypass fixture unchanged. RV1 stays minimum. No final LEDs or radio.\n",
+      "script_sha256": "97261bd7d0e0d60297efbe2e533b90d2c0b3dad09cf4bb50e68d192a054b8e8a",
+      "nominal_asserted_v": 3.7593984962406015,
+      "fixture_identity": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000",
+      "scope_before": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "AUTO",
+        "samplerate_hz": 1000000000.0,
+        "settings": {
+          ":TIM:SCAL": "2.0000000e-04",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "AUTO",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "AUTO",
+          ":TRIG:EDG:SOUR": "CHAN2",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "1.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "0",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-1.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "OFF",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e+00",
+          ":CHAN2:OFFS": "-1.500000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "OFF",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "scope_configured": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "WAIT",
+        "samplerate_hz": 5000000.0,
+        "settings": {
+          ":TIM:SCAL": "1.0000000e-03",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "60000",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "NORM",
+          ":TRIG:EDG:SOUR": "CHAN1",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "2.000000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "1",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-2.000000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "20M",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e+00",
+          ":CHAN2:OFFS": "-2.000000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "20M",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "scope_after": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "AUTO",
+        "samplerate_hz": 1000000000.0,
+        "settings": {
+          ":TIM:SCAL": "2.0000000e-04",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "AUTO",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "AUTO",
+          ":TRIG:EDG:SOUR": "CHAN2",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "1.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "0",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-1.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "OFF",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e+00",
+          ":CHAN2:OFFS": "-1.500000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "OFF",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "fixture_final": {
+        "armed": 0,
+        "drive": 0,
+        "sense": 7,
+        "latency_valid": 0,
+        "latency_us": 0,
+        "poll_us": 210,
+        "errors": 0,
+        "bouncing": 0,
+        "bounce_late_us": 0
+      }
+    }
+  },
+  "supply_after_leds_capture": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.03500000014901161,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "vcc_after_leds_capture_v": 4.999771,
+  "disable_requested_utc": "2026-11-16T21:26:39.623064+00:00",
+  "supply_output_off": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "supply_final": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "post_voltage_v": 0.5785086,
+  "finished_utc": "2026-11-16T21:26:45.915314+00:00"
+}

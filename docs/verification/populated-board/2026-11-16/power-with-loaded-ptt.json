@@ -1,0 +1,1829 @@
+{
+  "started_utc": "2026-11-16T20:28:49.710182+00:00",
+  "status": "power_and_loaded_ptt_pass",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T20:28:53.628219+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T20:28:54.970917+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T20:28:54.994892+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.03200000000651926
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T20:28:55.014443+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T20:28:55.024427+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T20:28:55.044600+00:00",
+      "raw": "100 mV\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T20:28:55.064622+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T20:28:55.074796+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:28:55.084801+00:00",
+      "raw": "+7.762472E-04\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:29:01.360062+00:00",
+      "raw": "+4.999612E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:29:01.882460+00:00",
+      "raw": "+4.999273E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:29:02.401747+00:00",
+      "raw": "+4.999438E+00\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:29:02.921708+00:00",
+      "raw": "+4.999185E+00\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:29:03.441483+00:00",
+      "raw": "+4.999547E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:29:03.960900+00:00",
+      "raw": "+4.999338E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:29:04.481140+00:00",
+      "raw": "+4.999675E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:29:05.000584+00:00",
+      "raw": "+5.000153E+00\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T20:29:06.351347+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T20:29:06.368545+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.03200000000651926
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T20:29:06.389102+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T20:29:06.409012+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T20:29:06.419012+00:00",
+      "raw": "10 V\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T20:29:06.439056+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T20:29:06.448579+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:30:08.097237+00:00",
+      "raw": "+4.999746E+00\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T20:30:14.357513+00:00",
+      "raw": "+5.626483E-01\n",
+      "roundtrip_s": 0.01600000000325963
+    }
+  ],
+  "supply_commands": [
+    {
+      "utc": "2026-11-16T20:28:49.726393+00:00",
+      "arguments": [
+        "--show"
+      ],
+      "response": "Driver functions:\n    Power supply\nScan options:\n    conn\n    serialcomm\n    force_detect\nkorad-kaxxxxp:conn=COM11 - Korad KA3005P [S/N: [redacted]] with 2 channels: V I\nSupported configuration options:\n    conn: COM11 (current)\n    continuous: on, off\n    limit_samples: 0 (current)\n    limit_time: 0 (current)\n    voltage: 0.000000 (current)\n    voltage_target: 0.000000, 31.000000, 0.010000\n    current: 0.000000 (current)\n    current_limit: 0.000000, 5.100000, 0.001000\n    enabled: on, off (current)\n    regulation: CC (current)\n    ocp_enabled: on (current), off\n    ovp_enabled: on, off (current)\n"
+    },
+    {
+      "utc": "2026-11-16T20:28:53.645959+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:28:55.104908+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=8.00:current_limit=0.050:ocp_enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T20:28:55.988349+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:28:57.331011+00:00",
+      "arguments": [
+        "--config",
+        "enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T20:28:58.002066+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035999998450279236\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:29:05.010141+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035000000149011612\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:30:06.722805+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035000000149011612\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:30:08.119236+00:00",
+      "arguments": [
+        "--config",
+        "enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T20:30:08.788388+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T20:30:10.147937+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=1.00:current_limit=0.050:ocp_enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T20:30:11.010513+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    }
+  ],
+  "setup_confirmed": true,
+  "meter_port": "COM15",
+  "supply_port": "COM11",
+  "measurement": "vcc",
+  "connections": "Supply + TP2; supply minus and meter COM TP1; meter V/ohm TP3; PCB USB and all off-board devices disconnected",
+  "limits": {
+    "raw_v": 8,
+    "current_limit_a": 0.05,
+    "vcc_v": [
+      4.75,
+      5.25
+    ]
+  },
+  "source_hashes": {
+    "check-board-power.py": "315d9429dc63335991ef2e7e5e390785a4e36c6c5ff0b2c63a36d31d5cebcd2b",
+    "korad_supply.py": "3b6f4b33eb81238d42b4a61d14bafbb5586026f32576da1f3bc0fbf5d83f82c5",
+    "xdm1251.py": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777",
+    "check-board-ptt.py": "e72293b0589f49556ebb2782768eef3a0900d87deffdb1e603f47f28fe38e0c0",
+    "bench/rigol_scope.py": "83fb7eb19c85bce732f862fbb071e54c1105f94f2d45c0412ceca981cc351ae4",
+    "bench/fixture_control.py": "afd011e8166bc5ef6ae4e95c90087711883a7366a1ff25d9ed104b4732237c3f",
+    "bench/serial_device.py": "41c0ada1cdb9b4defab117c49601f01ac670be6754161b8d7919da9c53c9a328",
+    "bench/ptt_measurement.py": "db303b2192aeb9427a5eea6d51075bd344c5d00205eef4ce1730202fd8e30c31"
+  },
+  "scope_connections": "CH1 physical x10 TP7; CH2 physical x10 TP8; grounds TP1; 1k load TP3 to TP8; connected with supply off",
+  "fixture_connections": "NUCLEO GND CN10-5 TP1; PF12 CN7-20 through 1k to J1-5; PF13 CN10-2 through 1k to J5-1; rails separate",
+  "pyserial_version": "3.5",
+  "supply_identity": {
+    "model": "KA3005P",
+    "firmware": "V1.5",
+    "serial_number": "[redacted]"
+  },
+  "meter_identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "supply_before": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "meter_before": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 mV",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "pre_voltage_v": 0.0007762472,
+  "settings_before_enable": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "enable_requested_utc": "2026-11-16T20:28:57.331011+00:00",
+  "supply_enabled": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.035999998450279236,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "vcc_readings_v": [
+    4.999612,
+    4.999273,
+    4.999438,
+    4.999185,
+    4.999547,
+    4.999338,
+    4.999675,
+    5.000153
+  ],
+  "supply_after_measurement": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.03500000014901161,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "meter_after": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "10 V",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "measurement_checks_passed": true,
+  "ptt_capture": {
+    "command": [
+      "C:\\src\\personal-repos\\icom-ctcss-board\\.agent-scratch\\firmware\\bench-venv\\Scripts\\python.exe",
+      "C:\\src\\personal-repos\\icom-ctcss-board\\tools\\check-board-ptt.py",
+      "--output",
+      "docs\\verification\\populated-board\\2026-11-16\\loaded-ptt",
+      "--fixture-port",
+      "COM5"
+    ],
+    "started_utc": "2026-11-16T20:29:06.459729+00:00",
+    "returncode": 0,
+    "stdout": "{\"passed\": true, \"error\": null, \"cleanup_error\": null, \"transitions\": [{\"name\": \"bypass-0-pair-1-press\", \"bypass\": 0, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": true, \"latency_ms\": 5.200800000000005, \"input_edge_s\": -6.000000000033756e-07, \"collector_edge_s\": 0.005200200000000002, \"input_high_v\": 4.973516973711, \"input_low_v\": 1.0115748532950002, \"collector_high_v\": 5.0206557679215, \"collector_low_v\": 0.08381973718799973, \"nominal_sink_current_ma\": 4.916180262812, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"1330fea9dd70c22a2ed0c90e38505e2a88fe32730c1fdbe598cb50749fc4fb2a\", \"f025788cabad091fd8d6da01abfe2d62a1252fe7fbdc56566633f9150990dd18\"]}, {\"name\": \"bypass-0-pair-1-release\", \"bypass\": 0, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": false, \"latency_ms\": 4.747999999999995, \"input_edge_s\": -1.9999999999881224e-07, \"collector_edge_s\": 0.0047477999999999965, \"input_high_v\": 4.973498006913, \"input_low_v\": 1.0115695847400004, \"collector_high_v\": 5.013279591929167, \"collector_low_v\": 0.0838186893365, \"nominal_sink_current_ma\": 4.9161813106635, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"69a505e2e233e98e3378feee57696c5fe2fa7f3b61c31409ed490f0f91ef36d5\", \"8fc94d2a67943fead74b74a944ccf64a1add1c38e15aca5892098143343d9417\"]}, {\"name\": \"bypass-0-pair-2-press\", \"bypass\": 0, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": true, \"latency_ms\": 4.9245999999999945, \"input_edge_s\": -1.9999999999881224e-07, \"collector_edge_s\": 0.0049243999999999954, \"input_high_v\": 4.973531023191001, \"input_low_v\": 1.0115695847400004, \"collector_high_v\": 5.023782906081334, \"collector_low_v\": 0.083811005092167, \"nominal_sink_current_ma\": 4.916188994907833, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"9546b01a8eed3846a6c6bfd78a8e4c942ef53deb2b70eddc21a72d1900ec473a\", \"3053d868f18eee74fcaf866cb70ed7686ef309ed2be1601e4d122dfca56abe84\"]}, {\"name\": \"bypass-0-pair-2-release\", \"bypass\": 0, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": false, \"latency_ms\": 4.509399999999997, \"input_edge_s\": -6.000000000033756e-07, \"collector_edge_s\": 0.004508799999999993, \"input_high_v\": 4.973474474034001, \"input_low_v\": 1.0115846879309993, \"collector_high_v\": 5.008357484149833, \"collector_low_v\": 0.08384244063716625, \"nominal_sink_current_ma\": 4.9161575593628335, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"da43cbe390c3577a69e31fb0ff4595ab6267dc8c40dc822eaba14fa8e2a5c004\", \"83d4c81136798849112ad72fb442b46d734da61d861a705eda793bb2514ddb7c\"]}, {\"name\": \"bypass-0-pair-3-press\", \"bypass\": 0, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": true, \"latency_ms\": 4.8278, \"input_edge_s\": -8.000000000021878e-07, \"collector_edge_s\": 0.004826999999999998, \"input_high_v\": 4.973505734127001, \"input_low_v\": 1.0115741508209994, \"collector_high_v\": 5.019923319723, \"collector_low_v\": 0.08382462716166655, \"nominal_sink_current_ma\": 4.9161753728383335, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"4c4d1a9ab14a3d16c3b9f855871a172e4dd3854b2b81ce40b6d36f6892c54e61\", \"6823e6c0472340ccd77c860bf105d2283a39ed1a679a7a88af5e26e7ce776423\"]}, {\"name\": \"bypass-0-pair-3-release\", \"bypass\": 0, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": false, \"latency_ms\": 4.8149999999999995, \"input_edge_s\": -3.999999999976245e-07, \"collector_edge_s\": 0.004814600000000002, \"input_high_v\": 4.973472717849, \"input_low_v\": 1.0115825805089997, \"collector_high_v\": 5.0069750187375, \"collector_low_v\": 0.08384942631383316, \"nominal_sink_current_ma\": 4.916150573686167, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"25ede46e48f9e267771a0e2b2f969d031004f2ce9e3ea7c4c16d2550b3edcdb9\", \"db5fd3c0de119cbf6e122328b788576c6a769dd07c86329c845fd05c025ea760\"]}, {\"name\": \"bypass-1-pair-1-press\", \"bypass\": 1, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": true, \"latency_ms\": 4.9656, \"input_edge_s\": -3.999999999976245e-07, \"collector_edge_s\": 0.004965200000000003, \"input_high_v\": 4.973475176508, \"input_low_v\": 1.0115752045319992, \"collector_high_v\": 5.013938690522667, \"collector_low_v\": 0.08380436869933375, \"nominal_sink_current_ma\": 4.916195631300666, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"9337b95f0bd464e9fc0ea1887af909f0ad430b471a87e435e5f327193526bfc9\", \"4a79cad847faff24b0fd02091c26ed76c9565339d0c5cc0e53cbeaeb6bdd9d11\"]}, {\"name\": \"bypass-1-pair-1-release\", \"bypass\": 1, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": false, \"latency_ms\": 3.842399999999996, \"input_edge_s\": 0.0, \"collector_edge_s\": 0.003842399999999996, \"input_high_v\": 4.973423544669, \"input_low_v\": 1.0116068158620009, \"collector_high_v\": 5.0019331066033335, \"collector_low_v\": 0.08387178047916663, \"nominal_sink_current_ma\": 4.916128219520833, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"7a83cc33e99680c505f5db45ac927d4ef0aa3e72b8bdf6b74fd74dbc39c808cf\", \"43f0e5135aeb765ccc13855ae56fb07f1c081ad7469ffbd1b8eff60b32fb1872\"]}, {\"name\": \"bypass-1-pair-2-press\", \"bypass\": 1, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": true, \"latency_ms\": 4.3744000000000005, \"input_edge_s\": -6.000000000033756e-07, \"collector_edge_s\": 0.004373799999999997, \"input_high_v\": 4.973487118566, \"input_low_v\": 1.011569233503, \"collector_high_v\": 5.022341411701166, \"collector_low_v\": 0.08382253145866649, \"nominal_sink_current_ma\": 4.916177468541333, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"8f077e54ea864f77eb7da80c8c39b59b66721c79c45498e8716ed09fa5dbdfbe\", \"c3267d9b0c09c5dd3c22e0755b88c5223aad2ba19e04aae8679b8174cf3ca9ff\"]}, {\"name\": \"bypass-1-pair-2-release\", \"bypass\": 1, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": false, \"latency_ms\": 4.457799999999998, \"input_edge_s\": 0.0, \"collector_edge_s\": 0.004457799999999998, \"input_high_v\": 4.97347377156, \"input_low_v\": 1.0115748532950002, \"collector_high_v\": 5.018151053552667, \"collector_low_v\": 0.0838186893365, \"nominal_sink_current_ma\": 4.9161813106635, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"f0652f22ec2fdd6e91b2a98b77594636c7997fda0adc4bd97e9e173dadce9f0d\", \"b881da650c817a017536ee34db3523fdcdecc7cc7cd50ab42907f56aed00873f\"]}, {\"name\": \"bypass-1-pair-3-press\", \"bypass\": 1, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": true, \"latency_ms\": 4.858399999999999, \"input_edge_s\": -3.999999999976245e-07, \"collector_edge_s\": 0.004858000000000001, \"input_high_v\": 4.973477283930001, \"input_low_v\": 1.011572043399, \"collector_high_v\": 5.014408477278501, \"collector_low_v\": 0.08378725379150014, \"nominal_sink_current_ma\": 4.9162127462085, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"9c0ff439a4ab41399ac0c324a2ae9d5c9367dc81fd058ca688a33e4f3f7940d5\", \"cbd63de497d51187d1082276159dd5ae13d763a5d97eb7999c39ed48df9f269a\"]}, {\"name\": \"bypass-1-pair-3-release\", \"bypass\": 1, \"measurement\": {\"passed\": true, \"checks\": {\"input_high_4_5_to_5_5_v\": true, \"input_low_below_1_5_v\": true, \"collector_released_4_5_to_5_5_v\": true, \"collector_asserted_below_0_4_v\": true, \"latency_at_most_25_ms\": true}, \"pressed\": false, \"latency_ms\": 4.346600000000006, \"input_edge_s\": -6.000000000033756e-07, \"collector_edge_s\": 0.004346000000000003, \"input_high_v\": 4.973466395583, \"input_low_v\": 1.0115745020579998, \"collector_high_v\": 5.018521643699834, \"collector_low_v\": 0.08382008647183337, \"nominal_sink_current_ma\": 4.9161799135281665, \"sink_current_basis\": \"(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement\", \"sample_interval_s\": 2e-07, \"two_edge_sampling_bound_s\": 4e-07}, \"waveform_sha256\": [\"7aa5f4eaf38450e7438a23c33bb9c8e789c5a1bef7f7a9a1a5e0beb89766e4f3\", \"4c05042475b4337cad2589a80bc811fbe772d14e50e6391758a0be90d36d3b7b\"]}], \"fixture_final\": {\"armed\": 0, \"drive\": 0, \"sense\": 6, \"latency_valid\": 0, \"latency_us\": 0, \"poll_us\": 209, \"errors\": 0, \"bouncing\": 0, \"bounce_late_us\": 0}}\n",
+    "stderr": "",
+    "finished_utc": "2026-11-16T20:30:06.721714+00:00",
+    "result": {
+      "passed": true,
+      "settings_restored": true,
+      "fixture_transcript": [
+        {
+          "port": "COM5",
+          "command": "ID",
+          "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000"
+        },
+        {
+          "port": "COM5",
+          "command": "STOP",
+          "reply": "OK stopped"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "ARM",
+          "reply": "OK armed lease_ms=5000"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=3 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "PTT 0",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "BYPASS 1",
+          "reply": "OK drive"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=1 drive=2 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        },
+        {
+          "port": "COM5",
+          "command": "STOP",
+          "reply": "OK stopped"
+        },
+        {
+          "port": "COM5",
+          "command": "STATUS",
+          "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=209 errors=0 bouncing=0 bounce_late_us=0"
+        }
+      ],
+      "transitions": [
+        {
+          "name": "bypass-0-pair-1-press",
+          "bypass": 0,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": true,
+            "latency_ms": 5.200800000000005,
+            "input_edge_s": -6.000000000033756e-07,
+            "collector_edge_s": 0.005200200000000002,
+            "input_high_v": 4.973516973711,
+            "input_low_v": 1.0115748532950002,
+            "collector_high_v": 5.0206557679215,
+            "collector_low_v": 0.08381973718799973,
+            "nominal_sink_current_ma": 4.916180262812,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "1330fea9dd70c22a2ed0c90e38505e2a88fe32730c1fdbe598cb50749fc4fb2a",
+            "f025788cabad091fd8d6da01abfe2d62a1252fe7fbdc56566633f9150990dd18"
+          ]
+        },
+        {
+          "name": "bypass-0-pair-1-release",
+          "bypass": 0,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": false,
+            "latency_ms": 4.747999999999995,
+            "input_edge_s": -1.9999999999881224e-07,
+            "collector_edge_s": 0.0047477999999999965,
+            "input_high_v": 4.973498006913,
+            "input_low_v": 1.0115695847400004,
+            "collector_high_v": 5.013279591929167,
+            "collector_low_v": 0.0838186893365,
+            "nominal_sink_current_ma": 4.9161813106635,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "69a505e2e233e98e3378feee57696c5fe2fa7f3b61c31409ed490f0f91ef36d5",
+            "8fc94d2a67943fead74b74a944ccf64a1add1c38e15aca5892098143343d9417"
+          ]
+        },
+        {
+          "name": "bypass-0-pair-2-press",
+          "bypass": 0,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": true,
+            "latency_ms": 4.9245999999999945,
+            "input_edge_s": -1.9999999999881224e-07,
+            "collector_edge_s": 0.0049243999999999954,
+            "input_high_v": 4.973531023191001,
+            "input_low_v": 1.0115695847400004,
+            "collector_high_v": 5.023782906081334,
+            "collector_low_v": 0.083811005092167,
+            "nominal_sink_current_ma": 4.916188994907833,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "9546b01a8eed3846a6c6bfd78a8e4c942ef53deb2b70eddc21a72d1900ec473a",
+            "3053d868f18eee74fcaf866cb70ed7686ef309ed2be1601e4d122dfca56abe84"
+          ]
+        },
+        {
+          "name": "bypass-0-pair-2-release",
+          "bypass": 0,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": false,
+            "latency_ms": 4.509399999999997,
+            "input_edge_s": -6.000000000033756e-07,
+            "collector_edge_s": 0.004508799999999993,
+            "input_high_v": 4.973474474034001,
+            "input_low_v": 1.0115846879309993,
+            "collector_high_v": 5.008357484149833,
+            "collector_low_v": 0.08384244063716625,
+            "nominal_sink_current_ma": 4.9161575593628335,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "da43cbe390c3577a69e31fb0ff4595ab6267dc8c40dc822eaba14fa8e2a5c004",
+            "83d4c81136798849112ad72fb442b46d734da61d861a705eda793bb2514ddb7c"
+          ]
+        },
+        {
+          "name": "bypass-0-pair-3-press",
+          "bypass": 0,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": true,
+            "latency_ms": 4.8278,
+            "input_edge_s": -8.000000000021878e-07,
+            "collector_edge_s": 0.004826999999999998,
+            "input_high_v": 4.973505734127001,
+            "input_low_v": 1.0115741508209994,
+            "collector_high_v": 5.019923319723,
+            "collector_low_v": 0.08382462716166655,
+            "nominal_sink_current_ma": 4.9161753728383335,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "4c4d1a9ab14a3d16c3b9f855871a172e4dd3854b2b81ce40b6d36f6892c54e61",
+            "6823e6c0472340ccd77c860bf105d2283a39ed1a679a7a88af5e26e7ce776423"
+          ]
+        },
+        {
+          "name": "bypass-0-pair-3-release",
+          "bypass": 0,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": false,
+            "latency_ms": 4.8149999999999995,
+            "input_edge_s": -3.999999999976245e-07,
+            "collector_edge_s": 0.004814600000000002,
+            "input_high_v": 4.973472717849,
+            "input_low_v": 1.0115825805089997,
+            "collector_high_v": 5.0069750187375,
+            "collector_low_v": 0.08384942631383316,
+            "nominal_sink_current_ma": 4.916150573686167,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "25ede46e48f9e267771a0e2b2f969d031004f2ce9e3ea7c4c16d2550b3edcdb9",
+            "db5fd3c0de119cbf6e122328b788576c6a769dd07c86329c845fd05c025ea760"
+          ]
+        },
+        {
+          "name": "bypass-1-pair-1-press",
+          "bypass": 1,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": true,
+            "latency_ms": 4.9656,
+            "input_edge_s": -3.999999999976245e-07,
+            "collector_edge_s": 0.004965200000000003,
+            "input_high_v": 4.973475176508,
+            "input_low_v": 1.0115752045319992,
+            "collector_high_v": 5.013938690522667,
+            "collector_low_v": 0.08380436869933375,
+            "nominal_sink_current_ma": 4.916195631300666,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "9337b95f0bd464e9fc0ea1887af909f0ad430b471a87e435e5f327193526bfc9",
+            "4a79cad847faff24b0fd02091c26ed76c9565339d0c5cc0e53cbeaeb6bdd9d11"
+          ]
+        },
+        {
+          "name": "bypass-1-pair-1-release",
+          "bypass": 1,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": false,
+            "latency_ms": 3.842399999999996,
+            "input_edge_s": 0.0,
+            "collector_edge_s": 0.003842399999999996,
+            "input_high_v": 4.973423544669,
+            "input_low_v": 1.0116068158620009,
+            "collector_high_v": 5.0019331066033335,
+            "collector_low_v": 0.08387178047916663,
+            "nominal_sink_current_ma": 4.916128219520833,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "7a83cc33e99680c505f5db45ac927d4ef0aa3e72b8bdf6b74fd74dbc39c808cf",
+            "43f0e5135aeb765ccc13855ae56fb07f1c081ad7469ffbd1b8eff60b32fb1872"
+          ]
+        },
+        {
+          "name": "bypass-1-pair-2-press",
+          "bypass": 1,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": true,
+            "latency_ms": 4.3744000000000005,
+            "input_edge_s": -6.000000000033756e-07,
+            "collector_edge_s": 0.004373799999999997,
+            "input_high_v": 4.973487118566,
+            "input_low_v": 1.011569233503,
+            "collector_high_v": 5.022341411701166,
+            "collector_low_v": 0.08382253145866649,
+            "nominal_sink_current_ma": 4.916177468541333,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "8f077e54ea864f77eb7da80c8c39b59b66721c79c45498e8716ed09fa5dbdfbe",
+            "c3267d9b0c09c5dd3c22e0755b88c5223aad2ba19e04aae8679b8174cf3ca9ff"
+          ]
+        },
+        {
+          "name": "bypass-1-pair-2-release",
+          "bypass": 1,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": false,
+            "latency_ms": 4.457799999999998,
+            "input_edge_s": 0.0,
+            "collector_edge_s": 0.004457799999999998,
+            "input_high_v": 4.97347377156,
+            "input_low_v": 1.0115748532950002,
+            "collector_high_v": 5.018151053552667,
+            "collector_low_v": 0.0838186893365,
+            "nominal_sink_current_ma": 4.9161813106635,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "f0652f22ec2fdd6e91b2a98b77594636c7997fda0adc4bd97e9e173dadce9f0d",
+            "b881da650c817a017536ee34db3523fdcdecc7cc7cd50ab42907f56aed00873f"
+          ]
+        },
+        {
+          "name": "bypass-1-pair-3-press",
+          "bypass": 1,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": true,
+            "latency_ms": 4.858399999999999,
+            "input_edge_s": -3.999999999976245e-07,
+            "collector_edge_s": 0.004858000000000001,
+            "input_high_v": 4.973477283930001,
+            "input_low_v": 1.011572043399,
+            "collector_high_v": 5.014408477278501,
+            "collector_low_v": 0.08378725379150014,
+            "nominal_sink_current_ma": 4.9162127462085,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "9c0ff439a4ab41399ac0c324a2ae9d5c9367dc81fd058ca688a33e4f3f7940d5",
+            "cbd63de497d51187d1082276159dd5ae13d763a5d97eb7999c39ed48df9f269a"
+          ]
+        },
+        {
+          "name": "bypass-1-pair-3-release",
+          "bypass": 1,
+          "measurement": {
+            "passed": true,
+            "checks": {
+              "input_high_4_5_to_5_5_v": true,
+              "input_low_below_1_5_v": true,
+              "collector_released_4_5_to_5_5_v": true,
+              "collector_asserted_below_0_4_v": true,
+              "latency_at_most_25_ms": true
+            },
+            "pressed": false,
+            "latency_ms": 4.346600000000006,
+            "input_edge_s": -6.000000000033756e-07,
+            "collector_edge_s": 0.004346000000000003,
+            "input_high_v": 4.973466395583,
+            "input_low_v": 1.0115745020579998,
+            "collector_high_v": 5.018521643699834,
+            "collector_low_v": 0.08382008647183337,
+            "nominal_sink_current_ma": 4.9161799135281665,
+            "sink_current_basis": "(nominal 5 V minus measured collector LOW) / nominal 1 kOhm; not an independent current measurement",
+            "sample_interval_s": 2e-07,
+            "two_edge_sampling_bound_s": 4e-07
+          },
+          "waveform_sha256": [
+            "7aa5f4eaf38450e7438a23c33bb9c8e789c5a1bef7f7a9a1a5e0beb89766e4f3",
+            "4c05042475b4337cad2589a80bc811fbe772d14e50e6391758a0be90d36d3b7b"
+          ]
+        }
+      ],
+      "wiring": "Loaded Q1 response: CH1 x10 TP7, CH2 x10 TP8, grounds TP1.\n\nUse parent RAW power wrapper; 1k load TP3-to-TP8. NUCLEO fixture stays as\nfor tone testing. No radio, PCB USB or final UI. Replaces acquisition buffers.\n",
+      "script_sha256": "e72293b0589f49556ebb2782768eef3a0900d87deffdb1e603f47f28fe38e0c0",
+      "fixture_identity": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000",
+      "scope_before": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "AUTO",
+        "samplerate_hz": 1000000000.0,
+        "settings": {
+          ":TIM:SCAL": "2.0000000e-04",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "AUTO",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "AUTO",
+          ":TRIG:EDG:SOUR": "CHAN2",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "1.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "0",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-1.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "OFF",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e+00",
+          ":CHAN2:OFFS": "-1.500000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "OFF",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "scope_configured": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "WAIT",
+        "samplerate_hz": 5000000.0,
+        "settings": {
+          ":TIM:SCAL": "1.0000000e-02",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "600000",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "NORM",
+          ":TRIG:EDG:SOUR": "CHAN1",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "2.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "1",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-2.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "20M",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e+00",
+          ":CHAN2:OFFS": "-2.500000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "20M",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "scope_after": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "AUTO",
+        "samplerate_hz": 1000000000.0,
+        "settings": {
+          ":TIM:SCAL": "2.0000000e-04",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "AUTO",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "AUTO",
+          ":TRIG:EDG:SOUR": "CHAN2",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "1.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "0",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-1.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "OFF",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e+00",
+          ":CHAN2:OFFS": "-1.500000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "OFF",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "fixture_final": {
+        "armed": 0,
+        "drive": 0,
+        "sense": 6,
+        "latency_valid": 0,
+        "latency_us": 0,
+        "poll_us": 209,
+        "errors": 0,
+        "bouncing": 0,
+        "bounce_late_us": 0
+      }
+    }
+  },
+  "supply_after_ptt_capture": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.03500000014901161,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "vcc_after_ptt_capture_v": 4.999746,
+  "disable_requested_utc": "2026-11-16T20:30:08.119236+00:00",
+  "supply_output_off": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "supply_final": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "post_voltage_v": 0.5626483,
+  "finished_utc": "2026-11-16T20:30:14.380796+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "idle",
+  "ptt": 0,
+  "bypass": 0,
+  "acquisition": "forced_single_static_levels",
+  "measurements": [
+    {
+      "passed": true,
+      "asserted": false,
+      "mean_v": -7.024740000233197e-07,
+      "selected_limits_v": [
+        -0.3,
+        0.4
+      ],
+      "nominal_load_current_ma": -7.024740000233197e-07,
+      "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+      "channel": 1,
+      "sha256": "a4ce57b1eab82b475e531fb1f534207871d495edfaedd02ff28c3c5c4b759845"
+    },
+    {
+      "passed": true,
+      "asserted": false,
+      "mean_v": -0.004363253646000106,
+      "selected_limits_v": [
+        -0.3,
+        0.4
+      ],
+      "nominal_load_current_ma": -0.004363253646000106,
+      "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+      "channel": 2,
+      "sha256": "4beb0960ca61c12955ec4053f85fe2df47177a8ac219bfe8ba9fbe7306b309cb"
+    }
+  ]
+}

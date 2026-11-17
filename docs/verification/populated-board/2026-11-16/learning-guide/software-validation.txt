@@ -1,0 +1,26 @@
+test_bad_vcc_shutdown (test_board_power.BoardPowerTests.test_bad_vcc_shutdown) ... ok
+test_capture_timeout_shutdown (test_board_power.BoardPowerTests.test_capture_timeout_shutdown) ... ok
+test_good_shutdown (test_board_power.BoardPowerTests.test_good_shutdown) ... ok
+test_bad_sink_voltage (test_board_ptt.BoardPttTests.test_bad_sink_voltage) ... ok
+test_extra_pulse (test_board_ptt.BoardPttTests.test_extra_pulse) ... ok
+test_mismatched_axes (test_board_ptt.BoardPttTests.test_mismatched_axes) ... ok
+test_missing_transition (test_board_ptt.BoardPttTests.test_missing_transition) ... ok
+test_press_and_release (test_board_ptt.BoardPttTests.test_press_and_release) ... ok
+test_slow_response (test_board_ptt.BoardPttTests.test_slow_response) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.244s
+
+OK
+test_clipped (test_idle_pwm.IdlePwmTests.test_clipped) ... ok
+test_good (test_idle_pwm.IdlePwmTests.test_good) ... ok
+test_incomplete (test_idle_pwm.IdlePwmTests.test_incomplete) ... ok
+test_static (test_idle_pwm.IdlePwmTests.test_static) ... ok
+test_wrong_duty (test_idle_pwm.IdlePwmTests.test_wrong_duty) ... ok
+test_wrong_frequency (test_idle_pwm.IdlePwmTests.test_wrong_frequency) ... ok
+test_wrong_level (test_idle_pwm.IdlePwmTests.test_wrong_level) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.025s
+
+OK

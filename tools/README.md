@@ -1,5 +1,16 @@
 # Engineering tools
 
+## Populated-board learning guide
+
+Regenerate the November 16 illustrated guide from retained evidence with
+`python tools/build-populated-board-learning-guide.py`, followed by
+`./tools/build-populated-board-learning-guide.ps1`. The Python stage requires
+NumPy, Matplotlib and Pillow; the PowerShell stage requires installed Microsoft
+Word and creates its own invisible instance. No instruments are accessed.
+Outputs are the PDF and editable DOCX under `docs/learning/`; the 13 figure
+sources and PNGs are under `docs/images/populated-board-learning/`.
+Render the final PDF to page images and inspect every page after changes.
+
 Run these commands from the repository root. They are maintained project tools; agent-only scripts and intermediate outputs belong in ignored `.agent-scratch/`.
 
 The temporary holder uses `build-bench-holder.py` with FreeCAD 1.1's bundled
@@ -138,3 +149,78 @@ sketch and actual control/tone/storage/display modules. Nine host executions
 cover PTT/bypass and faults through simulated hardware interfaces. No physical
 connections are required. The model and its limits are described in the
 [verification campaign](../docs/implementation/firmware-verification-plan.md).
+
+## Wiring illustrations and schedule
+
+Run `python tools/render-wiring-guide.py` from the repository root (Python 3.10+,
+Pillow; Windows Arial fonts). It regenerates the seven PNG figures in
+`docs/images/wiring/` and the marked wire tables in
+`docs/final-product-wiring-guide.md` from the checked-in
+`docs/reference/final-product-wire-list.csv` and
+`docs/verification/wiring-guide/header-readback.json`. It does not edit KiCad.
+After a hardware revision, refresh the pad readback through Konnect and compare
+the wire schedule against a new schematic netlist before regenerating/reviewing.
+Run `python tools/check-wiring-guide.py` (standard library only) to verify retained
+CSV/PCB/schematic-export agreement, guide table coverage and local links. Pass
+`--netlist PATH` to promote a fresh schematic export into the evidence package.
+It records source hashes but does not query the current live board; refresh the
+Konnect pad readback after a hardware change. Neither tool modifies KiCad files.
+
+Run `python tools/render-wiring-hardware.py` (Python 3.10+, numpy, matplotlib)
+for the two additional perspective hardware illustrations. These show GX16
+bodies/pins/sockets/solder cups and the user-confirmed EC11 opposing 3/2 solder
+tabs, with connector and wire callouts. Geometry is illustrative, not dimensional
+CAD; the flat pinout sheets remain the contact-view references. Both generators
+are needed to regenerate all nine figures; neither uses downloaded photos.
+
+## EC11 nut with integrated washer
+
+With B1 open and the N1 nut document closed in FreeCAD, execute the module
+`tools/build-ec11-flange-nut.py` and call `main()` through Robust MCP's
+`execute_python`. It uses native constrained sketches, Pads/Pockets, Groove and
+SubtractiveHelix and exports FCStd, print-oriented STL and STEP. Existing B1
+is read only. Constants own regeneration; custom dimension properties are
+documentation of those inputs, not live drivers for every feature.
+
+Run `python tools/prepare-ec11-flange-nut.py` using installed Bambu Studio X1C
+0.4 / Fine / Generic PLA profiles; then `python tools/render-ec11-nut-guide.py`
+(matplotlib) for the dimensioned stack and actual G-code layer inspections.
+No printer connection occurs. Final files are in `manufacturing/ec11-flange-nut/`;
+verification is in `docs/verification/ec11-flange-nut/`. See the
+[fitting guide](../docs/ec11-flange-nut-guide.md) before printing.
+
+## B2 rear-display replacement panel
+
+The native builder `tools/build-bench-panel.py` runs through Robust MCP in
+FreeCAD 1.1. It checkpoints the saved B1 file as a whole, loads through FreeCAD,
+and builds a separate `mechanical/bench-holder/bench-panel-b2.FCStd`. B1 and its
+live document remain untouched. Close only B2 before regeneration. Constants
+own layout; constrained sketches, pads, pockets and native coarse helix features
+remain editable. The thumb screws are custom 5 mm / 1 mm pitch, not standard M5.
+
+Run `python tools/prepare-bench-panel.py` for the two-plate Bambu Studio project,
+then `& 'C:/Program Files/FreeCAD 1.1/bin/python.exe' tools/render-bench-panel.py`
+for the dimensioned assembly drawing and actual G-code layer views. The latter
+uses bundled matplotlib. No printer connection is made. See
+[the B2 guide](../docs/bench-panel-b2-guide.md) and
+[package](../manufacturing/bench-panel-b2/README.md).
+
+## C1 narrow enclosure and radio cradle
+
+Run `main()` from `tools/build-enclosure-c1.py` through FreeCAD 1.1 Robust MCP
+with the exact C1 document closed. It builds a separate native model using the
+maintained B1 Sketcher/Pad/Pocket helpers; B1/B2/P1 sources remain untouched.
+Run `main()` from `tools/export-enclosure-c1.py` through the same bridge to check
+all installed printed instances, reference envelopes and sampled cover travel,
+export print-oriented meshes/assembly STEP and verify native saved readback.
+The exporter reads the saved native hole positions and preserves manual edits;
+it does not normalize geometry or modify other documents.
+
+Then run `python tools/prepare-enclosure-c1.py` with installed Bambu Studio for
+the four-plate, shared Generic PLA/X1C 0.4/0.20 mm project. No printer is accessed.
+Run `& 'C:/Program Files/FreeCAD 1.1/bin/python.exe' tools/render-enclosure-c1.py`
+for the dimensioned guide schematics; FreeCAD's bundled Python supplies matplotlib.
+Native CAD views are saved through the bridge. See the [C1 guide](../docs/enclosure-c1-guide.md)
+and [mounting evidence](../docs/reference/ic229h-mounting.md). Inputs/constants own
+regeneration; preserve manual C1 edits before rebuilding. Physical acceptance
+and the inventory record gaps are separate from CAD/slicer checks.

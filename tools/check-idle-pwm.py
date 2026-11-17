@@ -1,7 +1,8 @@
 """Capture and evaluate bare Pro Micro D9 idle PWM with a DS1202Z-E CH1 x10 probe.
 
-Requires tools/bench/requirements.txt. Arduino USB only, no driven signal inputs;
-probe tip D9, ground GND, physical probe x10. Changes/restores scope settings;
+Requires tools/bench/requirements.txt. Default: Arduino USB only, no driven inputs;
+or --raw-powered-board with board-power wrapper, PCB USB disconnected.
+Probe tip D9/TP4, ground GND/TP1, physical probe x10. Changes/restores scope settings;
 replaces the acquisition buffer. Does not operate the Arduino or power supply.
 """
 import argparse
@@ -65,10 +66,14 @@ def evaluate(raw, p):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True, help='New run directory')
+    parser.add_argument('--raw-powered-board', action='store_true',
+                        help='Record TP4/TP1 wiring and RAW-only power; does not control supply')
     parser.add_argument('--pro-stress', help='Explicit Pro Micro port: continuously query STATUS during capture')
     parser.add_argument('--tone-hz', type=float, help='Expected encoded tone with physical PTT held; selects a long capture')
     parser.add_argument('--channel',type=int,choices=(1,2),default=1,help='Scope channel physically connected to D9')
     args = parser.parse_args()
+    if args.raw_powered_board and args.pro_stress:
+        parser.error('RAW-powered board requires PCB USB disconnected')
     if args.tone_hz is not None and (not math.isfinite(args.tone_hz) or not 67 <= args.tone_hz <= 254.1):
         parser.error('--tone-hz must be 67.0 through 254.1')
     if args.tone_hz is not None and args.pro_stress:
@@ -76,7 +81,9 @@ def main():
     depth = 12000000 if args.tone_hz is not None else 1200000
     args.output.mkdir(parents=True, exist_ok=False)
     report = {'utc': datetime.now(timezone.utc).isoformat(), 'passed': False,
-              'wiring': f'USB-powered Pro Micro D9 -> Rigol CH{args.channel} x10; GND -> probe ground',
+              'wiring': (f'RAW-powered populated PCB TP4 -> Rigol CH{args.channel} x10; TP1 -> probe ground; PCB USB disconnected'
+                         if args.raw_powered_board else
+                         f'USB-powered Pro Micro D9 -> Rigol CH{args.channel} x10; GND -> probe ground'),
               'settings_restored': False}
     try:
         with ownership(), Scope() as scope:

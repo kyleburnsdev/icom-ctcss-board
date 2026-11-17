@@ -1,0 +1,19 @@
+schema_version: 1
+project: ec11-flange-nut
+revision: N1
+items:
+  - category: stock
+    id: generic-pla
+    quantity: 10
+    unit: g
+    requires:
+      material: PLA
+operations:
+  - id: print-nut-and-thread-samples
+    machine: bambu-labs-x1-carbon
+    process: 3d_printing
+    material: PLA
+    work_envelope_mm: [110, 70, 5]
+    uses:
+      - category: stock
+        id: generic-pla

@@ -1,0 +1,396 @@
+{
+  "passed": true,
+  "settings_restored": true,
+  "fixture_transcript": [
+    {
+      "port": "COM5",
+      "command": "ID",
+      "reply": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "ARM",
+      "reply": "OK armed lease_ms=5000"
+    },
+    {
+      "port": "COM5",
+      "command": "PTT 1",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM5",
+      "command": "BYPASS 0",
+      "reply": "OK drive"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=1 drive=1 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    },
+    {
+      "port": "COM5",
+      "command": "STOP",
+      "reply": "OK stopped"
+    },
+    {
+      "port": "COM5",
+      "command": "STATUS",
+      "reply": "STATUS armed=0 drive=0 sense=6 latency_valid=0 latency_us=0 poll_us=210 errors=0 bouncing=0 bounce_late_us=0"
+    }
+  ],
+  "level": "minimum",
+  "wiring": "Final tone path screen under parent RAW power; no radio or PCB USB.\n\nCH1 physical x10 TP5, CH2 physical x1 TP6; grounds TP1; NUCLEO as prior tests.\nRemove TP3-to-TP8 load. Operator sets RV1 to the selected endpoint with power off.\n",
+  "script_sha256": "397a204215a989248dccef2db9b4be6583dd052720fbb6e60fd148c9c88829b1",
+  "loading": "Nominal x1 scope input 1 MOhm; R5 100 kOhm; no radio",
+  "selected_settling_s": 6,
+  "limits_basis": "Selected assembly screens; nominal full-CW TP6/TP5 amplitude ratio about 0.0758 with 1 MOhm load",
+  "fixture_identity": "STANDIN1 phase=1 board=NUCLEO-F767ZI clock_hz=96000000 tick_hz=1000000",
+  "scope_before": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "AUTO",
+    "samplerate_hz": 1000000000.0,
+    "settings": {
+      ":TIM:SCAL": "2.0000000e-04",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "AUTO",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "AUTO",
+      ":TRIG:EDG:SOUR": "CHAN2",
+      ":TRIG:EDG:SLOP": "POS",
+      ":TRIG:EDG:LEV": "1.500000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "0",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-1.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-1.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "scope_configured": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "TD",
+    "samplerate_hz": 2500000.0,
+    "settings": {
+      ":TIM:SCAL": "2.0000000e-02",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "600000",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "NORM",
+      ":TRIG:EDG:SOUR": "CHAN1",
+      ":TRIG:EDG:SLOP": "POS",
+      ":TRIG:EDG:LEV": "1.500000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "1",
+      ":CHAN1:SCAL": "5.000000e-01",
+      ":CHAN1:OFFS": "-1.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "20M",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e-01",
+      ":CHAN2:OFFS": "0.000000e+00",
+      ":CHAN2:PROB": "1.000000e+00",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "20M",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "filter": {
+    "mean_v": 1.5653503511148,
+    "central_pp_v": 1.9810161393749999,
+    "averaged_ac_rms_v": 0.6975069859108708,
+    "averaging_samples": 32,
+    "averaging_window_s": 1.28e-05,
+    "points": 600000,
+    "sample_interval_s": 4e-07,
+    "duration_s": 0.24,
+    "active_expected": true,
+    "tone_hz": 151.3998848989114,
+    "tone_crossings": 37,
+    "expected_tone_hz": 151.4,
+    "checks": {
+      "tone_within_0_2_hz_nominal_timebase": true,
+      "central_pp_in_selected_range": true,
+      "rms_in_selected_range": true,
+      "dc_in_selected_range": true
+    },
+    "limits": {
+      "active_pp_v": [
+        1,
+        3
+      ],
+      "active_rms_v": [
+        0.3,
+        1
+      ],
+      "mean_v": [
+        1.2,
+        1.9
+      ],
+      "suppressed_pp_v": 0.15,
+      "suppressed_rms_v": 0.04
+    },
+    "passed": true
+  },
+  "output": {
+    "mean_v": -5.779250306335177e-05,
+    "central_pp_v": 0.0010478515,
+    "averaged_ac_rms_v": 0.00017670810354641675,
+    "averaging_samples": 32,
+    "averaging_window_s": 1.28e-05,
+    "points": 600000,
+    "sample_interval_s": 4e-07,
+    "duration_s": 0.24,
+    "active_expected": false,
+    "checks": {
+      "suppressed_central_pp_below_selected_limit": true,
+      "suppressed_averaged_rms_below_selected_limit": true,
+      "dc_in_selected_range": true
+    },
+    "limits": {
+      "active_pp_v": [
+        0.1,
+        0.22
+      ],
+      "active_rms_v": [
+        0.02,
+        0.09
+      ],
+      "mean_v": [
+        -0.03,
+        0.03
+      ],
+      "suppressed_pp_v": 0.02,
+      "suppressed_rms_v": 0.01
+    },
+    "passed": true
+  },
+  "waveform_sha256": [
+    "30096d1bae8b88ed744ddd41f479ba958615889bc73b958d327be91ccedaa15b",
+    "b1bb1f5471e15c20f120223a29bab39df860017780c7c9399a0c8655f8833e9e"
+  ],
+  "ratio": 0.0005289464730613409,
+  "ratio_passed": true,
+  "measurement_passed": true,
+  "scope_after": {
+    "identity": {
+      "manufacturer": "RIGOL TECHNOLOGIES",
+      "model": "DS1202Z-E",
+      "firmware": "00.06.04"
+    },
+    "trigger": "AUTO",
+    "samplerate_hz": 1000000000.0,
+    "settings": {
+      ":TIM:SCAL": "2.0000000e-04",
+      ":TIM:OFFS": "0.0000000e+00",
+      ":ACQ:MDEP": "AUTO",
+      ":ACQ:TYPE": "NORM",
+      ":TRIG:MODE": "EDGE",
+      ":TRIG:SWE": "AUTO",
+      ":TRIG:EDG:SOUR": "CHAN2",
+      ":TRIG:EDG:SLOP": "POS",
+      ":TRIG:EDG:LEV": "1.500000e+00",
+      ":WAV:SOUR": "CHAN1",
+      ":WAV:MODE": "NORM",
+      ":WAV:FORM": "BYTE",
+      ":WAV:STAR": "1",
+      ":WAV:STOP": "1200",
+      ":SYST:LOCK": "0",
+      ":CHAN1:DISP": "0",
+      ":CHAN1:SCAL": "1.000000e+00",
+      ":CHAN1:OFFS": "-1.500000e+00",
+      ":CHAN1:PROB": "1.000000e+01",
+      ":CHAN1:COUP": "DC",
+      ":CHAN1:BWL": "OFF",
+      ":CHAN1:INV": "0",
+      ":CHAN2:DISP": "1",
+      ":CHAN2:SCAL": "1.000000e+00",
+      ":CHAN2:OFFS": "-1.500000e+00",
+      ":CHAN2:PROB": "1.000000e+01",
+      ":CHAN2:COUP": "DC",
+      ":CHAN2:BWL": "OFF",
+      ":CHAN2:INV": "0"
+    }
+  },
+  "fixture_final": {
+    "armed": 0,
+    "drive": 0,
+    "sense": 6,
+    "latency_valid": 0,
+    "latency_us": 0,
+    "poll_us": 210,
+    "errors": 0,
+    "bouncing": 0,
+    "bounce_late_us": 0
+  }
+}

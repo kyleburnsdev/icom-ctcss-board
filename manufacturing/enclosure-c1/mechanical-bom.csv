@@ -1,0 +1,20 @@
+item,production_quantity,test_quantity,unit,description
+Base,1,0,each,Printed PLA floor walls rails and support seats
+ControlPanel,1,0,each,Printed PLA 156 x 90 panel
+SlidingCover,1,0,each,Printed PLA roof and captured tongues
+LedKeeper,1,0,each,Printed PLA flange keeper
+PcbCornerStrap,4,1,each,Printed PLA relieved strap
+DisplayEarClip,4,4,each,Printed PLA off-board clamp
+LeftRadioSaddle,1,0,each,Printed PLA 12 degree cradle
+RightRadioSaddle,1,0,each,Printed PLA 12 degree cradle
+LeftRadioCheek,1,0,each,Printed PLA M4 radio / M3 cradle bracket
+RightRadioCheek,1,0,each,Printed PLA M4 radio / M3 cradle bracket
+NubAndStrapCoupon,0,1,each,Printed PLA independent PCB fit trial
+InsertPilotCoupon,0,1,each,Printed PLA 4.4 / 4.6 / 4.8 pilots
+CoverRailCoupon,0,1,each,Printed PLA representative bearing gusset and lip
+CoverTongueCoupon,0,1,each,Printed PLA roof-down sliding tongue trial
+RadioPatternCoupon,0,1,each,Printed PLA 39 / 88 front datum and 49 pitch
+DisplayFitCoupon,0,1,each,Printed PLA complete LCD window ears and clamp bosses
+M3 x 8 socket head cap screw,24,0,each,User-confirmed stock; reuse production screws for coupon tests
+M3 x D5 x L4 heat-set insert,24,8,each,Owned dimensional interface; quantity remains kit check
+Icom 8820000530 radio mounting bolt,4,0,each,M4 x 8 by Icom part-number match; OEM bolt projection fit required

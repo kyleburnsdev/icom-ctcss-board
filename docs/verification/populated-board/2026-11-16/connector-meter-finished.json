@@ -1,0 +1,135 @@
+{
+  "started_utc": "2026-11-16T21:47:39.206525+00:00",
+  "action": "finish",
+  "status": "dcv_restored",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T21:47:39.217713+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T21:47:39.239956+00:00",
+      "raw": "\"RES\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T21:47:39.259139+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T21:47:39.278647+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T21:47:39.299174+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T21:47:39.309349+00:00",
+      "raw": "100 M\u03a9\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T21:47:39.329644+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T21:47:39.338557+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T21:47:39.359506+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T21:47:39.379503+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T21:47:39.399506+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T21:47:39.418503+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T21:47:39.429516+00:00",
+      "raw": "10 V\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T21:47:39.449419+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T21:47:39.458652+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    }
+  ],
+  "writes": [
+    {
+      "utc": "2026-11-16T21:47:39.359506+00:00",
+      "command": "CONF:VOLT:DC AUTO"
+    },
+    {
+      "utc": "2026-11-16T21:47:39.359506+00:00",
+      "command": "RATE S"
+    }
+  ],
+  "dcv_restored": true,
+  "port": "COM15",
+  "script_sha256": "64ca4a1466af9cf4cc29ebefd7d2ef7fd9ba89a9c8ac07e9a30b1c0fcb0a7b79",
+  "identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "before": {
+    "function": "\"RES\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 M\u03a9",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "after": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "10 V",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "session_closed": true,
+  "finished_utc": "2026-11-16T21:47:39.482948+00:00"
+}

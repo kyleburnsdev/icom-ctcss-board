@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-16",
+  "method": "Operator-reported settled OWON resistance readings, separate from USB-captured measurements",
+  "operator_reply": "N01 shows OL. Highest reading from the rest was .3",
+  "same_net_checks": {
+    "ids": "C01-C21",
+    "count": 21,
+    "highest_reported_ohm": 0.3,
+    "selected_limit_ohm": 2,
+    "exceptions_or_skipped_rows_reported": [],
+    "individual_values_collected": false,
+    "result": "pass"
+  },
+  "ptt_separation": {
+    "id": "N01",
+    "endpoints": ["J1 pin 5", "J2 pin 5"],
+    "reported_indication": "OL",
+    "selected_criterion": "Greater than 1 kOhm or OL; not an insulation-resistance qualification",
+    "result": "pass"
+  },
+  "conditions": "PCB disconnected from all sources, scope, fixture and temporary loads; RV1 minimum; DMM RES/autorange/S, math off",
+  "shorted_lead_range_ohm": [0.1625445, 0.1658097]
+}

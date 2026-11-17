@@ -1,0 +1,65 @@
+{
+  "inventory_root": "C:\\src\\personal-repos\\toolpath-studio-inventory",
+  "attempts": [
+    {
+      "tier": "environment",
+      "root": "C:\\src\\personal-repos\\toolpath-studio-inventory",
+      "result": "selected"
+    }
+  ],
+  "passed": false,
+  "project": "icom-ctcss-enclosure",
+  "revision": "C1",
+  "issues": [
+    {
+      "code": "unavailable",
+      "subject": "stock/bambu-lab-pla-matte-filament",
+      "message": "Item is not available in_stock"
+    },
+    {
+      "code": "unavailable",
+      "subject": "stock/m3-d5-l4-heat-set-inserts",
+      "message": "Item is not available in_stock"
+    },
+    {
+      "code": "quantity",
+      "subject": "stock/bambu-lab-pla-matte-filament",
+      "message": "Available quantity is unknown"
+    },
+    {
+      "code": "quantity",
+      "subject": "stock/m3-d5-l4-heat-set-inserts",
+      "message": "Available quantity is unknown"
+    },
+    {
+      "code": "unavailable",
+      "subject": "machines/bambu-labs-x1-carbon",
+      "message": "Item is not available in_stock"
+    },
+    {
+      "code": "process",
+      "subject": "print-c1",
+      "message": "Machine does not list the requested process"
+    },
+    {
+      "code": "material",
+      "subject": "print-c1",
+      "message": "Machine does not list the requested material/process combination"
+    },
+    {
+      "code": "envelope",
+      "subject": "print-c1",
+      "message": "Usable machine envelope is unknown"
+    }
+  ],
+  "evidence_sha256": {
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\index.yaml": "fa7f6ab24892a981f28407a1a05d0ff95588597785ca9490c29540f3951ad6d6",
+    "C:\\src\\personal-repos\\icom-ctcss-board\\docs\\verification\\enclosure-c1\\inventory-input.json": "d214e125887f249723c926499a6e8cdfe3b09ba02b90e97b11981c39fc9620a0",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\stock\\index.yaml": "f299eb767c17b786927be597e8b2a34a2a184782025c81c1db4e8321706073e7",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\stock\\bambu-lab-pla-matte-filament\\specs.yaml": "ac94a702ae99293684f08f62d1033cdc58b2450a4d397bcfa1fd72b1796e415a",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\stock\\m3-d5-l4-heat-set-inserts\\specs.yaml": "cc97194bfcdabad1983feb9e64639a999c5fb64eb17e67cd3fff788d8a1062b5",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\machines\\index.yaml": "e2840480d6388fa22f7b9b7a1e1acb54ff1ae40914b65b22dfafd49dc7b480c1",
+    "C:\\src\\personal-repos\\toolpath-studio-inventory\\machines\\bambu-labs-x1-carbon\\specs.yaml": "288dcb734289f941ba59c9f9bf633ded252ea5be3eabf4cd2551eb6df4064e2b"
+  },
+  "limits": "Recorded stock/capability check only; no reservation, nesting, collision, electrical, CAM/slicer, laser process or physical qualification."
+}

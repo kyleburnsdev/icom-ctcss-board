@@ -1,0 +1,646 @@
+{
+  "passed": true,
+  "hardware_access": false,
+  "checks": [
+    {
+      "name": "idle-pwm/capture complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "Idle PWM raw SHA256",
+      "passed": true
+    },
+    {
+      "name": "Idle PWM current evaluator",
+      "passed": true
+    },
+    {
+      "name": "idle-filter-100mv accepted with scope restored",
+      "passed": true
+    },
+    {
+      "name": "idle-filter-100mv/dc complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "idle-filter-100mv/dc SHA256",
+      "passed": true
+    },
+    {
+      "name": "idle-filter-100mv/ripple complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "idle-filter-100mv/ripple SHA256",
+      "passed": true
+    },
+    {
+      "name": "grounded-ch2-control accepted with scope restored",
+      "passed": true
+    },
+    {
+      "name": "grounded-ch2-control/dc complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "grounded-ch2-control/dc SHA256",
+      "passed": true
+    },
+    {
+      "name": "grounded-ch2-control/ripple complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "grounded-ch2-control/ripple SHA256",
+      "passed": true
+    },
+    {
+      "name": "physical-tone-bypass/idle complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "idle tone SHA256",
+      "passed": true
+    },
+    {
+      "name": "idle analog replay",
+      "passed": true
+    },
+    {
+      "name": "physical-tone-bypass/ptt complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "ptt tone SHA256",
+      "passed": true
+    },
+    {
+      "name": "ptt analog replay",
+      "passed": true
+    },
+    {
+      "name": "physical-tone-bypass/bypass complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass tone SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass analog replay",
+      "passed": true
+    },
+    {
+      "name": "physical-tone-bypass/resume complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "resume tone SHA256",
+      "passed": true
+    },
+    {
+      "name": "resume analog replay",
+      "passed": true
+    },
+    {
+      "name": "physical-tone-bypass/release complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "release tone SHA256",
+      "passed": true
+    },
+    {
+      "name": "release analog replay",
+      "passed": true
+    },
+    {
+      "name": "Twelve loaded PTT events retained",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-1-press/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-1-press/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-1-press ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-1-press ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-1-press collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-1-release/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-1-release/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-1-release ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-1-release ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-1-release collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-2-press/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-2-press/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-2-press ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-2-press ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-2-press collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-2-release/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-2-release/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-2-release ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-2-release ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-2-release collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-3-press/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-3-press/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-3-press ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-3-press ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-3-press collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-3-release/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-0-pair-3-release/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-3-release ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-3-release ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-0-pair-3-release collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-1-press/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-1-press/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-1-press ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-1-press ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-1-press collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-1-release/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-1-release/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-1-release ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-1-release ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-1-release collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-2-press/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-2-press/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-2-press ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-2-press ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-2-press collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-2-release/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-2-release/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-2-release ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-2-release ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-2-release collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-3-press/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-3-press/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-3-press ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-3-press ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-3-press collector replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-3-release/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt/bypass-1-pair-3-release/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-3-release ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-3-release ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "bypass-1-pair-3-release collector replay",
+      "passed": true
+    },
+    {
+      "name": "mixing-maximum-b/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "mixing-maximum-b/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "mixing-maximum-b ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "mixing-maximum-b ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "mixing-maximum-b TP5 replay",
+      "passed": true
+    },
+    {
+      "name": "mixing-maximum-b TP6 replay",
+      "passed": true
+    },
+    {
+      "name": "mixing-minimum/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "mixing-minimum/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "mixing-minimum ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "mixing-minimum ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "mixing-minimum TP5 replay",
+      "passed": true
+    },
+    {
+      "name": "mixing-minimum TP6 replay",
+      "passed": true
+    },
+    {
+      "name": "Five loaded LED states retained",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/idle/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/idle/ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/idle/ch1 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/idle/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/idle/ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/idle/ch2 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/ptt/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/ptt/ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/ptt/ch1 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/ptt/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/ptt/ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/ptt/ch2 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/both/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/both/ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/both/ch1 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/both/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/both/ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/both/ch2 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/bypass_only/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/bypass_only/ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/bypass_only/ch1 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/bypass_only/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/bypass_only/ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/bypass_only/ch2 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/released/ch1 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/released/ch1 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/released/ch1 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/released/ch2 complete and transfer restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/released/ch2 SHA256",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c/released/ch2 loaded-level replay",
+      "passed": true
+    },
+    {
+      "name": "idle-pwm accepted and restored",
+      "passed": true
+    },
+    {
+      "name": "idle-filter-100mv accepted and restored",
+      "passed": true
+    },
+    {
+      "name": "grounded-ch2-control accepted and restored",
+      "passed": true
+    },
+    {
+      "name": "physical-tone-bypass accepted and restored",
+      "passed": true
+    },
+    {
+      "name": "physical-tone-bypass fixture released",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt accepted and restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-ptt fixture released",
+      "passed": true
+    },
+    {
+      "name": "mixing-maximum-b accepted and restored",
+      "passed": true
+    },
+    {
+      "name": "mixing-maximum-b fixture released",
+      "passed": true
+    },
+    {
+      "name": "mixing-minimum accepted and restored",
+      "passed": true
+    },
+    {
+      "name": "mixing-minimum fixture released",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c accepted and restored",
+      "passed": true
+    },
+    {
+      "name": "loaded-leds-c fixture released",
+      "passed": true
+    },
+    {
+      "name": "power-with-idle-pwm.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "power-with-idle-filter-100mv.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "power-with-grounded-ch2-control.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "power-with-physical-tone-bypass.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "power-with-loaded-ptt.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "power-with-mixing-maximum-b.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "power-with-mixing-minimum.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "power-with-loaded-leds-c.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "raw-at-pcb.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "vcc-at-pcb.json accepted with supply off",
+      "passed": true
+    },
+    {
+      "name": "21 operator continuity checks and intercepted PTT",
+      "passed": true
+    },
+    {
+      "name": "Final meter DCV restored",
+      "passed": true
+    },
+    {
+      "name": "Fresh supply final OFF",
+      "passed": true
+    },
+    {
+      "name": "electronics/icom-ctcss-board.kicad_pcb matches wiring source snapshot",
+      "passed": true
+    },
+    {
+      "name": "electronics/icom-ctcss-board.kicad_sch matches wiring source snapshot",
+      "passed": true
+    }
+  ]
+}

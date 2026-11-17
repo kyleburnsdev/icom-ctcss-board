@@ -1,0 +1,193 @@
+{
+  "started_utc": "2026-11-16T18:44:15.473573+00:00",
+  "port": "COM15",
+  "baud": 115200,
+  "action": "poll-dcv",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T18:44:15.487234+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T18:44:15.501215+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T18:44:15.521197+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T18:44:15.540937+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T18:44:15.550936+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T18:44:15.571070+00:00",
+      "raw": "100 mV\n",
+      "roundtrip_s": 0.03200000000651926
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T18:44:15.591225+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T18:44:15.601233+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T18:44:15.611230+00:00",
+      "raw": "-3.705860E-02\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T18:44:16.131672+00:00",
+      "raw": "-3.680693E-02\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T18:44:16.651701+00:00",
+      "raw": "-3.655769E-02\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T18:44:17.171251+00:00",
+      "raw": "-3.631270E-02\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T18:44:17.691045+00:00",
+      "raw": "-3.582418E-02\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T18:44:18.210774+00:00",
+      "raw": "-3.582418E-02\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T18:44:18.229930+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T18:44:18.249363+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T18:44:18.259372+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T18:44:18.279483+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T18:44:18.299706+00:00",
+      "raw": "100 mV\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T18:44:18.319779+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T18:44:18.339636+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    }
+  ],
+  "status": "characterization_complete",
+  "settings_writes_sent": false,
+  "requested_count": 6,
+  "interval_after_response_s": 0.5,
+  "python_version": "3.12.10",
+  "script_sha256": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777",
+  "pyserial_version": "3.5",
+  "identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "before": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 mV",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "readings": [
+    {
+      "index": 0,
+      "value_v": -0.0370586
+    },
+    {
+      "index": 1,
+      "value_v": -0.03680693
+    },
+    {
+      "index": 2,
+      "value_v": -0.03655769
+    },
+    {
+      "index": 3,
+      "value_v": -0.0363127
+    },
+    {
+      "index": 4,
+      "value_v": -0.03582418
+    },
+    {
+      "index": 5,
+      "value_v": -0.03582418
+    }
+  ],
+  "after": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 mV",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "interpretation": "Host-polled displayed DCV values; no conversion timestamps, freshness guarantee, calibration or DUT acceptance established",
+  "session_closed": true,
+  "finished_utc": "2026-11-16T18:44:18.354691+00:00"
+}

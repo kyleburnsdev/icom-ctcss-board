@@ -1,0 +1,717 @@
+{
+  "started_utc": "2026-11-16T19:51:17.978116+00:00",
+  "status": "power_and_idle_filter_pass",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T19:51:22.021915+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T19:51:23.386077+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T19:51:23.404336+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T19:51:23.423863+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T19:51:23.434030+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T19:51:23.454235+00:00",
+      "raw": "1 V\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T19:51:23.474110+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T19:51:23.484103+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:23.494019+00:00",
+      "raw": "+3.064311E-01\n",
+      "roundtrip_s": 0.03200000000651926
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:29.806377+00:00",
+      "raw": "+4.999325E+00\n",
+      "roundtrip_s": 0.030999999959021807
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:30.331813+00:00",
+      "raw": "+4.999325E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:30.851550+00:00",
+      "raw": "+4.999597E+00\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:31.360957+00:00",
+      "raw": "+4.999597E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:31.880977+00:00",
+      "raw": "+4.999721E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:32.400740+00:00",
+      "raw": "+4.999633E+00\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:32.920611+00:00",
+      "raw": "+4.999887E+00\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:33.440366+00:00",
+      "raw": "+4.999654E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T19:51:34.802358+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T19:51:34.818388+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T19:51:34.838346+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T19:51:34.858367+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T19:51:34.868390+00:00",
+      "raw": "10 V\n",
+      "roundtrip_s": 0.03200000000651926
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T19:51:34.887963+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T19:51:34.898076+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:49.743217+00:00",
+      "raw": "+5.000448E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T19:51:56.079425+00:00",
+      "raw": "+5.761810E-01\n",
+      "roundtrip_s": 0.01600000000325963
+    }
+  ],
+  "supply_commands": [
+    {
+      "utc": "2026-11-16T19:51:18.011803+00:00",
+      "arguments": [
+        "--show"
+      ],
+      "response": "Driver functions:\n    Power supply\nScan options:\n    conn\n    serialcomm\n    force_detect\nkorad-kaxxxxp:conn=COM11 - Korad KA3005P [S/N: [redacted]] with 2 channels: V I\nSupported configuration options:\n    conn: COM11 (current)\n    continuous: on, off\n    limit_samples: 0 (current)\n    limit_time: 0 (current)\n    voltage: 0.000000 (current)\n    voltage_target: 0.000000, 31.000000, 0.010000\n    current: 0.000000 (current)\n    current_limit: 0.000000, 5.100000, 0.001000\n    enabled: on, off (current)\n    regulation: CC (current)\n    ocp_enabled: on (current), off\n    ovp_enabled: on, off (current)\n"
+    },
+    {
+      "utc": "2026-11-16T19:51:22.035074+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T19:51:23.514037+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=8.00:current_limit=0.050:ocp_enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T19:51:24.385075+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T19:51:25.740309+00:00",
+      "arguments": [
+        "--config",
+        "enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T19:51:26.429415+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035999998450279236\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T19:51:33.459595+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035000000149011612\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T19:51:48.409083+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\ntrue\n8.0\n0.035000000149011612\n'CV'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T19:51:49.761745+00:00",
+      "arguments": [
+        "--config",
+        "enabled=no",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T19:51:50.495167+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "8.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\nfalse\nfalse\n"
+    },
+    {
+      "utc": "2026-11-16T19:51:51.867580+00:00",
+      "arguments": [
+        "--config",
+        "voltage_target=1.00:current_limit=0.050:ocp_enabled=yes",
+        "--set"
+      ],
+      "response": ""
+    },
+    {
+      "utc": "2026-11-16T19:51:52.732852+00:00",
+      "arguments": [
+        "--get",
+        "voltage_target",
+        "--get",
+        "current_limit",
+        "--get",
+        "enabled",
+        "--get",
+        "voltage",
+        "--get",
+        "current",
+        "--get",
+        "regulation",
+        "--get",
+        "ocp_enabled",
+        "--get",
+        "ovp_enabled"
+      ],
+      "response": "1.0\n0.05000000074505806\nfalse\n0.0\n0.0\n'CC'\ntrue\nfalse\n"
+    }
+  ],
+  "setup_confirmed": true,
+  "meter_port": "COM15",
+  "supply_port": "COM11",
+  "measurement": "vcc",
+  "connections": "Supply + TP2; supply minus and meter COM TP1; meter V/ohm TP3; PCB USB and all off-board devices disconnected",
+  "limits": {
+    "raw_v": 8,
+    "current_limit_a": 0.05,
+    "vcc_v": [
+      4.75,
+      5.25
+    ]
+  },
+  "source_hashes": {
+    "check-board-power.py": "81cc4ae7687d930459b022ec164e975653fffc112e5661d6640d3c04354f9350",
+    "korad_supply.py": "3b6f4b33eb81238d42b4a61d14bafbb5586026f32576da1f3bc0fbf5d83f82c5",
+    "xdm1251.py": "a0df9c143b9832227b77a726939064e4dd9647b69553276176431de02e6a9777",
+    "check-idle-filter.py": "d45419f77d4371db588c1ce3e51ee5dbe00d1bdc040ab0a41edbaf6850668dcf",
+    "bench/rigol_scope.py": "83fb7eb19c85bce732f862fbb071e54c1105f94f2d45c0412ceca981cc351ae4"
+  },
+  "scope_connections": "CH1 physical x10 tip TP4; ground TP1; connected with supply off; CH2 physical x10 tip TP5, ground TP1",
+  "pyserial_version": "3.5",
+  "supply_identity": {
+    "model": "KA3005P",
+    "firmware": "V1.5",
+    "serial_number": "[redacted]"
+  },
+  "meter_identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "supply_before": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "meter_before": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "1 V",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "pre_voltage_v": 0.3064311,
+  "settings_before_enable": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "enable_requested_utc": "2026-11-16T19:51:25.740309+00:00",
+  "supply_enabled": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.035999998450279236,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "vcc_readings_v": [
+    4.999325,
+    4.999325,
+    4.999597,
+    4.999597,
+    4.999721,
+    4.999633,
+    4.999887,
+    4.999654
+  ],
+  "supply_after_measurement": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.03500000014901161,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "meter_after": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "10 V",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "measurement_checks_passed": true,
+  "filter_capture": {
+    "command": [
+      "C:\\src\\personal-repos\\icom-ctcss-board\\.agent-scratch\\firmware\\bench-venv\\Scripts\\python.exe",
+      "C:\\src\\personal-repos\\icom-ctcss-board\\tools\\check-idle-filter.py",
+      "--output",
+      "docs\\verification\\populated-board\\2026-11-16\\idle-filter-100mv",
+      "--ripple-scale",
+      "0.1"
+    ],
+    "started_utc": "2026-11-16T19:51:34.909303+00:00",
+    "returncode": 0,
+    "stdout": "{\"passed\": true, \"error\": null, \"dc\": {\"mean_v\": 1.5364240924851496, \"rms_ac_v\": 0.006040809663725396, \"min_v\": 1.2546680300000002, \"max_v\": 1.8179883700000001, \"percentile_1_to_99_pp_v\": 0.05121094, \"adc_clipped\": false, \"points\": 600000, \"sample_interval_s\": 4e-09, \"duration_s\": 0.0024000000000000002, \"sha256\": \"c24451e0bd0eed0289af14dda327ac9775f23e10980236939076f796c9409c25\"}, \"ripple\": {\"mean_v\": 0.0037812666666666816, \"rms_ac_v\": 0.0071651300799233375, \"min_v\": -0.268, \"max_v\": 0.28800000000000003, \"percentile_1_to_99_pp_v\": 0.024, \"adc_clipped\": false, \"points\": 600000, \"sample_interval_s\": 4e-09, \"duration_s\": 0.0024000000000000002, \"sha256\": \"1b5837bc50ee123d826cba01d3f7e2f25fa13b6c9db76b88b8bb602356dab57f\"}, \"checks\": {\"dc_between_1_35_and_1_75_v\": true, \"ripple_percentile_pp_at_most_80_mv\": true, \"ripple_rms_at_most_20_mv\": true, \"no_adc_clipping\": true, \"at_least_10_carrier_periods_each\": true}, \"calculated_nominal\": {\"assumptions\": \"Ideal 0\\u20135 V 50% 10 kHz PWM; nominal 3.3k/100nF sections; 10k upper, 1k lower, 10k trimmer; no probe loading/parasitics\", \"dc_v\": 1.557632398753894, \"ripple_pp_v\": 0.01425427326474504, \"method\": \"Linear ladder transfer; 32 odd harmonics through 630 kHz, sampled at 2048 phases\"}}\n",
+    "stderr": "",
+    "finished_utc": "2026-11-16T19:51:48.409083+00:00",
+    "result": {
+      "passed": true,
+      "settings_restored": true,
+      "wiring": "CH1 physical x10 TP4; CH2 physical x10 TP5; grounds TP1; RAW only; PCB USB disconnected",
+      "calculated_nominal": {
+        "assumptions": "Ideal 0\u20135 V 50% 10 kHz PWM; nominal 3.3k/100nF sections; 10k upper, 1k lower, 10k trimmer; no probe loading/parasitics",
+        "dc_v": 1.557632398753894,
+        "ripple_pp_v": 0.01425427326474504,
+        "method": "Linear ladder transfer; 32 odd harmonics through 630 kHz, sampled at 2048 phases"
+      },
+      "limits_basis": "Selected gross assembly screens; nominal calculation is not a calibrated reference",
+      "script_sha256": "d45419f77d4371db588c1ce3e51ee5dbe00d1bdc040ab0a41edbaf6850668dcf",
+      "before": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "TD",
+        "samplerate_hz": 1000000000.0,
+        "settings": {
+          ":TIM:SCAL": "2.0000000e-04",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "AUTO",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "AUTO",
+          ":TRIG:EDG:SOUR": "CHAN2",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "1.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "0",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-1.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "OFF",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e+00",
+          ":CHAN2:OFFS": "-1.500000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "OFF",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "dc_settings": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "TD",
+        "samplerate_hz": 250000000.0,
+        "settings": {
+          ":TIM:SCAL": "1.0000000e-04",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "600000",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "NORM",
+          ":TRIG:EDG:SOUR": "CHAN1",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "2.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "1",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-2.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "20M",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "5.000000e-01",
+          ":CHAN2:OFFS": "-1.500000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "20M",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "dc": {
+        "mean_v": 1.5364240924851496,
+        "rms_ac_v": 0.006040809663725396,
+        "min_v": 1.2546680300000002,
+        "max_v": 1.8179883700000001,
+        "percentile_1_to_99_pp_v": 0.05121094,
+        "adc_clipped": false,
+        "points": 600000,
+        "sample_interval_s": 4e-09,
+        "duration_s": 0.0024000000000000002,
+        "sha256": "c24451e0bd0eed0289af14dda327ac9775f23e10980236939076f796c9409c25"
+      },
+      "ripple_settings": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "TD",
+        "samplerate_hz": 250000000.0,
+        "settings": {
+          ":TIM:SCAL": "1.0000000e-04",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "600000",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "NORM",
+          ":TRIG:EDG:SOUR": "CHAN1",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "2.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "1",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-2.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "20M",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e-01",
+          ":CHAN2:OFFS": "0.000000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "AC",
+          ":CHAN2:BWL": "20M",
+          ":CHAN2:INV": "0"
+        }
+      },
+      "ripple": {
+        "mean_v": 0.0037812666666666816,
+        "rms_ac_v": 0.0071651300799233375,
+        "min_v": -0.268,
+        "max_v": 0.28800000000000003,
+        "percentile_1_to_99_pp_v": 0.024,
+        "adc_clipped": false,
+        "points": 600000,
+        "sample_interval_s": 4e-09,
+        "duration_s": 0.0024000000000000002,
+        "sha256": "1b5837bc50ee123d826cba01d3f7e2f25fa13b6c9db76b88b8bb602356dab57f"
+      },
+      "checks": {
+        "dc_between_1_35_and_1_75_v": true,
+        "ripple_percentile_pp_at_most_80_mv": true,
+        "ripple_rms_at_most_20_mv": true,
+        "no_adc_clipping": true,
+        "at_least_10_carrier_periods_each": true
+      },
+      "after": {
+        "identity": {
+          "manufacturer": "RIGOL TECHNOLOGIES",
+          "model": "DS1202Z-E",
+          "firmware": "00.06.04"
+        },
+        "trigger": "TD",
+        "samplerate_hz": 1000000000.0,
+        "settings": {
+          ":TIM:SCAL": "2.0000000e-04",
+          ":TIM:OFFS": "0.0000000e+00",
+          ":ACQ:MDEP": "AUTO",
+          ":ACQ:TYPE": "NORM",
+          ":TRIG:MODE": "EDGE",
+          ":TRIG:SWE": "AUTO",
+          ":TRIG:EDG:SOUR": "CHAN2",
+          ":TRIG:EDG:SLOP": "POS",
+          ":TRIG:EDG:LEV": "1.500000e+00",
+          ":WAV:SOUR": "CHAN1",
+          ":WAV:MODE": "NORM",
+          ":WAV:FORM": "BYTE",
+          ":WAV:STAR": "1",
+          ":WAV:STOP": "1200",
+          ":SYST:LOCK": "0",
+          ":CHAN1:DISP": "0",
+          ":CHAN1:SCAL": "1.000000e+00",
+          ":CHAN1:OFFS": "-1.500000e+00",
+          ":CHAN1:PROB": "1.000000e+01",
+          ":CHAN1:COUP": "DC",
+          ":CHAN1:BWL": "OFF",
+          ":CHAN1:INV": "0",
+          ":CHAN2:DISP": "1",
+          ":CHAN2:SCAL": "1.000000e+00",
+          ":CHAN2:OFFS": "-1.500000e+00",
+          ":CHAN2:PROB": "1.000000e+01",
+          ":CHAN2:COUP": "DC",
+          ":CHAN2:BWL": "OFF",
+          ":CHAN2:INV": "0"
+        }
+      }
+    }
+  },
+  "supply_after_filter_capture": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": true,
+    "voltage": 8.0,
+    "current": 0.03500000014901161,
+    "regulation": "CV",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "vcc_after_filter_capture_v": 5.000448,
+  "disable_requested_utc": "2026-11-16T19:51:49.760737+00:00",
+  "supply_output_off": {
+    "voltage_target": 8.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": false,
+    "ovp_enabled": false
+  },
+  "supply_final": {
+    "voltage_target": 1.0,
+    "current_limit": 0.05000000074505806,
+    "enabled": false,
+    "voltage": 0.0,
+    "current": 0.0,
+    "regulation": "CC",
+    "ocp_enabled": true,
+    "ovp_enabled": false
+  },
+  "post_voltage_v": 0.576181,
+  "finished_utc": "2026-11-16T19:51:56.103040+00:00"
+}

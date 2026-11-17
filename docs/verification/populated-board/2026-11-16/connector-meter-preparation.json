@@ -1,0 +1,252 @@
+{
+  "started_utc": "2026-11-16T21:37:02.752755+00:00",
+  "action": "prepare",
+  "status": "resistance_mode_left_for_operator",
+  "queries": [
+    {
+      "command": "*IDN?",
+      "started_utc": "2026-11-16T21:37:02.763400+00:00",
+      "raw": "OWON,XDM1251,[redacted],V1.0.1.0.4\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T21:37:02.779405+00:00",
+      "raw": "\"VOLT\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T21:37:02.799437+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T21:37:02.819500+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T21:37:02.829520+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T21:37:02.849500+00:00",
+      "raw": "100 mV\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T21:37:02.868857+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T21:37:02.879874+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:02.889520+00:00",
+      "raw": "-2.509916E-06\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T21:37:05.910840+00:00",
+      "raw": "\"RES\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T21:37:05.927391+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T21:37:05.947712+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T21:37:05.957216+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T21:37:05.977660+00:00",
+      "raw": "100 \u03a9\n",
+      "roundtrip_s": 0.031000000017229468
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T21:37:05.997775+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.0
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T21:37:06.007282+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:06.018285+00:00",
+      "raw": "+1.625445E-01\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:06.538380+00:00",
+      "raw": "+1.648408E-01\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:07.058293+00:00",
+      "raw": "+1.654828E-01\n",
+      "roundtrip_s": 0.030999999959021807
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:07.578154+00:00",
+      "raw": "+1.657908E-01\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:08.097928+00:00",
+      "raw": "+1.631112E-01\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:08.617532+00:00",
+      "raw": "+1.658097E-01\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:09.137443+00:00",
+      "raw": "+1.651160E-01\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "MEAS1?",
+      "started_utc": "2026-11-16T21:37:09.657266+00:00",
+      "raw": "+1.625918E-01\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "FUNC1?",
+      "started_utc": "2026-11-16T21:37:09.676600+00:00",
+      "raw": "\"RES\"\n",
+      "roundtrip_s": 0.014999999955762178
+    },
+    {
+      "command": "FUNC2?",
+      "started_utc": "2026-11-16T21:37:09.686166+00:00",
+      "raw": "\"NONE\"\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "AUTO?",
+      "started_utc": "2026-11-16T21:37:09.706378+00:00",
+      "raw": "1\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "RATE?",
+      "started_utc": "2026-11-16T21:37:09.725837+00:00",
+      "raw": "S\n",
+      "roundtrip_s": 0.015000000013969839
+    },
+    {
+      "command": "RANGE?",
+      "started_utc": "2026-11-16T21:37:09.745974+00:00",
+      "raw": "100 \u03a9\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:FUNC?",
+      "started_utc": "2026-11-16T21:37:09.756145+00:00",
+      "raw": "NONe\n",
+      "roundtrip_s": 0.01600000000325963
+    },
+    {
+      "command": "CALC:NULL:OFFS?",
+      "started_utc": "2026-11-16T21:37:09.775689+00:00",
+      "raw": "+0.000000E+00\n",
+      "roundtrip_s": 0.031000000017229468
+    }
+  ],
+  "writes": [
+    {
+      "utc": "2026-11-16T21:37:02.909088+00:00",
+      "command": "CONF:RES AUTO"
+    },
+    {
+      "utc": "2026-11-16T21:37:02.910094+00:00",
+      "command": "RATE S"
+    }
+  ],
+  "dcv_restored": false,
+  "port": "COM15",
+  "script_sha256": "64ca4a1466af9cf4cc29ebefd7d2ef7fd9ba89a9c8ac07e9a30b1c0fcb0a7b79",
+  "identity": {
+    "manufacturer": "OWON",
+    "model": "XDM1251",
+    "firmware": "V1.0.1.0.4"
+  },
+  "before": {
+    "function": "\"VOLT\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 mV",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "shorted_tips_dcv_v": -2.509916e-06,
+  "resistance_state": {
+    "function": "\"RES\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 \u03a9",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "shorted_tips_ohm": [
+    0.1625445,
+    0.1648408,
+    0.1654828,
+    0.1657908,
+    0.1631112,
+    0.1658097,
+    0.165116,
+    0.1625918
+  ],
+  "after": {
+    "function": "\"RES\"",
+    "secondary": "\"NONE\"",
+    "auto": "1",
+    "rate": "S",
+    "range": "100 \u03a9",
+    "math": "NONe",
+    "offset": "+0.000000E+00"
+  },
+  "handoff": "PCB must stay disconnected from every source; record checklist readings, then run finish before reconnecting power",
+  "session_closed": true,
+  "finished_utc": "2026-11-16T21:37:09.800422+00:00"
+}

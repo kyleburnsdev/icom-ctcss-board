@@ -1,0 +1,13 @@
+{
+  "pages": 14,
+  "figures": 13,
+  "tables": 13,
+  "page_bounds_issues": [],
+  "replacement_glyphs": 0,
+  "rendering": "Microsoft Word 16.0 native DOCX to PDF; Poppler pdftoppm 144 dpi PNG",
+  "canonical_renderer_unavailable": "render_docx.py failed: ModuleNotFoundError: pdf2image; LibreOffice not installed. Native Word export used.",
+  "visual_review": "All 14 pages inspected individually. Final changes on pages 8 and 12 inspected again; remaining final page renders confirmed pixel-identical to previously inspected renders. No clipping, overlaps or orphan pages observed.",
+  "bench_access_during_document_creation": false,
+  "offline_evidence_checks_passed": 160,
+  "software_unit_tests_passed": 16
+}

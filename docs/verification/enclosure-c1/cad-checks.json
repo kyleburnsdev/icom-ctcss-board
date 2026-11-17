@@ -1,0 +1,285 @@
+{
+  "revision": "C1",
+  "status": "PLA fit prototype; OEM radio bolt interface documented by part match",
+  "freecad_version": [
+    "1",
+    "1",
+    "1",
+    "20260414 (Git shallow)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "(HEAD detached at 0108fd4b4)",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "base_mm": [
+    156.0,
+    240.0
+  ],
+  "panel_mm": [
+    156,
+    90,
+    3
+  ],
+  "panel_angle_deg": 30,
+  "radio_angle_deg": 12,
+  "board_mm": [
+    100,
+    150,
+    1.5
+  ],
+  "board_holes_mm": [
+    [
+      34.0,
+      90.0
+    ],
+    [
+      122.0,
+      90.0
+    ],
+    [
+      34.0,
+      228.0
+    ],
+    [
+      122.0,
+      228.0
+    ]
+  ],
+  "pcb_transform": "X=28+boardX; Y=84+boardY; Z=15+boardZ; 90 degrees from B1 placement",
+  "nub_diameter_mm": 3.6,
+  "nub_height_mm": 2.1,
+  "pcb_hole_diameter_mm": 4,
+  "insert_pilot_mm": 4.6,
+  "insert_pocket_depth_mm": 5.5,
+  "screw_standard": "M3 x 8 socket head cap; radio OEM screws pending identification",
+  "side_slide_clearance_mm": 0.3,
+  "lower_slide_clearance_mm": 0.3,
+  "upper_diagonal_vertical_clearance_mm": 0.4,
+  "control_holes": [
+    [
+      "Encoder",
+      110.0,
+      47.0,
+      7.2
+    ],
+    [
+      "Bypass",
+      135.0,
+      47.0,
+      6.5
+    ],
+    [
+      "Mic",
+      80.0,
+      14.0,
+      16.2
+    ],
+    [
+      "Radio",
+      122.0,
+      14.0,
+      16.2
+    ],
+    [
+      "PttLed",
+      106.0,
+      74.0,
+      5.2
+    ],
+    [
+      "BypassLed",
+      132.0,
+      74.0,
+      5.2
+    ]
+  ],
+  "lcd_ears_mm": [
+    [
+      20.0,
+      28.9
+    ],
+    [
+      60.0,
+      28.9
+    ],
+    [
+      40.0,
+      73.1
+    ],
+    [
+      80.0,
+      73.1
+    ]
+  ],
+  "lcd_clamps_mm": [
+    [
+      20.0,
+      21.4
+    ],
+    [
+      60.0,
+      21.4
+    ],
+    [
+      40.0,
+      80.6
+    ],
+    [
+      80.0,
+      80.6
+    ]
+  ],
+  "window_mm": [
+    15.15,
+    44.39,
+    65.5,
+    15.5
+  ],
+  "parts": [
+    {
+      "name": "Base",
+      "solids": 1,
+      "volume_mm3": 316115.0278040052
+    },
+    {
+      "name": "ControlPanel",
+      "solids": 1,
+      "volume_mm3": 41976.6989408922
+    },
+    {
+      "name": "LedKeeper",
+      "solids": 1,
+      "volume_mm3": 2834.22444467584
+    },
+    {
+      "name": "PcbCornerStrap",
+      "solids": 1,
+      "volume_mm3": 618.9079680910455
+    },
+    {
+      "name": "DisplayEarClip",
+      "solids": 1,
+      "volume_mm3": 392.7623916933765
+    },
+    {
+      "name": "SlidingCover",
+      "solids": 1,
+      "volume_mm3": 85714.00676615017
+    },
+    {
+      "name": "LeftRadioSaddle",
+      "solids": 1,
+      "volume_mm3": 38061.783633352585
+    },
+    {
+      "name": "RightRadioSaddle",
+      "solids": 1,
+      "volume_mm3": 38061.783633352556
+    },
+    {
+      "name": "LeftRadioCheek",
+      "solids": 1,
+      "volume_mm3": 8845.292932726505
+    },
+    {
+      "name": "RightRadioCheek",
+      "solids": 1,
+      "volume_mm3": 8845.292932726506
+    }
+  ],
+  "intersections_mm3": {
+    "Base/ControlPanel": 0.0,
+    "Base/LedKeeper": 0.0,
+    "Base/PcbCornerStrap": 0.0,
+    "Base/InstalledPcbStrap2": 0.0,
+    "Base/InstalledPcbStrap3": 0.0,
+    "Base/InstalledPcbStrap4": 0.0,
+    "Base/DisplayEarClip": 0.0,
+    "Base/InstalledDisplayClip2": 0.0,
+    "Base/InstalledDisplayClip3": 0.0,
+    "Base/InstalledDisplayClip4": 0.0,
+    "Base/SlidingCover": 0.0,
+    "Base/LeftRadioSaddle": 0.0,
+    "Base/RightRadioSaddle": 0.0,
+    "Base/LeftRadioCheek": 0.0,
+    "Base/RightRadioCheek": 0.0,
+    "ControlPanel/LedKeeper": 0.0,
+    "ControlPanel/DisplayEarClip": 0.0,
+    "ControlPanel/InstalledDisplayClip2": 0.0,
+    "ControlPanel/InstalledDisplayClip3": 0.0,
+    "ControlPanel/InstalledDisplayClip4": 0.0,
+    "PcbCornerStrap/SlidingCover": 0.0,
+    "InstalledPcbStrap2/SlidingCover": 0.0,
+    "InstalledPcbStrap3/SlidingCover": 0.0,
+    "InstalledPcbStrap4/SlidingCover": 0.0,
+    "SlidingCover/LeftRadioSaddle": 0.0,
+    "Base/PcbReference": 0.0,
+    "Base/DisplayPcbReference": 0.0,
+    "Base/DisplayBezelReference": 0.0,
+    "Base/GrovePlugAndBendAllowance": 0.0,
+    "Base/EncoderRearEnvelope": 0.0,
+    "Base/ToggleRearEnvelope": 0.0,
+    "Base/MicRearEnvelope": 0.0,
+    "Base/RadioRearEnvelope": 0.0,
+    "ControlPanel/PcbReference": 0.0,
+    "ControlPanel/DisplayPcbReference": 0.0,
+    "ControlPanel/DisplayBezelReference": 0.0,
+    "ControlPanel/GrovePlugAndBendAllowance": 0.0,
+    "ControlPanel/EncoderRearEnvelope": 0.0,
+    "ControlPanel/ToggleRearEnvelope": 0.0,
+    "ControlPanel/MicRearEnvelope": 0.0,
+    "ControlPanel/RadioRearEnvelope": 0.0,
+    "SlidingCover/PcbReference": 0.0,
+    "SlidingCover/DisplayPcbReference": 0.0,
+    "SlidingCover/DisplayBezelReference": 0.0,
+    "SlidingCover/GrovePlugAndBendAllowance": 0.0,
+    "SlidingCover/EncoderRearEnvelope": 0.0,
+    "SlidingCover/ToggleRearEnvelope": 0.0,
+    "SlidingCover/MicRearEnvelope": 0.0,
+    "SlidingCover/RadioRearEnvelope": 0.0,
+    "SlidingCover/PcbComponentAllowance": 0.0
+  },
+  "baseline_sha256": {
+    "mechanical\\bench-holder\\bench-holder-b1.FCStd": "1b68a6ec4275545024f69b881a803247199ad232377ab832114d92b923967186",
+    "mechanical\\bench-holder\\bench-panel-b2.FCStd": "dd74c2dd83dc76c519ad71ff86a63e4ac3219404930da311a491b42ff17d18eb"
+  },
+  "radio_holes_local_yz_mm": [
+    [
+      39.0,
+      20.0
+    ],
+    [
+      88.0,
+      20.0
+    ]
+  ],
+  "radio_screw": "8820000530, M4 x 8 inferred by Icom part-number match",
+  "physical_acceptance": "not run",
+  "remaining": [
+    "radio bolt engagement acceptance",
+    "installed cable envelopes",
+    "PLA load/temperature acceptance",
+    "insert quantity"
+  ],
+  "source_sha256": "a7151c5d4e2c86eb7e448065ecc10850a99588b9b54ab68fc782904728acfa5f",
+  "generator_sha256": "0905ccf7ebb43d7ca2fff9d80f36bc4d5d5a5fbe479620652d9e8079648ff8c8",
+  "panel_pin_centres_mm": [
+    [
+      5.5,
+      8
+    ],
+    [
+      149,
+      8
+    ],
+    [
+      5.5,
+      82
+    ],
+    [
+      149,
+      82
+    ]
+  ],
+  "sketches_fully_constrained": true
+}

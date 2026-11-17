@@ -1,0 +1,34 @@
+{
+  "name": "bypass_only",
+  "ptt": 0,
+  "bypass": 1,
+  "acquisition": "forced_single_static_levels",
+  "measurements": [
+    {
+      "passed": true,
+      "asserted": false,
+      "mean_v": -1.4049480000466395e-06,
+      "selected_limits_v": [
+        -0.3,
+        0.4
+      ],
+      "nominal_load_current_ma": -1.4049480000466395e-06,
+      "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+      "channel": 1,
+      "sha256": "9cda52a2612d761274acc44a1f4b401a121732e6da48f40891c6548b581f6693"
+    },
+    {
+      "passed": true,
+      "asserted": true,
+      "mean_v": 3.6464778131016673,
+      "selected_limits_v": [
+        3.2,
+        4.3
+      ],
+      "nominal_load_current_ma": 3.6464778131016673,
+      "current_basis": "Voltage across nominal 1 kOhm; calculated, not independent current measurement",
+      "channel": 2,
+      "sha256": "1db690270b38f1a1edcb77a30cb462545583ed8f6e06cddb871cd2eb65ebfd99"
+    }
+  ]
+}
