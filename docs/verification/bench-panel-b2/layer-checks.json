@@ -1,6 +1,6 @@
 {
   "revision": "B2",
-  "project_sha256": "ac94481a32d2f1b646c27d5b2497b7796f94abd4117bc4ed6ceb1d2cdff66483",
+  "project_sha256": "8207699008d0226c8bbe00a06e4fac6695bba80dc8b0cb86d244498909ffa413",
   "plates": [
     {
       "plate": 1,
@@ -10,9 +10,9 @@
         1.04,
         1.52,
         4.04,
-        16.04
+        13.64
       ],
-      "layers": 151
+      "layers": 113
     },
     {
       "plate": 2,
@@ -22,9 +22,9 @@
         1.04,
         1.52,
         4.04,
-        16.04
+        13.64
       ],
-      "layers": 151
+      "layers": 113
     }
   ]
 }

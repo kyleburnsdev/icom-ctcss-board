@@ -207,6 +207,19 @@ uses bundled matplotlib. No printer connection is made. See
 
 ## C1 narrow enclosure and radio cradle
 
+**LCD interface L1:** B2 and C1 now read
+`mechanical/interfaces/grove-lcd-v4.json` through `tools/grove-lcd-v4.py`. The
+definition includes all six ears, corrected hole/window datums, the user-measured
+9.13 mm bezel projection and selected 0.30 mm gap. Missing projection stops
+generation rather than restoring the failed 14 mm support. See the
+[correction record](../docs/lcd-fit-correction.md).
+
+After B2's native build and primary 3MF, run `python tools/prepare-lcd-fit.py`
+for the one-object `manufacturing/lcd-fit/lcd-fit-l1.3mf` retest, reusing the four
+printed B2 thumb screws. `tools/render-grove-lcd-fit.py` renders the shared datum
+and measured-depth diagrams using matplotlib (FreeCAD's bundled Python is
+available). B2/C1 primary projects retain their own independent test plates.
+
 Run `main()` from `tools/build-enclosure-c1.py` through FreeCAD 1.1 Robust MCP
 with the exact C1 document closed. It builds a separate native model using the
 maintained B1 Sketcher/Pad/Pocket helpers; B1/B2/P1 sources remain untouched.

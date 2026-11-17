@@ -80,6 +80,7 @@ def main():
     d.saveAs(str(CAD))
     # Native saved readback in a separate document without touching the live C1.
     copy=ROOT/'.agent-scratch/enclosure-c1/reopen-check.FCStd'
+    copy.parent.mkdir(parents=True,exist_ok=True)
     copy.write_bytes(CAD.read_bytes());readback=App.openDocument(str(copy));readback.recompute()
     for name,v in saved_volumes.items():
         o=readback.getObject(name)

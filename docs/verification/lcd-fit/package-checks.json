@@ -1,0 +1,496 @@
+{
+  "interface_revision": "L1",
+  "measurement_mm": 9.13,
+  "support_depth_mm": 9.43,
+  "physical_acceptance": "retest pending",
+  "native_project_reopen": {
+    "b2": {
+      "native_application": "BambuStudio 02.08.02.61",
+      "return_code": 0,
+      "plates": 2,
+      "objects": 13,
+      "warnings": [
+        "",
+        ""
+      ],
+      "saved_layout_and_settings_match": true,
+      "project_sha256": "8207699008d0226c8bbe00a06e4fac6695bba80dc8b0cb86d244498909ffa413"
+    },
+    "c1": {
+      "native_application": "BambuStudio 02.08.02.61",
+      "return_code": 0,
+      "plates": 4,
+      "objects": 27,
+      "warnings": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saved_layout_and_settings_match": true,
+      "project_sha256": "260d616d494997d4cbc632805e2cbc8c8ef58705892eaf9ff503c531cafceb75"
+    },
+    "quick": {
+      "native_application": "BambuStudio 02.08.02.61",
+      "return_code": 0,
+      "plates": 1,
+      "objects": 1,
+      "warnings": [
+        ""
+      ],
+      "saved_layout_and_settings_match": true,
+      "project_sha256": "00b20a4f2b5c52d19d23143ba3f9dd8a9cb4db42c794f751d2eaa67896a6798e"
+    }
+  },
+  "local_links_checked": [
+    [
+      "docs/lcd-fit-correction.md",
+      "verification/lcd-fit/failed-coupon-2026-11-17.json"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "images/lcd-fit/corrected-front-and-rear.png"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "images/lcd-fit/depth-measurement.png"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "images/lcd-fit/bezel-projection-caliper.jpg"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "../mechanical/interfaces/grove-lcd-v4.json"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "../tools/grove-lcd-v4.py"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "../manufacturing/lcd-fit/lcd-fit-l1.3mf"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "../manufacturing/lcd-fit/README.md"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "../manufacturing/bench-panel-b2/README.md"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "../manufacturing/enclosure-c1/README.md"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "images/lcd-fit/failed-ear-alignment.jpg"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "images/lcd-fit/failed-depth.jpg"
+    ],
+    [
+      "docs/lcd-fit-correction.md",
+      "images/lcd-fit/failed-window.jpg"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "../manufacturing/lcd-fit/lcd-fit-l1.3mf"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "lcd-fit-correction.md"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "../manufacturing/bench-panel-b2/bench-panel-b2.3mf"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "ec11-flange-nut-guide.md"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "images/bench-panel-b2/layout.png"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "images/bench-panel-b2/native-front.png"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "images/bench-panel-b2/native-rear.png"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "../tools/build-bench-panel.py"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "lcd-fit-correction.md"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "bench-holder-guide.md"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "bench-holder-guide.md"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "../mechanical/bench-holder/bench-panel-b2.FCStd"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "../manufacturing/bench-panel-b2/bench-panel-b2-assembly.step"
+    ],
+    [
+      "docs/bench-panel-b2-guide.md",
+      "verification/bench-panel-b2/cad-checks.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "lcd-fit-correction.md"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../manufacturing/enclosure-c1/ctcss-c1.3mf"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "images/enclosure-c1/layout.png"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "images/enclosure-c1/radio-interface.png"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "images/enclosure-c1/assembly.png"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "verification/enclosure-c1/inventory-preflight.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "lcd-fit-correction.md"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "final-product-wiring-guide.md"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "reference/ic229h-mounting.md"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../mechanical/enclosure/c1/ctcss-c1.FCStd"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../manufacturing/enclosure-c1/supporting/step/ctcss-c1-assembly.step"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "verification/enclosure-c1/cad-checks.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "verification/enclosure-c1/export-checks.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "verification/enclosure-c1/slicer-checks.json"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../tools/build-enclosure-c1.py"
+    ],
+    [
+      "docs/enclosure-c1-guide.md",
+      "../tools/export-enclosure-c1.py"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "lcd-fit-l1.3mf"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "../../docs/images/lcd-fit/quick-project-preview.png"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "../bench-panel-b2/README.md"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "../../docs/images/lcd-fit/corrected-front-and-rear.png"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "../../docs/images/lcd-fit/depth-measurement.png"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "../../docs/lcd-fit-correction.md"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "../bench-panel-b2/README.md"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "../enclosure-c1/README.md"
+    ],
+    [
+      "manufacturing/lcd-fit/README.md",
+      "../../docs/verification/lcd-fit/quick-slicer-checks.json"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "../lcd-fit/lcd-fit-l1.3mf"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "../../docs/lcd-fit-correction.md"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "bench-panel-b2.3mf"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "../../docs/bench-panel-b2-guide.md"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "../../mechanical/bench-holder/bench-panel-b2.FCStd"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "bench-panel-b2-assembly.step"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "controlpanel.stl"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "displaythumbscrew.stl"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "displayfitcoupon.stl"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "threadfita.stl"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "threadfitb.stl"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "threadfitc.stl"
+    ],
+    [
+      "manufacturing/bench-panel-b2/README.md",
+      "../../docs/verification/bench-panel-b2/README.md"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../docs/lcd-fit-correction.md"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../docs/enclosure-c1-guide.md"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "ctcss-c1.3mf"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../mechanical/enclosure/c1/ctcss-c1.FCStd"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "supporting/step/ctcss-c1-assembly.step"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "supporting/stl/"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../docs/verification/enclosure-c1/"
+    ],
+    [
+      "manufacturing/enclosure-c1/README.md",
+      "../../docs/reference/ic229h-mounting.md"
+    ],
+    [
+      "docs/verification/lcd-fit/README.md",
+      "failed-coupon-2026-11-17.json"
+    ],
+    [
+      "docs/verification/lcd-fit/README.md",
+      "xy-review.json"
+    ],
+    [
+      "docs/verification/lcd-fit/README.md",
+      "native-checks.json"
+    ],
+    [
+      "docs/verification/lcd-fit/README.md",
+      "../enclosure-c1/export-checks.json"
+    ],
+    [
+      "docs/verification/lcd-fit/README.md",
+      "quick-slicer-checks.json"
+    ],
+    [
+      "docs/verification/lcd-fit/README.md",
+      "inventory-preflight.json"
+    ],
+    [
+      "docs/verification/lcd-fit/README.md",
+      "../../../manufacturing/lcd-fit/README.md"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "../lcd-fit/failed-coupon-2026-11-17.json"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "../../lcd-fit-correction.md"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "cad-checks.json"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "slicer-checks.json"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "layer-checks.json"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "slice-1.png"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "slice-2.png"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "../../bench-panel-b2-guide.md"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "inventory-preflight.json"
+    ],
+    [
+      "docs/verification/bench-panel-b2/README.md",
+      "../bench-holder/README.md#inventory-findings-and-disposition"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "../../lcd-fit-correction.md"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "cad-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "export-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "slicer-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layer-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layers-1.png"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layers-2.png"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layers-3.png"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "layers-4.png"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "inventory-preflight.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "inventory-input.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "package-checks.json"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "../../enclosure-c1-guide.md"
+    ],
+    [
+      "docs/verification/enclosure-c1/README.md",
+      "../../reference/ic229h-mounting.md"
+    ]
+  ],
+  "quick_print_estimate": {
+    "minutes": 80.04959309895834,
+    "grams": 14.68996524810791
+  },
+  "visual_review": "Native front/rear layout, support section, 9.13 mm depth diagram, B2/C1 extrusion layers and native quick-project preview inspected.",
+  "sha256": {
+    "docs/images/lcd-fit/bezel-projection-caliper.jpg": "9654950ce144dfc94ed06815ffbc005df0277c4bef2bc401b9badc6b885fda15",
+    "docs/images/lcd-fit/corrected-front-and-rear.png": "2fb3d93b3e92b7249f71397883bf7397c4e36dbbf9e7a76d8089bd098f32dcae",
+    "docs/images/lcd-fit/depth-measurement.png": "8cdc44d7f1ec28a88e1f9bd57e5ea5ec9fe92f29942f0ed2cae7590b421c2058",
+    "docs/images/lcd-fit/failed-depth.jpg": "fbf595e9cb966bc4a838f5f3e1dfa77e5ce71424d7c46529bf281e1bf63de740",
+    "docs/images/lcd-fit/failed-ear-alignment.jpg": "fd8833ac0bcf2d388ea28c0ae87888ff9693784a306fd585698e5505734ece4b",
+    "docs/images/lcd-fit/failed-window.jpg": "cf03f361a014313d47e21cd5ba6a937575a6412b2a89e47645a8d017fbbdc929",
+    "docs/images/lcd-fit/quick-project-preview.png": "5492a712b9dea891d61ecb18ac25925add3f8e73eefef1cacf43ddc5755b827b",
+    "docs/lcd-fit-correction.md": "907f05c13c739a2d67671e7ee14df0b6a5767214b0ce88eb567eec4482e56bef",
+    "docs/verification/bench-panel-b2/package.json": "8cd650a3f4db190421381f59576d11f046044e300d1677244e86f5297ecf27c5",
+    "docs/verification/enclosure-c1/package-checks.json": "d884ebf6f705294459030f668f40c2f5e6dbd23c5ab5f3055a2ae76fe961fa24",
+    "docs/verification/lcd-fit/failed-coupon-2026-11-17.json": "fbb747877891d18c53d9521252b24853c3657ef89886a1d597ce75c49e33080d",
+    "docs/verification/lcd-fit/inventory-preflight.json": "e316cd34d898613477cace8c72be2475e73b89ed5c63d8be5e7bdee1d727afae",
+    "docs/verification/lcd-fit/native-checks.json": "95cbe3209909455c5dc7ffa1c93ec8c38e29a69322a04476891b31e8fd515286",
+    "docs/verification/lcd-fit/quick-slicer-checks.json": "1399a537d060c3a451d7d6d543b8299d8cd96f055376af8aa0a5c983ff35cb0c",
+    "docs/verification/lcd-fit/README.md": "2f5173b09b30d6c918bd5903352918980fb6bbb958e44b64855da7d102424a34",
+    "docs/verification/lcd-fit/xy-review.json": "0a10039ff56082f829a760d4abd1bdc13ee28c7506fcdde34bf907ae96f156ef",
+    "manufacturing/bench-panel-b2/bench-panel-b2.3mf": "8207699008d0226c8bbe00a06e4fac6695bba80dc8b0cb86d244498909ffa413",
+    "manufacturing/enclosure-c1/ctcss-c1.3mf": "260d616d494997d4cbc632805e2cbc8c8ef58705892eaf9ff503c531cafceb75",
+    "manufacturing/lcd-fit/lcd-fit-l1.3mf": "00b20a4f2b5c52d19d23143ba3f9dd8a9cb4db42c794f751d2eaa67896a6798e",
+    "manufacturing/lcd-fit/README.md": "4d85c86baff7760b316f4a203b91938e1ab4ad37ed88811ef06d4a10c66bd8e8",
+    "mechanical/bench-holder/bench-panel-b2.FCStd": "e5413e5c4bc50a7efcaf184d6170949073bad697af49764611ab6512e8ce2735",
+    "mechanical/enclosure/c1/ctcss-c1.FCStd": "c73f9917ac722ef49c763103dea1a363d0f8a0d4a9f71ec4840f363b60133e77",
+    "mechanical/interfaces/grove-lcd-v4.json": "b67d2d9b8408834bcfb0d9766e693482070209be0e74e04fe39e2734954d8f91",
+    "tools/grove-lcd-v4.py": "bcf0f537a911d1df0d142bde9c576e7c7c165cc7e872e4cab6073ac8bd2f471f",
+    "tools/prepare-lcd-fit.py": "d1897056604194e76002ead03e0b4892dfbce9f4e3fd9f693caa5a1ea035f568",
+    "tools/render-grove-lcd-fit.py": "cebb73a7dcec21b58213123b050127459516f62ec711e06775284c359703fe40"
+  }
+}

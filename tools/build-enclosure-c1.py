@@ -28,9 +28,16 @@ HOLES = [(34.,90.), (122.,90.), (34.,228.), (122.,228.)]
 CLAMP_CENTRES = [(21.,90.), (135.,90.), (21.,228.), (135.,228.)]
 PANEL_PINS = [(5.5,8.), (149.,8.), (5.5,82.), (149.,82.)]
 PANEL_PLACEMENT = App.Placement(App.Vector(0,0,32), App.Rotation(App.Vector(1,0,0),30))
-EARS = [(20.,28.9),(60.,28.9),(40.,73.1),(80.,73.1)]
+_lcd_spec=importlib.util.spec_from_file_location('grove_lcd_v4',Path(__file__).with_name('grove-lcd-v4.py'))
+lcd=importlib.util.module_from_spec(_lcd_spec);_lcd_spec.loader.exec_module(lcd)
+LCD_ORIGIN=(12.6,31.0)  # Include the unused left ear: 0.5 mm clear of x10 rail.
+EARS=lcd.holes(LCD_ORIGIN)
+ALL_EARS=lcd.holes(LCD_ORIGIN,all_six=True)
+LCD_SUPPORT_DEPTH=lcd.support_depth()
+LCD_PCB_REAR_Z=-LCD_SUPPORT_DEPTH-lcd.DATA['pcb_thickness_mm']
+LCD_CLIP_Z=LCD_PCB_REAR_Z-3
 LCD_CLAMPS = [(x,y+(-7.5 if y<50 else 7.5)) for x,y in EARS]
-WINDOW = (15.15,44.39,65.5,15.5)
+WINDOW=lcd.window(LCD_ORIGIN)
 CONTROLS = [('Encoder',110.,47.,7.2),('Bypass',135.,47.,6.5),
             ('Mic',80.,14.,16.2),('Radio',122.,14.,16.2),
             ('PttLed',106.,74.,5.2),('BypassLed',132.,74.,5.2)]
@@ -49,7 +56,7 @@ def main():
     spec=importlib.util.spec_from_file_location('bench_builder',ROOT/'tools/build-bench-holder.py')
     old=importlib.util.module_from_spec(spec);spec.loader.exec_module(old)
     doc=App.newDocument('CTCSS_C1')
-    doc.Label='C1 - narrow enclosure and 12 degree radio cradle - PLA PROTOTYPE'
+    doc.Label='C1 / L1 corrected LCD - narrow PLA radio cradle'
     m=old.Builder(doc)
     production=doc.addObject('App::DocumentObjectGroup','EnclosureParts')
     coupons=doc.addObject('App::DocumentObjectGroup','IndependentFitCoupons')
@@ -123,11 +130,11 @@ def main():
         m.circles(p,name+'MountingLand',[(x,y)],r,3,depth,True)
     m.circles(p,'LedFlangeSeats',[(106,74),(132,74)],3.5,0,1.6,True,True)
     # Same ear geometry as B2, now retained with off-board M3 insert clamps.
-    m.circles(p,'DisplayEarSeats',EARS,2.1,0,14,reverse=True)
-    m.circles(p,'DisplayLocatingNubs',EARS,.9,-14,1.2,reverse=True)
-    m.circles(p,'DisplayInsertBosses',LCD_CLAMPS,5,0,15.6,reverse=True)
+    m.circles(p,'DisplayEarSeats',EARS,2.1,0,LCD_SUPPORT_DEPTH,reverse=True)
+    m.circles(p,'DisplayLocatingNubs',EARS,.9,-LCD_SUPPORT_DEPTH,1.2,reverse=True)
+    m.circles(p,'DisplayInsertBosses',LCD_CLAMPS,5,0,-LCD_PCB_REAR_Z,reverse=True)
     # Insert from rear: pocket grows into the panel, so use reversed Pocket.
-    m.circles(p,'DisplayInsertPilots',LCD_CLAMPS,PILOT_D/2,-15.6,5.5,True,True)
+    m.circles(p,'DisplayInsertPilots',LCD_CLAMPS,PILOT_D/2,LCD_PCB_REAR_Z,5.5,True,True)
     for name,text,x,y,size in [('Tone','TONE',110,61,2.8),('Bypass','BYPASS',135,59,2.4),
                               ('Ptt','PTT',106,82,2.5),('BypassLed','BYP',132,82,2.5),
                               ('Mic','MIC',80,29,2.7),('Radio','RADIO',122,29,2.7)]:
@@ -158,11 +165,11 @@ def main():
     clip=body('DisplayEarClip')
     m.rectangle(clip,'ClipSkin',(-5,-4,10,14),0,3)
     m.circles(clip,'ClipScrewClearance',[(0,0)],1.7,3,3,True)
-    clip.Placement=PANEL_PLACEMENT.multiply(App.Placement(App.Vector(*LCD_CLAMPS[0],-18.6),App.Rotation()))
+    clip.Placement=PANEL_PLACEMENT.multiply(App.Placement(App.Vector(*LCD_CLAMPS[0],LCD_CLIP_Z),App.Rotation()))
     for i,(x,y) in enumerate(LCD_CLAMPS[1:],2):
         link=doc.addObject('App::Link','InstalledDisplayClip'+str(i));link.setLink(clip)
         angle=180 if y>50 else 0
-        link.LinkPlacement=PANEL_PLACEMENT.multiply(App.Placement(App.Vector(x,y,-18.6),App.Rotation(App.Vector(0,0,1),angle)))
+        link.LinkPlacement=PANEL_PLACEMENT.multiply(App.Placement(App.Vector(x,y,LCD_CLIP_Z),App.Rotation(App.Vector(0,0,1),angle)))
         production.addObject(link)
 
     c=body('SlidingCover')
@@ -243,24 +250,25 @@ def main():
     q=body('DisplayFitCoupon',coupons)
     m.rectangle(q,'DisplayCouponSkin',(5,13,92,74),0,3)
     m.rectangle(q,'DisplayCouponWindow',WINDOW,3,3,True)
-    m.circles(q,'CouponDisplayEarSeats',EARS,2.1,0,14,reverse=True)
-    m.circles(q,'CouponDisplayNubs',EARS,.9,-14,1.2,reverse=True)
-    m.circles(q,'CouponDisplayBosses',LCD_CLAMPS,5,0,15.6,reverse=True)
-    m.circles(q,'CouponDisplayInsertPilots',LCD_CLAMPS,PILOT_D/2,-15.6,5.5,True,True)
+    m.circles(q,'CouponDisplayEarSeats',EARS,2.1,0,LCD_SUPPORT_DEPTH,reverse=True)
+    m.circles(q,'CouponDisplayNubs',EARS,.9,-LCD_SUPPORT_DEPTH,1.2,reverse=True)
+    m.circles(q,'CouponDisplayBosses',LCD_CLAMPS,5,0,-LCD_PCB_REAR_Z,reverse=True)
+    m.circles(q,'CouponDisplayInsertPilots',LCD_CLAMPS,PILOT_D/2,LCD_PCB_REAR_Z,5.5,True,True)
 
     board=Part.makeBox(100,150,1.5,App.Vector(PCB_X,PCB_Y,PCB_Z))
     for x,y in HOLES:board=board.cut(Part.makeCylinder(2,1.5,App.Vector(x,y,15)))
     ref('PcbReference',board)
     ref('PcbComponentAllowance',Part.makeBox(100,150,30,App.Vector(28,84,16.5)))
     ref('PcbLeadAllowance',Part.makeBox(100,150,2,App.Vector(28,84,13)))
-    lcd=Part.makeBox(80,40,1.6,App.Vector(10,31,-15.6))
-    for x,y in EARS:
-        lcd=lcd.fuse(Part.makeCylinder(2.1,1.6,App.Vector(x,y,-15.6)))
-        lcd=lcd.cut(Part.makeCylinder(1.15,1.6,App.Vector(x,y,-15.6)))
-    ref('DisplayPcbReference',lcd,placement=PANEL_PLACEMENT)
-    ref('DisplayBezelReference',Part.makeBox(70.8,23.8,9.8,App.Vector(12.5,42.49,-14)),placement=PANEL_PLACEMENT)
-    ref('DisplayRearElectronicsAllowance',Part.makeBox(70,25,2.1,App.Vector(15,37,-17.7)),placement=PANEL_PLACEMENT)
-    ref('GrovePlugAndBendAllowance',Part.makeBox(18,23,9,App.Vector(25,25,-14)),placement=PANEL_PLACEMENT)
+    lcd_board=Part.makeBox(80,40,1.6,App.Vector(*LCD_ORIGIN,LCD_PCB_REAR_Z))
+    for x,y in ALL_EARS:
+        lcd_board=lcd_board.fuse(Part.makeCylinder(2.1,1.6,App.Vector(x,y,LCD_PCB_REAR_Z)))
+        lcd_board=lcd_board.cut(Part.makeCylinder(1.15,1.6,App.Vector(x,y,LCD_PCB_REAR_Z)))
+    ref('DisplayPcbReference',lcd_board,placement=PANEL_PLACEMENT)
+    bx,by,bw,bh=lcd.bezel(LCD_ORIGIN)
+    ref('DisplayBezelReference',Part.makeBox(bw,bh,lcd.DATA['measured_pcb_front_to_bezel_front_mm'],App.Vector(bx,by,-LCD_SUPPORT_DEPTH)),placement=PANEL_PLACEMENT)
+    ref('DisplayRearElectronicsAllowance',Part.makeBox(70,25,2.1,App.Vector(LCD_ORIGIN[0]+5,37,LCD_PCB_REAR_Z-2.1)),placement=PANEL_PLACEMENT)
+    ref('GrovePlugAndBendAllowance',Part.makeBox(18,23,9,App.Vector(LCD_ORIGIN[0]+15,25,-LCD_SUPPORT_DEPTH)),placement=PANEL_PLACEMENT)
     for name,x,y,d in CONTROLS:
         if name in ['Mic','Radio']:
             ref(name+'RearEnvelope',Part.makeCylinder(12,30,App.Vector(x,y,-30)),placement=PANEL_PLACEMENT)
@@ -295,6 +303,9 @@ def main():
         'screw_standard':'M3 x 8 socket head cap; radio OEM screws pending identification',
         'side_slide_clearance_mm':.3,'lower_slide_clearance_mm':.3,'upper_diagonal_vertical_clearance_mm':.4,
         'control_holes':CONTROLS,'lcd_ears_mm':EARS,'lcd_clamps_mm':LCD_CLAMPS,
+        'lcd_interface_revision':'L1','lcd_all_six_ears_mm':ALL_EARS,'lcd_pcb_origin_mm':LCD_ORIGIN,
+        'lcd_definition_sha256':hashlib.sha256(lcd.DEFINITION.read_bytes()).hexdigest(),
+        'lcd_support_depth_mm':LCD_SUPPORT_DEPTH,'lcd_window_datum':'lower left of front-view viewing area minus clearance',
         'window_mm':WINDOW,'parts':[],'intersections_mm3':{},'baseline_sha256':hashes,
         'radio_holes_local_yz_mm':RADIO_HOLES,'radio_screw':'8820000530, M4 x 8 inferred by Icom part-number match',
         'physical_acceptance':'not run','remaining':['radio bolt engagement acceptance','installed cable envelopes','PLA load/temperature acceptance','insert quantity']}
@@ -311,7 +322,7 @@ def main():
     doc.saveAs(str(CAD))
     if App.GuiUp:
         import FreeCADGui as Gui
-        v=Gui.activeDocument().activeView();v.viewAxonometric();v.fitAll()
+        v=Gui.getDocument(doc.Name).activeView();v.viewAxonometric();v.fitAll()
         v.saveImage(str(IMG/'assembly.png'),1600,1100,'White')
         doc.getObject('RadioReference_140x155x40').Visibility=False
         doc.getObject('SlidingCover').Visibility=False

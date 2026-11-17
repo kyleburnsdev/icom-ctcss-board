@@ -9,6 +9,7 @@ The schematic and routed PCB prototype are complete; assembly components have be
 | Requirements, parts and build instructions | [Project documentation](docs/README.md) |
 | Temporary bench assembly and radio-free testing | [Illustrated holder guide](docs/bench-holder-guide.md) and [print package](manufacturing/bench-holder/README.md) |
 | Rear-mounted bench display | [B2 replacement panel and printed fasteners](manufacturing/bench-panel-b2/README.md), reusing the B1 base |
+| LCD fit correction | [L1 screen-only retest](manufacturing/lcd-fit/README.md), using the measured 9.13 mm projection and corrected hole/window datums |
 | Narrow enclosure and radio cradle | [C1 PLA prototype](manufacturing/enclosure-c1/README.md): rotated PCB, corner straps, sliding cover and 12° radio support |
 | Electronics | [KiCad project](electronics/icom-ctcss-board.kicad_pro), with project-local libraries beside it |
 | Final product harnesses | [Illustrated wiring and termination guide](docs/final-product-wiring-guide.md), with every header connection, wire gauge/color and acceptance checks |

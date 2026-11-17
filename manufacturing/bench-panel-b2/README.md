@@ -1,5 +1,10 @@
 # B2 replacement control panel
 
+**Current LCD interface: L1.** Start with the
+[screen-only retest project](../lcd-fit/lcd-fit-l1.3mf) and reuse the printed B2
+thumb screws. The original failed coupon is superseded; see
+[L1 fit findings and the 9.13 mm measurement](../../docs/lcd-fit-correction.md).
+
 **Open [bench-panel-b2.3mf](bench-panel-b2.3mf) as a project and print plate 01
 first.** Follow the [illustrated printing and assembly guide](../../docs/bench-panel-b2-guide.md).
 
@@ -11,13 +16,14 @@ custom 5 mm × 1 mm threads, not standard M5 screws.
 This is a replacement for the removable B1 panel. **Reuse the existing B1 base,
 panel screws, inserts, LED keeper, controls and main-PCB supports.** The panel's
 210 × 90 mm outline, 3 mm skin, 30° installed placement and four base holes stay
-unchanged. The display shifts 3 mm right for rear PCB-to-rail clearance. Labels
+unchanged. The PCB datum is X15.6/Y25; all six ears clear the base, with 0.5 mm
+at the unused left ear. Supports are 9.43 mm deep. Labels
 are engraved so the panel prints front down with the rear supports up.
 
 | Plate | Contents | Slicer estimate |
 | --- | --- | --- |
-| 01 - TEST FIT - rear display and threads | Independent full display interface coupon, three thread trials, four trial thumb screws | 2 h 22 min / 22.2 g |
-| 02 - FINAL - replacement panel and clamps | One replacement panel and four thumb screws | 3 h 39 min / 50.1 g |
+| 01 - TEST FIT - L1 corrected LCD and threads | Independent full display interface coupon, three thread trials, four trial thumb screws | 2 h 6 min / 20.7 g |
+| 02 - FINAL - L1 corrected panel and clamps | One replacement panel and four thumb screws | 3 h 22 min / 48.7 g |
 
 Four accepted test screws can be reused; the production duplicates are optional.
 The project embeds installed X1C 0.4 / Generic PLA / Textured PEI settings:

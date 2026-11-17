@@ -10,6 +10,20 @@ Unless explicitly identified as user-provided, dimensions and load screens below
 
 ## Working values and validation
 
+### LCD fit failure and L1 correction — 2026-11-17
+
+The user reports the original B2 screen coupon failed size and alignment. C1
+inherited the same interface. Both LCD manufacturing packages now use the
+[L1 correction](../lcd-fit-correction.md). The review found a 44.2 mm generated hole-row span
+where the drawing specifies 40 mm, a viewing-window datum 2.45 mm too low, and
+two unused side ears absent from the clearance reference. R2.10 is an ear radius,
+not a center offset. Correct coordinates are shared in
+`mechanical/interfaces/grove-lcd-v4.json`. Hole/window drawing checks pass. To
+replace the unsupported 14 mm seat depth, the user supplied
+**9.13 mm**, giving **9.43 mm support depth** with the selected 0.30 mm gap.
+L1 native models and print packages use this measurement. No corrected physical
+fit is claimed until the replacement coupon is accepted.
+
 ### C1 bench-derived enclosure — user direction, 2026-11-17
 
 User inputs: narrow the base by rotating the unchanged PCB 90°; compact the

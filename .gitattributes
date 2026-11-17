@@ -34,3 +34,12 @@ manufacturing/bench-panel-b2/*.step binary
 manufacturing/ec11-flange-nut/*.step binary
 manufacturing/enclosure-c1/supporting/step/*.step binary
 docs/images/populated-board-learning/*.svg binary
+
+# LCD L1 interface and its current measurement/fit evidence are content-hashed.
+mechanical/interfaces/*.json -text
+docs/lcd-fit-correction.md -text
+docs/verification/lcd-fit/** -text
+tools/grove-lcd-v4.py -text
+tools/render-grove-lcd-fit.py -text
+tools/prepare-lcd-fit.py -text
+manufacturing/lcd-fit/** -text

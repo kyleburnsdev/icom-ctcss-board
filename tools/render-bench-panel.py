@@ -30,27 +30,28 @@ def layout():
     for text,x,y in [('LCD',55,73),('TONE',120,66),('BYPASS',155,57),('PTT TEST',190,63),('PTT',148,79),('BYPASS',172,79),('MIC',120,4),('RADIO',165,4)]:axs[0].text(x,y,text,ha='center',fontsize=8)
     axs[0].text(53,46,'65.5 × 15.5',ha='center',va='center',fontsize=10)
     ax=axs[1];ax.set_title('REAR — shown through face in the same XY coordinates',fontsize=14,weight='bold')
-    ax.add_patch(Rectangle((15,25),80,40,fc='#6da483',alpha=.6,ec='#276547'))
-    for x,y in g['ear_centers_mm']:
+    ax.add_patch(Rectangle(g['lcd_pcb_origin_mm'],80,40,fc='#6da483',alpha=.6,ec='#276547'))
+    for x,y in g['all_six_ear_centers_mm']:
         ax.add_patch(Circle((x,y),2.1,fc='#6da483',ec='#276547'))
         ax.add_patch(Circle((x,y),1.15,fc='white',ec='#276547'))
     for x,y in g['clamp_centers_mm']:
         ax.add_patch(Circle((x,y),8.5,fc='#c5cbd1',ec='#45515e',alpha=.85))
         ax.add_patch(Circle((x,y),2.5,fc='#657887',ec='#45515e'))
-    ax.annotate('4 printed thumb screws\nheads overlap mounting ears',xy=(25,15.9),xytext=(4,-18),fontsize=10,arrowprops={'arrowstyle':'->'})
+    ax.annotate('4 printed thumb screws\nheads overlap mounting ears',xy=g['clamp_centers_mm'][0],xytext=(4,-18),fontsize=10,arrowprops={'arrowstyle':'->'})
     ax.annotate('Grove socket + cable stay inside',xy=(39,29),xytext=(100,90),fontsize=10,arrowprops={'arrowstyle':'->'})
     ax.set_ylim(-22,102)
     ax=axs[2];ax.axis('off');ax.set(xlim=(-4,40),ylim=(-22,12))
     ax.set_title('SECTION AT ONE LOWER EAR — schematic, axial references in mm',fontsize=14,weight='bold')
     # X here is distance along the panel; Z is the actual panel-local normal.
     ax.add_patch(Rectangle((0,0),32,3,fc='#9db5c8',ec='#344e61'))
-    ax.add_patch(Rectangle((5.2,-14),9.6,14,fc='#9db5c8',ec='#344e61'))
-    ax.add_patch(Rectangle((14.9,-14),4.2,14,fc='#9db5c8',ec='#344e61'))
-    ax.add_patch(Rectangle((14.9,-15.6),12,1.6,fc='#6da483',ec='#276547'))
-    ax.add_patch(Rectangle((1.5,-18),17,2.4,fc='#c5cbd1',ec='#45515e'))
-    ax.add_patch(Rectangle((7.5,-15.6),5,7,fc='#657887',ec='#45515e'))
+    depth=g['support_depth_mm'];pcb_rear=-depth-1.6
+    ax.add_patch(Rectangle((5.2,-depth),9.6,depth,fc='#9db5c8',ec='#344e61'))
+    ax.add_patch(Rectangle((14.9,-depth),4.2,depth,fc='#9db5c8',ec='#344e61'))
+    ax.add_patch(Rectangle((14.9,pcb_rear),12,1.6,fc='#6da483',ec='#276547'))
+    ax.add_patch(Rectangle((1.5,pcb_rear-2.4),17,2.4,fc='#c5cbd1',ec='#45515e'))
+    ax.add_patch(Rectangle((7.5,pcb_rear),5,7,fc='#657887',ec='#45515e'))
     ax.annotate('Front Z+3 / rear Z0',xy=(27,2),xytext=(18,9),fontsize=10,arrowprops={'arrowstyle':'->'})
-    ax.annotate('Ear seats: Z−14\nPCB rear: Z−15.6 nominal',xy=(18,-14),xytext=(21,-5),fontsize=10,arrowprops={'arrowstyle':'->'})
+    ax.annotate(f'Ear seats: Z−{depth:.2f}\nPCB rear: Z{pcb_rear:.2f} nominal',xy=(18,-depth),xytext=(21,-5),fontsize=10,arrowprops={'arrowstyle':'->'})
     ax.text(2,-21,'Finger-tight head clamps the ear; glass is not in the clamping stack.',fontsize=10)
     fig.savefig(IMG/'layout.png',dpi=160);plt.close(fig)
 
@@ -62,7 +63,7 @@ def layers():
     for i in [1,2]:
         with zipfile.ZipFile(OUT/'bench-panel-b2.3mf') as z:lines=z.read(f'Metadata/plate_{i}.gcode').decode().splitlines()
         heights=sorted({float(s.split(':')[1]) for s in lines if s.startswith('; Z_HEIGHT:')})
-        targets=[min(heights,key=lambda h:abs(h-t)) for t in [.2,.44,1.04,1.52,4.04,16.04]]
+        targets=[min(heights,key=lambda h:abs(h-t)) for t in [.2,.44,1.04,1.52,4.04,g['support_depth_mm']+4.2]]
         selected={t:[] for t in targets};pos={'X':0.,'Y':0.};height=None;feature=''
         for line in lines:
             if line.startswith('; Z_HEIGHT:'):height=float(line.split(':')[1])

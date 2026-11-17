@@ -1,0 +1,73 @@
+{
+  "interface_revision": "L1",
+  "drawing_review": "40 mm mounting rows; VA bottom = 40 - 9.16 - 14.50 = 16.34 mm",
+  "b2": {
+    "pcb_origin_mm": [
+      15.6,
+      25
+    ],
+    "used_holes_mm": [
+      [
+        25.6,
+        25.0
+      ],
+      [
+        65.6,
+        25.0
+      ],
+      [
+        45.6,
+        65.0
+      ],
+      [
+        85.6,
+        65.0
+      ]
+    ],
+    "window_mm": [
+      20.75,
+      40.84,
+      65.5,
+      15.5
+    ],
+    "unused_left_ear_to_rail_mm": 0.5
+  },
+  "c1": {
+    "pcb_origin_mm": [
+      12.6,
+      31
+    ],
+    "used_holes_mm": [
+      [
+        22.6,
+        31.0
+      ],
+      [
+        62.6,
+        31.0
+      ],
+      [
+        42.6,
+        71.0
+      ],
+      [
+        82.6,
+        71.0
+      ]
+    ],
+    "window_mm": [
+      17.75,
+      46.84,
+      65.5,
+      15.5
+    ],
+    "unused_left_ear_to_rail_mm": 0.5
+  },
+  "python_syntax": "pass",
+  "front_rear_coordinate_review": "pass; X mirrored once for rear view",
+  "native_export_and_slicer": "passed for B2, C1 and screen-only L1 retest; native reopen and slicing warnings empty",
+  "physical_fit": "original coupon failed; corrected coupon not printed",
+  "user_projection_mm": 9.13,
+  "selected_gap_mm": 0.3,
+  "support_depth_mm": 9.43
+}

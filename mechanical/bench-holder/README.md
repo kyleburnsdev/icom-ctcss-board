@@ -1,5 +1,10 @@
 # B1 temporary assembled-board bench holder
 
+The B2 rear-display panel now uses the **L1 LCD correction**: 40 mm mounting
+rows, corrected window datum and 9.43 mm seats from the user's 9.13 mm bezel
+projection. Retest with the [one-object print project](../../manufacturing/lcd-fit/README.md)
+before another full panel. B1's printed base/interface remain unchanged.
+
 **Current rear-display alternative:** [bench-panel-b2.FCStd](bench-panel-b2.FCStd)
 preserves B1's base interface and control holes while replacing the front LCD
 mount with a viewing window, rear ear supports and printed coarse thumb screws.

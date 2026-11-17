@@ -89,7 +89,8 @@ def layers():
         'Top surface':'#208f75','Internal solid infill':'#64acac','Sparse infill':'#b4c8c7',
         'Bridge':'#e27625','Overhang wall':'#ae4b9b','Brim':'#999999','Gap infill':'#e8a632'}
     records=[]
-    target_sets={1:[.2,2,15,18.6],2:[.2,15,50.2,58.8],3:[.2,3.2,16.6,18.6],4:[.2,6.2,9,30]}
+    cad=json.loads((EV/'cad-checks.json').read_text());depth=cad['lcd_support_depth_mm']
+    target_sets={1:[.2,2,depth+3,depth+4.6],2:[.2,15,50.2,58.8],3:[.2,3.2,depth+3.2,depth+4.6],4:[.2,6.2,9,30]}
     with zipfile.ZipFile(ROOT/'manufacturing/enclosure-c1/ctcss-c1.3mf') as z:
         for i,requested in target_sets.items():
             lines=z.read(f'Metadata/plate_{i}.gcode').decode().splitlines()

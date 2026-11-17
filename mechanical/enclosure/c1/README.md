@@ -1,5 +1,11 @@
 # C1 — bench-derived narrow enclosure
 
+**LCD interface L1:** the panel/coupon now read the shared
+[Grove definition](../../interfaces/grove-lcd-v4.json), including the corrected
+40 mm row spacing/window datum and 9.43 mm seat depth from the user's 9.13 mm
+measurement. Print the new LCD coupon before a full panel. The base, cover,
+saddles, cheeks and main-PCB straps are geometrically unchanged by L1.
+
 Open [ctcss-c1.FCStd](ctcss-c1.FCStd) in FreeCAD 1.1. The new design preserves
 the earlier B1/B2/P1 sources and their live documents. See the
 [illustrated guide](../../../docs/enclosure-c1-guide.md) and

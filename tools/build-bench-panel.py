@@ -14,14 +14,17 @@ OUT=ROOT/'manufacturing/bench-panel-b2'
 EV=ROOT/'docs/verification/bench-panel-b2'
 CAD=ROOT/'mechanical/bench-holder/bench-panel-b2.FCStd'
 WORK=ROOT/'.agent-scratch/panel-rear-display'
-# Page 23 of the JHD1313 V4 drawing: PCB body x12..92/y25..65;
-# ear centres project 2.1 beyond top/bottom, not onto the rectangular outline.
-DISPLAY_SHIFT_X=3.0 # Keep the rear PCB 2 mm inside the unchanged x=13 rail.
-EARS=[(25,22.9),(65,22.9),(45,67.1),(85,67.1)]
+_lcd_spec=importlib.util.spec_from_file_location('grove_lcd_v4',Path(__file__).with_name('grove-lcd-v4.py'))
+lcd=importlib.util.module_from_spec(_lcd_spec);_lcd_spec.loader.exec_module(lcd)
+# Include the unused side ear: x15.6 - R2.1 leaves 0.5 mm to B1's x13 rail.
+LCD_ORIGIN=(15.6,25.0)
+EARS=lcd.holes(LCD_ORIGIN)
+ALL_EARS=lcd.holes(LCD_ORIGIN,all_six=True)
 CLAMPS=[(x,y+(-7 if y<45 else 7)) for x,y in EARS]
-SUPPORT_DEPTH=14.0
+SUPPORT_DEPTH=lcd.support_depth()
+PCB_REAR_Z=-SUPPORT_DEPTH-lcd.DATA['pcb_thickness_mm']
 PITCH=1.0  # Deliberately coarse PRINTED thread; not standard M5 hardware.
-WINDOW=(20.15,38.39,65.5,15.5) # 0.5 mm each side around 64.5 x14.5 viewing area
+WINDOW=lcd.window(LCD_ORIGIN)
 NAMES=['ControlPanel','DisplayThumbScrew','DisplayFitCoupon','ThreadFitA','ThreadFitB','ThreadFitC']
 
 def load_builder():
@@ -59,7 +62,7 @@ def main():
     live=[d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==src.resolve()]
     assert not live or not live[0].isTouched(),'Preserve unsaved B1 work'
     checkpoint=WORK/'b1-read-only-copy.FCStd';shutil.copyfile(src,checkpoint)
-    doc=App.openDocument(str(checkpoint));doc.Label='B2 rear-display panel - B1 base interface'
+    doc=App.openDocument(str(checkpoint));doc.Label='B2 / L1 corrected LCD - 9.13 mm measured projection'
     mod=load_builder();m=mod.Builder(doc)
     p=doc.getObject('ControlPanel');original=p.Shape.copy();place=p.Placement
     # Roll back the native feature history at the unchanged keeper sockets.
@@ -74,8 +77,8 @@ def main():
     m.rectangle(p,'DisplayViewingWindow',WINDOW,3,3,True)
     # Support only the mounting ears, with no preload on glass or electronics.
     m.circles(p,'DisplayEarSeats',EARS,2.1,0,SUPPORT_DEPTH,reverse=True)
-    m.circles(p,'DisplayEarLocators',EARS,.9,-14,1.2,reverse=True)
-    socket(m,p,'DisplayClamp',CLAMPS)
+    m.circles(p,'DisplayEarLocators',EARS,.9,-SUPPORT_DEPTH,1.2,reverse=True)
+    socket(m,p,'DisplayClamp',CLAMPS,bottom=-SUPPORT_DEPTH)
     # Engrave labels to allow front-face-down printing of integral rear posts.
     for name,text,x,y,size in [('Lcd','LCD',55,73,3),('Tone','TONE',120,66,3),
         ('Bypass','BYPASS',155,57,2.8),('PttTest','PTT TEST',190,63,2.8),
@@ -102,8 +105,8 @@ def main():
     c=m.body('DisplayFitCoupon');m.rectangle(c,'DisplayCouponSkin',(15,12,80,68),0,3)
     m.rectangle(c,'CouponWindow',WINDOW,3,3,True)
     m.circles(c,'CouponEarSeats',EARS,2.1,0,SUPPORT_DEPTH,reverse=True)
-    m.circles(c,'CouponEarLocators',EARS,.9,-14,1.2,reverse=True)
-    socket(m,c,'CouponClamp',CLAMPS)
+    m.circles(c,'CouponEarLocators',EARS,.9,-SUPPORT_DEPTH,1.2,reverse=True)
+    socket(m,c,'CouponClamp',CLAMPS,bottom=-SUPPORT_DEPTH)
     for letter,a in [('A',.10),('B',.15),('C',.20)]:
         c=m.body('ThreadFit'+letter)
         m.rectangle(c,'TrialFoot'+letter,(-7,-7,14,14),0,3)
@@ -116,21 +119,21 @@ def main():
         shape.Placement=place.multiply(shape.Placement)
         o=doc.addObject('Part::Feature',name);o.Shape=shape;refs.addObject(o)
         o.ViewObject.ShapeColor=(.15,.45,.32);return o
-    pcb=Part.makeBox(80,40,1.6,App.Vector(15,25,-15.6))
-    for x,y in EARS:
-        pcb=pcb.fuse(Part.makeCylinder(2.1,1.6,App.Vector(x,y,-15.6)))
-        pcb=pcb.cut(Part.makeCylinder(1.15,1.6,App.Vector(x,y,-15.6)))
+    pcb=Part.makeBox(80,40,1.6,App.Vector(*LCD_ORIGIN,PCB_REAR_Z))
+    for x,y in ALL_EARS:
+        pcb=pcb.fuse(Part.makeCylinder(2.1,1.6,App.Vector(x,y,PCB_REAR_Z)))
+        pcb=pcb.cut(Part.makeCylinder(1.15,1.6,App.Vector(x,y,PCB_REAR_Z)))
     ref('RearDisplayPcbReference',pcb)
-    # Axial split is a selected envelope; drawing gives 13.5 maximum overall.
-    bezel=Part.makeBox(70.8,23.8,9.8,App.Vector(17.5,36.49,-14))
+    bx,by,bw,bh=lcd.bezel(LCD_ORIGIN)
+    bezel=Part.makeBox(bw,bh,lcd.DATA['measured_pcb_front_to_bezel_front_mm'],App.Vector(bx,by,-SUPPORT_DEPTH))
     ref('RearDisplayBezelReference',bezel)
-    ref('DisplayRearElectronicsAllowance',Part.makeBox(70,25,2.1,App.Vector(20,31,-17.7)))
+    ref('DisplayRearElectronicsAllowance',Part.makeBox(70,25,2.1,App.Vector(LCD_ORIGIN[0]+5,31,PCB_REAR_Z-2.1)))
     # Plug plus initial wire bend allowance, routed inboard toward harness combs.
-    plug=Part.makeBox(18,23,9,App.Vector(30,19,-14))
+    plug=Part.makeBox(18,23,9,App.Vector(LCD_ORIGIN[0]+15,19,-SUPPORT_DEPTH))
     ref('DisplayPlugAndBendAllowance',plug)
     installed=[]
     for i,(x,y) in enumerate(CLAMPS,1):
-        sh=screw.Shape.copy();sh.translate(App.Vector(x,y,-18))
+        sh=screw.Shape.copy();sh.translate(App.Vector(x,y,PCB_REAR_Z-2.4))
         ref('InstalledPrintedClamp'+str(i),sh)
         installed.append('InstalledPrintedClamp'+str(i))
     for o in doc.Objects:
@@ -141,10 +144,11 @@ def main():
     group.addObjects([doc.getObject(n) for n in NAMES[1:]])
     doc.recompute()
     checks={'revision':'B2','base_source_sha256':original_hash,'parts':[],
-        'ear_centers_mm':EARS,'clamp_centers_mm':CLAMPS,'window_mm':WINDOW,
-        'support_depth_mm':SUPPORT_DEPTH,'thread':'custom 5 mm x 1 mm right hand; not M5',
+        'ear_centers_mm':EARS,'clamp_centers_mm':CLAMPS,'window_mm':WINDOW,'lcd_pcb_origin_mm':LCD_ORIGIN,
+        'support_depth_mm':SUPPORT_DEPTH,'lcd_interface_revision':'L1','all_six_ear_centers_mm':ALL_EARS,'thread':'custom 5 mm x 1 mm right hand; not M5',
+        'lcd_definition_sha256':hashlib.sha256(lcd.DEFINITION.read_bytes()).hexdigest(),
         'source_drawing':'https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/res/JHD1313%20FP-RGB-1%201.4.pdf#page=23',
-        'axial_envelope':'selected 9.8 mm PCB-front to bezel-front; max overall manufacturer 13.5 mm',
+        'axial_envelope':{'measured_front_projection_mm':lcd.DATA['measured_pcb_front_to_bezel_front_mm'],'bezel_gap_mm':lcd.DATA['bezel_to_panel_rear_gap_mm']},
         'physical_acceptance':'not run'}
     checks['base_difference_mm3']=doc.getObject('Base').Shape.cut((live[0] if live else doc).getObject('Base').Shape).Volume
     assert checks['base_difference_mm3']<1e-7
@@ -198,7 +202,7 @@ def main():
         for n in ['Base','LedKeeper','PcbSpacer']:doc.getObject(n).Visibility=False
         for n in ['RearDisplayPcbReference','RearDisplayBezelReference']+installed:doc.getObject(n).Visibility=True
         img=ROOT/'docs/images/bench-panel-b2';img.mkdir(parents=True,exist_ok=True)
-        v=Gui.activeDocument().activeView()
+        v=Gui.getDocument(doc.Name).activeView()
         v.setCameraOrientation(place.Rotation.Q);v.fitAll();v.saveImage(str(img/'native-front.png'),1600,800,'White')
         v.setCameraOrientation(place.Rotation.multiply(App.Rotation(App.Vector(1,0,0),180)).Q)
         v.fitAll();v.saveImage(str(img/'native-rear.png'),1600,800,'White')

@@ -1,5 +1,12 @@
 # B2 rear-mounted display panel
 
+> **L1 corrected LCD interface — 2026-11-17:** the original coupon failed fit.
+> The linked project now has 40 mm hole rows, a corrected window datum and
+> 9.43 mm supports based on the user's 9.13 mm measurement. Start with the
+> [screen-only retest](../manufacturing/lcd-fit/lcd-fit-l1.3mf), reusing existing
+> B2 thumb screws, or print the primary project's L1 test plate below. Accept
+> the new coupon before a full panel; see the [correction record](lcd-fit-correction.md).
+
 Print in the **existing PLA setup**, with the control panel's **front face on the
 bed** and its integral rear posts pointing up. B2 replaces only the removable
 210 × 90 mm panel. Keep the printed B1 base, its four inserts, panel screws,
@@ -13,8 +20,8 @@ fasteners or separate washers/spacers are required.
 
 | Step | File / plate | Orientation / holding | Then |
 | --- | --- | --- | --- |
-| 1 | 3MF **01 - TEST FIT - rear display and threads** | Window coupon front down; four screw heads down; trial sockets flat | Accept thread, ear, screen and plug fit |
-| 2 | **02 - FINAL - replacement panel and clamps** | Panel front down, rear posts up; four screws head down | Cool, release and inspect |
+| 1 | 3MF **01 - TEST FIT - L1 corrected LCD and threads** | Window coupon front down; four screw heads down; trial sockets flat | Accept thread, ear, screen and plug fit |
+| 2 | **02 - FINAL - L1 corrected panel and clamps** | Panel front down, rear posts up; four screws head down | Cool, release and inspect |
 | 3 | Printed B2 panel plus existing controls | Support panel on its edges with rear accessible | Transfer controls and mount display |
 | 4 | Existing four panel screws and B1 base | Keep base level; lower panel onto original rails | Route harness internally and inspect |
 
@@ -50,7 +57,7 @@ layers, 30% gyroid, 3 mm outer brim and supports off. Nominal line width is
 Generic PLA profile (220 °C nozzle / 55 °C textured bed). These are selected
 profile defaults, not physical acceptance results for this revision.
 
-Face-down printing keeps the 14 mm rear supports continuous and vertical. Labels
+Face-down printing keeps the 9.43 mm rear supports continuous and vertical. Labels
 are engraved 0.4 mm rather than raised so the front can contact the bed. The
 unchanged front hardware recesses contain short annular overhangs: inspect their
 roof and edges in the coupon/production slice and after printing. Light cleanup
@@ -66,7 +73,7 @@ temperature-rated screw joint.
 
 1. Print plate 01 and let it cool fully. Mark the three trial sockets A/B/C
    left to right before lifting them from the plate. Peel away brims; clear strings without
-   cutting threads, support tips or locator pins. The 80 × 68.9 mm display coupon
+   cutting threads, support tips or locator pins. The 80 × 68 mm display coupon
    reproduces the actual window, all four ear seats and rear clamp bosses.
 2. Trial one printed screw in the three small sockets: **A = +0.10, B = +0.15,
    C = +0.20 mm radial thread allowance**, left to right on the saved plate. B
@@ -95,17 +102,20 @@ temperature-rated screw joint.
    LCD's PCB holes or use screw torque to draw a bowed board onto the posts.
 
 The [manufacturer drawing, page 23](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/res/JHD1313%20FP-RGB-1%201.4.pdf#page=23)
-defines the 80 × 40 mm PCB body, staggered ear pattern, 2.3 mm holes and
-13.5 mm overall maximum thickness. B2 corrects the earlier supports' ear
-positions to include the 2.1 mm projections beyond the PCB edges. It shifts the
-display **3 mm right** to clear the unchanged left base rail by 2 mm at the PCB.
-No base or control mounting hole moves.
+defines the 80 × 40 mm PCB datum, staggered ear pattern and 2.3 mm holes. In the
+front view, the four used holes are **(10,0), (50,0), (30,40), (70,40)** relative
+to the PCB datum. **R2.10 is the ear radius; the hole rows are 40 mm apart.**
+All six ears are now included in the clearance reference. L1 places the PCB datum
+at **X15.6, Y25**, leaving the unused left ear 0.5 mm clear of the unchanged
+X13 base rail. No base or control mounting hole moves. The window lower-left is
+**X20.75, Y40.84**, 2.45 mm higher than the failed coupon's window.
 
-The 14 mm ear-seat depth is a selected clearance default that keeps the module
-behind the face even with the 13.5 mm maximum envelope. The reference model's
-9.8 mm PCB-front-to-bezel-front split and plug/bend envelope are selected
-approximations; the drawing does not dimension that split or the installed cable.
-The independent coupon resolves recess depth, seated viewing and plug access.
+The user measured **9.13 mm from PCB front to metal-bezel front**. L1 uses
+**9.43 mm ear-seat depth**: that measurement plus a selected **0.30 mm gap** to
+the panel rear face. The nominal 1.6 mm PCB rear is therefore at local Z−11.03.
+This replaces the failed 14 mm support and its 4.87 mm inferred gap. The plug/bend
+allowance remains a simplified reference; qualify actual cable access and viewing
+with the new coupon. See the [L1 findings and measurement](lcd-fit-correction.md).
 
 ## Print and assemble the replacement
 

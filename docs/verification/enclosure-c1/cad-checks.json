@@ -95,43 +95,76 @@
   ],
   "lcd_ears_mm": [
     [
-      20.0,
-      28.9
+      22.6,
+      31.0
     ],
     [
-      60.0,
-      28.9
+      62.6,
+      31.0
     ],
     [
-      40.0,
-      73.1
+      42.6,
+      71.0
     ],
     [
-      80.0,
-      73.1
+      82.6,
+      71.0
     ]
   ],
   "lcd_clamps_mm": [
     [
-      20.0,
-      21.4
+      22.6,
+      23.5
     ],
     [
-      60.0,
-      21.4
+      62.6,
+      23.5
     ],
     [
-      40.0,
-      80.6
+      42.6,
+      78.5
     ],
     [
-      80.0,
-      80.6
+      82.6,
+      78.5
     ]
   ],
+  "lcd_interface_revision": "L1",
+  "lcd_all_six_ears_mm": [
+    [
+      22.6,
+      31.0
+    ],
+    [
+      62.6,
+      31.0
+    ],
+    [
+      42.6,
+      71.0
+    ],
+    [
+      82.6,
+      71.0
+    ],
+    [
+      12.6,
+      61.0
+    ],
+    [
+      92.6,
+      41.0
+    ]
+  ],
+  "lcd_pcb_origin_mm": [
+    12.6,
+    31.0
+  ],
+  "lcd_support_depth_mm": 9.430000000000001,
+  "lcd_window_datum": "lower left of front-view viewing area minus clearance",
   "window_mm": [
-    15.15,
-    44.39,
+    17.75,
+    46.84,
     65.5,
     15.5
   ],
@@ -139,12 +172,12 @@
     {
       "name": "Base",
       "solids": 1,
-      "volume_mm3": 316115.0278040052
+      "volume_mm3": 316074.56593974546
     },
     {
       "name": "ControlPanel",
       "solids": 1,
-      "volume_mm3": 41976.6989408922
+      "volume_mm3": 40287.7322347512
     },
     {
       "name": "LedKeeper",
@@ -164,7 +197,7 @@
     {
       "name": "SlidingCover",
       "solids": 1,
-      "volume_mm3": 85714.00676615017
+      "volume_mm3": 86827.30451253233
     },
     {
       "name": "LeftRadioSaddle",
@@ -241,7 +274,7 @@
   },
   "baseline_sha256": {
     "mechanical\\bench-holder\\bench-holder-b1.FCStd": "1b68a6ec4275545024f69b881a803247199ad232377ab832114d92b923967186",
-    "mechanical\\bench-holder\\bench-panel-b2.FCStd": "dd74c2dd83dc76c519ad71ff86a63e4ac3219404930da311a491b42ff17d18eb"
+    "mechanical\\bench-holder\\bench-panel-b2.FCStd": "e5413e5c4bc50a7efcaf184d6170949073bad697af49764611ab6512e8ce2735"
   },
   "radio_holes_local_yz_mm": [
     [
@@ -261,25 +294,25 @@
     "PLA load/temperature acceptance",
     "insert quantity"
   ],
-  "source_sha256": "a7151c5d4e2c86eb7e448065ecc10850a99588b9b54ab68fc782904728acfa5f",
-  "generator_sha256": "0905ccf7ebb43d7ca2fff9d80f36bc4d5d5a5fbe479620652d9e8079648ff8c8",
+  "source_sha256": "c73f9917ac722ef49c763103dea1a363d0f8a0d4a9f71ec4840f363b60133e77",
+  "generator_sha256": "9cc3bd9ac66980a9d15e8e3f1a5a6b435d7b159c83a5b3d88fad79ed9abf76b9",
   "panel_pin_centres_mm": [
     [
       5.5,
-      8
+      8.0
     ],
     [
-      149,
-      8
+      149.0,
+      8.0
     ],
     [
       5.5,
-      82
+      82.0
     ],
     [
-      149,
-      82
+      149.0,
+      82.0
     ]
   ],
-  "sketches_fully_constrained": true
+  "lcd_definition_sha256": "b67d2d9b8408834bcfb0d9766e693482070209be0e74e04fe39e2734954d8f91"
 }

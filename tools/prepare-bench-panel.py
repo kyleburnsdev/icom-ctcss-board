@@ -12,10 +12,10 @@ WORK=ROOT/'.agent-scratch/panel-rear-display/slicer'
 EV=ROOT/'docs/verification/bench-panel-b2'
 STUDIO=Path('C:/Program Files/Bambu Studio')
 PLATES={
- '01 - TEST FIT - rear display and threads':[
+ '01 - TEST FIT - L1 corrected LCD and threads':[
  ('displayfitcoupon',30,40,0),('threadfita',30,145,0),('threadfitb',60,145,0),('threadfitc',90,145,0),
  ('displaythumbscrew-test-a',145,45,0),('displaythumbscrew-test-b',145,75,0),('displaythumbscrew-test-c',145,105,0),('displaythumbscrew-test-d',145,135,0)],
- '02 - FINAL - replacement panel and clamps':[
+ '02 - FINAL - L1 corrected panel and clamps':[
  ('controlpanel',23,35,0),('displaythumbscrew-a',30,155,0),('displaythumbscrew-b',60,155,0),('displaythumbscrew-c',90,155,0),('displaythumbscrew-d',120,155,0)],
 }
 
@@ -35,7 +35,7 @@ def main():
     settings={'machine':resolve('Bambu Lab X1 Carbon 0.4 nozzle'),
               'process':resolve('0.12mm Fine @BBL X1C'),'filament':resolve('Generic PLA')}
     process=settings['process']
-    process.update(name='B2 rear display and printed clamps - PLA - 0.12 mm',from_='User')
+    process.update(name='B2 L1 corrected LCD - PLA - 0.12 mm',from_='User')
     process.pop('from_',None);process['from']='User'
     process.update(print_settings_id=process['name'],layer_height='0.12',initial_layer_print_height='0.20',
         wall_loops='4',top_shell_layers='5',bottom_shell_layers='5',
@@ -46,7 +46,7 @@ def main():
         initial_layer_line_width='0.42',top_surface_line_width='0.42',
         sparse_infill_line_width='0.42',internal_solid_infill_line_width='0.42')
     for kind,data in settings.items():(WORK/(kind+'.json')).write_text(json.dumps(data,indent=2))
-    assembly={'plates':[]};report={'revision':'B2','printer':'Bambu Lab X1 Carbon 0.4 nozzle',
+    assembly={'plates':[]};report={'revision':'B2','lcd_interface_revision':'L1','printer':'Bambu Lab X1 Carbon 0.4 nozzle',
         'filament':'Generic PLA - user selected existing setup','plates':[]}
     for i,(name,placements) in enumerate(PLATES.items(),1):
         records,objects=h.arranged_plate(WORK/f'plate-{i}',placements)

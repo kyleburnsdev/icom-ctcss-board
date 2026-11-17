@@ -1,0 +1,27 @@
+{
+  "interface_revision": "L1",
+  "units": "mm",
+  "coordinate_system": "Front view, display readable, Grove socket at lower left. Origin at lower-left intersection of the PCB straight edge datum lines; x right, y up. Ear radii extend outside those datum lines.",
+  "source": "https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/res/JHD1313%20FP-RGB-1%201.4.pdf#page=23",
+  "pcb_datum_size_mm": [80.0, 40.0],
+  "pcb_thickness_mm": 1.6,
+  "mounting_hole_diameter_mm": 2.3,
+  "mounting_ear_radius_mm": 2.1,
+  "all_hole_centres_front_mm": [[10.0, 0.0], [50.0, 0.0], [30.0, 40.0], [70.0, 40.0], [0.0, 30.0], [80.0, 10.0]],
+  "used_hole_indices": [0, 1, 2, 3],
+  "viewing_area_front_mm": [5.65, 16.34, 64.5, 14.5],
+  "active_area_front_mm": [9.05, 18.89, 57.7, 9.4],
+  "bezel_outline_front_mm": [2.5, 11.69, 70.8, 23.8],
+  "window_clearance_per_side_mm": 0.5,
+  "locator_diameter_mm": 1.8,
+  "locator_height_mm": 1.2,
+  "bezel_to_panel_rear_gap_mm": 0.3,
+  "measured_pcb_front_to_bezel_front_mm": 9.13,
+  "measurement_basis": "User caliper reading, 2026-11-17; PCB front surface to front metal bezel",
+  "failed_previous_geometry": {
+    "mounting_row_spacing_mm": 44.2,
+    "window_vertical_error_mm": -2.45,
+    "ear_seat_depth_mm": 14.0,
+    "report": "User reports failed coupon size/alignment; supplied photos show pins missing ears, window offset and large axial gap."
+  }
+}

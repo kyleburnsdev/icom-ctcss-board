@@ -20,7 +20,7 @@ WORK=ROOT/'.agent-scratch/enclosure-c1/slicer'
 EV=ROOT/'docs/verification/enclosure-c1'
 STUDIO=Path('C:/Program Files/Bambu Studio')
 PLATES={
- '01 - TEST FIT - radio LCD nubs inserts rails':[
+ '01 - TEST FIT - L1 LCD radio nubs inserts rails':[
   ('displayfitcoupon',25,35,0),('radiopatterncoupon',25,130,0),
   ('coverrailcoupon',150,35,0),('covertonguecoupon',185,35,0),
   ('nubandstrapcoupon',150,90,0),('insertpilotcoupon',150,135,0),
@@ -48,7 +48,7 @@ def main():
     settings={'machine':resolve('Bambu Lab X1 Carbon 0.4 nozzle'),
               'process':resolve('0.20mm Standard @BBL X1C'),'filament':resolve('Generic PLA')}
     p=settings['process']
-    p.update(name='C1 PLA fit prototype - 0.20 mm - 5 walls',**{'from':'User'})
+    p.update(name='C1 L1 corrected LCD - PLA - 0.20 mm - 5 walls',**{'from':'User'})
     p.update(print_settings_id=p['name'],layer_height='0.20',initial_layer_print_height='0.20',
         wall_loops='5',top_shell_layers='6',bottom_shell_layers='6',
         sparse_infill_density='30%',sparse_infill_pattern='gyroid',
@@ -56,7 +56,7 @@ def main():
         wall_generator='arachne',outer_wall_speed=['40','40'],inner_wall_speed=['60','60'],
         line_width='0.45',outer_wall_line_width='0.45',inner_wall_line_width='0.45')
     for kind,data in settings.items():(WORK/(kind+'.json')).write_text(json.dumps(data,indent=2))
-    assembly={'plates':[]};report={'revision':'C1','printer':'Bambu Lab X1 Carbon 0.4 nozzle',
+    assembly={'plates':[]};report={'revision':'C1','lcd_interface_revision':'L1','printer':'Bambu Lab X1 Carbon 0.4 nozzle',
         'filament':'Generic PLA; explicit user choice','bed':'Textured PEI Plate','plates':[]}
     for i,(name,rows) in enumerate(PLATES.items(),1):
         records,objects=[],[];folder=WORK/f'plate-{i}';folder.mkdir(exist_ok=True)

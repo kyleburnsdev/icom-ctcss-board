@@ -154,10 +154,10 @@
       "../../reference/ic229h-mounting.md"
     ]
   ],
-  "primary_3mf_sha256": "bbf786f0e849ac3bccf6e1debb08d3712136d501c66b84c8bcfad98d8a986a2c",
+  "primary_3mf_sha256": "260d616d494997d4cbc632805e2cbc8c8ef58705892eaf9ff503c531cafceb75",
   "native_reopen": "16 installed instances and 16 unique bodies/coupons verified",
   "native_slicer_reopen": {
-    "version": "BambuStudio 02.08.02.61",
+    "native_application": "BambuStudio 02.08.02.61",
     "return_code": 0,
     "plates": 4,
     "objects": 27,
@@ -167,13 +167,14 @@
       "",
       ""
     ],
-    "settings_match": true
+    "saved_layout_and_settings_match": true,
+    "project_sha256": "260d616d494997d4cbc632805e2cbc8c8ef58705892eaf9ff503c531cafceb75"
   },
   "plate_estimates": [
     {
       "id": 1,
-      "minutes": 148.25323893229168,
-      "grams": 56.98712921142578
+      "minutes": 141.82286783854167,
+      "grams": 55.34197235107422
     },
     {
       "id": 2,
@@ -182,46 +183,46 @@
     },
     {
       "id": 3,
-      "minutes": 176.63636067708333,
-      "grams": 75.2485122680664
+      "minutes": 170.17140299479166,
+      "grams": 73.62126159667969
     },
     {
       "id": 4,
-      "minutes": 413.17486979166665,
-      "grams": 157.9776611328125
+      "minutes": 413.1642578125,
+      "grams": 157.97845458984375
     }
   ],
   "visual_review": "Guide schematics/native assembly/base views and 16 actual extrusion panels inspected; interfaces and skins continuous at sampled heights; physical bridges/fit remain coupon checks.",
-  "physical_acceptance": "not run",
+  "physical_acceptance": "L1 retest pending",
   "inventory_preflight": "record gaps; user PLA and M3 stock inputs preserved",
   "sha256": {
-    "docs/enclosure-c1-guide.md": "93dc7fd9b3498c2299473ec15d4f4314c914ecaf9d9e41fe96fb0de5be182c42",
-    "docs/images/enclosure-c1/assembly.png": "553295531dc3c666b4f400491e74ce684123889f027a7a9732483e67cfdb2baf",
-    "docs/images/enclosure-c1/base-and-panel.png": "5fff7753d873dd3567b02fd6be85e18c2aec3b6cb704031cb3a2a3ef22e6f937",
-    "docs/images/enclosure-c1/layout.png": "0c9a7a968542bd16275c5f779851371b6cd6d9909c059487aea0b66899aefa10",
+    "docs/enclosure-c1-guide.md": "b0e88a93b102d4154aa96588498ec4d5acbfc826d070572b88afc9f49d3fa25a",
+    "docs/images/enclosure-c1/assembly.png": "31ad4ab3f9ec2bb0c1e0726e7ae18b5037894a2f00ae64dbec105f764fb0d1a4",
+    "docs/images/enclosure-c1/base-and-panel.png": "0fb2ba8697faf9d4e5375b5d598654e2cdbc924df7acf7a2d613732d97fbafc4",
+    "docs/images/enclosure-c1/layout.png": "ae66eea9c521253703d0e1f1c8219e664129e9e1b2ae891e254efaf09a58929e",
     "docs/images/enclosure-c1/radio-interface.png": "b8a635cbbaedc280a683fe7fa480d32e0ce6a2f4c8809d34f453e240841d8005",
     "docs/reference/ic229h-mounting.md": "063d402bfcf347f01dc3275750d8e7a1fba7a82c15be7d4467e27f5ce4ef95fc",
-    "docs/verification/enclosure-c1/cad-checks.json": "9dafaf77a0504af62a05f81af60a942ad4edaa8eeb76983014e5de09a62f9c56",
-    "docs/verification/enclosure-c1/export-checks.json": "5974d6f9b54f9dde759eb77a321ff5633ea55d832418a7c97a764a0c15dfad23",
+    "docs/verification/enclosure-c1/cad-checks.json": "299f0f982b8d05b888a2e8337bd2bbd3c8147c719d23b20c777adaa6430b674e",
+    "docs/verification/enclosure-c1/export-checks.json": "e2a63c34a47c7dbe6a5e82cbbca246004668ddf958edc4676372331fddcb9b09",
     "docs/verification/enclosure-c1/inventory-input.json": "d214e125887f249723c926499a6e8cdfe3b09ba02b90e97b11981c39fc9620a0",
     "docs/verification/enclosure-c1/inventory-preflight.json": "e316cd34d898613477cace8c72be2475e73b89ed5c63d8be5e7bdee1d727afae",
-    "docs/verification/enclosure-c1/layer-checks.json": "b7e8b0bdd6e01facbedef013ab0516d29a903f3c386f68c38225a63eb92dbef0",
-    "docs/verification/enclosure-c1/layers-1.png": "e06cbf58e3b11d1451f29260b41f5a87cd10b69a28879747b66077de0f4f8832",
+    "docs/verification/enclosure-c1/layer-checks.json": "8cef995afe3d807a866cfcb2d993cb7a5a659fb818483cfc4cea79eb9bf722e2",
+    "docs/verification/enclosure-c1/layers-1.png": "bb693a65cae38b1065cdd969ad95acfe91c1541f8c8057eaab6e258f062c80b8",
     "docs/verification/enclosure-c1/layers-2.png": "8179dada85344b9153e89074a23df33f4ef0dd637fbeef2d5398256521fac120",
-    "docs/verification/enclosure-c1/layers-3.png": "33c5534af730dd78fdaa4277ab6e4caa5c2855c66f3737d904794a855c16b68a",
-    "docs/verification/enclosure-c1/layers-4.png": "3ed5fef29495e726bfb0aefd701de2e94b6c816d52e5e38bde98b26b0ecd6985",
-    "docs/verification/enclosure-c1/README.md": "2c3a6982f25354241cacd119c855bb7df1683b65656641c02e1d4ef2c3b95f97",
-    "docs/verification/enclosure-c1/slicer-checks.json": "40241e365e1d947879494b0b01a77fee3fa7d01b0f2438c36c8a2e50c76219e5",
-    "manufacturing/enclosure-c1/ctcss-c1.3mf": "bbf786f0e849ac3bccf6e1debb08d3712136d501c66b84c8bcfad98d8a986a2c",
+    "docs/verification/enclosure-c1/layers-3.png": "ad2a6bec180ad019a22a46e57c1cb022d7956bdd0d1e3f1c35472db8580e80c0",
+    "docs/verification/enclosure-c1/layers-4.png": "f7b3707317b012ced46082e88f42039f9925712142271e6002de1d5a118e101e",
+    "docs/verification/enclosure-c1/README.md": "aaee49a1c9646cd2a41b396f487e0b7cb2b070006a56c09425066868469660d4",
+    "docs/verification/enclosure-c1/slicer-checks.json": "5cb112cd252df03a5877d4c0c2edbdf01ef81ec3d3d833a6237f4323bb430b44",
+    "manufacturing/enclosure-c1/ctcss-c1.3mf": "260d616d494997d4cbc632805e2cbc8c8ef58705892eaf9ff503c531cafceb75",
     "manufacturing/enclosure-c1/mechanical-bom.csv": "82f949b039ac2c5ecd17f0afc31c4b14b258706dfeb9530a5aefebc7a76679d0",
-    "manufacturing/enclosure-c1/README.md": "0093da17cc5717bd1456185e73e92d8c6ad9038f29ec61358a2ecbf67e80d072",
-    "manufacturing/enclosure-c1/supporting/step/ctcss-c1-assembly.step": "855b508afc292b417f3700de7e6448fe992ed25aca9b71d6a7b2a5d4c71c1671",
+    "manufacturing/enclosure-c1/README.md": "e8d211411b0726f9e319b64ffe564258df7e24b590ae5c87c632253ec0618595",
+    "manufacturing/enclosure-c1/supporting/step/ctcss-c1-assembly.step": "9ba1737c4d01ef862207afa1dca99cb345ff54a00319da79c7e09dbc86a11a66",
     "manufacturing/enclosure-c1/supporting/stl/base.stl": "47602d54da031050b13b7292cbbe35f38c61fe06c4f91665390835a97deff3a1",
-    "manufacturing/enclosure-c1/supporting/stl/controlpanel.stl": "1ad4d38aeeb87f07cce7dae9848bb46e3f67b2e5476abe37236282a4985dc277",
-    "manufacturing/enclosure-c1/supporting/stl/coverrailcoupon.stl": "f8b7c0c77a6de6194fa289db9a17f6803e89065288c85051713995dcca07eeb1",
+    "manufacturing/enclosure-c1/supporting/stl/controlpanel.stl": "8b587952b7b64ebb971fb0523e0bbe1dacc7d0ec06a20cda2c93e1a643efdeca",
+    "manufacturing/enclosure-c1/supporting/stl/coverrailcoupon.stl": "b0f866014807f5ec7664e1e247a8df2bcf4b50aacab4d8ef19d0b48bf508a072",
     "manufacturing/enclosure-c1/supporting/stl/covertonguecoupon.stl": "6ad533d19c50d08faf6c4fc515a57330b008315c78d151d4ad291038dd6ebfa5",
     "manufacturing/enclosure-c1/supporting/stl/displayearclip.stl": "c7d50390d8d91cecfe9f935b24a94abe4ec218435b4f48616f2257b703275929",
-    "manufacturing/enclosure-c1/supporting/stl/displayfitcoupon.stl": "f3dd5dc4918800022a49c8158ca14269509069b9f5eec74b2c8b4e7b6f3d1c2c",
+    "manufacturing/enclosure-c1/supporting/stl/displayfitcoupon.stl": "9440ce93577a5ce6ae906d48cbdca73dd8fa06de6d6c13bbd8a2af13bacd9f0b",
     "manufacturing/enclosure-c1/supporting/stl/insertpilotcoupon.stl": "11eadbdd0d910a753f606a02edb62fe86c4bfbbb7177d3a186b26c9f45a67361",
     "manufacturing/enclosure-c1/supporting/stl/ledkeeper.stl": "786fd34e9bcb83cd13c755c1a1cb293319d1cf5cf809724a2603f9d33a08e073",
     "manufacturing/enclosure-c1/supporting/stl/leftradiocheek.stl": "d67219c33c449ed4f82fb56df07dbab8cc0624810f4d7d6eb78ca61a6b34a6fd",
@@ -231,15 +232,19 @@
     "manufacturing/enclosure-c1/supporting/stl/radiopatterncoupon.stl": "27e518e4cac19923b7744b9b244f9fee44c2f8fcd502527330a23c1a453a498d",
     "manufacturing/enclosure-c1/supporting/stl/rightradiocheek.stl": "c65e1af8a713c42d0fbddf9cf29abd5af12d7545592a4aea2daecfc524d3786b",
     "manufacturing/enclosure-c1/supporting/stl/rightradiosaddle.stl": "58cc3e3fad335ef382d9e552d95419c3cf2ea4388aab26b55a696f035d337c0b",
-    "manufacturing/enclosure-c1/supporting/stl/slidingcover.stl": "2da63372833aad95763660ebf951f234515069d8660f5c7155785b86a6f8bc60",
-    "mechanical/enclosure/c1/ctcss-c1.FCStd": "a7151c5d4e2c86eb7e448065ecc10850a99588b9b54ab68fc782904728acfa5f",
-    "mechanical/enclosure/c1/README.md": "3dc35868bbfc2f6749ed724d8097175e689f3a92bf38f132861a13019c727042",
+    "manufacturing/enclosure-c1/supporting/stl/slidingcover.stl": "adab05bf12bd6470c476aced94058fd3cc6d40bb85d9a20f2c7333129fb2b964",
+    "mechanical/enclosure/c1/ctcss-c1.FCStd": "c73f9917ac722ef49c763103dea1a363d0f8a0d4a9f71ec4840f363b60133e77",
+    "mechanical/enclosure/c1/README.md": "c396d1d8ab69da0ae641d136fa943658dae40b95018a7444d5eb2e191ef2a112",
     "tools/bench-holder-threads.py": "edd319bc584e6d0b9eaba117b4d727077748f7027b1bfea36cd0f83f7640daac",
     "tools/build-bench-holder.py": "34b7cdf53627e7eb58870b8879740b209d426de2fb1b1f64e7c9a2ac28f21fd2",
-    "tools/build-enclosure-c1.py": "0905ccf7ebb43d7ca2fff9d80f36bc4d5d5a5fbe479620652d9e8079648ff8c8",
-    "tools/export-enclosure-c1.py": "fb897632b05b2dc63e9e259d177d1fb93e07de0cd707c61e08dfa2c5951e43f2",
-    "tools/prepare-enclosure-c1.py": "5738254ba086bad126d810ce0659b42ae9d1a97c7e200e67eb92bfc78002e94c",
+    "tools/build-enclosure-c1.py": "9cc3bd9ac66980a9d15e8e3f1a5a6b435d7b159c83a5b3d88fad79ed9abf76b9",
+    "tools/export-enclosure-c1.py": "8c55dc6c3d5c6d1ee9960614ac19a23d1576741156f5aa201fa29c8e1c360600",
+    "tools/prepare-enclosure-c1.py": "da75da5e2090fbe460102c3075b4bc0fd50e027a2bc79c06a082c1b04cba4be8",
     "tools/prepare-enclosure-plates.py": "d61cd519f8daa7e5696a9d222e709a82655f6d081d8fd09dc85385fa3f9c00f7",
-    "tools/render-enclosure-c1.py": "d7347fdd23ff40b8597a83b342fea5ff336e5b57798dedb7b2e07f6e7ec684c0"
-  }
+    "tools/render-enclosure-c1.py": "4684dc15b4064a184cc3272f1a30eaab9abc5f8821f0689ca3ed2abed70f8805",
+    "mechanical/interfaces/grove-lcd-v4.json": "b67d2d9b8408834bcfb0d9766e693482070209be0e74e04fe39e2734954d8f91",
+    "tools/grove-lcd-v4.py": "bcf0f537a911d1df0d142bde9c576e7c7c165cc7e872e4cab6073ac8bd2f471f",
+    "docs/lcd-fit-correction.md": "907f05c13c739a2d67671e7ee14df0b6a5767214b0ce88eb567eec4482e56bef"
+  },
+  "lcd_interface_revision": "L1"
 }

@@ -1,11 +1,12 @@
 {
   "revision": "B2",
+  "lcd_interface_revision": "L1",
   "printer": "Bambu Lab X1 Carbon 0.4 nozzle",
   "filament": "Generic PLA - user selected existing setup",
   "plates": [
     {
       "id": 1,
-      "name": "01 - TEST FIT - rear display and threads",
+      "name": "01 - TEST FIT - L1 corrected LCD and threads",
       "placements": [
         {
           "name": "displayfitcoupon",
@@ -13,13 +14,13 @@
             30.0,
             40.0,
             110.0,
-            108.9000015258789
+            108.0
           ],
           "brim_bounds_mm": [
             25.0,
             35.0,
             115.0,
-            113.9000015258789
+            113.0
           ],
           "in_plane_rotation_deg": 0
         },
@@ -143,7 +144,7 @@
             30.0,
             40.0,
             110.0,
-            108.9000015
+            108.0
           ],
           "z_min_mm": 0.0
         },
@@ -151,9 +152,9 @@
           "name": "threadfita",
           "local_bounds_mm": [
             30.0,
-            144.9999961,
+            145.0,
             44.0,
-            158.9999961
+            159.0
           ],
           "z_min_mm": 0.0
         },
@@ -161,9 +162,9 @@
           "name": "threadfitb",
           "local_bounds_mm": [
             60.0,
-            144.9999961,
+            145.0,
             74.0,
-            158.9999961
+            159.0
           ],
           "z_min_mm": 0.0
         },
@@ -171,9 +172,9 @@
           "name": "threadfitc",
           "local_bounds_mm": [
             90.0,
-            144.9999961,
+            145.0,
             104.0,
-            158.9999961
+            159.0
           ],
           "z_min_mm": 0.0
         },
@@ -181,9 +182,9 @@
           "name": "displaythumbscrew-test-a",
           "local_bounds_mm": [
             145.0,
-            45.001674570000006,
+            45.00167847,
             162.0,
-            61.99831763
+            61.99832153
           ],
           "z_min_mm": 0.0
         },
@@ -191,9 +192,9 @@
           "name": "displaythumbscrew-test-b",
           "local_bounds_mm": [
             145.0,
-            75.00167457,
+            75.00167847,
             162.0,
-            91.99831763
+            91.99832153
           ],
           "z_min_mm": 0.0
         },
@@ -201,9 +202,9 @@
           "name": "displaythumbscrew-test-c",
           "local_bounds_mm": [
             145.0,
-            105.00167457,
+            105.00167847,
             162.0,
-            121.99831763
+            121.99832153
           ],
           "z_min_mm": 0.0
         },
@@ -211,21 +212,21 @@
           "name": "displaythumbscrew-test-d",
           "local_bounds_mm": [
             145.0,
-            135.00167457,
+            135.00167847,
             162.0,
-            151.99831763
+            151.99832153
           ],
           "z_min_mm": 0.0
         }
       ],
       "slicer_plate_origin_mm": [
         0.0,
-        3.8999999958377884e-06
+        0.0
       ]
     },
     {
       "id": 2,
-      "name": "02 - FINAL - replacement panel and clamps",
+      "name": "02 - FINAL - L1 corrected panel and clamps",
       "placements": [
         {
           "name": "controlpanel",
@@ -1273,7 +1274,7 @@
     "print_flow_ratio": "1",
     "print_in_clockwise": "0",
     "print_sequence": "by layer",
-    "print_settings_id": "B2 rear display and printed clamps - PLA - 0.12 mm",
+    "print_settings_id": "B2 L1 corrected LCD - PLA - 0.12 mm",
     "printable_area": [
       "0x0",
       "256x0",
@@ -1630,57 +1631,56 @@
   "shared_settings_no_object_or_plate_process_overrides": true,
   "slice_result": {
     "error_string": "Success.",
-    "export_time": 3082,
+    "export_time": 2612,
     "layer_height": 0.11999999731779099,
     "plate_index": 0,
-    "prepare_time": 1346,
+    "prepare_time": 383,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
-          "Bottom surface": 245.62359619140625,
-          "Bridge": 216.00457763671875,
-          "Brim": 95.30474853515625,
-          "Custom": 35.55453872680664,
-          "Gap infill": 12.26476764678955,
-          "Inner wall": 3194.30224609375,
-          "Internal solid infill": 610.0237426757812,
-          "Outer wall": 2595.614501953125,
-          "Overhang wall": 1.1870461702346802,
-          "Sparse infill": 634.2811889648438,
-          "Top surface": 169.44322204589844,
-          "Travel": 743.0416259765625,
-          "Undefined": 727.421142578125
+          "Bottom surface": 246.0458984375,
+          "Bridge": 217.04505920410156,
+          "Brim": 95.3048324584961,
+          "Custom": 35.5677604675293,
+          "Gap infill": 12.36401653289795,
+          "Inner wall": 2759.974853515625,
+          "Internal solid infill": 591.6375732421875,
+          "Outer wall": 2179.5087890625,
+          "Sparse infill": 623.6917114257812,
+          "Top surface": 171.7101287841797,
+          "Travel": 625.4249877929688,
+          "Undefined": 609.791259765625
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFL99",
             "id": 1,
-            "main_used_g": 22.23831558227539,
-            "total_used_g": 22.23831558227539
+            "main_used_g": 20.73747444152832,
+            "total_used_g": 20.73747444152832
           }
         ],
-        "generate_support_material_time": 404,
+        "generate_support_material_time": 376,
         "id": 1,
-        "infill_time": 995,
+        "infill_time": 1020,
         "layer_filament_change": 0,
-        "main_predication": 8518.1728515625,
-        "make_perimeters_time": 4909,
+        "main_predication": 7523.43408203125,
+        "make_perimeters_time": 2465,
         "obj_cached_cnt": 0,
         "objects": [
           {
             "bbox": {
-              "depth": 68.9000015258789,
-              "height": 18.200000762939453,
+              "depth": 68.0,
+              "height": 13.630000114440918,
               "width": 80.0,
               "x": 30.0,
-              "y": 40.000003814697266,
+              "y": 40.0,
               "z": 0.0
             },
             "id": 15,
             "name": "displayfitcoupon_1",
-            "triangle_count": 85512
+            "triangle_count": 61192
           },
           {
             "bbox": {
@@ -1774,49 +1774,49 @@
             "triangle_count": 9728
           }
         ],
-        "sliced_time": 21724,
-        "sliced_time_with_cache": 14590,
-        "total_predication": 8538.076171875,
-        "triangle_count": 156540,
+        "sliced_time": 9959,
+        "sliced_time_with_cache": 5587,
+        "total_predication": 7543.33740234375,
+        "triangle_count": 132220,
         "warning_message": ""
       },
       {
         "feature_type_times": {
-          "Bottom surface": 637.9154663085938,
-          "Bridge": 830.4241333007812,
+          "Bottom surface": 637.932861328125,
+          "Bridge": 829.423583984375,
           "Brim": 104.78567504882812,
-          "Custom": 35.65576171875,
-          "Gap infill": 13.903109550476074,
-          "Inner wall": 3824.967041015625,
-          "Internal solid infill": 1606.7216796875,
-          "Outer wall": 2779.269287109375,
-          "Overhang wall": 67.18647003173828,
-          "Sparse infill": 2076.838134765625,
-          "Top surface": 354.767578125,
-          "Travel": 804.3384399414062,
-          "Undefined": 788.7120971679688
+          "Custom": 35.429542541503906,
+          "Gap infill": 13.873452186584473,
+          "Inner wall": 3387.16748046875,
+          "Internal solid infill": 1586.0355224609375,
+          "Outer wall": 2363.30810546875,
+          "Overhang wall": 67.17772674560547,
+          "Sparse infill": 2084.78076171875,
+          "Top surface": 355.3522033691406,
+          "Travel": 685.1137084960938,
+          "Undefined": 669.713623046875
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFL99",
             "id": 1,
-            "main_used_g": 50.099754333496094,
-            "total_used_g": 50.099754333496094
+            "main_used_g": 48.65255355834961,
+            "total_used_g": 48.65255355834961
           }
         ],
-        "generate_support_material_time": 950,
+        "generate_support_material_time": 357,
         "id": 2,
-        "infill_time": 9126,
+        "infill_time": 3099,
         "layer_filament_change": 0,
-        "main_predication": 13099.5654296875,
-        "make_perimeters_time": 8390,
+        "main_predication": 12113.423828125,
+        "make_perimeters_time": 3186,
         "obj_cached_cnt": 0,
         "objects": [
           {
             "bbox": {
               "depth": 90.0,
-              "height": 18.200000762939453,
+              "height": 13.630000114440918,
               "width": 209.99998474121094,
               "x": 330.20001220703125,
               "y": 35.0,
@@ -1824,7 +1824,7 @@
             },
             "id": 175,
             "name": "controlpanel_1",
-            "triangle_count": 140136
+            "triangle_count": 115820
           },
           {
             "bbox": {
@@ -1879,21 +1879,16 @@
             "triangle_count": 9728
           }
         ],
-        "sliced_time": 28173,
-        "sliced_time_with_cache": 7545,
-        "total_predication": 13119.564453125,
-        "triangle_count": 179048,
+        "sliced_time": 11356,
+        "sliced_time_with_cache": 3730,
+        "total_predication": 12133.4228515625,
+        "triangle_count": 154732,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 30.0,
     "wall_loops": 4
   },
-  "sha256": "ac94481a32d2f1b646c27d5b2497b7796f94abd4117bc4ed6ceb1d2cdff66483",
-  "file": "manufacturing/bench-panel-b2/bench-panel-b2.3mf",
-  "gui_reopen": {
-    "application": "Bambu Studio",
-    "observed": "Two named plates, X1 Carbon 0.4 nozzle, Generic PLA, custom B2 process, 0.12 mm layer height and 0.20 mm first layer; all parts shown seated without error dialog",
-    "date": "2026-11-16"
-  }
+  "sha256": "8207699008d0226c8bbe00a06e4fac6695bba80dc8b0cb86d244498909ffa413",
+  "file": "manufacturing/bench-panel-b2/bench-panel-b2.3mf"
 }

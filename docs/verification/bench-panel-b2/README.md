@@ -1,5 +1,10 @@
 # B2 rear-display panel verification
 
+**Current LCD interface: L1.** The original coupon failed physical size/alignment;
+the digital checks below now cover the corrected geometry. See the
+[failure record](../lcd-fit/failed-coupon-2026-11-17.json) and
+[L1 correction](../../lcd-fit-correction.md). L1 physical acceptance is still pending.
+
 Scope: a digitally prepared replacement panel and printed display fasteners.
 Physical print, screw retention, module fit and seated visibility are unrun.
 
@@ -12,15 +17,17 @@ Physical print, screw retention, module fit and seated visibility are unrun.
   [replacement-panel plate](slice-2.png): actual extrusion at the first layer,
   engraving closure, front recess roofs, rear posts and threaded sockets.
   Both slices returned success with empty warning messages. The saved project
-  reopened in the Bambu Studio GUI with both named plates, X1C 0.4 / Generic PLA,
-  0.12 mm layers and 0.20 mm first layer; no missing-profile/error dialog appeared.
+  reopened and re-sliced through native Bambu Studio with both named plates,
+  X1C 0.4 / Generic PLA, 0.12 mm layers and 0.20 mm first layer; all warnings empty.
 - [Illustrated operator guide](../../bench-panel-b2-guide.md): coupon acceptance,
   printing, clean-up, hardware transfer and internal harness routing.
 
 Manufacturer XY dimensions are from page 23 of the linked JHD1313 V4 drawing.
-The 14 mm stand-off and coarse custom thread clearances are selected defaults.
-The module's internal axial split and cable allowance are simplified envelopes;
-the actual module/cable coupon check remains necessary. CAD envelope clearance
+L1 uses **40 mm hole rows**, viewing-area bottom **16.34 mm above PCB bottom**,
+and **9.43 mm supports** from the user's **9.13 mm front projection** plus a
+selected 0.30 mm gap. Six ears are modeled for clearance. Coarse thread clearances
+and the cable allowance remain selected defaults; the actual module/cable coupon
+check remains necessary. CAD envelope clearance
 is not a measurement of an assembled cable or a physical fit acceptance.
 
 The [inventory preflight](inventory-preflight.json) was rerun against the authoritative workstation store using

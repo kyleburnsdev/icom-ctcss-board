@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-17",
+  "result": "failed physical fit",
+  "reported_by": "user",
+  "tested_artifact": "B2 original rear-display coupon; printed custom thumb screw visible in supplied photographs",
+  "original_commit": "fb2a454",
+  "reported_failure": "Screen coupon did not pass size or alignment",
+  "photos": [
+    "docs/images/lcd-fit/failed-window.jpg",
+    "docs/images/lcd-fit/failed-depth.jpg",
+    "docs/images/lcd-fit/failed-ear-alignment.jpg"
+  ],
+  "independent_drawing_review": {
+    "drawing": "https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/res/JHD1313%20FP-RGB-1%201.4.pdf#page=23",
+    "actual_drawing_hole_row_spacing_mm": 40.0,
+    "original_generated_hole_row_spacing_mm": 44.2,
+    "cause": "Ear R2.10 was incorrectly applied as an offset to the hole centers. Hole centers are on the two straight PCB datum lines, not outside them.",
+    "correct_va_top_offset_from_pcb_top_mm": 9.16,
+    "correct_va_bottom_from_pcb_bottom_mm": 16.34,
+    "calculation": "40 - 9.16 - 14.50 = 16.34",
+    "window_correction_mm": [
+      0.0,
+      2.45
+    ],
+    "all_six_ears_required_for_clearance_reference": true
+  },
+  "affected_designs": [
+    "B2 direct physical failure",
+    "C1 inherited the same incorrect mounting and window definition; no C1 physical fit accepted"
+  ],
+  "axial_failure": "Side photograph shows a large gap between the bezel and panel. Original 14 mm ear-seat depth was selected from overall module thickness rather than measured front projection.",
+  "limits": "Photographs establish the reported fit failure and visible gaps. No exact as-built dimensions are extracted from perspective photographs.",
+  "measurement_requested": "LCD PCB front surface to front metal-bezel surface; do not infer from the 13.5 mm maximum overall module thickness",
+  "resolved_measurement": {
+    "pcb_front_to_bezel_front_mm": 9.13,
+    "basis": "user caliper reading",
+    "selected_bezel_gap_mm": 0.3,
+    "calculated_support_depth_mm": 9.43,
+    "photo": "docs/images/lcd-fit/bezel-projection-caliper.jpg"
+  }
+}

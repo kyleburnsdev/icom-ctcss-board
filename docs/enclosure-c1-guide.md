@@ -1,5 +1,10 @@
 # C1 narrow enclosure and radio stand — PLA prototype
 
+> **L1 corrected LCD interface — 2026-11-17:** C1 now uses 40 mm mounting rows,
+> the corrected window datum and 9.43 mm supports based on the user's 9.13 mm
+> bezel projection. The [L1 record](lcd-fit-correction.md) replaces the failed
+> original geometry. Retest the L1 LCD coupon before printing the full panel.
+
 Use **PLA on the Bambu X1 Carbon, 0.4 mm nozzle**, with the orientations already
 saved in [ctcss-c1.3mf](../manufacturing/enclosure-c1/ctcss-c1.3mf). The base is
 156 × 240 mm; the control face is 156 × 90 mm at 30°. The radio tilts upward
@@ -9,7 +14,7 @@ accepted radio installation.
 
 | Sequence | Run / file | Holding and orientation | Next action |
 | --- | --- | --- | --- |
-| 1 | 3MF **01 - TEST FIT - radio LCD nubs inserts rails** | LCD front down; rail floor down; tongue roof down like the full cover; radio template flat | Accept interfaces before large prints |
+| 1 | 3MF **01 - TEST FIT - L1 LCD radio nubs inserts rails** | LCD front down; rail floor down; tongue roof down like the full cover; radio template flat | Accept interfaces before large prints |
 | 2 | **02 - FINAL - narrow base** | Base floor down; 3 mm brim; rails/posts up | Cool flat; inspect floor and rail straightness |
 | 3 | **03 - FINAL - panel cheeks and retainers** | Panel front down, cheeks on broad sides; strap nub relief up | Clean and fit controls, retainers and radio cheeks |
 | 4 | **04 - FINAL - sliding cover and radio saddles** | Cover outside roof down; saddles on broad side faces | Accept cover sliding and saddle alignment |
@@ -23,6 +28,11 @@ already been accepted. Older B1/B2 thread tests do not establish these new inser
 clamps or cover rails. The already populated board, wired controls and EC11 nut
 can be reused; no PCB, firmware or wiring pin map is changed. Disconnect/remove
 the PTT-test button's temporary harness; retain the PTT status indicator.
+
+For the **LCD-only L1 change**, an already printed C1 base, sliding cover, radio
+saddles/cheeks, LED keeper, PCB straps and LCD clips can be reused if previously
+accepted and undamaged. Only the panel and its matching LCD coupon geometry
+change. Native comparison records zero shape difference for the other main parts.
 
 ![C1 base and control arrangement](images/enclosure-c1/layout.png)
 
@@ -136,6 +146,10 @@ No inventory was reserved, decremented or silently rewritten.
    ear, with the M3 screw **outside the LCD PCB**. Tighten only until retained.
    The glass, black bezel and components must remain unloaded; the complete
    character area and Grove plug must be accessible. Do not alter the LCD holes.
+   L1 uses **40 mm between mounting rows**, a **9.43 mm seat depth** from the
+   user's **9.13 mm bezel projection** plus a selected 0.30 mm gap, and the
+   corrected window datum. The coupon is a new physical test; the failed coupon
+   does not accept the L1 interface. See [front/rear views](lcd-fit-correction.md).
 8. Record pilot, insert recipe, rail motion, nub/strap fit, radio pattern and
    LCD seating in `docs/`. **Stop and accept these interfaces before plates 02–04.**
 

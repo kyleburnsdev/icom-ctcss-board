@@ -1,5 +1,9 @@
 # Icom IC-229H selectable CTCSS/PL interface
 
+For the corrected LCD fit, print the [L1 screen-only retest](../manufacturing/lcd-fit/README.md)
+first. It uses the user's 9.13 mm bezel projection and corrected mounting/window
+datums; see the [fit findings](lcd-fit-correction.md) before a full panel.
+
 For the bench-derived final-enclosure prototype, use the [C1 fabrication and
 assembly guide](enclosure-c1-guide.md) and [four-plate PLA project](../manufacturing/enclosure-c1/README.md).
 The narrower base rotates the PCB, removes the PTT-test button, uses locating

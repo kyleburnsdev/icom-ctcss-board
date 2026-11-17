@@ -1,5 +1,10 @@
 # C1 digital verification
 
+**Current LCD interface: L1, 2026-11-17.** C1 now corrects the B2-derived row
+spacing/window datum and uses 9.43 mm supports from the user's 9.13 mm bezel
+projection. The checks below cover L1; the original failed coupon is historical.
+See the [L1 correction and retest](../../lcd-fit-correction.md).
+
 This evidence covers the C1 PLA fit prototype. It does not establish physical
 radio retention, fit, temperature performance or a completed machine print.
 
@@ -27,8 +32,8 @@ check, not a measured sliding force.
 Part.export in this FreeCAD build omitted App Link instances from a direct STEP
 export. The maintained exporter therefore makes native shape snapshots for STEP
 only; the editable source retains its Body histories and App Links. STEP readback
-contains all 16 installed printed instances. Its volume difference is about
-0.0023 mm³ over 545574 mm³, within the selected 0.01 mm³ exchange-readback tolerance.
+contains all 16 installed printed instances, with volume agreement within the
+selected 0.01 mm³ exchange-readback tolerance.
 
 Native references use the unchanged 100 × 150 × 1.5 PCB and its existing four
 4 mm holes, Grove V4 drawing/B2 ear geometry, simplified connector/module

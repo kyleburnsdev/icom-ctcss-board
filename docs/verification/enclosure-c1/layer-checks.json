@@ -1,14 +1,14 @@
 {
   "revision": "C1",
-  "project_sha256": "bbf786f0e849ac3bccf6e1debb08d3712136d501c66b84c8bcfad98d8a986a2c",
+  "project_sha256": "260d616d494997d4cbc632805e2cbc8c8ef58705892eaf9ff503c531cafceb75",
   "plates": [
     {
       "plate": 1,
       "heights_mm": [
         0.2,
         2.0,
-        15.0,
-        18.6
+        12.4,
+        14.0
       ],
       "layer_count": 105
     },
@@ -27,10 +27,10 @@
       "heights_mm": [
         0.2,
         3.2,
-        16.6,
-        18.6
+        12.6,
+        14.0
       ],
-      "layer_count": 93
+      "layer_count": 70
     },
     {
       "plate": 4,
